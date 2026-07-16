@@ -528,14 +528,14 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       style: TextStyle(color: Colors.white70, fontSize: 14, height: 1.4),
                     ),
                     const SizedBox(height: 24),
-                    _buildRewardTier(1, '500', const Color(0xFFFFD700), '1. SIRA', 'assets/images/trophy_gold.png'),
-                    _buildRewardTier(2, '300', const Color(0xFFC0C0C0), '2. SIRA', 'assets/images/trophy_silver.png'),
-                    _buildRewardTier(3, '150', const Color(0xFFCD7F32), '3. SIRA', 'assets/images/trophy_bronze.png'),
+                    _buildRewardTier(1, '2.500 + 10 Bilet', const Color(0xFFFFD700), '1. SIRA', 'assets/images/trophy_gold.png'),
+                    _buildRewardTier(2, '1.500 + 5 Bilet', const Color(0xFFC0C0C0), '2. SIRA', 'assets/images/trophy_silver.png'),
+                    _buildRewardTier(3, '1.000 + 3 Bilet', const Color(0xFFCD7F32), '3. SIRA', 'assets/images/trophy_bronze.png'),
                     const Padding(
                       padding: EdgeInsets.symmetric(vertical: 8.0),
                       child: Divider(color: Colors.white24, indent: 20, endIndent: 20),
                     ),
-                    _buildRewardTier(null, '50', Colors.white, '4. - 10. SIRA', null),
+                    _buildRewardTier(null, '250 + 1 Bilet', Colors.white, '4. - 10. SIRA', null),
                     const SizedBox(height: 24),
                     GestureDetector(
                       onTap: () => Navigator.pop(context),

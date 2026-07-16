@@ -842,22 +842,26 @@ class QuizProvider extends ChangeNotifier {
     
     _pastWinners.clear();
     for (int i = 0; i < 10 && i < allScores.length; i++) {
-       _pastWinners.add(jsonEncode(allScores[i]));
+      _pastWinners.add(jsonEncode(allScores[i]));
     }
     
     int userRank = allScores.indexWhere((s) => s['isUser'] == true) + 1;
     if (userRank == 1) {
-      _totalCoins += 500;
-      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 1. sırada tamamladın ve 500 Elmas kazandın! 🏆";
+      _totalCoins += 2500;
+      _roomCards += 10;
+      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 1. sırada tamamladın ve 2.500 Elmas + 10 Oda Kartı kazandın! 🥇";
     } else if (userRank == 2) {
-      _totalCoins += 300;
-      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 2. sırada tamamladın ve 300 Elmas kazandın! 🥈";
+      _totalCoins += 1500;
+      _roomCards += 5;
+      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 2. sırada tamamladın ve 1.500 Elmas + 5 Oda Kartı kazandın! 🥈";
     } else if (userRank == 3) {
-      _totalCoins += 150;
-      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 3. sırada tamamladın ve 150 Elmas kazandın! 🥉";
+      _totalCoins += 1000;
+      _roomCards += 3;
+      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 3. sırada tamamladın ve 1.000 Elmas + 3 Oda Kartı kazandın! 🥉";
     } else if (userRank <= 10) {
-      _totalCoins += 50;
-      _weeklyRewardMessage = "Geçen hafta ilk 10'a girmeyi başardın! Ödülün: 50 Elmas. 🌟";
+      _totalCoins += 250;
+      _roomCards += 1;
+      _weeklyRewardMessage = "Geçen hafta ilk 10'a girmeyi başardın! Ödülün: 250 Elmas + 1 Oda Kartı. 🏆";
     }
     
     _weeklyScore = 0; 
