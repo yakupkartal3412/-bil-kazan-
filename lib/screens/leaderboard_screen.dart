@@ -195,7 +195,10 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                 children: [
                   Expanded(
                     child: GestureDetector(
-                      onTap: () => setState(() => _selectedTab = 0),
+                      onTap: () {
+                        setState(() => _selectedTab = 0);
+                        _updateStream();
+                      },
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 12),
                         decoration: BoxDecoration(
@@ -221,7 +224,10 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: GestureDetector(
-                      onTap: () => setState(() => _selectedTab = 1),
+                      onTap: () {
+                        setState(() => _selectedTab = 1);
+                        _updateStream();
+                      },
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 12),
                         decoration: BoxDecoration(
@@ -247,7 +253,10 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: GestureDetector(
-                      onTap: () => setState(() => _selectedTab = 2),
+                      onTap: () {
+                        setState(() => _selectedTab = 2);
+                        _updateStream();
+                      },
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 12),
                         decoration: BoxDecoration(
@@ -696,7 +705,11 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     }
     String rankLabel = rank == 1 ? '🥇 1.' : (rank == 2 ? '🥈 2.' : '🥉 3.');
     bool isUser = scoreMap['userName'] == provider.userName;
-    String avatarPath = isUser ? 'assets/images/${provider.activeAvatar}' : (scoreMap['avatar'] ?? 'assets/images/einstein_avatar.png');
+    
+    String rawAvatar = scoreMap['avatar'] ?? 'einstein_avatar.png';
+    if (isUser) rawAvatar = provider.activeAvatar;
+    String avatarPath = rawAvatar.startsWith('assets/images/') ? rawAvatar : 'assets/images/$rawAvatar';
+    
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -775,7 +788,11 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
       moneyString = scoreMap['moneyString'] ?? '${scoreMap['score']} ₺';
     }
     bool isUser = scoreMap['userName'] == provider.userName;
-    String avatarPath = isUser ? 'assets/images/${provider.activeAvatar}' : (scoreMap['avatar'] ?? 'assets/images/einstein_avatar.png');
+    
+    String rawAvatar = scoreMap['avatar'] ?? 'einstein_avatar.png';
+    if (isUser) rawAvatar = provider.activeAvatar;
+    String avatarPath = rawAvatar.startsWith('assets/images/') ? rawAvatar : 'assets/images/$rawAvatar';
+    
     return Container(
       margin: const EdgeInsets.only(bottom: 3),
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
