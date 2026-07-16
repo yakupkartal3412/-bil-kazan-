@@ -677,7 +677,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   Widget _buildPodiumItem({required int rank, required Color color, required double size, required Map<String, dynamic> scoreMap, required QuizProvider provider}) {
     String moneyString = scoreMap['moneyString'] ?? '${scoreMap['score']}';
     if (scoreMap['mode'] == 'Sonsuz Mod') {
-      moneyString = 'Seviye ${scoreMap['score']}';
+      moneyString = '${scoreMap['score']} Soru';
     } else if (scoreMap['mode'] == 'Klasik Mod' || scoreMap['mode'] == 'Geçmiş') {
       num sc = scoreMap['score'] ?? 0;
       if (sc >= 1000000) {
@@ -696,7 +696,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        // Rank label above avatar
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
           decoration: BoxDecoration(
@@ -754,9 +753,10 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   }
 
   Widget _buildListRankItem(int rank, Map<String, dynamic> scoreMap, QuizProvider provider, {bool isHighlighted = false}) {
-    String moneyString = scoreMap['moneyString'] ?? 
-        (scoreMap['mode'] == 'Sonsuz Mod' ? '${scoreMap['score']} Soru' : '${scoreMap['score']} ₺');
-    if (scoreMap['mode'] == 'Klasik Mod' || scoreMap['mode'] == 'Geçmiş') {
+    String moneyString = '';
+    if (scoreMap['mode'] == 'Sonsuz Mod') {
+      moneyString = '${scoreMap['score']} Soru';
+    } else if (scoreMap['mode'] == 'Klasik Mod' || scoreMap['mode'] == 'Geçmiş') {
       num sc = scoreMap['score'] ?? 0;
       if (sc >= 1000000) {
         double mil = sc / 1000000;
@@ -767,6 +767,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
       } else {
         moneyString = '${sc.toInt()} ₺';
       }
+    } else {
+      moneyString = scoreMap['moneyString'] ?? '${scoreMap['score']} ₺';
     }
     bool isUser = scoreMap['userName'] == provider.userName;
     String avatarPath = isUser ? 'assets/images/${provider.activeAvatar}' : (scoreMap['avatar'] ?? 'assets/images/einstein_avatar.png');
