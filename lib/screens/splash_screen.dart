@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 5500), 
+      duration: const Duration(milliseconds: 7000), // 7 seconds loading
     );
     
     _mathSymbolsController = AnimationController(
@@ -77,7 +77,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
   }
 
   Future<void> _navigateNext() async {
-    await Future.delayed(const Duration(milliseconds: 7000));
+    await Future.delayed(const Duration(milliseconds: 8500));
     
     if (!mounted) return;
     
