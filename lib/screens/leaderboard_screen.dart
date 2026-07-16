@@ -302,7 +302,11 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
 
                         try {
                           var map = doc.data() as Map<String, dynamic>;
-                          parsedScores.add(map);
+                          // FİLTRE: Skoru 0 olanları (veya hatalı olanları) Liderlik tablosunda gösterme!
+                          num sc = map['score'] ?? 0;
+                          if (sc > 0) {
+                            parsedScores.add(map);
+                          }
                         } catch (_) {}
                       }
                     }
