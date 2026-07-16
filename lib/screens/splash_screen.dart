@@ -23,6 +23,21 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     "Dünyadaki en sert doğal madde, elmastır.",
     "Ahtapotların üç kalbi vardır.",
     "Venüs, Güneş Sistemi'nde saat yönünde dönen tek gezegendir.",
+    "Bir çay kaşığı nötron yıldızı, yaklaşık 6 milyar ton ağırlığındadır.",
+    "DNA'mızın %50'si muz DNA'sı ile aynıdır.",
+    "Eyfel Kulesi yazın ısıdan genleşerek 15 cm'ye kadar uzayabilir.",
+    "Satürn'ün yoğunluğu o kadar düşüktür ki, dev bir havuza konulsa yüzerdi.",
+    "Dünya üzerindeki ağaç sayısı, Samanyolu'ndaki yıldız sayısından fazladır.",
+    "Sıcak su, soğuk sudan daha hızlı donar (Mpemba Etkisi).",
+    "Bir karınca kendi ağırlığının 50 katını taşıyabilir.",
+    "İnsan kemiği, oranlandığında çelikten çok daha güçlüdür.",
+    "Tarihteki en kısa savaş (İngiltere-Zanzibar) sadece 38 dakika sürmüştür.",
+    "Mavi balinaların kalbi o kadar büyüktür ki, bir insan atardamarlarında yüzebilir.",
+    "Jüpiter ve Satürn gezegenlerinde elmas yağmurları yağar.",
+    "Kulaklarınız ve burnunuz hayatınız boyunca büyümeye devam eder.",
+    "Uzayda yerçekimi olmadığı için gözyaşlarınız aşağı dökülmez.",
+    "İnsan DNA'sı uç uca eklenseydi, Güneş'e 600 kez gidip gelebilirdi.",
+    "Işık hızıyla seyahat etseniz bile Samanyolu galaksisinden çıkmak 100.000 yıl sürer.",
   ];
 
   @override
@@ -304,23 +319,44 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                           )
                         : Container(
                             key: ValueKey(_factIndex),
-                            margin: const EdgeInsets.symmetric(horizontal: 30),
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            margin: const EdgeInsets.symmetric(horizontal: 20),
+                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
                             decoration: BoxDecoration(
-                              color: Colors.black.withValues(alpha: 0.3),
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
+                              color: const Color(0xFF111827).withValues(alpha: 0.6), // Glassmorphism base
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(
+                                color: Colors.cyanAccent.withValues(alpha: 0.3),
+                                width: 1.5,
+                              ),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.cyanAccent.withValues(alpha: 0.05),
+                                  blurRadius: 15,
+                                  spreadRadius: 2,
+                                ),
+                              ],
                             ),
                             child: Row(
                               children: [
-                                const Icon(Icons.lightbulb_outline, color: Colors.amber, size: 24),
-                                const SizedBox(width: 12),
+                                Container(
+                                  padding: const EdgeInsets.all(8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.amber.withValues(alpha: 0.15),
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: const Icon(Icons.lightbulb_outline, color: Colors.amberAccent, size: 22),
+                                ),
+                                const SizedBox(width: 16),
                                 Expanded(
                                   child: Text(
                                     _facts[_factIndex],
                                     style: const TextStyle(
-                                      color: Colors.white70,
-                                      fontSize: 12,
+                                      color: Colors.white,
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic,
+                                      height: 1.4,
+                                      letterSpacing: 0.5,
                                     ),
                                     textAlign: TextAlign.left,
                                   ),
