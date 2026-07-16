@@ -10,13 +10,10 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMixin {
+class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _scaleAnimation;
   late Animation<double> _opacityAnimation;
-  
-  late AnimationController _floatController;
-  late Animation<double> _floatAnimation;
 
   @override
   void initState() {
@@ -24,24 +21,16 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     
     _animationController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 2000), // Extended animation duration
+      duration: const Duration(milliseconds: 2500),
     );
 
-    _scaleAnimation = Tween<double>(begin: 0.6, end: 1.0).animate(
-      CurvedAnimation(parent: _animationController, curve: Curves.elasticOut),
+    // Subtle, elegant zoom in
+    _scaleAnimation = Tween<double>(begin: 0.95, end: 1.05).animate(
+      CurvedAnimation(parent: _animationController, curve: Curves.easeOutCubic),
     );
 
     _opacityAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(parent: _animationController, curve: Curves.easeIn),
-    );
-
-    _floatController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 2000),
-    )..repeat(reverse: true);
-    
-    _floatAnimation = Tween<double>(begin: -10.0, end: 10.0).animate(
-      CurvedAnimation(parent: _floatController, curve: Curves.easeInOutSine),
     );
 
     _animationController.forward();
@@ -86,7 +75,6 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
   @override
   void dispose() {
     _animationController.dispose();
-    _floatController.dispose();
     super.dispose();
   }
 
@@ -105,97 +93,66 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    // Floating & Glowing Einstein
-                    AnimatedBuilder(
-                      animation: _floatAnimation,
-                      builder: (context, child) {
-                        return Transform.translate(
-                          offset: Offset(0, _floatAnimation.value),
-                          child: Container(
-                            padding: const EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.cyanAccent.withValues(alpha: 0.2),
-                                  blurRadius: 80,
-                                  spreadRadius: 20,
-                                ),
-                                BoxShadow(
-                                  color: Colors.purpleAccent.withValues(alpha: 0.2),
-                                  blurRadius: 120,
-                                  spreadRadius: 40,
-                                ),
-                              ],
-                            ),
-                            child: Image.asset(
-                              'assets/images/einstein_splash.png',
-                              width: 220,
-                              height: 220,
-                              fit: BoxFit.contain,
-                            ),
+                    // Elegant Premium Einstein Bust
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withValues(alpha: 0.3),
+                            blurRadius: 30,
+                            spreadRadius: 5,
+                            offset: const Offset(0, 10),
                           ),
-                        );
-                      }
-                    ),
-                    const SizedBox(height: 50),
-                    // Metallic Golden Text
-                    ShaderMask(
-                      shaderCallback: (bounds) => const LinearGradient(
-                        colors: [Color(0xFFFFD700), Color(0xFFFFA500), Color(0xFFFF8C00)],
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                      ).createShader(bounds),
-                      child: const Text(
-                        'BİL KAZAN',
-                        style: TextStyle(
-                          fontSize: 42,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.white,
-                          letterSpacing: 8,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black87,
-                              blurRadius: 15,
-                              offset: Offset(0, 6),
-                            ),
-                          ],
+                        ],
+                      ),
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/images/einstein_splash.png',
+                          width: 200,
+                          height: 200,
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
-                    const SizedBox(height: 12),
-                    Text(
-                      'Zekanı Konuştur',
+                    const SizedBox(height: 50),
+                    // Minimalist Premium Typography
+                    const Text(
+                      'BİL KAZAN',
                       style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.cyanAccent.withValues(alpha: 0.8),
-                        letterSpacing: 4,
+                        fontSize: 32,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.white,
+                        letterSpacing: 12,
+                        shadows: [
+                          Shadow(
+                            color: Colors.black45,
+                            blurRadius: 10,
+                            offset: Offset(0, 4),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    Text(
+                      'ZEKANI KONUŞTUR',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w300,
+                        color: Colors.white.withValues(alpha: 0.6),
+                        letterSpacing: 8,
                       ),
                     ),
                     const SizedBox(height: 70),
-                    // Modern sleek loading indicator
-                    Column(
-                      children: [
-                        const SizedBox(
-                          width: 40,
-                          height: 40,
-                          child: CircularProgressIndicator(
-                            valueColor: AlwaysStoppedAnimation<Color>(Colors.cyanAccent),
-                            strokeWidth: 4,
-                          ),
-                        ),
-                        const SizedBox(height: 20),
-                        Text(
-                          'YÜKLENİYOR...',
-                          style: TextStyle(
-                            color: Colors.white.withValues(alpha: 0.5),
-                            fontSize: 12,
-                            letterSpacing: 2,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        )
-                      ],
+                    // Sleek Loading Indicator
+                    SizedBox(
+                      width: 120,
+                      height: 2,
+                      child: LinearProgressIndicator(
+                        backgroundColor: Colors.white.withValues(alpha: 0.1),
+                        valueColor: const AlwaysStoppedAnimation<Color>(Colors.white70),
+                      ),
                     ),
                   ],
                 ),
