@@ -95,15 +95,15 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                   children: [
                     // Elegant Premium Einstein Bust
                     Container(
-                      padding: const EdgeInsets.all(4),
+                      padding: const EdgeInsets.all(2), // Thin border
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
+                        border: Border.all(color: Colors.cyanAccent.withValues(alpha: 0.6), width: 2),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withValues(alpha: 0.3),
-                            blurRadius: 30,
-                            spreadRadius: 5,
-                            offset: const Offset(0, 10),
+                            color: Colors.cyanAccent.withValues(alpha: 0.15),
+                            blurRadius: 40,
+                            spreadRadius: 10,
                           ),
                         ],
                       ),
