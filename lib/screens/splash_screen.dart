@@ -52,18 +52,18 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
       } catch (_) {}
     }
     
-    if (user != null) {
+    // Hala null ise (yani ilk defa oyuna giriyorsa), otomatik olarak Misafir Girişi yap!
+    if (user == null) {
+      try {
+        await FirebaseAuth.instance.signInAnonymously();
+      } catch (_) {}
+    }
+
+    // Her durumda (eski hesap veya yeni misafir) direkt Ana Ekrana yönlendir.
+    if (mounted) {
       Navigator.of(context).pushReplacement(
         PageRouteBuilder(
           pageBuilder: (_, __, ___) => const HomeScreen(),
-          transitionsBuilder: (_, animation, __, child) => FadeTransition(opacity: animation, child: child),
-          transitionDuration: const Duration(milliseconds: 800),
-        )
-      );
-    } else {
-      Navigator.of(context).pushReplacement(
-        PageRouteBuilder(
-          pageBuilder: (_, __, ___) => const LoginScreen(),
           transitionsBuilder: (_, animation, __, child) => FadeTransition(opacity: animation, child: child),
           transitionDuration: const Duration(milliseconds: 800),
         )
