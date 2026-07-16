@@ -63,6 +63,54 @@ class SettingsScreen extends StatelessWidget {
             
             _buildSectionHeader('HESAP VE VERİ'),
             
+            // Kullanıcı E-posta Bilgisi Gösterimi
+            Container(
+              margin: const EdgeInsets.only(bottom: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+              decoration: BoxDecoration(
+                color: isAnonymous ? Colors.white.withValues(alpha: 0.05) : Colors.green.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(15),
+                border: Border.all(
+                  color: isAnonymous ? Colors.white24 : Colors.greenAccent.withValues(alpha: 0.5), 
+                  width: 1
+                ),
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    isAnonymous ? Icons.person_outline : Icons.mark_email_read_rounded, 
+                    color: isAnonymous ? Colors.white54 : Colors.greenAccent, 
+                    size: 28
+                  ),
+                  const SizedBox(width: 15),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Kayıtlı E-posta:',
+                          style: TextStyle(
+                            color: isAnonymous ? Colors.white54 : Colors.greenAccent,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          isAnonymous ? 'Misafir Hesap (Kaydedilmedi)' : (FirebaseAuth.instance.currentUser?.email ?? 'Bilinmiyor'),
+                          style: const TextStyle(
+                            color: Colors.white, 
+                            fontSize: 15, 
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            
             if (isAnonymous)
               GestureDetector(
                 onTap: () => _showLinkAccountDialog(context),
