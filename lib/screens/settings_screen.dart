@@ -204,7 +204,8 @@ class SettingsScreen extends StatelessWidget {
   void _showLinkAccountDialog(BuildContext context) {
     final emailCtrl = TextEditingController();
     final passCtrl = TextEditingController();
-    final nameCtrl = TextEditingController();
+    final currentName = Provider.of<QuizProvider>(context, listen: false).userName;
+    final nameCtrl = TextEditingController(text: currentName);
     bool isLoading = false;
     String errorMessage = '';
 
