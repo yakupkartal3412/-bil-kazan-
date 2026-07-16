@@ -1,2959 +1,2634 @@
 [
   {
-    "id": "53968ca5-528a-4df3-b3ea-faf51ac947cd",
+    "id": "7e0f40f3-5532-4dfe-9c35-704b2b9a6931",
     "category": "Co\u011frafya",
-    "difficulty": 2,
+    "difficulty": 3,
     "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Almanya'nin ba\u015fkentidir?",
     "options": [
-      "Stokholm",
-      "Viyana",
-      "Berlin",
-      "\u0130slamabad"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "9a5a9b17-62ce-467d-93e5-806bdf2cb885",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Fransa'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Tokyo",
-      "Paris",
-      "Amsterdam",
-      "Bogota"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "02759681-84f0-4edc-995e-14a93f9639a8",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u0130talya'nin ba\u015fkentidir?",
-    "options": [
-      "Buenos Aires",
-      "Havana",
-      "Lima",
-      "Roma"
+      "Riyad",
+      "Atina",
+      "Kanberra",
+      "Berlin"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "0494fb47-3874-4e88-be52-3a3499ef77f6",
+    "id": "4a75d8a8-eea3-4ae2-86f4-1303374b84a8",
     "category": "Co\u011frafya",
     "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u0130spanya'nin ba\u015fkentidir?",
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Fransa'nin ba\u015fkentidir?",
     "options": [
-      "Stokholm",
-      "Madrid",
-      "Amsterdam",
-      "Yeni Delhi"
+      "Lima",
+      "Ottawa",
+      "Yeni Delhi",
+      "Paris"
     ],
-    "correctOptionIndex": 1
+    "correctOptionIndex": 3
   },
   {
-    "id": "237216c3-4b64-4a52-b16c-bc2222fcfcc5",
+    "id": "d25586e6-2a10-4f86-a71a-34c699297854",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "\u0130talya'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
+    "options": [
+      "Roma",
+      "Kahire",
+      "Bangkok",
+      "Kanberra"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9e0a1af3-3c78-4643-a6c9-2feb0b1d636d",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "\u0130spanya \u00fclkesinin ba\u015fkenti neresidir?",
+    "options": [
+      "Madrid",
+      "\u015eam",
+      "Br\u00fcksel",
+      "Helsinki"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "02c2e0d1-8944-4c9b-828e-25ba30359eee",
     "category": "Co\u011frafya",
     "difficulty": 3,
     "text": "T\u00fcrkiye'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
     "options": [
-      "Bangkok",
-      "Kuala Lumpur",
+      "Roma",
       "Ankara",
-      "Madrid"
+      "Karakas",
+      "Viyana"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6bf8758c-74e4-4f65-ba04-2f18281001c0",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "Japonya'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
+    "options": [
+      "Kahire",
+      "Manila",
+      "Tokyo",
+      "Paris"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "60276b83-b751-440b-8c25-951c6cd349b3",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Japonya'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Yeni Delhi",
-      "Brasilia",
-      "Pekin",
-      "Tokyo"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "42dcbd01-0d3c-49a2-aad1-1067fa9cc090",
+    "id": "7a226b8e-5d11-4264-9d6c-418185180719",
     "category": "Co\u011frafya",
     "difficulty": 1,
     "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u00c7in'nin ba\u015fkentidir?",
     "options": [
       "\u015eam",
-      "Pekin",
-      "Oslo",
-      "Bangkok"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "b39ab32d-aa30-483f-818d-c19c8811b0c5",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "Rusya'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Amsterdam",
-      "Moskova",
-      "Cakarta",
-      "Ottawa"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "9751ccc0-49f3-473e-809d-81f4e8c7eca8",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Brezilya'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Brasilia",
-      "Dublin",
-      "Kanberra",
-      "Paris"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "6e2479be-7007-4323-bd16-a4ad3c5e9994",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Arjantin'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Buenos Aires",
-      "Pekin",
-      "Viyana",
-      "Kuala Lumpur"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "e979b4e2-ce75-4d4f-9d8c-6afd0c7eaff2",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Meksika'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Kuala Lumpur",
-      "Lizbon",
-      "Meksiko",
-      "Kahire"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "d70354d6-ba0a-4c97-a755-2bf03347aade",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Kanada \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Bangkok",
-      "Pekin",
-      "Helsinki",
-      "Ottawa"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "23392bd8-1a36-495f-845d-07fb586e2615",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "Avustralya'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Ankara",
-      "Kanberra",
-      "Var\u015fova",
-      "Ba\u011fdat"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "89dde8f0-e3c5-4693-8819-f93dd1341f73",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "G\u00fcney Kore'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Madrid",
-      "Seul",
-      "Stokholm",
-      "Karakas"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "50d06bdc-5172-4eda-b96d-3cc2a292bdf8",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Haritada M\u0131s\u0131r \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Kahire",
-      "Var\u015fova",
-      "Yeni Delhi",
-      "Hanoi"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "0f10f740-7fc5-4860-b80d-bc5147a8f4a4",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Hindistan'nin ba\u015fkentidir?",
-    "options": [
-      "Yeni Delhi",
-      "Buenos Aires",
       "Budape\u015fte",
-      "Madrid"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "9c4791ca-6868-4973-b494-01a079a911b2",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "\u0130ngiltere'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Lima",
-      "Lizbon",
-      "Madrid",
-      "Londra"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "11eb2d32-b638-4ae2-9b9b-bfb1a0614d6b",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "Haritada Yunanistan \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Manila",
-      "Atina",
-      "Lima",
-      "Meksiko"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "74590e0c-ba5b-4745-8653-e5779b212923",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Haritada \u0130sve\u00e7 \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Santiago",
-      "Stokholm",
-      "Paris",
-      "Meksiko"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "9696baf9-f9d5-44e8-9668-c31b7f17c5d0",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Norve\u00e7 \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Oslo",
-      "Br\u00fcksel",
-      "Lima",
-      "Dublin"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "2d11e006-e94b-46eb-a350-45127002c516",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Finlandiya'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Helsinki",
-      "Meksiko",
-      "Viyana",
-      "Roma"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "ecc44e91-cfd1-48c9-a199-9a6c70475e66",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Portekiz'nin ba\u015fkentidir?",
-    "options": [
-      "Oslo",
-      "Lizbon",
-      "Moskova",
-      "Bogota"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "b54393ff-5f4c-4995-8596-8ef946341cd4",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Hollanda'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Berlin",
-      "Ankara",
-      "Seul",
-      "Amsterdam"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "dfbf5697-d39a-4c5e-b1fc-ec6b9bb67d4d",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Haritada Bel\u00e7ika \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Tahran",
-      "Prag",
-      "Hanoi",
-      "Br\u00fcksel"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d5908429-bf4a-4b07-93f3-ee3704381ea8",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "Polonya'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Var\u015fova",
-      "Manila",
-      "Brasilia",
-      "Oslo"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "3fc08044-2ef5-43f7-9e78-5c0513870693",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Avusturya \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Paris",
-      "Viyana",
-      "Havana",
-      "Tahran"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "7177238b-6d0d-485c-a924-1292b01ba00d",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "\u0130svi\u00e7re'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Bern",
-      "Seul",
-      "\u0130slamabad",
-      "Roma"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "e08b94dc-b68f-4ded-9052-63aebc77ecec",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Macaristan'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Madrid",
-      "Kahire",
-      "Budape\u015fte",
+      "Pekin",
       "Atina"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "43241a29-783c-4417-8514-486d544d1994",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "\u00c7ekya \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Helsinki",
-      "Lima",
-      "Prag",
-      "Tokyo"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "6f610b03-83ac-43b9-b767-4cbbc2971f8b",
+    "id": "ca451d8a-209f-4998-9ddf-3d37d4505af3",
     "category": "Co\u011frafya",
     "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u0130rlanda'nin ba\u015fkentidir?",
+    "text": "Rusya \u00fclkesinin ba\u015fkenti neresidir?",
     "options": [
-      "Bogota",
-      "Kanberra",
-      "Roma",
-      "Dublin"
+      "Hanoi",
+      "Moskova",
+      "Brasilia",
+      "\u015eam"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "ce0791bc-225a-4105-bbe1-b4780cc3dc42",
+    "category": "Co\u011frafya",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Brezilya'nin ba\u015fkentidir?",
+    "options": [
+      "Ba\u011fdat",
+      "\u0130slamabad",
+      "Budape\u015fte",
+      "Brasilia"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "ee1307e7-fd6b-4835-9607-f3b551f7bfd9",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "K\u00fcba'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Havana",
-      "Prag",
-      "Lizbon",
-      "Ankara"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "bc14c170-ab32-4cd1-b565-9e05b59ae217",
+    "id": "e8b04c45-5fac-4e35-b3ea-f7297f7b5a32",
     "category": "Co\u011frafya",
     "difficulty": 3,
-    "text": "Peru'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
+    "text": "Haritada Arjantin \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
     "options": [
-      "Kuala Lumpur",
-      "Havana",
-      "Lima",
-      "Oslo"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "0a2f067d-ef15-483c-be2d-3701eb8ff6c2",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "\u015eili \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Helsinki",
-      "Karakas",
-      "Kahire",
-      "Santiago"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "f80b4bba-243a-4d16-92d4-78d2a6145dc8",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Haritada Kolombiya \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Bangkok",
-      "Havana",
-      "Br\u00fcksel",
+      "Buenos Aires",
+      "Meksiko",
+      "Paris",
       "Bogota"
     ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7d7b5104-57a0-4607-a7f9-feea57d4c319",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "Meksika'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
+    "options": [
+      "Bangkok",
+      "Bern",
+      "Br\u00fcksel",
+      "Meksiko"
+    ],
     "correctOptionIndex": 3
   },
   {
-    "id": "a579426c-8e16-4391-9569-e607cf964f33",
+    "id": "41e214d0-2549-4955-add7-e64ba1b6ff3b",
     "category": "Co\u011frafya",
     "difficulty": 3,
-    "text": "Venezuela'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
+    "text": "Kanada'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
     "options": [
+      "Santiago",
+      "Viyana",
+      "Kanberra",
+      "Ottawa"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "99d10307-e495-413f-a099-39a6be0ea77f",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "Haritada Avustralya \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
+    "options": [
+      "Kanberra",
       "Karakas",
-      "Meksiko",
-      "Ba\u011fdat",
+      "Cakarta",
+      "Bern"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "83a01a87-4cd9-4444-9e07-ad9d5d56a81f",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "G\u00fcney Kore'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
+    "options": [
+      "Roma",
+      "Seul",
+      "Lima",
       "Dublin"
     ],
-    "correctOptionIndex": 0
+    "correctOptionIndex": 1
   },
   {
-    "id": "994de45f-2032-479b-b413-9007a1a25567",
+    "id": "7f33a2b8-74cc-436a-ad81-53ab9ae5f25d",
     "category": "Co\u011frafya",
     "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Irak'nin ba\u015fkentidir?",
+    "text": "Haritada M\u0131s\u0131r \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
     "options": [
-      "Ba\u011fdat",
-      "Berlin",
-      "Madrid",
-      "Yeni Delhi"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "76c3fce2-a099-4c54-8661-013e665471f1",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "\u0130ran'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Seul",
-      "Tahran",
-      "Berlin",
+      "Tokyo",
+      "Kahire",
+      "Manila",
       "Ba\u011fdat"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "08a0a3ff-7db6-4152-a598-23c25ef749c7",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Suriye'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Ankara",
-      "Viyana",
-      "Budape\u015fte",
-      "\u015eam"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "674dfbde-a41c-4254-800b-d9a0f60eca59",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Suudi Arabistan \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Riyad",
-      "Meksiko",
-      "Oslo",
-      "Budape\u015fte"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "8b9fb4c3-3faf-4bab-a004-152c541bd3cc",
+    "id": "3e45edf2-f196-4db1-8a41-4be136015e8c",
     "category": "Co\u011frafya",
     "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Pakistan'nin ba\u015fkentidir?",
+    "text": "Hindistan'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
     "options": [
+      "Manila",
+      "Kanberra",
+      "Yeni Delhi",
+      "Madrid"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c8f8f69b-4333-400c-a254-b894d18b0f6f",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "\u0130ngiltere \u00fclkesinin ba\u015fkenti neresidir?",
+    "options": [
+      "Lima",
+      "Londra",
       "Oslo",
-      "\u0130slamabad",
-      "Santiago",
-      "Londra"
+      "Helsinki"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "2674093a-5137-4d8b-a70f-b099807fc42c",
+    "id": "147a9889-a5c2-42e7-9898-24b9a711eeb2",
     "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Endonezya'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
+    "difficulty": 2,
+    "text": "Yunanistan'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
     "options": [
-      "Amsterdam",
+      "Ankara",
+      "Atina",
+      "Tokyo",
+      "Karakas"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "2bebf441-a777-4eb0-984f-cf2770081c9d",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "\u0130sve\u00e7'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
+    "options": [
+      "Yeni Delhi",
+      "Lima",
+      "Stokholm",
+      "\u015eam"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a2445dbd-01b5-496a-907c-795ddef95232",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "Norve\u00e7 \u00fclkesinin ba\u015fkenti neresidir?",
+    "options": [
       "Viyana",
+      "Kanberra",
       "Karakas",
-      "Cakarta"
+      "Oslo"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "675eb0aa-afd0-4b11-8ebb-41bd57b18a62",
+    "id": "b2feebea-3fb6-4f48-aea2-8ca1a17a8ace",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Finlandiya'nin ba\u015fkentidir?",
+    "options": [
+      "Atina",
+      "Tokyo",
+      "Yeni Delhi",
+      "Helsinki"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "c582477b-8388-4991-b8f5-a0e84594cf75",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "Haritada Portekiz \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
+    "options": [
+      "Pekin",
+      "Moskova",
+      "Kuala Lumpur",
+      "Lizbon"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "325f294e-5d88-46ec-8953-3f153997ffcc",
     "category": "Co\u011frafya",
     "difficulty": 2,
-    "text": "Tayland'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
+    "text": "Hollanda'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
     "options": [
-      "Bangkok",
-      "Madrid",
-      "Viyana",
-      "Dublin"
+      "Seul",
+      "Amsterdam",
+      "Cakarta",
+      "Prag"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "4e7865dc-f54e-41f0-b41e-77b12e359995",
+    "category": "Co\u011frafya",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Bel\u00e7ika'nin ba\u015fkentidir?",
+    "options": [
+      "Br\u00fcksel",
+      "\u015eam",
+      "Kanberra",
+      "Viyana"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "185fc254-3e69-47c0-9265-5e7171b52bcb",
+    "id": "67f7e540-2c56-410f-a446-dc4dfc7b5a72",
     "category": "Co\u011frafya",
     "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Malezya'nin ba\u015fkentidir?",
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Polonya'nin ba\u015fkentidir?",
     "options": [
-      "Havana",
-      "Kahire",
-      "Kuala Lumpur",
+      "Berlin",
+      "Var\u015fova",
+      "Meksiko",
+      "Ottawa"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "88e241e4-230e-4664-a9dd-489677994764",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "Avusturya \u00fclkesinin ba\u015fkenti neresidir?",
+    "options": [
+      "Ankara",
+      "Viyana",
+      "Amsterdam",
+      "Helsinki"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f031071c-2362-40cb-b607-9fd1b43e4789",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u0130svi\u00e7re'nin ba\u015fkentidir?",
+    "options": [
+      "Bern",
+      "Var\u015fova",
+      "Bangkok",
+      "Cakarta"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9435caa1-91ce-44e2-9366-08b5d3619959",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Macaristan'nin ba\u015fkentidir?",
+    "options": [
+      "Bogota",
+      "Budape\u015fte",
+      "Viyana",
+      "Santiago"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "ebcb813c-f1cb-42ad-9c08-e03a6d2dcdad",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u00c7ekya'nin ba\u015fkentidir?",
+    "options": [
+      "Prag",
+      "Yeni Delhi",
+      "Bogota",
+      "Bern"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "68fc1de8-3e56-471f-9241-bd97203dd0f8",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u0130rlanda'nin ba\u015fkentidir?",
+    "options": [
+      "Lima",
+      "Amsterdam",
+      "Dublin",
       "Manila"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "46f99901-3d67-432b-bc06-e0d231b29084",
+    "id": "f67bfbf3-aa0c-4c29-97fb-3531fc2a7631",
     "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Filipinler'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
+    "difficulty": 1,
+    "text": "Haritada K\u00fcba \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
     "options": [
-      "Br\u00fcksel",
-      "Manila",
-      "Lizbon",
-      "\u0130slamabad"
+      "Madrid",
+      "Havana",
+      "Paris",
+      "Bern"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "e76c2f3b-50ea-49b0-8f82-7527a9f97800",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Vietnam'nin ba\u015fkentidir?",
-    "options": [
-      "Lima",
-      "Ankara",
-      "Hanoi",
-      "Moskova"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "0089b709-5e53-48c6-bd1e-e1951a46448c",
+    "id": "76bcb096-b5e2-44d4-80e4-07352a1ddb0a",
     "category": "Co\u011frafya",
     "difficulty": 2,
-    "text": "D\u00fcnyaca \u00fcnl\u00fc Everest da\u011f\u0131na t\u0131rmanmak isteyen bir da\u011fc\u0131 hangi k\u0131taya gitmelidir?",
+    "text": "Peru \u00fclkesinin ba\u015fkenti neresidir?",
     "options": [
-      "Asya",
-      "Afrika",
-      "Kuzey Amerika",
-      "Okyanusya"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "026a1151-65d0-49e1-9a4c-e11a61eb0b64",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "D\u00fcnyaca \u00fcnl\u00fc Kilimanjaro da\u011f\u0131na t\u0131rmanmak isteyen bir da\u011fc\u0131 hangi k\u0131taya gitmelidir?",
-    "options": [
-      "Afrika",
-      "Kuzey Amerika",
-      "G\u00fcney Amerika",
-      "Okyanusya"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "75b8e996-7913-4f73-b6f6-f75b6984a67a",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "D\u00fcnyaca \u00fcnl\u00fc Elbrus da\u011f\u0131na t\u0131rmanmak isteyen bir da\u011fc\u0131 hangi k\u0131taya gitmelidir?",
-    "options": [
-      "G\u00fcney Amerika",
-      "Kuzey Amerika",
-      "Asya",
-      "Avrupa"
+      "Ba\u011fdat",
+      "Oslo",
+      "Madrid",
+      "Lima"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "7a7843a6-0331-47e0-940a-1a8f9246b411",
+    "id": "10645b86-c515-44b6-9b37-94b36d678ebd",
     "category": "Co\u011frafya",
     "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki k\u0131talardan hangisi Aconcagua da\u011f\u0131na ev sahipli\u011fi yapmaktad\u0131r?",
+    "text": "\u015eili \u00fclkesinin ba\u015fkenti neresidir?",
     "options": [
-      "Avrupa",
-      "G\u00fcney Amerika",
+      "Ba\u011fdat",
+      "Amsterdam",
+      "Santiago",
+      "Bogota"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "9399e704-2342-41e2-8b8d-7192fd2e21ce",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "Kolombiya \u00fclkesinin ba\u015fkenti neresidir?",
+    "options": [
+      "Karakas",
+      "Br\u00fcksel",
+      "Kuala Lumpur",
+      "Bogota"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a4775852-f304-49dd-b787-f72e3d981fcb",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "Venezuela'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
+    "options": [
+      "Karakas",
+      "Tahran",
+      "Ankara",
+      "Lima"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "bba55878-a247-47f5-b2e7-2ea02a1e989c",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "Haritada Irak \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
+    "options": [
+      "Kuala Lumpur",
+      "Ba\u011fdat",
+      "Br\u00fcksel",
+      "Yeni Delhi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "64c5736e-aa92-439b-994a-13dae970d68c",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u0130ran'nin ba\u015fkentidir?",
+    "options": [
+      "Tahran",
+      "Var\u015fova",
+      "Pekin",
+      "Ottawa"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b91401eb-26c4-4553-9185-c89861635824",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "Suriye'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
+    "options": [
+      "\u015eam",
+      "Londra",
+      "Lizbon",
+      "Seul"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "8479fe10-7e7b-4f82-9796-e07c27a961a1",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Suudi Arabistan'nin ba\u015fkentidir?",
+    "options": [
+      "Riyad",
+      "Var\u015fova",
+      "Londra",
+      "Budape\u015fte"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "ff86e9b1-5c43-4494-b723-64da0ca09bf2",
+    "category": "Co\u011frafya",
+    "difficulty": 2,
+    "text": "Pakistan'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
+    "options": [
+      "Seul",
+      "\u0130slamabad",
+      "Oslo",
+      "Bogota"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "af457b8c-07f1-450a-a333-642383020384",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "Endonezya'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
+    "options": [
+      "Amsterdam",
+      "Cakarta",
+      "Santiago",
+      "Meksiko"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "cbe0f2d8-3947-4163-a5d1-53a143d1fdf0",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "Tayland \u00fclkesinin ba\u015fkenti neresidir?",
+    "options": [
+      "Bangkok",
+      "Riyad",
+      "Roma",
+      "Karakas"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "ab91053c-e92b-4f66-9b1b-05dacf9fb9ca",
+    "category": "Co\u011frafya",
+    "difficulty": 2,
+    "text": "Malezya \u00fclkesinin ba\u015fkenti neresidir?",
+    "options": [
+      "Lizbon",
+      "Kanberra",
+      "Atina",
+      "Kuala Lumpur"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "67aad6d6-c0eb-411f-be1f-43be365807fb",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "Filipinler \u00fclkesinin ba\u015fkenti neresidir?",
+    "options": [
+      "Viyana",
+      "Dublin",
+      "Manila",
+      "\u015eam"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "2e8918d0-3427-4dff-aa06-fafebbc72746",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Vietnam'nin ba\u015fkentidir?",
+    "options": [
+      "Hanoi",
+      "Amsterdam",
+      "Prag",
+      "Ankara"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "880e46c3-ecd4-4f11-8131-79799c9b541e",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "D\u00fcnyaca \u00fcnl\u00fc Everest da\u011f\u0131na t\u0131rmanmak isteyen bir da\u011fc\u0131 hangi k\u0131taya gitmelidir?",
+    "options": [
       "Asya",
+      "Antarktika",
+      "Okyanusya",
+      "G\u00fcney Amerika"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "778b78b7-1665-4329-807b-082170f07536",
+    "category": "Co\u011frafya",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki k\u0131talardan hangisi Kilimanjaro da\u011f\u0131na ev sahipli\u011fi yapmaktad\u0131r?",
+    "options": [
+      "Kuzey Amerika",
+      "Afrika",
+      "Antarktika",
+      "Avrupa"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e2b4ea05-3121-4b4d-9f4e-fd9b7299547a",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki k\u0131talardan hangisi Elbrus da\u011f\u0131na ev sahipli\u011fi yapmaktad\u0131r?",
+    "options": [
+      "Kuzey Amerika",
+      "Avrupa",
+      "Asya",
+      "Okyanusya"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "69d39309-ed76-44ba-ab05-7c55bfff59ac",
+    "category": "Co\u011frafya",
+    "difficulty": 3,
+    "text": "D\u00fcnyaca \u00fcnl\u00fc Aconcagua da\u011f\u0131na t\u0131rmanmak isteyen bir da\u011fc\u0131 hangi k\u0131taya gitmelidir?",
+    "options": [
+      "Asya",
+      "Antarktika",
+      "G\u00fcney Amerika",
+      "Afrika"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "1f91d214-5c9a-4b17-b7a1-46d8c3c746f0",
+    "category": "Co\u011frafya",
+    "difficulty": 1,
+    "text": "Denali da\u011f\u0131 hangi k\u0131tada yer almaktad\u0131r?",
+    "options": [
+      "Asya",
+      "Kuzey Amerika",
+      "G\u00fcney Amerika",
       "Antarktika"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "d43184a5-f22d-4729-a921-8a922948be18",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Denali da\u011f\u0131 hangi k\u0131tada yer almaktad\u0131r?",
-    "options": [
-      "Avrupa",
-      "Antarktika",
-      "Asya",
-      "Kuzey Amerika"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "1c02bdb7-6b29-4cfe-a5a7-d656778da1b0",
+    "id": "0f7d3669-968f-41b7-83ee-a07d80d6ae7e",
     "category": "Tarih",
     "difficulty": 2,
     "text": "Osmanl\u0131 tarihinde \u0130stanbul'u fetheden h\u00fck\u00fcmdar kimdir?",
     "options": [
-      "IV. Murat",
+      "Fatih Sultan Mehmet",
       "II. Selim",
-      "Fatih Sultan Mehmet",
-      "Yavuz Sultan Selim"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "73e7ff72-dd3a-426f-84e1-83fc9d37c745",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Tarih kitaplar\u0131nda M\u0131s\u0131r'\u0131 fethedip Halifeli\u011fi Osmanl\u0131'ya getiren ki\u015fi olarak bilinen padi\u015fah a\u015fa\u011f\u0131dakilerden hangisidir?",
-    "options": [
-      "Fatih Sultan Mehmet",
-      "I. Murat",
-      "Gen\u00e7 Osman (II. Osman)",
-      "Yavuz Sultan Selim"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "826da3f2-1e92-466f-8988-8250a878db7b",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Osmanl\u0131 tarihinde Osmanl\u0131'n\u0131n en uzun s\u00fcre tahtta kalan h\u00fck\u00fcmdar kimdir?",
-    "options": [
       "Y\u0131ld\u0131r\u0131m Bayezid",
-      "III. Selim",
-      "Osman Gazi",
-      "Kanuni Sultan S\u00fcleyman"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "04e337a4-9130-440b-b2c6-76626911ec8f",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "Bursa'y\u0131 fetheden Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
-    "options": [
-      "Orhan Gazi",
-      "I. S\u00fcleyman",
-      "IV. Murat",
       "II. Abd\u00fclhamid"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "1854dc08-a0ac-4f88-a6a1-4627f6e943bb",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "Tarih kitaplar\u0131nda Osmanl\u0131 Devleti'nin kurucusu olan ki\u015fi olarak bilinen padi\u015fah a\u015fa\u011f\u0131dakilerden hangisidir?",
-    "options": [
-      "I. S\u00fcleyman",
-      "I. Ahmet",
-      "Osman Gazi",
-      "Orhan Gazi"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "1212357c-5a06-43bb-a7c3-2376434d286a",
+    "id": "e15fbdf8-c38e-421b-b0e0-729614a3c118",
     "category": "Tarih",
     "difficulty": 3,
-    "text": "33 y\u0131l tahtta kalan ve Y\u0131ld\u0131z Saray\u0131'n\u0131 merkez yapan Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
+    "text": "Tarih kitaplar\u0131nda M\u0131s\u0131r'\u0131 fethedip Halifeli\u011fi Osmanl\u0131'ya getiren ki\u015fi olarak bilinen padi\u015fah a\u015fa\u011f\u0131dakilerden hangisidir?",
     "options": [
+      "Y\u0131ld\u0131r\u0131m Bayezid",
       "IV. Murat",
-      "I. Murat",
-      "II. Abd\u00fclhamid",
-      "I. S\u00fcleyman"
+      "Yavuz Sultan Selim",
+      "I. Murat"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "cb0d979d-8741-436e-a061-a6174508b835",
+    "id": "30bdf15a-fd05-4f54-83fb-8d7003591dc2",
     "category": "Tarih",
-    "difficulty": 2,
-    "text": "Ba\u011fdat Fatihi olarak bilinen Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Osmanl\u0131'n\u0131n en uzun s\u00fcre tahtta kalan \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
     "options": [
-      "IV. Murat",
       "Kanuni Sultan S\u00fcleyman",
       "Orhan Gazi",
-      "III. Murat"
+      "II. Selim",
+      "Yavuz Sultan Selim"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "f14a0b68-21de-443a-8445-2396217edf58",
+    "id": "aee5713c-a542-4db2-9f66-bec1d3d504d7",
     "category": "Tarih",
     "difficulty": 1,
-    "text": "Tarih kitaplar\u0131nda Ni\u011fbolu Sava\u015f\u0131'n\u0131 kazanan ki\u015fi olarak bilinen padi\u015fah a\u015fa\u011f\u0131dakilerden hangisidir?",
+    "text": "Bursa'y\u0131 fetheden Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
     "options": [
+      "Orhan Gazi",
+      "Kanuni Sultan S\u00fcleyman",
       "I. Ahmet",
-      "I. Murat",
-      "Y\u0131ld\u0131r\u0131m Bayezid",
-      "Kanuni Sultan S\u00fcleyman"
+      "IV. Murat"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 0
   },
   {
-    "id": "d0e7585b-f2d7-4541-9319-f45bcbb592e7",
+    "id": "829705eb-8bd0-43cf-b262-6d00bb6d6db1",
     "category": "Tarih",
     "difficulty": 3,
-    "text": "Muhte\u015fem unvan\u0131yla bilinen Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
+    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Osmanl\u0131 Devleti'nin kurucusu olan \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
     "options": [
-      "II. Mahmut",
       "II. Selim",
-      "I. S\u00fcleyman",
-      "Yavuz Sultan Selim"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "d33d70db-0399-4ea0-a6e3-fc19f364b80c",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "Tarih kitaplar\u0131nda Nizam-\u0131 Cedid yeniliklerini yapan ki\u015fi olarak bilinen padi\u015fah a\u015fa\u011f\u0131dakilerden hangisidir?",
-    "options": [
-      "Kanuni Sultan S\u00fcleyman",
-      "III. Selim",
-      "II. Selim",
-      "I. Murat"
+      "Osman Gazi",
+      "Gen\u00e7 Osman (II. Osman)",
+      "Y\u0131ld\u0131r\u0131m Bayezid"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "b1001e97-7a0e-4891-93a8-01fc1c558118",
+    "id": "2aeb6f00-7d9f-4caf-aec5-0f7b228709c0",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "33 y\u0131l tahtta kalan ve Y\u0131ld\u0131z Saray\u0131'n\u0131 merkez yapan Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
+    "options": [
+      "II. Abd\u00fclhamid",
+      "II. Selim",
+      "Osman Gazi",
+      "I. Murat"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d822f793-0635-4513-b897-d1eef19beefe",
     "category": "Tarih",
     "difficulty": 1,
-    "text": "Osmanl\u0131 tarihinde Yeni\u00e7eri Oca\u011f\u0131'n\u0131 kald\u0131ran h\u00fck\u00fcmdar kimdir?",
+    "text": "Ba\u011fdat Fatihi olarak bilinen Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
+    "options": [
+      "Yavuz Sultan Selim",
+      "Osman Gazi",
+      "IV. Murat",
+      "Y\u0131ld\u0131r\u0131m Bayezid"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "6b7722d5-90b5-4170-a0bb-ee033a00b10f",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Osmanl\u0131 tarihinde Ni\u011fbolu Sava\u015f\u0131'n\u0131 kazanan h\u00fck\u00fcmdar kimdir?",
+    "options": [
+      "Y\u0131ld\u0131r\u0131m Bayezid",
+      "II. Mahmut",
+      "III. Murat",
+      "I. Ahmet"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "ba997b17-bb3b-424a-983e-3edd23a0b1a6",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Muhte\u015fem unvan\u0131yla bilinen \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
     "options": [
       "I. S\u00fcleyman",
-      "Osman Gazi",
+      "IV. Murat",
+      "Kanuni Sultan S\u00fcleyman",
+      "II. Abd\u00fclhamid"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7d2a4e7a-f36c-45fe-9d17-93baaa20425b",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Nizam-\u0131 Cedid yeniliklerini yapan \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
+    "options": [
+      "III. Selim",
+      "Gen\u00e7 Osman (II. Osman)",
+      "Kanuni Sultan S\u00fcleyman",
+      "II. Abd\u00fclhamid"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0c9fb50b-a48a-4cad-87ed-27dceac85a05",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Yeni\u00e7eri Oca\u011f\u0131'n\u0131 kald\u0131ran \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
+    "options": [
+      "IV. Murat",
       "I. Murat",
+      "III. Murat",
       "II. Mahmut"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "90e0a746-b9ef-4a75-ad13-9c82c22038f3",
+    "id": "ee6d5fb8-b57b-47be-9630-f85cc08d7f1c",
     "category": "Tarih",
-    "difficulty": 1,
-    "text": "Sultanahmet Camii'ni yapt\u0131ran Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
+    "difficulty": 2,
+    "text": "Osmanl\u0131 tarihinde Sultanahmet Camii'ni yapt\u0131ran h\u00fck\u00fcmdar kimdir?",
     "options": [
-      "II. Selim",
-      "III. Murat",
-      "Osman Gazi",
+      "I. S\u00fcleyman",
+      "Y\u0131ld\u0131r\u0131m Bayezid",
+      "I. Murat",
       "I. Ahmet"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "56801ec8-285c-491c-a5b6-1f544df117bb",
+    "id": "5a95e82a-4b96-4b00-b20c-50284fc95de3",
     "category": "Tarih",
     "difficulty": 3,
-    "text": "Kosova Sava\u015f\u0131'nda \u015fehit d\u00fc\u015fen Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
+    "text": "Osmanl\u0131 tarihinde Kosova Sava\u015f\u0131'nda \u015fehit d\u00fc\u015fen h\u00fck\u00fcmdar kimdir?",
     "options": [
-      "Gen\u00e7 Osman (II. Osman)",
-      "Fatih Sultan Mehmet",
       "I. Murat",
-      "II. Selim"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "a1bfc717-7026-4af9-9886-c821f701834d",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Osmanl\u0131 tarihinde Sar\u0131 lakab\u0131yla bilinen h\u00fck\u00fcmdar kimdir?",
-    "options": [
-      "II. Selim",
-      "III. Murat",
-      "I. Murat",
-      "Fatih Sultan Mehmet"
+      "Osman Gazi",
+      "II. Mahmut",
+      "Orhan Gazi"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "3af3bde4-a2be-494d-86d4-4d8580c32bdb",
+    "id": "d89f5435-ed95-4f58-b668-a2cfac2a7a70",
     "category": "Tarih",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Osmanl\u0131'n\u0131n en geni\u015f s\u0131n\u0131rlar\u0131na ula\u015fmas\u0131n\u0131 sa\u011flayan padi\u015fahlardan biri olan \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Sar\u0131 lakab\u0131yla bilinen \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
     "options": [
+      "II. Selim",
+      "Y\u0131ld\u0131r\u0131m Bayezid",
       "Osman Gazi",
-      "Fatih Sultan Mehmet",
-      "I. Murat",
-      "III. Murat"
+      "IV. Murat"
     ],
-    "correctOptionIndex": 3
+    "correctOptionIndex": 0
   },
   {
-    "id": "e511eb2e-703b-44d9-aca8-65b4734c49db",
+    "id": "912fa92b-c329-4e65-ba4e-b02de15a698a",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Osmanl\u0131'n\u0131n en geni\u015f s\u0131n\u0131rlar\u0131na ula\u015fmas\u0131n\u0131 sa\u011flayan padi\u015fahlardan biri olan Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
+    "options": [
+      "Orhan Gazi",
+      "III. Murat",
+      "II. Abd\u00fclhamid",
+      "Kanuni Sultan S\u00fcleyman"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1ebef03-f5e1-4706-9059-237908b38037",
     "category": "Tarih",
     "difficulty": 2,
     "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Yeni\u00e7eriler taraf\u0131ndan \u00f6ld\u00fcr\u00fclen ilk padi\u015fah olan \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
     "options": [
+      "IV. Murat",
       "Gen\u00e7 Osman (II. Osman)",
-      "Y\u0131ld\u0131r\u0131m Bayezid",
-      "II. Selim",
-      "Fatih Sultan Mehmet"
+      "I. Ahmet",
+      "I. S\u00fcleyman"
     ],
-    "correctOptionIndex": 0
+    "correctOptionIndex": 1
   },
   {
-    "id": "a1d1a684-852a-4de3-9fbd-13d680a2fb4b",
+    "id": "5a9115a0-cbe9-4bae-8c12-8793a2350cb9",
     "category": "Tarih",
-    "difficulty": 1,
-    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en Malazgirt Meydan Muharebesi, tam olarak hangi y\u0131l olmu\u015ftur?",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi Malazgirt Meydan Muharebesi ile ili\u015fkilidir?",
     "options": [
-      "1070",
+      "1061",
+      "1066",
       "1071",
-      "1073",
-      "1076"
+      "1069"
     ],
-    "correctOptionIndex": 1
+    "correctOptionIndex": 2
   },
   {
-    "id": "5dd033c6-9727-4fc8-9d7f-fc32b8b115d3",
+    "id": "123c3270-23f6-4571-adbd-4d6a4170f5e2",
     "category": "Tarih",
     "difficulty": 3,
-    "text": "\u0130stanbul'un Fethi hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
+    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en \u0130stanbul'un Fethi, tam olarak hangi y\u0131l olmu\u015ftur?",
     "options": [
-      "1451",
+      "1448",
+      "1458",
       "1453",
-      "1451",
-      "1451"
+      "1452"
     ],
-    "correctOptionIndex": 1
+    "correctOptionIndex": 2
   },
   {
-    "id": "536d9651-7f99-4378-8f39-caaf28d16532",
+    "id": "69ea512e-de77-45d7-8804-230f6fb3ecd7",
     "category": "Tarih",
-    "difficulty": 3,
+    "difficulty": 2,
     "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en Cumhuriyet'in \u0130lan\u0131, tam olarak hangi y\u0131l olmu\u015ftur?",
     "options": [
-      "1918",
-      "1922",
-      "1923",
-      "1925"
+      "1928",
+      "1913",
+      "1913",
+      "1923"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e974e303-7f34-44fd-aa03-485f535a5ee4",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en TBMM'nin A\u00e7\u0131l\u0131\u015f\u0131, tam olarak hangi y\u0131l olmu\u015ftur?",
+    "options": [
+      "1919",
+      "1919",
+      "1920",
+      "1915"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "1b1ca925-c04b-41f8-9212-8df026094a86",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi TBMM'nin A\u00e7\u0131l\u0131\u015f\u0131 ile ili\u015fkilidir?",
-    "options": [
-      "1920",
-      "1918",
-      "1925",
-      "1921"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "82307c65-35f6-4121-a412-0af193f05524",
+    "id": "39fea4b9-0c47-4f76-823f-fee1e3e5821d",
     "category": "Tarih",
     "difficulty": 2,
-    "text": "Tarihteki \u00f6nemli olaylardan olan Preveze Deniz Zaferi, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
+    "text": "Preveze Deniz Zaferi hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
     "options": [
-      "1528",
+      "1539",
       "1538",
-      "1536",
-      "1539"
+      "1543",
+      "1528"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "d88ad715-dcc3-4125-a407-94eaa245462e",
+    "id": "7d72c3d8-17ce-4749-ba46-520c0956afd2",
     "category": "Tarih",
-    "difficulty": 2,
+    "difficulty": 1,
     "text": "Moha\u00e7 Meydan Muharebesi hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
     "options": [
-      "1531",
-      "1521",
-      "1526",
-      "1527"
+      "1528",
+      "1525",
+      "1525",
+      "1526"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 3
   },
   {
-    "id": "a50b5099-4731-4838-8c04-e0a53768e54f",
+    "id": "4e758c6c-74d6-46fc-b619-eaa214199bac",
     "category": "Tarih",
     "difficulty": 3,
-    "text": "\u00c7anakkale Zaferi hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
+    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en \u00c7anakkale Zaferi, tam olarak hangi y\u0131l olmu\u015ftur?",
     "options": [
+      "1916",
       "1915",
       "1905",
-      "1905",
-      "1914"
+      "1925"
     ],
-    "correctOptionIndex": 0
+    "correctOptionIndex": 1
   },
   {
-    "id": "e6d19158-db59-4d29-ae7d-b1f29e9414d1",
+    "id": "9c4e96c7-8156-405a-95b7-5c0316cbee3e",
     "category": "Tarih",
-    "difficulty": 2,
-    "text": "Tarihteki \u00f6nemli olaylardan olan Mustafa Kemal'in Samsun'a \u00e7\u0131k\u0131\u015f\u0131, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
+    "difficulty": 1,
+    "text": "Mustafa Kemal'in Samsun'a \u00e7\u0131k\u0131\u015f\u0131 hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
     "options": [
-      "1920",
       "1921",
-      "1924",
+      "1920",
+      "1909",
       "1919"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "682f3932-5667-4577-97e1-47f8cf6bf21e",
+    "id": "403ca6a9-c8e2-49e0-867b-e799b253e6b6",
     "category": "Tarih",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi Pasinler Sava\u015f\u0131 ile ili\u015fkilidir?",
+    "difficulty": 2,
+    "text": "Pasinler Sava\u015f\u0131 hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
     "options": [
-      "1048",
-      "1050",
-      "1043",
-      "1038"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "90942ee0-c783-42bb-b760-1f33e69be737",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en Miryokefalon Sava\u015f\u0131, tam olarak hangi y\u0131l olmu\u015ftur?",
-    "options": [
-      "1186",
-      "1186",
-      "1177",
-      "1176"
+      "1046",
+      "1049",
+      "1038",
+      "1048"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "fe7288ba-ad08-43b4-bc46-97f6bcc911c5",
+    "id": "418c4fd7-e874-4d06-8170-2224b796ded0",
     "category": "Tarih",
     "difficulty": 1,
-    "text": "Tarihteki \u00f6nemli olaylardan olan Osmanl\u0131'n\u0131n Kurulu\u015fu, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
+    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi Miryokefalon Sava\u015f\u0131 ile ili\u015fkilidir?",
     "options": [
-      "1299",
-      "1304",
-      "1298",
-      "1298"
+      "1178",
+      "1176",
+      "1178",
+      "1186"
     ],
-    "correctOptionIndex": 0
+    "correctOptionIndex": 1
   },
   {
-    "id": "c22c0770-a09c-4c62-9eae-26175da798fa",
+    "id": "9c2bb5e5-8321-4962-9f4b-4651dccdb1a0",
     "category": "Tarih",
     "difficulty": 3,
-    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en Saltanat\u0131n Kald\u0131r\u0131lmas\u0131, tam olarak hangi y\u0131l olmu\u015ftur?",
+    "text": "Tarihteki \u00f6nemli olaylardan olan Osmanl\u0131'n\u0131n Kurulu\u015fu, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
     "options": [
-      "1922",
-      "1921",
-      "1932",
-      "1912"
+      "1309",
+      "1294",
+      "1294",
+      "1299"
     ],
-    "correctOptionIndex": 0
+    "correctOptionIndex": 3
   },
   {
-    "id": "38f19b52-374b-454d-a718-3275a3c885ad",
+    "id": "83953660-1172-4289-9a3b-665834e213b1",
     "category": "Tarih",
     "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi \u00c7ald\u0131ran Sava\u015f\u0131 ile ili\u015fkilidir?",
+    "text": "Tarihteki \u00f6nemli olaylardan olan Saltanat\u0131n Kald\u0131r\u0131lmas\u0131, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
     "options": [
-      "1512",
-      "1513",
-      "1514",
-      "1516"
+      "1924",
+      "1912",
+      "1922",
+      "1917"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "c07414f5-bb16-4669-bb58-f1ae34d41119",
+    "id": "3271baae-66db-4d70-8663-27f1370a4e4d",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en \u00c7ald\u0131ran Sava\u015f\u0131, tam olarak hangi y\u0131l olmu\u015ftur?",
+    "options": [
+      "1524",
+      "1514",
+      "1504",
+      "1524"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "fce5f34d-4e14-4196-8dec-b21ecfb18534",
     "category": "Tarih",
     "difficulty": 3,
-    "text": "Rodos'un Fethi hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
+    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi Rodos'un Fethi ile ili\u015fkilidir?",
     "options": [
       "1512",
       "1522",
-      "1517",
-      "1512"
+      "1520",
+      "1527"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "ffabda86-0b50-4d9f-bdb0-774f8b6a0033",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en Halifeli\u011fin Kald\u0131r\u0131lmas\u0131, tam olarak hangi y\u0131l olmu\u015ftur?",
-    "options": [
-      "1923",
-      "1924",
-      "1925",
-      "1926"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "86d20bec-67b4-44fd-b251-f287e9eabba7",
+    "id": "af0d30e5-6955-4e5c-b0cf-2d05442fdd4f",
     "category": "Tarih",
     "difficulty": 3,
-    "text": "Tarihteki \u00f6nemli olaylardan olan 93 Harbi, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
+    "text": "Tarihteki \u00f6nemli olaylardan olan Halifeli\u011fin Kald\u0131r\u0131lmas\u0131, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
     "options": [
-      "1876",
-      "1875",
-      "1877",
-      "1867"
+      "1924",
+      "1926",
+      "1922",
+      "1926"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 0
   },
   {
-    "id": "25fe5bca-5617-4638-9331-f257c8536d90",
+    "id": "7ccf21fa-887d-4c42-bac8-3bb26a5ab0c1",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi 93 Harbi ile ili\u015fkilidir?",
+    "options": [
+      "1867",
+      "1877",
+      "1882",
+      "1876"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "fda82373-15a1-469e-a888-e3b4ce89a0df",
     "category": "Tarih",
     "difficulty": 2,
     "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi Birinci D\u00fcnya Sava\u015f\u0131'n\u0131n Ba\u015flamas\u0131 ile ili\u015fkilidir?",
     "options": [
-      "1914",
-      "1912",
+      "1913",
       "1924",
-      "1919"
+      "1914",
+      "1913"
     ],
-    "correctOptionIndex": 0
+    "correctOptionIndex": 2
   },
   {
-    "id": "2ee976bb-3051-4134-a2a5-ab78ffd63a75",
-    "category": "Spor",
+    "id": "d5abd4fb-62a7-4890-ab55-e1f5fc7a96cf",
+    "category": "Futbol",
     "difficulty": 2,
-    "text": "2022 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
+    "text": "Hangi futbolcu kariyeri boyunca en \u00e7ok Ballon d'Or \u00f6d\u00fcl\u00fcn\u00fc kazanm\u0131\u015ft\u0131r?",
     "options": [
-      "H\u0131rvatistan",
-      "Uruguay",
-      "Hollanda",
-      "Arjantin"
+      "Diego Maradona",
+      "Pele",
+      "Cristiano Ronaldo",
+      "Lionel Messi"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "85c03fc2-b0f1-4f04-bd91-2cc2a2836c77",
-    "category": "Spor",
+    "id": "046e9827-ba06-469d-8614-4f2af969a335",
+    "category": "Futbol",
     "difficulty": 2,
-    "text": "2018 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
+    "text": "Tarihte 'Sar\u0131 Kanaryalar' lakab\u0131yla bilinen T\u00fcrk futbol kul\u00fcb\u00fc hangisidir?",
     "options": [
-      "Brezilya",
-      "\u0130ngiltere",
-      "Almanya",
-      "Fransa"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "45e427fe-b9bc-4bbe-a4f0-7ed26a4231d6",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2014 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Almanya",
-      "\u0130ngiltere",
-      "Brezilya",
-      "Arjantin"
+      "Fenerbah\u00e7e",
+      "Galatasaray",
+      "Be\u015fikta\u015f",
+      "Trabzonspor"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "12d357cf-e3ed-4e0c-a6d8-c80d84db6e32",
-    "category": "Spor",
+    "id": "0c26ba68-0c3b-4b71-a439-51a3be39fd6b",
+    "category": "Futbol",
     "difficulty": 2,
-    "text": "2010 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Hollanda",
-      "\u0130spanya",
-      "\u0130ngiltere",
-      "Brezilya"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "94871cab-481b-4c90-8ccf-9d7e58405b62",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2006 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "\u0130talya",
-      "Brezilya",
-      "H\u0131rvatistan",
-      "Hollanda"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "1f14feeb-38b9-409c-bcc0-eec97193eb76",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2002 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Almanya",
-      "Brezilya",
-      "Hollanda",
-      "Arjantin"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "f0a28103-8f2f-4321-a5d3-596062524429",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "1998 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Fransa",
-      "Arjantin",
-      "\u0130ngiltere",
-      "H\u0131rvatistan"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "1ef136c2-b1fb-4fef-91ab-73ed84e30ab2",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "1994 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Brezilya",
-      "Hollanda",
-      "\u0130ngiltere",
-      "H\u0131rvatistan"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "938569b8-ae7e-44c7-b9d6-b9bd8885506c",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "1990 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Almanya",
-      "Arjantin",
-      "\u0130ngiltere",
-      "H\u0131rvatistan"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "d1faea8c-bd1a-4609-98ce-ea5a98a7cd1e",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "1986 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "\u0130talya",
-      "\u0130ngiltere",
-      "Uruguay",
-      "Arjantin"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "a310a159-d4ac-4b4b-aea9-cf21eb95f11f",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "1982 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "H\u0131rvatistan",
-      "Arjantin",
-      "\u0130talya",
-      "Brezilya"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "0b82894e-d742-4509-8e8b-c011c3412ad7",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "1978 FIFA D\u00fcnya Kupas\u0131'n\u0131 hangi \u00fclke kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "\u0130ngiltere",
-      "Uruguay",
-      "Fransa",
-      "Arjantin"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d7b60ba4-185e-46fe-8f61-de97fc4eb01a",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Korner' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Voleybol",
-      "Tenis",
-      "Futbol",
-      "Basketbol"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "d725d245-c36e-46fe-a18d-7ebcf0fc83c7",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Ta\u00e7' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Tenis",
-      "Futbol",
-      "Basketbol",
-      "Voleybol"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "73d4f5cd-22d7-4da6-aec9-fdf507e51418",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Ofsayt' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Tenis",
-      "Voleybol",
-      "Futbol",
-      "Basketbol"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "19fb356f-6a04-420c-ae97-a966df654b5b",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Penalt\u0131' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Basketbol",
-      "Voleybol",
-      "Futbol",
-      "Tenis"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "a4b83be0-20e9-483e-8380-44bc4cefd836",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "'Sar\u0131 Kart' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Futbol",
-      "Voleybol",
-      "Tenis",
-      "Basketbol"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "ad453efb-2010-407a-972e-3d31f9f5fe17",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Asist' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Futbol",
-      "Basketbol",
-      "Voleybol",
-      "Tenis"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "8f3a8f7b-588c-4004-bea3-ab95fbf2ec82",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Hat-trick' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Voleybol",
-      "Basketbol",
-      "Futbol",
-      "Tenis"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "60f74f55-0de4-4720-a22b-f3a7e8406f6a",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Frikik' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Basketbol",
-      "Tenis",
-      "Futbol",
-      "Voleybol"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "0e2b3bc1-bb53-4366-ac9b-27c9b3a987fe",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Ribaund' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Tenis",
-      "Basketbol",
-      "Voleybol",
-      "Futbol"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "f8bc8fe3-1bb3-4d20-9ab7-4e5451669b31",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "'Turnike' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Tenis",
-      "Voleybol",
-      "Futbol",
-      "Basketbol"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "21665203-de91-4645-9a67-75aba597e47d",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Hatal\u0131 Y\u00fcr\u00fcme' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Basketbol",
-      "Tenis",
-      "Futbol",
-      "Voleybol"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "a12523c1-26dc-44a3-8088-d103f53d5d70",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'\u00dc\u00e7l\u00fck' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Basketbol",
-      "Futbol",
-      "Tenis",
-      "Voleybol"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "7ff4fbff-2ebd-4619-9775-c67d5617d118",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Blok' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Basketbol",
-      "Futbol",
-      "Tenis",
-      "Voleybol"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "daf5e3e7-2a53-4be1-81e5-302831e432fd",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Pota' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Basketbol",
-      "Futbol",
-      "Tenis",
-      "Voleybol"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "7c2acd02-5ac5-4c8b-a12e-224867fdaa55",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Tie-break' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Tenis",
-      "Basketbol",
-      "Voleybol",
-      "Futbol"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "cba5e58a-a325-4ef6-927d-780700b74f22",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Ace' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Voleybol",
-      "Futbol",
-      "Basketbol",
-      "Tenis"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "b92f8686-6cc2-4885-80ef-409e95c123f0",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Backhand' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Futbol",
-      "Basketbol",
-      "Tenis",
-      "Voleybol"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "8db08fd6-7ac2-4a20-8bf1-05d132975f24",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Forehand' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Basketbol",
-      "Voleybol",
-      "Tenis",
-      "Futbol"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "4f6234e3-2db8-4877-b690-4af072133630",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Set Say\u0131s\u0131' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Futbol",
-      "Voleybol",
-      "Tenis",
-      "Basketbol"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "03937ebd-bddc-4a74-94b4-c22bb926fb83",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Grand Slam' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Voleybol",
-      "Tenis",
-      "Basketbol",
-      "Futbol"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "28aa6640-fb9f-4586-9cf5-40319f38089a",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Man\u015fet' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Futbol",
-      "Voleybol",
-      "Basketbol",
-      "Tenis"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "15f35891-ea53-41e8-ae54-b6e80bc9b923",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'Sma\u00e7' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Voleybol",
-      "Futbol",
-      "Basketbol",
-      "Tenis"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "fa673f82-012d-46a2-97d5-938c50082fed",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Servis' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Tenis",
-      "Voleybol",
-      "Basketbol",
-      "Futbol"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "c929bda5-acd1-4a8d-a36f-3bbab2f03855",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "'Libero' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Voleybol",
-      "Basketbol",
-      "Futbol",
-      "Tenis"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "34f8dc41-2ebb-45a2-b43a-1a93cb4e8381",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "'File' terimi genellikle hangi sporda kullan\u0131l\u0131r?",
-    "options": [
-      "Tenis",
-      "Voleybol",
-      "Basketbol",
-      "Futbol"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "d0621b80-ca94-4fb2-a9a8-777299d7f152",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2023 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
+    "text": "\u0130ngiltere Premier Lig tarihinde 'The Invincibles' (Yenilmezler) unvan\u0131yla nama\u011flup \u015fampiyon olan tek tak\u0131m hangisidir?",
     "options": [
       "Manchester City",
-      "Real Madrid",
-      "Atletico Madrid",
-      "Milan"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "6f8f9935-d1b4-425e-98b4-ef0714077c52",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2022 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Milan",
-      "Real Madrid",
-      "Juventus",
-      "Atletico Madrid"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "218ac91e-15c1-4b7d-9dbd-574c3c39bf59",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2021 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Inter",
       "Chelsea",
-      "Real Madrid",
-      "Bayern M\u00fcnih"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "a64b0c51-8b50-4096-a1ac-be95d91dfad2",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2020 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Bayern M\u00fcnih",
-      "Manchester United",
-      "Borussia Dortmund",
-      "Juventus"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "3072aa40-0675-423d-8b1a-feefab5243f1",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2019 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Manchester United",
-      "Manchester City",
-      "Liverpool",
-      "PSG"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "69d5e5db-9a4b-4a51-890c-16e937aa6cfb",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2018 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Manchester City",
-      "Real Madrid",
-      "Atletico Madrid",
-      "Juventus"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "2af4d606-b7e9-411d-89b7-c56f23376c3f",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2017 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "PSG",
-      "Borussia Dortmund",
-      "Inter",
-      "Real Madrid"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d89c77d5-62d4-4368-b7cf-575c7118aa14",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2016 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Real Madrid",
-      "Inter",
-      "PSG",
-      "Milan"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "f7f65a53-a57b-4e46-b6e4-f433be9375e3",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2015 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Liverpool",
-      "Manchester United",
-      "Chelsea",
-      "Barcelona"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "48f24eb0-1665-45b6-a27f-f8f919b558ff",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2014 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Milan",
-      "Liverpool",
-      "Atletico Madrid",
-      "Real Madrid"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "24f2b9a0-dac7-435d-a679-6cb33215baef",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2013 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Real Madrid",
-      "Inter",
-      "Manchester City",
-      "Bayern M\u00fcnih"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "73a7c24f-1c06-43f2-98ba-eb194197dc60",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2012 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Manchester United",
-      "Milan",
-      "Chelsea",
-      "Arsenal"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "c83490da-2ccd-48c2-b1cf-e1760b5f443e",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2010 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Atletico Madrid",
-      "Manchester City",
-      "Inter",
-      "Borussia Dortmund"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "8c4b8e57-0808-4f10-bfb6-d84d25b6ae63",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2009 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Liverpool",
-      "Barcelona",
-      "Real Madrid",
-      "Chelsea"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "92283784-f875-416e-9438-ffc0421f44a9",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2008 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Manchester United",
-      "Barcelona",
       "Arsenal",
-      "Borussia Dortmund"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "52524260-8b0b-4e3f-a2fb-1626b5f0b679",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2007 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Arsenal",
-      "Real Madrid",
-      "Bayern M\u00fcnih",
-      "Milan"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "1836b81e-1a4f-44f7-90a5-d265447e934c",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2005 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Chelsea",
-      "Liverpool",
-      "Atletico Madrid",
-      "Manchester City"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "33d15edf-ada1-4c77-9356-dccc0f5278d1",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "1999 y\u0131l\u0131nda UEFA \u015eampiyonlar Ligi'ni hangi tak\u0131m kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Arsenal",
-      "Juventus",
-      "Real Madrid",
       "Manchester United"
     ],
-    "correctOptionIndex": 3
+    "correctOptionIndex": 2
   },
   {
-    "id": "832a28ee-b7cb-436a-bb89-ffb031247bea",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2023 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
+    "id": "c1a43bd8-8d98-40c1-87f2-2d356cdffeca",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Futbolda kendi kalesine at\u0131lan gole ne ad verilir?",
     "options": [
-      "Be\u015fikta\u015f",
-      "Galatasaray",
-      "Trabzonspor",
-      "Sivasspor"
+      "Ofsayt",
+      "Kendi Kalesine Gol (Own Goal)",
+      "R\u00f6va\u015fata",
+      "Frikik"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "8ac77082-31d9-4c1e-8300-51d8ada29129",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2022 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
+    "id": "6186114c-4b5c-4327-87c7-4c07a8195920",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "T\u00fcrkiye S\u00fcper Lig'de 4 y\u0131ld\u0131z takmaya hak kazanan ilk futbol tak\u0131m\u0131 hangisidir?",
     "options": [
       "Trabzonspor",
-      "Bursaspor",
-      "Fenerbah\u00e7e",
-      "Sivasspor"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "24895c89-b630-4837-aaf9-33f39bc9d66c",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2021 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
-    "options": [
       "Galatasaray",
       "Be\u015fikta\u015f",
-      "Trabzonspor",
       "Fenerbah\u00e7e"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "1173226e-08db-401e-b9d1-90a7f068230d",
-    "category": "Spor",
+    "id": "12df827d-1741-4f70-8f00-34c576172ebf",
+    "category": "Futbol",
     "difficulty": 3,
-    "text": "2020 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
+    "text": "Real Madrid'in efsanevi ma\u00e7lar\u0131n\u0131 oynad\u0131\u011f\u0131 d\u00fcnyaca \u00fcnl\u00fc stadyumunun ad\u0131 nedir?",
     "options": [
-      "Sivasspor",
-      "Ba\u015fak\u015fehir",
-      "Galatasaray",
-      "Trabzonspor"
+      "Camp Nou",
+      "Old Trafford",
+      "Allianz Arena",
+      "Santiago Bernabeu"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "cf0592bc-c509-4743-8e58-a6eb61906672",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Futbol tarihinde 'El Pibe de Oro' (Alt\u0131n \u00c7ocuk) lakab\u0131yla tan\u0131nan efsanevi Arjantinli oyuncu kimdir?",
+    "options": [
+      "Alfredo Di Stefano",
+      "Diego Maradona",
+      "Gabriel Batistuta",
+      "Lionel Messi"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "9792dd85-8fe4-4759-8dde-984682967b04",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2019 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
+    "id": "12984b56-1b76-461c-b34f-c3cd556f5469",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "2002 FIFA D\u00fcnya Kupas\u0131'nda T\u00fcrkiye Milli Tak\u0131m\u0131 hangi \u00fclkeyi yenerek d\u00fcnya \u00fc\u00e7\u00fcnc\u00fcs\u00fc olmu\u015ftur?",
     "options": [
-      "Fenerbah\u00e7e",
-      "Ba\u015fak\u015fehir",
-      "Galatasaray",
-      "Sivasspor"
+      "Brezilya",
+      "Japonya",
+      "G\u00fcney Kore",
+      "Senegal"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "42946646-93c5-4a24-a759-52e7d75a63c1",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2018 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
+    "id": "cea86dc3-156a-4ee0-aa24-050a3b4d4c89",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "\u015eampiyonlar Ligi'ni (ve eski ad\u0131yla \u015eampiyon Kul\u00fcpler Kupas\u0131'n\u0131) en \u00e7ok kazanan Avrupa kul\u00fcb\u00fc hangisidir?",
     "options": [
-      "Trabzonspor",
-      "Galatasaray",
-      "Sivasspor",
-      "Fenerbah\u00e7e"
+      "Liverpool",
+      "Milan",
+      "Bayern M\u00fcnih",
+      "Real Madrid"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a76dce48-ed86-4ce2-8f7a-9df7b4279102",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Futbolda rakip tak\u0131m\u0131n savunma arkas\u0131na sark\u0131ld\u0131\u011f\u0131nda kural ihlali say\u0131lan pozisyona ne ad verilir?",
+    "options": [
+      "Ta\u00e7",
+      "Korner",
+      "Ofsayt",
+      "Penalt\u0131"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "bee94c23-0889-46eb-85b6-f0228c671232",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Galatasaray, 2000 y\u0131l\u0131nda UEFA Kupas\u0131 finalinde hangi tak\u0131m\u0131 penalt\u0131larla ge\u00e7erek \u015fampiyon olmu\u015ftur?",
+    "options": [
+      "Leeds United",
+      "Real Madrid",
+      "Arsenal",
+      "Mallorca"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a6b03e17-3c5d-4497-a051-988713745bf7",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Tarihte 'Siyah \u0130nce \u0130nci' veya sadece 'Kral' lakaplar\u0131yla tan\u0131nan, 3 kez D\u00fcnya Kupas\u0131 kazanan tek futbolcu kimdir?",
+    "options": [
+      "Maradona",
+      "Ronaldo Nazario",
+      "Pele",
+      "Ronaldinho"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1f74921-8e0f-47e7-85ad-bd4f827df667",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "\u0130talya Serie A'da 'Ya\u015fl\u0131 Kad\u0131n' (La Vecchia Signora) lakab\u0131yla bilinen tak\u0131m hangisidir?",
+    "options": [
+      "Roma",
+      "Milan",
+      "Juventus",
+      "Inter"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "66ac68a5-d3cb-4717-a0df-e47c7627001e",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "D\u00fcnya futbol tarihinde kalecilerin topu elle tutmas\u0131n\u0131n yasak oldu\u011fu alan\u0131n d\u0131\u015f\u0131ndaki b\u00f6lgeye ne ad verilir?",
+    "options": [
+      "Yar\u0131 alan",
+      "Ceza sahas\u0131 d\u0131\u015f\u0131",
+      "Kale arkas\u0131",
+      "Alt\u0131 pas"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "8d5317b0-f331-4823-bae9-cf8091be2bfb",
-    "category": "Spor",
+    "id": "8698bcdf-d96b-494b-9d6a-bcdbaf9908ea",
+    "category": "Futbol",
     "difficulty": 1,
-    "text": "2017 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
+    "text": "Bir futbol ma\u00e7\u0131nda ayn\u0131 oyuncunun 3 gol atmas\u0131 durumuna verilen isim nedir?",
     "options": [
-      "Sivasspor",
+      "Clean Sheet",
+      "Poker",
+      "Hat-trick",
+      "Duble"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "22199838-fe4f-475f-b65a-6f9396535f22",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Be\u015fikta\u015f'\u0131n efsanevi \u00fc\u00e7l\u00fcs\u00fc 'Metin - Ali - Feyyaz' d\u00f6neminde tak\u0131m\u0131n sembol\u00fc haline gelen isimlerden Feyyaz'\u0131n soyad\u0131 nedir?",
+    "options": [
+      "Y\u0131lmaz",
+      "Tekin",
+      "U\u00e7ar",
+      "G\u00fcler"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "4ce4b911-ed56-4a2c-b811-0dfb8e123999",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "\u0130ngiliz futbolunun kalbi say\u0131lan ve Liverpool'un i\u00e7 saha ma\u00e7lar\u0131n\u0131 oynad\u0131\u011f\u0131 tarihi stadyum neresidir?",
+    "options": [
+      "Old Trafford",
+      "Emirates",
+      "Stamford Bridge",
+      "Anfield Road"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "420607d2-b68b-4e26-aeb6-539d53efef2d",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "T\u00fcrkiye'de ilk resmi futbol ma\u00e7\u0131 hangi iki tak\u0131m aras\u0131nda oynanm\u0131\u015ft\u0131r?",
+    "options": [
+      "Kar\u015f\u0131yaka - Altay",
+      "Galatasaray - Fenerbah\u00e7e",
+      "Be\u015fikta\u015f - Galatasaray",
+      "Moda FC - HMS Imogene"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "3286ba00-62c1-4c1c-a133-d9e855c9abbe",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Futbolda hakemin oyunu sar\u0131 kartla durdurup, ayn\u0131 oyuncuya ikinci sar\u0131dan k\u0131rm\u0131z\u0131 kart g\u00f6stermesi ne anlama gelir?",
+    "options": [
+      "Penalt\u0131 at\u0131\u015f\u0131",
+      "Serbest vuru\u015f",
+      "Uyar\u0131",
+      "Oyundan ihra\u00e7"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "8a0fe862-8779-4274-827e-6c1820a51d98",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "D\u00fcnya Kupas\u0131 tarihinde en \u00e7ok gol atan oyuncu olan Miroslav Klose hangi \u00fclkenin vatanda\u015f\u0131d\u0131r?",
+    "options": [
+      "\u0130svi\u00e7re",
+      "Avusturya",
+      "Polonya",
+      "Almanya"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "f5ca2eae-c430-45c5-8814-8a047f6ee586",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "T\u00fcrkiye Milli Futbol Tak\u0131m\u0131'n\u0131n tarihindeki en \u00e7ok gol atan oyuncusu (T\u00fcm zamanlar\u0131n en golc\u00fcs\u00fc) kimdir?",
+    "options": [
+      "Nihat Kahveci",
+      "Burak Y\u0131lmaz",
+      "Lefter K\u00fc\u00e7\u00fckandonyadis",
+      "Hakan \u015e\u00fck\u00fcr"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "ced38bc6-e7fa-47b8-a2a0-6549a3e8604e",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Futbol oyun kurallar\u0131na g\u00f6re bir tak\u0131m sahada en fazla ka\u00e7 oyuncu ile m\u00fccadele edebilir?",
+    "options": [
+      "10",
+      "9",
+      "11",
+      "12"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "90713709-3694-42b3-82a7-928c4b198322",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Brezilyal\u0131 efsane Ronaldinho'nun ad\u0131yla \u00f6zde\u015fle\u015fen ve topu rakibin bacak aras\u0131ndan ge\u00e7irmeye dayal\u0131 \u00e7al\u0131ma ne denir?",
+    "options": [
+      "G\u00f6kku\u015fa\u011f\u0131",
+      "Plase",
+      "R\u00f6va\u015fata",
+      "Bacak aras\u0131 (Nutmeg)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a0b5f566-f8a2-4afa-9b74-f1266a7860f0",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "\u015eampiyonlar Ligi m\u00fczi\u011fi hangi klasik bestecinin eserinden uyarlanm\u0131\u015ft\u0131r?",
+    "options": [
+      "Johann Sebastian Bach",
+      "Wolfgang Amadeus Mozart",
+      "George Frideric Handel",
+      "Ludwig van Beethoven"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7df96a48-2a1b-4579-9ea6-7e2f0ea64486",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "T\u00fcrkiye'de 'D\u00f6rt B\u00fcy\u00fckler' olarak an\u0131lan tak\u0131mlar\u0131n d\u0131\u015f\u0131nda S\u00fcper Lig \u015fampiyonlu\u011fu ya\u015fayan ilk Anadolu kul\u00fcb\u00fc hangisidir?",
+    "options": [
+      "Ba\u015fak\u015fehir",
       "Trabzonspor",
       "Bursaspor",
+      "Kocaelispor"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "0fe00e0a-bcf3-49fd-ae48-4c322213fa92",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Futbol ma\u00e7lar\u0131nda s\u00fcrenin bitimiyle birlikte hakemin ekledi\u011fi kay\u0131p zamana ne ad verilir?",
+    "options": [
+      "G\u00fcm\u00fc\u015f gol",
+      "Penalt\u0131lar",
+      "Uzatma (Duraklama) anlar\u0131",
+      "Alt\u0131n gol"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "add76a4e-439b-4870-95da-87dc64dafce8",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Hollanda futbolunun felsefesi olan 'Total Futbol'u d\u00fcnyaya tan\u0131tan efsanevi futbol adam\u0131 kimdir?",
+    "options": [
+      "Ruud Gullit",
+      "Johan Cruyff",
+      "Marco van Basten",
+      "Frank Rijkaard"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "0bf360a3-d692-4587-8589-5ed59a4821be",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Avrupa Futbol \u015eampiyonas\u0131 (EURO) tarihinde s\u00fcrpriz bir \u015fekilde 2004 y\u0131l\u0131nda \u015fampiyon olan \u00fclke hangisidir?",
+    "options": [
+      "Yunanistan",
+      "\u00c7ekya",
+      "Danimarka",
+      "Portekiz"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "5e581d3a-69cb-417e-8fdc-ed0eade958e7",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Bir kalecinin kendi ceza sahas\u0131 d\u0131\u015f\u0131nda topa eliyle m\u00fcdahale etmesinin cezas\u0131 genellikle nedir?",
+    "options": [
+      "K\u0131rm\u0131z\u0131 Kart",
+      "Penalt\u0131",
+      "Uyar\u0131",
+      "Sar\u0131 Kart"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b89240cc-e39b-4b3f-bd5c-9f6a0ab53346",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Lionel Messi'nin Barcelona'da giydi\u011fi efsanevi forma numaras\u0131 ka\u00e7t\u0131r?",
+    "options": [
+      "7",
+      "9",
+      "10",
+      "11"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7997333c-c391-481f-ae56-a3621ebc3c36",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Cristiano Ronaldo, profesyonel kariyerine hangi Portekiz kul\u00fcb\u00fcnde ba\u015flam\u0131\u015ft\u0131r?",
+    "options": [
+      "Sporting Lizbon",
+      "Porto",
+      "Benfica",
+      "Braga"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7b611ab2-ed71-437c-bd97-eaabf2cb1a63",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "T\u00fcrkiye S\u00fcper Ligi'nde en \u00e7ok gol krall\u0131\u011f\u0131 ya\u015fayan ve 'Ta\u00e7s\u0131z Kral' lakab\u0131yla an\u0131lan efsane kimdir?",
+    "options": [
+      "Metin Oktay",
+      "Tanju \u00c7olak",
+      "Lefter K\u00fc\u00e7\u00fckandonyadis",
+      "Hakk\u0131 Yeten"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "5b8b4e22-010c-4dde-875c-fba6d976016a",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Basketbolda kendi \u00e7emberine do\u011fru giden topu havada yakalay\u0131p sma\u00e7la bitirmeye ne ad verilir?",
+    "options": [
+      "Pick and Roll",
+      "Fadeaway",
+      "Alley-oop",
+      "Crossover"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "4276dbe5-1e62-4b52-b24b-1c294fc2d4bc",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "NBA tarihinde 'Ekselanslar\u0131' (His Airness) lakab\u0131yla bilinen ve Chicago Bulls ile 6 \u015fampiyonluk kazanan efsane kimdir?",
+    "options": [
+      "Kobe Bryant",
+      "LeBron James",
+      "Magic Johnson",
+      "Michael Jordan"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "5269596f-76b8-4f7f-8ba3-89c5fb951b65",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "T\u00fcrkiye Erkekler Basketbol tarihinde EuroLeague kupas\u0131n\u0131 kazanan ilk tak\u0131m hangisidir?",
+    "options": [
+      "Dar\u00fc\u015f\u015fafaka",
+      "Anadolu Efes",
+      "Galatasaray",
+      "Fenerbah\u00e7e"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "1feb8706-4322-4b2b-b159-0ce2494cf94f",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "Basketbolda h\u00fccum s\u00fcresi (shot clock) standart olarak ka\u00e7 saniyedir?",
+    "options": [
+      "24 saniye",
+      "20 saniye",
+      "15 saniye",
+      "30 saniye"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b8ae9d63-8d9f-4074-aa87-9b55eca0a2b1",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "NBA logosunda silueti bulunan efsanevi basketbolcu kimdir?",
+    "options": [
+      "Wilt Chamberlain",
+      "Bill Russell",
+      "Jerry West",
+      "Larry Bird"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "0b3e7c93-0462-46f1-b0ee-e30a1b3b5a1f",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Bir oyuncunun ma\u00e7 boyunca \u00e7ift haneli istatistiklere 3 farkl\u0131 kategoride (\u00f6rne\u011fin: say\u0131, ribaund, asist) ula\u015fmas\u0131na ne denir?",
+    "options": [
+      "Quadruple-Double",
+      "Buzzer Beater",
+      "Double-Double",
+      "Triple-Double"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "23899aa7-0ef1-4950-98f8-466dc3a845dd",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "EuroLeague tarihinde en \u00e7ok \u015fampiyonluk kazanan ba\u015fantren\u00f6r (Ko\u00e7) kimdir?",
+    "options": [
+      "Ettore Messina",
+      "Ergin Ataman",
+      "Zeljko Obradovic",
+      "Dusan Ivkovic"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "4df514d0-bf70-4dbf-aaf8-1abcd9c87313",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Basketbolda serbest at\u0131\u015f (free throw) \u00e7izgisinden at\u0131lan ve giren her bir \u015fut ka\u00e7 puan de\u011ferindedir?",
+    "options": [
+      "0.5",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6ecd5f5d-c18b-4864-afd3-e12c5cb70429",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "Los Angeles Lakers'\u0131n efsanevi y\u0131ld\u0131z\u0131 Kobe Bryant'\u0131n sahada kulland\u0131\u011f\u0131 lakap neydi?",
+    "options": [
+      "The King",
+      "The Answer",
+      "The Truth",
+      "Black Mamba"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "4b0074d6-27eb-43f5-9a0a-c310cca2b858",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Top s\u00fcrerken (dribbling) topu sektirmeyi b\u0131rak\u0131p iki eliyle tuttuktan sonra tekrar sektirmeye ba\u015flamak hangi kural ihlalidir?",
+    "options": [
+      "Ta\u015f\u0131ma",
+      "Hatal\u0131 Y\u00fcr\u00fcme",
+      "Geri Saha \u0130hlali",
+      "\u00c7ift Top (Double Dribble)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "29f9d99b-7fe9-4c00-b5be-5280b5b89a55",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "D\u00fcnya Basketbol \u015eampiyonas\u0131'nda (FIBA) en \u00e7ok madalya kazanan ve basketbolun be\u015fi\u011fi say\u0131lan \u00fclke hangisidir?",
+    "options": [
+      "\u0130spanya",
+      "ABD",
+      "S\u0131rbistan",
+      "Arjantin"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6419ba80-517f-450a-99f9-57df4ddba53b",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Efsanevi oyuncu LeBron James, NBA kariyerine hangi tak\u0131mda ba\u015flam\u0131\u015ft\u0131r?",
+    "options": [
+      "Cleveland Cavaliers",
+      "Los Angeles Lakers",
+      "Chicago Bulls",
+      "Miami Heat"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "bb9b5bb5-9e0c-4b1f-a87e-30d70c12d9b1",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Avrupa basketbolunun kul\u00fcpler baz\u0131ndaki en prestijli turnuvas\u0131 hangisidir?",
+    "options": [
+      "EuroLeague",
+      "EuroCup",
+      "VTB Ligi",
+      "FIBA \u015eampiyonlar Ligi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "05b91653-a7fb-4317-82b9-b8c99750e766",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "Basketbolda potan\u0131n yerden y\u00fcksekli\u011fi standart olarak tam ka\u00e7 metredir?",
+    "options": [
+      "3.15 metre",
+      "2.95 metre",
+      "3.05 metre",
+      "3.00 metre"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "f3a55107-e0ed-41ff-8ffd-1382ba6875f8",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "Bir oyuncunun topu \u00e7emberin i\u00e7inden ge\u00e7irirken elleriyle \u00e7embere as\u0131larak att\u0131\u011f\u0131 \u00e7ok sert say\u0131 t\u00fcr\u00fc nedir?",
+    "options": [
+      "Sma\u00e7 (Dunk)",
+      "Floter",
+      "Kanca (Hook)",
+      "Turnike (Layup)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "2c5bf0c8-ff4d-43ed-a603-1fc7deae2849",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "2021 ve 2022 y\u0131llar\u0131nda \u00fcst \u00fcste iki kez EuroLeague \u015fampiyonu olan T\u00fcrk basketbol tak\u0131m\u0131 hangisidir?",
+    "options": [
+      "Anadolu Efes",
+      "Fenerbah\u00e7e Beko",
+      "Galatasaray",
       "Be\u015fikta\u015f"
     ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0c3610d9-23dd-48d1-87a3-737f0a6186ec",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Basketbolda 3 saniye kural\u0131, sahan\u0131n hangi b\u00f6lgesinde uygulan\u0131r?",
+    "options": [
+      "Orta saha",
+      "\u00dc\u00e7 say\u0131 \u00e7izgisi d\u0131\u015f\u0131",
+      "Kenar \u00e7izgisi",
+      "Boyal\u0131 alan"
+    ],
     "correctOptionIndex": 3
   },
   {
-    "id": "d2b41f93-4758-4c42-ad0e-2f528579ddac",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2016 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
-    "options": [
-      "Galatasaray",
-      "Sivasspor",
-      "Be\u015fikta\u015f",
-      "Trabzonspor"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "30962531-8789-44e8-8561-ce2ceb1701db",
-    "category": "Spor",
+    "id": "e79039d2-aaf0-4e0a-a91e-e86bb8d748d0",
+    "category": "Basketbol",
     "difficulty": 1,
-    "text": "2014 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
+    "text": "Efsanevi uzun Wilt Chamberlain, NBA tarihinde bir ma\u00e7ta en fazla ka\u00e7 say\u0131 atarak k\u0131r\u0131lmas\u0131 imkans\u0131z bir rekor k\u0131rm\u0131\u015ft\u0131r?",
     "options": [
-      "Ba\u015fak\u015fehir",
-      "Be\u015fikta\u015f",
-      "Fenerbah\u00e7e",
-      "Trabzonspor"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "d49d5b7e-7c56-4ae3-9ec9-4cec3e48cc55",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2010 y\u0131l\u0131nda T\u00fcrkiye S\u00fcper Ligi'nde hangi tak\u0131m \u015fampiyon olmu\u015ftur?",
-    "options": [
-      "Ba\u015fak\u015fehir",
-      "Galatasaray",
-      "Bursaspor",
-      "Trabzonspor"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "231e69e6-134f-4f80-904b-3a4dc7b2789d",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2023 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
-    "options": [
-      "Fernando Alonso",
-      "Max Verstappen",
-      "Nico Rosberg",
-      "Sergio Perez"
+      "72",
+      "100",
+      "81",
+      "93"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "a07726ae-a5e6-46cb-91f8-4131ee1d9487",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2022 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
+    "id": "71d67371-ae8e-408c-b996-d5bfa8f82954",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Rakip oyuncu \u015fut att\u0131ktan sonra topu engellemeye \u00e7al\u0131\u015f\u0131rken top ini\u015fe ge\u00e7mi\u015fse ve o topa m\u00fcdahale edilirse ne karar\u0131 verilir?",
     "options": [
-      "Charles Leclerc",
-      "Max Verstappen",
-      "Lewis Hamilton",
-      "Nico Rosberg"
+      "Faul - Serbest at\u0131\u015f verilir",
+      "\u0130ni\u015f halindeki top (Goaltending) - Say\u0131 ge\u00e7erli say\u0131l\u0131r",
+      "Hatal\u0131 savunma - Top yandan ba\u015flar",
+      "Blok - Oyun devam eder"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "969de7ef-ae9c-4ec1-9215-b249d3202553",
-    "category": "Spor",
+    "id": "ca00fc87-ca9a-4d12-a118-4deed1fe6edf",
+    "category": "Basketbol",
     "difficulty": 3,
-    "text": "2021 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
+    "text": "Stephen Curry, NBA'de hangi oyun stili ve yetene\u011fiyle t\u00fcm basketbol d\u00fcnyas\u0131nda devrim yapm\u0131\u015ft\u0131r?",
     "options": [
-      "Max Verstappen",
-      "Charles Leclerc",
-      "Valtteri Bottas",
-      "Sebastian Vettel"
+      "Sert savunma",
+      "Uzak mesafeli 3 say\u0131l\u0131k at\u0131\u015flar",
+      "G\u00f6z\u00fc kapal\u0131 asistler",
+      "Pota alt\u0131 dominasyonu"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d0254de1-6c10-4ac8-a9df-6da8affd2380",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Basketbolu 1891 y\u0131l\u0131nda ABD'de bir spor dal\u0131 olarak icat eden beden e\u011fitimi \u00f6\u011fretmeni kimdir?",
+    "options": [
+      "Abner Doubleday",
+      "Alexander Cartwright",
+      "William G. Morgan",
+      "James Naismith"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "0d687c2a-148d-493b-a75b-77b107fa2df1",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Boston Celtics ile kazand\u0131\u011f\u0131 say\u0131s\u0131z \u015fampiyonlukla hat\u0131rlanan 'Larry Legend' lakapl\u0131 y\u0131ld\u0131z kimdir?",
+    "options": [
+      "Bill Russell",
+      "Paul Pierce",
+      "Kevin McHale",
+      "Larry Bird"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d6cfaca9-1e3f-4b46-b7d3-56e45fb191b6",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "H\u00fccumdaki tak\u0131m\u0131n, kendi yar\u0131 sahas\u0131ndan topu rakip yar\u0131 sahaya ge\u00e7irmek i\u00e7in ka\u00e7 saniye s\u00fcresi vard\u0131r?",
+    "options": [
+      "5 saniye",
+      "10 saniye",
+      "12 saniye",
+      "8 saniye"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "940d6aed-c1fa-4693-86ba-93e404175b85",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Ma\u00e7\u0131n bitimini belirten siren \u00e7ald\u0131\u011f\u0131 anda havada olan ve basketle sonu\u00e7lanan efsanevi \u015futlara ne isim verilir?",
+    "options": [
+      "Fadeaway",
+      "Clutch Shot",
+      "Buzzer Beater",
+      "Airball"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "40fc29f7-b10a-40dd-ad98-14c06ceabef5",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Hidayet T\u00fcrko\u011flu, NBA kariyerinde en b\u00fcy\u00fck ba\u015far\u0131lar\u0131n\u0131 ve 'En \u00c7ok Geli\u015fme G\u00f6steren Oyuncu' (MIP) \u00f6d\u00fcl\u00fcn\u00fc hangi tak\u0131mla kazanm\u0131\u015ft\u0131r?",
+    "options": [
+      "San Antonio Spurs",
+      "Toronto Raptors",
+      "Sacramento Kings",
+      "Orlando Magic"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a034932b-2262-4928-8665-d58ec9c2f2df",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "\u015eut atarken savunmac\u0131n\u0131n \u00fczerinden geriye do\u011fru s\u0131\u00e7rayarak at\u0131lan, savunulmas\u0131 \u00e7ok zor \u015fut tekni\u011fi nedir?",
+    "options": [
+      "Layup",
+      "Hook Shot",
+      "Floater",
+      "Fadeaway"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e80c05ad-1c1c-41a9-891d-92b9dfdeefe8",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Dallas Mavericks ile \u00f6zde\u015fle\u015fen ve tek baca\u011f\u0131 \u00fczerinde geriye \u00e7ekilerek att\u0131\u011f\u0131 \u015futlarla efsanele\u015fen Alman y\u0131ld\u0131z kimdir?",
+    "options": [
+      "Dirk Nowitzki",
+      "Tony Parker",
+      "Luka Doncic",
+      "Pau Gasol"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "14585555-203a-41a8-bc42-33ff85aa95e6",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2020 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
+    "id": "fc8ad70e-1999-4fc0-a039-e99efd69d302",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "T\u00fcrkiye'nin lakab\u0131 '12 Dev Adam' olan Erkek Milli Basketbol Tak\u0131m\u0131, bu lakab\u0131 ilk kez hangi turnuvadaki ba\u015far\u0131s\u0131yla alm\u0131\u015ft\u0131r?",
     "options": [
-      "Lewis Hamilton",
-      "Carlos Sainz",
-      "Max Verstappen",
-      "Sergio Perez"
+      "2014 D\u00fcnya \u015eampiyonas\u0131",
+      "2010 D\u00fcnya \u015eampiyonas\u0131",
+      "1999 Avrupa \u015eampiyonas\u0131",
+      "2001 Avrupa \u015eampiyonas\u0131"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a2f2e870-74ec-4f8a-9ce3-1d95bb4bcfff",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Savunma yapan oyuncunun ayaklar\u0131 tamamen yerle\u015fikken, h\u00fccum oyuncusunun gelip ona \u015fiddetle \u00e7arpmas\u0131na ne denir?",
+    "options": [
+      "H\u00fccum Faul (Charge)",
+      "Teknik Faul",
+      "Blok",
+      "Savunma Faul\u00fc"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "6411ffb3-190f-4a51-a126-58ddc573647d",
-    "category": "Spor",
+    "id": "5122e43c-3876-4c53-84bd-52d8f68db286",
+    "category": "Basketbol",
     "difficulty": 2,
-    "text": "2019 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
+    "text": "Giannis Antetokounmpo'nun sahip oldu\u011fu ve inan\u0131lmaz fizi\u011fi ile uyumlu 'Yunan Ucubesi' anlam\u0131na gelen \u0130ngilizce lakab\u0131 nedir?",
     "options": [
-      "Michael Schumacher",
-      "Lewis Hamilton",
-      "Carlos Sainz",
-      "Nico Rosberg"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "823c7296-aac9-47bd-bdfc-4899ba55337d",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2018 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
-    "options": [
-      "Charles Leclerc",
-      "Lando Norris",
-      "Sergio Perez",
-      "Lewis Hamilton"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "b1c4418e-5a50-483b-baea-c6a4a7fd90ca",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2016 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
-    "options": [
-      "Charles Leclerc",
-      "Lewis Hamilton",
-      "Max Verstappen",
-      "Nico Rosberg"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "b0b59142-6dac-4b6e-b1a4-d22810199c2c",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2013 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
-    "options": [
-      "Max Verstappen",
-      "Kimi Raikkonen",
-      "Sebastian Vettel",
-      "Nico Rosberg"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "7a26b1ca-15a7-43da-81dc-2772c606f70e",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2006 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
-    "options": [
-      "Sebastian Vettel",
-      "Valtteri Bottas",
-      "Michael Schumacher",
-      "Fernando Alonso"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "07bb02af-9e64-408e-baf5-79c7d8cfd8c8",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2004 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
-    "options": [
-      "Lando Norris",
-      "Max Verstappen",
-      "Charles Leclerc",
-      "Michael Schumacher"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "ffd61358-4410-4cf2-8538-ea36286012c6",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2007 Formula 1 D\u00fcnya \u015eampiyonu kim olmu\u015ftur?",
-    "options": [
-      "Valtteri Bottas",
-      "Max Verstappen",
-      "Charles Leclerc",
-      "Kimi Raikkonen"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "81f484cb-522b-4dfe-a5f6-9fc09f7f1862",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2023 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Phoenix Suns",
-      "Houston Rockets",
-      "Cleveland Cavaliers",
-      "Denver Nuggets"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "8a6a1e24-0345-41b5-80b2-d222faa4e94f",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2022 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Denver Nuggets",
-      "Golden State Warriors",
-      "Toronto Raptors",
-      "Cleveland Cavaliers"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "b5359682-fecc-4d21-a844-4e16b27e125d",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2021 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Milwaukee Bucks",
-      "Golden State Warriors",
-      "Toronto Raptors",
-      "Cleveland Cavaliers"
+      "Greek Freak",
+      "Olympian",
+      "The Alphabet",
+      "Spartan"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "63010cbb-b605-4d71-8a8b-2ae34eba8d4a",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2020 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Cleveland Cavaliers",
-      "Golden State Warriors",
-      "Los Angeles Lakers",
-      "New York Knicks"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "883f65bf-6d47-4a51-bd97-01a8f483bbb1",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2019 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Miami Heat",
-      "Houston Rockets",
-      "Toronto Raptors",
-      "New York Knicks"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "124a0f69-2eb9-4af0-be4d-e18543739ffa",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2016 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Boston Celtics",
-      "Cleveland Cavaliers",
-      "Golden State Warriors",
-      "Houston Rockets"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "882ba4e1-4a48-46ea-a09f-a347f0ed7ff2",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "2014 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Toronto Raptors",
-      "Golden State Warriors",
-      "Dallas Mavericks",
-      "San Antonio Spurs"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d17b7333-3ecc-47ca-b1d8-07fb3aff978d",
-    "category": "Spor",
-    "difficulty": 1,
-    "text": "2011 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Boston Celtics",
-      "Dallas Mavericks",
-      "Toronto Raptors",
-      "Chicago Bulls"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "9d4177d9-8d3d-4e63-a216-6d2d07c7bd40",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "2008 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Boston Celtics",
-      "Toronto Raptors",
-      "Golden State Warriors",
-      "Chicago Bulls"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "93e72792-367c-4768-b8d7-b5d18f40554e",
-    "category": "Spor",
-    "difficulty": 3,
-    "text": "1998 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Chicago Bulls",
-      "Cleveland Cavaliers",
-      "Milwaukee Bucks",
-      "Toronto Raptors"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "5035b4da-9dcc-4bb7-afa1-9c71e261d9fc",
-    "category": "Spor",
-    "difficulty": 2,
-    "text": "1996 NBA \u015eampiyonu hangi tak\u0131m olmu\u015ftur?",
-    "options": [
-      "Phoenix Suns",
-      "Cleveland Cavaliers",
-      "Boston Celtics",
-      "Chicago Bulls"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "2f0906e1-29e0-4866-b7b8-1ed485f908b2",
+    "id": "1364f3cc-f0f6-48e3-a041-cd5746c3e3bf",
     "category": "Sinema",
-    "difficulty": 1,
+    "difficulty": 2,
     "text": "'Jurassic Park' filminin y\u00f6netmen koltu\u011funda kim oturmaktad\u0131r?",
     "options": [
-      "David Fincher",
-      "Stanley Kubrick",
-      "Steven Spielberg",
-      "Martin Scorsese"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "8f3c8fd1-e6a6-442c-8dbb-433d45fa7bc0",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Avatar' filminin y\u00f6netmen koltu\u011funda kim oturmaktad\u0131r?",
-    "options": [
-      "Alfred Hitchcock",
-      "Ridley Scott",
-      "James Cameron",
+      "Peter Jackson",
+      "Quentin Tarantino",
+      "Francis Ford Coppola",
       "Steven Spielberg"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 3
   },
   {
-    "id": "d10fe24d-b96b-42e6-9665-32979da44d95",
+    "id": "94f0498e-2698-49db-9391-d493beeebcfb",
     "category": "Sinema",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki y\u00f6netmenlerden hangisi 'Inception' adl\u0131 esere imza atm\u0131\u015ft\u0131r?",
+    "difficulty": 3,
+    "text": "'Avatar' filminin d\u00fcnyaca \u00fcnl\u00fc y\u00f6netmeni kimdir?",
     "options": [
-      "Ridley Scott",
-      "Steven Spielberg",
       "Christopher Nolan",
-      "Peter Jackson"
+      "Peter Jackson",
+      "James Cameron",
+      "Alfred Hitchcock"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "a899ce75-81e3-48a5-8217-d6e35e18234f",
+    "id": "c549e5f0-baaa-45e8-bf3e-41c31ca1d790",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "Sinema tarihinin klasikleri aras\u0131na giren 'Inception' filmini kim y\u00f6netmi\u015ftir?",
+    "options": [
+      "Peter Jackson",
+      "James Cameron",
+      "Stanley Kubrick",
+      "Christopher Nolan"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "9c49e9af-6aec-4998-9721-6a67f74d82ef",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "Sinema tarihinin klasikleri aras\u0131na giren 'Pulp Fiction' filmini kim y\u00f6netmi\u015ftir?",
+    "options": [
+      "Ridley Scott",
+      "Francis Ford Coppola",
+      "Steven Spielberg",
+      "Quentin Tarantino"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d9b872d6-0157-43a7-8f32-271e4d422970",
+    "category": "Sinema",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki y\u00f6netmenlerden hangisi 'Y\u00fcz\u00fcklerin Efendisi' adl\u0131 esere imza atm\u0131\u015ft\u0131r?",
+    "options": [
+      "David Fincher",
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "Peter Jackson"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "95e7fd59-a21b-4a32-8d94-144bea5c9166",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki y\u00f6netmenlerden hangisi 'Baba (The Godfather)' adl\u0131 esere imza atm\u0131\u015ft\u0131r?",
+    "options": [
+      "James Cameron",
+      "Stanley Kubrick",
+      "Francis Ford Coppola",
+      "David Fincher"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "5e0a459a-3bda-45eb-8aa0-a9ebe3802682",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "'Gladyat\u00f6r' filminin y\u00f6netmen koltu\u011funda kim oturmaktad\u0131r?",
+    "options": [
+      "Stanley Kubrick",
+      "Alfred Hitchcock",
+      "Ridley Scott",
+      "George Lucas"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c2a39309-e57f-4987-a198-f163de2e80a1",
     "category": "Sinema",
     "difficulty": 2,
-    "text": "'Pulp Fiction' filminin d\u00fcnyaca \u00fcnl\u00fc y\u00f6netmeni kimdir?",
+    "text": "Sinema tarihinin klasikleri aras\u0131na giren 'Star Wars' filmini kim y\u00f6netmi\u015ftir?",
     "options": [
-      "Quentin Tarantino",
+      "Stanley Kubrick",
       "George Lucas",
+      "Quentin Tarantino",
+      "Francis Ford Coppola"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e37a65df-00ee-47c7-99f4-5d4f416184e5",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "'Taksi \u015eof\u00f6r\u00fc' filminin d\u00fcnyaca \u00fcnl\u00fc y\u00f6netmeni kimdir?",
+    "options": [
+      "Francis Ford Coppola",
+      "Quentin Tarantino",
+      "Christopher Nolan",
+      "Martin Scorsese"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a9e33d8f-3165-4e03-a26c-8ec949f11a09",
+    "category": "Sinema",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki y\u00f6netmenlerden hangisi 'Cinnet (The Shining)' adl\u0131 esere imza atm\u0131\u015ft\u0131r?",
+    "options": [
+      "Francis Ford Coppola",
+      "Christopher Nolan",
+      "Stanley Kubrick",
+      "George Lucas"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "131153e0-6c3a-4064-8915-692fc22a5954",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "'D\u00f6v\u00fc\u015f Kul\u00fcb\u00fc' filminin y\u00f6netmen koltu\u011funda kim oturmaktad\u0131r?",
+    "options": [
+      "Francis Ford Coppola",
+      "David Fincher",
+      "Ridley Scott",
+      "George Lucas"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c67f8a47-6310-4a21-909a-3266a27dd881",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "Sinema tarihinin klasikleri aras\u0131na giren 'Sap\u0131k (Psycho)' filmini kim y\u00f6netmi\u015ftir?",
+    "options": [
+      "Alfred Hitchcock",
+      "Stanley Kubrick",
       "Ridley Scott",
       "David Fincher"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "acc2c6f5-5777-4b45-8ade-300ee25683dc",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "'Y\u00fcz\u00fcklerin Efendisi' filminin y\u00f6netmen koltu\u011funda kim oturmaktad\u0131r?",
-    "options": [
-      "James Cameron",
-      "Peter Jackson",
-      "George Lucas",
-      "Stanley Kubrick"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "5b18c017-5813-4174-9078-c9568955d0d7",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "Sinema tarihinin klasikleri aras\u0131na giren 'Baba (The Godfather)' filmini kim y\u00f6netmi\u015ftir?",
-    "options": [
-      "Martin Scorsese",
-      "Francis Ford Coppola",
-      "James Cameron",
-      "Ridley Scott"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "d7cc9c8c-8b89-4e65-94b6-66b116a3cd39",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "'Gladyat\u00f6r' filminin y\u00f6netmen koltu\u011funda kim oturmaktad\u0131r?",
-    "options": [
-      "Ridley Scott",
-      "Steven Spielberg",
-      "Alfred Hitchcock",
-      "Christopher Nolan"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "db4ec355-6de0-4a56-8303-dc87064f6e6f",
+    "id": "085405a7-38e6-4974-90c7-cbe76c6eccee",
     "category": "Sinema",
     "difficulty": 2,
-    "text": "'Star Wars' filminin d\u00fcnyaca \u00fcnl\u00fc y\u00f6netmeni kimdir?",
+    "text": "'Titanik' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
     "options": [
-      "Christopher Nolan",
-      "Peter Jackson",
-      "Ridley Scott",
-      "George Lucas"
+      "Elijah Wood",
+      "Keanu Reeves",
+      "Johnny Depp",
+      "Leonardo DiCaprio"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "6d8fb629-9e5d-4c84-9b7f-058a80d12b6e",
+    "id": "e52c412a-b903-4abf-a9c1-89264af70749",
     "category": "Sinema",
     "difficulty": 2,
-    "text": "'Taksi \u015eof\u00f6r\u00fc' filminin d\u00fcnyaca \u00fcnl\u00fc y\u00f6netmeni kimdir?",
+    "text": "'Matrix' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
     "options": [
-      "Christopher Nolan",
-      "Martin Scorsese",
-      "George Lucas",
-      "Stanley Kubrick"
+      "Johnny Depp",
+      "Keanu Reeves",
+      "Tom Hanks",
+      "Russell Crowe"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "c8ec4976-c67a-4da5-bf61-8ea8c406b38e",
+    "id": "6996164d-b0c0-4a7c-8bc5-4b75b26157d2",
     "category": "Sinema",
     "difficulty": 3,
-    "text": "'Cinnet (The Shining)' filminin d\u00fcnyaca \u00fcnl\u00fc y\u00f6netmeni kimdir?",
+    "text": "'Karayip Korsanlar\u0131' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
     "options": [
-      "Peter Jackson",
-      "Ridley Scott",
-      "Stanley Kubrick",
-      "Francis Ford Coppola"
+      "Tom Cruise",
+      "Johnny Depp",
+      "Robert De Niro",
+      "Elijah Wood"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 1
   },
   {
-    "id": "952c72d4-d8f1-47c3-8126-1178edb8ff3d",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki y\u00f6netmenlerden hangisi 'D\u00f6v\u00fc\u015f Kul\u00fcb\u00fc' adl\u0131 esere imza atm\u0131\u015ft\u0131r?",
-    "options": [
-      "James Cameron",
-      "Christopher Nolan",
-      "David Fincher",
-      "Martin Scorsese"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "d643da04-bf46-454f-9422-aac612640b65",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Sap\u0131k (Psycho)' filminin d\u00fcnyaca \u00fcnl\u00fc y\u00f6netmeni kimdir?",
-    "options": [
-      "Alfred Hitchcock",
-      "Steven Spielberg",
-      "Martin Scorsese",
-      "Quentin Tarantino"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "ebfa8605-d5f9-48f9-a5ea-4dd2803a0e90",
+    "id": "960a21f1-448b-4bc0-825d-57a03921cb5b",
     "category": "Sinema",
     "difficulty": 2,
-    "text": "'Titanik' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
+    "text": "'Forrest Gump' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
     "options": [
-      "Leonardo DiCaprio",
       "Joaquin Phoenix",
+      "Johnny Depp",
+      "Tom Cruise",
+      "Tom Hanks"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "f58b6c65-dbfd-40fa-a4f1-5c36852f817a",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'Baba' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
+    "options": [
+      "Christian Bale",
+      "Marlon Brando",
+      "Elijah Wood",
+      "Tom Cruise"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a7f16961-f184-497d-8d99-e66a3327b911",
+    "category": "Sinema",
+    "difficulty": 2,
+    "text": "'Kara \u015e\u00f6valye' sinema filminde ba\u015frolde kim oynam\u0131\u015ft\u0131r?",
+    "options": [
+      "Tom Hanks",
+      "Keanu Reeves",
+      "Leonardo DiCaprio",
+      "Christian Bale"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "626b5fc0-01d1-4644-a88f-9f37d3618d1b",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'D\u00f6v\u00fc\u015f Kul\u00fcb\u00fc' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
+    "options": [
+      "Tom Hanks",
+      "Russell Crowe",
+      "Brad Pitt",
+      "Harrison Ford"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "01a1e8d4-999d-4d85-bd69-d4763aa908bb",
+    "category": "Sinema",
+    "difficulty": 1,
+    "text": "'Y\u00fcz\u00fcklerin Efendisi' sinema filminde ba\u015frolde kim oynam\u0131\u015ft\u0131r?",
+    "options": [
+      "Robert De Niro",
+      "Joaquin Phoenix",
+      "Elijah Wood",
+      "Tom Cruise"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "50db0334-18be-498a-9c7f-d28f3764086e",
+    "category": "Sinema",
+    "difficulty": 2,
+    "text": "'Harry Potter' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
+    "options": [
+      "Elijah Wood",
+      "Daniel Radcliffe",
+      "Marlon Brando",
+      "Sylvester Stallone"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "dc90e324-5ffb-4664-9ba0-eef52e6dfd6e",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "'Yaral\u0131 Y\u00fcz (Scarface)' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
+    "options": [
       "Harrison Ford",
+      "Al Pacino",
+      "Anthony Hopkins",
+      "Brad Pitt"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6012cf0e-346c-49e7-bbdd-f0258ba4e556",
+    "category": "Sinema",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'S\u0131k\u0131 Dostlar (Goodfellas)' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
+    "options": [
+      "Anthony Hopkins",
+      "Robert De Niro",
+      "Christian Bale",
+      "Russell Crowe"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6cc9766c-26d8-4935-83dc-8887aac2eb38",
+    "category": "Sinema",
+    "difficulty": 2,
+    "text": "'G\u00f6revimiz Tehlike' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
+    "options": [
+      "Tom Cruise",
+      "Leonardo DiCaprio",
+      "Robert De Niro",
       "Marlon Brando"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "ffc426c6-b463-4f3e-a34e-a1dec91dea6e",
+    "id": "92ba1351-6789-4e0f-9cb5-be81caf9a47d",
     "category": "Sinema",
     "difficulty": 1,
-    "text": "'Matrix' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
+    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'Indiana Jones' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
     "options": [
-      "Brad Pitt",
-      "Keanu Reeves",
-      "Robert De Niro",
-      "Anthony Hopkins"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "555e46e3-a00c-4849-9c53-657afcefa941",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Karayip Korsanlar\u0131' sinema filminde ba\u015frolde kim oynam\u0131\u015ft\u0131r?",
-    "options": [
-      "Keanu Reeves",
-      "Johnny Depp",
-      "Joaquin Phoenix",
-      "Morgan Freeman"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "ca3e3c2f-3f71-41ee-8669-81ad26529000",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Forrest Gump' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Leonardo DiCaprio",
-      "Tom Hanks",
-      "Brad Pitt",
-      "Elijah Wood"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "14df7b1f-eb05-456b-8d7c-7811e0c263fe",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'Baba' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
-    "options": [
-      "Marlon Brando",
-      "Sylvester Stallone",
-      "Johnny Depp",
-      "Robert De Niro"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "02ae0080-6041-4313-a04c-0f9d2f197ceb",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Kara \u015e\u00f6valye' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Christian Bale",
-      "Sylvester Stallone",
       "Al Pacino",
-      "Robert De Niro"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "0857a0b8-e6f8-40f2-a4e9-926f12c890c1",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'D\u00f6v\u00fc\u015f Kul\u00fcb\u00fc' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
-    "options": [
-      "Leonardo DiCaprio",
       "Brad Pitt",
       "Harrison Ford",
-      "Keanu Reeves"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "37b7b719-fd70-4517-9dbf-a6fc2a0ea897",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'Y\u00fcz\u00fcklerin Efendisi' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
-    "options": [
-      "Leonardo DiCaprio",
-      "Brad Pitt",
-      "Sylvester Stallone",
-      "Elijah Wood"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "945acd7f-5092-410c-a06d-b4d41606a5dc",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Harry Potter' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Harrison Ford",
-      "Christian Bale",
-      "Daniel Radcliffe",
-      "Keanu Reeves"
+      "Marlon Brando"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "414a1fcc-614a-4ba1-96d1-a1d7f46c13b6",
+    "id": "5f399fb5-4dc4-4a61-9e9a-e4cc4d921325",
     "category": "Sinema",
     "difficulty": 3,
-    "text": "'Yaral\u0131 Y\u00fcz (Scarface)' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Robert De Niro",
-      "Harrison Ford",
-      "Al Pacino",
-      "Tom Cruise"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "9a00f1fb-4675-419b-a142-2f32f956d2c0",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'S\u0131k\u0131 Dostlar (Goodfellas)' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
-    "options": [
-      "Morgan Freeman",
-      "Robert De Niro",
-      "Anthony Hopkins",
-      "Leonardo DiCaprio"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "6aa839f6-efe1-439b-879b-8e8f16204a66",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'G\u00f6revimiz Tehlike' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Joaquin Phoenix",
-      "Sylvester Stallone",
-      "Elijah Wood",
-      "Tom Cruise"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d74c739c-82b6-4656-9fa8-f35c0458efaa",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "'Indiana Jones' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Elijah Wood",
-      "Tom Hanks",
-      "Russell Crowe",
-      "Harrison Ford"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d3f42b36-1d2c-4362-b8a2-c8f50baad283",
-    "category": "Sinema",
-    "difficulty": 2,
     "text": "'Gladyat\u00f6r' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
     "options": [
-      "Johnny Depp",
-      "Harrison Ford",
-      "Tom Hanks",
-      "Russell Crowe"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "9ea123c6-34d6-42d0-a03f-5ce9257b64b3",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Joker' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Tom Cruise",
+      "Anthony Hopkins",
       "Keanu Reeves",
-      "Joaquin Phoenix",
-      "Morgan Freeman"
+      "Russell Crowe",
+      "Joaquin Phoenix"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "ac563a9e-0056-4d6f-9336-8c4a78e97c7f",
+    "id": "56775ac4-39bb-44d1-9e1e-5f4b7157698a",
     "category": "Sinema",
     "difficulty": 2,
-    "text": "'Esaretin Bedeli' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
+    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'Joker' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
     "options": [
-      "Leonardo DiCaprio",
-      "Keanu Reeves",
-      "Joaquin Phoenix",
-      "Morgan Freeman"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "9b6418b6-645b-49c2-b75e-53446814b1a1",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'Kuzular\u0131n Sessizli\u011fi' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
-    "options": [
+      "Al Pacino",
       "Morgan Freeman",
       "Joaquin Phoenix",
-      "Anthony Hopkins",
-      "Robert De Niro"
+      "Tom Hanks"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "52864651-3e33-4c68-b2c8-788897c56778",
+    "id": "1774e030-480f-4f43-ad73-286b1d612190",
     "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Rocky' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
+    "difficulty": 1,
+    "text": "'Esaretin Bedeli' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
+    "options": [
+      "Morgan Freeman",
+      "Elijah Wood",
+      "Brad Pitt",
+      "Sylvester Stallone"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f864b1dc-ee7a-4d2e-a55b-930f331895c8",
+    "category": "Sinema",
+    "difficulty": 2,
+    "text": "'Kuzular\u0131n Sessizli\u011fi' sinema filminde ba\u015frolde kim oynam\u0131\u015ft\u0131r?",
+    "options": [
+      "Anthony Hopkins",
+      "Harrison Ford",
+      "Sylvester Stallone",
+      "Russell Crowe"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "15efc00c-5e8c-43f7-9867-5bbdb8a33c31",
+    "category": "Sinema",
+    "difficulty": 2,
+    "text": "'Rocky' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
     "options": [
       "Brad Pitt",
-      "Christian Bale",
       "Sylvester Stallone",
-      "Anthony Hopkins"
+      "Anthony Hopkins",
+      "Daniel Radcliffe"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a552129a-149e-468e-85f2-4bb50f370fe9",
+    "category": "Bilim",
+    "difficulty": 2,
+    "text": "Ampul\u00fc bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
+    "options": [
+      "Alessandro Volta",
+      "Dmitri Mendeleyev",
+      "Johannes Gutenberg",
+      "Thomas Edison"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "17aafec2-ab22-45aa-a707-11f5aa50b618",
+    "category": "Bilim",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Telefonu bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
+    "options": [
+      "James Watt",
+      "Albert Einstein",
+      "Alexander Graham Bell",
+      "Wright Karde\u015fler"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "55f4b095-cf17-4d32-9748-466bb62b2250",
+    "id": "154cb9ca-31b4-44fd-b55c-c429523d1c64",
     "category": "Bilim",
-    "difficulty": 3,
-    "text": "Ampul\u00fc \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
-    "options": [
-      "Alexander Graham Bell",
-      "Thomas Edison",
-      "Charles Darwin",
-      "Albert Einstein"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "67ecd718-d76c-40a2-b421-011aa0cade7d",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "Bilim tarihinde Telefonu ki\u015fi olarak bilinen dahi hangisidir?",
-    "options": [
-      "Louis Pasteur",
-      "Alexander Graham Bell",
-      "Johannes Gutenberg",
-      "Stephen Hawking"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "b5876ecd-ff12-45f3-a009-7050c6f8df95",
-    "category": "Bilim",
-    "difficulty": 1,
+    "difficulty": 2,
     "text": "Radyoyu \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
     "options": [
-      "Alexander Fleming",
       "Guglielmo Marconi",
+      "Galileo Galilei",
+      "Alan Turing",
+      "Nikola Tesla"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "4cb91b9f-3f41-4e98-a936-b6bb347b5b57",
+    "category": "Bilim",
+    "difficulty": 3,
+    "text": "Alternatif ak\u0131m\u0131 \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
+    "options": [
+      "Dmitri Mendeleyev",
+      "Nikola Tesla",
+      "Albert Einstein",
+      "Rosalind Franklin"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "774ec6a9-b6cd-40c6-8a29-b76f6773026a",
+    "category": "Bilim",
+    "difficulty": 1,
+    "text": "U\u00e7a\u011f\u0131 bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
+    "options": [
+      "Nicolaus Copernicus",
+      "Wright Karde\u015fler",
+      "Johannes Gutenberg",
+      "Thomas Edison"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "1f5bf07a-82aa-4c4b-9d6b-ab004d00a6ac",
+    "category": "Bilim",
+    "difficulty": 2,
+    "text": "Matbaay\u0131 \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
+    "options": [
+      "Johannes Gutenberg",
+      "Galileo Galilei",
+      "Nikola Tesla",
+      "Isaac Newton"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0b65b5f6-5fb8-4c3d-bcee-61a6a4844367",
+    "category": "Bilim",
+    "difficulty": 2,
+    "text": "Yer\u00e7ekimi kanununu bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
+    "options": [
+      "Johannes Gutenberg",
+      "Marie Curie",
       "Charles Darwin",
       "Isaac Newton"
     ],
-    "correctOptionIndex": 1
+    "correctOptionIndex": 3
   },
   {
-    "id": "f26229e4-475c-453c-a79a-fb6b348a916a",
+    "id": "4591fd7a-65f4-41ab-84ea-4230c96b917f",
     "category": "Bilim",
     "difficulty": 2,
-    "text": "Alternatif ak\u0131m\u0131 \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
+    "text": "Bilim tarihinde \u0130zafiyet teorisini ki\u015fi olarak bilinen dahi hangisidir?",
     "options": [
-      "Alexander Fleming",
-      "Alexander Graham Bell",
-      "Nikola Tesla",
-      "Thomas Edison"
+      "Rosalind Franklin",
+      "Thomas Edison",
+      "Albert Einstein",
+      "Dmitri Mendeleyev"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "b9641ff6-56f0-47ed-a173-25a8fdaf5f4c",
+    "id": "b1d088b6-df0f-4964-bb78-e389aaa86fa6",
     "category": "Bilim",
     "difficulty": 2,
-    "text": "U\u00e7a\u011f\u0131 \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
+    "text": "Radyoaktiviteyi \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
     "options": [
-      "Wright Karde\u015fler",
-      "Dmitri Mendeleyev",
-      "Rosalind Franklin",
+      "Marie Curie",
+      "Stephen Hawking",
+      "Thomas Edison",
       "Alan Turing"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "04af6b47-5fab-48e2-9c49-b86efd8b6385",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "Matbaay\u0131 \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
-    "options": [
-      "Galileo Galilei",
-      "Albert Einstein",
-      "Louis Pasteur",
-      "Johannes Gutenberg"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "bd9394a7-f0a0-4f22-8984-ce3c4b8d4504",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "Yer\u00e7ekimi kanununu bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
-    "options": [
-      "Albert Einstein",
-      "Isaac Newton",
-      "Johannes Gutenberg",
-      "Alexander Graham Bell"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "8cc55485-ed09-433f-8508-6b7473167c1e",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "Bilim tarihinde \u0130zafiyet teorisini ki\u015fi olarak bilinen dahi hangisidir?",
-    "options": [
-      "Guglielmo Marconi",
-      "Albert Einstein",
-      "Galileo Galilei",
-      "Marie Curie"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "22d36a8d-c48c-4f5b-b0c5-d94ac36265e7",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Radyoaktiviteyi bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
-    "options": [
-      "Johannes Gutenberg",
-      "Guglielmo Marconi",
-      "Alexander Fleming",
-      "Marie Curie"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d51a316a-d750-4706-b2c8-858381f982ce",
+    "id": "39623455-9a35-4ebc-8194-7010e3a76b74",
     "category": "Bilim",
     "difficulty": 3,
     "text": "Kuduz a\u015f\u0131s\u0131n\u0131 \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
     "options": [
-      "Marie Curie",
-      "Rosalind Franklin",
-      "Guglielmo Marconi",
+      "Nikola Tesla",
+      "Albert Einstein",
+      "Alexander Graham Bell",
       "Louis Pasteur"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "0bf4746e-4def-4190-a67b-8a2e11c8ae6e",
+    "id": "fc0d12d1-0c89-43b4-b3d7-ad9f1ab93b8a",
     "category": "Bilim",
     "difficulty": 3,
     "text": "Teleskopu astronomide kullanan bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
     "options": [
-      "Guglielmo Marconi",
-      "Louis Pasteur",
-      "Marie Curie",
-      "Galileo Galilei"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "65077d5d-9c6d-436f-b30c-0e5a6da2ca07",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Evrim teorisini bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
-    "options": [
-      "Alessandro Volta",
-      "Charles Darwin",
-      "Albert Einstein",
-      "Louis Pasteur"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "6809b93f-d72c-44b9-abaf-b11f433f193d",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "Penisilini bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
-    "options": [
-      "Albert Einstein",
-      "Johannes Gutenberg",
-      "Louis Pasteur",
-      "Alexander Fleming"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "5344752f-bed4-4067-b364-8a54fdb24900",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Buhar makinesini geli\u015ftiren bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
-    "options": [
-      "Albert Einstein",
-      "Marie Curie",
-      "Charles Darwin",
-      "James Watt"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "535041f2-3c40-4373-bb16-06c1a5ccd562",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Bilim tarihinde Pili ki\u015fi olarak bilinen dahi hangisidir?",
-    "options": [
-      "Charles Darwin",
-      "Rosalind Franklin",
-      "Alessandro Volta",
-      "Alexander Graham Bell"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "16697eb4-d182-4c0c-b412-ab97e1df3f84",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "Bilim tarihinde Periyodik tabloyu ki\u015fi olarak bilinen dahi hangisidir?",
-    "options": [
+      "Galileo Galilei",
       "Dmitri Mendeleyev",
-      "Nicolaus Copernicus",
-      "Thomas Edison",
-      "Charles Darwin"
+      "Alan Turing",
+      "Thomas Edison"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "f346f8ba-90d1-4137-b065-ddb791b4be71",
+    "id": "d6bb623a-17e3-4630-91d4-74bb31e23aa0",
     "category": "Bilim",
     "difficulty": 2,
-    "text": "Kara delik radyasyonunu \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
+    "text": "Bilim tarihinde Evrim teorisini ki\u015fi olarak bilinen dahi hangisidir?",
     "options": [
-      "Alessandro Volta",
-      "Stephen Hawking",
-      "Alan Turing",
+      "Charles Darwin",
+      "Wright Karde\u015fler",
+      "Nicolaus Copernicus",
+      "Alexander Graham Bell"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "297373cd-245f-42b3-8605-8d5c633cf810",
+    "category": "Bilim",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Penisilini bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
+    "options": [
+      "Galileo Galilei",
+      "Alexander Fleming",
+      "Thomas Edison",
       "Nikola Tesla"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "fdb55023-e1d2-4658-9b1e-7867b3ca9e04",
+    "id": "09270132-1344-4620-9c23-96d6f94e66cf",
     "category": "Bilim",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi G\u00fcne\u015f merkezli evren modelini bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Buhar makinesini geli\u015ftiren bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
     "options": [
       "Nicolaus Copernicus",
-      "Nikola Tesla",
+      "James Watt",
+      "Alan Turing",
+      "Guglielmo Marconi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7173718c-fda6-40de-ad25-4c6e28e3481c",
+    "category": "Bilim",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Pili bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
+    "options": [
       "Rosalind Franklin",
-      "Isaac Newton"
+      "Alessandro Volta",
+      "Marie Curie",
+      "Louis Pasteur"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b39fc015-8134-4cb4-aed0-1ca0d1efaa56",
+    "category": "Bilim",
+    "difficulty": 2,
+    "text": "Periyodik tabloyu bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
+    "options": [
+      "Alessandro Volta",
+      "Louis Pasteur",
+      "Dmitri Mendeleyev",
+      "Guglielmo Marconi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "4737375d-f44a-4b27-9d25-59bcb77c0572",
+    "category": "Bilim",
+    "difficulty": 2,
+    "text": "Kara delik radyasyonunu bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
+    "options": [
+      "Stephen Hawking",
+      "Rosalind Franklin",
+      "Nicolaus Copernicus",
+      "Marie Curie"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "8827665e-6292-4b1d-b631-233939bb0ac2",
+    "id": "4ef7f4f4-61a0-4d11-8869-74d8a043a7ab",
     "category": "Bilim",
-    "difficulty": 2,
-    "text": "Bilim tarihinde DNA'n\u0131n \u00e7ift sarmal yap\u0131s\u0131n\u0131 foto\u011fraflayan ki\u015fi olarak bilinen dahi hangisidir?",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi G\u00fcne\u015f merkezli evren modelini bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
     "options": [
-      "Isaac Newton",
+      "James Watt",
+      "Thomas Edison",
+      "Nicolaus Copernicus",
+      "Alexander Graham Bell"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "9bc36a30-be4e-44cc-8af6-998d7671e614",
+    "category": "Bilim",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi DNA'n\u0131n \u00e7ift sarmal yap\u0131s\u0131n\u0131 foto\u011fraflayan bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
+    "options": [
+      "Dmitri Mendeleyev",
+      "Guglielmo Marconi",
       "Charles Darwin",
-      "Alessandro Volta",
       "Rosalind Franklin"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "b5ee3a86-c8c5-40b8-9d83-a41c2d87dbd4",
+    "id": "dfaffe50-d5e9-45f7-a3ac-467f31fb1fb8",
     "category": "Bilim",
-    "difficulty": 3,
-    "text": "Bilim tarihinde Modern bilgisayar biliminin kurucusu say\u0131lan ki\u015fi olarak bilinen dahi hangisidir?",
+    "difficulty": 1,
+    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Modern bilgisayar biliminin kurucusu say\u0131lan bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
     "options": [
+      "Guglielmo Marconi",
       "Alan Turing",
-      "Johannes Gutenberg",
-      "Alexander Fleming",
-      "Stephen Hawking"
+      "Galileo Galilei",
+      "Nikola Tesla"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "ae17ddd7-6f3b-4334-813e-3a2b54816f04",
+    "category": "Bilim",
+    "difficulty": 1,
+    "text": "Astronomi bilimine g\u00f6re, G\u00fcne\u015f'e en yak\u0131n olan gezegenin ad\u0131 nedir?",
+    "options": [
+      "Merk\u00fcr",
+      "J\u00fcpiter",
+      "Ven\u00fcs",
+      "Nept\u00fcn"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "b6b2031b-c5d3-4ffe-ab5d-e085d8f2fd0e",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "G\u00fcne\u015f sistemimizde G\u00fcne\u015f'e en yak\u0131n gezegen hangisidir?",
-    "options": [
-      "Uran\u00fcs",
-      "Sat\u00fcrn",
-      "Merk\u00fcr",
-      "J\u00fcpiter"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "9ac4a9a3-f5ff-41f3-8db2-eb3578a695d6",
+    "id": "32ce8d86-04c7-475d-993f-9d395ba258a1",
     "category": "Bilim",
     "difficulty": 2,
-    "text": "Astronomi bilimine g\u00f6re, D\u00fcnya'n\u0131n ikizi olarak bilinen olan gezegenin ad\u0131 nedir?",
+    "text": "G\u00fcne\u015f sistemimizde D\u00fcnya'n\u0131n ikizi olarak bilinen gezegen hangisidir?",
     "options": [
+      "Nept\u00fcn",
+      "Sat\u00fcrn",
       "Uran\u00fcs",
-      "Mars",
-      "J\u00fcpiter",
       "Ven\u00fcs"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "5daa88f6-8730-4038-b940-8415b28f4c1c",
+    "id": "4990734c-7187-41d9-99eb-ae405198113f",
     "category": "Bilim",
-    "difficulty": 3,
+    "difficulty": 2,
     "text": "G\u00fcne\u015f sistemimizde K\u0131z\u0131l Gezegen olarak bilinen gezegen hangisidir?",
     "options": [
       "Ven\u00fcs",
-      "Nept\u00fcn",
-      "Mars",
-      "Uran\u00fcs"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "b73d79fb-15ef-4ccc-991f-c47e4e9c53b4",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki gezegenlerden hangisi 'G\u00fcne\u015f sisteminin en b\u00fcy\u00fck' \u00f6zelli\u011fi ta\u015f\u0131r?",
-    "options": [
       "D\u00fcnya",
-      "Mars",
-      "J\u00fcpiter",
-      "Uran\u00fcs"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "8ae63dea-7012-4d94-bc48-98abad1fe7b3",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "G\u00fcne\u015f sistemimizde Halkalar\u0131yla \u00fcnl\u00fc olan gezegen hangisidir?",
-    "options": [
-      "Uran\u00fcs",
       "Sat\u00fcrn",
-      "D\u00fcnya",
-      "J\u00fcpiter"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "f73a818a-dab8-42eb-a02c-afd82c865b55",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "Astronomi bilimine g\u00f6re, G\u00fcne\u015f etraf\u0131nda yan yatm\u0131\u015f varil gibi d\u00f6nen olan gezegenin ad\u0131 nedir?",
-    "options": [
-      "Ven\u00fcs",
-      "Merk\u00fcr",
-      "Mars",
-      "Uran\u00fcs"
+      "Mars"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "275592a4-38ff-4322-ba82-fc060e963335",
+    "id": "94f3fb63-80e8-4ddd-aedf-6b91ed889825",
     "category": "Bilim",
-    "difficulty": 3,
-    "text": "G\u00fcne\u015f sistemimizde G\u00fcne\u015f sisteminin en uzak (c\u00fcce gezegenler hari\u00e7) gezegen hangisidir?",
+    "difficulty": 1,
+    "text": "Astronomi bilimine g\u00f6re, G\u00fcne\u015f sisteminin en b\u00fcy\u00fck olan gezegenin ad\u0131 nedir?",
     "options": [
+      "Ven\u00fcs",
       "Nept\u00fcn",
       "J\u00fcpiter",
-      "Mars",
-      "Sat\u00fcrn"
+      "Merk\u00fcr"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "32e96d4e-e57b-4264-9252-4a5abc101c18",
+    "category": "Bilim",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki gezegenlerden hangisi 'Halkalar\u0131yla \u00fcnl\u00fc olan' \u00f6zelli\u011fi ta\u015f\u0131r?",
+    "options": [
+      "Sat\u00fcrn",
+      "D\u00fcnya",
+      "Nept\u00fcn",
+      "Uran\u00fcs"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "7ade7d6f-762f-48e3-8fb6-98a9bc07d885",
+    "id": "b85a52f6-2664-479f-8eeb-5508d96cbf77",
+    "category": "Bilim",
+    "difficulty": 2,
+    "text": "A\u015fa\u011f\u0131daki gezegenlerden hangisi 'G\u00fcne\u015f etraf\u0131nda yan yatm\u0131\u015f varil gibi d\u00f6nen' \u00f6zelli\u011fi ta\u015f\u0131r?",
+    "options": [
+      "Ven\u00fcs",
+      "Uran\u00fcs",
+      "D\u00fcnya",
+      "Mars"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b66208e3-b0cb-4469-8b0f-921495124a8c",
+    "category": "Bilim",
+    "difficulty": 3,
+    "text": "A\u015fa\u011f\u0131daki gezegenlerden hangisi 'G\u00fcne\u015f sisteminin en uzak (c\u00fcce gezegenler hari\u00e7)' \u00f6zelli\u011fi ta\u015f\u0131r?",
+    "options": [
+      "Sat\u00fcrn",
+      "J\u00fcpiter",
+      "Nept\u00fcn",
+      "Ven\u00fcs"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d5b9c902-7b69-4d4e-a0f3-7ac317f92a0b",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
+    "difficulty": 2,
     "text": "T\u00fcrkiye'nin plaka kodu 01 olan \u015fehri hangisidir?",
     "options": [
       "Ad\u0131yaman",
@@ -2964,150 +2639,150 @@
     "correctOptionIndex": 2
   },
   {
-    "id": "c42a35fc-06c3-4086-a001-587764350d17",
+    "id": "5587ac77-3adf-4bdc-8373-069dbd1459d2",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
+    "difficulty": 3,
     "text": "\u0130stiklal Mar\u015f\u0131'n\u0131n \u015fairi kimdir?",
     "options": [
-      "Cemal S\u00fcreya",
       "Mehmet Akif Ersoy",
       "Necip Faz\u0131l K\u0131sak\u00fcrek",
+      "Cemal S\u00fcreya",
       "Naz\u0131m Hikmet"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "3a2d3099-0f31-48ed-a92c-5341be873fd4",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Bir g\u00fcn ka\u00e7 dakikad\u0131r?",
-    "options": [
-      "3600",
-      "1200",
-      "1440",
-      "2400"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "96b1ca9e-a93e-4190-abcd-c5474bfcb254",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
-    "text": "Hangi hayvan\u0131n kalbi kafas\u0131ndad\u0131r?",
-    "options": [
-      "Ahtapot",
-      "Yenge\u00e7",
-      "Denizanasi",
-      "Karides"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "2ae85668-ae5f-4ce4-bed7-f5f3bcce76c1",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "D\u00fcnyan\u0131n en uzun nehri hangisidir?",
-    "options": [
-      "Mississippi Nehri",
-      "Nil Nehri",
-      "Amazon Nehri",
-      "Yangtze Nehri"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "58bd4845-7c46-44cb-a324-92280503e2b2",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "T\u00fcrkiye'nin en y\u00fcksek da\u011f\u0131 hangisidir?",
-    "options": [
-      "Erciyes Da\u011f\u0131",
-      "A\u011fr\u0131 Da\u011f\u0131",
-      "S\u00fcphan Da\u011f\u0131",
-      "Ka\u00e7kar Da\u011f\u0131"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "414c6494-7137-46a7-8177-4e592987ada9",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Satran\u00e7 tahtas\u0131nda toplam ka\u00e7 kare vard\u0131r?",
-    "options": [
-      "81",
-      "32",
-      "64",
-      "100"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "84de2b5d-644d-4aaf-9004-b4ebb6f9d2f4",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Mona Lisa tablosu hangi m\u00fczede sergilenmektedir?",
-    "options": [
-      "Louvre M\u00fczesi",
-      "Vatikan M\u00fczeleri",
-      "Prado M\u00fczesi",
-      "British Museum"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "9714750c-d4f0-4eee-b9c6-7b1948a31e3f",
+    "id": "9c6cbc1f-e702-411e-94c4-19cdd52db2f8",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 2,
-    "text": "Nobel \u00d6d\u00fclleri hangi \u00fclkede verilmektedir?",
+    "text": "Bir g\u00fcn ka\u00e7 dakikad\u0131r?",
     "options": [
-      "\u0130svi\u00e7re",
-      "Danimarka",
-      "\u0130sve\u00e7",
-      "Norve\u00e7"
+      "1440",
+      "2400",
+      "1200",
+      "3600"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 0
   },
   {
-    "id": "6ee4cd82-8338-4d92-9d1d-f3bdb7e39a35",
+    "id": "beaf1b6e-e0fb-4452-b78c-05db82cb6932",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
-    "text": "Pi say\u0131s\u0131n\u0131n ilk \u00fc\u00e7 basama\u011f\u0131 nedir?",
+    "difficulty": 3,
+    "text": "Hangi hayvan\u0131n kalbi kafas\u0131ndad\u0131r?",
     "options": [
-      "3.15",
-      "3.14",
-      "3.16",
-      "3.12"
+      "Ahtapot",
+      "Karides",
+      "Denizanasi",
+      "Yenge\u00e7"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "d3e8c86f-eda2-43a0-924c-20e58b2ea7aa",
+    "id": "f2c9c8b7-ff78-416b-971e-e5204da30eeb",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 1,
+    "text": "D\u00fcnyan\u0131n en uzun nehri hangisidir?",
+    "options": [
+      "Nil Nehri",
+      "Mississippi Nehri",
+      "Yangtze Nehri",
+      "Amazon Nehri"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0d25da50-1cad-4f22-b37f-cb33ac03546a",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 2,
+    "text": "T\u00fcrkiye'nin en y\u00fcksek da\u011f\u0131 hangisidir?",
+    "options": [
+      "Ka\u00e7kar Da\u011f\u0131",
+      "Erciyes Da\u011f\u0131",
+      "A\u011fr\u0131 Da\u011f\u0131",
+      "S\u00fcphan Da\u011f\u0131"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "6710a001-a030-43e9-b377-aeeaaa05f05b",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 2,
+    "text": "Satran\u00e7 tahtas\u0131nda toplam ka\u00e7 kare vard\u0131r?",
+    "options": [
+      "100",
+      "81",
+      "64",
+      "32"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a207c310-589f-4624-9355-6b7d93042851",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 1,
+    "text": "Mona Lisa tablosu hangi m\u00fczede sergilenmektedir?",
+    "options": [
+      "Prado M\u00fczesi",
+      "British Museum",
+      "Vatikan M\u00fczeleri",
+      "Louvre M\u00fczesi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "4f545e7c-6fb4-49fd-9371-49de77552d72",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 2,
+    "text": "Nobel \u00d6d\u00fclleri hangi \u00fclkede verilmektedir?",
+    "options": [
+      "Norve\u00e7",
+      "\u0130sve\u00e7",
+      "Danimarka",
+      "\u0130svi\u00e7re"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "55721922-4e08-4e81-8f6e-8a9f610d7f63",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 3,
+    "text": "Pi say\u0131s\u0131n\u0131n ilk \u00fc\u00e7 basama\u011f\u0131 nedir?",
+    "options": [
+      "3.15",
+      "3.12",
+      "3.14",
+      "3.16"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "33498aa5-c015-4575-b531-8c210d29e541",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 3,
     "text": "D\u00fcnyan\u0131n en kalabal\u0131k \u00fclkesi hangisidir? (2024 itibar\u0131yla)",
     "options": [
-      "\u00c7in",
-      "Endonezya",
       "Hindistan",
-      "ABD"
+      "ABD",
+      "\u00c7in",
+      "Endonezya"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 0
   },
   {
-    "id": "2f5db328-9cce-4729-acaa-890af9e3056d",
+    "id": "3a609559-df00-44fd-b334-f0b4e7b9a112",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
+    "difficulty": 3,
     "text": "Hangi renklerin kar\u0131\u015f\u0131m\u0131 ye\u015fili olu\u015fturur?",
     "options": [
-      "Mavi ve K\u0131rm\u0131z\u0131",
+      "Sar\u0131 ve K\u0131rm\u0131z\u0131",
       "Beyaz ve Siyah",
-      "Sar\u0131 ve Mavi",
-      "Sar\u0131 ve K\u0131rm\u0131z\u0131"
+      "Mavi ve K\u0131rm\u0131z\u0131",
+      "Sar\u0131 ve Mavi"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 3
   },
   {
-    "id": "0b094e8a-a140-4238-a8ad-913eefc77517",
+    "id": "569bbfe3-67aa-4eb6-a66b-8d4a0ba039f6",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 3,
     "text": "Tarihte paray\u0131 ilk bulan medeniyet hangisidir?",
@@ -3120,46 +2795,46 @@
     "correctOptionIndex": 0
   },
   {
-    "id": "b815450a-73aa-408b-bc29-d496c5171a7e",
+    "id": "51cd1c34-9def-40ba-b94e-865576d12505",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
+    "difficulty": 2,
     "text": "Olimpiyat halkalar\u0131nda bulunmayan renk hangisidir?",
     "options": [
+      "Siyah",
       "Mavi",
-      "Kahverengi",
       "Sar\u0131",
-      "Siyah"
+      "Kahverengi"
     ],
-    "correctOptionIndex": 1
+    "correctOptionIndex": 3
   },
   {
-    "id": "e07beba7-42a6-4438-baeb-c5056adfa670",
+    "id": "d269d2de-8123-4423-a291-b3fa0c101b2d",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 2,
     "text": "Hangi gezegene K\u0131z\u0131l Gezegen denir?",
     "options": [
       "Ven\u00fcs",
       "Mars",
-      "J\u00fcpiter",
-      "Merk\u00fcr"
+      "Merk\u00fcr",
+      "J\u00fcpiter"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "8dead7d9-af3e-4ac9-80a4-a64469b8e587",
+    "id": "4eed4d58-39dc-44ba-9ec0-82122fd7d6e7",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
+    "difficulty": 3,
     "text": "T.C. kimlik numaralar\u0131 ka\u00e7 hanelidir?",
     "options": [
+      "12",
       "10",
       "9",
-      "11",
-      "12"
+      "11"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 3
   },
   {
-    "id": "b5bd0050-9738-4146-8d20-7cfef8f98f58",
+    "id": "cc31ca07-faaa-41b9-bbe3-14d5290038fe",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 2,
     "text": "G\u00f6ky\u00fcz\u00fc neden mavidir?",
@@ -3172,198 +2847,198 @@
     "correctOptionIndex": 2
   },
   {
-    "id": "d5705ed8-c998-4a19-977c-dda7057ea410",
+    "id": "0c1a4a79-d431-45d7-a24d-a1ab81f89bf5",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 1,
     "text": "Hangi m\u00fczik aleti yayl\u0131 \u00e7alg\u0131lar ailesindendir?",
     "options": [
-      "Piyano",
-      "Fl\u00fct",
+      "Trompet",
       "Keman",
-      "Trompet"
+      "Piyano",
+      "Fl\u00fct"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 1
   },
   {
-    "id": "801379e1-05cd-4931-8908-ee4cc321fd8e",
+    "id": "c2120c93-190a-47c8-a950-d4d4704da631",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
+    "difficulty": 2,
     "text": "En sert do\u011fal mineral hangisidir?",
     "options": [
       "Alt\u0131n",
       "Elmas",
-      "Kuvars",
-      "Demir"
+      "Demir",
+      "Kuvars"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "97f428ef-6fd1-4459-8f0f-b1b022c1e0c6",
+    "id": "ee424ae0-7cc9-42d0-94e1-251f34109577",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
+    "difficulty": 3,
     "text": "Hangi ilimiz Ege B\u00f6lgesinde de\u011fildir?",
     "options": [
-      "Mu\u011fla",
       "\u0130zmir",
       "Burdur",
+      "Mu\u011fla",
       "Ayd\u0131n"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e0d74eb5-1d11-4350-bfe5-dbe24ccdf838",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 1,
+    "text": "Bir satran\u00e7 oyununda her oyuncunun ba\u015flang\u0131\u00e7ta ka\u00e7 ta\u015f\u0131 vard\u0131r?",
+    "options": [
+      "24",
+      "12",
+      "16",
+      "20"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "a6fe3d77-bb02-4dca-ad14-9cc5d0f8952f",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "Bir satran\u00e7 oyununda her oyuncunun ba\u015flang\u0131\u00e7ta ka\u00e7 ta\u015f\u0131 vard\u0131r?",
-    "options": [
-      "12",
-      "16",
-      "24",
-      "20"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "2de5f0f0-dafc-491a-bfd7-0d767b72f34c",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "T\u00fcrk liras\u0131n\u0131n simgesini kim tasarlam\u0131\u015ft\u0131r?",
-    "options": [
-      "Mehmet Akif",
-      "T\u00fclay Lale",
-      "Ay\u015fe Kulin",
-      "Ali Ercan"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "2150c797-1bf5-449e-b4dd-08a4c118e483",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "\u0130nsan v\u00fccudundaki en b\u00fcy\u00fck organ hangisidir?",
-    "options": [
-      "Akci\u011fer",
-      "Deri",
-      "Beyin",
-      "Karaci\u011fer"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "2aaac56d-c758-434f-9559-413a589ef9f3",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "Pusulada g\u00fcneyi g\u00f6steren harf hangisidir?",
-    "options": [
-      "S",
-      "W",
-      "N",
-      "E"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "e6495f51-803f-413c-aa30-162f7e43ca4d",
+    "id": "ba041f92-6319-4090-a4b1-1188e08daa0d",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 1,
-    "text": "Hangi yazar 'Sefiller' adl\u0131 eserin sahibidir?",
+    "text": "T\u00fcrk liras\u0131n\u0131n simgesini kim tasarlam\u0131\u015ft\u0131r?",
     "options": [
-      "Lev Tolstoy",
-      "Charles Dickens",
-      "Dostoyevski",
-      "Victor Hugo"
+      "Ay\u015fe Kulin",
+      "Mehmet Akif",
+      "Ali Ercan",
+      "T\u00fclay Lale"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "bf495343-59cd-4ca7-a511-5d2542c3c92e",
+    "id": "170caf11-4080-4758-99b1-8b2b0ecfb856",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 2,
+    "text": "\u0130nsan v\u00fccudundaki en b\u00fcy\u00fck organ hangisidir?",
+    "options": [
+      "Karaci\u011fer",
+      "Akci\u011fer",
+      "Beyin",
+      "Deri"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "5476fe2e-0f2a-4761-ba6d-10e0c5b4495b",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 3,
-    "text": "Periyodik tablodaki ilk element hangisidir?",
+    "text": "Pusulada g\u00fcneyi g\u00f6steren harf hangisidir?",
     "options": [
-      "Oksijen",
-      "Hidrojen",
-      "Helyum",
-      "Karbon"
+      "N",
+      "S",
+      "E",
+      "W"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "cbf3224c-e309-404c-9c03-efd369909034",
+    "id": "0cfc5532-3dff-4f97-9ba8-dab54f66a3e8",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 3,
+    "text": "Hangi yazar 'Sefiller' adl\u0131 eserin sahibidir?",
+    "options": [
+      "Victor Hugo",
+      "Lev Tolstoy",
+      "Dostoyevski",
+      "Charles Dickens"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "693492ac-a7a1-480b-8d89-a6e6d3cc115f",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 3,
+    "text": "Periyodik tablodaki ilk element hangisidir?",
+    "options": [
+      "Hidrojen",
+      "Helyum",
+      "Karbon",
+      "Oksijen"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "81e0e71d-5017-45b4-ba3c-b78c1fe7d204",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 2,
     "text": "T\u00fcrkiye'nin en kalabal\u0131k il\u00e7esi hangisidir?",
     "options": [
-      "Ke\u00e7i\u00f6ren",
-      "Esenyurt",
       "\u00c7ankaya",
+      "Esenyurt",
+      "Ke\u00e7i\u00f6ren",
       "\u015eahinbey"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "06d7071f-0824-4233-ad69-9329248c8259",
+    "id": "f2369a3d-a648-42b0-8760-acc893ed3841",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 3,
     "text": "D\u00fcnyan\u0131n en b\u00fcy\u00fck okyanusu hangisidir?",
     "options": [
-      "Pasifik Okyanusu",
       "Kuzey Buz Denizi",
-      "Hint Okyanusu",
-      "Atlantik Okyanusu"
+      "Pasifik Okyanusu",
+      "Atlantik Okyanusu",
+      "Hint Okyanusu"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b2698b05-6eda-4234-99f5-93f3f72fff65",
+    "category": "Genel K\u00fclt\u00fcr",
+    "difficulty": 3,
+    "text": "G\u00fcne\u015f sistemindeki en k\u00fc\u00e7\u00fck gezegen hangisidir?",
+    "options": [
+      "Merk\u00fcr",
+      "Pl\u00fcton",
+      "Ven\u00fcs",
+      "Mars"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "332a7596-e18b-4a9e-a48e-e580991022b1",
+    "id": "59c151f6-52b7-4a79-a960-7b5a9b2cf288",
     "category": "Genel K\u00fclt\u00fcr",
     "difficulty": 1,
-    "text": "G\u00fcne\u015f sistemindeki en k\u00fc\u00e7\u00fck gezegen hangisidir?",
+    "text": "Bir y\u0131lda ka\u00e7 hafta vard\u0131r?",
     "options": [
-      "Mars",
-      "Pl\u00fcton",
-      "Merk\u00fcr",
-      "Ven\u00fcs"
+      "54",
+      "48",
+      "52",
+      "50"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "92f8e700-5e4b-4c99-8fc2-e44d22b2c743",
+    "id": "7b662543-ab08-4685-833f-89762b870790",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Bir y\u0131lda ka\u00e7 hafta vard\u0131r?",
-    "options": [
-      "52",
-      "48",
-      "54",
-      "50"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "ab5e3b8d-1410-41a0-bbbb-0296ed8c112c",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
+    "difficulty": 2,
     "text": "Cumhurba\u015fkanl\u0131\u011f\u0131 Forsunda ka\u00e7 y\u0131ld\u0131z vard\u0131r?",
     "options": [
-      "16",
+      "18",
       "15",
-      "12",
-      "18"
+      "16",
+      "12"
     ],
-    "correctOptionIndex": 0
+    "correctOptionIndex": 2
   },
   {
-    "id": "53410676-2d73-42df-b4a6-7f0260f37eb9",
+    "id": "5bf8d49c-386f-44d5-98ad-df7e9e2b4b7b",
     "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
+    "difficulty": 2,
     "text": "Osmanl\u0131 Devleti'nin ilk ba\u015fkenti neresidir?",
     "options": [
-      "Bursa",
-      "S\u00f6\u011f\u00fct",
+      "Edirne",
       "\u0130stanbul",
-      "Edirne"
+      "S\u00f6\u011f\u00fct",
+      "Bursa"
     ],
-    "correctOptionIndex": 1
+    "correctOptionIndex": 2
   }
 ]

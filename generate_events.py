@@ -102,72 +102,81 @@ for year, event in years.items():
     t = random.choice(year_templates).replace("{event}", event)
     add_q("Tarih", t, year, wrongs)
 
-# Spor
-world_cups = {
-    "2022": "Arjantin", "2018": "Fransa", "2014": "Almanya", "2010": "İspanya",
-    "2006": "İtalya", "2002": "Brezilya", "1998": "Fransa", "1994": "Brezilya",
-    "1990": "Almanya", "1986": "Arjantin", "1982": "İtalya", "1978": "Arjantin"
-}
-all_countries = ["Arjantin", "Fransa", "Almanya", "İspanya", "İtalya", "Brezilya", "İngiltere", "Uruguay", "Hollanda", "Hırvatistan"]
-for year, winner in world_cups.items():
-    wrongs = random.sample([c for c in all_countries if c != winner], 3)
-    add_q("Spor", f"{year} FIFA Dünya Kupası'nı hangi ülke kazanmıştır?", winner, wrongs)
+# Futbol
+futbol_qs = [
+    ("Hangi futbolcu kariyeri boyunca en çok Ballon d'Or ödülünü kazanmıştır?", "Lionel Messi", ["Cristiano Ronaldo", "Pele", "Diego Maradona"]),
+    ("Tarihte 'Sarı Kanaryalar' lakabıyla bilinen Türk futbol kulübü hangisidir?", "Fenerbahçe", ["Galatasaray", "Beşiktaş", "Trabzonspor"]),
+    ("İngiltere Premier Lig tarihinde 'The Invincibles' (Yenilmezler) unvanıyla namağlup şampiyon olan tek takım hangisidir?", "Arsenal", ["Manchester United", "Chelsea", "Manchester City"]),
+    ("Futbolda kendi kalesine atılan gole ne ad verilir?", "Kendi Kalesine Gol (Own Goal)", ["Ofsayt", "Frikik", "Rövaşata"]),
+    ("Türkiye Süper Lig'de 4 yıldız takmaya hak kazanan ilk futbol takımı hangisidir?", "Galatasaray", ["Fenerbahçe", "Beşiktaş", "Trabzonspor"]),
+    ("Real Madrid'in efsanevi maçlarını oynadığı dünyaca ünlü stadyumunun adı nedir?", "Santiago Bernabeu", ["Camp Nou", "Allianz Arena", "Old Trafford"]),
+    ("Futbol tarihinde 'El Pibe de Oro' (Altın Çocuk) lakabıyla tanınan efsanevi Arjantinli oyuncu kimdir?", "Diego Maradona", ["Lionel Messi", "Gabriel Batistuta", "Alfredo Di Stefano"]),
+    ("2002 FIFA Dünya Kupası'nda Türkiye Milli Takımı hangi ülkeyi yenerek dünya üçüncüsü olmuştur?", "Güney Kore", ["Japonya", "Brezilya", "Senegal"]),
+    ("Şampiyonlar Ligi'ni (ve eski adıyla Şampiyon Kulüpler Kupası'nı) en çok kazanan Avrupa kulübü hangisidir?", "Real Madrid", ["Milan", "Bayern Münih", "Liverpool"]),
+    ("Futbolda rakip takımın savunma arkasına sarkıldığında kural ihlali sayılan pozisyona ne ad verilir?", "Ofsayt", ["Korner", "Taç", "Penaltı"]),
+    ("Galatasaray, 2000 yılında UEFA Kupası finalinde hangi takımı penaltılarla geçerek şampiyon olmuştur?", "Arsenal", ["Leeds United", "Real Madrid", "Mallorca"]),
+    ("Tarihte 'Siyah İnce İnci' veya sadece 'Kral' lakaplarıyla tanınan, 3 kez Dünya Kupası kazanan tek futbolcu kimdir?", "Pele", ["Maradona", "Ronaldo Nazario", "Ronaldinho"]),
+    ("İtalya Serie A'da 'Yaşlı Kadın' (La Vecchia Signora) lakabıyla bilinen takım hangisidir?", "Juventus", ["Milan", "Inter", "Roma"]),
+    ("Dünya futbol tarihinde kalecilerin topu elle tutmasının yasak olduğu alanın dışındaki bölgeye ne ad verilir?", "Ceza sahası dışı", ["Altı pas", "Kale arkası", "Yarı alan"]),
+    ("Bir futbol maçında aynı oyuncunun 3 gol atması durumuna verilen isim nedir?", "Hat-trick", ["Poker", "Duble", "Clean Sheet"]),
+    ("Beşiktaş'ın efsanevi üçlüsü 'Metin - Ali - Feyyaz' döneminde takımın sembolü haline gelen isimlerden Feyyaz'ın soyadı nedir?", "Uçar", ["Tekin", "Güler", "Yılmaz"]),
+    ("İngiliz futbolunun kalbi sayılan ve Liverpool'un iç saha maçlarını oynadığı tarihi stadyum neresidir?", "Anfield Road", ["Old Trafford", "Stamford Bridge", "Emirates"]),
+    ("Türkiye'de ilk resmi futbol maçı hangi iki takım arasında oynanmıştır?", "Moda FC - HMS Imogene", ["Galatasaray - Fenerbahçe", "Beşiktaş - Galatasaray", "Karşıyaka - Altay"]),
+    ("Futbolda hakemin oyunu sarı kartla durdurup, aynı oyuncuya ikinci sarıdan kırmızı kart göstermesi ne anlama gelir?", "Oyundan ihraç", ["Penaltı atışı", "Serbest vuruş", "Uyarı"]),
+    ("Dünya Kupası tarihinde en çok gol atan oyuncu olan Miroslav Klose hangi ülkenin vatandaşıdır?", "Almanya", ["Polonya", "Avusturya", "İsviçre"]),
+    ("Türkiye Milli Futbol Takımı'nın tarihindeki en çok gol atan oyuncusu (Tüm zamanların en golcüsü) kimdir?", "Hakan Şükür", ["Burak Yılmaz", "Lefter Küçükandonyadis", "Nihat Kahveci"]),
+    ("Futbol oyun kurallarına göre bir takım sahada en fazla kaç oyuncu ile mücadele edebilir?", "11", ["10", "12", "9"]),
+    ("Brezilyalı efsane Ronaldinho'nun adıyla özdeşleşen ve topu rakibin bacak arasından geçirmeye dayalı çalıma ne denir?", "Bacak arası (Nutmeg)", ["Rövaşata", "Gökkuşağı", "Plase"]),
+    ("Şampiyonlar Ligi müziği hangi klasik bestecinin eserinden uyarlanmıştır?", "George Frideric Handel", ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach"]),
+    ("Türkiye'de 'Dört Büyükler' olarak anılan takımların dışında Süper Lig şampiyonluğu yaşayan ilk Anadolu kulübü hangisidir?", "Trabzonspor", ["Bursaspor", "Başakşehir", "Kocaelispor"]),
+    ("Futbol maçlarında sürenin bitimiyle birlikte hakemin eklediği kayıp zamana ne ad verilir?", "Uzatma (Duraklama) anları", ["Altın gol", "Gümüş gol", "Penaltılar"]),
+    ("Hollanda futbolunun felsefesi olan 'Total Futbol'u dünyaya tanıtan efsanevi futbol adamı kimdir?", "Johan Cruyff", ["Marco van Basten", "Ruud Gullit", "Frank Rijkaard"]),
+    ("Avrupa Futbol Şampiyonası (EURO) tarihinde sürpriz bir şekilde 2004 yılında şampiyon olan ülke hangisidir?", "Yunanistan", ["Portekiz", "Danimarka", "Çekya"]),
+    ("Bir kalecinin kendi ceza sahası dışında topa eliyle müdahale etmesinin cezası genellikle nedir?", "Kırmızı Kart", ["Sarı Kart", "Uyarı", "Penaltı"]),
+    ("Lionel Messi'nin Barcelona'da giydiği efsanevi forma numarası kaçtır?", "10", ["9", "11", "7"]),
+    ("Cristiano Ronaldo, profesyonel kariyerine hangi Portekiz kulübünde başlamıştır?", "Sporting Lizbon", ["Porto", "Benfica", "Braga"]),
+    ("Türkiye Süper Ligi'nde en çok gol krallığı yaşayan ve 'Taçsız Kral' lakabıyla anılan efsane kimdir?", "Metin Oktay", ["Lefter Küçükandonyadis", "Hakkı Yeten", "Tanju Çolak"])
+]
 
-sports_terms = {
-    "Futbol": ["Korner", "Taç", "Ofsayt", "Penaltı", "Sarı Kart", "Asist", "Hat-trick", "Frikik"],
-    "Basketbol": ["Ribaund", "Turnike", "Hatalı Yürüme", "Üçlük", "Blok", "Pota"],
-    "Tenis": ["Tie-break", "Ace", "Backhand", "Forehand", "Set Sayısı", "Grand Slam"],
-    "Voleybol": ["Manşet", "Smaç", "Servis", "Libero", "File"]
-}
-all_sports = list(sports_terms.keys())
-for sport, terms in sports_terms.items():
-    for term in terms:
-        wrongs = random.sample([s for s in all_sports if s != sport], 3)
-        add_q("Spor", f"'{term}' terimi genellikle hangi sporda kullanılır?", sport, wrongs)
+for t, ans, wr in futbol_qs:
+    add_q("Futbol", t, ans, wr)
 
-cl_winners = {
-    "2023": "Manchester City", "2022": "Real Madrid", "2021": "Chelsea", "2020": "Bayern Münih",
-    "2019": "Liverpool", "2018": "Real Madrid", "2017": "Real Madrid", "2016": "Real Madrid",
-    "2015": "Barcelona", "2014": "Real Madrid", "2013": "Bayern Münih", "2012": "Chelsea",
-    "2010": "Inter", "2009": "Barcelona", "2008": "Manchester United", "2007": "Milan",
-    "2005": "Liverpool", "1999": "Manchester United"
-}
-cl_teams = list(set(cl_winners.values()) | {"Arsenal", "Juventus", "PSG", "Borussia Dortmund", "Atletico Madrid"})
-for year, winner in cl_winners.items():
-    wrongs = random.sample([t for t in cl_teams if t != winner], 3)
-    add_q("Spor", f"{year} yılında UEFA Şampiyonlar Ligi'ni hangi takım kazanmıştır?", winner, wrongs)
+# Basketbol
+basketbol_qs = [
+    ("Basketbolda kendi çemberine doğru giden topu havada yakalayıp smaçla bitirmeye ne ad verilir?", "Alley-oop", ["Pick and Roll", "Crossover", "Fadeaway"]),
+    ("NBA tarihinde 'Ekselansları' (His Airness) lakabıyla bilinen ve Chicago Bulls ile 6 şampiyonluk kazanan efsane kimdir?", "Michael Jordan", ["Kobe Bryant", "LeBron James", "Magic Johnson"]),
+    ("Türkiye Erkekler Basketbol tarihinde EuroLeague kupasını kazanan ilk takım hangisidir?", "Fenerbahçe", ["Anadolu Efes", "Galatasaray", "Darüşşafaka"]),
+    ("Basketbolda hücum süresi (shot clock) standart olarak kaç saniyedir?", "24 saniye", ["30 saniye", "20 saniye", "15 saniye"]),
+    ("NBA logosunda silueti bulunan efsanevi basketbolcu kimdir?", "Jerry West", ["Wilt Chamberlain", "Bill Russell", "Larry Bird"]),
+    ("Bir oyuncunun maç boyunca çift haneli istatistiklere 3 farklı kategoride (örneğin: sayı, ribaund, asist) ulaşmasına ne denir?", "Triple-Double", ["Double-Double", "Quadruple-Double", "Buzzer Beater"]),
+    ("EuroLeague tarihinde en çok şampiyonluk kazanan başantrenör (Koç) kimdir?", "Zeljko Obradovic", ["Ergin Ataman", "Ettore Messina", "Dusan Ivkovic"]),
+    ("Basketbolda serbest atış (free throw) çizgisinden atılan ve giren her bir şut kaç puan değerindedir?", "1", ["2", "3", "0.5"]),
+    ("Los Angeles Lakers'ın efsanevi yıldızı Kobe Bryant'ın sahada kullandığı lakap neydi?", "Black Mamba", ["The Answer", "The Truth", "The King"]),
+    ("Top sürerken (dribbling) topu sektirmeyi bırakıp iki eliyle tuttuktan sonra tekrar sektirmeye başlamak hangi kural ihlalidir?", "Çift Top (Double Dribble)", ["Hatalı Yürüme", "Taşıma", "Geri Saha İhlali"]),
+    ("Dünya Basketbol Şampiyonası'nda (FIBA) en çok madalya kazanan ve basketbolun beşiği sayılan ülke hangisidir?", "ABD", ["Sırbistan", "İspanya", "Arjantin"]),
+    ("Efsanevi oyuncu LeBron James, NBA kariyerine hangi takımda başlamıştır?", "Cleveland Cavaliers", ["Miami Heat", "Los Angeles Lakers", "Chicago Bulls"]),
+    ("Avrupa basketbolunun kulüpler bazındaki en prestijli turnuvası hangisidir?", "EuroLeague", ["EuroCup", "FIBA Şampiyonlar Ligi", "VTB Ligi"]),
+    ("Basketbolda potanın yerden yüksekliği standart olarak tam kaç metredir?", "3.05 metre", ["2.95 metre", "3.15 metre", "3.00 metre"]),
+    ("Bir oyuncunun topu çemberin içinden geçirirken elleriyle çembere asılarak attığı çok sert sayı türü nedir?", "Smaç (Dunk)", ["Turnike (Layup)", "Floter", "Kanca (Hook)"]),
+    ("2021 ve 2022 yıllarında üst üste iki kez EuroLeague şampiyonu olan Türk basketbol takımı hangisidir?", "Anadolu Efes", ["Fenerbahçe Beko", "Galatasaray", "Beşiktaş"]),
+    ("Basketbolda 3 saniye kuralı, sahanın hangi bölgesinde uygulanır?", "Boyalı alan", ["Orta saha", "Üç sayı çizgisi dışı", "Kenar çizgisi"]),
+    ("Efsanevi uzun Wilt Chamberlain, NBA tarihinde bir maçta en fazla kaç sayı atarak kırılması imkansız bir rekor kırmıştır?", "100", ["81", "72", "93"]),
+    ("Rakip oyuncu şut attıktan sonra topu engellemeye çalışırken top inişe geçmişse ve o topa müdahale edilirse ne kararı verilir?", "İniş halindeki top (Goaltending) - Sayı geçerli sayılır", ["Blok - Oyun devam eder", "Faul - Serbest atış verilir", "Hatalı savunma - Top yandan başlar"]),
+    ("Stephen Curry, NBA'de hangi oyun stili ve yeteneğiyle tüm basketbol dünyasında devrim yapmıştır?", "Uzak mesafeli 3 sayılık atışlar", ["Sert savunma", "Pota altı dominasyonu", "Gözü kapalı asistler"]),
+    ("Basketbolu 1891 yılında ABD'de bir spor dalı olarak icat eden beden eğitimi öğretmeni kimdir?", "James Naismith", ["William G. Morgan", "Abner Doubleday", "Alexander Cartwright"]),
+    ("Boston Celtics ile kazandığı sayısız şampiyonlukla hatırlanan 'Larry Legend' lakaplı yıldız kimdir?", "Larry Bird", ["Paul Pierce", "Kevin McHale", "Bill Russell"]),
+    ("Hücumdaki takımın, kendi yarı sahasından topu rakip yarı sahaya geçirmek için kaç saniye süresi vardır?", "8 saniye", ["5 saniye", "10 saniye", "12 saniye"]),
+    ("Maçın bitimini belirten siren çaldığı anda havada olan ve basketle sonuçlanan efsanevi şutlara ne isim verilir?", "Buzzer Beater", ["Fadeaway", "Clutch Shot", "Airball"]),
+    ("Hidayet Türkoğlu, NBA kariyerinde en büyük başarılarını ve 'En Çok Gelişme Gösteren Oyuncu' (MIP) ödülünü hangi takımla kazanmıştır?", "Orlando Magic", ["Sacramento Kings", "Toronto Raptors", "San Antonio Spurs"]),
+    ("Şut atarken savunmacının üzerinden geriye doğru sıçrayarak atılan, savunulması çok zor şut tekniği nedir?", "Fadeaway", ["Hook Shot", "Layup", "Floater"]),
+    ("Dallas Mavericks ile özdeşleşen ve tek bacağı üzerinde geriye çekilerek attığı şutlarla efsaneleşen Alman yıldız kimdir?", "Dirk Nowitzki", ["Pau Gasol", "Tony Parker", "Luka Doncic"]),
+    ("Türkiye'nin lakabı '12 Dev Adam' olan Erkek Milli Basketbol Takımı, bu lakabı ilk kez hangi turnuvadaki başarısıyla almıştır?", "2001 Avrupa Şampiyonası", ["2010 Dünya Şampiyonası", "1999 Avrupa Şampiyonası", "2014 Dünya Şampiyonası"]),
+    ("Savunma yapan oyuncunun ayakları tamamen yerleşikken, hücum oyuncusunun gelip ona şiddetle çarpmasına ne denir?", "Hücum Faul (Charge)", ["Savunma Faulü", "Blok", "Teknik Faul"]),
+    ("Giannis Antetokounmpo'nun sahip olduğu ve inanılmaz fiziği ile uyumlu 'Yunan Ucubesi' anlamına gelen İngilizce lakabı nedir?", "Greek Freak", ["The Alphabet", "Spartan", "Olympian"])
+]
 
-tsl_winners = {
-    "2023": "Galatasaray", "2022": "Trabzonspor", "2021": "Beşiktaş", "2020": "Başakşehir",
-    "2019": "Galatasaray", "2018": "Galatasaray", "2017": "Beşiktaş", "2016": "Beşiktaş",
-    "2014": "Fenerbahçe", "2010": "Bursaspor"
-}
-tsl_teams = ["Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor", "Bursaspor", "Başakşehir", "Sivasspor"]
-for year, winner in tsl_winners.items():
-    wrongs = random.sample([t for t in tsl_teams if t != winner], 3)
-    add_q("Spor", f"{year} yılında Türkiye Süper Ligi'nde hangi takım şampiyon olmuştur?", winner, wrongs)
-
-f1_champs = {
-    "2023": "Max Verstappen", "2022": "Max Verstappen", "2021": "Max Verstappen",
-    "2020": "Lewis Hamilton", "2019": "Lewis Hamilton", "2018": "Lewis Hamilton",
-    "2016": "Nico Rosberg", "2013": "Sebastian Vettel", "2006": "Fernando Alonso",
-    "2004": "Michael Schumacher", "2007": "Kimi Raikkonen"
-}
-f1_drivers = list(set(f1_champs.values()) | {"Charles Leclerc", "Lando Norris", "Carlos Sainz", "Valtteri Bottas", "Sergio Perez"})
-for year, winner in f1_champs.items():
-    wrongs = random.sample([d for d in f1_drivers if d != winner], 3)
-    add_q("Spor", f"{year} Formula 1 Dünya Şampiyonu kim olmuştur?", winner, wrongs)
-
-nba_champs = {
-    "2023": "Denver Nuggets", "2022": "Golden State Warriors", "2021": "Milwaukee Bucks",
-    "2020": "Los Angeles Lakers", "2019": "Toronto Raptors", "2016": "Cleveland Cavaliers",
-    "2014": "San Antonio Spurs", "2011": "Dallas Mavericks", "2008": "Boston Celtics",
-    "1998": "Chicago Bulls", "1996": "Chicago Bulls"
-}
-nba_teams = list(set(nba_champs.values()) | {"Miami Heat", "Phoenix Suns", "Houston Rockets", "New York Knicks"})
-for year, winner in nba_champs.items():
-    wrongs = random.sample([t for t in nba_teams if t != winner], 3)
-    add_q("Spor", f"{year} NBA Şampiyonu hangi takım olmuştur?", winner, wrongs)
+for t, ans, wr in basketbol_qs:
+    add_q("Basketbol", t, ans, wr)
 
 # Sinema & Sanat
 directors = {
