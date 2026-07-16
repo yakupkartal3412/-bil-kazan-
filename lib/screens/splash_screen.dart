@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'home_screen.dart';
 import 'dart:async';
+import 'dart:math';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -10,8 +11,10 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
+class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMixin {
   late AnimationController _progressController;
+  late AnimationController _mathSymbolsController;
+  late AnimationController _electricController;
   int _factIndex = 0;
   
   final List<String> _facts = [
@@ -29,12 +32,21 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 5000), // 5 seconds loading
+      duration: const Duration(milliseconds: 5500), 
     );
+    
+    _mathSymbolsController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 10),
+    )..repeat();
+    
+    _electricController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 800),
+    )..repeat(reverse: true);
 
     _progressController.addListener(() {
       setState(() {
-        // Change fact every 33%
         if (_progressController.value < 0.33) {
           _factIndex = 0;
         } else if (_progressController.value < 0.66) {
@@ -50,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   }
 
   Future<void> _navigateNext() async {
-    await Future.delayed(const Duration(milliseconds: 5500));
+    await Future.delayed(const Duration(milliseconds: 7000));
     
     if (!mounted) return;
     
@@ -72,7 +84,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         PageRouteBuilder(
           pageBuilder: (_, __, ___) => const HomeScreen(),
           transitionsBuilder: (_, animation, __, child) => FadeTransition(opacity: animation, child: child),
-          transitionDuration: const Duration(milliseconds: 800),
+          transitionDuration: const Duration(milliseconds: 1200),
         )
       );
     }
@@ -81,6 +93,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   @override
   void dispose() {
     _progressController.dispose();
+    _mathSymbolsController.dispose();
+    _electricController.dispose();
     super.dispose();
   }
 
@@ -90,44 +104,85 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     bool isComplete = progress >= 0.99;
     
     return Scaffold(
-      backgroundColor: const Color(0xFF070B19), // Deeper space navy
+      backgroundColor: const Color(0xFF070B19),
       body: Stack(
         children: [
+          // Math Symbols Background
+          AnimatedBuilder(
+            animation: _mathSymbolsController,
+            builder: (context, child) {
+              return CustomPaint(
+                painter: MathSymbolsPainter(animationValue: _mathSymbolsController.value),
+                size: Size.infinite,
+              );
+            },
+          ),
+          
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Spacer(flex: 3),
-                // Glowing Avatar
-                Container(
-                  padding: const EdgeInsets.all(2), // Thin border
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.cyanAccent.withValues(alpha: 0.8), width: 2.5),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.cyanAccent.withValues(alpha: 0.2),
-                        blurRadius: 50,
-                        spreadRadius: 15,
+                
+                // Glowing Avatar with Flare
+                Stack(
+                  clipBehavior: Clip.none,
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(2),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.cyanAccent.withValues(alpha: 0.8), width: 2.5),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.cyanAccent.withValues(alpha: 0.2),
+                            blurRadius: 50,
+                            spreadRadius: 15,
+                          ),
+                          BoxShadow(
+                            color: Colors.blueAccent.withValues(alpha: 0.2),
+                            blurRadius: 80,
+                            spreadRadius: 30,
+                          ),
+                        ],
                       ),
-                      BoxShadow(
-                        color: Colors.blueAccent.withValues(alpha: 0.2),
-                        blurRadius: 80,
-                        spreadRadius: 30,
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/images/einstein_splash.png',
+                          width: 220,
+                          height: 220,
+                          fit: BoxFit.cover,
+                        ),
                       ),
-                    ],
-                  ),
-                  child: ClipOval(
-                    child: Image.asset(
-                      'assets/images/einstein_splash.png',
-                      width: 220,
-                      height: 220,
-                      fit: BoxFit.cover,
                     ),
-                  ),
+                    
+                    // Atom Light Flare overlay (appears on left side of image where his hand is)
+                    Positioned(
+                      left: -20,
+                      bottom: 40,
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 600),
+                        curve: Curves.easeInExpo,
+                        width: isComplete ? 1500 : 80, // Massive explosion at 100%
+                        height: isComplete ? 1500 : 80,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          gradient: RadialGradient(
+                            colors: [
+                              Colors.white.withValues(alpha: isComplete ? 1.0 : 0.6),
+                              Colors.cyanAccent.withValues(alpha: isComplete ? 0.8 : 0.3),
+                              Colors.transparent,
+                            ],
+                            stops: const [0.1, 0.4, 1.0],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 35),
-                // Split Text: MİLY (White) ARDER (Cyan)
+                
                 RichText(
                   text: const TextSpan(
                     style: TextStyle(
@@ -156,12 +211,11 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 ),
                 const Spacer(flex: 2),
                 
-                // Loading Section
+                // Loading Section with Electric Bar
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 40.0),
                   child: Column(
                     children: [
-                      // Progress Bar
                       Container(
                         height: 8,
                         width: double.infinity,
@@ -174,28 +228,36 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                           builder: (context, constraints) {
                             return Align(
                               alignment: Alignment.centerLeft,
-                              child: Container(
-                                width: constraints.maxWidth * progress,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  gradient: const LinearGradient(
-                                    colors: [Colors.lightBlueAccent, Colors.cyanAccent],
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.cyanAccent.withValues(alpha: 0.6),
-                                      blurRadius: 10,
-                                      spreadRadius: 1,
+                              child: AnimatedBuilder(
+                                animation: _electricController,
+                                builder: (context, child) {
+                                  return Container(
+                                    width: constraints.maxWidth * progress,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      gradient: LinearGradient(
+                                        colors: [
+                                          Colors.lightBlueAccent, 
+                                          Colors.cyanAccent, 
+                                          Colors.white.withValues(alpha: _electricController.value)
+                                        ],
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.cyanAccent.withValues(alpha: 0.6 + (_electricController.value * 0.4)),
+                                          blurRadius: 10 + (_electricController.value * 5),
+                                          spreadRadius: 1 + (_electricController.value * 2),
+                                        ),
+                                      ],
                                     ),
-                                  ],
-                                ),
+                                  );
+                                }
                               ),
                             );
                           },
                         ),
                       ),
                       const SizedBox(height: 12),
-                      // Percentage
                       Text(
                         '%${(progress * 100).toInt()}',
                         style: const TextStyle(
@@ -211,7 +273,6 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 
                 const SizedBox(height: 30),
                 
-                // Dynamic Fact Box or Ready Text
                 SizedBox(
                   height: 60,
                   child: AnimatedSwitcher(
@@ -277,5 +338,49 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         ],
       ),
     );
+  }
+}
+
+class MathSymbolsPainter extends CustomPainter {
+  final double animationValue;
+  final Random random = Random(42); 
+  
+  MathSymbolsPainter({required this.animationValue});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final textPainter = TextPainter(textDirection: TextDirection.ltr);
+    final symbols = ['π', '√', 'Σ', '∞', '∫', '≈', 'e', '+', '-'];
+    
+    for (int i = 0; i < 30; i++) {
+      double startX = (random.nextDouble() * size.width * 1.5) - (size.width * 0.25);
+      double startY = size.height + (random.nextDouble() * size.height * 2);
+      double speed = 0.2 + random.nextDouble() * 0.5;
+      
+      double currentY = startY - ((animationValue * 10 * size.height * speed) % (size.height * 2));
+      if (currentY < -100) currentY += size.height * 2; 
+      
+      double currentX = startX + sin(animationValue * pi * 2 + i) * 30;
+      
+      double opacity = 0.05 + random.nextDouble() * 0.15; // Very subtle
+      double fontSize = 16 + random.nextDouble() * 24;
+      
+      textPainter.text = TextSpan(
+        text: symbols[i % symbols.length],
+        style: TextStyle(
+          color: Colors.cyanAccent.withValues(alpha: opacity),
+          fontSize: fontSize,
+          fontWeight: FontWeight.bold,
+        ),
+      );
+      
+      textPainter.layout();
+      textPainter.paint(canvas, Offset(currentX, currentY));
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant MathSymbolsPainter oldDelegate) {
+    return oldDelegate.animationValue != animationValue;
   }
 }
