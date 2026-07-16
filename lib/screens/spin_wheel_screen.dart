@@ -20,7 +20,7 @@ class _SpinWheelScreenState extends State<SpinWheelScreen> with TickerProviderSt
   late AnimationController _pulseController;
   
   final List<String> prizes = [
-    '100.000 ₺', '5 Elmas', '50.000 ₺', '25 Elmas', '5.000 ₺', '25.000 ₺', '1.000 ₺', 'Pas'
+    '100.000 ₺', '50 Elmas', '50.000 ₺', '25 Elmas', '25.000 ₺', '5 Elmas'
   ];
   
   bool _isSpinning = false;
