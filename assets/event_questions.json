@@ -1,3044 +1,3330 @@
 [
   {
-    "id": "7e0f40f3-5532-4dfe-9c35-704b2b9a6931",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Almanya'nin ba\u015fkentidir?",
+    "id": "e4a2c918-7b9f-4f6c-82e7-0f8c37d65b11",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "1990'lı yıllarda pazar sabahları TRT'de yayımlanan 'Adam Olacak Çocuk' programını hazırlayıp sunan efsane sanatçı kimdir?",
     "options": [
-      "Riyad",
-      "Atina",
-      "Kanberra",
-      "Berlin"
+      "Cem Karaca",
+      "Barış Manço",
+      "Erkin Koray",
+      "İlhan İrem"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "5f3e9b1d-91a7-4b6f-85d8-5b18e69d7a22",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "Sezen Aksu'ya Türk pop müziğinde verilen ünlü lakap hangisidir?",
+    "options": [
+      "Süperstar",
+      "Diva",
+      "Minik Serçe",
+      "Megastar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "81c3b4a2-e67f-4138-8c20-7f51de3d94a3",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "1991 yılında çıkardığı 'Abone' albümüyle 90'lar Türk pop müziği patlamasını başlatan, 'Popun Yoncası' lakaplı sanatçı kimdir?",
+    "options": [
+      "Aşkın Nur Yengi",
+      "Şebnem Ferah",
+      "Sertab Erener",
+      "Yonca Evcimik"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "4a75d8a8-eea3-4ae2-86f4-1303374b84a8",
-    "category": "Co\u011frafya",
+    "id": "b7d2f934-80e5-4d7a-ba9c-36a51d2f9b14",
+    "category": "Türk Müziği",
     "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Fransa'nin ba\u015fkentidir?",
+    "text": "2003 Eurovision Şarkı Yarışması'nda 'Everyway That I Can' adlı şarkısıyla Türkiye'ye birinciliği getiren sanatçı kimdir?",
     "options": [
-      "Lima",
-      "Ottawa",
-      "Yeni Delhi",
-      "Paris"
+      "Sertab Erener",
+      "Şebnem Paker",
+      "Kenan Doğulu",
+      "Athena"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9a5c8e21-f1d7-4b92-8e34-5f16de9c7f25",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "'Süperstar' lakabıyla tanınan ve her dönem yenilikçi tarzıyla Türk pop müziğine yön veren kadın sanatçı kimdir?",
+    "options": [
+      "Nükhet Duru",
+      "Ajda Pekkan",
+      "Nilüfer",
+      "Zerrin Özer"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d2f4e819-71c5-4a6f-b2d3-9f5b61e8c7a6",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "Tarkan'ın 1997 yılında çıkardığı ve tüm dünyada yankı uyandıran, 'Ölürüm Sana' albümündeki ünlü öpücük sesli hit şarkısı hangisidir?",
+    "options": [
+      "Kuzu Kuzu",
+      "Dudu",
+      "Şımarık",
+      "Hüple"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c1e8d927-b5f3-4a1d-8f2e-4b6c1f9d5a37",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "Türk müzik tarihinde efsanevi bir yeri olan MFÖ grubunun açılımı hangi isimlerden oluşur?",
+    "options": [
+      "Murat, Ferdi, Orhan",
+      "Mazhar, Fuat, Özkan",
+      "Metin, Feyyaz, Oktay",
+      "Mustafa, Faruk, Ömer"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f5b2c7e4-9d1a-4f3b-8c6e-2b5a1f9d8c48",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "'Sanat Güneşi' lakabıyla bilinen, sahne kostümleri ve eşsiz Türk Sanat Müziği yorumuyla efsaneleşen sanatçımız kimdir?",
+    "options": [
+      "Müzeyyen Senar",
+      "Bülent Ersoy",
+      "Adnan Şenses",
+      "Zeki Müren"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "d25586e6-2a10-4f86-a71a-34c699297854",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "\u0130talya'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Roma",
-      "Kahire",
-      "Bangkok",
-      "Kanberra"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "9e0a1af3-3c78-4643-a6c9-2feb0b1d636d",
-    "category": "Co\u011frafya",
+    "id": "a3d5e2f1-c8b4-4e7a-9f1d-7b6c5f4e2a59",
+    "category": "Türk Müziği",
     "difficulty": 1,
-    "text": "\u0130spanya \u00fclkesinin ba\u015fkenti neresidir?",
+    "text": "Arabesk ve fantezi müziğin 'İmparator' lakaplı efsane ismi kimdir?",
     "options": [
-      "Madrid",
-      "\u015eam",
-      "Br\u00fcksel",
-      "Helsinki"
+      "İbrahim Tatlıses",
+      "Müslüm Gürses",
+      "Ferdi Tayfur",
+      "Orhan Gencebay"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "02c2e0d1-8944-4c9b-828e-25ba30359eee",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "T\u00fcrkiye'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
+    "id": "e7c1f8b5-d4a2-4e9f-8b3c-6f1d5a7e9b60",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "'Müslüm Baba' lakabıyla anılan, kendine has yorumuyla arabesk müziğin efsanesi haline gelen şarkıcı kimdir?",
     "options": [
-      "Roma",
+      "Ferdi Tayfur",
+      "Hakkı Bulut",
+      "Müslüm Gürses",
+      "Cengiz Kurtoğlu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "b8a4f5c9-e7d2-4b1a-9f3e-5c6d1f8e2a71",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "'Paramparça', 'Gönülçelen' ve 'Papatya' gibi şarkılarıyla tanınan Türk rock müziğinin ünlü ismi kimdir?",
+    "options": [
+      "Kaan Tangöze",
+      "Teoman",
+      "Harun Tekin",
+      "Haluk Levent"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f1d7e2c5-a4b9-4f3d-8c6e-7b5a1f9d8c42",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "Türk halk müziğinde 'Bozkırın Tezenesi' olarak bilinen, 'Neredesin Sen' ve 'Yalan Dünya' gibi eserlerin yaratıcısı büyük usta kimdir?",
+    "options": [
+      "Aşık Veysel",
+      "Aşık Mahzuni Şerif",
+      "Neşet Ertaş",
+      "Muharrem Ertaş"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c4e1f8a7-b5d3-4a2f-9f1c-6d5b1f9e8a33",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "'Fesupanallah', 'Şaşkın' ve 'Arap Saçı' gibi şarkılarla Anadolu Rock müziğinin efsanesi olmuş sanatçımız kimdir?",
+    "options": [
+      "Erkin Koray",
+      "Cem Karaca",
+      "Barış Manço",
+      "Fikret Kızılok"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d7b2e5f1-a8c4-4d9b-8f3e-5c1a7f9d6b44",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "Hangi ünlü şarkıcının gerçek adı 'Fatma Sezen Yıldırım'dır?",
+    "options": [
+      "Yıldız Tilbe",
+      "Kibariye",
+      "Göksel",
+      "Sezen Aksu"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a1f5c8e2-b4d7-4e9a-8f3c-7d6b1f9a5e55",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "'Arnavut Kaldırımı' ve 'Kınalı Bebek' şarkıları ile 90'larda fırtınalar estiren kadın sanatçı kimdir?",
+    "options": [
+      "Aşkın Nur Yengi",
+      "Demet Sağıroğlu",
+      "İzel",
+      "Bendeniz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e8d4a1f5-c7b2-4f9e-9d3a-5b1f6c8a7e66",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "Türk rock grubu Duman'ın efsanevi solisti kimdir?",
+    "options": [
+      "Teoman",
+      "Harun Tekin",
+      "Kaan Tangöze",
+      "Koray Candemir"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "b5c1f8e2-a7d4-4b9f-8e3c-6d1a5f9b7a77",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "'Tamirci Çırağı' ve 'Namus Belası' gibi eserleri seslendiren, Anadolu rock müziğinin öncülerinden olan usta isim kimdir?",
+    "options": [
+      "Barış Manço",
+      "Erkin Koray",
+      "Fikret Kızılok",
+      "Cem Karaca"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "f2a7d1e5-b8c4-4f9a-9d3e-5c1b6f8a7e88",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "1990'larda 'Ateşteyim' ve 'Meyhaneci' gibi hit şarkılarla çıkış yakalayan, eski İzel-Çelik-Ercan grubunun üyesi şarkıcı kimdir?",
+    "options": [
+      "Çelik",
+      "Hakan Peker",
+      "Ercan Saatçi",
+      "Mustafa Sandal"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c7b5e1f8-a4d2-4b9c-8f3a-6d1e5f9b7a99",
+    "category": "Türk Müziği",
+    "difficulty": 3,
+    "text": "'Kara Gözlüm', 'Belalım' ve 'Sen Ağlama' gibi pek çok hit şarkının söz ve müziğinde imzası bulunan, Sezen Aksu'nun da sık sık birlikte çalıştığı efsanevi müzisyen kimdir?",
+    "options": [
+      "Uzay Heparı",
+      "Garo Mafyan",
+      "Onno Tunç",
+      "Melih Kibar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d1e8a5f2-b7c4-4f9d-8e3a-5b1c6f9a8e00",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "'Ele Güne Karşı', 'Güllerin İçinden', 'Peki Peki Anladık' gibi şarkılar hangi efsanevi grubun en bilinen eserlerindendir?",
+    "options": [
+      "Yeni Türkü",
+      "Ezginin Günlüğü",
+      "MFÖ",
+      "Bulutsuzluk Özlemi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a8f5c2e1-d4b7-4a9f-9c3e-6b1d5f8a7e11",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "Türk sanat müziğinin 'Diva'sı olarak anılan sanatçı kimdir?",
+    "options": [
+      "Zeki Müren",
+      "Müzeyyen Senar",
+      "Emel Sayın",
+      "Bülent Ersoy"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e5b1f8a2-c4d7-4f9b-8e3a-6d1c5f9b7a22",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "90'larda 'Onun Arabası Var' ve 'Araba' gibi şarkılarıyla büyük başarı yakalayan pop yıldızı kimdir?",
+    "options": [
+      "Mustafa Sandal",
+      "Tarkan",
+      "Kenan Doğulu",
+      "Serdar Ortaç"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b2c7e1f5-a8d4-4b9a-9f3e-5c1d6f8a7e33",
+    "category": "Türk Müziği",
+    "difficulty": 3,
+    "text": "Manga grubu 'We Could Be The Same' adlı şarkı ile katıldığı 2010 Eurovision Şarkı Yarışması'nda kaçıncı olmuştur?",
+    "options": [
+      "1.",
+      "2.",
+      "3.",
+      "4."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f8a1e5c2-d7b4-4f9c-8e3a-6b1d5f9a7e44",
+    "category": "Türk Müziği",
+    "difficulty": 3,
+    "text": "'Bu Kalp Seni Unutur mu?', 'Beni Bırakma' ve 'Aşka Dair' gibi derin sözlere sahip şarkıların efsanevi müzisyeni kimdir?",
+    "options": [
+      "Bülent Ortaçgil",
+      "İlhan İrem",
+      "Fikret Kızılok",
+      "Tanju Okan"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c1f8b5e2-a4d7-4b9a-8e3c-6d1e5f9b7a55",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "'O Benim Dünyam', 'Hoşgör Sen', 'Bambaşka Biri' gibi şarkıları Türk pop müziğine kazandıran sanatçı kimdir?",
+    "options": [
+      "Sezen Aksu",
+      "Nilüfer",
+      "Ajda Pekkan",
+      "Nükhet Duru"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d5e1a8f2-b7c4-4f9d-9e3a-5b1c6f8a7e66",
+    "category": "Türk Müziği",
+    "difficulty": 1,
+    "text": "'Karabiberim' adlı şarkısıyla ve zeytin yeme sahnesi içeren klibiyle 90'lara damga vuran sanatçı kimdir?",
+    "options": [
+      "Mustafa Sandal",
+      "Kenan Doğulu",
+      "Çelik",
+      "Serdar Ortaç"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a2b7c1f5-e8d4-4b9a-8f3e-6d1c5f9a7e77",
+    "category": "Türk Müziği",
+    "difficulty": 3,
+    "text": "1992 yılında çıkan ve Türk popunda devrim sayılan 'Sakin Ol!' albümü kime aittir?",
+    "options": [
+      "Sertab Erener",
+      "Levent Yüksel",
+      "Sezen Aksu",
+      "Aşkın Nur Yengi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e8c1f5b2-a4d7-4f9c-9e3a-6b1d5f8a7e88",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "Şarkılarında genellikle ayrılık, melankoli ve isyan temalarını işleyen, 'Delikanlım' ve 'Çabuk Olalım Aşkım' gibi efsane şarkıların yorumcusu kimdir?",
+    "options": [
+      "Sezen Aksu",
+      "Nazan Öncel",
+      "Leman Sam",
+      "Yıldız Tilbe"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "b5a8e1f2-c7d4-4f9b-8e3c-6d1a5f9b7e99",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "'Seninle Başım Dertte', 'Ben de Özledim' ve 'Gülüm Benim' gibi şarkılarıyla tanınan efsanevi arabesk sanatçısı kimdir?",
+    "options": [
+      "Ferdi Tayfur",
+      "Müslüm Gürses",
+      "İbrahim Tatlıses",
+      "Orhan Gencebay"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f1d5c8a2-e7b4-4f9d-9a3e-5b1c6f8d7e00",
+    "category": "Türk Müziği",
+    "difficulty": 3,
+    "text": "Türkiye'nin ilk kadın söz yazarı ve bestecilerinden olan, 'Erkekler de Ağlar', 'Geceler Kara Tren' gibi şarkılarıyla bilinen sanatçı kimdir?",
+    "options": [
+      "Sezen Aksu",
+      "Yıldız Tilbe",
+      "Nazan Öncel",
+      "Candan Erçetin"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c8a1f5e2-b4d7-4f9c-8e3a-6d1b5f9a7e11",
+    "category": "Türk Müziği",
+    "difficulty": 3,
+    "text": "'Gülpembe' şarkısı Barış Manço tarafından kimin anısına yazılmıştır?",
+    "options": [
+      "Annesi",
+      "Babaannesi",
+      "İlk aşkı",
+      "Eşi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d1b5e8f2-a7c4-4f9d-9e3a-6c1d5f8a7e22",
+    "category": "Türk Müziği",
+    "difficulty": 2,
+    "text": "1993 yılında 'Yaparım Bilirsin' albümüyle müzik piyasasına adım atan ve 'Kurşun Adres Sormaz' şarkısıyla hafızalara kazınan pop yıldızı kimdir?",
+    "options": [
+      "Tarkan",
+      "Mustafa Sandal",
+      "Kenan Doğulu",
+      "Burak Kut"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "\"Nazar boncuğu\"nun temel amacı nedir?",
+    "options": [
+      "Kötü gözden korunmak",
+      "Şans getirmek",
+      "Bereket artırmak",
+      "Hastalıkları iyileştirmek"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b2c3d4e5-f678-9012-3456-789abcdef012",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Geleneksel Türk gölge oyunu karakterleri Karagöz ve Hacivat'tan hangisi okumuş, eğitimli kesimi temsil eder?",
+    "options": [
+      "Karagöz",
+      "Hacivat",
+      "Çelebi",
+      "Beberuhi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c3d4e5f6-7890-1234-5678-9abcdef01234",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Nasreddin Hoca'nın mayaladığı iddia edilen göl hangisidir?",
+    "options": [
+      "Van Gölü",
+      "Tuz Gölü",
+      "Akşehir Gölü",
+      "Beyşehir Gölü"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d4e5f678-9012-3456-789a-bcdef0123456",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Aşağıdaki halk danslarından hangisi Karadeniz yöresine aittir?",
+    "options": [
+      "Zeybek",
+      "Halay",
+      "Horon",
+      "Bar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e5f67890-1234-5678-9abc-def012345678",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Unesco tarafından Somut Olmayan Kültürel Miras listesine de alınan, su üzerine boya damlatılarak yapılan geleneksel el sanatı hangisidir?",
+    "options": [
+      "Çini",
+      "Hat",
+      "Ebru",
+      "Minyatür"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "f6789012-3456-789a-bcde-f0123456789a",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "\"Pabucu dama atılmak\" deyimi ne anlama gelir?",
+    "options": [
+      "Terfi etmek",
+      "Kendisinden üstün birinin gelmesiyle gözden düşmek",
+      "Çok sinirlenmek",
+      "Bir işi yarım bırakmak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "01234567-89ab-cdef-0123-456789abcdef",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Anadolu efsanelerinde adı sıkça geçen, her şeyi yiyip yutabilen, korkunç masal canavarı hangisidir?",
+    "options": [
+      "Şahmeran",
+      "Tepegöz",
+      "Gulyabani",
+      "Anka Kuşu"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "12345678-9abc-def0-1234-56789abcdef0",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Geleneksel kız isteme törenlerinde damada ikram edilen Türk kahvesinin içine genellikle ne katılır?",
+    "options": [
+      "Tarçın",
+      "Şeker",
+      "Tuz",
+      "Karabiber"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "23456789-abcd-ef01-2345-6789abcdef01",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Dünyanın bilinen en eski kült yapılar topluluğu olan ve Şanlıurfa'da bulunan arkeolojik alan neresidir?",
+    "options": [
+      "Göbeklitepe",
+      "Çatalhöyük",
+      "Efes",
+      "Truva"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "3456789a-bcde-f012-3456-789abcdef012",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Mevlana Celaleddin-i Rumi'nin öğretilerini temel alan ve dönerek yapılan ritüelin adı nedir?",
+    "options": [
+      "Semah",
+      "Sema",
+      "Zikir",
+      "Hu"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "456789ab-cdef-0123-4567-89abcdef0123",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Alevi-Bektaşi inancında, bağlama eşliğinde ve kadın-erkek birlikte dönülerek yapılan inançsal dansın adı nedir?",
+    "options": [
+      "Sema",
+      "Halay",
+      "Semah",
+      "Zeybek"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "56789abc-def0-1234-5678-9abcdef01234",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "\"Uzun ince bir yoldayım, gidiyorum gündüz gece\" dizeleri kime aittir?",
+    "options": [
+      "Yunus Emre",
+      "Karacaoğlan",
+      "Aşık Veysel",
+      "Pir Sultan Abdal"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "6789abcd-ef01-2345-6789-abcdef012345",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu'nun neresinde peri bacaları olarak bilinen doğal kaya oluşumları bulunur?",
+    "options": [
+      "Pamukkale",
+      "Kapadokya",
+      "Ihlara Vadisi",
+      "Nemrut Dağı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "789abcde-f012-3456-789a-bcdef0123456",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yarı yılan, yarı insan olduğuna inanılan efsanevi yaratık hangisidir?",
+    "options": [
+      "Zümrüdüanka",
+      "Şahmeran",
+      "Pegasus",
+      "Ejderha"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "89abcdef-0123-4567-89ab-cdef01234567",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türk hamam kültüründe yıkanırken veya örtünmek için kullanılan ince dokumalı pamuklu beze ne ad verilir?",
+    "options": [
+      "Havlu",
+      "Peştamal",
+      "Kese",
+      "Lif"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "9abcdef0-1234-5678-9abc-def012345678",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Adıyaman'daki hangi dağın zirvesinde Kommagene Krallığı'na ait devasa heykeller bulunmaktadır?",
+    "options": [
+      "Ağrı Dağı",
+      "Erciyes Dağı",
+      "Nemrut Dağı",
+      "Süphan Dağı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "abcdef01-2345-6789-abcd-ef0123456789",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Hangi yemeğin yapımında hamurun içine kıyma konularak kapatılır ve üzerine sarımsaklı yoğurt dökülür?",
+    "options": [
+      "Lahmacun",
+      "Pide",
+      "Mantı",
+      "Gözleme"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "bcdef012-3456-789a-bcde-f0123456789a",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türkiye'de geleneksel olarak yeni doğan bebeklerin kaçıncı günü \"kırk uçurma\" veya \"kırk çıkarma\" adı verilen bir kutlama yapılır?",
+    "options": [
+      "7. gün",
+      "20. gün",
+      "40. gün",
+      "1. yaş"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "cdef0123-4567-89ab-cdef-0123456789ab",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Dede Korkut Hikayeleri'nde adı geçen, gözü pek ve yiğit Türk kahramanının adı nedir?",
+    "options": [
+      "Deli Dumrul",
+      "Deli Ayaz",
+      "Deli Bekir",
+      "Deli Veli"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "def01234-5678-9abc-def0-123456789abc",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu'da misafire kolonya ve ne ikram etmek geleneksel bir karşılama adeti olarak bilinir?",
+    "options": [
+      "Çikolata",
+      "Şeker",
+      "Lokum",
+      "Kuruyemiş"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "ef012345-6789-abcd-ef01-23456789abcd",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Bursa ile özdeşleşen, üzerinde domates sosu ve tereyağı bulunan, yoğurtla servis edilen kebap türü hangisidir?",
+    "options": [
+      "Adana Kebap",
+      "İskender Kebap",
+      "Cağ Kebabı",
+      "Urfa Kebap"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f0123456-789a-bcde-f012-3456789abcde",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "\"Bir fincan kahvenin...\" diyerek devam eden Türk atasözüne göre kahvenin kaç yıl hatırı vardır?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "11223344-5566-7788-9900-aabbccddeeff",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "İp üzerine gerilmiş bezlerin arkasından ışık verilerek oynatılan Karagöz oyununda oynatıcıya ne ad verilir?",
+    "options": [
+      "Meddah",
+      "Hayali",
+      "Çelebi",
+      "Hokkabaz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "22334455-6677-8899-00aa-bbccddeeff11",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Keloğlan masallarında Keloğlan'ın en belirgin özelliği hangisidir?",
+    "options": [
+      "Çok zengin olması",
+      "Çok güçlü olması",
+      "Kurnaz ve zeki olması",
+      "Padişahın oğlu olması"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "33445566-7788-9900-aabb-ccddeeff1122",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Kütahya ve İznik denilince akla ilk gelen, toprağın pişirilip süslenmesiyle elde edilen geleneksel el sanatı hangisidir?",
+    "options": [
+      "Çini",
+      "Cam üfleme",
+      "Bakırcılık",
+      "Ahşap oyma"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "44556677-8899-00aa-bbcc-ddeeff112233",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Evlilik öncesi kız evinde yapılan, gelinin ellerine kına yakılan geleneksel eğlenceye ne ad verilir?",
+    "options": [
+      "Düğün",
+      "Nişan",
+      "Kına Gecesi",
+      "Söz"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "55667788-9900-aabb-ccdd-eeff11223344",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu kültüründe \"Etekleri zil çalmak\" deyimi hangi durumu ifade eder?",
+    "options": [
+      "Çok sinirlenmek",
+      "Çok sevinmek",
+      "Çok korkmak",
+      "Çok acıkmak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "66778899-00aa-bbcc-ddee-ff1122334455",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "\"Gelin kaynana atışması\" olarak da bilinen, karşılıklı söylenen doğaçlama halk şiiri türü nedir?",
+    "options": [
+      "Mani",
+      "Türkü",
+      "Gazel",
+      "Kaside"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "77889900-aabb-ccdd-eeff-112233445566",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Eski Türk inançlarından günümüze gelen, giden birinin arkasından \"su gibi gidip gelsin\" diyerek yere ne dökülür?",
+    "options": [
+      "Süt",
+      "Ayran",
+      "Su",
+      "Şerbet"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "889900aa-bbcc-ddee-ff11-223344556677",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Anadolu'da imece usulü ile kışlık olarak hazırlanan, domates, biber, soğan ve yoğurt gibi malzemelerin fermente edilip kurutulmasıyla yapılan çorbalık malzemenin adı nedir?",
+    "options": [
+      "Tarhana",
+      "Bulgur",
+      "Salça",
+      "Kuskus"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9900aabb-ccdd-eeff-1122-334455667788",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yağlı güreşlerde pehlivanların giydiği, deriden yapılan özel pantolonun adı nedir?",
+    "options": [
+      "Şalvar",
+      "Kispet",
+      "Peştamal",
+      "Çarık"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00aabbcc-ddee-ff11-2233-445566778899",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Erzurum yöresine ait olan, etin yatay bir şişe geçirilerek odun ateşinde pişirildiği kebap türü hangisidir?",
+    "options": [
+      "Cağ Kebabı",
+      "Kuyu Kebabı",
+      "Testi Kebabı",
+      "Tepsi Kebabı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000001",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Kurtlar Vadisi dizisinde Süleyman Çakır karakterini kim öldürmüştür?",
+    "options": [
+      "Polat Alemdar",
+      "Cerrahpaşalı Halit",
+      "Testere Necmi",
+      "Laz Ziya"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000002",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Ezel dizisinde Ömer'e hapishanede yardım edip onu eğiten 'Dayı' lakaplı karakterin tam adı nedir?",
+    "options": [
+      "Ramiz Karaeski",
+      "Ali Kırgız",
+      "Tevfik Zaim",
+      "Cengiz Atay"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000003",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Aşk-ı Memnu dizisinde Firdevs Yöreoğlu'nun kızı Bihter'e söylediği ve internet efsanesi olan o meşhur söz nedir?",
+    "options": [
+      "Sen Firdevs Yöreoğlu'nun kızısın, aptallık etme!",
+      "Behlül kaçar!",
+      "Tabii siz anneleri tarafından...",
+      "Beni beni, Bihter'ini!"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000004",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Avrupa Yakası dizisinde Burhan Altıntop karakteri memleketi olan hangi ilimizle sık sık övünür?",
+    "options": [
+      "Yozgat",
+      "Sivas",
+      "Tokat",
+      "Kayseri"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000005",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Leyla ile Mecnun dizisinde İsmail Abi'nin el sallayarak beklediği gemi için söylediği söz nedir?",
+    "options": [
+      "O gemi bir gün gelecek!",
+      "Deniz bitti, gemi gitti.",
+      "Gemi yandı, kaptan öldü.",
+      "Ben o gemiyi çoktan yaktım."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000006",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Muhteşem Yüzyıl dizisinde Hürrem Sultan karakteri ile büyük üne kavuşan oyuncu kimdir?",
+    "options": [
+      "Beren Saat",
+      "Vahide Perçin",
+      "Pelin Karahan",
+      "Meryem Uzerli"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000007",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Yaprak Dökümü dizisinde Ali Rıza Bey'in ailesine sıklıkla söylediği ikonik replik nedir?",
+    "options": [
+      "Aman Ali Rıza Bey, ağzımızın tadı kaçmasın.",
+      "Bu evde benim sözüm geçer!",
+      "Çocuklar, para her şey değildir.",
+      "Hepiniz bir gün anlayacaksınız."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000008",
+    "category": "Türk Dizileri",
+    "difficulty": 3,
+    "text": "Behzat Ç. dizisinde 'Hayalet' lakabıyla bilinen, her yerden bilgi bulabilen karakterin dizideki gerçek adı nedir?",
+    "options": [
+      "Sabit",
+      "İsmet",
+      "Rıza",
+      "Tahsin"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000009",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Ezel dizisi, dünya edebiyatından hangi ünlü eserin günümüz uyarlamasıdır?",
+    "options": [
+      "Sefiller",
+      "Suç ve Ceza",
+      "Monte Kristo Kontu",
+      "Büyük Umutlar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000010",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Kurtlar Vadisi dizisinde Polat Alemdar'ın estetik ameliyat olmadan önceki gerçek adı nedir?",
+    "options": [
+      "Aslan Akbey",
+      "Ali Candan",
+      "Süleyman Çakır",
+      "Efe Yakup Karahanlı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000011",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Avrupa Yakası dizisinde 'Ben aslında yoğum' repliğiyle bilinen karakter hangisidir?",
+    "options": [
+      "Gaffur",
+      "Volkan",
+      "Burhan Altıntop",
+      "Şahika"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000012",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Çukur dizisinde 'İdris Baba' karakterine hayat veren usta oyuncu kimdir?",
+    "options": [
+      "Çetin Tekindor",
+      "Ercan Kesal",
+      "Musa Uzunlar",
+      "Haluk Bilginer"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000013",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Ruhsar dizisinde Hande Ataizi'nin canlandırdığı Ruhsar karakteri öldükten sonra kocası Mazhar'ın yanına ne zaman gelebilmektedir?",
+    "options": [
+      "Sadece gece yarısı",
+      "Sadece rüyalarında",
+      "Sadece yağmur yağdığında",
+      "Sadece dolunay çıktığında"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000014",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Ekmek Teknesi dizisinde kahvehanede mahalleliye tarihi ve fantastik hikayeler anlatan karakter kimdir?",
+    "options": [
+      "Nusret Baba",
+      "Heredot Cevdet",
+      "Kirli",
+      "Ruhi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000015",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Arka Sokaklar dizisinde 'Rıza Baba' karakterini uzun yıllardır canlandıran oyuncu kimdir?",
+    "options": [
+      "Zafer Ergin",
+      "Şevket Çoruh",
+      "Özgür Ozan",
+      "Uğur Pektaş"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000016",
+    "category": "Türk Dizileri",
+    "difficulty": 3,
+    "text": "İkinci Bahar dizisinde Şener Şen'in canlandırdığı Ali Haydar Usta karakterinin kebapçısının adı nedir?",
+    "options": [
+      "Antep Sofrası",
+      "Vakkas'ın Yeri",
+      "Asmalı Konak",
+      "Bizim Meyhane"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000017",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Adını Feriha Koydum dizisinde Feriha karakterinin babası Rıza Bey'in mesleği nedir?",
+    "options": [
+      "Şoför",
+      "Apartman Görevlisi",
+      "Aşçı",
+      "Bahçıvan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000018",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Kavak Yelleri dizisinin çok sevilen jenerik müziği 'Hele Bi Gel' hangi müzik grubuna aittir?",
+    "options": [
+      "Duman",
+      "Mor ve Ötesi",
+      "Pinhani",
+      "Athena"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000019",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Öyle Bir Geçer Zaman ki dizisinde Ali Kaptan'ın, uğruna eşi Cemile'yi terk ettiği Hollandalı kadının adı nedir?",
+    "options": [
+      "Caroline",
+      "Aylin",
+      "Berrin",
+      "Mesude"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000020",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Suskunlar dizisi, Ecevit, Bilal, İbrahim ve Zeki'nin çocukken yaşadıkları hangi acı olayın intikamını konu alır?",
+    "options": [
+      "Ailelerinin öldürülmesi",
+      "Hapishanede uğradıkları istismar",
+      "Yetimhanede büyümeleri",
+      "Okuldan atılmaları"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000021",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Kuzey Güney dizisinde Kuzey ve Güney'in aşık olduğu kadın karakterin adı nedir?",
+    "options": [
+      "Cemre",
+      "Banu",
+      "Zeynep",
+      "Simay"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000022",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Çocuklar Duymasın dizisinde Tamer Karadağlı'nın canlandırdığı Haluk karakterinin en sık kullandığı kelime/replik nedir?",
+    "options": [
+      "Ne diyorsun ya?",
+      "Bana bak!",
+      "Taş fırın erkeği",
+      "Babababababa"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000023",
+    "category": "Türk Dizileri",
+    "difficulty": 3,
+    "text": "Bizimkiler dizisinde her bölümde 'Benim adım Cemil!' diye bağıran karakteri hangi oyuncu canlandırmıştır?",
+    "options": [
+      "Ercan Yazgan",
+      "Uğurtan Sayıner",
+      "Aykut Oray",
+      "Engin Şenkan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000024",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Yedi Numara dizisinde üniversite okumak için İstanbul'a gelen gençlerin kaldığı ahşap evin sahipleri Vahit Emmi ve eşinin adı nedir?",
+    "options": [
+      "Zeliha",
+      "Asiye",
+      "Meryem",
+      "Hayriye"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000025",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Geniş Aile dizisinde Ufuk Özkan'ın canlandırdığı Cevahir karakterinin sürekli kavga ettiği ezeli rakibinin adı nedir?",
+    "options": [
+      "Ulvi",
+      "Koyu Bilal",
+      "Mürsel",
+      "Zekai"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000026",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Leyla ile Mecnun dizisinde Mecnun'un en yakın arkadaşı, mahallenin abisi ve renkli ceketleriyle bilinen karakter kimdir?",
+    "options": [
+      "İsmail Abi",
+      "Erdal Bakkal",
+      "Yavuz Hırsız",
+      "Kaan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000027",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Şahsiyet dizisinde Haluk Bilginer'e Uluslararası Emmy En İyi Erkek Oyuncu Ödülü'nü kazandıran karakterin adı nedir?",
+    "options": [
+      "Agâh Beyoğlu",
+      "Nevzat",
+      "Cemil",
+      "Ateş"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000028",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Diriliş Ertuğrul dizisinde Ertuğrul Bey karakterini başarıyla canlandıran ünlü oyuncu kimdir?",
+    "options": [
+      "Burak Özçivit",
+      "Engin Altan Düzyatan",
+      "Kenan İmirzalıoğlu",
+      "Cengiz Coşkun"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000029",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Gibi dizisinde İlkkan ve Yılmaz karakterleriyle sürekli absürt maceralara atılan, saç stiliyle dikkat çeken üçüncü arkadaşın adı nedir?",
+    "options": [
+      "Ersoy",
+      "Atakan",
+      "Gökhan",
+      "Volkan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000030",
+    "category": "Türk Dizileri",
+    "difficulty": 3,
+    "text": "Bir Başkadır dizisinde Öykü Karayel'in canlandırdığı temizlik işçisi Meryem'in psikiyatristi olan karakterin adı nedir?",
+    "options": [
+      "Peri",
+      "Ruhiye",
+      "Gülbin",
+      "Melisa"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000031",
+    "category": "Türk Dizileri",
+    "difficulty": 2,
+    "text": "Medcezir dizisinde Çağatay Ulusoy'un hayat verdiği Yaman karakteri, İstanbul'un hangi lüks semtine taşınarak yeni bir hayata başlar?",
+    "options": [
+      "Altınkoy",
+      "Gümüşyaka",
+      "Zekeriyaköy",
+      "Kemerburgaz"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-0000-4000-8000-000000000032",
+    "category": "Türk Dizileri",
+    "difficulty": 1,
+    "text": "Masumlar Apartmanı dizisinde temizlik takıntısıyla bilinen ve evin kontrolünü elinde tutan abla karakteri Safiye'yi kim canlandırmıştır?",
+    "options": [
+      "Merve Dizdar",
+      "Ezgi Mola",
+      "Farah Zeynep Abdullah",
+      "Melisa Şenolsun"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "2d1f971c-6d8b-4a57-b08e-58847b2df311",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Hangi ilimiz İskender kebabı ile meşhurdur?",
+    "options": [
+      "Bursa",
+      "Adana",
+      "Gaziantep",
+      "Şanlıurfa"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "8f3b6c4e-2a9d-471e-8e5b-3b6d2a4f5c1e",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Baklavanın ana yurdu olarak bilinen, UNESCO tarafından gastronomi şehri seçilen ilimiz hangisidir?",
+    "options": [
+      "Gaziantep",
+      "Şanlıurfa",
+      "Hatay",
+      "Diyarbakır"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "5c7d8a9e-1f2b-4d3c-9e6a-7b8c9d0e1f2a",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Hangi geleneksel sütlü tatlının yapımında gerçekten tavuk göğsü eti kullanılır?",
+    "options": [
+      "Tavukgöğsü",
+      "Kazandibi",
+      "Keşkül",
+      "Sütlaç"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Lahmacun genellikle hangi ot ile birlikte servis edilir ve üzerine limon sıkılır?",
+    "options": [
+      "Maydanoz",
+      "Dereotu",
+      "Nane",
+      "Roka"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9f8e7d6c-5b4a-3f2e-1d0c-9b8a7f6e5d4c",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Mantı denilince akla ilk gelen, 'bir kaşığa 40 tane sığar' efsanesiyle bilinen ilimiz hangisidir?",
+    "options": [
+      "Kayseri",
+      "Sivas",
       "Ankara",
-      "Karakas",
-      "Viyana"
+      "Konya"
     ],
-    "correctOptionIndex": 1
+    "correctOptionIndex": 0
   },
   {
-    "id": "6bf8758c-74e4-4f65-ba04-2f18281001c0",
-    "category": "Co\u011frafya",
+    "id": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+    "category": "Türk Mutfağı",
     "difficulty": 1,
-    "text": "Japonya'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
+    "text": "Altın günlerinin vazgeçilmezi olan kısır yapımında kullanılan ana malzeme hangisidir?",
     "options": [
-      "Kahire",
-      "Manila",
-      "Tokyo",
-      "Paris"
+      "İnce Bulgur",
+      "Pirinç",
+      "İrmik",
+      "Kuskus"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c1d2e3f4-a5b6-c7d8-e9f0-a1b2c3d4e5f6",
+    "category": "Türk Mutfağı",
+    "difficulty": 2,
+    "text": "'Hünkarbeğendi' yemeğinin altındaki 'beğendi' kısmı hangi sebzenin közlenmesi ve süt/peynirle karıştırılmasıyla yapılır?",
+    "options": [
+      "Patlıcan",
+      "Biber",
+      "Kabak",
+      "Domates"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "6f5e4d3c-2b1a-0f9e-8d7c-6b5a4f3e2d1c",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Çiğ köftenin yoğrulmasında ve ona karakteristik acısını vermesinde kullanılan Şanlıurfa'ya özgü biber hangisidir?",
+    "options": [
+      "İsot",
+      "Karabiber",
+      "Pul Biber",
+      "Sumak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b1a2c3d4-e5f6-a7b8-c9d0-e1f2a3b4c5d6",
+    "category": "Türk Mutfağı",
+    "difficulty": 2,
+    "text": "Et dönerin lezzetini artırmak için yaprak etlerin arasına genellikle hangi yağ dizilir?",
+    "options": [
+      "Kuyruk yağı",
+      "Zeytinyağı",
+      "Tereyağı",
+      "Çember yağı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d6c5b4a3-f2e1-0d9c-8b7a-6f5e4d3c2b1a",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Karadeniz mutfağının vazgeçilmezi olan, mısır unu, tereyağı ve kolot peyniri ile yapılan meşhur yemek hangisidir?",
+    "options": [
+      "Mıhlama (Kuymak)",
+      "Laz Böreği",
+      "Akçaabat Köftesi",
+      "Hamsili Pilav"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Geleneksel Türk kahvesi servis edilirken yanında suyuyla birlikte genellikle hangi tatlı ikram edilir?",
+    "options": [
+      "Türk Lokumu",
+      "Baklava",
+      "Künefe",
+      "Revani"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "2d1c0b9a-8f7e-6d5c-4b3a-2f1e0d9c8b7a",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "'Tantuni' hangi ilimizin ince lavaşla servis edilen meşhur bir sokak lezzetidir?",
+    "options": [
+      "Mersin",
+      "Adana",
+      "Hatay",
+      "İzmir"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f2a3b4-c5d6-e7f8-a9b0-c1d2e3f4a5b6",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Boyoz, kumru ve bomba denilince akla ilk gelen Ege şehri hangisidir?",
+    "options": [
+      "İzmir",
+      "Aydın",
+      "Muğla",
+      "Manisa"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "6b5a4f3e-2d1c-0b9a-8f7e-6d5c4b3a2f1e",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Susurluk ilçesiyle özdeşleşen, bol köpüklü servis edilen yoğurt bazlı içecek hangisidir?",
+    "options": [
+      "Ayran",
+      "Kefir",
+      "Şalgam",
+      "Boza"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a1b2c3d4-e5f6-a7b8-c9d0-e1f2a3b4c5d6",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Gecelerin sonunda sıkça içilen, sarımsak ve sirke ile tatlandırılan meşhur çorba hangisidir?",
+    "options": [
+      "İşkembe Çorbası",
+      "Mercimek Çorbası",
+      "Ezogelin Çorbası",
+      "Yayla Çorbası"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d6c5b4a3-f2e1-0d9c-8b7a-6f5e4d3c2b1a",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Hatay yöresine özgü, tel kadayıf ve özel tuzsuz peynirle yapılan sıcak tatlı hangisidir?",
+    "options": [
+      "Künefe",
+      "Kadayıf Dolması",
+      "Ekmek Kadayıfı",
+      "Şekerpare"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c3d4e5f6-a7b8-c9d0-e1f2-a3b4c5d6e7f8",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Tel tel ayrılan yapısıyla bilinen Pişmaniye tatlısı hangi ilimizle özdeşleşmiştir?",
+    "options": [
+      "İzmit (Kocaeli)",
+      "Bursa",
+      "Eskişehir",
+      "Sakarya"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "8f7e6d5c-4b3a-2f1e-0d9c-8b7a6f5e4d3c",
+    "category": "Türk Mutfağı",
+    "difficulty": 2,
+    "text": "Kırıldığında içinden dumanlar çıkan Testi Kebabı hangi yöremizin/şehrimizin meşhur yemeğidir?",
+    "options": [
+      "Yozgat (Kapadokya)",
+      "Gaziantep",
+      "Erzurum",
+      "Trabzon"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b4c5d6e7-f8a9-b0c1-d2e3-f4a5b6c7d8e9",
+    "category": "Türk Mutfağı",
+    "difficulty": 2,
+    "text": "Yatay olarak odun ateşinde pişen ve şişlere takılarak servis edilen Cağ kebabı hangi şehrimize aittir?",
+    "options": [
+      "Erzurum",
+      "Erzincan",
+      "Kars",
+      "Van"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9e8d7c6b-5a4f-3e2d-1c0b-9a8f7e6d5c4b",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Nohut, tahin, limon suyu ve sarımsağın pürüzsüz bir ezme haline getirilmesiyle yapılan popüler meze hangisidir?",
+    "options": [
+      "Humus",
+      "Fava",
+      "Babagannuş",
+      "Muhammara"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d2e3f4a5-b6c7-d8e9-f0a1-b2c3d4e5f6a7",
+    "category": "Türk Mutfağı",
+    "difficulty": 2,
+    "text": "Kaynayan sirkeli suda poşe edilen yumurtaların sarımsaklı yoğurt ve salçalı/biberli tereyağı ile sunulduğu yemeğin adı nedir?",
+    "options": [
+      "Çılbır",
+      "Menemen",
+      "Kaygana",
+      "Ali Nazik"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7a6f5e4d-3c2b-1a0f-9e8d-7c6b5a4f3e2d",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "İnce yufkaların süt, şeker ve gül suyuyla ıslatılmasıyla yapılan, genellikle Ramazan ayında tüketilen tatlı hangisidir?",
+    "options": [
+      "Güllaç",
+      "Sütlaç",
+      "Su Muhallebisi",
+      "Trileçe"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Adana kebabı ile Urfa kebabı arasındaki en belirgin fark nedir?",
+    "options": [
+      "Adana kebabının acılı, Urfa kebabının acısız olması",
+      "Kullanılan etin türü (kuzu vs. dana)",
+      "Pişirme yöntemi",
+      "Şişin kalınlığı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0b9a8f7e-6d5c-4b3a-2f1e-0d9c8b7a6f5e",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "İçine pirinç, soğan, nane, yenibahar ve bazen kuş üzümü konularak ince ince sarılan zeytinyağlı yemek hangisidir?",
+    "options": [
+      "Zeytinyağlı Yaprak Sarması",
+      "Zeytinyağlı Lahana Sarması",
+      "Biber Dolması",
+      "Kabak Dolması"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f4a5b6c7-d8e9-f0a1-b2c3-d4e5f6a7b8c9",
+    "category": "Türk Mutfağı",
+    "difficulty": 2,
+    "text": "Trabzon ve Rize kahvaltılarında mıhlama yapımında da kullanılan, tellenen yapısıyla bilinen peynir türü hangisidir?",
+    "options": [
+      "Kolot Peyniri",
+      "Ezine Peyniri",
+      "Tulum Peyniri",
+      "Kaşar Peyniri"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9c8b7a6f-5e4d-3c2b-1a0f-9e8d7c6b5a4f",
+    "category": "Türk Mutfağı",
+    "difficulty": 2,
+    "text": "Darı irmiği, su ve şekerden yapılan, kış aylarında üzerine tarçın ve kavrulmuş leblebi konularak içilen yoğun kıvamlı içecek hangisidir?",
+    "options": [
+      "Boza",
+      "Sahlep",
+      "Şıra",
+      "Şalgam Suyu"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a1b2c3d4-e5f6-a7b8-c9d0-e1f2a3b4c5d6",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Uzun ve ince açılmış hamurun üzerine kıymalı harç konularak fırınlanan 'Etli Ekmek' denince akla gelen ilk şehrimiz neresidir?",
+    "options": [
+      "Konya",
+      "Sivas",
+      "Kastamonu",
+      "Kayseri"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b2c3d4e5-f6a7-b8c9-d0e1-f2a3b4c5d6e7",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Mor havuç, şalgam turpu, bulgur unu ve tuzun mayalanmasıyla elde edilen, kebabın yanında çok tüketilen içecek hangisidir?",
+    "options": [
+      "Şalgam Suyu",
+      "Meyan Kökü Şerbeti",
+      "Reyhan Şerbeti",
+      "Kızılcık Şerbeti"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c3d4e5f6-a7b8-c9d0-e1f2-a3b4c5d6e7f8",
+    "category": "Türk Mutfağı",
+    "difficulty": 2,
+    "text": "'Ali Nazik' kebabının alt yatağında (püresinde) süzme yoğurt ve sarımsak ile birlikte hangi sebze bulunur?",
+    "options": [
+      "Közlenmiş Patlıcan",
+      "Közlenmiş Biber",
+      "Közlenmiş Domates",
+      "Patates"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d4e5f6a7-b8c9-d0e1-f2a3-b4c5d6e7f8a9",
+    "category": "Türk Mutfağı",
+    "difficulty": 3,
+    "text": "İçli köfte (oruk) yapımında hamurun çatlamaması ve harcın tutması için ana malzeme olan ince bulgura genellikle ne eklenir?",
+    "options": [
+      "İrmik veya Dövülmüş Et (Yarma)",
+      "Un ve Karbonat",
+      "Sadece Yumurta",
+      "Pirinç Unu"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Edirne'nin en meşhur, zardan temizlenip yaprak şeklinde doğranan ve unlanarak kızgın yağda pişirilen yemeği hangisidir?",
+    "options": [
+      "Tava Ciğer",
+      "Arnavut Ciğeri",
+      "Ciğer Şiş",
+      "Ciğer Kavurma"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f6a7b8c9-d0e1-f2a3-b4c5-d6e7f8a9b0c1",
+    "category": "Türk Mutfağı",
+    "difficulty": 2,
+    "text": "Tuzsuz taze peynir, irmik, yumurta ve şekerden yapılan, özellikle Balıkesir yöresiyle meşhur olan tatlı hangisidir?",
+    "options": [
+      "Höşmerim",
+      "Peynir Tatlısı",
+      "Kemalpaşa",
+      "Hayrabolu Tatlısı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "cb1e5b15-1811-4eb7-a7eb-9edb6b8c8d8b",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "Halit Ziya Uşaklıgil'in 'Aşk-ı Memnu' romanında Bihter'in aşık olduğu, kocasının yeğeni olan karakterin adı nedir?",
+    "options": [
+      "Behlül",
+      "Adnan Bey",
+      "Nihat",
+      "Bülent"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e30e796e-bd91-4e89-a2e6-7b447dc6ebbc",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Oğuz Atay'ın 'Tutunamayanlar' adlı eserinde, intihar eden arkadaşı Selim Işık'ın geçmişini araştıran ana karakter kimdir?",
+    "options": [
+      "Turgut Özben",
+      "Hikmet Benol",
+      "Süleyman Kargı",
+      "Burhan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "4cdbb1a3-2c1b-410d-abef-7f5be2bbceab",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "'Şiir, kelimelerle güzel şekiller kurma sanatıdır' diyen, 'Sessiz Gemi' ve 'Aziz İstanbul' şiirlerinin unutulmaz şairi kimdir?",
+    "options": [
+      "Yahya Kemal Beyatlı",
+      "Orhan Veli Kanık",
+      "Nazım Hikmet",
+      "Cemal Süreya"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f51fc8aa-c277-400b-a010-86ed97346fb7",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Sabahattin Ali'nin 'Kürk Mantolu Madonna' romanındaki başkarakter Raif Efendi'nin büyük bir aşkla bağlandığı ve tablosunu gördüğü kadın kimdir?",
+    "options": [
+      "Maria Puder",
+      "Macide",
+      "Nihal",
+      "Feride"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0d2005df-4d56-42fb-a75e-dc58a361c4df",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "Reşat Nuri Güntekin'in Anadolu'da öğretmenlik yapan idealist Feride'nin hayatını anlattığı ünlü romanı hangisidir?",
+    "options": [
+      "Çalıkuşu",
+      "Yaprak Dökümü",
+      "Acımak",
+      "Yeşil Gece"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "31b674b3-c157-4180-a612-9c1c5e4ef2cb",
+    "category": "Türk Edebiyatı",
+    "difficulty": 3,
+    "text": "Orhan Pamuk'a Nobel Edebiyat Ödülü'nü kazandıran sürece büyük katkısı olan, 'Rüya' ve 'Galip' karakterlerinin yer aldığı romanının adı nedir?",
+    "options": [
+      "Kara Kitap",
+      "Benim Adım Kırmızı",
+      "Masumiyet Müzesi",
+      "Kar"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b328a6f3-1811-477d-bb91-fc5e08bca0ab",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Yusuf Atılgan'ın 'Aylak Adam' romanının, adından sadece bir harfle bahsedilen ve İstanbul sokaklarında dolaşıp duran başkarakteri kimdir?",
+    "options": [
+      "C.",
+      "Zebercet",
+      "A.",
+      "Bay K."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c1f1f9e8-71e8-46cb-8d65-8b387e7eb387",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "Garip akımının öncülerinden olan, 'Ağlasam sesimi duyar mısınız mısralarımda?' dizelerinin sahibi şair kimdir?",
+    "options": [
+      "Orhan Veli Kanık",
+      "Melih Cevdet Anday",
+      "Oktay Rifat Horozcu",
+      "Attila İlhan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "895fbc8d-327a-4286-a790-a5fb978d30e2",
+    "category": "Türk Edebiyatı",
+    "difficulty": 3,
+    "text": "Hasan Ali Toptaş'ın 'Doğunun Kafka'sı' olarak anılmasını sağlayan ve bir kasabaya tayin olan memurun varoluşsal sancılarını işleyen eseri hangisidir?",
+    "options": [
+      "Gölgesizler",
+      "Bin Hüzünlü Haz",
+      "Kuşlar Yasına Gider",
+      "Heba"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "76d1c991-62c4-4af6-bb4d-6215cbb819bc",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "'Yaş 35, yolun yarısı eder' dizeleriyle hafızalara kazınan ve ölümü sıkça şiirlerine konu eden şair kimdir?",
+    "options": [
+      "Cahit Sıtkı Tarancı",
+      "Ahmet Muhip Dıranas",
+      "Asaf Halet Çelebi",
+      "Fazıl Hüsnü Dağlarca"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "bb40b3c2-d3a9-467d-afc2-076f8e70a98b",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "İhsan Oktay Anar'ın, Uzun İhsan Efendi ve Arap İhsan gibi karakterleri barındıran, Osmanlı döneminde geçen fantastik-tarihi romanı nedir?",
+    "options": [
+      "Puslu Kıtalar Atlası",
+      "Suskunlar",
+      "Amat",
+      "Efrasiyab'ın Hikayeleri"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "df65313a-d68a-4c28-98e3-0d315abf29fc",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Peyami Safa'nın, kemik veremi hastası bir çocuğun psikolojik gelgitlerini anlattığı ünlü otobiyografik romanı hangisidir?",
+    "options": [
+      "Dokuzuncu Hariciye Koğuşu",
+      "Fatih-Harbiye",
+      "Yalnızız",
+      "Sözde Kızlar"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9ca9e8af-01cd-438a-8be7-313b6cb512e0",
+    "category": "Türk Edebiyatı",
+    "difficulty": 3,
+    "text": "Ahmet Hamdi Tanpınar'ın 'Saatleri Ayarlama Enstitüsü' romanında, Hayri İrdal'ın akıl hocası olan ve enstitüyü kuran eksantrik karakter kimdir?",
+    "options": [
+      "Halit Ayarcı",
+      "Mübarek",
+      "Pakize",
+      "Doktor Ramiz"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "2d1b8273-04e8-4ecf-a889-4e5699d98a1c",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "'İkinci Yeni' akımının önde gelen isimlerinden olan ve 'Üvercinka' adlı efsanevi şiir kitabıyla tanınan şairimiz kimdir?",
+    "options": [
+      "Cemal Süreya",
+      "Edip Cansever",
+      "Turgut Uyar",
+      "Sezai Karakoç"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "6eb6b2ea-d4d1-4ad9-a7fb-76156e5df485",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Haldun Taner'in, gecekondu mahallesinde efsaneleşen bir 'kahraman'ın trajikomik hikayesini anlatan ünlü tiyatro oyunu hangisidir?",
+    "options": [
+      "Keşanlı Ali Destanı",
+      "Gözlerimi Kaparım Vazifemi Yaparım",
+      "Fazilet Eczanesi",
+      "Sersem Kocanın Kurnaz Karısı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "1ab4f95d-abde-4e3a-bbfa-61c0c2dbb50c",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "'Hababam Sınıfı' serisiyle tanınan ve Türk edebiyatında mizah denilince ilk akla gelen yazarlarımızdan olan kişi kimdir?",
+    "options": [
+      "Rıfat Ilgaz",
+      "Aziz Nesin",
+      "Muzaffer İzgü",
+      "Sabahattin Ali"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "5f9e9a1b-12a1-4cd4-aeaf-9e5c6a1eab07",
+    "category": "Türk Edebiyatı",
+    "difficulty": 3,
+    "text": "Leylâ Erbil'in, mektuplar aracılığıyla ilerleyen ve edebiyatımızın en yenilikçi eserlerinden biri kabul edilen romanı hangisidir?",
+    "options": [
+      "Tuhaf Bir Kadın",
+      "Karanlığın Günü",
+      "Mektup Aşkları",
+      "Cüce"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "90d1f3b3-2b22-445a-8320-c6517af8bb6c",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Yaşar Kemal'in ünlü romanı 'İnce Memed'de, Memed'in zulmüne başkaldırdığı zalim ağanın adı nedir?",
+    "options": [
+      "Abdi Ağa",
+      "Ali Ağa",
+      "Cabbar Ağa",
+      "Sefer Ağa"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d13cb2ab-09f1-4df2-abcf-18e5b4f8cb47",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "'Ben sana mecburum bilemezsin, adını mıh gibi aklımda tutuyorum' dizelerinin unutulmaz yazarı, Mavi akımının öncüsü kimdir?",
+    "options": [
+      "Attila İlhan",
+      "Özdemir Asaf",
+      "Nazım Hikmet",
+      "Cemal Süreya"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0b15c9a4-1df4-41d3-a745-f0e0f80bc08e",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Sait Faik Abasıyanık'ın bir hikayesinde geçen 'Söz vermiştim kendi kendime: Yazı yazmayacaktım. (...) Kalemi yonttum. Yonttuktan sonra tuttum öptüm. Yazmasam deli olacaktım.' ifadeleri hangi hikayesinin son cümlesidir?",
+    "options": [
+      "Haritada Bir Nokta",
+      "Semaver",
+      "Sarnıç",
+      "Mahalle Kahvesi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "416bb7dc-2c21-42cb-b1b0-e7f0d01dcf2a",
+    "category": "Türk Edebiyatı",
+    "difficulty": 3,
+    "text": "Tehlikeli Oyunlar adlı romanda, kendi zihninde kurduğu oyunların içinde kaybolan ve gecekonduya taşınan başkarakterin adı nedir?",
+    "options": [
+      "Hikmet Benol",
+      "Turgut Özben",
+      "Selim Işık",
+      "Nurhayat"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "ef2fb563-34af-4b2a-bf3b-afc95690b218",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "İlk yerli romanımız sayılan, Şemsettin Sami'nin yazdığı eser hangisidir?",
+    "options": [
+      "Taaşşuk-ı Talat ve Fitnat",
+      "İntibah",
+      "Araba Sevdası",
+      "Mai ve Siyah"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "af1f7b9e-f00e-4ab3-937b-9f4a0c8b21e0",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "'Göğe Bakma Durağı' adlı efsanevi şiir, hangi İkinci Yeni şairine aittir?",
+    "options": [
+      "Turgut Uyar",
+      "Edip Cansever",
+      "İlhan Berk",
+      "Ece Ayhan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "22e6b2af-d68a-40a0-8a21-9e5b5e3f11b2",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Ayşe Kulin'in, Bosna Savaşı sırasındaki dramı ve bir gazetecinin hayatını anlattığı etkileyici romanı hangisidir?",
+    "options": [
+      "Sevdalinka",
+      "Nefes Nefese",
+      "Adı: Aylin",
+      "Veda"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "4b6f123c-d7a8-44fb-8bb9-1e3d64f0b09d",
+    "category": "Türk Edebiyatı",
+    "difficulty": 3,
+    "text": "Bilge Karasu'nun, bir kedi ve bir insanın dostluğunu felsefi bir derinlikle işlediği, 1991'de Pegasus Ödülü'nü kazanan romanı hangisidir?",
+    "options": [
+      "Gece",
+      "Göçmüş Kediler Bahçesi",
+      "Uzun Sürmüş Bir Günün Akşamı",
+      "Kılavuz"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "1c7b8e1f-e08d-4b9b-9a8f-0e1b2d0c24e0",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Tarık Buğra'nın, Kurtuluş Savaşı yıllarında Akşehir'de geçen ve İstanbullu Hoca karakterinin değişimini anlattığı ünlü eseri hangisidir?",
+    "options": [
+      "Küçük Ağa",
+      "Osmancık",
+      "Firavun İmanı",
+      "İbiş'in Rüyası"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "8f3b2e5a-d18c-4a3b-9e6b-0d3e5b4c12a0",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "'Makber' şiiriyle eşinin ölümü üzerine duyduğu derin acıyı anlatan ve edebiyatımızda 'Şair-i Azam' olarak bilinen şair kimdir?",
+    "options": [
+      "Abdülhak Hamit Tarhan",
+      "Namık Kemal",
+      "Tevfik Fikret",
+      "Muallim Naci"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d02b8a7f-e23a-4a6b-8b9a-1c3e4b5c6d7e",
+    "category": "Türk Edebiyatı",
+    "difficulty": 3,
+    "text": "Sevgi Soysal'ın 12 Mart Muhtırası sonrası cezaevi deneyimlerini anlattığı, o dönemin sarsıcı bir tanıklığı olan eseri hangisidir?",
+    "options": [
+      "Yıldırım Bölge Kadınlar Koğuşu",
+      "Tante Rosa",
+      "Şafak",
+      "Yenişehir'de Bir Öğle Vakti"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9f1e2d4a-c07b-4b8a-9a7f-2d1e5b3c4f6d",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Kemal Tahir'in, Osmanlı İmparatorluğu'nun kuruluş yıllarını ve Şeyh Edebali'nin etkisini anlattığı tarihi romanı hangisidir?",
+    "options": [
+      "Devlet Ana",
+      "Yorgun Savaşçı",
+      "Esir Şehrin İnsanları",
+      "Kurt Kanunu"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "5e1b2a3d-d48a-4a9b-8a7c-1f2e3d4c5b6a",
+    "category": "Türk Edebiyatı",
+    "difficulty": 1,
+    "text": "'Kelile ve Dimne' esintileri taşıyan ve edebiyatımızın ilk fabl örneği sayılan 'Harname' adlı eserin yazarı kimdir?",
+    "options": [
+      "Şeyhi",
+      "Fuzuli",
+      "Baki",
+      "Nedim"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7b1d2e3f-e58a-4b9a-9a7c-2f1e3d4c6b7a",
+    "category": "Türk Edebiyatı",
+    "difficulty": 3,
+    "text": "Latife Tekin'in büyülü gerçekçilik akımının Türkiye'deki en iyi örneklerinden biri sayılan ve gecekondu insanlarını anlatan ilk romanı hangisidir?",
+    "options": [
+      "Sevgili Arsız Ölüm",
+      "Berci Kristin Çöp Masalları",
+      "Gece Dersleri",
+      "Buzdan Kılıçlar"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "8c1a2e4f-d58b-4a8b-9b7c-3f2e4d5c7b8a",
+    "category": "Türk Edebiyatı",
+    "difficulty": 2,
+    "text": "Namık Kemal'in sahnelenen ilk tiyatro eseri olan ve vatan sevgisini coşkulu bir dille işleyen oyunu hangisidir?",
+    "options": [
+      "Vatan Yahut Silistre",
+      "Zavallı Çocuk",
+      "Akif Bey",
+      "Gülnihal"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b301",
+    "category": "Teknoloji",
+    "difficulty": 1,
+    "text": "Bilgisayarda işlem yapmaktan sorumlu temel donanım parçası aşağıdakilerden hangisidir?",
+    "options": [
+      "Sabit Disk",
+      "Ekran Kartı",
+      "İşlemci (CPU)",
+      "RAM"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "7a226b8e-5d11-4264-9d6c-418185180719",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u00c7in'nin ba\u015fkentidir?",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b302",
+    "category": "Teknoloji",
+    "difficulty": 2,
+    "text": "World Wide Web'in (WWW) mucidi olarak kabul edilen kişi kimdir?",
     "options": [
-      "\u015eam",
-      "Budape\u015fte",
-      "Pekin",
-      "Atina"
+      "Steve Jobs",
+      "Bill Gates",
+      "Mark Zuckerberg",
+      "Tim Berners-Lee"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b303",
+    "category": "Teknoloji",
+    "difficulty": 2,
+    "text": "İnternet adreslerinin başında bulunan 'HTTP' kısaltmasının açılımı nedir?",
+    "options": [
+      "High Technology Transfer Protocol",
+      "Hypertext Transfer Protocol",
+      "Hyper Transfer Text Protocol",
+      "Hypertext Technology Protocol"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b304",
+    "category": "Teknoloji",
+    "difficulty": 3,
+    "text": "Tarihin ilk bilgisayar programcısı olarak kabul edilen kişi kimdir?",
+    "options": [
+      "Grace Hopper",
+      "Alan Turing",
+      "Ada Lovelace",
+      "Charles Babbage"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "ca451d8a-209f-4998-9ddf-3d37d4505af3",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Rusya \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Hanoi",
-      "Moskova",
-      "Brasilia",
-      "\u015eam"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "ce0791bc-225a-4105-bbe1-b4780cc3dc42",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b305",
+    "category": "Teknoloji",
     "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Brezilya'nin ba\u015fkentidir?",
+    "text": "Uzaya fırlatılan ilk yapay uydunun adı nedir?",
     "options": [
-      "Ba\u011fdat",
-      "\u0130slamabad",
-      "Budape\u015fte",
-      "Brasilia"
+      "Apollo 11",
+      "Explorer 1",
+      "Vostok 1",
+      "Sputnik 1"
     ],
     "correctOptionIndex": 3
   },
   {
-    "id": "e8b04c45-5fac-4e35-b3ea-f7297f7b5a32",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Haritada Arjantin \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Buenos Aires",
-      "Meksiko",
-      "Paris",
-      "Bogota"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "7d7b5104-57a0-4607-a7f9-feea57d4c319",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Meksika'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Bangkok",
-      "Bern",
-      "Br\u00fcksel",
-      "Meksiko"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "41e214d0-2549-4955-add7-e64ba1b6ff3b",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Kanada'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Santiago",
-      "Viyana",
-      "Kanberra",
-      "Ottawa"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "99d10307-e495-413f-a099-39a6be0ea77f",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Haritada Avustralya \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Kanberra",
-      "Karakas",
-      "Cakarta",
-      "Bern"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "83a01a87-4cd9-4444-9e07-ad9d5d56a81f",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "G\u00fcney Kore'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Roma",
-      "Seul",
-      "Lima",
-      "Dublin"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "7f33a2b8-74cc-436a-ad81-53ab9ae5f25d",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Haritada M\u0131s\u0131r \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Tokyo",
-      "Kahire",
-      "Manila",
-      "Ba\u011fdat"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "3e45edf2-f196-4db1-8a41-4be136015e8c",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b306",
+    "category": "Teknoloji",
     "difficulty": 2,
-    "text": "Hindistan'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
+    "text": "İlk iPhone modeli hangi yılda piyasaya sürülmüştür?",
     "options": [
-      "Manila",
-      "Kanberra",
-      "Yeni Delhi",
-      "Madrid"
+      "2005",
+      "2008",
+      "2007",
+      "2010"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "c8f8f69b-4333-400c-a254-b894d18b0f6f",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b307",
+    "category": "Teknoloji",
     "difficulty": 1,
-    "text": "\u0130ngiltere \u00fclkesinin ba\u015fkenti neresidir?",
+    "text": "Bir işlemcinin (CPU) çalışma hızı genellikle hangi birimle ölçülür?",
     "options": [
-      "Lima",
-      "Londra",
-      "Oslo",
-      "Helsinki"
+      "Piksel (Pixel)",
+      "Bayt (Byte)",
+      "Watt (W)",
+      "Hertz (Hz)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b308",
+    "category": "Teknoloji",
+    "difficulty": 1,
+    "text": "Uzay taşımacılığı şirketi SpaceX'in kurucusu kimdir?",
+    "options": [
+      "Jeff Bezos",
+      "Elon Musk",
+      "Richard Branson",
+      "Mark Zuckerberg"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "147a9889-a5c2-42e7-9898-24b9a711eeb2",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "Yunanistan'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Ankara",
-      "Atina",
-      "Tokyo",
-      "Karakas"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "2bebf441-a777-4eb0-984f-cf2770081c9d",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b309",
+    "category": "Teknoloji",
     "difficulty": 1,
-    "text": "\u0130sve\u00e7'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
+    "text": "Popüler video paylaşım platformu YouTube, 2006 yılında hangi teknoloji devi tarafından satın alınmıştır?",
     "options": [
-      "Yeni Delhi",
-      "Lima",
-      "Stokholm",
-      "\u015eam"
+      "Facebook",
+      "Microsoft",
+      "Google",
+      "Yahoo"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "a2445dbd-01b5-496a-907c-795ddef95232",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b310",
+    "category": "Teknoloji",
     "difficulty": 1,
-    "text": "Norve\u00e7 \u00fclkesinin ba\u015fkenti neresidir?",
+    "text": "Dünya genelinde akıllı telefonlarda en çok kullanılan işletim sistemi hangisidir?",
     "options": [
-      "Viyana",
-      "Kanberra",
-      "Karakas",
-      "Oslo"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "b2feebea-3fb6-4f48-aea2-8ca1a17a8ace",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Finlandiya'nin ba\u015fkentidir?",
-    "options": [
-      "Atina",
-      "Tokyo",
-      "Yeni Delhi",
-      "Helsinki"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "c582477b-8388-4991-b8f5-a0e84594cf75",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Haritada Portekiz \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Pekin",
-      "Moskova",
-      "Kuala Lumpur",
-      "Lizbon"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "325f294e-5d88-46ec-8953-3f153997ffcc",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "Hollanda'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Seul",
-      "Amsterdam",
-      "Cakarta",
-      "Prag"
+      "Windows Phone",
+      "Android",
+      "Symbian",
+      "iOS"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "4e7865dc-f54e-41f0-b41e-77b12e359995",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b311",
+    "category": "Teknoloji",
     "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Bel\u00e7ika'nin ba\u015fkentidir?",
+    "text": "Guido van Rossum tarafından geliştirilen ve günümüzde yapay zeka alanında çok popüler olan programlama dili hangisidir?",
     "options": [
-      "Br\u00fcksel",
-      "\u015eam",
-      "Kanberra",
-      "Viyana"
+      "C++",
+      "JavaScript",
+      "Java",
+      "Python"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b312",
+    "category": "Teknoloji",
+    "difficulty": 1,
+    "text": "Bilgisayar belleğinde 1024 Megabayt (MB) neye eşittir?",
+    "options": [
+      "1 Gigabayt (GB)",
+      "1 Kilobayt (KB)",
+      "1 Terabayt (TB)",
+      "1 Petabayt (PB)"
     ],
     "correctOptionIndex": 0
   },
   {
-    "id": "67f7e540-2c56-410f-a446-dc4dfc7b5a72",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Polonya'nin ba\u015fkentidir?",
-    "options": [
-      "Berlin",
-      "Var\u015fova",
-      "Meksiko",
-      "Ottawa"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "88e241e4-230e-4664-a9dd-489677994764",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Avusturya \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Ankara",
-      "Viyana",
-      "Amsterdam",
-      "Helsinki"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "f031071c-2362-40cb-b607-9fd1b43e4789",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u0130svi\u00e7re'nin ba\u015fkentidir?",
-    "options": [
-      "Bern",
-      "Var\u015fova",
-      "Bangkok",
-      "Cakarta"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "9435caa1-91ce-44e2-9366-08b5d3619959",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Macaristan'nin ba\u015fkentidir?",
-    "options": [
-      "Bogota",
-      "Budape\u015fte",
-      "Viyana",
-      "Santiago"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "ebcb813c-f1cb-42ad-9c08-e03a6d2dcdad",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b313",
+    "category": "Teknoloji",
     "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u00c7ekya'nin ba\u015fkentidir?",
+    "text": "Günümüz internetinin atası sayılan ARPANET üzerinden gönderilen ilk mesaj neydi?",
     "options": [
-      "Prag",
-      "Yeni Delhi",
-      "Bogota",
-      "Bern"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "68fc1de8-3e56-471f-9241-bd97203dd0f8",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u0130rlanda'nin ba\u015fkentidir?",
-    "options": [
-      "Lima",
-      "Amsterdam",
-      "Dublin",
-      "Manila"
+      "HELLO",
+      "PING",
+      "LO",
+      "TEST"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "f67bfbf3-aa0c-4c29-97fb-3531fc2a7631",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b314",
+    "category": "Teknoloji",
     "difficulty": 1,
-    "text": "Haritada K\u00fcba \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
+    "text": "OpenAI şirketi tarafından geliştirilen ve doğal dilde metinler üretebilen popüler yapay zeka modelinin adı nedir?",
     "options": [
-      "Madrid",
-      "Havana",
-      "Paris",
-      "Bern"
+      "Alexa",
+      "ChatGPT",
+      "Cortana",
+      "Siri"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "76bcb096-b5e2-44d4-80e4-07352a1ddb0a",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b315",
+    "category": "Teknoloji",
     "difficulty": 2,
-    "text": "Peru \u00fclkesinin ba\u015fkenti neresidir?",
+    "text": "Günümüzde bilgisayar ve telefonlarda kullandığımız 'QWERTY' klavye düzeni ilk olarak hangi cihaz için tasarlanmıştır?",
     "options": [
-      "Ba\u011fdat",
-      "Oslo",
-      "Madrid",
-      "Lima"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "10645b86-c515-44b6-9b37-94b36d678ebd",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "\u015eili \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Ba\u011fdat",
-      "Amsterdam",
-      "Santiago",
-      "Bogota"
+      "Hesap Makinesi",
+      "Piyano",
+      "Daktilo",
+      "Telgraf"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "9399e704-2342-41e2-8b8d-7192fd2e21ce",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b316",
+    "category": "Teknoloji",
     "difficulty": 3,
-    "text": "Kolombiya \u00fclkesinin ba\u015fkenti neresidir?",
+    "text": "Web adreslerini tanımlamak için kullanılan 'URL' kısaltmasının açılımı nedir?",
     "options": [
-      "Karakas",
-      "Br\u00fcksel",
-      "Kuala Lumpur",
-      "Bogota"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "a4775852-f304-49dd-b787-f72e3d981fcb",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Venezuela'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Karakas",
-      "Tahran",
-      "Ankara",
-      "Lima"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "bba55878-a247-47f5-b2e7-2ea02a1e989c",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Haritada Irak \u00fclkesini inceliyorsan\u0131z, ba\u015fkent olarak hangi \u015fehri g\u00f6r\u00fcrs\u00fcn\u00fcz?",
-    "options": [
-      "Kuala Lumpur",
-      "Ba\u011fdat",
-      "Br\u00fcksel",
-      "Yeni Delhi"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "64c5736e-aa92-439b-994a-13dae970d68c",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi \u0130ran'nin ba\u015fkentidir?",
-    "options": [
-      "Tahran",
-      "Var\u015fova",
-      "Pekin",
-      "Ottawa"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "b91401eb-26c4-4553-9185-c89861635824",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Suriye'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "\u015eam",
-      "Londra",
-      "Lizbon",
-      "Seul"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "8479fe10-7e7b-4f82-9796-e07c27a961a1",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Suudi Arabistan'nin ba\u015fkentidir?",
-    "options": [
-      "Riyad",
-      "Var\u015fova",
-      "Londra",
-      "Budape\u015fte"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "ff86e9b1-5c43-4494-b723-64da0ca09bf2",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "Pakistan'ye seyahat eden biri, \u00fclkenin ba\u015fkenti olan hangi \u015fehri ziyaret etmi\u015f olur?",
-    "options": [
-      "Seul",
-      "\u0130slamabad",
-      "Oslo",
-      "Bogota"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "af457b8c-07f1-450a-a333-642383020384",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Endonezya'nin siyasi merkezi olan ba\u015fkenti hangisidir?",
-    "options": [
-      "Amsterdam",
-      "Cakarta",
-      "Santiago",
-      "Meksiko"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "cbe0f2d8-3947-4163-a5d1-53a143d1fdf0",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "Tayland \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Bangkok",
-      "Riyad",
-      "Roma",
-      "Karakas"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "ab91053c-e92b-4f66-9b1b-05dacf9fb9ca",
-    "category": "Co\u011frafya",
-    "difficulty": 2,
-    "text": "Malezya \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Lizbon",
-      "Kanberra",
-      "Atina",
-      "Kuala Lumpur"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "67aad6d6-c0eb-411f-be1f-43be365807fb",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Filipinler \u00fclkesinin ba\u015fkenti neresidir?",
-    "options": [
-      "Viyana",
-      "Dublin",
-      "Manila",
-      "\u015eam"
+      "Universal Routing Language",
+      "Universal Resource Link",
+      "Uniform Resource Locator",
+      "Uniform Registered Link"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "2e8918d0-3427-4dff-aa06-fafebbc72746",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b317",
+    "category": "Teknoloji",
     "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki \u015fehirlerden hangisi Vietnam'nin ba\u015fkentidir?",
+    "text": "Güneş Sistemi'nde 'Kızıl Gezegen' olarak bilinen gezegen hangisidir?",
     "options": [
-      "Hanoi",
-      "Amsterdam",
-      "Prag",
-      "Ankara"
+      "Jüpiter",
+      "Satürn",
+      "Venüs",
+      "Mars"
     ],
-    "correctOptionIndex": 0
+    "correctOptionIndex": 3
   },
   {
-    "id": "880e46c3-ecd4-4f11-8131-79799c9b541e",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "D\u00fcnyaca \u00fcnl\u00fc Everest da\u011f\u0131na t\u0131rmanmak isteyen bir da\u011fc\u0131 hangi k\u0131taya gitmelidir?",
-    "options": [
-      "Asya",
-      "Antarktika",
-      "Okyanusya",
-      "G\u00fcney Amerika"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "778b78b7-1665-4329-807b-082170f07536",
-    "category": "Co\u011frafya",
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b318",
+    "category": "Teknoloji",
     "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki k\u0131talardan hangisi Kilimanjaro da\u011f\u0131na ev sahipli\u011fi yapmaktad\u0131r?",
+    "text": "Bilgisayar depolama birimlerinden biri olan 'SSD'nin açılımı nedir?",
     "options": [
-      "Kuzey Amerika",
-      "Afrika",
-      "Antarktika",
+      "Solid State Drive",
+      "Super Speed Drive",
+      "Solid Storage Disk",
+      "Static System Drive"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b319",
+    "category": "Teknoloji",
+    "difficulty": 1,
+    "text": "Telefonun icadı genellikle hangi bilim insanına atfedilir?",
+    "options": [
+      "Nikola Tesla",
+      "Thomas Edison",
+      "Alexander Graham Bell",
+      "Guglielmo Marconi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b320",
+    "category": "Teknoloji",
+    "difficulty": 2,
+    "text": "Atari tarafından 1972'de piyasaya sürülen ve tarihin ilk ticari olarak başarılı video oyunu kabul edilen yapım hangisidir?",
+    "options": [
+      "Space Invaders",
+      "Pong",
+      "Tetris",
+      "Pac-Man"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b321",
+    "category": "Teknoloji",
+    "difficulty": 1,
+    "text": "Evlerde ve ofislerde internet bağlantısını birden fazla cihaza dağıtmak için kullanılan donanım hangisidir?",
+    "options": [
+      "Modem",
+      "Switch",
+      "Yönlendirici (Router)",
+      "Hub"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b322",
+    "category": "Teknoloji",
+    "difficulty": 1,
+    "text": "Yakın zamana kadar logosunda mavi bir kuş bulunan ve karakter sınırıyla bilinen sosyal medya platformu hangisidir?",
+    "options": [
+      "Instagram",
+      "Twitter (X)",
+      "Snapchat",
+      "Facebook"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b323",
+    "category": "Teknoloji",
+    "difficulty": 2,
+    "text": "Web sayfalarını oluşturmak için kullanılan 'HTML'in açılımı nedir?",
+    "options": [
+      "Home Tool Markup Language",
+      "Hyperlinks and Text Markup Language",
+      "Hyper Tool Multi Language",
+      "Hypertext Markup Language"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b324",
+    "category": "Teknoloji",
+    "difficulty": 2,
+    "text": "Bill Gates ile birlikte Microsoft'un kurucu ortağı olan kişi kimdir?",
+    "options": [
+      "Paul Allen",
+      "Larry Page",
+      "Sergey Brin",
+      "Steve Wozniak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b325",
+    "category": "Teknoloji",
+    "difficulty": 2,
+    "text": "İnsanoğlunun Ay'a ilk adımını attığı Apollo 11 görevi hangi yılda gerçekleşmiştir?",
+    "options": [
+      "1965",
+      "1969",
+      "1959",
+      "1972"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b326",
+    "category": "Teknoloji",
+    "difficulty": 3,
+    "text": "Tarihteki ilk bilgisayar hatası (bug), bir bilgisayarın içine sıkışan gerçek bir böcekti. Bu hangi böcekti?",
+    "options": [
+      "Örümcek",
+      "Karınca",
+      "Sinek",
+      "Güve"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b327",
+    "category": "Teknoloji",
+    "difficulty": 2,
+    "text": "Kullanıcının bilgisayar sistemine veya verilerine erişimini engelleyerek, açılması için para talep eden kötü amaçlı yazılım türü nedir?",
+    "options": [
+      "Casus Yazılım (Spyware)",
+      "Fidye Yazılımı (Ransomware)",
+      "Truva Atı (Trojan)",
+      "Solucan (Worm)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b328",
+    "category": "Teknoloji",
+    "difficulty": 1,
+    "text": "Genel görelilik teorisini geliştiren ve E=mc² formülüyle tanınan ünlü fizikçi kimdir?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Stephen Hawking",
+      "Niels Bohr"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b329",
+    "category": "Teknoloji",
+    "difficulty": 1,
+    "text": "Macintosh (Mac) serisi bilgisayarların üreticisi olan teknoloji şirketi hangisidir?",
+    "options": [
+      "IBM",
+      "HP",
+      "Apple",
+      "Dell"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b330",
+    "category": "Teknoloji",
+    "difficulty": 3,
+    "text": "Tim Berners-Lee tarafından geliştirilen ve dünyanın ilk web tarayıcısı olan yazılımın adı nedir?",
+    "options": [
+      "Netscape Navigator",
+      "WorldWideWeb",
+      "Mosaic",
+      "Internet Explorer"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b331",
+    "category": "Teknoloji",
+    "difficulty": 2,
+    "text": "İnternette 'alan adı sistemi' (DNS) temel olarak ne işe yarar?",
+    "options": [
+      "Virüsleri engeller",
+      "İnternet hızını artırır",
+      "Web adreslerini IP adreslerine çevirir",
+      "E-postaları şifreler"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d13eb259-7d0e-4b47-920f-b2586615b332",
+    "category": "Teknoloji",
+    "difficulty": 2,
+    "text": "Bilgisayar çipleri ve yarı iletken elektronik cihazların üretiminde en yaygın olarak kullanılan element hangisidir?",
+    "options": [
+      "Bakır",
+      "Altın",
+      "Alüminyum",
+      "Silisyum (Silikon)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e8d626cc-df33-4a6c-a496-e1af5a0eb3f1",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Dünyanın en büyük hayvanı hangisidir?",
+    "options": [
+      "Mavi Balina",
+      "Fil",
+      "Zürafa",
+      "Büyük Beyaz Köpekbalığı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "1e7845b7-7e61-4171-a477-8d070b4f88e2",
+    "category": "Doğa",
+    "difficulty": 2,
+    "text": "Hangi kuş türü geriye doğru uçabilen tek kuştur?",
+    "options": [
+      "Papağan",
+      "Sinekkuşu",
+      "Kartal",
+      "Kırlangıç"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "9d90fbfb-88a5-48fa-bb64-c6af7018d9cc",
+    "category": "Doğa",
+    "difficulty": 2,
+    "text": "Bir ahtapotun kaç tane kalbi vardır?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "3b29db48-fb29-4530-ab08-b7f3ec296f8a",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Karada yaşayan en hızlı hayvan hangisidir?",
+    "options": [
+      "Aslan",
+      "Ceylan",
+      "Çita",
+      "Leopar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a9ef55f7-4dc5-4dbb-b2e0-258fb56af227",
+    "category": "Doğa",
+    "difficulty": 3,
+    "text": "Kutup ayılarının derisi (tüyleri değil) ne renktir?",
+    "options": [
+      "Beyaz",
+      "Siyah",
+      "Pembe",
+      "Kahverengi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c13567d2-972a-43d9-95a7-6e69d747d2f9",
+    "category": "Doğa",
+    "difficulty": 2,
+    "text": "Hangi hayvanın hamilelik süresi en uzundur (yaklaşık 22 ay)?",
+    "options": [
+      "Mavi Balina",
+      "Fil",
+      "Zürafa",
+      "Gergedan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f51659a8-e15a-4712-ab79-c88f17db06ef",
+    "category": "Doğa",
+    "difficulty": 3,
+    "text": "Arıların kaç tane gözü vardır?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "b3e32b09-d592-4fdf-9730-a8d2c4187f54",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Doğal ortamında sadece Avustralya'da yaşayan, keseli bir hayvan olan canlı hangisidir?",
+    "options": [
+      "Kanguru",
+      "Lama",
+      "Zebra",
+      "Penguen"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "416973e8-5b43-4e42-9907-2c9cfb721869",
+    "category": "Doğa",
+    "difficulty": 2,
+    "text": "Hangi deniz memelisi uyurken beyninin sadece yarısını dinlendirir ve bir gözünü açık tutar?",
+    "options": [
+      "Fok",
+      "Yunus",
+      "Balina",
+      "Deniz aslanı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "dbcf16a0-e5dc-424a-9c71-f513d7f02a0a",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Sadece okaliptüs yapraklarıyla beslenen sevimli hayvan hangisidir?",
+    "options": [
+      "Tembel hayvan",
+      "Panda",
+      "Koala",
+      "Rakun"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "18c15dc9-21cb-4cf9-93e1-cf08871bdc27",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Uçamayan en büyük kuş türü hangisidir?",
+    "options": [
+      "Devekuşu",
+      "Emu",
+      "Kivi",
+      "Penguen"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "67b93db3-8f08-410a-b32c-cfbd7494f6c4",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Dünyadaki en kalabalık nüfusa sahip böcek türü hangisidir?",
+    "options": [
+      "Arı",
+      "Karınca",
+      "Sivrisinek",
+      "Karasinek"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c1692cf6-9ed5-4303-9bb5-5d9c22e4d0b1",
+    "category": "Doğa",
+    "difficulty": 3,
+    "text": "Bukalemunların renk değiştirmesinin birincil amacı nedir?",
+    "options": [
+      "Kamuflaj ve saklanmak",
+      "Avlarını korkutmak",
+      "İletişim kurmak ve vücut ısısını ayarlamak",
+      "Düşmanlarından zehirli olduklarını göstermek"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "f5db7f7b-944f-4d94-a21b-68d89ce6f2eb",
+    "category": "Doğa",
+    "difficulty": 3,
+    "text": "Ahtapotların ve at nalı yengeçlerinin kanı ne renktir?",
+    "options": [
+      "Kırmızı",
+      "Mavi",
+      "Yeşil",
+      "Sarı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d094eb84-9781-4200-a518-e350a501ab1a",
+    "category": "Doğa",
+    "difficulty": 2,
+    "text": "Dünyanın en uzun ağaç türü hangisidir?",
+    "options": [
+      "Baobab",
+      "Sekoya (Kızılçam)",
+      "Meşe",
+      "Söğüt"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "fbc66af5-11cd-40a2-b2ff-063a5f458110",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Doğal inciler hangi deniz canlısı tarafından üretilir?",
+    "options": [
+      "Denizyıldızı",
+      "İstiridye",
+      "Yengeç",
+      "Denizanası"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "893c5240-dc5f-4a6c-acb6-b5bbcd28cf5b",
+    "category": "Doğa",
+    "difficulty": 3,
+    "text": "Hangi hayvanın parmak izleri insan parmak izine o kadar benzer ki olay yerlerinde karışıklığa sebep olabilir?",
+    "options": [
+      "Şempanze",
+      "Goril",
+      "Koala",
+      "Rakun"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a90a2a8b-1fc6-4076-9057-0b1d3032d16a",
+    "category": "Doğa",
+    "difficulty": 2,
+    "text": "Zürafaların dilleri hangi renktir?",
+    "options": [
+      "Pembe",
+      "Mavi-Siyah",
+      "Kırmızı",
+      "Sarı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b1ecf8ad-f17e-41f2-8ec2-861c8f18bc58",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Uçabilen tek memeli hayvan hangisidir?",
+    "options": [
+      "Uçan sincap",
+      "Yarasa",
+      "Baykuş",
+      "Lemur"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "119e7a83-bf97-4eb7-bc97-e89a613be3eb",
+    "category": "Doğa",
+    "difficulty": 3,
+    "text": "Karada yaşayan dünyanın en zehirli yılanı hangisidir?",
+    "options": [
+      "Kral Kobra",
+      "İçbölge Taypanı",
+      "Kara Mamba",
+      "Çıngıraklı Yılan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "2c9432f8-ff97-40f4-8a43-6c845b5efed9",
+    "category": "Doğa",
+    "difficulty": 3,
+    "text": "Hayatı boyunca hiç su içmeden yaşayabilen ve su ihtiyacını yediği tohumlardan karşılayan çöl hayvanı hangisidir?",
+    "options": [
+      "Çöl Tilkisi",
+      "Deve",
+      "Kanguru Faresi",
+      "Akrep"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "14f29ed3-288d-4b82-bccd-bb3c18dc90cc",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Penguenler doğal ortamlarında dünyanın hangi bölgesinde yaşarlar?",
+    "options": [
+      "Kuzey Kutbu",
+      "Güney Yarımküre",
+      "Ekvator",
       "Avrupa"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "e2b4ea05-3121-4b4d-9f4e-fd9b7299547a",
-    "category": "Co\u011frafya",
+    "id": "9366df65-e99d-4874-bc5a-e37b12ec899b",
+    "category": "Doğa",
     "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki k\u0131talardan hangisi Elbrus da\u011f\u0131na ev sahipli\u011fi yapmaktad\u0131r?",
+    "text": "Etobur bir bitki olan ve böcekleri yakalayarak beslenen bitki hangisidir?",
     "options": [
-      "Kuzey Amerika",
-      "Avrupa",
-      "Asya",
-      "Okyanusya"
+      "Orkide",
+      "Venüs Sinekkapanı",
+      "Kaktüs",
+      "Ereltiotu"
     ],
     "correctOptionIndex": 1
   },
   {
-    "id": "69d39309-ed76-44ba-ab05-7c55bfff59ac",
-    "category": "Co\u011frafya",
-    "difficulty": 3,
-    "text": "D\u00fcnyaca \u00fcnl\u00fc Aconcagua da\u011f\u0131na t\u0131rmanmak isteyen bir da\u011fc\u0131 hangi k\u0131taya gitmelidir?",
-    "options": [
-      "Asya",
-      "Antarktika",
-      "G\u00fcney Amerika",
-      "Afrika"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "1f91d214-5c9a-4b17-b7a1-46d8c3c746f0",
-    "category": "Co\u011frafya",
-    "difficulty": 1,
-    "text": "Denali da\u011f\u0131 hangi k\u0131tada yer almaktad\u0131r?",
-    "options": [
-      "Asya",
-      "Kuzey Amerika",
-      "G\u00fcney Amerika",
-      "Antarktika"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "0f7d3669-968f-41b7-83ee-a07d80d6ae7e",
-    "category": "Tarih",
+    "id": "4cf06b9b-8d7b-489e-95d8-c70ea93f7734",
+    "category": "Doğa",
     "difficulty": 2,
-    "text": "Osmanl\u0131 tarihinde \u0130stanbul'u fetheden h\u00fck\u00fcmdar kimdir?",
+    "text": "Bir ağaçkakan saniyede ortalama kaç kez gagasıyla ağaca vurabilir?",
     "options": [
-      "Fatih Sultan Mehmet",
-      "II. Selim",
-      "Y\u0131ld\u0131r\u0131m Bayezid",
-      "II. Abd\u00fclhamid"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "e15fbdf8-c38e-421b-b0e0-729614a3c118",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Tarih kitaplar\u0131nda M\u0131s\u0131r'\u0131 fethedip Halifeli\u011fi Osmanl\u0131'ya getiren ki\u015fi olarak bilinen padi\u015fah a\u015fa\u011f\u0131dakilerden hangisidir?",
-    "options": [
-      "Y\u0131ld\u0131r\u0131m Bayezid",
-      "IV. Murat",
-      "Yavuz Sultan Selim",
-      "I. Murat"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "30bdf15a-fd05-4f54-83fb-8d7003591dc2",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Osmanl\u0131'n\u0131n en uzun s\u00fcre tahtta kalan \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
-    "options": [
-      "Kanuni Sultan S\u00fcleyman",
-      "Orhan Gazi",
-      "II. Selim",
-      "Yavuz Sultan Selim"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "aee5713c-a542-4db2-9f66-bec1d3d504d7",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "Bursa'y\u0131 fetheden Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
-    "options": [
-      "Orhan Gazi",
-      "Kanuni Sultan S\u00fcleyman",
-      "I. Ahmet",
-      "IV. Murat"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "829705eb-8bd0-43cf-b262-6d00bb6d6db1",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Osmanl\u0131 Devleti'nin kurucusu olan \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
-    "options": [
-      "II. Selim",
-      "Osman Gazi",
-      "Gen\u00e7 Osman (II. Osman)",
-      "Y\u0131ld\u0131r\u0131m Bayezid"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "2aeb6f00-7d9f-4caf-aec5-0f7b228709c0",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "33 y\u0131l tahtta kalan ve Y\u0131ld\u0131z Saray\u0131'n\u0131 merkez yapan Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
-    "options": [
-      "II. Abd\u00fclhamid",
-      "II. Selim",
-      "Osman Gazi",
-      "I. Murat"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "d822f793-0635-4513-b897-d1eef19beefe",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "Ba\u011fdat Fatihi olarak bilinen Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
-    "options": [
-      "Yavuz Sultan Selim",
-      "Osman Gazi",
-      "IV. Murat",
-      "Y\u0131ld\u0131r\u0131m Bayezid"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "6b7722d5-90b5-4170-a0bb-ee033a00b10f",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "Osmanl\u0131 tarihinde Ni\u011fbolu Sava\u015f\u0131'n\u0131 kazanan h\u00fck\u00fcmdar kimdir?",
-    "options": [
-      "Y\u0131ld\u0131r\u0131m Bayezid",
-      "II. Mahmut",
-      "III. Murat",
-      "I. Ahmet"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "ba997b17-bb3b-424a-983e-3edd23a0b1a6",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Muhte\u015fem unvan\u0131yla bilinen \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
-    "options": [
-      "I. S\u00fcleyman",
-      "IV. Murat",
-      "Kanuni Sultan S\u00fcleyman",
-      "II. Abd\u00fclhamid"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "7d2a4e7a-f36c-45fe-9d17-93baaa20425b",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Nizam-\u0131 Cedid yeniliklerini yapan \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
-    "options": [
-      "III. Selim",
-      "Gen\u00e7 Osman (II. Osman)",
-      "Kanuni Sultan S\u00fcleyman",
-      "II. Abd\u00fclhamid"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "0c9fb50b-a48a-4cad-87ed-27dceac85a05",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Yeni\u00e7eri Oca\u011f\u0131'n\u0131 kald\u0131ran \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
-    "options": [
-      "IV. Murat",
-      "I. Murat",
-      "III. Murat",
-      "II. Mahmut"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "ee6d5fb8-b57b-47be-9630-f85cc08d7f1c",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "Osmanl\u0131 tarihinde Sultanahmet Camii'ni yapt\u0131ran h\u00fck\u00fcmdar kimdir?",
-    "options": [
-      "I. S\u00fcleyman",
-      "Y\u0131ld\u0131r\u0131m Bayezid",
-      "I. Murat",
-      "I. Ahmet"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "5a95e82a-4b96-4b00-b20c-50284fc95de3",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Osmanl\u0131 tarihinde Kosova Sava\u015f\u0131'nda \u015fehit d\u00fc\u015fen h\u00fck\u00fcmdar kimdir?",
-    "options": [
-      "I. Murat",
-      "Osman Gazi",
-      "II. Mahmut",
-      "Orhan Gazi"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "d89f5435-ed95-4f58-b668-a2cfac2a7a70",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Sar\u0131 lakab\u0131yla bilinen \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
-    "options": [
-      "II. Selim",
-      "Y\u0131ld\u0131r\u0131m Bayezid",
-      "Osman Gazi",
-      "IV. Murat"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "912fa92b-c329-4e65-ba4e-b02de15a698a",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "Osmanl\u0131'n\u0131n en geni\u015f s\u0131n\u0131rlar\u0131na ula\u015fmas\u0131n\u0131 sa\u011flayan padi\u015fahlardan biri olan Osmanl\u0131 padi\u015fah\u0131 hangisidir?",
-    "options": [
-      "Orhan Gazi",
-      "III. Murat",
-      "II. Abd\u00fclhamid",
-      "Kanuni Sultan S\u00fcleyman"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "e1ebef03-f5e1-4706-9059-237908b38037",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki padi\u015fahlardan hangisi Yeni\u00e7eriler taraf\u0131ndan \u00f6ld\u00fcr\u00fclen ilk padi\u015fah olan \u00f6zelli\u011fiyle tarihe ge\u00e7mi\u015ftir?",
-    "options": [
-      "IV. Murat",
-      "Gen\u00e7 Osman (II. Osman)",
-      "I. Ahmet",
-      "I. S\u00fcleyman"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "5a9115a0-cbe9-4bae-8c12-8793a2350cb9",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi Malazgirt Meydan Muharebesi ile ili\u015fkilidir?",
-    "options": [
-      "1061",
-      "1066",
-      "1071",
-      "1069"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "123c3270-23f6-4571-adbd-4d6a4170f5e2",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en \u0130stanbul'un Fethi, tam olarak hangi y\u0131l olmu\u015ftur?",
-    "options": [
-      "1448",
-      "1458",
-      "1453",
-      "1452"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "69ea512e-de77-45d7-8804-230f6fb3ecd7",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en Cumhuriyet'in \u0130lan\u0131, tam olarak hangi y\u0131l olmu\u015ftur?",
-    "options": [
-      "1928",
-      "1913",
-      "1913",
-      "1923"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "e974e303-7f34-44fd-aa03-485f535a5ee4",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en TBMM'nin A\u00e7\u0131l\u0131\u015f\u0131, tam olarak hangi y\u0131l olmu\u015ftur?",
-    "options": [
-      "1919",
-      "1919",
-      "1920",
-      "1915"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "39fea4b9-0c47-4f76-823f-fee1e3e5821d",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "Preveze Deniz Zaferi hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
-    "options": [
-      "1539",
-      "1538",
-      "1543",
-      "1528"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "7d72c3d8-17ce-4749-ba46-520c0956afd2",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "Moha\u00e7 Meydan Muharebesi hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
-    "options": [
-      "1528",
-      "1525",
-      "1525",
-      "1526"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "4e758c6c-74d6-46fc-b619-eaa214199bac",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en \u00c7anakkale Zaferi, tam olarak hangi y\u0131l olmu\u015ftur?",
-    "options": [
-      "1916",
-      "1915",
-      "1905",
-      "1925"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "9c4e96c7-8156-405a-95b7-5c0316cbee3e",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "Mustafa Kemal'in Samsun'a \u00e7\u0131k\u0131\u015f\u0131 hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
-    "options": [
-      "1921",
-      "1920",
-      "1909",
-      "1919"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "403ca6a9-c8e2-49e0-867b-e799b253e6b6",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "Pasinler Sava\u015f\u0131 hangi y\u0131lda ger\u00e7ekle\u015fmi\u015ftir?",
-    "options": [
-      "1046",
-      "1049",
-      "1038",
-      "1048"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "418c4fd7-e874-4d06-8170-2224b796ded0",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi Miryokefalon Sava\u015f\u0131 ile ili\u015fkilidir?",
-    "options": [
-      "1178",
-      "1176",
-      "1178",
-      "1186"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "9c2bb5e5-8321-4962-9f4b-4651dccdb1a0",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Tarihteki \u00f6nemli olaylardan olan Osmanl\u0131'n\u0131n Kurulu\u015fu, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
-    "options": [
-      "1309",
-      "1294",
-      "1294",
-      "1299"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "83953660-1172-4289-9a3b-665834e213b1",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "Tarihteki \u00f6nemli olaylardan olan Saltanat\u0131n Kald\u0131r\u0131lmas\u0131, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
-    "options": [
-      "1924",
-      "1912",
-      "1922",
-      "1917"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "3271baae-66db-4d70-8663-27f1370a4e4d",
-    "category": "Tarih",
-    "difficulty": 1,
-    "text": "Tarih derslerinde s\u0131k\u00e7a ge\u00e7en \u00c7ald\u0131ran Sava\u015f\u0131, tam olarak hangi y\u0131l olmu\u015ftur?",
-    "options": [
-      "1524",
-      "1514",
-      "1504",
-      "1524"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "fce5f34d-4e14-4196-8dec-b21ecfb18534",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi Rodos'un Fethi ile ili\u015fkilidir?",
-    "options": [
-      "1512",
-      "1522",
-      "1520",
-      "1527"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "af0d30e5-6955-4e5c-b0cf-2d05442fdd4f",
-    "category": "Tarih",
-    "difficulty": 3,
-    "text": "Tarihteki \u00f6nemli olaylardan olan Halifeli\u011fin Kald\u0131r\u0131lmas\u0131, a\u015fa\u011f\u0131daki y\u0131llardan hangisinde meydana gelmi\u015ftir?",
-    "options": [
-      "1924",
-      "1926",
-      "1922",
-      "1926"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "7ccf21fa-887d-4c42-bac8-3bb26a5ab0c1",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi 93 Harbi ile ili\u015fkilidir?",
-    "options": [
-      "1867",
-      "1877",
-      "1882",
-      "1876"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "fda82373-15a1-469e-a888-e3b4ce89a0df",
-    "category": "Tarih",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki tarihlerden hangisi Birinci D\u00fcnya Sava\u015f\u0131'n\u0131n Ba\u015flamas\u0131 ile ili\u015fkilidir?",
-    "options": [
-      "1913",
-      "1924",
-      "1914",
-      "1913"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "d5abd4fb-62a7-4890-ab55-e1f5fc7a96cf",
-    "category": "Futbol",
-    "difficulty": 2,
-    "text": "Hangi futbolcu kariyeri boyunca en \u00e7ok Ballon d'Or \u00f6d\u00fcl\u00fcn\u00fc kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Diego Maradona",
-      "Pele",
-      "Cristiano Ronaldo",
-      "Lionel Messi"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "046e9827-ba06-469d-8614-4f2af969a335",
-    "category": "Futbol",
-    "difficulty": 2,
-    "text": "Tarihte 'Sar\u0131 Kanaryalar' lakab\u0131yla bilinen T\u00fcrk futbol kul\u00fcb\u00fc hangisidir?",
-    "options": [
-      "Fenerbah\u00e7e",
-      "Galatasaray",
-      "Be\u015fikta\u015f",
-      "Trabzonspor"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "0c26ba68-0c3b-4b71-a439-51a3be39fd6b",
-    "category": "Futbol",
-    "difficulty": 2,
-    "text": "\u0130ngiltere Premier Lig tarihinde 'The Invincibles' (Yenilmezler) unvan\u0131yla nama\u011flup \u015fampiyon olan tek tak\u0131m hangisidir?",
-    "options": [
-      "Manchester City",
-      "Chelsea",
-      "Arsenal",
-      "Manchester United"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "c1a43bd8-8d98-40c1-87f2-2d356cdffeca",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "Futbolda kendi kalesine at\u0131lan gole ne ad verilir?",
-    "options": [
-      "Ofsayt",
-      "Kendi Kalesine Gol (Own Goal)",
-      "R\u00f6va\u015fata",
-      "Frikik"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "6186114c-4b5c-4327-87c7-4c07a8195920",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "T\u00fcrkiye S\u00fcper Lig'de 4 y\u0131ld\u0131z takmaya hak kazanan ilk futbol tak\u0131m\u0131 hangisidir?",
-    "options": [
-      "Trabzonspor",
-      "Galatasaray",
-      "Be\u015fikta\u015f",
-      "Fenerbah\u00e7e"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "12df827d-1741-4f70-8f00-34c576172ebf",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "Real Madrid'in efsanevi ma\u00e7lar\u0131n\u0131 oynad\u0131\u011f\u0131 d\u00fcnyaca \u00fcnl\u00fc stadyumunun ad\u0131 nedir?",
-    "options": [
-      "Camp Nou",
-      "Old Trafford",
-      "Allianz Arena",
-      "Santiago Bernabeu"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "cf0592bc-c509-4743-8e58-a6eb61906672",
-    "category": "Futbol",
-    "difficulty": 2,
-    "text": "Futbol tarihinde 'El Pibe de Oro' (Alt\u0131n \u00c7ocuk) lakab\u0131yla tan\u0131nan efsanevi Arjantinli oyuncu kimdir?",
-    "options": [
-      "Alfredo Di Stefano",
-      "Diego Maradona",
-      "Gabriel Batistuta",
-      "Lionel Messi"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "12984b56-1b76-461c-b34f-c3cd556f5469",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "2002 FIFA D\u00fcnya Kupas\u0131'nda T\u00fcrkiye Milli Tak\u0131m\u0131 hangi \u00fclkeyi yenerek d\u00fcnya \u00fc\u00e7\u00fcnc\u00fcs\u00fc olmu\u015ftur?",
-    "options": [
-      "Brezilya",
-      "Japonya",
-      "G\u00fcney Kore",
-      "Senegal"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "cea86dc3-156a-4ee0-aa24-050a3b4d4c89",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "\u015eampiyonlar Ligi'ni (ve eski ad\u0131yla \u015eampiyon Kul\u00fcpler Kupas\u0131'n\u0131) en \u00e7ok kazanan Avrupa kul\u00fcb\u00fc hangisidir?",
-    "options": [
-      "Liverpool",
-      "Milan",
-      "Bayern M\u00fcnih",
-      "Real Madrid"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "a76dce48-ed86-4ce2-8f7a-9df7b4279102",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "Futbolda rakip tak\u0131m\u0131n savunma arkas\u0131na sark\u0131ld\u0131\u011f\u0131nda kural ihlali say\u0131lan pozisyona ne ad verilir?",
-    "options": [
-      "Ta\u00e7",
-      "Korner",
-      "Ofsayt",
-      "Penalt\u0131"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "bee94c23-0889-46eb-85b6-f0228c671232",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "Galatasaray, 2000 y\u0131l\u0131nda UEFA Kupas\u0131 finalinde hangi tak\u0131m\u0131 penalt\u0131larla ge\u00e7erek \u015fampiyon olmu\u015ftur?",
-    "options": [
-      "Leeds United",
-      "Real Madrid",
-      "Arsenal",
-      "Mallorca"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "a6b03e17-3c5d-4497-a051-988713745bf7",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "Tarihte 'Siyah \u0130nce \u0130nci' veya sadece 'Kral' lakaplar\u0131yla tan\u0131nan, 3 kez D\u00fcnya Kupas\u0131 kazanan tek futbolcu kimdir?",
-    "options": [
-      "Maradona",
-      "Ronaldo Nazario",
-      "Pele",
-      "Ronaldinho"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "a1f74921-8e0f-47e7-85ad-bd4f827df667",
-    "category": "Futbol",
-    "difficulty": 2,
-    "text": "\u0130talya Serie A'da 'Ya\u015fl\u0131 Kad\u0131n' (La Vecchia Signora) lakab\u0131yla bilinen tak\u0131m hangisidir?",
-    "options": [
-      "Roma",
-      "Milan",
-      "Juventus",
-      "Inter"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "66ac68a5-d3cb-4717-a0df-e47c7627001e",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "D\u00fcnya futbol tarihinde kalecilerin topu elle tutmas\u0131n\u0131n yasak oldu\u011fu alan\u0131n d\u0131\u015f\u0131ndaki b\u00f6lgeye ne ad verilir?",
-    "options": [
-      "Yar\u0131 alan",
-      "Ceza sahas\u0131 d\u0131\u015f\u0131",
-      "Kale arkas\u0131",
-      "Alt\u0131 pas"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "8698bcdf-d96b-494b-9d6a-bcdbaf9908ea",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "Bir futbol ma\u00e7\u0131nda ayn\u0131 oyuncunun 3 gol atmas\u0131 durumuna verilen isim nedir?",
-    "options": [
-      "Clean Sheet",
-      "Poker",
-      "Hat-trick",
-      "Duble"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "22199838-fe4f-475f-b65a-6f9396535f22",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "Be\u015fikta\u015f'\u0131n efsanevi \u00fc\u00e7l\u00fcs\u00fc 'Metin - Ali - Feyyaz' d\u00f6neminde tak\u0131m\u0131n sembol\u00fc haline gelen isimlerden Feyyaz'\u0131n soyad\u0131 nedir?",
-    "options": [
-      "Y\u0131lmaz",
-      "Tekin",
-      "U\u00e7ar",
-      "G\u00fcler"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "4ce4b911-ed56-4a2c-b811-0dfb8e123999",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "\u0130ngiliz futbolunun kalbi say\u0131lan ve Liverpool'un i\u00e7 saha ma\u00e7lar\u0131n\u0131 oynad\u0131\u011f\u0131 tarihi stadyum neresidir?",
-    "options": [
-      "Old Trafford",
-      "Emirates",
-      "Stamford Bridge",
-      "Anfield Road"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "420607d2-b68b-4e26-aeb6-539d53efef2d",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "T\u00fcrkiye'de ilk resmi futbol ma\u00e7\u0131 hangi iki tak\u0131m aras\u0131nda oynanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Kar\u015f\u0131yaka - Altay",
-      "Galatasaray - Fenerbah\u00e7e",
-      "Be\u015fikta\u015f - Galatasaray",
-      "Moda FC - HMS Imogene"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "3286ba00-62c1-4c1c-a133-d9e855c9abbe",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "Futbolda hakemin oyunu sar\u0131 kartla durdurup, ayn\u0131 oyuncuya ikinci sar\u0131dan k\u0131rm\u0131z\u0131 kart g\u00f6stermesi ne anlama gelir?",
-    "options": [
-      "Penalt\u0131 at\u0131\u015f\u0131",
-      "Serbest vuru\u015f",
-      "Uyar\u0131",
-      "Oyundan ihra\u00e7"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "8a0fe862-8779-4274-827e-6c1820a51d98",
-    "category": "Futbol",
-    "difficulty": 2,
-    "text": "D\u00fcnya Kupas\u0131 tarihinde en \u00e7ok gol atan oyuncu olan Miroslav Klose hangi \u00fclkenin vatanda\u015f\u0131d\u0131r?",
-    "options": [
-      "\u0130svi\u00e7re",
-      "Avusturya",
-      "Polonya",
-      "Almanya"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "f5ca2eae-c430-45c5-8814-8a047f6ee586",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "T\u00fcrkiye Milli Futbol Tak\u0131m\u0131'n\u0131n tarihindeki en \u00e7ok gol atan oyuncusu (T\u00fcm zamanlar\u0131n en golc\u00fcs\u00fc) kimdir?",
-    "options": [
-      "Nihat Kahveci",
-      "Burak Y\u0131lmaz",
-      "Lefter K\u00fc\u00e7\u00fckandonyadis",
-      "Hakan \u015e\u00fck\u00fcr"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "ced38bc6-e7fa-47b8-a2a0-6549a3e8604e",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "Futbol oyun kurallar\u0131na g\u00f6re bir tak\u0131m sahada en fazla ka\u00e7 oyuncu ile m\u00fccadele edebilir?",
-    "options": [
+      "5",
       "10",
-      "9",
-      "11",
-      "12"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "90713709-3694-42b3-82a7-928c4b198322",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "Brezilyal\u0131 efsane Ronaldinho'nun ad\u0131yla \u00f6zde\u015fle\u015fen ve topu rakibin bacak aras\u0131ndan ge\u00e7irmeye dayal\u0131 \u00e7al\u0131ma ne denir?",
-    "options": [
-      "G\u00f6kku\u015fa\u011f\u0131",
-      "Plase",
-      "R\u00f6va\u015fata",
-      "Bacak aras\u0131 (Nutmeg)"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "a0b5f566-f8a2-4afa-9b74-f1266a7860f0",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "\u015eampiyonlar Ligi m\u00fczi\u011fi hangi klasik bestecinin eserinden uyarlanm\u0131\u015ft\u0131r?",
-    "options": [
-      "Johann Sebastian Bach",
-      "Wolfgang Amadeus Mozart",
-      "George Frideric Handel",
-      "Ludwig van Beethoven"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "7df96a48-2a1b-4579-9ea6-7e2f0ea64486",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "T\u00fcrkiye'de 'D\u00f6rt B\u00fcy\u00fckler' olarak an\u0131lan tak\u0131mlar\u0131n d\u0131\u015f\u0131nda S\u00fcper Lig \u015fampiyonlu\u011fu ya\u015fayan ilk Anadolu kul\u00fcb\u00fc hangisidir?",
-    "options": [
-      "Ba\u015fak\u015fehir",
-      "Trabzonspor",
-      "Bursaspor",
-      "Kocaelispor"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "0fe00e0a-bcf3-49fd-ae48-4c322213fa92",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "Futbol ma\u00e7lar\u0131nda s\u00fcrenin bitimiyle birlikte hakemin ekledi\u011fi kay\u0131p zamana ne ad verilir?",
-    "options": [
-      "G\u00fcm\u00fc\u015f gol",
-      "Penalt\u0131lar",
-      "Uzatma (Duraklama) anlar\u0131",
-      "Alt\u0131n gol"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "add76a4e-439b-4870-95da-87dc64dafce8",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "Hollanda futbolunun felsefesi olan 'Total Futbol'u d\u00fcnyaya tan\u0131tan efsanevi futbol adam\u0131 kimdir?",
-    "options": [
-      "Ruud Gullit",
-      "Johan Cruyff",
-      "Marco van Basten",
-      "Frank Rijkaard"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "0bf360a3-d692-4587-8589-5ed59a4821be",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "Avrupa Futbol \u015eampiyonas\u0131 (EURO) tarihinde s\u00fcrpriz bir \u015fekilde 2004 y\u0131l\u0131nda \u015fampiyon olan \u00fclke hangisidir?",
-    "options": [
-      "Yunanistan",
-      "\u00c7ekya",
-      "Danimarka",
-      "Portekiz"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "5e581d3a-69cb-417e-8fdc-ed0eade958e7",
-    "category": "Futbol",
-    "difficulty": 3,
-    "text": "Bir kalecinin kendi ceza sahas\u0131 d\u0131\u015f\u0131nda topa eliyle m\u00fcdahale etmesinin cezas\u0131 genellikle nedir?",
-    "options": [
-      "K\u0131rm\u0131z\u0131 Kart",
-      "Penalt\u0131",
-      "Uyar\u0131",
-      "Sar\u0131 Kart"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "b89240cc-e39b-4b3f-bd5c-9f6a0ab53346",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "Lionel Messi'nin Barcelona'da giydi\u011fi efsanevi forma numaras\u0131 ka\u00e7t\u0131r?",
-    "options": [
-      "7",
-      "9",
-      "10",
-      "11"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "7997333c-c391-481f-ae56-a3621ebc3c36",
-    "category": "Futbol",
-    "difficulty": 2,
-    "text": "Cristiano Ronaldo, profesyonel kariyerine hangi Portekiz kul\u00fcb\u00fcnde ba\u015flam\u0131\u015ft\u0131r?",
-    "options": [
-      "Sporting Lizbon",
-      "Porto",
-      "Benfica",
-      "Braga"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "7b611ab2-ed71-437c-bd97-eaabf2cb1a63",
-    "category": "Futbol",
-    "difficulty": 1,
-    "text": "T\u00fcrkiye S\u00fcper Ligi'nde en \u00e7ok gol krall\u0131\u011f\u0131 ya\u015fayan ve 'Ta\u00e7s\u0131z Kral' lakab\u0131yla an\u0131lan efsane kimdir?",
-    "options": [
-      "Metin Oktay",
-      "Tanju \u00c7olak",
-      "Lefter K\u00fc\u00e7\u00fckandonyadis",
-      "Hakk\u0131 Yeten"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "5b8b4e22-010c-4dde-875c-fba6d976016a",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Basketbolda kendi \u00e7emberine do\u011fru giden topu havada yakalay\u0131p sma\u00e7la bitirmeye ne ad verilir?",
-    "options": [
-      "Pick and Roll",
-      "Fadeaway",
-      "Alley-oop",
-      "Crossover"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "4276dbe5-1e62-4b52-b24b-1c294fc2d4bc",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "NBA tarihinde 'Ekselanslar\u0131' (His Airness) lakab\u0131yla bilinen ve Chicago Bulls ile 6 \u015fampiyonluk kazanan efsane kimdir?",
-    "options": [
-      "Kobe Bryant",
-      "LeBron James",
-      "Magic Johnson",
-      "Michael Jordan"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "5269596f-76b8-4f7f-8ba3-89c5fb951b65",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "T\u00fcrkiye Erkekler Basketbol tarihinde EuroLeague kupas\u0131n\u0131 kazanan ilk tak\u0131m hangisidir?",
-    "options": [
-      "Dar\u00fc\u015f\u015fafaka",
-      "Anadolu Efes",
-      "Galatasaray",
-      "Fenerbah\u00e7e"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "1feb8706-4322-4b2b-b159-0ce2494cf94f",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "Basketbolda h\u00fccum s\u00fcresi (shot clock) standart olarak ka\u00e7 saniyedir?",
-    "options": [
-      "24 saniye",
-      "20 saniye",
-      "15 saniye",
-      "30 saniye"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "b8ae9d63-8d9f-4074-aa87-9b55eca0a2b1",
-    "category": "Basketbol",
-    "difficulty": 1,
-    "text": "NBA logosunda silueti bulunan efsanevi basketbolcu kimdir?",
-    "options": [
-      "Wilt Chamberlain",
-      "Bill Russell",
-      "Jerry West",
-      "Larry Bird"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "0b3e7c93-0462-46f1-b0ee-e30a1b3b5a1f",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Bir oyuncunun ma\u00e7 boyunca \u00e7ift haneli istatistiklere 3 farkl\u0131 kategoride (\u00f6rne\u011fin: say\u0131, ribaund, asist) ula\u015fmas\u0131na ne denir?",
-    "options": [
-      "Quadruple-Double",
-      "Buzzer Beater",
-      "Double-Double",
-      "Triple-Double"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "23899aa7-0ef1-4950-98f8-466dc3a845dd",
-    "category": "Basketbol",
-    "difficulty": 1,
-    "text": "EuroLeague tarihinde en \u00e7ok \u015fampiyonluk kazanan ba\u015fantren\u00f6r (Ko\u00e7) kimdir?",
-    "options": [
-      "Ettore Messina",
-      "Ergin Ataman",
-      "Zeljko Obradovic",
-      "Dusan Ivkovic"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "4df514d0-bf70-4dbf-aaf8-1abcd9c87313",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Basketbolda serbest at\u0131\u015f (free throw) \u00e7izgisinden at\u0131lan ve giren her bir \u015fut ka\u00e7 puan de\u011ferindedir?",
-    "options": [
-      "0.5",
-      "1",
-      "2",
-      "3"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "6ecd5f5d-c18b-4864-afd3-e12c5cb70429",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "Los Angeles Lakers'\u0131n efsanevi y\u0131ld\u0131z\u0131 Kobe Bryant'\u0131n sahada kulland\u0131\u011f\u0131 lakap neydi?",
-    "options": [
-      "The King",
-      "The Answer",
-      "The Truth",
-      "Black Mamba"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "4b0074d6-27eb-43f5-9a0a-c310cca2b858",
-    "category": "Basketbol",
-    "difficulty": 1,
-    "text": "Top s\u00fcrerken (dribbling) topu sektirmeyi b\u0131rak\u0131p iki eliyle tuttuktan sonra tekrar sektirmeye ba\u015flamak hangi kural ihlalidir?",
-    "options": [
-      "Ta\u015f\u0131ma",
-      "Hatal\u0131 Y\u00fcr\u00fcme",
-      "Geri Saha \u0130hlali",
-      "\u00c7ift Top (Double Dribble)"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "29f9d99b-7fe9-4c00-b5be-5280b5b89a55",
-    "category": "Basketbol",
-    "difficulty": 1,
-    "text": "D\u00fcnya Basketbol \u015eampiyonas\u0131'nda (FIBA) en \u00e7ok madalya kazanan ve basketbolun be\u015fi\u011fi say\u0131lan \u00fclke hangisidir?",
-    "options": [
-      "\u0130spanya",
-      "ABD",
-      "S\u0131rbistan",
-      "Arjantin"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "6419ba80-517f-450a-99f9-57df4ddba53b",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Efsanevi oyuncu LeBron James, NBA kariyerine hangi tak\u0131mda ba\u015flam\u0131\u015ft\u0131r?",
-    "options": [
-      "Cleveland Cavaliers",
-      "Los Angeles Lakers",
-      "Chicago Bulls",
-      "Miami Heat"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "bb9b5bb5-9e0c-4b1f-a87e-30d70c12d9b1",
-    "category": "Basketbol",
-    "difficulty": 1,
-    "text": "Avrupa basketbolunun kul\u00fcpler baz\u0131ndaki en prestijli turnuvas\u0131 hangisidir?",
-    "options": [
-      "EuroLeague",
-      "EuroCup",
-      "VTB Ligi",
-      "FIBA \u015eampiyonlar Ligi"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "05b91653-a7fb-4317-82b9-b8c99750e766",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "Basketbolda potan\u0131n yerden y\u00fcksekli\u011fi standart olarak tam ka\u00e7 metredir?",
-    "options": [
-      "3.15 metre",
-      "2.95 metre",
-      "3.05 metre",
-      "3.00 metre"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "f3a55107-e0ed-41ff-8ffd-1382ba6875f8",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "Bir oyuncunun topu \u00e7emberin i\u00e7inden ge\u00e7irirken elleriyle \u00e7embere as\u0131larak att\u0131\u011f\u0131 \u00e7ok sert say\u0131 t\u00fcr\u00fc nedir?",
-    "options": [
-      "Sma\u00e7 (Dunk)",
-      "Floter",
-      "Kanca (Hook)",
-      "Turnike (Layup)"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "2c5bf0c8-ff4d-43ed-a603-1fc7deae2849",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "2021 ve 2022 y\u0131llar\u0131nda \u00fcst \u00fcste iki kez EuroLeague \u015fampiyonu olan T\u00fcrk basketbol tak\u0131m\u0131 hangisidir?",
-    "options": [
-      "Anadolu Efes",
-      "Fenerbah\u00e7e Beko",
-      "Galatasaray",
-      "Be\u015fikta\u015f"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "0c3610d9-23dd-48d1-87a3-737f0a6186ec",
-    "category": "Basketbol",
-    "difficulty": 1,
-    "text": "Basketbolda 3 saniye kural\u0131, sahan\u0131n hangi b\u00f6lgesinde uygulan\u0131r?",
-    "options": [
-      "Orta saha",
-      "\u00dc\u00e7 say\u0131 \u00e7izgisi d\u0131\u015f\u0131",
-      "Kenar \u00e7izgisi",
-      "Boyal\u0131 alan"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "e79039d2-aaf0-4e0a-a91e-e86bb8d748d0",
-    "category": "Basketbol",
-    "difficulty": 1,
-    "text": "Efsanevi uzun Wilt Chamberlain, NBA tarihinde bir ma\u00e7ta en fazla ka\u00e7 say\u0131 atarak k\u0131r\u0131lmas\u0131 imkans\u0131z bir rekor k\u0131rm\u0131\u015ft\u0131r?",
-    "options": [
-      "72",
-      "100",
-      "81",
-      "93"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "71d67371-ae8e-408c-b996-d5bfa8f82954",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Rakip oyuncu \u015fut att\u0131ktan sonra topu engellemeye \u00e7al\u0131\u015f\u0131rken top ini\u015fe ge\u00e7mi\u015fse ve o topa m\u00fcdahale edilirse ne karar\u0131 verilir?",
-    "options": [
-      "Faul - Serbest at\u0131\u015f verilir",
-      "\u0130ni\u015f halindeki top (Goaltending) - Say\u0131 ge\u00e7erli say\u0131l\u0131r",
-      "Hatal\u0131 savunma - Top yandan ba\u015flar",
-      "Blok - Oyun devam eder"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "ca00fc87-ca9a-4d12-a118-4deed1fe6edf",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "Stephen Curry, NBA'de hangi oyun stili ve yetene\u011fiyle t\u00fcm basketbol d\u00fcnyas\u0131nda devrim yapm\u0131\u015ft\u0131r?",
-    "options": [
-      "Sert savunma",
-      "Uzak mesafeli 3 say\u0131l\u0131k at\u0131\u015flar",
-      "G\u00f6z\u00fc kapal\u0131 asistler",
-      "Pota alt\u0131 dominasyonu"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "d0254de1-6c10-4ac8-a9df-6da8affd2380",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Basketbolu 1891 y\u0131l\u0131nda ABD'de bir spor dal\u0131 olarak icat eden beden e\u011fitimi \u00f6\u011fretmeni kimdir?",
-    "options": [
-      "Abner Doubleday",
-      "Alexander Cartwright",
-      "William G. Morgan",
-      "James Naismith"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "0d687c2a-148d-493b-a75b-77b107fa2df1",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Boston Celtics ile kazand\u0131\u011f\u0131 say\u0131s\u0131z \u015fampiyonlukla hat\u0131rlanan 'Larry Legend' lakapl\u0131 y\u0131ld\u0131z kimdir?",
-    "options": [
-      "Bill Russell",
-      "Paul Pierce",
-      "Kevin McHale",
-      "Larry Bird"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d6cfaca9-1e3f-4b46-b7d3-56e45fb191b6",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "H\u00fccumdaki tak\u0131m\u0131n, kendi yar\u0131 sahas\u0131ndan topu rakip yar\u0131 sahaya ge\u00e7irmek i\u00e7in ka\u00e7 saniye s\u00fcresi vard\u0131r?",
-    "options": [
-      "5 saniye",
-      "10 saniye",
-      "12 saniye",
-      "8 saniye"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "940d6aed-c1fa-4693-86ba-93e404175b85",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Ma\u00e7\u0131n bitimini belirten siren \u00e7ald\u0131\u011f\u0131 anda havada olan ve basketle sonu\u00e7lanan efsanevi \u015futlara ne isim verilir?",
-    "options": [
-      "Fadeaway",
-      "Clutch Shot",
-      "Buzzer Beater",
-      "Airball"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "40fc29f7-b10a-40dd-ad98-14c06ceabef5",
-    "category": "Basketbol",
-    "difficulty": 1,
-    "text": "Hidayet T\u00fcrko\u011flu, NBA kariyerinde en b\u00fcy\u00fck ba\u015far\u0131lar\u0131n\u0131 ve 'En \u00c7ok Geli\u015fme G\u00f6steren Oyuncu' (MIP) \u00f6d\u00fcl\u00fcn\u00fc hangi tak\u0131mla kazanm\u0131\u015ft\u0131r?",
-    "options": [
-      "San Antonio Spurs",
-      "Toronto Raptors",
-      "Sacramento Kings",
-      "Orlando Magic"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "a034932b-2262-4928-8665-d58ec9c2f2df",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "\u015eut atarken savunmac\u0131n\u0131n \u00fczerinden geriye do\u011fru s\u0131\u00e7rayarak at\u0131lan, savunulmas\u0131 \u00e7ok zor \u015fut tekni\u011fi nedir?",
-    "options": [
-      "Layup",
-      "Hook Shot",
-      "Floater",
-      "Fadeaway"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "e80c05ad-1c1c-41a9-891d-92b9dfdeefe8",
-    "category": "Basketbol",
-    "difficulty": 1,
-    "text": "Dallas Mavericks ile \u00f6zde\u015fle\u015fen ve tek baca\u011f\u0131 \u00fczerinde geriye \u00e7ekilerek att\u0131\u011f\u0131 \u015futlarla efsanele\u015fen Alman y\u0131ld\u0131z kimdir?",
-    "options": [
-      "Dirk Nowitzki",
-      "Tony Parker",
-      "Luka Doncic",
-      "Pau Gasol"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "fc8ad70e-1999-4fc0-a039-e99efd69d302",
-    "category": "Basketbol",
-    "difficulty": 3,
-    "text": "T\u00fcrkiye'nin lakab\u0131 '12 Dev Adam' olan Erkek Milli Basketbol Tak\u0131m\u0131, bu lakab\u0131 ilk kez hangi turnuvadaki ba\u015far\u0131s\u0131yla alm\u0131\u015ft\u0131r?",
-    "options": [
-      "2014 D\u00fcnya \u015eampiyonas\u0131",
-      "2010 D\u00fcnya \u015eampiyonas\u0131",
-      "1999 Avrupa \u015eampiyonas\u0131",
-      "2001 Avrupa \u015eampiyonas\u0131"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "a2f2e870-74ec-4f8a-9ce3-1d95bb4bcfff",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Savunma yapan oyuncunun ayaklar\u0131 tamamen yerle\u015fikken, h\u00fccum oyuncusunun gelip ona \u015fiddetle \u00e7arpmas\u0131na ne denir?",
-    "options": [
-      "H\u00fccum Faul (Charge)",
-      "Teknik Faul",
-      "Blok",
-      "Savunma Faul\u00fc"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "5122e43c-3876-4c53-84bd-52d8f68db286",
-    "category": "Basketbol",
-    "difficulty": 2,
-    "text": "Giannis Antetokounmpo'nun sahip oldu\u011fu ve inan\u0131lmaz fizi\u011fi ile uyumlu 'Yunan Ucubesi' anlam\u0131na gelen \u0130ngilizce lakab\u0131 nedir?",
-    "options": [
-      "Greek Freak",
-      "Olympian",
-      "The Alphabet",
-      "Spartan"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "1364f3cc-f0f6-48e3-a041-cd5746c3e3bf",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Jurassic Park' filminin y\u00f6netmen koltu\u011funda kim oturmaktad\u0131r?",
-    "options": [
-      "Peter Jackson",
-      "Quentin Tarantino",
-      "Francis Ford Coppola",
-      "Steven Spielberg"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "94f0498e-2698-49db-9391-d493beeebcfb",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Avatar' filminin d\u00fcnyaca \u00fcnl\u00fc y\u00f6netmeni kimdir?",
-    "options": [
-      "Christopher Nolan",
-      "Peter Jackson",
-      "James Cameron",
-      "Alfred Hitchcock"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "c549e5f0-baaa-45e8-bf3e-41c31ca1d790",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "Sinema tarihinin klasikleri aras\u0131na giren 'Inception' filmini kim y\u00f6netmi\u015ftir?",
-    "options": [
-      "Peter Jackson",
-      "James Cameron",
-      "Stanley Kubrick",
-      "Christopher Nolan"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "9c49e9af-6aec-4998-9721-6a67f74d82ef",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "Sinema tarihinin klasikleri aras\u0131na giren 'Pulp Fiction' filmini kim y\u00f6netmi\u015ftir?",
-    "options": [
-      "Ridley Scott",
-      "Francis Ford Coppola",
-      "Steven Spielberg",
-      "Quentin Tarantino"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d9b872d6-0157-43a7-8f32-271e4d422970",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki y\u00f6netmenlerden hangisi 'Y\u00fcz\u00fcklerin Efendisi' adl\u0131 esere imza atm\u0131\u015ft\u0131r?",
-    "options": [
-      "David Fincher",
-      "Martin Scorsese",
-      "Francis Ford Coppola",
-      "Peter Jackson"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "95e7fd59-a21b-4a32-8d94-144bea5c9166",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki y\u00f6netmenlerden hangisi 'Baba (The Godfather)' adl\u0131 esere imza atm\u0131\u015ft\u0131r?",
-    "options": [
-      "James Cameron",
-      "Stanley Kubrick",
-      "Francis Ford Coppola",
-      "David Fincher"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "5e0a459a-3bda-45eb-8aa0-a9ebe3802682",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Gladyat\u00f6r' filminin y\u00f6netmen koltu\u011funda kim oturmaktad\u0131r?",
-    "options": [
-      "Stanley Kubrick",
-      "Alfred Hitchcock",
-      "Ridley Scott",
-      "George Lucas"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "c2a39309-e57f-4987-a198-f163de2e80a1",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "Sinema tarihinin klasikleri aras\u0131na giren 'Star Wars' filmini kim y\u00f6netmi\u015ftir?",
-    "options": [
-      "Stanley Kubrick",
-      "George Lucas",
-      "Quentin Tarantino",
-      "Francis Ford Coppola"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "e37a65df-00ee-47c7-99f4-5d4f416184e5",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Taksi \u015eof\u00f6r\u00fc' filminin d\u00fcnyaca \u00fcnl\u00fc y\u00f6netmeni kimdir?",
-    "options": [
-      "Francis Ford Coppola",
-      "Quentin Tarantino",
-      "Christopher Nolan",
-      "Martin Scorsese"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "a9e33d8f-3165-4e03-a26c-8ec949f11a09",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki y\u00f6netmenlerden hangisi 'Cinnet (The Shining)' adl\u0131 esere imza atm\u0131\u015ft\u0131r?",
-    "options": [
-      "Francis Ford Coppola",
-      "Christopher Nolan",
-      "Stanley Kubrick",
-      "George Lucas"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "131153e0-6c3a-4064-8915-692fc22a5954",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'D\u00f6v\u00fc\u015f Kul\u00fcb\u00fc' filminin y\u00f6netmen koltu\u011funda kim oturmaktad\u0131r?",
-    "options": [
-      "Francis Ford Coppola",
-      "David Fincher",
-      "Ridley Scott",
-      "George Lucas"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "c67f8a47-6310-4a21-909a-3266a27dd881",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "Sinema tarihinin klasikleri aras\u0131na giren 'Sap\u0131k (Psycho)' filmini kim y\u00f6netmi\u015ftir?",
-    "options": [
-      "Alfred Hitchcock",
-      "Stanley Kubrick",
-      "Ridley Scott",
-      "David Fincher"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "085405a7-38e6-4974-90c7-cbe76c6eccee",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Titanik' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
-    "options": [
-      "Elijah Wood",
-      "Keanu Reeves",
-      "Johnny Depp",
-      "Leonardo DiCaprio"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "e52c412a-b903-4abf-a9c1-89264af70749",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Matrix' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
-    "options": [
-      "Johnny Depp",
-      "Keanu Reeves",
-      "Tom Hanks",
-      "Russell Crowe"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "6996164d-b0c0-4a7c-8bc5-4b75b26157d2",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Karayip Korsanlar\u0131' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
-    "options": [
-      "Tom Cruise",
-      "Johnny Depp",
-      "Robert De Niro",
-      "Elijah Wood"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "960a21f1-448b-4bc0-825d-57a03921cb5b",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Forrest Gump' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
-    "options": [
-      "Joaquin Phoenix",
-      "Johnny Depp",
-      "Tom Cruise",
-      "Tom Hanks"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "f58b6c65-dbfd-40fa-a4f1-5c36852f817a",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'Baba' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
-    "options": [
-      "Christian Bale",
-      "Marlon Brando",
-      "Elijah Wood",
-      "Tom Cruise"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "a7f16961-f184-497d-8d99-e66a3327b911",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Kara \u015e\u00f6valye' sinema filminde ba\u015frolde kim oynam\u0131\u015ft\u0131r?",
-    "options": [
-      "Tom Hanks",
-      "Keanu Reeves",
-      "Leonardo DiCaprio",
-      "Christian Bale"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "626b5fc0-01d1-4644-a88f-9f37d3618d1b",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'D\u00f6v\u00fc\u015f Kul\u00fcb\u00fc' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
-    "options": [
-      "Tom Hanks",
-      "Russell Crowe",
-      "Brad Pitt",
-      "Harrison Ford"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "01a1e8d4-999d-4d85-bd69-d4763aa908bb",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "'Y\u00fcz\u00fcklerin Efendisi' sinema filminde ba\u015frolde kim oynam\u0131\u015ft\u0131r?",
-    "options": [
-      "Robert De Niro",
-      "Joaquin Phoenix",
-      "Elijah Wood",
-      "Tom Cruise"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "50db0334-18be-498a-9c7f-d28f3764086e",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Harry Potter' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
-    "options": [
-      "Elijah Wood",
-      "Daniel Radcliffe",
-      "Marlon Brando",
-      "Sylvester Stallone"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "dc90e324-5ffb-4664-9ba0-eef52e6dfd6e",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Yaral\u0131 Y\u00fcz (Scarface)' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Harrison Ford",
-      "Al Pacino",
-      "Anthony Hopkins",
-      "Brad Pitt"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "6012cf0e-346c-49e7-bbdd-f0258ba4e556",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'S\u0131k\u0131 Dostlar (Goodfellas)' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
-    "options": [
-      "Anthony Hopkins",
-      "Robert De Niro",
-      "Christian Bale",
-      "Russell Crowe"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "6cc9766c-26d8-4935-83dc-8887aac2eb38",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'G\u00f6revimiz Tehlike' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Tom Cruise",
-      "Leonardo DiCaprio",
-      "Robert De Niro",
-      "Marlon Brando"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "92ba1351-6789-4e0f-9cb5-be81caf9a47d",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'Indiana Jones' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
-    "options": [
-      "Al Pacino",
-      "Brad Pitt",
-      "Harrison Ford",
-      "Marlon Brando"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "5f399fb5-4dc4-4a61-9e9a-e4cc4d921325",
-    "category": "Sinema",
-    "difficulty": 3,
-    "text": "'Gladyat\u00f6r' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Anthony Hopkins",
-      "Keanu Reeves",
-      "Russell Crowe",
-      "Joaquin Phoenix"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "56775ac4-39bb-44d1-9e1e-5f4b7157698a",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki oyunculardan hangisi 'Joker' filmindeki rol\u00fcyle tan\u0131n\u0131r?",
-    "options": [
-      "Al Pacino",
-      "Morgan Freeman",
-      "Joaquin Phoenix",
-      "Tom Hanks"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "1774e030-480f-4f43-ad73-286b1d612190",
-    "category": "Sinema",
-    "difficulty": 1,
-    "text": "'Esaretin Bedeli' filminde ba\u015fkarakteri canland\u0131rarak b\u00fcy\u00fck be\u011feni toplayan isim hangisidir?",
-    "options": [
-      "Morgan Freeman",
-      "Elijah Wood",
-      "Brad Pitt",
-      "Sylvester Stallone"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "f864b1dc-ee7a-4d2e-a55b-930f331895c8",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Kuzular\u0131n Sessizli\u011fi' sinema filminde ba\u015frolde kim oynam\u0131\u015ft\u0131r?",
-    "options": [
-      "Anthony Hopkins",
-      "Harrison Ford",
-      "Sylvester Stallone",
-      "Russell Crowe"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "15efc00c-5e8c-43f7-9867-5bbdb8a33c31",
-    "category": "Sinema",
-    "difficulty": 2,
-    "text": "'Rocky' filmindeki efsanevi ba\u015frol performans\u0131yla haf\u0131zalara kaz\u0131nan akt\u00f6r kimdir?",
-    "options": [
-      "Brad Pitt",
-      "Sylvester Stallone",
-      "Anthony Hopkins",
-      "Daniel Radcliffe"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "a552129a-149e-468e-85f2-4bb50f370fe9",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Ampul\u00fc bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
-    "options": [
-      "Alessandro Volta",
-      "Dmitri Mendeleyev",
-      "Johannes Gutenberg",
-      "Thomas Edison"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "17aafec2-ab22-45aa-a707-11f5aa50b618",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Telefonu bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
-    "options": [
-      "James Watt",
-      "Albert Einstein",
-      "Alexander Graham Bell",
-      "Wright Karde\u015fler"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "154cb9ca-31b4-44fd-b55c-c429523d1c64",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Radyoyu \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
-    "options": [
-      "Guglielmo Marconi",
-      "Galileo Galilei",
-      "Alan Turing",
-      "Nikola Tesla"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "4cb91b9f-3f41-4e98-a936-b6bb347b5b57",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "Alternatif ak\u0131m\u0131 \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
-    "options": [
-      "Dmitri Mendeleyev",
-      "Nikola Tesla",
-      "Albert Einstein",
-      "Rosalind Franklin"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "774ec6a9-b6cd-40c6-8a29-b76f6773026a",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "U\u00e7a\u011f\u0131 bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
-    "options": [
-      "Nicolaus Copernicus",
-      "Wright Karde\u015fler",
-      "Johannes Gutenberg",
-      "Thomas Edison"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "1f5bf07a-82aa-4c4b-9d6b-ab004d00a6ac",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Matbaay\u0131 \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
-    "options": [
-      "Johannes Gutenberg",
-      "Galileo Galilei",
-      "Nikola Tesla",
-      "Isaac Newton"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "0b65b5f6-5fb8-4c3d-bcee-61a6a4844367",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Yer\u00e7ekimi kanununu bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
-    "options": [
-      "Johannes Gutenberg",
-      "Marie Curie",
-      "Charles Darwin",
-      "Isaac Newton"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "4591fd7a-65f4-41ab-84ea-4230c96b917f",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Bilim tarihinde \u0130zafiyet teorisini ki\u015fi olarak bilinen dahi hangisidir?",
-    "options": [
-      "Rosalind Franklin",
-      "Thomas Edison",
-      "Albert Einstein",
-      "Dmitri Mendeleyev"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "b1d088b6-df0f-4964-bb78-e389aaa86fa6",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Radyoaktiviteyi \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
-    "options": [
-      "Marie Curie",
-      "Stephen Hawking",
-      "Thomas Edison",
-      "Alan Turing"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "39623455-9a35-4ebc-8194-7010e3a76b74",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "Kuduz a\u015f\u0131s\u0131n\u0131 \u00e7al\u0131\u015fmalar\u0131yla d\u00fcnya bilim tarihine ge\u00e7en isim kimdir?",
-    "options": [
-      "Nikola Tesla",
-      "Albert Einstein",
-      "Alexander Graham Bell",
-      "Louis Pasteur"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "fc0d12d1-0c89-43b4-b3d7-ad9f1ab93b8a",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "Teleskopu astronomide kullanan bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
-    "options": [
-      "Galileo Galilei",
-      "Dmitri Mendeleyev",
-      "Alan Turing",
-      "Thomas Edison"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "d6bb623a-17e3-4630-91d4-74bb31e23aa0",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Bilim tarihinde Evrim teorisini ki\u015fi olarak bilinen dahi hangisidir?",
-    "options": [
-      "Charles Darwin",
-      "Wright Karde\u015fler",
-      "Nicolaus Copernicus",
-      "Alexander Graham Bell"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "297373cd-245f-42b3-8605-8d5c633cf810",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Penisilini bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
-    "options": [
-      "Galileo Galilei",
-      "Alexander Fleming",
-      "Thomas Edison",
-      "Nikola Tesla"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "09270132-1344-4620-9c23-96d6f94e66cf",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Buhar makinesini geli\u015ftiren bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
-    "options": [
-      "Nicolaus Copernicus",
-      "James Watt",
-      "Alan Turing",
-      "Guglielmo Marconi"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "7173718c-fda6-40de-ad25-4c6e28e3481c",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Pili bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
-    "options": [
-      "Rosalind Franklin",
-      "Alessandro Volta",
-      "Marie Curie",
-      "Louis Pasteur"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "b39fc015-8134-4cb4-aed0-1ca0d1efaa56",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Periyodik tabloyu bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
-    "options": [
-      "Alessandro Volta",
-      "Louis Pasteur",
-      "Dmitri Mendeleyev",
-      "Guglielmo Marconi"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "4737375d-f44a-4b27-9d25-59bcb77c0572",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "Kara delik radyasyonunu bulan veya insanl\u0131\u011fa kazand\u0131ran \u00fcnl\u00fc bilim insan\u0131 kimdir?",
-    "options": [
-      "Stephen Hawking",
-      "Rosalind Franklin",
-      "Nicolaus Copernicus",
-      "Marie Curie"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "4ef7f4f4-61a0-4d11-8869-74d8a043a7ab",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi G\u00fcne\u015f merkezli evren modelini bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
-    "options": [
-      "James Watt",
-      "Thomas Edison",
-      "Nicolaus Copernicus",
-      "Alexander Graham Bell"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "9bc36a30-be4e-44cc-8af6-998d7671e614",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi DNA'n\u0131n \u00e7ift sarmal yap\u0131s\u0131n\u0131 foto\u011fraflayan bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
-    "options": [
-      "Dmitri Mendeleyev",
-      "Guglielmo Marconi",
-      "Charles Darwin",
-      "Rosalind Franklin"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "dfaffe50-d5e9-45f7-a3ac-467f31fb1fb8",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "A\u015fa\u011f\u0131daki bilim insanlar\u0131ndan hangisi Modern bilgisayar biliminin kurucusu say\u0131lan bulu\u015fuyla/ke\u015ffiyle \u00fcnl\u00fcd\u00fcr?",
-    "options": [
-      "Guglielmo Marconi",
-      "Alan Turing",
-      "Galileo Galilei",
-      "Nikola Tesla"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "ae17ddd7-6f3b-4334-813e-3a2b54816f04",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "Astronomi bilimine g\u00f6re, G\u00fcne\u015f'e en yak\u0131n olan gezegenin ad\u0131 nedir?",
-    "options": [
-      "Merk\u00fcr",
-      "J\u00fcpiter",
-      "Ven\u00fcs",
-      "Nept\u00fcn"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "32ce8d86-04c7-475d-993f-9d395ba258a1",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "G\u00fcne\u015f sistemimizde D\u00fcnya'n\u0131n ikizi olarak bilinen gezegen hangisidir?",
-    "options": [
-      "Nept\u00fcn",
-      "Sat\u00fcrn",
-      "Uran\u00fcs",
-      "Ven\u00fcs"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "4990734c-7187-41d9-99eb-ae405198113f",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "G\u00fcne\u015f sistemimizde K\u0131z\u0131l Gezegen olarak bilinen gezegen hangisidir?",
-    "options": [
-      "Ven\u00fcs",
-      "D\u00fcnya",
-      "Sat\u00fcrn",
-      "Mars"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "94f3fb63-80e8-4ddd-aedf-6b91ed889825",
-    "category": "Bilim",
-    "difficulty": 1,
-    "text": "Astronomi bilimine g\u00f6re, G\u00fcne\u015f sisteminin en b\u00fcy\u00fck olan gezegenin ad\u0131 nedir?",
-    "options": [
-      "Ven\u00fcs",
-      "Nept\u00fcn",
-      "J\u00fcpiter",
-      "Merk\u00fcr"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "32e96d4e-e57b-4264-9252-4a5abc101c18",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki gezegenlerden hangisi 'Halkalar\u0131yla \u00fcnl\u00fc olan' \u00f6zelli\u011fi ta\u015f\u0131r?",
-    "options": [
-      "Sat\u00fcrn",
-      "D\u00fcnya",
-      "Nept\u00fcn",
-      "Uran\u00fcs"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "b85a52f6-2664-479f-8eeb-5508d96cbf77",
-    "category": "Bilim",
-    "difficulty": 2,
-    "text": "A\u015fa\u011f\u0131daki gezegenlerden hangisi 'G\u00fcne\u015f etraf\u0131nda yan yatm\u0131\u015f varil gibi d\u00f6nen' \u00f6zelli\u011fi ta\u015f\u0131r?",
-    "options": [
-      "Ven\u00fcs",
-      "Uran\u00fcs",
-      "D\u00fcnya",
-      "Mars"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "b66208e3-b0cb-4469-8b0f-921495124a8c",
-    "category": "Bilim",
-    "difficulty": 3,
-    "text": "A\u015fa\u011f\u0131daki gezegenlerden hangisi 'G\u00fcne\u015f sisteminin en uzak (c\u00fcce gezegenler hari\u00e7)' \u00f6zelli\u011fi ta\u015f\u0131r?",
-    "options": [
-      "Sat\u00fcrn",
-      "J\u00fcpiter",
-      "Nept\u00fcn",
-      "Ven\u00fcs"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "d5b9c902-7b69-4d4e-a0f3-7ac317f92a0b",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "T\u00fcrkiye'nin plaka kodu 01 olan \u015fehri hangisidir?",
-    "options": [
-      "Ad\u0131yaman",
-      "A\u011fr\u0131",
-      "Adana",
-      "Ankara"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "5587ac77-3adf-4bdc-8373-069dbd1459d2",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "\u0130stiklal Mar\u015f\u0131'n\u0131n \u015fairi kimdir?",
-    "options": [
-      "Mehmet Akif Ersoy",
-      "Necip Faz\u0131l K\u0131sak\u00fcrek",
-      "Cemal S\u00fcreya",
-      "Naz\u0131m Hikmet"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "9c6cbc1f-e702-411e-94c4-19cdd52db2f8",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "Bir g\u00fcn ka\u00e7 dakikad\u0131r?",
-    "options": [
-      "1440",
-      "2400",
-      "1200",
-      "3600"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "beaf1b6e-e0fb-4452-b78c-05db82cb6932",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Hangi hayvan\u0131n kalbi kafas\u0131ndad\u0131r?",
-    "options": [
-      "Ahtapot",
-      "Karides",
-      "Denizanasi",
-      "Yenge\u00e7"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "f2c9c8b7-ff78-416b-971e-e5204da30eeb",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
-    "text": "D\u00fcnyan\u0131n en uzun nehri hangisidir?",
-    "options": [
-      "Nil Nehri",
-      "Mississippi Nehri",
-      "Yangtze Nehri",
-      "Amazon Nehri"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "0d25da50-1cad-4f22-b37f-cb33ac03546a",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "T\u00fcrkiye'nin en y\u00fcksek da\u011f\u0131 hangisidir?",
-    "options": [
-      "Ka\u00e7kar Da\u011f\u0131",
-      "Erciyes Da\u011f\u0131",
-      "A\u011fr\u0131 Da\u011f\u0131",
-      "S\u00fcphan Da\u011f\u0131"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "6710a001-a030-43e9-b377-aeeaaa05f05b",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "Satran\u00e7 tahtas\u0131nda toplam ka\u00e7 kare vard\u0131r?",
-    "options": [
-      "100",
-      "81",
-      "64",
-      "32"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "a207c310-589f-4624-9355-6b7d93042851",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
-    "text": "Mona Lisa tablosu hangi m\u00fczede sergilenmektedir?",
-    "options": [
-      "Prado M\u00fczesi",
-      "British Museum",
-      "Vatikan M\u00fczeleri",
-      "Louvre M\u00fczesi"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "4f545e7c-6fb4-49fd-9371-49de77552d72",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "Nobel \u00d6d\u00fclleri hangi \u00fclkede verilmektedir?",
-    "options": [
-      "Norve\u00e7",
-      "\u0130sve\u00e7",
-      "Danimarka",
-      "\u0130svi\u00e7re"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "55721922-4e08-4e81-8f6e-8a9f610d7f63",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Pi say\u0131s\u0131n\u0131n ilk \u00fc\u00e7 basama\u011f\u0131 nedir?",
-    "options": [
-      "3.15",
-      "3.12",
-      "3.14",
-      "3.16"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "33498aa5-c015-4575-b531-8c210d29e541",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "D\u00fcnyan\u0131n en kalabal\u0131k \u00fclkesi hangisidir? (2024 itibar\u0131yla)",
-    "options": [
-      "Hindistan",
-      "ABD",
-      "\u00c7in",
-      "Endonezya"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "3a609559-df00-44fd-b334-f0b4e7b9a112",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Hangi renklerin kar\u0131\u015f\u0131m\u0131 ye\u015fili olu\u015fturur?",
-    "options": [
-      "Sar\u0131 ve K\u0131rm\u0131z\u0131",
-      "Beyaz ve Siyah",
-      "Mavi ve K\u0131rm\u0131z\u0131",
-      "Sar\u0131 ve Mavi"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "569bbfe3-67aa-4eb6-a66b-8d4a0ba039f6",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Tarihte paray\u0131 ilk bulan medeniyet hangisidir?",
-    "options": [
-      "Lidyal\u0131lar",
-      "Hititler",
-      "S\u00fcmerler",
-      "Frigler"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "51cd1c34-9def-40ba-b94e-865576d12505",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "Olimpiyat halkalar\u0131nda bulunmayan renk hangisidir?",
-    "options": [
-      "Siyah",
-      "Mavi",
-      "Sar\u0131",
-      "Kahverengi"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "d269d2de-8123-4423-a291-b3fa0c101b2d",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "Hangi gezegene K\u0131z\u0131l Gezegen denir?",
-    "options": [
-      "Ven\u00fcs",
-      "Mars",
-      "Merk\u00fcr",
-      "J\u00fcpiter"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "4eed4d58-39dc-44ba-9ec0-82122fd7d6e7",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "T.C. kimlik numaralar\u0131 ka\u00e7 hanelidir?",
-    "options": [
-      "12",
-      "10",
-      "9",
-      "11"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "cc31ca07-faaa-41b9-bbe3-14d5290038fe",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "G\u00f6ky\u00fcz\u00fc neden mavidir?",
-    "options": [
-      "G\u00fcne\u015fin s\u0131cakl\u0131\u011f\u0131",
-      "Ozon tabakas\u0131",
-      "I\u015f\u0131\u011f\u0131n sa\u00e7\u0131lmas\u0131",
-      "Okyanuslar\u0131n yans\u0131mas\u0131"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "0c1a4a79-d431-45d7-a24d-a1ab81f89bf5",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
-    "text": "Hangi m\u00fczik aleti yayl\u0131 \u00e7alg\u0131lar ailesindendir?",
-    "options": [
-      "Trompet",
-      "Keman",
-      "Piyano",
-      "Fl\u00fct"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "c2120c93-190a-47c8-a950-d4d4704da631",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "En sert do\u011fal mineral hangisidir?",
-    "options": [
-      "Alt\u0131n",
-      "Elmas",
-      "Demir",
-      "Kuvars"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "ee424ae0-7cc9-42d0-94e1-251f34109577",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Hangi ilimiz Ege B\u00f6lgesinde de\u011fildir?",
-    "options": [
-      "\u0130zmir",
-      "Burdur",
-      "Mu\u011fla",
-      "Ayd\u0131n"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "e0d74eb5-1d11-4350-bfe5-dbe24ccdf838",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
-    "text": "Bir satran\u00e7 oyununda her oyuncunun ba\u015flang\u0131\u00e7ta ka\u00e7 ta\u015f\u0131 vard\u0131r?",
-    "options": [
-      "24",
-      "12",
-      "16",
-      "20"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "id": "ba041f92-6319-4090-a4b1-1188e08daa0d",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
-    "text": "T\u00fcrk liras\u0131n\u0131n simgesini kim tasarlam\u0131\u015ft\u0131r?",
-    "options": [
-      "Ay\u015fe Kulin",
-      "Mehmet Akif",
-      "Ali Ercan",
-      "T\u00fclay Lale"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "170caf11-4080-4758-99b1-8b2b0ecfb856",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "\u0130nsan v\u00fccudundaki en b\u00fcy\u00fck organ hangisidir?",
-    "options": [
-      "Karaci\u011fer",
-      "Akci\u011fer",
-      "Beyin",
-      "Deri"
-    ],
-    "correctOptionIndex": 3
-  },
-  {
-    "id": "5476fe2e-0f2a-4761-ba6d-10e0c5b4495b",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Pusulada g\u00fcneyi g\u00f6steren harf hangisidir?",
-    "options": [
-      "N",
-      "S",
-      "E",
-      "W"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "0cfc5532-3dff-4f97-9ba8-dab54f66a3e8",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Hangi yazar 'Sefiller' adl\u0131 eserin sahibidir?",
-    "options": [
-      "Victor Hugo",
-      "Lev Tolstoy",
-      "Dostoyevski",
-      "Charles Dickens"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "693492ac-a7a1-480b-8d89-a6e6d3cc115f",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "Periyodik tablodaki ilk element hangisidir?",
-    "options": [
-      "Hidrojen",
-      "Helyum",
-      "Karbon",
-      "Oksijen"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "81e0e71d-5017-45b4-ba3c-b78c1fe7d204",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "T\u00fcrkiye'nin en kalabal\u0131k il\u00e7esi hangisidir?",
-    "options": [
-      "\u00c7ankaya",
-      "Esenyurt",
-      "Ke\u00e7i\u00f6ren",
-      "\u015eahinbey"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "f2369a3d-a648-42b0-8760-acc893ed3841",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "D\u00fcnyan\u0131n en b\u00fcy\u00fck okyanusu hangisidir?",
-    "options": [
-      "Kuzey Buz Denizi",
-      "Pasifik Okyanusu",
-      "Atlantik Okyanusu",
-      "Hint Okyanusu"
-    ],
-    "correctOptionIndex": 1
-  },
-  {
-    "id": "b2698b05-6eda-4234-99f5-93f3f72fff65",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 3,
-    "text": "G\u00fcne\u015f sistemindeki en k\u00fc\u00e7\u00fck gezegen hangisidir?",
-    "options": [
-      "Merk\u00fcr",
-      "Pl\u00fcton",
-      "Ven\u00fcs",
-      "Mars"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "59c151f6-52b7-4a79-a960-7b5a9b2cf288",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 1,
-    "text": "Bir y\u0131lda ka\u00e7 hafta vard\u0131r?",
-    "options": [
-      "54",
-      "48",
-      "52",
+      "20",
       "50"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "7b662543-ab08-4685-833f-89762b870790",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "Cumhurba\u015fkanl\u0131\u011f\u0131 Forsunda ka\u00e7 y\u0131ld\u0131z vard\u0131r?",
+    "id": "a9ff6045-31ce-4217-baaa-7b4430e71ab8",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Hangi balığın hafızasının sadece 3 saniye olduğu efsanesi oldukça yaygındır?",
     "options": [
-      "18",
-      "15",
-      "16",
-      "12"
+      "Köpekbalığı",
+      "Japon Balığı",
+      "Sazan",
+      "Alabalık"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "2b9bc868-6c0b-4652-944a-d6da5722dcff",
+    "category": "Doğa",
+    "difficulty": 3,
+    "text": "Dünyanın en küçük memelisi kabul edilen 'Yabanarısı Yarasası' yaklaşık ne kadardır?",
+    "options": [
+      "Bir kedi yavrusu kadar",
+      "Bir fare kadar",
+      "İri bir arı kadar",
+      "Bir serçe kadar"
     ],
     "correctOptionIndex": 2
   },
   {
-    "id": "5bf8d49c-386f-44d5-98ad-df7e9e2b4b7b",
-    "category": "Genel K\u00fclt\u00fcr",
-    "difficulty": 2,
-    "text": "Osmanl\u0131 Devleti'nin ilk ba\u015fkenti neresidir?",
+    "id": "fbf1969a-6c17-4847-ac29-c4dae1919426",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Yaz geceleri karanlıkta ışık saçarak uçan böcek hangisidir?",
     "options": [
-      "Edirne",
-      "\u0130stanbul",
-      "S\u00f6\u011f\u00fct",
-      "Bursa"
+      "Uğur böceği",
+      "Ateş böceği",
+      "Çekirge",
+      "Yusufçuk"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "62e92c20-6d4b-4c07-ba71-6c4ef7645cf4",
+    "category": "Doğa",
+    "difficulty": 2,
+    "text": "Doğada erkekleri hamile kalıp doğum yapan tek canlı türü hangisidir?",
+    "options": [
+      "Deniz atı",
+      "Kurbağa",
+      "Penguen",
+      "Semender"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "45d13856-bb61-42cb-b1b6-d24db656747b",
+    "category": "Doğa",
+    "difficulty": 2,
+    "text": "Dünyanın en hızlı dalış yapan ve en hızlı hayvanı kabul edilen kuş hangisidir?",
+    "options": [
+      "Şahin",
+      "Gökdoğan (Peregrine Falcon)",
+      "Kel Kartal",
+      "Kırlangıç"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a9a3b839-8db8-406e-bb16-2d1bc0dc0c78",
+    "category": "Doğa",
+    "difficulty": 1,
+    "text": "Dev pandaların beslenmesinin %99'unu oluşturan bitki hangisidir?",
+    "options": [
+      "Bambu",
+      "Palmiye",
+      "Ereltiotu",
+      "Çam"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b34e565f-bd72-46a2-9fbf-b3e34b967151",
+    "category": "Doğa",
+    "difficulty": 2,
+    "text": "Salyangozlar hava koşulları çok kuru olduğunda uykuya dalarlar. Bir salyangoz ne kadar süre aralıksız uyuyabilir?",
+    "options": [
+      "1 hafta",
+      "1 ay",
+      "1 yıl",
+      "3 yıl"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e55d5b78-dfcc-4cc9-b7b2-658b4f2c0099",
+    "category": "Doğa",
+    "difficulty": 3,
+    "text": "Hangi hayvanın sütü pembe renklidir?",
+    "options": [
+      "Hipopotam",
+      "Gergedan",
+      "Fil",
+      "Domuz"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "400ad688-6932-4740-b6e3-2ba9ce9e1001",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Hababam Sınıfı\" filminde efsanevi \"Mahmut Hoca\" karakterini hangi usta oyuncumuz canlandırmıştır?",
+    "options": [
+      "Kemal Sunal",
+      "Tarık Akan",
+      "Münir Özkul",
+      "Şener Şen"
     ],
     "correctOptionIndex": 2
+  },
+  {
+    "id": "1a70519d-77bb-41db-ac3c-c511dc47d202",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Çöpçüler Kralı\" filminde Kemal Sunal'ın aşık olduğu temizlikçi \"Hacer\" karakterine kim hayat vermiştir?",
+    "options": [
+      "Ayşen Gruda",
+      "Türkan Şoray",
+      "Müjde Ar",
+      "Fatma Girik"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "cdbf9fb9-12f5-46a1-a600-9e0a2944b003",
+    "category": "Yeşilçam",
+    "difficulty": 2,
+    "text": "\"Kibar Feyzo\" filminde Şener Şen'in canlandırdığı \"Maho Ağa\"nın köylülere parayla kullandırdığı ve Feyzo'nun da şehirden köye getirdiği yenilik nedir?",
+    "options": [
+      "Televizyon",
+      "Traktör",
+      "Çamaşır Makinesi",
+      "Tuvalet"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "2bc01402-2305-43ea-9fc6-0ceb6de9e004",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "Türk sinemasının başyapıtlarından \"Selvi Boylum Al Yazmalım\" filminin finalinde söylenen efsanevi \"Sevgi neydi?\" sorusunun cevabı nedir?",
+    "options": [
+      "Sevgi aşktı",
+      "Sevgi emekti",
+      "Sevgi sabırdı",
+      "Sevgi fedakarlıktı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "2c921316-431f-4903-b0f3-cb6089fc6f05",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "Türk sinemasında asaleti ve gözleriyle \"Sultan\" lakabıyla anılan ünlü kadın oyuncumuz kimdir?",
+    "options": [
+      "Hülya Koçyiğit",
+      "Filiz Akın",
+      "Türkan Şoray",
+      "Fatma Girik"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "dd11eb31-2917-48f0-b0c6-302dfb8f2b06",
+    "category": "Yeşilçam",
+    "difficulty": 2,
+    "text": "\"Züğürt Ağa\" filminde Haraptar köyünün ağası, her şeyini kaybedip şehre göç ettikten sonra geçinmek için son olarak hangi işi yapar?",
+    "options": [
+      "Şoförlük",
+      "Çiğ köftecilik",
+      "Hamallık",
+      "Bulaşıkçılık"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d748f217-4b77-4b08-b118-28ed41fc5307",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Neşeli Günler\" filminde Münir Özkul ve Adile Naşit'in canlandırdığı Kazım ve Saadet çiftinin evliliklerini bitiren ve sürekli tartıştıkları meşhur konu nedir?",
+    "options": [
+      "Çocukların isminin ne olacağı",
+      "Hangi takımı tutacakları",
+      "Turşu suyunun limondan mı sirkeden mi olacağı",
+      "Dükkanı kime bırakacakları"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c7a82bcf-04a4-4416-acde-a6cdbb2ba008",
+    "category": "Yeşilçam",
+    "difficulty": 3,
+    "text": "\"Muhsin Bey\" filminde Şener Şen'in müzik piyasasında meşhur etmeye çalıştığı saf ve yetenekli türkücü \"Ali Nazik\" karakterini kim oynamıştır?",
+    "options": [
+      "Uğur Yücel",
+      "İlyas Salman",
+      "Halit Akçatepe",
+      "Peker Açıkalın"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "62e1ce9c-2bd1-45cd-a5ce-f8f2038be909",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Çiçek Abbas\" filminde Şener Şen'in canlandırdığı Şakir'in minibüsünün arkasında yazan meşhur söz nedir?",
+    "options": [
+      "Tek rakibim Türk Hava Yolları",
+      "İstedim vermediler, sen şoförsün dediler",
+      "Aşıksan vur saza, şoförsen bas gaza",
+      "Çilekeş"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "ef12df23-5e8f-490f-ab4b-70067b0c9510",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "Kemal Sunal'ın Türk sinemasına damga vuran \"İnek Şaban\" karakteri ilk kez hangi filmle sinema izleyicisinin karşısına çıkmıştır?",
+    "options": [
+      "Hababam Sınıfı",
+      "Süt Kardeşler",
+      "Tosun Paşa",
+      "Şaban Oğlu Şaban"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "5fa2ba27-9dc4-4d8b-af05-b0b135bc8f11",
+    "category": "Yeşilçam",
+    "difficulty": 3,
+    "text": "\"Hababam Sınıfı Sınıfta Kaldı\" filminde sınıfa yeni gelen ve edebiyat öğretmeni olan \"Semra Hoca\" karakterini kim canlandırmıştır?",
+    "options": [
+      "Ayşen Gruda",
+      "Semra Özdamar",
+      "Itır Esen",
+      "Müjde Ar"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "270db9bf-98f9-467a-ab1c-e7e6005d7612",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "Cüneyt Arkın'ın hayat verdiği, Bizans'a kök söktüren efsanevi Türk akıncı beyini konu alan tarihi film serisinin kahramanı kimdir?",
+    "options": [
+      "Kara Murat",
+      "Tarkan",
+      "Battal Gazi",
+      "Malkoçoğlu"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "2498db25-3bba-4e92-a1b7-a367ba081413",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Süt Kardeşler\" filminde Şener Şen'in canlandırdığı Kumandan Hüsamettin'in Şaban'a söylediği unutulmaz replik nedir?",
+    "options": [
+      "Ben bu oyunu bozarım!",
+      "Ula Şaban!",
+      "Seni hiç sevmedim süt oğlan, babanı da sevmezdim!",
+      "Vay anasını sayın seyirciler!"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "18c1e7a5-cff9-42b6-9f4a-9efdccbd2414",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "Sadri Alışık'ın yıllarca canlandırdığı, sokaklarda yaşayan, hep selam verip şarkılar söyleyen, iyi kalpli ve şakacı karakterin adı nedir?",
+    "options": [
+      "Turist Ömer",
+      "Cilalı İbo",
+      "Bekçi Murtaza",
+      "Kılıbık Kamil"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "314f174e-72da-4b7d-ab10-1cba1de5b215",
+    "category": "Yeşilçam",
+    "difficulty": 3,
+    "text": "\"Gırgıriye\" film serisinde Müjdat Gezen'in canlandırdığı ve 'Güllü'ye aşık olan meşhur roman delikanlısının adı nedir?",
+    "options": [
+      "Klarnetçi Hüsnü",
+      "Kemaneci Rıza",
+      "Darbukacı Baryam",
+      "Kemancı Emin"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "5b1df400-3d71-464a-a039-445851c89016",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Banker Bilo\" filminde uyanık \"Maho\" karakterinin Bilo'yu ve diğer köylüleri Almanya'ya götürüyorum diyerek gizlice bıraktığı yer neresidir?",
+    "options": [
+      "Edirne",
+      "Ankara",
+      "İzmir",
+      "İstanbul"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d040ed97-6a56-4251-b844-cb80d989cb17",
+    "category": "Yeşilçam",
+    "difficulty": 2,
+    "text": "\"Korkusuz Korkak\" filminde Kemal Sunal'ın hastanede altı ay ömrü kaldığını öğrenince ölümden korkmayan bir kabadayıya dönüşen karakteri kimdir?",
+    "options": [
+      "Mülayim Sert",
+      "Tarzan Rıfkı",
+      "Şaban",
+      "Niyazi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "3186cd5b-e4a8-48b8-b11c-d784a961d118",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Tosun Paşa\" filminde İskenderiye'nin en değerli bölgesi olan \"Yeşil Vadi\"yi ele geçirmek için kıyasıya savaşan iki köklü ailenin adları nelerdir?",
+    "options": [
+      "Şabanoğulları ve Ramazanoğulları",
+      "Tellioğulları ve Seferoğulları",
+      "Aydınoğulları ve Menteşeoğulları",
+      "Kılıçoğulları ve Çapanoğulları"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "0040ed97-6a56-4251-b844-cb80d989cb19",
+    "category": "Yeşilçam",
+    "difficulty": 2,
+    "text": "\"Namuslu\" filminde Şener Şen'in canlandırdığı dürüst, kendi halinde ama soyulunca çevresinde itibar gören mutemet karakterinin adı nedir?",
+    "options": [
+      "Ali Rıza Bey",
+      "Şakir Bey",
+      "Lütfü Bey",
+      "Muhsin Bey"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9986cd5b-e4a8-48b8-b11c-d784a961d120",
+    "category": "Yeşilçam",
+    "difficulty": 2,
+    "text": "Ayhan Işık'ın sinemada canlandırdığı, bıyıkları ve centilmenliğiyle bütünleşmiş, Türk sinemasında adeta bir ekol olan karakter tipi nasıl anılır?",
+    "options": [
+      "Komik yancı",
+      "Kötü adam",
+      "Salon beyefendisi ve jön",
+      "Fakir ama gururlu genç"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "ab40ed97-6a56-4251-b844-cb80d989cb21",
+    "category": "Yeşilçam",
+    "difficulty": 3,
+    "text": "\"Sosyete Şaban\" filminde Şaban'ın köylü halini sürekli aşağılayan, daha sonra onun zengin 'Dilaver Bey' kılığına aşık olan Peri'yi kim canlandırmıştır?",
+    "options": [
+      "Hülya Koçyiğit",
+      "Gülşen Bubikoğlu",
+      "Fatma Girik",
+      "Perihan Savaş"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "cd86cd5b-e4a8-48b8-b11c-d784a961d122",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Mavi Boncuk\" filminde borç batağındaki bir arkadaş grubunun bir halıya sararak gizlice kaçırdığı ünlü assolistimiz kimdir?",
+    "options": [
+      "Muazzez Abacı",
+      "Emel Sayın",
+      "Bülent Ersoy",
+      "Neşe Karaböcek"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "ef40ed97-6a56-4251-b844-cb80d989cb23",
+    "category": "Yeşilçam",
+    "difficulty": 2,
+    "text": "\"Şekerpare\" filminde İlyas Salman'ın hayat verdiği, rüşvet almayan, saf ve dürüst mahalle bekçisinin adı nedir?",
+    "options": [
+      "Bekçi Rıza",
+      "Bekçi Şaban",
+      "Bekçi Cumali",
+      "Bekçi Murtaza"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "1186cd5b-e4a8-48b8-b11c-d784a961d124",
+    "category": "Yeşilçam",
+    "difficulty": 3,
+    "text": "Türk sinemasının klasikleşmiş melodramlarıyla dalga geçen, Ertem Eğilmez'in son filmi olan ve Müjde Ar ile Şener Şen'in başrollerini paylaştığı absürt komedi filminin adı nedir?",
+    "options": [
+      "Arabesk",
+      "Teyzem",
+      "Kupa Kızı",
+      "Şalvar Davası"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "2240ed97-6a56-4251-b844-cb80d989cb25",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "Yeşilçam'da tecavüz ve tacizci kötü adam rollerini başarıyla canlandırdığı için yıllarca \"Tecavüzcü Coşkun\" lakabıyla anılan oyuncumuz kimdir?",
+    "options": [
+      "Nuri Alço",
+      "Önder Somer",
+      "Erol Taş",
+      "Coşkun Göğen"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "3386cd5b-e4a8-48b8-b11c-d784a961d126",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "Genellikle elinde ilaçlı gazozu, sarı saçları ve sinsi gülüşüyle genç kızları tuzağa düşüren Yeşilçam'ın efsanevi kötü adamı kimdir?",
+    "options": [
+      "Bilal İnci",
+      "Nuri Alço",
+      "Hayati Hamzaoğlu",
+      "Erol Taş"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "4440ed97-6a56-4251-b844-cb80d989cb27",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Kara Murat\", \"Battal Gazi\" gibi tarihi karakterleri canlandırırken kalelere zıplayarak girmesi ve aynı anda onlarca Bizans askerini alt etmesiyle bilinen efsane aktör kimdir?",
+    "options": [
+      "Tarık Akan",
+      "Kartal Tibet",
+      "Cüneyt Arkın",
+      "Ediz Hun"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "5586cd5b-e4a8-48b8-b11c-d784a961d128",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Tarkan\" film serisinde Hun kahramanı Tarkan'ın yanından hiç ayrılmayan, onunla birlikte savaşan sadık yol arkadaşı hangi hayvandır?",
+    "options": [
+      "Kartal",
+      "Kurt",
+      "At",
+      "Aslan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6640ed97-6a56-4251-b844-cb80d989cb29",
+    "category": "Yeşilçam",
+    "difficulty": 2,
+    "text": "Yeşilçam sinemasının \"Dört Yapraklı Yonca\"sı olarak bilinen ünlü ve efsanevi dört kadın oyuncusundan biri **değildir**?",
+    "options": [
+      "Hale Soygazi",
+      "Türkan Şoray",
+      "Hülya Koçyiğit",
+      "Filiz Akın"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7786cd5b-e4a8-48b8-b11c-d784a961d130",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Hababam Sınıfı\" serisinde kırmızı eşofman takımıyla hafızalara kazınan ve öğrencilere türlü spor hareketleri yaptırmaya çalışan \"Badi Ekrem\"i kim oynamıştır?",
+    "options": [
+      "İlyas Salman",
+      "Kemal Sunal",
+      "Halit Akçatepe",
+      "Şener Şen"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "8840ed97-6a56-4251-b844-cb80d989cb31",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "\"Bizim Aile\" filminde fabrika patronu Saim Bey'in karşısına dikilip \"Sen mi büyüksün Yaşar Usta, ben mi?\" tiradını atan \"Yaşar Usta\" karakterini kim oynamıştır?",
+    "options": [
+      "Ali Şen",
+      "Münir Özkul",
+      "Hulusi Kentmen",
+      "Nubar Terziyan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "9986cd5b-e4a8-48b8-b11c-d784a961d132",
+    "category": "Yeşilçam",
+    "difficulty": 3,
+    "text": "\"Doktor Civanım\" filminde Kemal Sunal'ın canlandırdığı Kemal, şehirden köyüne doktor yalanıyla dönerken aslında şehirde hangi mesleği yapmaktadır?",
+    "options": [
+      "Hastane Hademesi",
+      "Sağlık Memuru",
+      "Veteriner",
+      "Eczacı Kalfası"
+    ],
+    "correctOptionIndex": 0
   }
 ]
