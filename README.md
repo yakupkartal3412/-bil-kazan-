@@ -1,17 +1,15 @@
-# su_takip
+# Bil Kazan
 
-A new Flutter project.
+"Bil Kazan", birbirinden zorlu sorularla bilginizi sınadığınız, aynı zamanda eğlenerek sanal ödüller (elmas ve paralar) kazandığınız heyecan verici bir mobil bilgi yarışmasıdır.
 
-## Getting Started
+## Özellikler
+- **Klasik Mod:** Klasik bilgi yarışması deneyimi.
+- **Özel Etkinlikler (Events):** Belirli kategorilerde uzmanlığınızı test eden 30 soruluk özel turnuvalar. (Örn: Spor Tutkunu, Sinema & Sanat, Tarih Ustası)
+- **Çarkıfelek:** Şansınızı deneyip ödüller kazanabileceğiniz interaktif çark.
+- **Çok Oyunculu (Multiplayer):** Çevrimiçi olarak diğer oyuncularla veya arkadaşlarla düello yapma fırsatı.
+- **Profil ve Liderlik Tablosu:** İstatistiklerinizi takip edin ve diğer oyuncularla rekabet edin.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Teknoloji
+Bu uygulama **Flutter** ve **Firebase** kullanılarak geliştirilmektedir.
+- Kullanıcı verileri, puanlar ve oturum yönetimi için Firebase Auth & Firestore.
+- Dinamik açılış ekranları (Splash Screen), özel 3D grafikler ve akıcı animasyonlar.
