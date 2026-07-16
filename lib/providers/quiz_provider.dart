@@ -400,7 +400,41 @@ class QuizProvider extends ChangeNotifier {
     }
 
     _checkReferralRewards();
+    _registerOrUpdateUserInFirebase();
     notifyListeners();
+  }
+
+  Future<void> _registerOrUpdateUserInFirebase() async {
+    try {
+      final user = FirebaseAuth.instance.currentUser;
+      if (user != null) {
+        final docRef = FirebaseFirestore.instance.collection('users').doc(user.uid);
+        final doc = await docRef.get();
+        if (!doc.exists) {
+          await docRef.set({
+            'uid': user.uid,
+            'userName': _userName,
+            'avatar': _activeAvatar,
+            'deviceId': _deviceId,
+            'createdAt': FieldValue.serverTimestamp(),
+            'lastLogin': FieldValue.serverTimestamp(),
+            'isAnonymous': user.isAnonymous,
+            'totalMoney': _totalMoney,
+            'totalCoins': _totalCoins,
+          });
+        } else {
+          await docRef.update({
+            'lastLogin': FieldValue.serverTimestamp(),
+            'userName': _userName,
+            'avatar': _activeAvatar,
+            'totalMoney': _totalMoney,
+            'totalCoins': _totalCoins,
+          });
+        }
+      }
+    } catch (e) {
+      debugPrint('Firebase register error: $e');
+    }
   }
 
   Future<void> _checkReferralRewards() async {
