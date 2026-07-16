@@ -3326,5 +3326,2085 @@
       "Eczacı Kalfası"
     ],
     "correctOptionIndex": 0
+  },
+  {
+    "id": "fbb60762-b91c-4b53-a1c6-11f81d866a91",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Hangi futbol efsanesi 'Futbolun Kralı' olarak bilinir?",
+    "options": [
+      "Pele",
+      "Diego Maradona",
+      "Johan Cruyff",
+      "Zinedine Zidane"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "3e71786c-486a-4ba7-94d0-5cd5e8b5d38a",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Bir futbol maçında aynı oyuncunun arka arkaya veya toplamda üç gol atmasına ne ad verilir?",
+    "options": [
+      "Double",
+      "Hat-trick",
+      "Poker",
+      "Playmaker"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a33e2189-53e7-402a-9e1e-d1b46a2f3a61",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Futbolda kalecilerin topu elleriyle tutabildiği ve faul yapıldığında penaltı verilen özel alana ne denir?",
+    "options": [
+      "Taç çizgisi",
+      "Altı pas",
+      "Ceza sahası",
+      "Merkez daire"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "2c62c2f6-eb34-406a-b2ba-1976a4df9576",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "1986 Dünya Kupası'nda eliyle attığı gole 'Tanrının Eli' adını veren Arjantinli efsanevi futbolcu kimdir?",
+    "options": [
+      "Lionel Messi",
+      "Gabriel Batistuta",
+      "Diego Maradona",
+      "Mario Kempes"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "b3a3c99a-337b-402e-9d29-6de78e6be797",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Hakemin bir oyuncuyu oyundan ihraç etmek için gösterdiği kartın rengi nedir?",
+    "options": [
+      "Sarı",
+      "Mavi",
+      "Kırmızı",
+      "Yeşil"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d452d7c0-02bb-4c8d-b052-19e49aabf08d",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Tarihte Şampiyonlar Ligi'nde en çok gol atan ve 'Mr. Champions League' lakabıyla anılan futbolcu kimdir?",
+    "options": [
+      "Lionel Messi",
+      "Robert Lewandowski",
+      "Karim Benzema",
+      "Cristiano Ronaldo"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a48b594b-4b10-449e-b83c-1b47fb5ea249",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Normal şartlarda bir profesyonel futbol maçı toplam kaç dakika sürer?",
+    "options": [
+      "80 dakika",
+      "90 dakika",
+      "100 dakika",
+      "120 dakika"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6bf2bc42-dfb8-4d3f-8461-8b2bcf4c6fbc",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Dünya Kupası'nı müzesine en çok götüren ve formasına beş yıldız takan ülke hangisidir?",
+    "options": [
+      "Brezilya",
+      "Almanya",
+      "İtalya",
+      "Arjantin"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "91d1e4eb-9d8a-4467-96a9-8588f6b92f44",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "2000 yılında UEFA Kupası'nı namağlup kazanarak Türkiye'ye ilk Avrupa kupasını getiren takım hangisidir?",
+    "options": [
+      "Fenerbahçe",
+      "Beşiktaş",
+      "Galatasaray",
+      "Trabzonspor"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "fbb60762-b91c-4b53-a1c6-11f81d866aa0",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Havadan gelen topa oyuncunun sırtı kaleye dönükken havada ters takla atarak vurduğu akrobatik şuta ne ad verilir?",
+    "options": [
+      "Röveşata",
+      "Vole",
+      "Plase",
+      "Trivela"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "3e71786c-486a-4ba7-94d0-5cd5e8b5d38b",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "İngiltere Premier Ligi'nde bir sezonu hiç yenilgi almadan tamamlayarak 'Yenilmezler' (The Invincibles) lakabını alan takım hangisidir?",
+    "options": [
+      "Manchester United",
+      "Chelsea",
+      "Arsenal",
+      "Liverpool"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a33e2189-53e7-402a-9e1e-d1b46a2f3a62",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Futbol topunun klasik siyah-beyaz, beşgen ve altıgen yamalardan oluşan ikonik tasarımının adı nedir?",
+    "options": [
+      "Tango",
+      "Telstar",
+      "Brazuca",
+      "Jabulani"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "2c62c2f6-eb34-406a-b2ba-1976a4df9577",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Lionel Messi, Xavi ve Andres Iniesta gibi efsaneleri yetiştiren Barcelona'nın ünlü altyapı akademisine ne ad verilir?",
+    "options": [
+      "La Fabrica",
+      "La Masia",
+      "De Toekomst",
+      "Cobham"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b3a3c99a-337b-402e-9d29-6de78e6be798",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "İspanya'da Real Madrid ve Barcelona arasında oynanan, dünyanın en çok izlenen derbi maçlarına verilen isim nedir?",
+    "options": [
+      "El Clásico",
+      "Derby della Madonnina",
+      "Superclasico",
+      "Kıtalararası Derbi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d452d7c0-02bb-4c8d-b052-19e49aabf08e",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Futbolda bir takım sahada aynı anda en fazla kaç oyuncuyla mücadele edebilir?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a48b594b-4b10-449e-b83c-1b47fb5ea250",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Profesyonel futbol kariyeri boyunca hiç kırmızı kart görmeyen, Dünya Kupası Altın Ayakkabı sahibi İngiliz efsane kimdir?",
+    "options": [
+      "David Beckham",
+      "Alan Shearer",
+      "Wayne Rooney",
+      "Gary Lineker"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "6bf2bc42-dfb8-4d3f-8461-8b2bcf4c6fbd",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "1995 yılında İngiltere'ye karşı oynanan maçta topu topuklarıyla zıplayarak çıkardığı ünlü 'Akrep Vuruşu' ile tanınan kaleci kimdir?",
+    "options": [
+      "José Luis Chilavert",
+      "Rene Higuita",
+      "Jorge Campos",
+      "Cláudio Taffarel"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "91d1e4eb-9d8a-4467-96a9-8588f6b92f45",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "İtalyan futboluyla özdeşleşen, katı savunma ve adam markajına dayalı oyun sistemine ne ad verilir?",
+    "options": [
+      "Tiki-Taka",
+      "Total Futbol",
+      "Catenaccio",
+      "Gegenpressing"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "fbb60762-b91c-4b53-a1c6-11f81d866aa1",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Kariyeri boyunca en çok Ballon d'Or (Altın Top) ödülünü kazanarak kırılması zor bir rekora imza atan futbolcu kimdir?",
+    "options": [
+      "Johan Cruyff",
+      "Michel Platini",
+      "Cristiano Ronaldo",
+      "Lionel Messi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "3e71786c-486a-4ba7-94d0-5cd5e8b5d38c",
+    "category": "Futbol",
+    "difficulty": 1,
+    "text": "Futbol maçlarında efsaneleşen '10' numaralı formanın futboldaki geleneksel rolü genellikle hangisidir?",
+    "options": [
+      "Stoper",
+      "Kaleci",
+      "Oyun Kurucu / Forvet Arkası",
+      "Sağ Bek"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a33e2189-53e7-402a-9e1e-d1b46a2f3a63",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Efsanevi Şampiyonlar Ligi marşı hangi dillerin karışımıyla söylenmektedir?",
+    "options": [
+      "İngilizce, Fransızca, Almanca",
+      "İspanyolca, İtalyanca, İngilizce",
+      "Sadece İngilizce",
+      "Latince ve İngilizce"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "2c62c2f6-eb34-406a-b2ba-1976a4df9578",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "VAR (Video Yardımcı Hakem) sistemi futbolda ilk kez hangi büyük uluslararası turnuvada tam olarak uygulanmıştır?",
+    "options": [
+      "2014 Dünya Kupası",
+      "2016 Avrupa Şampiyonası",
+      "2018 Dünya Kupası",
+      "2020 Avrupa Şampiyonası"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "b3a3c99a-337b-402e-9d29-6de78e6be799",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Hangi Avrupa kulübü maçlarına çıkarken efsanevi 'You'll Never Walk Alone' (Asla Yalnız Yürümeyeceksin) marşını söyler?",
+    "options": [
+      "Manchester City",
+      "Liverpool",
+      "Juventus",
+      "Bayern Münih"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d452d7c0-02bb-4c8d-b052-19e49aabf08f",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Brezilya futbolunun sanatsal, yeteneğe ve eğlenceye dayalı oyun felsefesini tanımlayan terim nedir?",
+    "options": [
+      "Joga Bonito",
+      "Samba Kicks",
+      "Ginga",
+      "Tiki-Taka"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a48b594b-4b10-449e-b83c-1b47fb5ea251",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Futbolda ofsayt kuralı değerlendirilirken vücudun hangi bölümü hesaba katılmaz?",
+    "options": [
+      "Kafa",
+      "Gövde",
+      "Kollar ve Eller",
+      "Ayaklar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "6bf2bc42-dfb8-4d3f-8461-8b2bcf4c6fbe",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "1966'da İngiltere'de çalınan ve bir çalının altında 'Pickles' adlı bir köpek tarafından bulunan şey neydi?",
+    "options": [
+      "Jules Rimet Dünya Kupası",
+      "Altın Top Ödülü",
+      "Kraliçe'nin Tacı",
+      "Şampiyonlar Ligi Kupası"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "91d1e4eb-9d8a-4467-96a9-8588f6b92f46",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Sahadaki her oyuncunun herhangi bir pozisyonda oynayabildiği, Johan Cruyff ile özdeşleşen Hollanda kökenli taktiksel anlayış nedir?",
+    "options": [
+      "Catenaccio",
+      "Total Futbol",
+      "Kick and Rush",
+      "Gegenpressing"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "fbb60762-b91c-4b53-a1c6-11f81d866aa2",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Penaltı atışlarında topun konulduğu penaltı noktasının kale çizgisine olan uzaklığı kaç metredir?",
+    "options": [
+      "9.15 metre",
+      "10 metre",
+      "11 metre",
+      "12 metre"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "3e71786c-486a-4ba7-94d0-5cd5e8b5d38d",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Topun dibine yavaşça vurularak kaleciyi şaşırtmayı amaçlayan aşırtma penaltı vuruşu, adını hangi futbolcudan alır?",
+    "options": [
+      "Diego Maradona",
+      "Antonin Panenka",
+      "Francesco Totti",
+      "Zinedine Zidane"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a33e2189-53e7-402a-9e1e-d1b46a2f3a64",
+    "category": "Futbol",
+    "difficulty": 3,
+    "text": "Hem Cristiano Ronaldo ile hem de Lionel Messi ile uzun yıllar aynı takımda (kulüp veya milli takım) forma giyen şanslı oyunculardan biri kimdir?",
+    "options": [
+      "Neymar",
+      "Angel Di Maria",
+      "Luis Suarez",
+      "Gareth Bale"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "2c62c2f6-eb34-406a-b2ba-1976a4df9579",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Türkiye Süper Ligi tarihinde 'Dört Büyükler' dışında şampiyonluk yaşamış ilk Anadolu takımı hangisidir?",
+    "options": [
+      "Bursaspor",
+      "Konyaspor",
+      "Trabzonspor",
+      "Sivasspor"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "b3a3c99a-337b-402e-9d29-6de78e6be79a",
+    "category": "Futbol",
+    "difficulty": 2,
+    "text": "Futbol tarihinde Dünya Kupası'nda en çok gol atan oyuncu unvanını elinde bulunduran Alman forvet kimdir?",
+    "options": [
+      "Gerd Müller",
+      "Miroslav Klose",
+      "Jurgen Klinsmann",
+      "Thomas Müller"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000001",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Eski Mısır'da firavunların mezarları olan piramitler esas olarak hangi amaçla inşa edilmiştir?",
+    "options": [
+      "Gözlemevi olarak",
+      "Kraliyet sarayı olarak",
+      "Öbür dünya için mezar olarak",
+      "Tahıl deposu olarak"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-0002-4000-8000-000000000002",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Roma İmparatorluğu'nda gladyatör dövüşlerinin yapıldığı ve günümüze kadar ulaşan en ünlü amfiteatr hangisidir?",
+    "options": [
+      "Kolezyum",
+      "Pantheon",
+      "Forum Romanum",
+      "Sirküs Maximus"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a1b2c3d4-0003-4000-8000-000000000003",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "Antik Yunan mitolojisinde, tanrıların kralı Zeus'un başından doğduğuna inanılan zeka ve strateji tanrıçası kimdir?",
+    "options": [
+      "Afrodit",
+      "Artemis",
+      "Hera",
+      "Athena"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a1b2c3d4-0004-4000-8000-000000000004",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Tarihteki ilk yazılı kanunlardan biri olan Hammurabi Kanunları hangi medeniyete aittir?",
+    "options": [
+      "Sümerler",
+      "Babil",
+      "Asur",
+      "Mısır"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0005-4000-8000-000000000005",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Ortaçağ Avrupa'sında şövalyelerin uyması beklenen ahlaki değerler ve davranış kuralları bütününe ne ad verilir?",
+    "options": [
+      "Magna Carta",
+      "Şövalyelik (Chivalry) Kodu",
+      "Feodalizm",
+      "Engizisyon"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0006-4000-8000-000000000006",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "Vikinglerin efsanevi denizcisi ve Kuzey Amerika'ya Kristof Kolomb'dan yüzyıllar önce ulaştığı düşünülen kaşif kimdir?",
+    "options": [
+      "Kızıl Erik",
+      "Leif Erikson",
+      "Ragnar Lothbrok",
+      "Ivar the Boneless"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0007-4000-8000-000000000007",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Osmanlı İmparatorluğu'nda yeniçerilerin eğitim gördüğü ve devşirme sisteminin uygulandığı saray okulu hangisidir?",
+    "options": [
+      "Enderun",
+      "Darülfünun",
+      "Medrese",
+      "Mekteb-i Harbiye"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a1b2c3d4-0008-4000-8000-000000000008",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Antik Roma'da zenginlerin evlerinde bulunan, yağmur sularının toplandığı iç avlu havuzuna ne ad verilirdi?",
+    "options": [
+      "Atrium",
+      "Impluvium",
+      "Peristylium",
+      "Triclinium"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0009-4000-8000-000000000009",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "Dünya tarihinin bilinen en eski destanı olan ve Uruk kralının ölümsüzlük arayışını anlatan eser hangisidir?",
+    "options": [
+      "İlyada Destanı",
+      "Gılgamış Destanı",
+      "Mahabharata",
+      "Ergenekon Destanı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0010-4000-8000-000000000010",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Antik Mısır yazısı olan hiyerogliflerin çözülmesini sağlayan ve üç farklı dilde yazılmış metin içeren tarihi eser hangisidir?",
+    "options": [
+      "Babil Kulesi",
+      "Rosetta Taşı",
+      "Hammurabi Dikilitaşı",
+      "İştar Kapısı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0011-4000-8000-000000000011",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Truva Savaşı sırasında Yunanlıların şehre sızmak için kullandıkları efsanevi tahta heykele ne isim verilir?",
+    "options": [
+      "Truva Atı",
+      "Gordion Düğümü",
+      "Aşil'in Topuğu",
+      "Midas'ın Dokunuşu"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a1b2c3d4-0012-4000-8000-000000000012",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "Japon tarihinde, samurayların onurlarını kurtarmak için yaptıkları geleneksel intihar ritüelinin adı nedir?",
+    "options": [
+      "Bushido",
+      "Ronin",
+      "Seppuku (Harakiri)",
+      "Kamikaze"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-0013-4000-8000-000000000013",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Ortaçağ'da simyacıların kurşun gibi değersiz metalleri altına çevireceğine ve ölümsüzlük vereceğine inandıkları efsanevi madde hangisidir?",
+    "options": [
+      "Kutsal Kase",
+      "Felsefe Taşı",
+      "Hayat Suyu",
+      "Ambrosia"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0014-4000-8000-000000000014",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Çin Seddi'nin yapılışındaki asıl amaç aşağıdakilerden hangisiydi?",
+    "options": [
+      "Ticaret yollarını korumak",
+      "Sınırların güzelliğini artırmak",
+      "Kuzeyden gelen göçebe saldırılarını engellemek",
+      "İmparatorluk sarayını gizlemek"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-0015-4000-8000-000000000015",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "Tarihte zehirlenmekten korktuğu için her gün azar azar zehir içerek bağışıklık kazanmaya çalışan ve bu yönteme adını veren Pontus kralı kimdir?",
+    "options": [
+      "Büyük İskender",
+      "VI. Mithridates",
+      "Julius Sezar",
+      "Neron"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0016-4000-8000-000000000016",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Rönesans döneminde anatomi, mühendislik, resim gibi birçok alanda eser veren, 'Mona Lisa'nın da ressamı olan Hezarfen (Polimat) kimdir?",
+    "options": [
+      "Michelangelo",
+      "Rafael",
+      "Leonardo da Vinci",
+      "Galileo Galilei"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-0017-4000-8000-000000000017",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Mustafa Kemal Atatürk'ün 'Ordular, ilk hedefiniz Akdeniz'dir. İleri!' emrini verdiği tarihi savaş hangisidir?",
+    "options": [
+      "Çanakkale Savaşı",
+      "Sakarya Meydan Muharebesi",
+      "Büyük Taarruz (Başkomutanlık Meydan Muharebesi)",
+      "I. İnönü Savaşı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-0018-4000-8000-000000000018",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Fransız İhtilali'nin sembollerinden biri olan ve 'Ekmek bulamıyorlarsa pasta yesinler' sözüyle haksız yere anılan Fransa Kraliçesi kimdir?",
+    "options": [
+      "Katerina de Medici",
+      "Marie Antoinette",
+      "Jeanne d'Arc",
+      "Joséphine de Beauharnais"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0019-4000-8000-000000000019",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "Antik Roma'da gladyatör isyanını başlatarak büyük bir köle ordusu kuran ve Roma'ya zor anlar yaşatan ünlü Trakyalı gladyatör kimdir?",
+    "options": [
+      "Spartaküs",
+      "Maximus",
+      "Crixus",
+      "Gannicus"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a1b2c3d4-0020-4000-8000-000000000020",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Eski Türk inancında, dünyayı yaratan, göklerin hakimi olan baş tanrıya ne ad verilirdi?",
+    "options": [
+      "Umay",
+      "Ülgen",
+      "Erlik",
+      "Tengri (Gök Tanrı)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a1b2c3d4-0021-4000-8000-000000000021",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Venedikli ünlü tüccar ve gezgin Marco Polo, anılarında hangi büyük imparatorluğun sarayındaki deneyimlerini anlatmıştır?",
+    "options": [
+      "Bizans İmparatorluğu",
+      "Moğol İmparatorluğu (Kubilay Han dönemi)",
+      "Osmanlı İmparatorluğu",
+      "Kutsal Roma Cermen İmparatorluğu"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0022-4000-8000-000000000022",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "İngiltere Kraliçesi I. Elizabeth döneminde, İspanyol Armada'sını yenilgiye uğratan ve korsanlıktan şövalyeliğe yükselen ünlü denizci kimdir?",
+    "options": [
+      "Kaptan Karasakal",
+      "Francis Drake",
+      "Walter Raleigh",
+      "James Cook"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0023-4000-8000-000000000023",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Osmanlı padişahı Fatih Sultan Mehmet, İstanbul'u fethettiğinde hangi unvanı da kullanmaya başlamıştır?",
+    "options": [
+      "Kayser-i Rum (Roma İmparatoru)",
+      "Halife",
+      "Hakan",
+      "Şah"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a1b2c3d4-0024-4000-8000-000000000024",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Soğuk Savaş döneminde, ABD ile SSCB'yi nükleer savaşın eşiğine getiren kriz hangi ülkeye yerleştirilen füzeler yüzünden patlak vermiştir?",
+    "options": [
+      "Vietnam",
+      "Kore",
+      "Küba",
+      "Almanya"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-0025-4000-8000-000000000025",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "Hindistan'da eşi Mümtaz Mahal'in ölümü üzerine dünyaca ünlü Tac Mahal'i inşa ettiren Babür İmparatoru kimdir?",
+    "options": [
+      "Ekber Şah",
+      "Cihangir",
+      "Şah Cihan",
+      "Evrengzib"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-0026-4000-8000-000000000026",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Antik Mısır'da ölülerin iç organlarının saklandığı ve genellikle hayvan başlı kapakları olan özel kavanozlara ne isim verilirdi?",
+    "options": [
+      "Sarkofaj",
+      "Kanopik Kavanozlar",
+      "Uşabti",
+      "Skarabe"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0027-4000-8000-000000000027",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Mitolojiye göre, Medusa'nın kesik başından doğan ve Bellerophontes tarafından ehlileştirilen kanatlı at hangisidir?",
+    "options": [
+      "Pegasus",
+      "Sentor",
+      "Minotor",
+      "Grifon"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a1b2c3d4-0028-4000-8000-000000000028",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "Büyük İskender'in ünlü atının adı neydi? Efsaneye göre bu at kendi gölgesinden korkuyordu ve sadece İskender onu ehlileştirebilmişti.",
+    "options": [
+      "İncitatus",
+      "Bukephalos",
+      "Marengo",
+      "Kopenhag"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0029-4000-8000-000000000029",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "14. yüzyılda Avrupa nüfusunun yaklaşık üçte birini yok eden 'Kara Ölüm' adlı salgın hangi hastalıktı?",
+    "options": [
+      "Kolera",
+      "Veba",
+      "Çiçek",
+      "İspanyol Gribi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a1b2c3d4-0030-4000-8000-000000000030",
+    "category": "Tarih",
+    "difficulty": 3,
+    "text": "Aztek İmparatorluğu'nun başkenti olan ve göl üzerine inşa edilen, günümüzde altında Mexico City'nin yattığı antik şehir hangisidir?",
+    "options": [
+      "Machu Picchu",
+      "Chichen Itza",
+      "Tenochtitlan",
+      "Teotihuacan"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-0031-4000-8000-000000000031",
+    "category": "Tarih",
+    "difficulty": 1,
+    "text": "Antik Yunan'da filozof Sokrates'in ölüm cezası olarak içmeye mahkum edildiği zehirli bitkinin adı nedir?",
+    "options": [
+      "Baldıran otu",
+      "Zakkum",
+      "Güzelavrat otu",
+      "Adam otu"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a1b2c3d4-0032-4000-8000-000000000032",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Osmanlı'da gece bekçilerine ve mahalle güvenliğinden sorumlu görevlilere ne ad verilirdi?",
+    "options": [
+      "Subaşı",
+      "Bostancı",
+      "Paseban (Pasban)",
+      "Zaptiye"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000001",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Dünyanın en derin gölü olan ve tatlı su rezervinin büyük bir kısmını barındıran göl hangisidir?",
+    "options": [
+      "Victoria Gölü",
+      "Baykal Gölü",
+      "Tanganika Gölü",
+      "Hazar Denizi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000002",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Hangi ülkenin hem Asya hem de Avrupa kıtasında toprakları yoktur?",
+    "options": [
+      "Türkiye",
+      "Rusya",
+      "Kazakistan",
+      "Özbekistan"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000003",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Dünyanın en büyük mercan resifi sistemi olan 'Büyük Set Resifi' hangi ülkenin kıyılarında yer alır?",
+    "options": [
+      "Avustralya",
+      "Brezilya",
+      "Endonezya",
+      "Filipinler"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000004",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Adını Ekvator çizgisinden alan Güney Amerika ülkesi hangisidir?",
+    "options": [
+      "Ekvador",
+      "Kolombiya",
+      "Peru",
+      "Bolivya"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000005",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Dünyanın en küçük ülkesi olan ve İtalya'nın başkenti Roma'nın içinde yer alan bağımsız devlet hangisidir?",
+    "options": [
+      "Monako",
+      "San Marino",
+      "Vatikan",
+      "Andorra"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000006",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Afrika kıtasının en yüksek noktası olan Kilimanjaro Dağı hangi ülkede bulunmaktadır?",
+    "options": [
+      "Kenya",
+      "Tanzanya",
+      "Uganda",
+      "Etiyopya"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000007",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Güneşin doğduğu ülke olarak da bilinen, binlerce adadan oluşan Asya ülkesi hangisidir?",
+    "options": [
+      "Çin",
+      "Güney Kore",
+      "Japonya",
+      "Filipinler"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000008",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Dünyanın en uzun sıradağları olan And Dağları hangi kıtada yer alır?",
+    "options": [
+      "Kuzey Amerika",
+      "Avrupa",
+      "Asya",
+      "Güney Amerika"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000009",
+    "category": "Coğrafya",
+    "difficulty": 3,
+    "text": "Hem Kuzey, hem Güney, hem Doğu, hem de Batı yarımkürede toprağı bulunan tek kıta hangisidir?",
+    "options": [
+      "Afrika",
+      "Avrupa",
+      "Asya",
+      "Antarktika"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000010",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Mısır'a hayat veren, dünyanın en uzun nehirlerinden biri olan nehir hangisidir?",
+    "options": [
+      "Amazon Nehri",
+      "Nil Nehri",
+      "Ganj Nehri",
+      "Yangtze Nehri"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000011",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "'Ateş Çemberi' olarak bilinen, sık sık deprem ve volkanik patlamaların yaşandığı bölge hangi okyanusun kıyılarını kapsar?",
+    "options": [
+      "Atlas Okyanusu",
+      "Hint Okyanusu",
+      "Pasifik Okyanusu",
+      "Kuzey Buz Denizi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000012",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Dünyanın en kurak çölü olarak bilinen Atacama Çölü hangi ülkede yer almaktadır?",
+    "options": [
+      "Şili",
+      "Meksika",
+      "Avustralya",
+      "Mısır"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000013",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Kuzey ışıklarını (Aurora Borealis) izlemek için en popüler destinasyonlardan biri olan, volkanları ve gayzerleriyle ünlü ada ülkesi hangisidir?",
+    "options": [
+      "İzlanda",
+      "Grönland",
+      "Norveç",
+      "İrlanda"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000014",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Hangi iki ülke arasında dünyanın en uzun ve kesintisiz kara sınırı bulunmaktadır?",
+    "options": [
+      "ABD - Meksika",
+      "Rusya - Çin",
+      "ABD - Kanada",
+      "Arjantin - Şili"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000015",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Avrupa ve Asya'yı birbirinden ayıran doğal sınır olarak kabul edilen dağ sırası hangisidir?",
+    "options": [
+      "Alp Dağları",
+      "Ural Dağları",
+      "Kafkas Dağları",
+      "Karpat Dağları"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000016",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Sadece tek bir ülkeyle kara sınırı olan, Avrupa'nın batısındaki ülke hangisidir?",
+    "options": [
+      "Portekiz",
+      "İspanya",
+      "Hollanda",
+      "Belçika"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000017",
+    "category": "Coğrafya",
+    "difficulty": 3,
+    "text": "Dünyada resmi başkenti olmayan nadir ülkelerden biri olan okyanusya ülkesi hangisidir?",
+    "options": [
+      "Tuvalu",
+      "Nauru",
+      "Fiji",
+      "Samoa"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000018",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Türkiye'nin en doğusunda yer alan ve 'Güneşin ilk doğduğu yer' olarak bilinen ilimiz hangisidir?",
+    "options": [
+      "Kars",
+      "Iğdır",
+      "Hakkari",
+      "Van"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000019",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Amazon Yağmur Ormanları'nın en büyük kısmı hangi ülkenin sınırları içerisindedir?",
+    "options": [
+      "Kolombiya",
+      "Peru",
+      "Venezuela",
+      "Brezilya"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000020",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Deniz seviyesinin altında yer aldığı için 'Alçak Ülkeler' olarak da bilinen Avrupa ülkesi hangisidir?",
+    "options": [
+      "Danimarka",
+      "Belçika",
+      "Hollanda",
+      "Lüksemburg"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000021",
+    "category": "Coğrafya",
+    "difficulty": 3,
+    "text": "Hangi ülkenin sınırları içerisinde tam 800'den fazla farklı dil konuşulmaktadır ve bu alanda dünya birincisidir?",
+    "options": [
+      "Hindistan",
+      "Papua Yeni Gine",
+      "Endonezya",
+      "Nijerya"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000022",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Pamukkale Travertenleri Türkiye'nin hangi coğrafi bölgesinde yer alır?",
+    "options": [
+      "Akdeniz Bölgesi",
+      "Ege Bölgesi",
+      "İç Anadolu Bölgesi",
+      "Marmara Bölgesi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000023",
+    "category": "Coğrafya",
+    "difficulty": 3,
+    "text": "Kanada'da yer alan ve dünyanın en yüksek gelgit genliğine sahip olan körfez hangisidir?",
+    "options": [
+      "Meksika Körfezi",
+      "Hudson Körfezi",
+      "Baffin Körfezi",
+      "Fundy Körfezi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000024",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Afrika'nın en büyük adası olan ve eşsiz bitki ile hayvan türlerine ev sahipliği yapan ülke hangisidir?",
+    "options": [
+      "Madagaskar",
+      "Mauritius",
+      "Seyşeller",
+      "Yeşil Burun Adaları"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000025",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Kıtalar serüvenine göre, bir zamanlar dünyadaki tüm kara parçalarının bir arada bulunduğu süper kıtanın adı nedir?",
+    "options": [
+      "Gondvana",
+      "Lavrasya",
+      "Pangea",
+      "Atlantis"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000026",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Kuzey Avrupa'da, denizin buzul vadilerini basmasıyla oluşan ve Norveç kıyılarında sıkça rastlanan dik yamaçlı körfezlere ne ad verilir?",
+    "options": [
+      "Haliç",
+      "Fiyort",
+      "Lagün",
+      "Delta"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000027",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Özgürlük Anıtı, Empire State Binası ve Central Park hangi Amerikan şehrinin ikonik coğrafi ve kültürel simgeleridir?",
+    "options": [
+      "Los Angeles",
+      "Washington D.C.",
+      "New York",
+      "Chicago"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000028",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Hangi Avrupa şehri, iki kıtayı birbirine bağlayan boğazı ve köprüleriyle dünyada eşsiz bir konuma sahiptir?",
+    "options": [
+      "Londra",
+      "İstanbul",
+      "Venedik",
+      "St. Petersburg"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000029",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Kıtalararası bir geçit olan, Akdeniz ile Kızıldeniz'i birbirine bağlayan yapay su yolu hangisidir?",
+    "options": [
+      "Süveyş Kanalı",
+      "Panama Kanalı",
+      "Cebelitarık Boğazı",
+      "Korint Kanalı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000030",
+    "category": "Coğrafya",
+    "difficulty": 3,
+    "text": "Güney Amerika'nın en büyük gölü olan ve Bolivya ile Peru sınırında yer alan göl hangisidir?",
+    "options": [
+      "Maracaibo Gölü",
+      "Titicaca Gölü",
+      "Nikaragua Gölü",
+      "Poopo Gölü"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000031",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Ünlü 'Bermuda Şeytan Üçgeni' hangi okyanusun sınırları içerisinde yer almaktadır?",
+    "options": [
+      "Pasifik Okyanusu",
+      "Hint Okyanusu",
+      "Atlas Okyanusu",
+      "Arktik Okyanusu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c08af7a0-0000-4000-8000-000000000032",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Sıcaklık şartları göz önüne alındığında, dünyanın en büyük 'soğuk çölü' neresidir?",
+    "options": [
+      "Gobi Çölü",
+      "Atacama Çölü",
+      "Antarktika",
+      "Grönland"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000001",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "\"Majesteleri\" (His Airness) lakabıyla bilinen ve kendi adını taşıyan efsanevi bir ayakkabı markası olan basketbolcu kimdir?",
+    "options": [
+      "Michael Jordan",
+      "Kobe Bryant",
+      "LeBron James",
+      "Magic Johnson"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000002",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Kareem Abdul-Jabbar ile özdeşleşen ve savunulması neredeyse imkansız olan, topun başın üzerinden kanca şeklinde bir hareketle atıldığı atış türüne ne ad verilir?",
+    "options": [
+      "Skyhook (Gök çengeli)",
+      "Fadeaway",
+      "Crossover",
+      "Slam Dunk"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000003",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "1962 yılında oynanan bir maçta tek başına 100 sayı atarak kırılması imkansız gibi görünen bir rekora imza atan efsanevi oyuncu kimdir?",
+    "options": [
+      "Wilt Chamberlain",
+      "Bill Russell",
+      "Kobe Bryant",
+      "Michael Jordan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000004",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "2015-2016 NBA normal sezonunda 73 galibiyet ve 9 mağlubiyet alarak efsanevi 1995-96 Chicago Bulls'un rekorunu kıran takım hangisidir?",
+    "options": [
+      "Golden State Warriors",
+      "Miami Heat",
+      "Los Angeles Lakers",
+      "San Antonio Spurs"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000005",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Hangi NBA efsanesinin silueti, günümüzde hala kullanılmakta olan ikonik NBA logosuna ilham vermiştir?",
+    "options": [
+      "Jerry West",
+      "Oscar Robertson",
+      "Elgin Baylor",
+      "Bob Cousy"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000006",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Basketbol oyununu 1891 yılında icat eden ve ilk maçlarda pota olarak şeftali sepetleri kullanan beden eğitimi öğretmeni kimdir?",
+    "options": [
+      "James Naismith",
+      "William G. Morgan",
+      "Abner Doubleday",
+      "Walter Camp"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000007",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "2006 yılında Toronto Raptors'a karşı oynadığı maçta 81 sayı atarak NBA tarihinde bir maçta en çok sayı atan ikinci oyuncu unvanını kazanan efsane kimdir?",
+    "options": [
+      "Kobe Bryant",
+      "Allen Iverson",
+      "Tracy McGrady",
+      "Kevin Durant"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000008",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "\"The Dream Team\" (Rüya Takım) olarak bilinen ve profesyonel NBA oyuncularının ilk kez katıldığı 1992 ABD Olimpiyat Basketbol Takımı'nın yer aldığı olimpiyatlar hangi şehirde düzenlenmiştir?",
+    "options": [
+      "Barselona",
+      "Atlanta",
+      "Seul",
+      "Sidney"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000009",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Kariyeri boyunca boyalı saçları, çılgın dövmeleri, sıradışı tarzı ve üstün ribaund yeteneği ile tanınan, \"The Worm\" (Solucan) lakaplı oyuncu kimdir?",
+    "options": [
+      "Dennis Rodman",
+      "Ron Artest",
+      "Ben Wallace",
+      "Rasheed Wallace"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000010",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "\"Antrenman! Antrenmandan bahsediyoruz. Maçtan değil, antrenmandan...\" şeklindeki meşhur basın toplantısı isyanıyla akıllara kazınan yıldız oyuncu kimdir?",
+    "options": [
+      "Allen Iverson",
+      "Shaquille O'Neal",
+      "Charles Barkley",
+      "Gary Payton"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000011",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Kariyeri boyunca sadece 1.60 metre boyunda olmasına rağmen NBA'de uzun yıllar başarıyla forma giymiş ve tarihin en kısa oyuncusu unvanını taşıyan isim kimdir?",
+    "options": [
+      "Muggsy Bogues",
+      "Spud Webb",
+      "Nate Robinson",
+      "Earl Boykins"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000012",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Serbest atış çizgisindeki başarısızlığı nedeniyle rakip takımların bilerek ona faul yapıp çizgiye göndermesine dayanan ve \"Hack-a-...\" olarak bilinen taktiğe adını veren oyuncu kimdir?",
+    "options": [
+      "Shaquille O'Neal",
+      "Dwight Howard",
+      "DeAndre Jordan",
+      "Ben Simmons"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000013",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "2004 yılında Houston Rockets formasıyla San Antonio Spurs'e karşı maçın bitimine sadece 35 saniye kala 13 sayı atarak inanılmaz bir geri dönüşe imza atan efsane kimdir?",
+    "options": [
+      "Tracy McGrady",
+      "Yao Ming",
+      "Steve Nash",
+      "Kobe Bryant"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000014",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "NBA tarihinde en fazla şampiyonluk yüzüğüne (11 adet) sahip olan, savunma yetenekleriyle Boston Celtics hanedanlığını kuran efsanevi pivot kimdir?",
+    "options": [
+      "Bill Russell",
+      "Wilt Chamberlain",
+      "Kareem Abdul-Jabbar",
+      "Magic Johnson"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000015",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "1980 NBA Finalleri 6. maçında, çaylak sezonunda olmasına rağmen sakatlanan Kareem Abdul-Jabbar'ın yerine pivot pozisyonunda maça çıkıp 42 sayı, 15 ribaund ve 7 asistle MVP olan oyuncu kimdir?",
+    "options": [
+      "Magic Johnson",
+      "Larry Bird",
+      "James Worthy",
+      "Isiah Thomas"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000016",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Kendi geliştirdiği ve tek bacağı üzerinde geriye çekilerek attığı imza şutuyla (one-legged fadeaway) savunulması imkansız hale gelen efsanevi Avrupalı basketbolcu kimdir?",
+    "options": [
+      "Dirk Nowitzki",
+      "Pau Gasol",
+      "Tony Parker",
+      "Luka Dončić"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000017",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Rakiplerini şaşırtan omuz silkme hareketleri ve sahte paslarıyla bilinen, \"Dream Shake\" (Rüya Titremesi) adlı imza post-up hareketini basketbola kazandıran Nijerya asıllı oyuncu kimdir?",
+    "options": [
+      "Hakeem Olajuwon",
+      "Patrick Ewing",
+      "David Robinson",
+      "Dikembe Mutombo"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000018",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Kariyerinde sayısız üçlük rekoru kıran ve modern basketbolda orta saha çizgisine yakın mesafelerden attığı şutlarla oyunun oynanış şeklini değiştiren yıldız kimdir?",
+    "options": [
+      "Stephen Curry",
+      "Damian Lillard",
+      "Klay Thompson",
+      "Ray Allen"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000019",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "1995 yılında Madison Square Garden'da Indiana Pacers ve New York Knicks arasında oynanan bir play-off maçında sadece 9 saniyede 8 sayı üreterek \"Knick Killer\" lakabını pekiştiren oyuncu kimdir?",
+    "options": [
+      "Reggie Miller",
+      "Mark Jackson",
+      "Jalen Rose",
+      "Rik Smits"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000020",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Temel basketbol yeteneklerindeki kusursuzluğu ve sadeliği nedeniyle \"The Big Fundamental\" (Büyük Temel) lakabıyla tanınan, San Antonio Spurs efsanesi kimdir?",
+    "options": [
+      "Tim Duncan",
+      "David Robinson",
+      "Manu Ginobili",
+      "Kawhi Leonard"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000021",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "\"Le Dunk de la Mort\" (Ölüm Smacı) olarak bilinen olayda, 2000 Sidney Olimpiyatları'nda 2.18 metre boyundaki Fransız pivot Frederic Weis'in tam üzerinden zıplayarak smaç vuran ABD'li oyuncu kimdir?",
+    "options": [
+      "Vince Carter",
+      "Michael Jordan",
+      "Dominique Wilkins",
+      "Julius Erving"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000022",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "NBA ve FIBA (Uluslararası Basketbol Federasyonu) kuralları arasındaki en belirgin farklılıklardan biri hangisidir?",
+    "options": [
+      "Üç sayı çizgisinin potaya olan uzaklığı",
+      "Bir takımda sahada bulunabilen oyuncu sayısı",
+      "Potanın yerden yüksekliği",
+      "Basketbol topunun ağırlığı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000023",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "1996 NBA Draft'ında Charlotte Hornets tarafından seçilip daha sonra efsanesi olacağı Los Angeles Lakers'a takas edilen oyuncu kimdir?",
+    "options": [
+      "Kobe Bryant",
+      "Steve Nash",
+      "Allen Iverson",
+      "Ray Allen"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000024",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "2008 NBA Finallerinde sakatlanarak tekerlekli sandalye ile soyunma odasına götürülen, ancak kısa süre sonra mucizevi bir şekilde sahaya dönüp maçın kahramanı olan oyuncu kimdir?",
+    "options": [
+      "Paul Pierce",
+      "Kevin Garnett",
+      "Ray Allen",
+      "Rajon Rondo"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000025",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Kariyerinin zirvesindeyken sürpriz bir şekilde basketbolu bırakıp profesyonel beyzbol oynamaya karar veren, ardından \"I'm back\" (Geri döndüm) faksıyla parkelere dönen efsane kimdir?",
+    "options": [
+      "Michael Jordan",
+      "Deion Sanders",
+      "Bo Jackson",
+      "Magic Johnson"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000026",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "Basketbol maçlarında rakiplerinin şutlarını blokladıktan sonra, diktatörce bir tavırla meşhur \"hayır hayır hayır\" diyerek parmak sallama (finger wag) hareketini yapan efsanevi savunmacı kimdir?",
+    "options": [
+      "Dikembe Mutombo",
+      "Alonzo Mourning",
+      "Ben Wallace",
+      "Serge Ibaka"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000027",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "NBA kurallarına göre bir oyuncu topla birlikte yürüme (steps) kuralını ihlal etmeden en fazla kaç adım atabilir?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "Sınırsız"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000028",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Harlem Globetrotters takımının temel misyonu nedir?",
+    "options": [
+      "Basketbolu komedi, tiyatro ve akrobasi ile birleştirip gösteriler sunmak",
+      "Sadece yenilgisiz bir sezon geçirmek",
+      "Olimpiyatlarda ABD'yi temsil etmek",
+      "Yeni NBA oyuncuları yetiştiren bir akademi olmak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000029",
+    "category": "Basketbol",
+    "difficulty": 2,
+    "text": "2016 NBA Finallerinde takımının 3-1 geriden gelip şampiyon olmasını sağlayan ve Andre Iguodala'ya yaptığı ikonik blokla (The Block) hatırlanan oyuncu kimdir?",
+    "options": [
+      "LeBron James",
+      "Kyrie Irving",
+      "Kevin Love",
+      "J.R. Smith"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000030",
+    "category": "Basketbol",
+    "difficulty": 1,
+    "text": "Efsanevi rekabetlerinde, \"Showtime\" Lakers'ın lideri Magic Johnson'a karşı Boston Celtics'in liderliğini üstlenen ve \"Larry Legend\" lakabıyla bilinen oyuncu kimdir?",
+    "options": [
+      "Larry Bird",
+      "Kevin McHale",
+      "Robert Parish",
+      "Dennis Johnson"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000031",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "\"Malice at the Palace\" (Saraydaki Kötülük) olarak bilinen ve oyuncular ile taraftarların birbirine girdiği NBA tarihinin en büyük kavgası hangi iki takım arasında yaşanmıştır?",
+    "options": [
+      "Indiana Pacers - Detroit Pistons",
+      "Los Angeles Lakers - Boston Celtics",
+      "New York Knicks - Miami Heat",
+      "Chicago Bulls - Utah Jazz"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000032",
+    "category": "Basketbol",
+    "difficulty": 3,
+    "text": "Bir maçta sadece tek bir çeyrekte 37 sayı atarak inanılmaz bir rekor kıran ve alev aldığında durdurulması imkansız olan şutör oyuncu kimdir?",
+    "options": [
+      "Klay Thompson",
+      "Devin Booker",
+      "James Harden",
+      "Stephen Curry"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "8f6d2f3a-9e1b-4c4d-8b3e-7f6d2a1c9b8e",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Dünyanın en küçük kuşu aşağıdakilerden hangisidir?",
+    "options": [
+      "Serçe",
+      "Arı kuşu",
+      "Sinek kuşu",
+      "Kanarya"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "5b4c3d2e-1f0a-9b8c-7d6e-5f4a3b2c1d0e",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Güneş sistemindeki en büyük gezegen hangisidir?",
+    "options": [
+      "Jüpiter",
+      "Satürn",
+      "Neptün",
+      "Dünya"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "İnsan vücudundaki en büyük organ hangisidir?",
+    "options": [
+      "Karaciğer",
+      "Deri",
+      "Akciğer",
+      "Beyin"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f1e2d3c4-b5a6-9f8e-7d6c-5b4a3f2e1d0c",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Hangi renklerin eşit oranda karışımı yeşil rengi oluşturur?",
+    "options": [
+      "Mavi ve Kırmızı",
+      "Sarı ve Kırmızı",
+      "Sarı ve Mavi",
+      "Siyah ve Beyaz"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d4c3b2a1-e5f6-a7b8-c9d0-e1f2a3b4c5d6",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Telefonu kim icat etmiştir?",
+    "options": [
+      "Thomas Edison",
+      "Nikola Tesla",
+      "Alexander Graham Bell",
+      "Guglielmo Marconi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "9e8d7c6b-5a4f-3e2d-1c0b-9a8f7e6d5c4b",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Türkiye'nin tamamen kendi sınırları içerisinde doğup denize dökülen en uzun nehri hangisidir?",
+    "options": [
+      "Fırat",
+      "Dicle",
+      "Kızılırmak",
+      "Sakarya"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Hangi gezegen gökyüzündeki renginden dolayı \"Kızıl Gezegen\" olarak da bilinir?",
+    "options": [
+      "Venüs",
+      "Mars",
+      "Jüpiter",
+      "Merkür"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c9d8e7f6-a5b4-c3d2-e1f0-a9b8c7d6e5f4",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Aspirinin hammaddesi olan ve antik çağlardan beri ağrı kesici olarak kullanılan ağaç türü hangisidir?",
+    "options": [
+      "Meşe",
+      "Söğüt",
+      "Çam",
+      "Kavak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b2a1c3d4-e5f6-a7b8-c9d0-e1f2a3b4c5d6",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Bir gün 24 saat olduğuna göre, tam bir hafta toplam kaç saattir?",
+    "options": [
+      "144",
+      "168",
+      "192",
+      "120"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f6e5d4c3-b2a1-9f8e-7d6c-5b4a3f2e1d0c",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Modern sanatın en bilinen eserlerinden biri olan 'Çığlık' tablosunun ressamı kimdir?",
+    "options": [
+      "Vincent van Gogh",
+      "Edvard Munch",
+      "Pablo Picasso",
+      "Salvador Dali"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "1d2c3b4a-5f6e-7d8c-9b0a-1f2e3d4c5b6a",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Periyodik tablonun ilk elementi hangisidir?",
+    "options": [
+      "Oksijen",
+      "Karbon",
+      "Helyum",
+      "Hidrojen"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Psikolojide oldukça önemli olan 'öğrenilmiş çaresizlik' konsepti ilk olarak hangi hayvanlar üzerinde yapılan deneylerle keşfedilmiştir?",
+    "options": [
+      "Fareler",
+      "Köpekler",
+      "Maymunlar",
+      "Güvercinler"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "9c8b7a6f-5e4d-3c2b-1a0f-9e8d7c6b5a4f",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "İnsan beyninin yaklaşık olarak yüzde kaçı sudur?",
+    "options": [
+      "Yüzde 50",
+      "Yüzde 60",
+      "Yüzde 73",
+      "Yüzde 90"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f2a3b4-c5d6-e7f8-a9b0-c1d2e3f4a5b6",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Hangi memeli hayvan gerçekten uçabilme yeteneğine sahiptir?",
+    "options": [
+      "Uçan sincap",
+      "Penguen",
+      "Yarasa",
+      "Leylek"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "4c5b6a7f-8e9d-0c1b-2a3f-4e5d6c7b8a9f",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Çok iyi bilinen bir şeyi ilk kez görüyormuş gibi hissetme durumu olan 'Deja vu' (Daha önce görmüşlük) hissinin tam zıttına ne ad verilir?",
+    "options": [
+      "Jamais vu",
+      "Presque vu",
+      "Faux pas",
+      "Macabre"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7d8c9b0a-1f2e-3d4c-5b6a-7f8e9d0c1b2a",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Dünya üzerindeki su kütleleri arasında en büyük okyanus hangisidir?",
+    "options": [
+      "Atlantik Okyanusu",
+      "Hint Okyanusu",
+      "Pasifik Okyanusu",
+      "Arktik Okyanusu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a2b3c4d5-e6f7-a8b9-c0d1-e2f3a4b5c6d7",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Yeryüzündeki en sert doğal mineral aşağıdakilerden hangisidir?",
+    "options": [
+      "Kuvars",
+      "Elmas",
+      "Safir",
+      "Yakut"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b3c4d5e6-f7a8-b9c0-d1e2-f3a4b5c6d7e8",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Penguenler doğal ortamlarında dünyanın hangi bölgesinde yaşarlar?",
+    "options": [
+      "Sadece Kuzey Yarımküre'de",
+      "Sadece Güney Yarımküre'de",
+      "Her iki yarımkürede de",
+      "Ekvator çevresinde"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c4d5e6f7-a8b9-c0d1-e2f3-a4b5c6d7e8f9",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Bir satranç tahtasında toplam kaç tane kare bulunmaktadır?",
+    "options": [
+      "64",
+      "81",
+      "100",
+      "144"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d5e6f7a8-b9c0-d1e2-f3a4-b5c6d7e8f9a0",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Antik Yunan mitolojisinde denizlerin, depremlerin ve atların tanrısı olarak bilinen figür kimdir?",
+    "options": [
+      "Zeus",
+      "Hades",
+      "Poseidon",
+      "Apollo"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6f7a8b9-c0d1-e2f3-a4b5-c6d7e8f9a0b1",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Bilimsel araştırmalara göre, insanlar derin uykudayken en çok hangi duyusunu kaybeder, yani o duyu organı uyaranlara daha az tepki verir?",
+    "options": [
+      "Görme",
+      "İşitme",
+      "Koklama",
+      "Dokunma"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "f7a8b9c0-d1e2-f3a4-b5c6-d7e8f9a0b1c2",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Güneş'ten yola çıkan bir ışık huzmesinin Dünya'ya ulaşması yaklaşık olarak ne kadar zaman alır?",
+    "options": [
+      "8 saniye",
+      "8 dakika",
+      "8 saat",
+      "8 gün"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "İlginç vücut yapılarıyla bilinen ahtapotların toplam kaç tane kalbi vardır?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "İnsanlardaki parmak izi gibi, vücudumuzda bulunan hangi organın bıraktığı iz de tamamen kişiye özgüdür ve kimlik tespitinde kullanılabilir?",
+    "options": [
+      "Dil",
+      "Dirsek",
+      "Diz kapağı",
+      "Topuk"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Birçok insanın denemesine rağmen başaramadığı 'kendi dirseğini yalayabilme' yeteneğine sahip olanların oranı dünya nüfusunun yaklaşık yüzde kaçıdır?",
+    "options": [
+      "Yüzde 1'den az",
+      "Yüzde 10",
+      "Yüzde 25",
+      "Yüzde 50"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Kedilerin şekerli ve tatlı yiyeceklerin tadını alamamasının temel sebebi nedir?",
+    "options": [
+      "Tatlı reseptörü genlerinin mutasyona uğramış olması",
+      "Dillerinin çok kalın olması",
+      "Psikolojik olarak tatlıyı reddetmeleri",
+      "Sadece etobur oldukları için tatlıya hiç ihtiyaç duymamaları"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "İngilizcede sıklıkla klavye testlerinde kullanılan 'The quick brown fox jumps over the lazy dog' cümlesinin en önemli özelliği nedir?",
+    "options": [
+      "İlk İngilizce cümle olarak kabul edilmesi",
+      "İngiliz alfabesindeki tüm harfleri içermesi",
+      "En kısa ve en anlamlı İngilizce cümle olması",
+      "Sadece hayvanlardan bahseden bilinen en eski cümle olması"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "İnsan psikolojisinde kan basıncını düşürücü ve sakinleştirici bir etki yaratan renk hangisidir?",
+    "options": [
+      "Kırmızı",
+      "Sarı",
+      "Mavi",
+      "Turuncu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "İlginç bir biyolojik yapıya sahip olan sümüklüböceklerin kaç tane burnu vardır?",
+    "options": [
+      "Burnu yoktur",
+      "1",
+      "2",
+      "4"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Dünya yüzeyindeki tüm suların yaklaşık olarak yüzde kaçı içilebilir tatlı sudur?",
+    "options": [
+      "Yüzde 3",
+      "Yüzde 10",
+      "Yüzde 25",
+      "Yüzde 50"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Fotoğraflarda veya videolarda kendi yüzümüzü gördüğümüzde, aynadaki halimize göre daha farklı ve bazen garip bulmamızın psikolojik nedeni hangi etkiyle açıklanır?",
+    "options": [
+      "Salt Maruz Kalma Etkisi (Mere-exposure effect)",
+      "Dunning-Kruger Etkisi",
+      "Mandela Etkisi",
+      "Plasebo Etkisi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Ortalama 22 ay ile hamilelik süresi tüm memeliler arasında en uzun olan hayvan hangisidir?",
+    "options": [
+      "Mavi Balina",
+      "Afrika Fili",
+      "Zürafa",
+      "Gergedan"
+    ],
+    "correctOptionIndex": 1
   }
 ]
