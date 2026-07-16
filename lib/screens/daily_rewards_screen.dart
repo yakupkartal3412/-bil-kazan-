@@ -269,6 +269,11 @@ class DailyRewardsScreen extends StatelessWidget {
       messenger.showSnackBar(
         const SnackBar(content: Text('Ödül başarıyla alındı!', style: TextStyle(color: Colors.white)), backgroundColor: Colors.green),
       );
+      Future.delayed(const Duration(seconds: 1), () {
+        if (context.mounted) {
+          Navigator.pop(context);
+        }
+      });
     } else if (status == 3) {
       // Watch Ad to claim
       showDialog(
@@ -283,7 +288,7 @@ class DailyRewardsScreen extends StatelessWidget {
             ],
           ),
           content: const Text(
-            'Kaçırdığınız bu günün ödülünü reklam izleyerek kurtarmak ister misiniz?\n\n(Bu özellik yakında eklenecektir. Şimdilik test amaçlı ödül direkt verilecektir.)',
+            'Kaçırdığınız bu günün ödülünü reklam izleyerek kurtarmak ister misiniz?',
             style: TextStyle(color: Colors.white70),
           ),
           actions: [
@@ -302,6 +307,11 @@ class DailyRewardsScreen extends StatelessWidget {
                 messenger.showSnackBar(
                   const SnackBar(content: Text('Gününüz kurtarıldı ve ödül alındı!', style: TextStyle(color: Colors.white)), backgroundColor: Colors.green),
                 );
+                Future.delayed(const Duration(seconds: 1), () {
+                  if (context.mounted) {
+                    Navigator.pop(context);
+                  }
+                });
               },
               child: const Text('Reklamı İzle', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
             ),
