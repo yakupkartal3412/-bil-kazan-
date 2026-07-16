@@ -10,10 +10,13 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
+class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _scaleAnimation;
   late Animation<double> _opacityAnimation;
+  
+  late AnimationController _floatController;
+  late Animation<double> _floatAnimation;
 
   @override
   void initState() {
@@ -21,15 +24,24 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     
     _animationController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 3000), // Extended animation duration
+      duration: const Duration(milliseconds: 2000), // Extended animation duration
     );
 
-    _scaleAnimation = Tween<double>(begin: 0.5, end: 1.0).animate(
-      CurvedAnimation(parent: _animationController, curve: Curves.easeOutBack),
+    _scaleAnimation = Tween<double>(begin: 0.6, end: 1.0).animate(
+      CurvedAnimation(parent: _animationController, curve: Curves.easeOutElastic),
     );
 
     _opacityAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(parent: _animationController, curve: Curves.easeIn),
+    );
+
+    _floatController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2000),
+    )..repeat(reverse: true);
+    
+    _floatAnimation = Tween<double>(begin: -10.0, end: 10.0).animate(
+      CurvedAnimation(parent: _floatController, curve: Curves.easeInOutSine),
     );
 
     _animationController.forward();
@@ -74,6 +86,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   @override
   void dispose() {
     _animationController.dispose();
+    _floatController.dispose();
     super.dispose();
   }
 
@@ -92,60 +105,97 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Container(
-                      padding: const EdgeInsets.all(24),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.amber.withValues(alpha: 0.3),
-                            blurRadius: 60,
-                            spreadRadius: 15,
+                    // Floating & Glowing Einstein
+                    AnimatedBuilder(
+                      animation: _floatAnimation,
+                      builder: (context, child) {
+                        return Transform.translate(
+                          offset: Offset(0, _floatAnimation.value),
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.cyanAccent.withValues(alpha: 0.2),
+                                  blurRadius: 80,
+                                  spreadRadius: 20,
+                                ),
+                                BoxShadow(
+                                  color: Colors.purpleAccent.withValues(alpha: 0.2),
+                                  blurRadius: 120,
+                                  spreadRadius: 40,
+                                ),
+                              ],
+                            ),
+                            child: Image.asset(
+                              'assets/images/einstein_splash.png',
+                              width: 220,
+                              height: 220,
+                              fit: BoxFit.contain,
+                            ),
                           ),
-                        ],
-                      ),
-                      child: Image.asset(
-                        'assets/images/brain_splash.png',
-                        width: 180,
-                        height: 180,
-                        fit: BoxFit.contain,
-                      ),
+                        );
+                      }
                     ),
                     const SizedBox(height: 50),
-                    const Text(
-                      'BİL KAZAN',
-                      style: TextStyle(
-                        fontSize: 36,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.white,
-                        letterSpacing: 6,
-                        shadows: [
-                          Shadow(
-                            color: Colors.black54,
-                            blurRadius: 10,
-                            offset: Offset(0, 4),
-                          ),
-                        ],
+                    // Metallic Golden Text
+                    ShaderMask(
+                      shaderCallback: (bounds) => const LinearGradient(
+                        colors: [Color(0xFFFFD700), Color(0xFFFFA500), Color(0xFFFF8C00)],
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                      ).createShader(bounds),
+                      child: const Text(
+                        'BİL KAZAN',
+                        style: TextStyle(
+                          fontSize: 42,
+                          fontWeight: FontWeight.w900,
+                          color: Colors.white,
+                          letterSpacing: 8,
+                          shadows: [
+                            Shadow(
+                              color: Colors.black87,
+                              blurRadius: 15,
+                              offset: Offset(0, 6),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     const SizedBox(height: 12),
                     Text(
                       'Zekanı Konuştur',
                       style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.white.withValues(alpha: 0.7),
-                        letterSpacing: 2,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.cyanAccent.withValues(alpha: 0.8),
+                        letterSpacing: 4,
                       ),
                     ),
-                    const SizedBox(height: 60),
-                    const SizedBox(
-                      width: 30,
-                      height: 30,
-                      child: CircularProgressIndicator(
-                        valueColor: AlwaysStoppedAnimation<Color>(Colors.amber),
-                        strokeWidth: 3,
-                      ),
+                    const SizedBox(height: 70),
+                    // Modern sleek loading indicator
+                    Column(
+                      children: [
+                        const SizedBox(
+                          width: 40,
+                          height: 40,
+                          child: CircularProgressIndicator(
+                            valueColor: AlwaysStoppedAnimation<Color>(Colors.cyanAccent),
+                            strokeWidth: 4,
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        Text(
+                          'YÜKLENİYOR...',
+                          style: TextStyle(
+                            color: Colors.white.withValues(alpha: 0.5),
+                            fontSize: 12,
+                            letterSpacing: 2,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
                     ),
                   ],
                 ),
