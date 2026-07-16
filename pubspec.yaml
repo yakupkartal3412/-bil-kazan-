@@ -1,0 +1,51 @@
+name: milyarder_test_oyunu
+description: Milyarder Test Oyunu
+publish_to: 'none'
+
+version: 1.0.2+3
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.2.2
+  flutter_local_notifications: ^17.0.0
+  google_mobile_ads: ^9.0.0
+  fl_chart: ^0.68.0
+  provider: ^6.1.2
+  intl: ^0.20.2
+  google_fonts: ^8.1.0
+  audioplayers: ^6.7.1
+  vibration: ^3.2.0
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.4
+  firebase_auth: ^5.7.0
+  device_info_plus: ^13.2.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/questions.json
+    - assets/event_questions.json
+    - assets/images/
+    - assets/images/questions/
+    - assets/audio/
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.0
+
+flutter_native_splash:
+  color: "#0D0D36"
+  android: true
+  ios: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/mukemmel_ikon.png"
+  min_sdk_android: 21

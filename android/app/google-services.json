@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "752758648467",
+    "project_id": "milyarder-test-oyunu",
+    "storage_bucket": "milyarder-test-oyunu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752758648467:android:f7facb2a0f4e03dab7e766",
+        "android_client_info": {
+          "package_name": "com.ogrenkazan.milyarder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFdpJsGhune7RlSuaP08KZxicC1rYhwG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

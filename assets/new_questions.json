@@ -1,0 +1,1602 @@
+[
+    {
+        "id": "501",
+        "text": "Türk kahvesi geleneksel olarak ne ile servis edilir?",
+        "options": ["Çay", "Su", "Süt", "Ayran"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "502",
+        "text": "İnsan vücudunda en çok bulunan mineral hangisidir?",
+        "options": ["Demir", "Kalsiyum", "Potasyum", "Magnezyum"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "503",
+        "text": "WhatsApp hangi yıl kurulmuştur?",
+        "options": ["2007", "2009", "2011", "2013"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "504",
+        "text": "Çamaşır makinesinde yıkama sıcaklığı arttıkça ne olur?",
+        "options": ["Enerji tüketimi azalır", "Enerji tüketimi artar", "Hiçbir değişiklik olmaz", "Makine daha sessiz çalışır"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "505",
+        "text": "Türkiye'de misafire ilk olarak ne ikram edilir?",
+        "options": ["Kahve", "Çay", "Su", "Meyve suyu"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "506",
+        "text": "Bir yetişkin günde ortalama kaç litre su içmelidir?",
+        "options": ["1 litre", "2-2,5 litre", "4 litre", "5 litre"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "507",
+        "text": "Lahmacun hangi bölgemizin meşhur yemeğidir?",
+        "options": ["Ege Bölgesi", "Güneydoğu Anadolu Bölgesi", "Marmara Bölgesi", "Karadeniz Bölgesi"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "508",
+        "text": "Instagram'da bir fotoğrafı beğenmek için hangi simgeye tıklanır?",
+        "options": ["Yıldız", "Kalp", "Başparmak", "Ok"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "509",
+        "text": "Türk Lirası'nın sembolü hangisidir?",
+        "options": ["€", "₺", "$", "£"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "510",
+        "text": "Buzdolabının en soğuk bölümü neresidir?",
+        "options": ["Üst raf", "Alt raf", "Kapak rafları", "Sebzelik"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "511",
+        "text": "Türkiye'de bayram ziyaretlerinde büyüklerin eli ne yapılır?",
+        "options": ["Sıkılır", "Öpülür", "Tutulur", "Sallanır"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "512",
+        "text": "C vitamini en çok hangi meyvede bulunur?",
+        "options": ["Elma", "Portakal", "Muz", "Üzüm"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "513",
+        "text": "Mantı hangi ülke mutfağından Türk mutfağına geçmiştir?",
+        "options": ["Arap mutfağı", "Orta Asya mutfağı", "Yunan mutfağı", "İran mutfağı"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "514",
+        "text": "Wi-Fi kısaltması neyin açılımıdır?",
+        "options": ["Wired Fidelity", "Wireless Fidelity", "Wide Finder", "Wireless Finder"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "515",
+        "text": "Dünyanın en çok konuşulan dili hangisidir?",
+        "options": ["İngilizce", "Mandarin Çincesi", "İspanyolca", "Hintçe"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "516",
+        "text": "Elektrik faturasında en çok tüketim yapan ev aleti genellikle hangisidir?",
+        "options": ["Televizyon", "Klima", "Buzdolabı", "Çamaşır makinesi"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "517",
+        "text": "Türkiye'de düğünlerde gelinin ayağına ne yazılır?",
+        "options": ["Damadın adı", "Bekar arkadaşlarının adı", "Uğur getiren semboller", "Tarih"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "518",
+        "text": "İnsan vücudundaki en büyük organ hangisidir?",
+        "options": ["Karaciğer", "Deri", "Akciğer", "Bağırsak"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "519",
+        "text": "Baklava hamuru kaç kat olarak açılır?",
+        "options": ["20 kat", "40 kat", "60 kat", "80 kat"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "520",
+        "text": "Türkiye'de en çok kullanılan sosyal medya platformu hangisidir?",
+        "options": ["Facebook", "YouTube", "Twitter", "TikTok"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "521",
+        "text": "Bir insanın ömrünün yaklaşık üçte birini ne yaparak geçirdiği tahmin edilmektedir?",
+        "options": ["Yemek yiyerek", "Uyuyarak", "Çalışarak", "Yürüyerek"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "522",
+        "text": "Ev temizliğinde sirke en çok ne amaçla kullanılır?",
+        "options": ["Parfüm olarak", "Kireç çözücü olarak", "Boya çıkarıcı olarak", "Cila olarak"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "523",
+        "text": "Türkiye'de nişan töreni sırasında yüzükler kimin tarafından takılır?",
+        "options": ["Gelin ve damat", "Ailelerden büyük biri", "Nikah memuru", "En yakın arkadaşlar"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "524",
+        "text": "Uyku sırasında vücutta en çok hangi hormon salgılanır?",
+        "options": ["Adrenalin", "Melatonin", "İnsülin", "Kortizol"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "525",
+        "text": "Türk çayı geleneksel olarak ne ile demlenir?",
+        "options": ["Demlik", "Çaydanlık (iki katlı)", "Süzgeç", "French Press"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "526",
+        "text": "QR kod teknolojisi ilk olarak hangi ülkede geliştirilmiştir?",
+        "options": ["ABD", "Japonya", "Güney Kore", "Almanya"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "527",
+        "text": "Dünyanın en pahalı baharatı hangisidir?",
+        "options": ["Karabiber", "Safran", "Vanilya", "Tarçın"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "528",
+        "text": "Doğal gaz kaçağını anlamak için gaza hangi koku eklenir?",
+        "options": ["Çiçek kokusu", "Çürük yumurta kokusu", "Limon kokusu", "Kimyasal koku"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "529",
+        "text": "Türkiye'de geleneksel olarak kız isteme töreninde ne içilir?",
+        "options": ["Çay", "Türk kahvesi", "Şerbet", "Ayran"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "530",
+        "text": "İnsan vücudunda kaç kemik bulunur?",
+        "options": ["186", "206", "226", "246"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "531",
+        "text": "Kuru fasulye yapmadan önce fasulyelerin bekletilme süresi genellikle ne kadardır?",
+        "options": ["1-2 saat", "8-12 saat", "2-3 gün", "30 dakika"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "532",
+        "text": "Bluetooth teknolojisi adını nereden almıştır?",
+        "options": ["Bir bilim insanından", "Bir Viking kralından", "Bir şehirden", "Bir hayvan türünden"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "533",
+        "text": "İnsan beyninin yaklaşık yüzde kaçı sudan oluşur?",
+        "options": ["55%", "65%", "75%", "85%"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "534",
+        "text": "Çamaşır yıkarken beyaz çamaşırlar kaç derecede yıkanmalıdır?",
+        "options": ["30°C", "40°C", "60°C", "90°C"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "535",
+        "text": "Türkiye'de komşuya yemek gönderildiğinde tabak nasıl iade edilir?",
+        "options": ["Boş olarak", "Dolu olarak", "Yıkanmadan", "Ertesi gün"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "536",
+        "text": "Yetişkin bir insanın normal kalp atış hızı dakikada kaçtır?",
+        "options": ["40-50", "60-100", "100-120", "120-140"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "537",
+        "text": "Hamsinin en lezzetli olduğu mevsim hangisidir?",
+        "options": ["İlkbahar", "Yaz", "Sonbahar", "Kış"],
+        "correctOptionIndex": 3,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "538",
+        "text": "İlk iPhone hangi yıl piyasaya sürülmüştür?",
+        "options": ["2005", "2006", "2007", "2008"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "539",
+        "text": "Dünyada en çok tüketilen içecek hangisidir? (Sudan sonra)",
+        "options": ["Kahve", "Çay", "Kola", "Bira"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "540",
+        "text": "Deprem çantasında bulunması gereken en önemli malzeme hangisidir?",
+        "options": ["Kitap", "Su", "Battaniye", "Para"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "541",
+        "text": "Türkiye'de cenaze evine taziyeye gidildiğinde genellikle ne ikram edilir?",
+        "options": ["Çay", "Türk kahvesi", "Helva ve şerbet", "Su"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "542",
+        "text": "D vitamini en iyi hangi kaynaktan alınır?",
+        "options": ["Süt", "Güneş ışığı", "Et", "Meyve"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "543",
+        "text": "İskender kebap hangi şehrin meşhur yemeğidir?",
+        "options": ["İstanbul", "Bursa", "Ankara", "Adana"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "544",
+        "text": "Google'ın ilk kurulduğu yer neresidir?",
+        "options": ["Ofis", "Garaj", "Üniversite laboratuvarı", "Kafe"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "545",
+        "text": "Para birimi olarak 'kuruş' kaç tane bir Türk Lirasına eşittir?",
+        "options": ["10", "50", "100", "1000"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "546",
+        "text": "Yumurtanın taze olup olmadığını anlamak için hangi yöntem kullanılır?",
+        "options": ["Koklamak", "Suya bırakmak", "Işığa tutmak", "Tartmak"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "547",
+        "text": "Türkiye'de geleneksel olarak yeni taşınılan eve ne hediye edilir?",
+        "options": ["Çiçek", "Tuz ve ekmek", "Para", "Halı"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "548",
+        "text": "Yetişkin bir insan günde ortalama kaç saat uyumalıdır?",
+        "options": ["4-5 saat", "5-6 saat", "7-9 saat", "10-12 saat"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "549",
+        "text": "Döner kebabın icadı hangi yüzyıla dayanır?",
+        "options": ["17. yüzyıl", "18. yüzyıl", "19. yüzyıl", "20. yüzyıl"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "550",
+        "text": "PDF dosya formatının açılımı nedir?",
+        "options": ["Portable Document Format", "Personal Data File", "Public Document Format", "Printed Document File"],
+        "correctOptionIndex": 0,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "551",
+        "text": "Türkiye kişi başına çay tüketiminde dünyada kaçıncı sıradadır?",
+        "options": ["3. sırada", "1. sırada", "5. sırada", "2. sırada"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "552",
+        "text": "Musluk suyundaki kireç nasıl temizlenir?",
+        "options": ["Tuzlu suyla", "Sirke veya limonla", "Sabunlu suyla", "Sodayla"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "553",
+        "text": "Türkiye'de bir kişi evlenirken damadın kız tarafına verdiği paraya ne denir?",
+        "options": ["Çeyiz", "Başlık parası", "Nişan parası", "Düğün parası"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "554",
+        "text": "Antibiyotikler hangi tür enfeksiyonlara karşı etkilidir?",
+        "options": ["Viral enfeksiyonlar", "Bakteriyel enfeksiyonlar", "Mantar enfeksiyonları", "Parazit enfeksiyonları"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "555",
+        "text": "Zeytinyağı hangi sıcaklıkta bozulmaya başlar?",
+        "options": ["120°C", "160°C", "190°C", "210°C"],
+        "correctOptionIndex": 3,
+        "difficulty": 3,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "556",
+        "text": "Bir e-posta adresinde '@' işaretinden sonra gelen kısma ne denir?",
+        "options": ["Kullanıcı adı", "Alan adı (domain)", "Sunucu adı", "Protokol adı"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "557",
+        "text": "Dünyanın en çok ziyaret edilen şehri hangisidir?",
+        "options": ["Paris", "Bangkok", "Londra", "İstanbul"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "558",
+        "text": "Yangın söndürücünün son kullanma tarihi genellikle kaç yıldır?",
+        "options": ["2 yıl", "5 yıl", "10 yıl", "15 yıl"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "559",
+        "text": "Türkiye'de geleneksel olarak nazar boncuğu ne renktedir?",
+        "options": ["Kırmızı", "Mavi", "Yeşil", "Sarı"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "560",
+        "text": "Demir eksikliği en çok hangi rahatsızlığa neden olur?",
+        "options": ["Diyabet", "Kansızlık (Anemi)", "Tansiyon", "Astım"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "561",
+        "text": "Türk mutfağında 'sac kavurma' ne üzerinde pişirilir?",
+        "options": ["Tencerede", "Sac üzerinde", "Fırında", "Mangalda"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "562",
+        "text": "USB kısaltmasının açılımı nedir?",
+        "options": ["United System Bus", "Universal Serial Bus", "Ultra Speed Bus", "Universal System Board"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "563",
+        "text": "Bir marathon yarışının mesafesi kaç kilometredir?",
+        "options": ["36,195 km", "40 km", "42,195 km", "45 km"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "564",
+        "text": "Bulaşık makinesine tuz koymanın amacı nedir?",
+        "options": ["Dezenfekte etmek", "Suyu yumuşatmak", "Kokuyu gidermek", "Yıkama gücünü artırmak"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "565",
+        "text": "Türkiye'de geleneksel olarak 'hayırlı olsun' ne zaman söylenir?",
+        "options": ["Sadece düğünlerde", "Yeni bir şey alındığında veya başarı durumunda", "Sadece bayramlarda", "Sadece doğum günlerinde"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "566",
+        "text": "Vücuttaki en uzun kemik hangisidir?",
+        "options": ["Kol kemiği (humerus)", "Uyluk kemiği (femur)", "Kaval kemiği (tibia)", "Omurga"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "567",
+        "text": "Pide hamuru mayalandıktan sonra kaç katına çıkmalıdır?",
+        "options": ["1,5 katına", "2 katına", "3 katına", "4 katına"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "568",
+        "text": "İnternetin öncüsü olan ağın adı nedir?",
+        "options": ["WorldNet", "ARPANET", "EuroNet", "CompuNet"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "569",
+        "text": "İstanbul Boğazı hangi iki kıtayı birbirinden ayırır?",
+        "options": ["Avrupa ve Afrika", "Avrupa ve Asya", "Asya ve Afrika", "Avrupa ve Amerika"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "570",
+        "text": "Arabanın lastik basıncı ne zaman kontrol edilmelidir?",
+        "options": ["Lastikler sıcakken", "Lastikler soğukken", "Yağmurda", "Gece"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "571",
+        "text": "Türkiye'de geleneksel olarak asker uğurlamasında ne yapılır?",
+        "options": ["Sessizce vedalaşılır", "Davul zurna çalınır", "Hediye verilir", "Mektup yazılır"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "572",
+        "text": "Kolesterol yüksekliği en çok hangi organı etkiler?",
+        "options": ["Böbrekler", "Kalp ve damarlar", "Karaciğer", "Akciğerler"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "573",
+        "text": "Kayseri'nin meşhur yemeği hangisidir?",
+        "options": ["Kebap", "Mantı", "Lahmacun", "İskender"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "574",
+        "text": "5G teknolojisinde 'G' neyi temsil eder?",
+        "options": ["Gigabyte", "Generation (Nesil)", "Global", "Gateway"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "575",
+        "text": "Dünyada en çok konuşulan ikinci dil hangisidir?",
+        "options": ["Mandarin Çincesi", "İspanyolca", "İngilizce", "Hintçe"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "576",
+        "text": "Evde tasarruf için en etkili yöntem hangisidir?",
+        "options": ["Lambaları açık bırakmak", "LED ampul kullanmak", "Mum yakmak", "Perde takmak"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "577",
+        "text": "Türkiye'de geleneksel olarak Ramazan ayında iftar topunun atılma amacı nedir?",
+        "options": ["Sahuru haber vermek", "İftar vaktini haber vermek", "Bayramı kutlamak", "Teravihi hatırlatmak"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "578",
+        "text": "Yetişkin bir insanın normal vücut sıcaklığı kaç derecedir?",
+        "options": ["35°C", "36,5°C", "37,5°C", "38°C"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "579",
+        "text": "Adana kebabı ile Urfa kebabı arasındaki temel fark nedir?",
+        "options": ["Et türü", "Acılık derecesi", "Pişirme yöntemi", "Boyutu"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "580",
+        "text": "Bir web sitesi adresinin başındaki 'https' ne anlama gelir?",
+        "options": ["Hızlı transfer", "Güvenli bağlantı protokolü", "Ana sunucu bağlantısı", "Ücretsiz erişim"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "581",
+        "text": "Türkiye'nin yüzölçümü yaklaşık kaç kilometrekaredir?",
+        "options": ["580.000 km²", "680.000 km²", "780.000 km²", "880.000 km²"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "582",
+        "text": "Pencere camlarındaki buğulanmayı önlemek için ne yapılabilir?",
+        "options": ["Perdeleri kapatmak", "Odayı havalandırmak", "Işıkları kapatmak", "Sıcak su dökmek"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "583",
+        "text": "Türkiye'de 'maşallah' ifadesi ne zaman kullanılır?",
+        "options": ["Üzüntü anında", "Beğeni ve nazardan koruma amacıyla", "Veda ederken", "Özür dilerken"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "584",
+        "text": "Gluten intoleransı olan kişilerin tüketemeyeceği gıda hangisidir?",
+        "options": ["Pirinç", "Buğday ekmeği", "Mısır", "Patates"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "585",
+        "text": "Türk kahvesinin köpüklü olması neye bağlıdır?",
+        "options": ["Su sıcaklığına", "Yavaş pişirme tekniğine", "Şeker miktarına", "Fincan büyüklüğüne"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "586",
+        "text": "Yapay zekâ (AI) kısaltmasının açılımı nedir?",
+        "options": ["Advanced Internet", "Artificial Intelligence", "Automated Input", "Applied Integration"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "587",
+        "text": "Türkiye'de en uzun nehir hangisidir?",
+        "options": ["Sakarya Nehri", "Kızılırmak", "Fırat Nehri", "Dicle Nehri"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "588",
+        "text": "Evdeki bitkileri sulamanın en iyi zamanı ne zamandır?",
+        "options": ["Öğlen", "Sabah erken saatler", "Gece yarısı", "Akşam geç saatler"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "589",
+        "text": "Türkiye'de geleneksel olarak sünnet düğünlerinde çocuk ne giyer?",
+        "options": ["Takım elbise", "Beyaz sünnet kıyafeti", "Spor kıyafet", "Okul üniforması"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "590",
+        "text": "Tansiyon ölçümünde üst değere ne ad verilir?",
+        "options": ["Diastolik basınç", "Sistolik basınç", "Nabız basıncı", "Ortalama basınç"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "591",
+        "text": "Mercimek çorbasına limon sıkılmasının nedeni nedir?",
+        "options": ["Tuzunu azaltmak", "Demirdeki emilimi artırmak", "Rengini değiştirmek", "Kıvamını artırmak"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "592",
+        "text": "TikTok hangi ülke kökenli bir uygulamadır?",
+        "options": ["ABD", "Japonya", "Çin", "Güney Kore"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "593",
+        "text": "Türkiye'de en çok üretilen tarım ürünü hangisidir?",
+        "options": ["Buğday", "Pamuk", "Üzüm", "Fındık"],
+        "correctOptionIndex": 0,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "594",
+        "text": "Buzdolabında yiyeceklerin bozulmasını yavaşlatan nedir?",
+        "options": ["Karanlık ortam", "Düşük sıcaklık", "Kapalı alan", "Nem oranı"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "595",
+        "text": "Türkiye'de geleneksel olarak Kurban Bayramı'nda kesilen etin kaçta kaçı dağıtılır?",
+        "options": ["Yarısı", "Üçte biri", "Üçte ikisi", "Tamamı"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "596",
+        "text": "Egzersiz yapmadan önce ısınma hareketleri ne kadar süre yapılmalıdır?",
+        "options": ["1-2 dakika", "5-10 dakika", "20-30 dakika", "45 dakika"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "597",
+        "text": "Yoğurdun mayalanma süresi ortalama kaç saattir?",
+        "options": ["1-2 saat", "4-6 saat", "10-12 saat", "24 saat"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "598",
+        "text": "Dünyanın en çok kullanılan arama motoru hangisidir?",
+        "options": ["Bing", "Google", "Yahoo", "Yandex"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "599",
+        "text": "Nobel Barış Ödülü hangi şehirde verilir?",
+        "options": ["Stockholm", "Oslo", "Kopenhag", "Helsinki"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "600",
+        "text": "Evde kullanılan doğal temizlik maddesi hangisidir?",
+        "options": ["Çamaşır suyu", "Karbonat", "Amonyak", "Tiner"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "601",
+        "text": "Türkiye'de geleneksel olarak yeni doğan bebeğe ne hediye edilir?",
+        "options": ["Oyuncak", "Altın", "Kitap", "Çiçek"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "602",
+        "text": "Hangi vitamin eksikliği gece körlüğüne neden olur?",
+        "options": ["B vitamini", "A vitamini", "C vitamini", "E vitamini"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "603",
+        "text": "Simit üzerindeki çerez genellikle nedir?",
+        "options": ["Çörek otu", "Susam", "Haşhaş", "Keten tohumu"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "604",
+        "text": "Emoji kelimesi hangi dilden gelmektedir?",
+        "options": ["İngilizce", "Japonca", "Çince", "Korece"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "605",
+        "text": "Türkiye'nin en kalabalık şehri hangisidir?",
+        "options": ["Ankara", "İstanbul", "İzmir", "Bursa"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "606",
+        "text": "Araba akümülatörünün ömrü ortalama kaç yıldır?",
+        "options": ["1-2 yıl", "3-5 yıl", "7-8 yıl", "10 yıl"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "607",
+        "text": "Türkiye'de geleneksel olarak lohusa annelere ne içirilir?",
+        "options": ["Çay", "Lohusa şerbeti", "Ayran", "Komposto"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "608",
+        "text": "Günde kaç adım atmak sağlıklı kabul edilir?",
+        "options": ["3.000 adım", "5.000 adım", "10.000 adım", "15.000 adım"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "609",
+        "text": "Künefeyi diğer tatlılardan ayıran malzeme hangisidir?",
+        "options": ["Fıstık", "Tel kadayıf ve peynir", "Şerbet", "Ceviz"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "610",
+        "text": "Akıllı telefonlarda kullanılan NFC teknolojisi ne işe yarar?",
+        "options": ["Uzun mesafe iletişim", "Yakın alan iletişimi", "Uydu bağlantısı", "Kablosuz şarj"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "611",
+        "text": "Dünyada en çok satılan kitap hangisidir?",
+        "options": ["Harry Potter", "Kur'an-ı Kerim", "İncil (Kutsal Kitap)", "Don Kişot"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "612",
+        "text": "Evde yangın çıkması durumunda ilk yapılması gereken nedir?",
+        "options": ["Eşyaları kurtarmak", "Pencereyi açmak", "Binayı terk etmek", "Su dökmek"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "613",
+        "text": "Türkiye'de 'Allah korusun' ifadesi ne zaman kullanılır?",
+        "options": ["Mutluluk anında", "Kötü bir şey duyulduğunda", "Vedalaşırken", "Teşekkür ederken"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "614",
+        "text": "Omega-3 yağ asitleri en çok hangi besinde bulunur?",
+        "options": ["Kırmızı et", "Balık", "Tavuk", "Yumurta"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "615",
+        "text": "Türk mutfağında 'imam bayıldı' yemeğinin ana malzemesi nedir?",
+        "options": ["Biber", "Patlıcan", "Kabak", "Domates"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "616",
+        "text": "İlk bilgisayar virüsünün adı nedir?",
+        "options": ["Trojan", "Creeper", "Melissa", "ILOVEYOU"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "617",
+        "text": "Türk bayrağındaki ay ve yıldız hangi renklerdir?",
+        "options": ["Sarı", "Beyaz", "Altın", "Gümüş"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "618",
+        "text": "Priz ve elektrik kablolarının ömrü genellikle ne kadardır?",
+        "options": ["2-3 yıl", "5-7 yıl", "10-15 yıl", "25-30 yıl"],
+        "correctOptionIndex": 3,
+        "difficulty": 3,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "619",
+        "text": "Türkiye'de misafir ağırlamada 'çay demlemek' hangi anlama gelir?",
+        "options": ["Misafiri istemediğini göstermek", "Saygı ve misafirperverlik", "Resmi bir toplantı", "Yemek daveti"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "620",
+        "text": "İnsan vücudunda en çok bulunan element hangisidir?",
+        "options": ["Karbon", "Oksijen", "Hidrojen", "Azot"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Sağlık"
+    },
+    {
+        "id": "621",
+        "text": "Türkiye'de en çok tüketilen ekmek türü hangisidir?",
+        "options": ["Çavdar ekmeği", "Beyaz ekmek", "Tam buğday ekmeği", "Mısır ekmeği"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "622",
+        "text": "İnternette 'www' kısaltmasının açılımı nedir?",
+        "options": ["Wide Web World", "World Wide Web", "Web World Wide", "Wireless World Web"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "623",
+        "text": "Dünyada en çok altın rezervine sahip ülke hangisidir?",
+        "options": ["Çin", "ABD", "Almanya", "Rusya"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "624",
+        "text": "Çamaşır kurutma makinesinde hangi kıyafetler kurutulmamalıdır?",
+        "options": ["Pamuklu tişört", "Yünlü kazak", "Pamuklu çorap", "Keten gömlek"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "625",
+        "text": "Türkiye'de geleneksel olarak kına gecesi ne zaman yapılır?",
+        "options": ["Düğünden bir hafta önce", "Düğünden bir gece önce", "Nişandan sonra", "Düğün günü sabahı"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "626",
+        "text": "BMI (Vücut Kitle İndeksi) nasıl hesaplanır?",
+        "options": ["Boy × Kilo", "Kilo / Boy²", "Kilo × Boy", "Boy / Kilo"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Sağlık"
+    },
+    {
+        "id": "627",
+        "text": "Çiğ köfte hangi etle yapılırdı?",
+        "options": ["Kuzu eti", "Dana eti", "Tavuk eti", "Keçi eti"],
+        "correctOptionIndex": 0,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "628",
+        "text": "Bir kilobayt (KB) kaç bayttır?",
+        "options": ["100 bayt", "512 bayt", "1024 bayt", "2048 bayt"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "629",
+        "text": "Türkiye'nin başkenti hangi yıl Ankara olmuştur?",
+        "options": ["1920", "1923", "1925", "1930"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "630",
+        "text": "Evdeki nem oranı yüzde kaç olmalıdır?",
+        "options": ["10-20%", "30-40%", "40-60%", "70-80%"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "631",
+        "text": "Türkiye'de geleneksel olarak söz kesme töreninde ne yapılır?",
+        "options": ["Para verilir", "Yüzük takılır", "Altın takılır", "Hediye verilir"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "632",
+        "text": "Kafein vücutta ne kadar süre etkili kalır?",
+        "options": ["1-2 saat", "3-5 saat", "8-10 saat", "24 saat"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "633",
+        "text": "Aşure tatlısında kaç çeşit malzeme kullanılır?",
+        "options": ["5-7 çeşit", "10-15 çeşit", "15-20 çeşit", "20-25 çeşit"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "634",
+        "text": "Twitter'da (X) bir tweetin maksimum karakter sayısı kaçtır?",
+        "options": ["140", "200", "280", "500"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "635",
+        "text": "Dünyada en çok nüfusa sahip ülke hangisidir?",
+        "options": ["Çin", "Hindistan", "ABD", "Endonezya"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "636",
+        "text": "Evin ısı yalıtımı en çok hangi bölgeden yapılmalıdır?",
+        "options": ["Zeminlerden", "Duvarlardan", "Çatıdan", "Pencerelerden"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "637",
+        "text": "Türkiye'de geleneksel olarak kız istemeye gidildiğinde oğlan tarafı ne götürür?",
+        "options": ["Para", "Çiçek ve çikolata", "Halı", "Altın"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "638",
+        "text": "Probiyotik gıdaların en bilinen örneği hangisidir?",
+        "options": ["Ekmek", "Yoğurt", "Pirinç", "Makarna"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "639",
+        "text": "Türkiye'de en çok üretilen peynir türü hangisidir?",
+        "options": ["Kaşar peyniri", "Beyaz peynir", "Tulum peyniri", "Lor peyniri"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "640",
+        "text": "Dünyada en çok kullanılan programlama dili hangisidir? (2025 itibarıyla)",
+        "options": ["Java", "Python", "JavaScript", "C++"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "641",
+        "text": "İnsan beyninin ağırlığı yaklaşık kaç gramdır?",
+        "options": ["800 gram", "1.000 gram", "1.400 gram", "1.800 gram"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "642",
+        "text": "Market alışverişinde ürünün son kullanma tarihi nereye bakılarak kontrol edilir?",
+        "options": ["Ürünün altına", "Etiketine veya ambalajına", "Rengine", "Kokusuna"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "643",
+        "text": "Türkiye'de geleneksel olarak düğünden önce hangi tören yapılır?",
+        "options": ["Sünnet", "Kına gecesi", "Mevlit", "Bayram namazı"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "644",
+        "text": "Kalp krizinin en yaygın belirtisi nedir?",
+        "options": ["Baş ağrısı", "Göğüs ağrısı", "Sırt ağrısı", "Karın ağrısı"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "645",
+        "text": "Zeytinyağlı yemekler geleneksel olarak nasıl servis edilir?",
+        "options": ["Sıcak", "Soğuk veya ılık", "Kaynar", "Dondurulmuş"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "646",
+        "text": "Bir akıllı telefonun ortalama ömrü kaç yıldır?",
+        "options": ["1-2 yıl", "2-3 yıl", "4-5 yıl", "6-7 yıl"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "647",
+        "text": "Türkiye kaç coğrafi bölgeye ayrılmıştır?",
+        "options": ["5", "6", "7", "8"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "648",
+        "text": "Ayakkabıların ömrünü uzatmak için ne yapılmalıdır?",
+        "options": ["Her gün yıkanmalı", "Ayakkabı kalıbı kullanılmalı", "Güneşte bırakılmalı", "Poşette saklanmalı"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "649",
+        "text": "Türkiye'de geleneksel olarak 'hoş geldiniz' diyenin karşılığında ne denir?",
+        "options": ["Sağ olun", "Hoş bulduk", "Teşekkürler", "İyi günler"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "650",
+        "text": "Diş fırçalama süresi en az ne kadar olmalıdır?",
+        "options": ["30 saniye", "1 dakika", "2 dakika", "5 dakika"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "651",
+        "text": "Türk mutfağında 'ezogelin çorbası' adını kimden almıştır?",
+        "options": ["Bir padişahtan", "Bir gelin hikâyesinden", "Bir şehirden", "Bir aşçıbaşından"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "652",
+        "text": "Siber zorbalık en çok hangi platformlarda yaşanmaktadır?",
+        "options": ["E-posta", "Sosyal medya", "Arama motorları", "Alışveriş siteleri"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "653",
+        "text": "Dünyada en çok üretilen meyve hangisidir?",
+        "options": ["Elma", "Muz", "Portakal", "Üzüm"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "654",
+        "text": "Evdeki hava kirliliğini azaltmak için en etkili yöntem hangisidir?",
+        "options": ["Oda spreyi kullanmak", "İç mekân bitkisi yetiştirmek", "Halıyı yıkamak", "Klima çalıştırmak"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "655",
+        "text": "Türkiye'de geleneksel olarak 'afiyet olsun' ne zaman söylenir?",
+        "options": ["Yemekten önce", "Yemek yerken veya sonrasında", "Sadece misafirlere", "Sadece bayramda"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "656",
+        "text": "Kalsiyum eksikliği en çok hangi sistemi etkiler?",
+        "options": ["Sindirim sistemi", "İskelet sistemi", "Solunum sistemi", "Sinir sistemi"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "657",
+        "text": "Türkiye'de kahvaltıda en yaygın tüketilen gıda hangisidir?",
+        "options": ["Mısır gevreği", "Peynir ve zeytin", "Sandviç", "Meyve"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "658",
+        "text": "GPS kısaltmasının açılımı nedir?",
+        "options": ["General Positioning System", "Global Positioning System", "Ground Position Signal", "Global Point System"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "659",
+        "text": "Osmanlı İmparatorluğu'nun başkenti en son hangi şehirdi?",
+        "options": ["Bursa", "Edirne", "İstanbul", "Ankara"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "660",
+        "text": "Evde su tasarrufu için en etkili yöntem hangisidir?",
+        "options": ["Banyo yapmak yerine duş almak", "Gece suyu açmak", "Soğuk su kullanmak", "Musluğu kısmak"],
+        "correctOptionIndex": 0,
+        "difficulty": 1,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "661",
+        "text": "Türkiye'de geleneksel olarak 'geçmiş olsun' ne zaman söylenir?",
+        "options": ["Doğum gününde", "Hasta ziyaretinde veya kaza sonrası", "Düğünde", "Bayramda"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "662",
+        "text": "Kan grupları kaç ana gruba ayrılır?",
+        "options": ["2", "3", "4", "6"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "663",
+        "text": "Türk lokumu ilk olarak hangi şehirde yapılmıştır?",
+        "options": ["Ankara", "İstanbul", "Safranbolu", "Afyon"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "664",
+        "text": "E-ticaret sitelerinde 'SSL sertifikası' ne işe yarar?",
+        "options": ["Sayfayı hızlandırır", "Güvenli veri şifrelemesi sağlar", "Reklam engeller", "Site tasarımını iyileştirir"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "665",
+        "text": "Dünyanın en eski şehirlerinden biri olan Şanlıurfa'nın eski adı nedir?",
+        "options": ["Antakya", "Edessa", "Hattuşaş", "Gordion"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "666",
+        "text": "Evdeki elektrikli aletlerin bakımı ne sıklıkla yapılmalıdır?",
+        "options": ["Her hafta", "Her ay", "Yılda bir", "Her 6 ayda bir"],
+        "correctOptionIndex": 3,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "667",
+        "text": "Türkiye'de geleneksel olarak 'bereket olsun' ne zaman söylenir?",
+        "options": ["Yemekten sonra", "Alışveriş sonrası veya iş başarısında", "Sabahları", "Uyumadan önce"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "668",
+        "text": "Günlük alınması gereken tuz miktarı en fazla ne kadardır?",
+        "options": ["2 gram", "5 gram", "10 gram", "15 gram"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "669",
+        "text": "Çay demleme suyunun ideal sıcaklığı kaç derecedir?",
+        "options": ["70°C", "85°C", "95-100°C", "110°C"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "670",
+        "text": "Sosyal medyada 'influencer' ne demektir?",
+        "options": ["Programcı", "Takipçi kitlesiyle etki yaratan kişi", "Reklam veren şirket", "Platform yöneticisi"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "671",
+        "text": "Dünyanın en büyük okyanusu hangisidir?",
+        "options": ["Atlantik Okyanusu", "Büyük (Pasifik) Okyanusu", "Hint Okyanusu", "Kuzey Buz Okyanusu"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "672",
+        "text": "Banyo silikon izolasyonu ne sıklıkla yenilenmelidir?",
+        "options": ["Her ay", "Her yıl", "3-5 yılda bir", "10 yılda bir"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "673",
+        "text": "Türkiye'de geleneksel olarak ramazan davulcusu ne zaman dolaşır?",
+        "options": ["İftar vaktinde", "Sahur vaktinde", "Akşam namazında", "Öğle vaktinde"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "674",
+        "text": "İnsan vücudunda en hızlı büyüyen doku hangisidir?",
+        "options": ["Kas dokusu", "Saç", "Tırnak", "Kemik iliği"],
+        "correctOptionIndex": 3,
+        "difficulty": 3,
+        "category": "Sağlık"
+    },
+    {
+        "id": "675",
+        "text": "Antep fıstığının en çok yetiştirildiği il hangisidir?",
+        "options": ["Adana", "Gaziantep", "Şanlıurfa", "Kahramanmaraş"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "676",
+        "text": "Kripto para birimi Bitcoin'i kim icat etmiştir?",
+        "options": ["Elon Musk", "Satoshi Nakamoto", "Mark Zuckerberg", "Bill Gates"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "677",
+        "text": "Türkiye'de en çok konuşulan ikinci dil hangisidir?",
+        "options": ["Arapça", "Kürtçe", "İngilizce", "Zazaca"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "678",
+        "text": "Bina sigortası genellikle neleri kapsar?",
+        "options": ["Sadece hırsızlık", "Doğal afet ve yangın", "Sadece sel", "Sadece deprem"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "679",
+        "text": "Türkiye'de geleneksel olarak 'elinize sağlık' ne zaman söylenir?",
+        "options": ["İş başarısında", "Yemek yapana teşekkür olarak", "Hediye alırken", "Spor sonrası"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "680",
+        "text": "Yetişkin bir insanın vücudunda yaklaşık kaç litre kan bulunur?",
+        "options": ["2-3 litre", "4-5 litre", "6-7 litre", "8-9 litre"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "681",
+        "text": "Gaziantep baklavasında kullanılan yağ hangisidir?",
+        "options": ["Zeytinyağı", "Tereyağı", "Ayçiçek yağı", "Margarin"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "682",
+        "text": "İlk sosyal medya platformu olarak kabul edilen site hangisidir?",
+        "options": ["Facebook", "MySpace", "SixDegrees", "Friendster"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "683",
+        "text": "Dünyada en çok kullanılan para birimi hangisidir?",
+        "options": ["Euro", "ABD Doları", "İngiliz Sterlini", "Japon Yeni"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "684",
+        "text": "Kış aylarında arabanın camlarının buzlanmasını önlemek için ne kullanılır?",
+        "options": ["Sıcak su", "Buz önleyici sprey", "Sabunlu su", "Tuzlu su"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "685",
+        "text": "Türkiye'de geleneksel olarak birinin evine ilk defa gidildiğinde ne götürülür?",
+        "options": ["Meyve", "Tatlı veya çikolata", "Çiçek", "Oyuncak"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "686",
+        "text": "Bir yetişkinin günlük kalori ihtiyacı ortalama ne kadardır?",
+        "options": ["1.000-1.200 kalori", "1.500-1.700 kalori", "2.000-2.500 kalori", "3.000-3.500 kalori"],
+        "correctOptionIndex": 2,
+        "difficulty": 2,
+        "category": "Sağlık"
+    },
+    {
+        "id": "687",
+        "text": "Türk mutfağında 'sarma' yapmak için hangi yaprak kullanılır?",
+        "options": ["Dut yaprağı", "Asma yaprağı (üzüm yaprağı)", "Çınar yaprağı", "Defne yaprağı"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "688",
+        "text": "Bulut depolama (Cloud Storage) hizmeti veren ilk büyük şirket hangisidir?",
+        "options": ["Google", "Apple", "Amazon (AWS)", "Microsoft"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "689",
+        "text": "Dünyada en çok üretilen metal hangisidir?",
+        "options": ["Bakır", "Demir", "Alüminyum", "Çinko"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "690",
+        "text": "Evdeki elektrik sayacı ne kadar süreyle bir kez okunmalıdır?",
+        "options": ["Her hafta", "Her ay", "Her 3 ay", "Her 6 ay"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "691",
+        "text": "Türkiye'de geleneksel olarak nikah şekeri ne anlama gelir?",
+        "options": ["Zenginlik", "Tatlı bir yaşam dileği", "Şans", "Bereket"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "692",
+        "text": "El yıkamanın en az kaç saniye sürmesi önerilir?",
+        "options": ["5 saniye", "10 saniye", "20 saniye", "60 saniye"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "693",
+        "text": "Türk kahvesinin UNESCO tarafından ne olarak tescil edildiği bilinmektedir?",
+        "options": ["Dünya Mirası", "Somut Olmayan Kültürel Miras", "Doğal Miras", "Gastronomik Miras"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "694",
+        "text": "VPN kısaltmasının açılımı nedir?",
+        "options": ["Virtual Private Network", "Visual Processing Node", "Variable Protocol Number", "Verified Public Network"],
+        "correctOptionIndex": 0,
+        "difficulty": 2,
+        "category": "Teknoloji & İnternet"
+    },
+    {
+        "id": "695",
+        "text": "Türkiye'nin en yüksek dağı hangisidir?",
+        "options": ["Uludağ", "Erciyes Dağı", "Ağrı Dağı", "Kaçkar Dağı"],
+        "correctOptionIndex": 2,
+        "difficulty": 1,
+        "category": "Genel Kültür"
+    },
+    {
+        "id": "696",
+        "text": "Elektrikli süpürgenin filtresinin ne sıklıkla değiştirilmesi gerekir?",
+        "options": ["Her hafta", "Her ay", "Her 3-6 ayda bir", "Yılda bir"],
+        "correctOptionIndex": 2,
+        "difficulty": 3,
+        "category": "Günlük Yaşam"
+    },
+    {
+        "id": "697",
+        "text": "Türkiye'de geleneksel olarak 'sıhhatler olsun' ne zaman söylenir?",
+        "options": ["Yemekten sonra", "Banyo veya tıraş sonrası", "Spor sonrası", "Uyandıktan sonra"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Sosyal Hayat"
+    },
+    {
+        "id": "698",
+        "text": "Diyabet (şeker hastalığı) hangi hormonla ilgilidir?",
+        "options": ["Tiroksin", "İnsülin", "Adrenalin", "Östrojen"],
+        "correctOptionIndex": 1,
+        "difficulty": 1,
+        "category": "Sağlık"
+    },
+    {
+        "id": "699",
+        "text": "Karadeniz bölgesinin meşhur yemeği olan muhlama hangi malzemeyle yapılır?",
+        "options": ["Un ve yumurta", "Mısır unu ve peynir", "Bulgur ve et", "Patates ve soğan"],
+        "correctOptionIndex": 1,
+        "difficulty": 2,
+        "category": "Yemek & Mutfak"
+    },
+    {
+        "id": "700",
+        "text": "Yapay zekâ terimi ilk olarak hangi yıl kullanılmıştır?",
+        "options": ["1943", "1956", "1969", "1975"],
+        "correctOptionIndex": 1,
+        "difficulty": 3,
+        "category": "Teknoloji & İnternet"
+    }
+]
