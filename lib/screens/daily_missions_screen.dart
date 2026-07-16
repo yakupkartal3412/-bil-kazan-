@@ -206,7 +206,14 @@ class DailyMissionsScreen extends StatelessWidget {
                 const SizedBox(height: 8),
                 ElevatedButton(
                   onPressed: (isCompleted && !isClaimed) 
-                      ? () => provider.claimMissionReward(missionId, reward) 
+                      ? () {
+                          provider.claimMissionReward(missionId, reward);
+                          Future.delayed(const Duration(seconds: 2), () {
+                            if (context.mounted) {
+                              Navigator.of(context).pop();
+                            }
+                          });
+                        }
                       : null,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: isClaimed ? Colors.grey : (isCompleted ? Colors.green : Colors.grey),
