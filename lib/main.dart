@@ -3,14 +3,11 @@ import 'package:provider/provider.dart';
 import 'providers/quiz_provider.dart';
 import 'providers/audio_provider.dart';
 import 'providers/multiplayer_provider.dart';
-import 'screens/home_screen.dart';
 import 'screens/splash_screen.dart';
 import 'utils/constants.dart';
 
 import 'package:flutter/foundation.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'screens/login_screen.dart';
 import 'services/ad_service.dart';
 
 void main() async {

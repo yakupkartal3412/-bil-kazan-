@@ -1,8 +1,6 @@
-import 'dart:io';
+import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:provider/provider.dart';
-import '../providers/quiz_provider.dart';
 
 class AdService {
   static final AdService _instance = AdService._internal();
