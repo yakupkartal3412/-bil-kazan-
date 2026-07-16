@@ -119,7 +119,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                     const SizedBox(height: 50),
                     // Minimalist Premium Typography
                     const Text(
-                      'BİL KAZAN',
+                      'MİLYARDER',
                       style: TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.w400,
