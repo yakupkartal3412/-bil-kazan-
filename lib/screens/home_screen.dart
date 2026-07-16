@@ -237,7 +237,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     // Şans Çarkı kaldırıldı (Yukarı taşındı)
                     _buildMenuButton(
                       icon: Icons.leaderboard,
-                      title: 'Liderlik Tablosu',
+                      title: 'Haftalık Para Ligi',
                       onTap: () {
                         Navigator.push(
                           context,
@@ -289,12 +289,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return Consumer<QuizProvider>(
       builder: (context, provider, child) {
         String moneyText;
-        if (provider.totalMoney >= 1000000) {
-          moneyText = '${(provider.totalMoney / 1000000).toStringAsFixed(1).replaceAll('.0', '')} Milyon ₺';
-        } else if (provider.totalMoney >= 1000) {
-          moneyText = '${(provider.totalMoney / 1000).toStringAsFixed(1).replaceAll('.0', '')} Bin ₺';
+        if (provider.weeklyScore >= 1000000) {
+          moneyText = '${(provider.weeklyScore / 1000000).toStringAsFixed(1).replaceAll('.0', '')} Milyon ₺';
+        } else if (provider.weeklyScore >= 1000) {
+          moneyText = '${(provider.weeklyScore / 1000).toStringAsFixed(1).replaceAll('.0', '')} Bin ₺';
         } else {
-          moneyText = '${provider.totalMoney} ₺';
+          moneyText = '${provider.weeklyScore} ₺';
         }
         
         String diamondText = provider.totalCoins.toString();
