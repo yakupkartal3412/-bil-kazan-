@@ -1305,8 +1305,11 @@ class QuizProvider extends ChangeNotifier {
     } else if (_gameMode == GameMode.event) {
       if (isWin && isLastQuestion) {
         coinsEarned = 1000;
+        _roomCards += 5;
+        SharedPreferences.getInstance().then((prefs) => prefs.setInt(_roomCardsKey, _roomCards));
+        notifyListeners();
         moneyValue = 0;
-        moneyString = "Etkinlik Tamamlandı";
+        moneyString = "Etkinlik Tamamlandı (+5 Oda Kartı)";
       } else {
         coinsEarned = 0;
         moneyValue = 0;
