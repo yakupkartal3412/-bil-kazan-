@@ -14,7 +14,7 @@ class QuizScreen extends StatefulWidget {
   State<QuizScreen> createState() => _QuizScreenState();
 }
 
-class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
+class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, WidgetsBindingObserver {
   late AnimationController _bgController;
   late AnimationController _pulseController;
   late AnimationController _particleController;
@@ -22,6 +22,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     _bgController = AnimationController(vsync: this, duration: const Duration(seconds: 8))..repeat();
     _pulseController = AnimationController(vsync: this, duration: const Duration(milliseconds: 700))..repeat(reverse: true);
@@ -42,11 +43,38 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
     _bgController.dispose();
     _pulseController.dispose();
     _particleController.dispose();
     super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
+      final provider = Provider.of<QuizProvider>(context, listen: false);
+      if (!provider.isAnswered && provider.timeLeft > 0 && !provider.isSuspense) {
+        // Hile Algılandı!
+        provider.punishCheat();
+        showDialog(
+          context: context,
+          barrierDismissible: false,
+          builder: (ctx) => AlertDialog(
+            backgroundColor: const Color(0xFF0F2027),
+            title: const Text('HİLE TESPİT EDİLDİ!', style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold)),
+            content: const Text('Soruyu çözerken uygulamadan çıktığın için otomatik olarak yanlış cevap vermiş sayıldın!', style: TextStyle(color: Colors.white)),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(ctx),
+                child: const Text('TAMAM', style: TextStyle(color: Colors.white)),
+              )
+            ]
+          )
+        );
+      }
+    }
   }
 
   void _handleAnswerTap(QuizProvider provider, int index) async {

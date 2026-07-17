@@ -1230,6 +1230,20 @@ class QuizProvider extends ChangeNotifier {
     }
   }
 
+  void punishCheat() {
+    if (_isAnswered || _isSuspense) return;
+    _timer?.cancel();
+    _isAnswered = true;
+    _selectedOptionIndex = -1; // Wrong answer marker
+    _timeLeft = 0;
+    
+    _totalQuestionsAnswered++;
+    // Since it's wrong, we just save stats and handle game over checks if needed.
+    // In quiz_screen.dart, the Next/Continue button will handle the game over because _selectedOptionIndex is not correct.
+    _saveStats();
+    notifyListeners();
+  }
+
   Future<void> submitAnswer(int selectedIndex) async {
     if (_isAnswered || _isSuspense || _hiddenOptions.contains(selectedIndex)) return; 
     

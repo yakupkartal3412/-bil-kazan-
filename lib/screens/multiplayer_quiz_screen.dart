@@ -12,7 +12,7 @@ class MultiplayerQuizScreen extends StatefulWidget {
   State<MultiplayerQuizScreen> createState() => _MultiplayerQuizScreenState();
 }
 
-class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> {
+class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with WidgetsBindingObserver {
   int _currentIndex = 0;
   int _score = 0;
   int _timeLeft = 20;
@@ -26,11 +26,45 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     final mpProvider = Provider.of<MultiplayerProvider>(context, listen: false);
     _questions = mpProvider.roomData!['questions'];
     _startTimer();
   }
   
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
+      if (!_isAnswered && _timeLeft > 0) {
+        // Hile Algılandı!
+        _timer?.cancel();
+        setState(() {
+          _isAnswered = true;
+          _timeLeft = 0;
+          _selectedIndex = -1; // Yanlış
+        });
+        
+        _handleTimeOut();
+
+        showDialog(
+          context: context,
+          barrierDismissible: false,
+          builder: (ctx) => AlertDialog(
+            backgroundColor: const Color(0xFF0F2027),
+            title: const Text('HİLE TESPİT EDİLDİ!', style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold)),
+            content: const Text('Soruyu çözerken uygulamadan çıktığın için otomatik olarak yanlış cevap vermiş sayıldın!', style: TextStyle(color: Colors.white)),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(ctx),
+                child: const Text('TAMAM', style: TextStyle(color: Colors.white)),
+              )
+            ]
+          )
+        );
+      }
+    }
+  }
+
   void _startTimer() {
     int baseTime = 20;
     var currentQuestion = _questions[_currentIndex];
@@ -102,6 +136,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _timer?.cancel();
     super.dispose();
   }
