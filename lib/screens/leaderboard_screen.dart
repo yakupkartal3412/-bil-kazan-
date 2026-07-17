@@ -117,7 +117,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                   ),
                   Expanded(
                     child: const Text(
-                      'HAFTALIK PARA LİGİ',
+                      'SKOR TABLOSU',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 22,

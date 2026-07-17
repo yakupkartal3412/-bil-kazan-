@@ -147,6 +147,10 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
+                          if (provider.gameMode == GameMode.classic && provider.currentQuestionIndex > 0 && !provider.isAnswered)
+                            _buildWithdrawButton(provider)
+                          else
+                            const SizedBox(width: 48),
                           // Diamond pill
                           _buildDiamondPill(provider),
                           // Timer
@@ -160,11 +164,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
                     // PRIZE PILL
                     _buildPrizePill(provider),
 
-                    if (provider.gameMode == GameMode.classic && provider.currentQuestionIndex > 0 && !provider.isAnswered)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8),
-                        child: _buildWithdrawButton(provider),
-                      ),
+
 
                     const SizedBox(height: 6),
 
@@ -233,9 +233,9 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Icon(Icons.diamond_rounded, color: Color(0xFF00E5FF), size: 22),
+          Image.asset('assets/images/3d_cash_icon_nobg.png', width: 22, height: 22),
           const SizedBox(width: 6),
-          Text('${provider.totalCoins}',
+          Text('${provider.totalMoney}',
               style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w800)),
           const SizedBox(width: 8),
           Container(
@@ -313,7 +313,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
         children: [
           Text(
               provider.gameMode == GameMode.classic
-                  ? '${provider.prizeLadder[provider.currentQuestionIndex]} 💎'
+                  ? '${provider.prizeLadder[provider.currentQuestionIndex]} 💵'
                   : (provider.gameMode == GameMode.event ? (provider.currentEventCategory ?? 'ETKİNLİK').toUpperCase() : 'SONSUZ MOD'),
             style: const TextStyle(
               color: Color(0xFF1A0A00),
@@ -430,7 +430,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
           _buildJoker(
             icon: Icons.exposure_minus_2_rounded,
             label: 'Yarı Yarıya',
-            sublabel: provider.fiftyFiftyUses >= 2 ? null : (provider.fiftyFiftyUses == 0 ? 'ÜCRETSİZ' : '25 💎'),
+            sublabel: provider.fiftyFiftyUses >= 2 ? null : (provider.fiftyFiftyUses == 0 ? 'ÜCRETSİZ' : '25 💵'),
             isDisabled: provider.fiftyFiftyUsedThisQuestion || provider.fiftyFiftyUses >= 2,
             color: const Color(0xFFFFB300),
             onTap: () {
@@ -442,7 +442,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
           _buildJoker(
             icon: Icons.call_rounded,
             label: 'Telefon',
-            sublabel: provider.phoneUses >= 2 ? null : (provider.phoneUses == 0 ? 'ÜCRETSİZ' : '25 💎'),
+            sublabel: provider.phoneUses >= 2 ? null : (provider.phoneUses == 0 ? 'ÜCRETSİZ' : '25 💵'),
             isDisabled: provider.phoneUsedThisQuestion || provider.phoneUses >= 2,
             color: const Color(0xFF7B2FFF),
             onTap: () {
@@ -465,7 +465,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
           _buildJoker(
             icon: Icons.bar_chart_rounded,
             label: 'Seyirci',
-            sublabel: provider.audienceUses >= 2 ? null : (provider.audienceUses == 0 ? 'ÜCRETSİZ' : '25 💎'),
+            sublabel: provider.audienceUses >= 2 ? null : (provider.audienceUses == 0 ? 'ÜCRETSİZ' : '25 💵'),
             isDisabled: provider.audienceUsedThisQuestion || provider.audienceUses >= 2,
             color: const Color(0xFF00897B),
             onTap: () {
@@ -487,7 +487,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
           _buildJoker(
             icon: Icons.rocket_launch_rounded,
             label: 'Soruyu Geç',
-            sublabel: provider.skipUses >= 2 ? null : (provider.skipUses == 0 ? 'ÜCRETSiZ' : '25 💎'),
+            sublabel: provider.skipUses >= 2 ? null : (provider.skipUses == 0 ? 'ÜCRETSiZ' : '25 💵'),
             isDisabled: provider.skipUsedThisQuestion || provider.skipUses >= 2 || provider.isAnswered,
             color: const Color(0xFFE53935),
             onTap: () {
@@ -503,7 +503,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
 
   void _showNotEnough() {
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Yeterli elmasınız yok!'), behavior: SnackBarBehavior.floating),
+      const SnackBar(content: Text('Yeterli paranız yok!'), behavior: SnackBarBehavior.floating),
     );
   }
 

@@ -237,7 +237,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     // Şans Çarkı kaldırıldı (Yukarı taşındı)
                     _buildMenuButton(
                       icon: Icons.leaderboard,
-                      title: 'Haftalık Para Ligi',
+                      title: 'Skor Tablosu',
                       onTap: () {
                         Navigator.push(
                           context,
