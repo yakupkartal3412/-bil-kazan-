@@ -91,6 +91,30 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
   int timeLeft = 20;
   Timer? roundTimer;
 
+  String? p1Warning;
+  String? p2Warning;
+  Timer? p1WarningTimer;
+  Timer? p2WarningTimer;
+
+  void _showPlayerWarning(int playerIndex, String message) {
+    if (!mounted) return;
+    setState(() {
+      if (playerIndex == 1) {
+        p1Warning = message;
+        p1WarningTimer?.cancel();
+        p1WarningTimer = Timer(const Duration(seconds: 2), () {
+          if (mounted) setState(() => p1Warning = null);
+        });
+      } else {
+        p2Warning = message;
+        p2WarningTimer?.cancel();
+        p2WarningTimer = Timer(const Duration(seconds: 2), () {
+          if (mounted) setState(() => p2Warning = null);
+        });
+      }
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -195,7 +219,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
       if (p1IceUses == 1) {
         final p = context.read<QuizProvider>();
         if (p.totalCoins >= 20) { p.deductCoins(20); }
-        else { ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Yeterli paranız yok! (20 Para)'), backgroundColor: Colors.red)); return; }
+        else { _showPlayerWarning(casterIndex, 'Yeterli paranız yok! (20 Para)'); return; }
       }
       context.read<AudioProvider>().playSfx('click.wav');
       setState(() { p1IceUses++; p2IsFrozen = true; });
@@ -208,7 +232,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
       if (p2IceUses == 1) {
         final p = context.read<QuizProvider>();
         if (p.totalCoins >= 20) { p.deductCoins(20); }
-        else { ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Yeterli paranız yok! (20 Para)'), backgroundColor: Colors.red)); return; }
+        else { _showPlayerWarning(casterIndex, 'Yeterli paranız yok! (20 Para)'); return; }
       }
       context.read<AudioProvider>().playSfx('click.wav');
       setState(() { p2IceUses++; p1IsFrozen = true; });
@@ -226,7 +250,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
       if (p1BlindUses == 1) {
         final p = context.read<QuizProvider>();
         if (p.totalCoins >= 20) { p.deductCoins(20); }
-        else { ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Yeterli paranız yok! (20 Para)'), backgroundColor: Colors.red)); return; }
+        else { _showPlayerWarning(casterIndex, 'Yeterli paranız yok! (20 Para)'); return; }
       }
       context.read<AudioProvider>().playSfx('click.wav');
       setState(() { p1BlindUses++; p2IsBlind = true; });
@@ -239,7 +263,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
       if (p2BlindUses == 1) {
         final p = context.read<QuizProvider>();
         if (p.totalCoins >= 20) { p.deductCoins(20); }
-        else { ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Yeterli paranız yok! (20 Para)'), backgroundColor: Colors.red)); return; }
+        else { _showPlayerWarning(casterIndex, 'Yeterli paranız yok! (20 Para)'); return; }
       }
       context.read<AudioProvider>().playSfx('click.wav');
       setState(() { p2BlindUses++; p1IsBlind = true; });
@@ -257,7 +281,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
       if (p1TurtleUses == 1) {
         final p = context.read<QuizProvider>();
         if (p.totalCoins >= 20) { p.deductCoins(20); }
-        else { ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Yeterli paranız yok! (20 Para)'), backgroundColor: Colors.red)); return; }
+        else { _showPlayerWarning(casterIndex, 'Yeterli paranız yok! (20 Para)'); return; }
       }
       context.read<AudioProvider>().playSfx('click.wav');
       setState(() {
@@ -279,7 +303,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
       if (p2TurtleUses == 1) {
         final p = context.read<QuizProvider>();
         if (p.totalCoins >= 20) { p.deductCoins(20); }
-        else { ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Yeterli paranız yok! (20 Para)'), backgroundColor: Colors.red)); return; }
+        else { _showPlayerWarning(casterIndex, 'Yeterli paranız yok! (20 Para)'); return; }
       }
       context.read<AudioProvider>().playSfx('click.wav');
       setState(() {
@@ -306,7 +330,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
       if (p1RerollUses == 1) {
         final p = context.read<QuizProvider>();
         if (p.totalCoins >= 20) { p.deductCoins(20); }
-        else { ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Yeterli paranız yok! (20 Para)'), backgroundColor: Colors.red)); return; }
+        else { _showPlayerWarning(casterIndex, 'Yeterli paranız yok! (20 Para)'); return; }
       }
       context.read<AudioProvider>().playSfx('click.wav');
       setState(() {
@@ -320,7 +344,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
       if (p2RerollUses == 1) {
         final p = context.read<QuizProvider>();
         if (p.totalCoins >= 20) { p.deductCoins(20); }
-        else { ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Yeterli paranız yok! (20 Para)'), backgroundColor: Colors.red)); return; }
+        else { _showPlayerWarning(casterIndex, 'Yeterli paranız yok! (20 Para)'); return; }
       }
       context.read<AudioProvider>().playSfx('click.wav');
       setState(() {
@@ -568,6 +592,8 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
     p2FreezeTimer?.cancel();
     p2BlindTimer?.cancel();
     p2TurtleTimer?.cancel();
+    p1WarningTimer?.cancel();
+    p2WarningTimer?.cancel();
     super.dispose();
   }
 
@@ -742,6 +768,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
   }
 
   Widget _buildPlayerArea(int playerIndex) {
+    String? warningMsg = playerIndex == 1 ? p1Warning : p2Warning;
     Color themeColor = playerIndex == 1 ? p1ThemeColor : p2ThemeColor;
     bool isStunned = playerIndex == 1 ? p1IsStunned : p2IsStunned;
     bool isFrozen = playerIndex == 1 ? p1IsFrozen : p2IsFrozen;
@@ -888,7 +915,28 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
               ),
             ],
           ),
-          
+          // Warning Overlay
+          if (warningMsg != null)
+            Positioned(
+              bottom: 20,
+              left: 20,
+              right: 20,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                decoration: BoxDecoration(
+                  color: Colors.redAccent.withValues(alpha: 0.95),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Colors.white, width: 2),
+                  boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 10)],
+                ),
+                child: Text(
+                  warningMsg,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold, letterSpacing: 1),
+                ),
+              ),
+            ),
+            
           // Stun Overlay (Yanlış Cevap)
           if (isStunned)
             Positioned.fill(
