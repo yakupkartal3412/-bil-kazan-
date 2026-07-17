@@ -32,7 +32,16 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> {
   }
   
   void _startTimer() {
-    _timeLeft = 20;
+    int baseTime = 20;
+    var currentQuestion = _questions[_currentIndex];
+    int charCount = currentQuestion['text'].toString().length;
+    for (var option in currentQuestion['options']) {
+      charCount += option.toString().length;
+    }
+    int extraTime = (charCount / 15).floor();
+    _timeLeft = baseTime + extraTime;
+    if (_timeLeft > 90) _timeLeft = 90;
+
     _isAnswered = false;
     _selectedIndex = null;
     _timer?.cancel();

@@ -1082,7 +1082,21 @@ class QuizProvider extends ChangeNotifier {
   
   void _startTimer() {
     _timer?.cancel();
-    _timeLeft = 20;
+    
+    // Dinamik süre hesaplama
+    int baseTime = 20;
+    int charCount = currentQuestion.text.length;
+    for (var option in currentQuestion.options) {
+      charCount += option.length;
+    }
+    
+    // Her 15 karakter için (yaklaşık 2-3 kelime) fazladan 1 saniye ver
+    int extraTime = (charCount / 15).floor();
+    _timeLeft = baseTime + extraTime;
+    
+    // Maksimum 90 saniye sınırı (ne kadar uzun olursa olsun oyunu çok bekletmemek için)
+    if (_timeLeft > 90) _timeLeft = 90;
+
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (_timeLeft > 0) {
         _timeLeft--;

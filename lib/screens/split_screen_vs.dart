@@ -158,7 +158,17 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
 
   void _startRoundTimer() {
     roundTimer?.cancel();
-    timeLeft = 20;
+    
+    int baseTime = 20;
+    var q = questions[currentQuestionIndex];
+    int charCount = q.text.length;
+    for (var option in q.options) {
+      charCount += option.length;
+    }
+    int extraTime = (charCount / 15).floor();
+    timeLeft = baseTime + extraTime;
+    if (timeLeft > 90) timeLeft = 90;
+
     roundTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (!mounted || roundEnded) {
         timer.cancel();
