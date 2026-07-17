@@ -567,6 +567,7 @@ class QuizProvider extends ChangeNotifier {
       Map<String, dynamic> updateData = {};
       if (newName != null) updateData['userName'] = newName;
       if (newAvatar != null) updateData['avatar'] = newAvatar;
+      updateData['userTitle'] = userTitle; // always sync the latest title
       
       if (updateData.isNotEmpty) {
         // Also update users collection just in case
@@ -1374,6 +1375,7 @@ class QuizProvider extends ChangeNotifier {
         'date': date,
         'avatar': _activeAvatar,
         'userName': _userName,
+        'userTitle': userTitle,
       };
       
       _highScores.add(jsonEncode(scoreData));

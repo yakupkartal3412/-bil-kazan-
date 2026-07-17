@@ -765,7 +765,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
         ),
         const SizedBox(height: 4),
         PremiumBadge(
-          title: isUser ? provider.userTitle : _getBotTitle(scoreMap['userName'] ?? ''),
+          title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(scoreMap['userName'] ?? '')),
           fontSize: 7,
         ),
         const SizedBox(height: 2),
@@ -854,7 +854,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                 Row(
                   children: [
                     PremiumBadge(
-                      title: isUser ? provider.userTitle : _getBotTitle(scoreMap['userName'] ?? ''),
+                      title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(scoreMap['userName'] ?? '')),
                       fontSize: 6,
                     ),
                     const SizedBox(width: 5),
