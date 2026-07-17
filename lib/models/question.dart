@@ -18,12 +18,29 @@ class Question {
   });
 
   factory Question.fromJson(Map<String, dynamic> json) {
+    // ID yoksa, sorunun metninden (text) benzersiz bir ID uret
+    String generatedId = json['id'] != null 
+        ? json['id'].toString() 
+        : json['text'].hashCode.toString();
+
+    // Zorluk (Kolay, Orta, Zor stringleri gelirse integer'a cevir)
+    int diff = 2; // default Orta
+    if (json['difficulty'] != null) {
+      if (json['difficulty'] is int) {
+        diff = json['difficulty'];
+      } else {
+        String dStr = json['difficulty'].toString().toLowerCase();
+        if (dStr.contains('kolay')) diff = 1;
+        else if (dStr.contains('zor')) diff = 3;
+      }
+    }
+
     return Question(
-      id: json['id'].toString(),
+      id: generatedId,
       text: json['text'],
       options: List<String>.from(json['options']),
       correctOptionIndex: json['correctOptionIndex'],
-      difficulty: json['difficulty'],
+      difficulty: diff,
       category: json['category'] ?? 'Genel',
       imageUrl: json['imageUrl'],
     );
