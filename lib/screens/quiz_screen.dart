@@ -237,7 +237,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset('assets/images/3d_diamond_ui_icon_nobg.png', width: 22, height: 22),
+          Image.asset('assets/images/3d_diamond_clear_nobg.png', width: 26, height: 26),
           const SizedBox(width: 6),
           Text('${provider.totalCoins}',
               style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w800)),
@@ -716,17 +716,38 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
           ),
         );
       },
-      child: Container(
-        padding: const EdgeInsets.all(10),
-        decoration: BoxDecoration(
-          color: Colors.redAccent.shade700,
-          shape: BoxShape.circle,
-          boxShadow: [
-            BoxShadow(color: Colors.redAccent.withValues(alpha: 0.5), blurRadius: 8),
-          ],
+        child: Container(
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [Color(0xFFFF5252), Color(0xFFD32F2F), Color(0xFFB71C1C)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            shape: BoxShape.circle,
+            border: Border.all(color: Colors.redAccent.shade100, width: 1.5),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.red.withValues(alpha: 0.6),
+                blurRadius: 10,
+                spreadRadius: 2,
+                offset: const Offset(0, 4),
+              ),
+              const BoxShadow(
+                color: Colors.white24,
+                blurRadius: 4,
+                spreadRadius: 0,
+                offset: Offset(-2, -2),
+              ),
+            ],
+          ),
+          child: const Icon(
+            Icons.exit_to_app_rounded,
+            color: Colors.white,
+            size: 24,
+            shadows: [Shadow(color: Colors.black45, blurRadius: 4, offset: Offset(1, 1))],
+          ),
         ),
-        child: const Icon(Icons.door_back_door, color: Colors.white, size: 24),
-      ),
     );
   }
 }
