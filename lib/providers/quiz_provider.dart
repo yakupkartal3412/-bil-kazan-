@@ -559,6 +559,34 @@ class QuizProvider extends ChangeNotifier {
       _highScores = updatedScores;
       _saveHighScores();
     }
+
+    // FIREBASE UPDATE: also update the global leaderboard documents for this user
+    try {
+      String finalId = FirebaseAuth.instance.currentUser?.uid ?? _deviceId;
+      final modes = ['classic', 'time', 'endless', 'event'];
+      Map<String, dynamic> updateData = {};
+      if (newName != null) updateData['userName'] = newName;
+      if (newAvatar != null) updateData['avatar'] = newAvatar;
+      
+      if (updateData.isNotEmpty) {
+        // Also update users collection just in case
+        FirebaseFirestore.instance
+            .collection('users')
+            .doc(finalId)
+            .update(updateData)
+            .catchError((_) {});
+
+        for (String m in modes) {
+          FirebaseFirestore.instance
+              .collection('leaderboard')
+              .doc("${finalId}_$m")
+              .update(updateData)
+              .catchError((_) {}); // Ignore if document doesn't exist
+        }
+      }
+    } catch (e) {
+      debugPrint('Firebase profile update error: $e');
+    }
   }
 
   Future<void> claimAchievement(String id, int reward) async {

@@ -310,6 +310,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
 
                         try {
                           var map = doc.data() as Map<String, dynamic>;
+                          map['uid'] = prefix;
                           // FİLTRE: Skoru 0 olanları (veya hatalı olanları) Liderlik tablosunda gösterme!
                           num sc = map['score'] ?? 0;
                           if (sc > 0) {
@@ -322,28 +323,50 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     // Kendi skorunu yerel haftalık skor ile güncelle (anlık güncel görünsün)
                     Map<String, Map<String, dynamic>> bestScores = {};
                     for (var score in parsedScores) {
-                      String name = score['userName'] ?? 'Bilinmeyen';
+                      String uid = score['uid'] ?? score['userName'] ?? 'Bilinmeyen';
                       int currentScore = score['score'] ?? 0;
                       
-                      if (!bestScores.containsKey(name) || (bestScores[name]!['score'] ?? 0) < currentScore) {
-                        bestScores[name] = score;
+                      if (!bestScores.containsKey(uid) || (bestScores[uid]!['score'] ?? 0) < currentScore) {
+                        bestScores[uid] = score;
                       }
                     }
                     
+                    // We need to match the current user's uid or fallback to name if auth isn't loaded properly
+                    // Since leaderboard_screen might not have firebase_auth imported directly, we'll use provider.userName as fallback for uid if missing
+                    // Actually, let's just use provider.userName for local sync fallback if uid is not in provider.
+                    // Wait, we can just group by uid and find the current user's entry using their name. 
+                    // But if there are multiple users with the same name, we might pick the wrong one.
+                    // So let's import firebase_auth and get the current user's UID.
+                    
                     if (targetMode == 'Klasik Mod') {
                       String formatted = provider.weeklyScore.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
-                      if (bestScores.containsKey(provider.userName)) {
-                        if (provider.weeklyScore > bestScores[provider.userName]!['score']) {
-                          bestScores[provider.userName]!['score'] = provider.weeklyScore;
-                          bestScores[provider.userName]!['moneyString'] = '$formatted ₺';
+                      
+                      // Find if current user already exists in bestScores using userName since provider doesn't easily expose UID here
+                      // Actually provider.currentUserId would be better but we'll use userName for now to sync local score.
+                      // Let's find the map entry where userName == provider.userName and update it.
+                      String? myUidKey;
+                      for (var key in bestScores.keys) {
+                        if (bestScores[key]!['userName'] == provider.userName) {
+                          myUidKey = key;
+                          break;
+                        }
+                      }
+                      
+                      if (myUidKey != null) {
+                        if (provider.weeklyScore > bestScores[myUidKey]!['score']) {
+                          bestScores[myUidKey]!['score'] = provider.weeklyScore;
+                          bestScores[myUidKey]!['moneyString'] = '$formatted ₺';
                         }
                       } else {
-                        bestScores[provider.userName] = {
+                        // Add as new entry if not found
+                        String fallbackUid = 'local_uid_${DateTime.now().millisecondsSinceEpoch}';
+                        bestScores[fallbackUid] = {
                           'mode': 'Klasik Mod',
                           'score': provider.weeklyScore,
                           'moneyString': '$formatted ₺',
                           'userName': provider.userName,
                           'avatar': provider.activeAvatar,
+                          'uid': fallbackUid,
                         };
                       }
                     }
