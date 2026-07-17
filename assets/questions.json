@@ -17930,5 +17930,6005 @@
     ],
     "correctOptionIndex": 3,
     "text": "Klasik bir testte şu soru yer almaktadır: 'Eğer bu sorunun cevabını rastgele seçerseniz doğru bilme ihtimaliniz nedir? Seçenekler: A)%25, B)%50, C)%25, D)%0'. Bu sorunun mantıksal çıkmazı (paradoksu) nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Zombi",
+      "İskelet",
+      "Creeper",
+      "Enderman"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Minecraft'ta yaratıkları ve oyuncuları patlatarak saldıran yeşil düşman nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "GTA V",
+      "Minecraft",
+      "Tetris",
+      "Wii Sports"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Dünyanın en çok satan video oyunu hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Call of Duty",
+      "Fortnite",
+      "Apex Legends",
+      "PUBG"
+    ],
+    "correctOptionIndex": 3,
+    "text": "\"Winner Winner Chicken Dinner\" (Kazandın, Akşam Yemeğinde Tavuk Var) sözü hangi oyunla ünlenmiştir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Rehineleri kurtarmak",
+      "C4 patlayıcıyı kurmak",
+      "Bayrağı ele geçirmek",
+      "Karargahı korumak"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Counter-Strike: Global Offensive (CS:GO) oyununda Teröristlerin temel amacı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Wario",
+      "Toad",
+      "Luigi",
+      "Yoshi"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Super Mario serisinde Mario'nun kardeşi ve yoldaşı olan karakterin adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "GTA V",
+      "GTA San Andreas",
+      "GTA Vice City",
+      "GTA IV"
+    ],
+    "correctOptionIndex": 0,
+    "text": "GTA serisinde en çok satan ve Los Santos'ta geçen oyun hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Pasif",
+      "Büyü",
+      "Ulti",
+      "Flaş"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Valorant'ta ajanların kullandığı ve her karakterin benzersiz olduğu nihai (ultimate) yetenekleri halk arasında ne adla anılır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Uğursuz Koruluk",
+      "Sihirdar Vadisi",
+      "Sonsuz Uçurum",
+      "Kristal Kayalık"
+    ],
+    "correctOptionIndex": 1,
+    "text": "League of Legends (LoL) oyununda 5v5 maçların oynandığı klasik ana haritanın adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Dante",
+      "Kratos",
+      "Zeus",
+      "Leonidas"
+    ],
+    "correctOptionIndex": 1,
+    "text": "PlayStation'ın efsanevi savaş tanrısı (God of War) serisinin öfkeli ana karakteri kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Hayaletler",
+      "Uzaylılar",
+      "Canavarlar",
+      "Robotlar"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Pac-Man oyununda sarı karakterin peşinden koşan düşmanlar genel olarak ne tür yaratıklardır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Terraria",
+      "Minecraft",
+      "Roblox",
+      "Rust"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Hangi oyun, piksel tabanlı grafiklere ve küplerden oluşan hayatta kalma/inşa etme mekaniklerine dayanır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "MOBA",
+      "MMORPG",
+      "Battle Royale",
+      "RPG"
+    ],
+    "correctOptionIndex": 2,
+    "text": "\"Sırt çantasından paraşütle geniş bir haritaya inip, daralan alan içinde son hayatta kalan olmaya çalışma\" konsepti aşağıdaki türlerden hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Epic Games",
+      "Valve",
+      "Blizzard",
+      "Ubisoft"
+    ],
+    "correctOptionIndex": 0,
+    "text": "\"Ateş etme ve yapı inşa etme\" mekaniklerini birleştiren popüler oyun Fortnite'ın geliştiricisi hangi şirkettir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Motorola",
+      "Ericsson",
+      "Siemens",
+      "Nokia"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Klasik yılan oyunu (Snake) en çok hangi marka eski model cep telefonlarıyla hafızalara kazınmıştır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Tencent",
+      "Riot Games",
+      "Valve",
+      "Activision"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Birinci şahıs taktiksel nişancı oyunu Valorant'ı geliştiren ve yayımlayan şirket hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Simlish",
+      "Esperanto",
+      "Gibelish",
+      "Klingon"
+    ],
+    "correctOptionIndex": 0,
+    "text": "The Sims serisinde karakterlerin birbiriyle konuştuğu kurgusal dile ne ad verilir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Days Gone",
+      "Resident Evil",
+      "The Last of Us",
+      "Left 4 Dead"
+    ],
+    "correctOptionIndex": 2,
+    "text": "PlayStation'a özel olan, enfekte olmuş yaratıklara karşı hayatta kalma mücadelesi veren Ellie ve Joel'un hikayesini anlatan oyun hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Nether",
+      "The End",
+      "Aether",
+      "Overworld"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Minecraft'ta \"Ender Dragon\" adlı patronu yenebilmek için hangi boyuta gitmeniz gerekir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "50",
+      "64",
+      "100",
+      "150"
+    ],
+    "correctOptionIndex": 2,
+    "text": "PUBG oyununda standart bir Battle Royale maçında adaya inerken uçağın içinde en fazla kaç oyuncu bulunur?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Scout",
+      "AWP",
+      "AK-47",
+      "M4A4"
+    ],
+    "correctOptionIndex": 1,
+    "text": "CS:GO'da tek atışta rakibi öldürebilen, yüksek hasarlı efsanevi keskin nişancı tüfeği hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Donkey Kong",
+      "Waluigi",
+      "Bowser",
+      "King Boo"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Super Mario Bros. serisinde Mario'nun prensesi kurtarmaya çalıştığı ezeli düşmanı (kaplumbağa kral) kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "CJ",
+      "Big Smoke",
+      "Sweet",
+      "Ryder"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Grand Theft Auto: San Andreas'ın ana karakteri Carl Johnson'ın sokaklarda bilinen lakabı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Omen",
+      "Reyna",
+      "Sage",
+      "Killjoy"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Valorant oyununda ölen bir takım arkadaşını diriltme yeteneğine (Resurrection) sahip olan ajan hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "1990",
+      "1994",
+      "1998",
+      "2000"
+    ],
+    "correctOptionIndex": 1,
+    "text": "PlayStation tarihinin ilk konsolu olan PS1, hangi yıl Japonya'da piyasaya sürülmüştür?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Brutality",
+      "Finisher",
+      "Fatality",
+      "Execution"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Mortal Kombat serisinde dövüşün sonunda rakibi vahşice öldürmek için yapılan kanlı bitiriş hareketlerine ne ad verilir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Short",
+      "Mid",
+      "Tunnel",
+      "Long"
+    ],
+    "correctOptionIndex": 3,
+    "text": "CS:GO'nun efsanevi haritası \"Dust II\"de, Terörist üssünden A bomba alanına giden geniş ve uzun yola ne ad verilir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "O'Driscoll Çetesi",
+      "Van der Linde Çetesi",
+      "Del Lobos",
+      "Lemoyne Akıncıları"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Red Dead Redemption 2'nin ana karakteri Arthur Morgan, hangi kanunsuz çetenin sadık bir üyesidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "League of Legends",
+      "Dota 2",
+      "Overwatch",
+      "StarCraft II"
+    ],
+    "correctOptionIndex": 1,
+    "text": "E-spor tarihinde devasa ödül havuzuyla bilinen The International (TI) turnuvası, hangi oyun için düzenlenmektedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Ayı Okulu",
+      "Kedi Okulu",
+      "Kurt Okulu",
+      "Engerek Okulu"
+    ],
+    "correctOptionIndex": 2,
+    "text": "The Witcher 3: Wild Hunt oyununun ana karakteri Geralt of Rivia, hangi efsuncu okulunda yetişmiştir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Erangel",
+      "Sanhok",
+      "Vikendi",
+      "Miramar"
+    ],
+    "correctOptionIndex": 3,
+    "text": "PUBG'de çöle benzeyen geniş ve açık arazilere sahip klasik haritanın adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Sam Fisher",
+      "Solid Snake",
+      "Agent 47",
+      "Marcus Fenix"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Hideo Kojima'nın yarattığı devrimsel gizlilik-aksiyon serisi Metal Gear Solid'in ikonik ana karakterlerinden biri kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Alyx Vance",
+      "G-Man",
+      "Isaac Kleiner",
+      "Gordon Freeman"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Half-Life serisinin konuşmayan, bir levye ve HEV giysisi ile bütünleşmiş teorik fizikçi kahramanı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Altın",
+      "Demir",
+      "Elmas",
+      "Netherite"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Minecraft'ta hayatta kalma modunda bir Obsidyen bloğunu kırıp toplayabilmek için en az hangi madenden yapılmış bir kazma gerekir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Valorant Masters",
+      "Valorant Champions",
+      "Valorant Invitational",
+      "Valorant Pro League"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Valorant'ın Riot Games tarafından düzenlenen her yılın en büyük ve resmi dünya şampiyonası turnuvasının adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Robert De Niro",
+      "Al Pacino",
+      "Ray Liotta",
+      "Joe Pesci"
+    ],
+    "correctOptionIndex": 2,
+    "text": "GTA Vice City oyununda, ikonik ana karakter Tommy Vercetti'ye sesiyle hayat veren ünlü Hollywood aktörü kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Heo Su (ShowMaker)",
+      "Lee Sang-hyeok",
+      "Kim Geon-bu (Canyon)",
+      "Song Eui-jin (Rookie)"
+    ],
+    "correctOptionIndex": 1,
+    "text": "League of Legends sahnesinde \"Faker\" lakabıyla bilinen, \"Yenilmez İblis Kral\" unvanlı Güney Koreli oyuncunun gerçek adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "1981",
+      "1983",
+      "1985",
+      "1989"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Orijinal \"Super Mario Bros.\" oyunu, Nintendo Entertainment System (NES) için ilk olarak hangi yıl piyasaya sürülmüştür?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "100 Milyon",
+      "118 Milyon",
+      "155 Milyon",
+      "200 Milyon"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Tüm zamanların en çok satan oyun konsolu rekorunu elinde tutan PlayStation 2'nin dünya çapındaki yaklaşık satış rakamı ne kadardır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Quake",
+      "Doom",
+      "Half-Life",
+      "Unreal Tournament"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Taktiksel FPS türünün atalarından CS:GO'nun kökeni olan orijinal \"Counter-Strike\" (1999), aslında hangi oyunun bir modu olarak doğmuştur?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Project A",
+      "Project V",
+      "Project L",
+      "Project Strike"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Valorant, piyasaya sürülmeden önce kapalı kapılar ardında geliştirilirken ve ilk duyurulduğunda hangi geçici kod adıyla biliniyordu?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "GabeN",
+      "IceFrog",
+      "Jeb",
+      "Notch"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Milyarlarca dolara Microsoft'a satılan efsanevi oyun Minecraft'ın yaratıcısı Markus Persson, oyun dünyasında hangi lakapla tanınır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Alliance",
+      "Natus Vincere (Na'Vi)",
+      "Invictus Gaming (IG)",
+      "Fnatic"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Gamescom 2011'de düzenlenen ve e-spor tarihinin ilk 1 milyon dolar ödüllü turnuvası olan The International 1'i (Dota 2) hangi takım kazanmıştır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Tekken 3",
+      "Mortal Kombat II",
+      "Super Smash Bros. Melee",
+      "Street Fighter III: 3rd Strike"
+    ],
+    "correctOptionIndex": 3,
+    "text": "E-spor dünyasında tarihe geçen \"Daigo Parry\" (Evo Moment 37) olayı, Evo 2004 turnuvasında hangi dövüş oyununda gerçekleşmiştir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Wrath of the Lich King",
+      "The Burning Crusade",
+      "Cataclysm",
+      "Mists of Pandaria"
+    ],
+    "correctOptionIndex": 1,
+    "text": "World of Warcraft evrenine 2007 yılında eklenen ve Outland haritasını oyunculara sunan ilk büyük genişleme paketi (expansion) hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Liberty City",
+      "Vice City",
+      "Los Santos",
+      "San Fierro"
+    ],
+    "correctOptionIndex": 0,
+    "text": "3 boyutlu açık dünya yapısıyla devrim yaratan 2001 yapımı Grand Theft Auto III (GTA 3) oyununun geçtiği kurgusal şehir hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Game Gear",
+      "Nintendo DS",
+      "Game Boy",
+      "PlayStation Portable"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Nintendo'nun 1989 yılında piyasaya sürdüğü, Tetris gibi oyunlarla büyük kitlelere ulaşan devrim niteliğindeki ilk kasetli el konsolu hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Lordran",
+      "Yharnam",
+      "Lothric",
+      "Drangelic"
+    ],
+    "correctOptionIndex": 1,
+    "text": "PlayStation'a özel olan Bloodborne oyununda, avcıların kabuslarla yüzleştiği Gotik ve Victoria dönemi esintili karanlık şehrin adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Hideo Kojima",
+      "Brendan Greene",
+      "John Romero",
+      "Cliff Bleszinski"
+    ],
+    "correctOptionIndex": 1,
+    "text": "PUBG (PlayerUnknown's Battlegrounds) oyununa ismini veren ve Battle Royale türünün fikir babası sayılan \"PlayerUnknown\" lakaplı geliştiricinin gerçek adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Japonya",
+      "Amerika Birleşik Devletleri",
+      "Güney Kore",
+      "Sovyetler Birliği (Rusya)"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Tüm zamanların en çok bilinen bulmaca oyunu Tetris, 1984 yılında ilk olarak hangi ülkede geliştirilmiştir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Harry Mason",
+      "Heather Mason",
+      "James Sunderland",
+      "Travis Grady"
+    ],
+    "correctOptionIndex": 2,
+    "text": "PlayStation'ın korku klasiği Silent Hill 2'de, ölmüş eşinden bir mektup alarak kasabaya dönen ana karakterin adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Fortnite",
+      "PUBG",
+      "Apex Legends",
+      "Call of Duty: Warzone"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Kolay",
+    "text": "Hangi oyun, \"Battle Royale\" türünü popülerleştirerek milyonlarca oyuncuya ulaşan ve inşa etme mekaniğiyle öne çıkan Epic Games yapımıdır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Dota 2",
+      "Smite",
+      "League of Legends",
+      "Heroes of the Storm"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "Dünyanın en popüler MOBA oyunlarından biri olan ve her yıl \"Worlds\" adlı e-spor turnuvası düzenlenen Riot Games oyunu hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Masa oyunları şampiyonaları",
+      "Video oyunu turnuvaları",
+      "Geleneksel sporların dijital simülasyonları",
+      "Robot dövüşleri"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "\"E-spor\" terimi genellikle hangi tür rekabetçi etkinlikleri tanımlamak için kullanılır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Bethesda",
+      "Naughty Dog",
+      "Rockstar Games",
+      "Mojang"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Kolay",
+    "text": "Minecraft oyununun yaratıcısı olan ve daha sonra Microsoft tarafından satın alınan stüdyonun adı nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Sony",
+      "Nintendo",
+      "Sega",
+      "Microsoft"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Kolay",
+    "text": "İlk PlayStation konsolu hangi teknoloji devi tarafından piyasaya sürülmüştür?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Combat Strike: Global Operations",
+      "Counter-Strike: Global Offensive",
+      "Counter-Shoot: Ground Operations",
+      "Call Strike: Global Offensive"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "\"CS:GO\" olarak bilinen dünyaca ünlü rekabetçi nişancı oyununun açılımı nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "New Player Control",
+      "No Playable Character",
+      "Non-Player Character",
+      "Next Player Character"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "Oyun dünyasında oyuncunun kontrol etmediği karakterlere verilen isim olan \"NPC\" teriminin açılımı nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Xbox",
+      "Nintendo",
+      "PlayStation",
+      "Sega"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "Hangi oyun konsolu serisi, \"Super Mario\" ve \"The Legend of Zelda\" gibi ikonik serilere ev sahipliği yapmaktadır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Epic Games Store",
+      "Origin",
+      "Uplay",
+      "Steam"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Kolay",
+    "text": "Yıllardır piyasada olan ve \"Gabe Newell\" tarafından kurulan Valve şirketinin oyun dağıtım platformunun adı nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "EA Sports FC",
+      "EA Soccer",
+      "Pro Evolution Soccer",
+      "eFootball"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Kolay",
+    "text": "Futbol oyunları dendiğinde akla gelen ve yıllarca \"FIFA\" adıyla çıkıp sonradan isim değiştiren EA Sports oyun serisinin yeni adı nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Netflix",
+      "Spotify",
+      "Twitch",
+      "Discord"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "E-spor dünyasında oyuncuların genellikle yeteneklerini sergilediği, internet üzerinden canlı yayın yapılan en popüler platform hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Valorant",
+      "Counter-Strike",
+      "Overwatch",
+      "Rainbow Six Siege"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "Hangi e-spor oyunu, teröristler ve anti-teröristler arasında bomba kurma veya rehine kurtarma görevlerine dayanır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Arcade (Atari Salonu) Makineleri",
+      "Game Boy",
+      "PlayStation 1",
+      "Commodore 64"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Kolay",
+    "text": "\"Pac-Man\" oyunu ilk olarak hangi oyun platformunda popülerlik kazanmıştır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Şehir kurma",
+      "Hayatta kalma",
+      "Yaşam simülasyonu",
+      "Aksiyon-Macera"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "\"The Sims\" serisi, oyunculara hangi tür bir deneyim sunmasıyla tanınır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Good Game (İyi Oyun)",
+      "Get Going (Devam Et)",
+      "Great Guy (Harika Adam)",
+      "Game Over (Oyun Bitti)"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Kolay",
+    "text": "\"Gamer\" (Oyuncu) kültüründe rekabetçi maçların sonunda centilmenlik amacıyla sıkça kullanılan \"GG\" kısaltmasının anlamı nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Fall Guys",
+      "Phasmophobia",
+      "Rust",
+      "Among Us"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Kolay",
+    "text": "2020 yılında pandemi döneminde büyük bir fenomen haline gelerek oyuncuların uzay gemisinde haini bulmaya çalıştığı oyun hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "MOBA",
+      "Battle Royale",
+      "MMORPG",
+      "Otomobil Yarışı"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "Mobil e-sporun en büyük temsilcilerinden biri olan \"PUBG Mobile\" hangi oyun türünün bir örneğidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Dota 2",
+      "League of Legends",
+      "Fortnite",
+      "CS:GO"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Orta",
+    "text": "E-spor tarihindeki en büyük ödül havuzlarından birine sahip olan \"The International\" turnuvası, hangi oyun için düzenlenmektedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Sony GameCube",
+      "PlayStation 64",
+      "Nintendo PlayStation (SNES-CD)",
+      "Super Sony System"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Orta",
+    "text": "Nintendo ile yollarını ayıran Sony'nin kendi konsolunu (PlayStation) üretmesine yol açan ve iptal edilen ortak konsol projesinin adı neydi?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Cyberpunk",
+      "The Witcher",
+      "The Elder Scrolls",
+      "Dragon Age"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "\"Geralt of Rivia\" karakterinin başrolde olduğu ve CD Projekt Red tarafından geliştirilen ödüllü RPG serisi hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Pac-Man",
+      "Space Invaders",
+      "Pong",
+      "E.T. the Extra-Terrestrial"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Orta",
+    "text": "1983 yılındaki \"Kuzey Amerika Video Oyunu Krizi\"ne yol açtığı düşünülen ve binlerce kopyasının çöle gömüldüğü efsanesi yıllar sonra doğrulanan Atari 2600 oyunu hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Xbox (Orijinal)",
+      "PlayStation 2",
+      "Nintendo 64",
+      "Sega Dreamcast"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Orta",
+    "text": "İlk \"Halo\" oyunu (Halo: Combat Evolved), hangi oyun konsolunun çıkış oyunu olarak piyasaya sürülmüştür ve konsolun başarısında büyük rol oynamıştır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Gen.G",
+      "T1 (SK Telecom T1)",
+      "Fnatic",
+      "G2 Esports"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "League of Legends Dünya Şampiyonası'nı en çok kazanan ve efsanevi oyuncu \"Faker\"ı bünyesinde barındıran Güney Koreli e-spor takımı hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Team Fortress 2",
+      "Valorant",
+      "Overwatch",
+      "Apex Legends"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Orta",
+    "text": "Blizzard Entertainment tarafından geliştirilen ve kahraman tabanlı nişancı (hero shooter) türünü e-spor arenasında popülerleştiren 2016 yapımı oyun hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Dövüş Oyunları",
+      "FPS Oyunları",
+      "Strateji Oyunları",
+      "Kart Oyunları"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Orta",
+    "text": "Dünya çapında büyük bir rekabete sahne olan EVO (Evolution Championship Series) turnuvaları hangi oyun türüne odaklanmaktadır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "RuneScape",
+      "Guild Wars",
+      "Final Fantasy XIV",
+      "World of Warcraft"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Orta",
+    "text": "2004 yılında piyasaya sürülen ve MMORPG türünün en ikonik, en çok aboneye ulaşan oyunlarından biri hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Link",
+      "Mario",
+      "Donkey Kong",
+      "Kirby"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "Konsol savaşlarının en hararetli yaşandığı 90'lı yıllarda, Sega'nın \"Sonic the Hedgehog\" karakteri, Nintendo'nun hangi karakterine doğrudan rakip olarak konumlandırılmıştır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Metal Gear Solid V",
+      "Silent Hills",
+      "Death Stranding",
+      "Alan Wake"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Orta",
+    "text": "\"Kojima Productions\" tarafından geliştirilen ve oyun dünyasında oyuncular tarafından genellikle \"Yürüme Simülasyonu\" olarak nitelendirilen, kargo taşıma odaklı oyun hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Counter-Strike",
+      "Call of Duty",
+      "Battlefield",
+      "Halo"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Orta",
+    "text": "E-spor arenasında \"AWP\" (Arctic Warfare Police) kısaltmasıyla bilinen ve tek atışta rakibi indirebilen ikonik keskin nişancı tüfeği hangi oyun serisiyle özdeşleşmiştir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Rusça (\"Yıldız Savaşçıları\")",
+      "Latince (\"Doğuştan Kazananlar\")",
+      "İsveççe (\"Kuzeyin Kralı\")",
+      "İngilizce (\"Donanma Zaferi\")"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "E-spor organizasyonu olan \"Natus Vincere\" (Na'Vi) takımının adı hangi dilden gelmektedir ve anlamı nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Age of Empires",
+      "Command & Conquer",
+      "Warcraft III",
+      "StarCraft"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Orta",
+    "text": "Hangi oyun, Gerçek Zamanlı Strateji (RTS) türünün mihenk taşlarından biri olup, Güney Kore'de bir zamanlar adeta ulusal bir e-spor fenomenine dönüşmüştür?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Demon's Souls",
+      "Dark Souls",
+      "Bloodborne",
+      "Sekiro: Shadows Die Twice"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Orta",
+    "text": "\"Souls-like\" (Souls benzeri) oyun türünü başlatan ve zorluğuyla ün salan FromSoftware firmasına ait oyunların ilki hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Apex Legends",
+      "Overwatch",
+      "Valorant",
+      "Paladins"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Orta",
+    "text": "Riot Games'in 2020 yılında çıkardığı, karakterlerin kendine has yetenekleri ile taktiksel nişancı mekaniklerini harmanlayan popüler e-spor oyunu hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "First Player System",
+      "Frames Per Second (Saniye Başına Kare)",
+      "Fast Processor Speed",
+      "Free Play State"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "Oyun dünyasında teknik bir terim olarak kullanılan \"FPS\" kısaltması (örneğin \"FPS'im düştü\" derken) ne anlama gelir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "MIT - 1000 Dolar Nakit Ödül",
+      "Harvard Üniversitesi - Yeni Bir Bilgisayar",
+      "Stanford Üniversitesi - 1 Yıllık Rolling Stone Dergisi Aboneliği",
+      "Oxford Üniversitesi - Altın Kupa"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Zor",
+    "text": "1972 yılında ilk resmi e-spor turnuvası olarak kabul edilen ve \"Spacewar!\" oyunu üzerinden düzenlenen turnuvanın galibine ödül olarak ne verilmiştir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Magnavox Odyssey",
+      "Atari 2600",
+      "ColecoVision",
+      "Intellivision"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Zor",
+    "text": "Dünyanın ticari olarak piyasaya sürülen ilk ev tipi video oyun konsolu olan ve Ralph Baer tarafından tasarlanan cihazın adı nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Yasuo",
+      "Lee Sin",
+      "Zed",
+      "Riven"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "League of Legends e-spor tarihinde \"InSec Hareketi\" (InSec kick) olarak bilinen, hedefi takım arkadaşlarının arasına fırlatmaya dayalı ikonik mekanik hangi şampiyonla özdeşleşmiştir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Half-Life 3",
+      "Half-Life: Source 2",
+      "Half-Life: Gordon's Return",
+      "Half-Life: Alyx"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Zor",
+    "text": "Valve tarafından geliştirilen ve sanal gerçeklik (VR) oyunculuğu için devrim niteliğinde olduğu kabul edilen, yıllar sonra çıkan yeni Half-Life oyununun adı nedir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Ninjas in Pyjamas",
+      "Astralis",
+      "Fnatic",
+      "Natus Vincere"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Zor",
+    "text": "Counter-Strike e-spor tarihinde arka arkaya 87 harita kazanarak (LAN turnuvalarında) kırılması güç bir rekora imza atan ve \"NiP Magic\" efsanesini başlatan takım hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Contra",
+      "Metal Gear",
+      "Gradius",
+      "Castlevania"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Zor",
+    "text": "Dünyaca ünlü oyun yapımcısı Hideo Kojima'nın ilerleyen yıllarda popüler kültür ikonu haline gelen \"Konami Kodu\"nu ilk kez kullandığı oyun hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Tekken 5 (Kazuya vs. Heihachi)",
+      "Street Fighter III: 3rd Strike (Ken vs. Chun-Li)",
+      "Super Smash Bros. Melee (Fox vs. Falco)",
+      "Mortal Kombat II (Scorpion vs. Sub-Zero)"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "\"Daigo Parry\" veya \"Evo Moment 37\" olarak bilinen efsanevi e-spor anı, hangi dövüş oyununda ve hangi karakterler arasında yaşanmıştır?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Sadece polis veya hırsız olup birbirlerini kovalıyorlardı",
+      "Sadece pizza kuryesi olup zamanla yarışıyorlardı",
+      "Sadece yasadışı sokak yarışçıları olarak yarışıyorlardı",
+      "Sadece banka soyguncuları olarak plan yapıyorlardı"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Zor",
+    "text": "İlk \"Grand Theft Auto\" (GTA) oyunu geliştirilirken oyunun orijinal konsepti \"Race'n'Chase\" adlı bir projeydi. Bu projede oyuncuların temel amacı neydi?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "1 Milyon Dolar nakit para",
+      "Id Software şirketinden hisse",
+      "Hayat boyu sürecek Mountain Dew sponsorluğu",
+      "John Carmack'in Ferrari 328 GTS otomobili"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Zor",
+    "text": "1997 yılında e-sporun temel taşlarından sayılan Red Annihilation \"Quake\" turnuvasının birincisi Dennis \"Thresh\" Fong'a ödül olarak ne verilmiştir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Alexey Pajitnov",
+      "Shigeru Miyamoto",
+      "Gunpei Yokoi",
+      "Ken Kutaragi"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Zor",
+    "text": "Dünyanın en çok satan oyunlarından biri olan Tetris'in yaratıcısı olan ve oyunu Sovyetler Birliği döneminde geliştiren bilgisayar mühendisi kimdir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Pong",
+      "Adventure",
+      "Asteroids",
+      "Pitfall!"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "Oyun geliştiricisi Warren Robinett'in adını gizlediği ve dünyanın ilk \"Paskalya Yumurtası\" (Easter Egg) barındıran video oyunu olarak tarihe geçen 1980 yapımı Atari 2600 oyunu hangisidir?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Magnus",
+      "Earthshaker",
+      "Axe",
+      "Enigma"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Zor",
+    "text": "Dota 2 The International 2018 turnuvasında OG takımından \"Ceb\"in efsanevi bir şekilde maçı çevirmesini sağlayan ve oyun içinde de özel bir ses hattı (voice line) olan kahramanı hangisiydi?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Sony",
+      "Microsoft",
+      "Sega",
+      "Nintendo"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Zor",
+    "text": "Hangi oyun şirketi, topluluk tarafından yaratılan \"Project M\" adlı popüler bağımsız modun resmi turnuvalarda oynanmasını engellemiş ve geliştirilmesini dolaylı yoldan durdurmuştur?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Jumpman",
+      "Plumber",
+      "Mr. Video",
+      "Carpenter"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Zor",
+    "text": "Orijinal \"Donkey Kong\" (1981) atari oyununda, daha sonra tüm dünyada \"Mario\" olarak tanınacak olan ana karakterin oyun içindeki ilk adı neydi?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Rust",
+      "DayZ",
+      "H1Z1",
+      "Escape from Tarkov"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "Hangi popüler oyun, başlangıçta \"Arma 2\" adlı askeri simülasyon oyunu için yaratılan bir \"zombi hayatta kalma\" moduyken daha sonra bağımsız bir oyuna dönüşmüştür?"
+  },
+  {
+    "category": "Oyun Dünyası ve E-Spor",
+    "options": [
+      "Esports Integrity Commission (ESIC)",
+      "FIFA E-sports Committee",
+      "Uluslararası Olimpiyat Komitesi (IOC)",
+      "Global Esports Federation (GEF)"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Zor",
+    "text": "E-sporlarda performans artırıcı madde (doping) kullanımına karşı kurulan ve maç şikeleri gibi konularda da e-sporun temiz kalması için çalışan bağımsız kurumun adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Gungnir",
+      "Mjölnir",
+      "Gleipnir",
+      "Hofund"
+    ],
+    "correctOptionIndex": 1,
+    "text": "İskandinav mitolojisinde gök gürültüsü tanrısı Thor, gücünü iki katına çıkaran sihirli kemeri 'Megingjörd' ile bilinir. Thor'un bir diğer ünlü eşyası olan ve fırlattığında her zaman hedefini vurup eline geri dönen çekicinin adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ares",
+      "Poseidon",
+      "Hades",
+      "Apollo"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Roma mitolojisinde denizlerin, depremlerin ve atların tanrısı olan Neptün'ün, Yunan mitolojisindeki eşdeğeri hangi tanrıdır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Uranüs",
+      "Oceanus",
+      "Prometheus",
+      "Kronos"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Yunan mitolojisinde tüm tanrıların babası olarak kabul edilen Zeus, kendi babasını devirerek tahta geçmiştir. Zeus'un babası olan Titan'ın adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Kastor ve Polluks",
+      "Romulus ve Remus",
+      "Cain ve Abel",
+      "Aeneas ve Askanius"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Roma kuruluş efsanesine göre, bir dişi kurt tarafından emzirilerek hayatta kalan ve büyüdüklerinde Roma şehrinin temellerini atan ikiz kardeşler kimlerdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Athena",
+      "Artemis",
+      "Persephone",
+      "Hera"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Yunan mitolojisinde yeraltı dünyasına hükmeden Hades, kardeşi Zeus'un izniyle hangi tanrıçayı kaçırıp kendine eş yapmıştır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Yggdrasil",
+      "Nidavellir",
+      "Bifröst",
+      "Valhalla"
+    ],
+    "correctOptionIndex": 0,
+    "text": "İskandinav mitolojisinde dokuz diyarı birbirine bağlayan efsanevi ve devasa boyutlardaki dünya ağacının adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Kaburgasından",
+      "Başından",
+      "Baldırından",
+      "Kalbinden"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Savaş sanatını, stratejiyi ve bilgeliği temsil eden Yunan tanrıçası Athena, efsaneye göre Zeus'un vücudunun neresinden doğmuştur?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Afrodit",
+      "Demeter",
+      "Hestia",
+      "Persephone"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Roma mitolojisinde aşk ve güzellik tanrıçası olan Venüs'ün efsaneye göre deniz köpüğünden doğduğu kabul edilir. Venüs'ün Yunan mitolojisindeki karşılığı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Sağ kolunu",
+      "Sesini",
+      "Tek gözünü",
+      "Bir oğlunu"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İskandinav mitolojisinde baş tanrı olan Odin, sadece doğruları görebilen ve bilgelik veren Mimir'in Kuyusu'ndan su içebilmek için neyini feda etmiştir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Stheno",
+      "Euryale",
+      "Echidna",
+      "Medusa"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Yunan mitolojisinde gözlerine bakanları taşa çeviren gorgonlardan tek ölümlü olanı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Atlas",
+      "Prometheus",
+      "Epimetheus",
+      "Sisyphos"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Tanrılara ateş çalarak insanlara veren ve bunun sonucunda her gün karaciğeri bir kartal tarafından yenilmek üzere Kafkas dağlarında zincirlenen Yunan figürü kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Merkür",
+      "Apollon",
+      "Vulcan",
+      "Plüton"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Roma mitolojisinde güneş, şiir, müzik ve kehanet tanrısı olan, aynı zamanda Yunan mitolojisinde de aynı adla anılan tanrı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Loki",
+      "Baldr",
+      "Tyr",
+      "Heimdall"
+    ],
+    "correctOptionIndex": 0,
+    "text": "İskandinav mitolojisinde hilekârlığı ve şekil değiştirmesiyle ünlü olan, tanrılara sık sık sorun çıkaran ateş tanrısı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Khimaira",
+      "Minotor",
+      "Sentor",
+      "Kerberos"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Yunan mitolojisinde, Kral Minos'un karısı Pasiphae'nin bir boğayla çiftleşmesinden doğan, yarı insan yarı boğa şeklindeki canavarın adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Akhilleus",
+      "Agamemnon",
+      "Odysseus",
+      "Hektor"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Truva Savaşı efsanesinde, 'Truva Atı' planını yaparak şehrin düşmesini sağlayan kurnaz İthaka kralı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Dionysos",
+      "Pan",
+      "Hephaistos",
+      "Hermes"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Roma mitolojisinde şarap, eğlence ve vecd tanrısı Bacchus'un Yunan mitolojisindeki adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Fimbulwinter",
+      "Ragnarok",
+      "Völuspá",
+      "Gotterdammerung"
+    ],
+    "correctOptionIndex": 1,
+    "text": "İskandinav mitolojisinde kıyameti ve tanrıların alacakaranlığını temsil eden, dünyayı sona erdirecek olan büyük savaşın adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Sleipnir",
+      "Hrimfaxi",
+      "Skinfaxi",
+      "Grani"
+    ],
+    "correctOptionIndex": 0,
+    "text": "İskandinav mitolojisinde Odin'in sahip olduğu, denizlerin üzerinden ve havadan gidebilen, sekiz bacaklı efsanevi atın adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Orthros",
+      "Kerberos",
+      "Argos",
+      "Ladon"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Yunan mitolojisinde yeraltı tanrısı Hades'in diyarının girişini koruyan, ölülerin kaçmasını ve canlıların içeri girmesini engelleyen üç başlı köpeğin adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Terminus",
+      "Janus",
+      "Quirinus",
+      "Satürn"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Roma mitolojisinde başlangıçların, sonların, kapıların ve geçişlerin tanrısı olan, genellikle bir yüzü geçmişe bir yüzü geleceğe bakan iki yüzlü olarak tasvir edilen tanrı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Priamos",
+      "Hektor",
+      "Paris",
+      "Aeneas"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Truva Savaşı'nı başlatan olayda, 'En güzele' yazılı altın elmayı almak için Athena, Hera ve Afrodit arasında seçim yapmak zorunda kalan Truva prensi kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Nornlar",
+      "Valkürler",
+      "Disir",
+      "Aesir"
+    ],
+    "correctOptionIndex": 1,
+    "text": "İskandinav mitolojisinde cesurca savaşarak ölen savaşçıların ruhlarını seçen ve onları Odin'in salonu Valhalla'ya taşıyan savaşçı kadınlara ne ad verilir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Epimetheus",
+      "Kronos",
+      "Atlas",
+      "Okeanos"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Yunan mitolojisinde gökyüzünü ve gök kubbeyi omuzlarında taşımakla cezalandırılan, Herkül'ün görevlerinden birinde altın elmaları almasına yardım eden Titan kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Hyakinthos",
+      "Adonis",
+      "Narkissos",
+      "Ganimedes"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Kendi yansımasına aşık olan ve suyun başından ayrılamayarak orada eriyip nergis çiçeğine (narcissus) dönüşen Yunan mitolojisi karakteri kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Garmr",
+      "Fenrir",
+      "Sköll",
+      "Hati"
+    ],
+    "correctOptionIndex": 1,
+    "text": "İskandinav mitolojisinde, Loki'nin Angrboda adlı dev kadından olan çocuklarından biri olan ve Ragnarok sırasında Odin'i yutacak olan dev kurdun adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Helen",
+      "Andromeda",
+      "Pandora",
+      "Medea"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Yunan mitolojisinde ilk kadın olarak yaratılan, kendisine hediye edilen kutuyu (veya küpü) merakına yenik düşüp açtığında tüm kötülükleri ve hastalıkları dünyaya yayan kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Vesta",
+      "Ceres",
+      "Juno",
+      "Minerva"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Roma mitolojisinde ocak, aile ve ev ateşi tanrıçası olan, adına tapınaklarda hiç sönmeyen kutsal bir ateş yakılan tanrıça kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Freya",
+      "Frigg",
+      "Sif",
+      "Idunn"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İskandinav mitolojisinde Thor'un altından saçlara sahip olan eşi, bereket ve toprak tanrıçası kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Balmumu",
+      "Ağaç reçinesi",
+      "Kil",
+      "Zift"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Yunan efsanelerinde Daidalos, hapisten kaçmak için oğlu İkarus ve kendisine kanatlar yapmıştır. İkarus güneşe çok yaklaşınca kanatlarını bir arada tutan hangi madde erimiş ve düşüp ölmesine neden olmuştur?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Argonotlar - İason (Jason)",
+      "Akalar - Agamemnon",
+      "Mirmidonlar - Akhilleus",
+      "Spartalılar - Menelaos"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Altın Post'u bulmak amacıyla Argo adlı gemiyle yola çıkan kahramanların oluşturduğu gruba ve liderlerine ne ad verilir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Proserpina",
+      "Diana",
+      "Ceres",
+      "Flora"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Roma mitolojisinde yeraltı tanrısı Plüton'un eşi olan ve yılın altı ayını yeraltında geçirdiği için kış mevsimine neden olduğuna inanılan tanrıça (Yunan'daki Persephone) kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Buzdan bir geçit",
+      "Altın bir merdiven",
+      "Gökkuşağı",
+      "Devasa bir ağaç dalı"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İskandinav efsanelerinde tanrılar meclisi tarafından yaptırılan ve tanrıların yaşadığı Asgard ile insanların yaşadığı Midgard'ı birbirine bağlayan efsanevi köprü neyden oluşmuştur?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Perseus",
+      "Theseus",
+      "Odysseus",
+      "İason"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Yunan mitolojisinde denizkızları olarak bilinen Sirenlerin sesinden mürettebatının etkilenmemesi için kulaklarını balmumuyla tıkayan, ancak kendisini geminin direğine bağlatarak o büyüleyici şarkıyı dinleyen kahraman kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Satürn",
+      "Jüpiter",
+      "Vulcan",
+      "Plüton"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Romalılar savaşta elde ettikleri ganimetleri savaş tanrısı Mars'a adarlardı. Ancak, özellikle lejyonların standart taşıyıcı sembolü olan 'Aquila' (Kartal) hangi Roma baş tanrısını simgelerdi?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Gece ve Gündüz",
+      "Göz ve Kulak",
+      "Düşünce ve Hafıza",
+      "Kader ve Ölüm"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İskandinav mitolojisinde Odin'in omuzlarında duran, tüm dünyayı dolaşıp duyduklarını ve gördüklerini ona fısıldayan iki kuzgun 'Huginn' ve 'Muninn'in isimlerinin anlamı sırasıyla nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Sisyphos",
+      "Ixion",
+      "Phineus",
+      "Tantalos"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Yunan mitolojisinde tanrılara isyan ettiği için Tartaros'ta cezalandırılan, suya uzandığında suyun geri çekildiği, ağaçtaki meyveye uzandığında dalların yükseldiği, sonsuz bir açlık ve susuzluk çeken kral kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Göz kapaklarının üzerine",
+      "Ağzının içine",
+      "Avuçlarının arasına",
+      "Kalbinin üzerine"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Antik Roma inancında, ölülerin ruhlarını yeraltı nehri Styx üzerinden geçiren kayıkçı Charon'a geçiş ücretini ödeyebilmeleri için, cesedin neresine bir madeni para konulurdu?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ymir",
+      "Surtr",
+      "Thrym",
+      "Hrym"
+    ],
+    "correctOptionIndex": 1,
+    "text": "İskandinav mitolojisinde bereket tanrısı Freyr, dev kızı Gerd'e aşık olup elçisi Skirnir'e efsanevi kılıcını vererek Ragnarok'ta silahsız kalmıştır. Freyr'i Ragnarok'ta kendi kılıcı olmadığı için boynuzla savaşırken öldürecek olan ateş devi kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Lethe",
+      "Acheron",
+      "Styx",
+      "Phlegethon"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Yunan efsanelerinde büyük savaşçı Akhilleus'un zayıf noktasının sadece topuğu olmasının sebebi, annesi Thetis'in onu yenilmez yapmak için hangi nehre daldırmasıdır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Satürn",
+      "Quirinus",
+      "Faunus",
+      "Sylvanus"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Roma mitolojisinde Yunan karşılığı Kronos olan tarım ve tohum tanrısı, kendi adına düzenlenen ve kölelerin de geçici bir özgürlükle kutlamalara katılabildiği 'Saturnalia' şenlikleriyle bilinen tanrı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Midgard Yılanı Jörmungandr",
+      "Sekiz bacaklı at Sleipnir",
+      "Ejderha Nidhogg",
+      "Dev kurt Fenrir"
+    ],
+    "correctOptionIndex": 1,
+    "text": "İskandinav mitolojisinde Loki, Asgard duvarlarını inşa eden ustaya verilen süreyi geciktirmek için bir kısrak kılığına girmiş ve ustanın büyülü aygırı Svadilfari ile çiftleşmiştir. Bu birleşmeden doğan ve sonradan Odin'e hediye edilen yaratık hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Kirke",
+      "Kassandra",
+      "Hekate",
+      "Medea"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Yunan mitolojisinde kocasının ihanetine uğradıktan sonra, kocasından intikam almak için kendi öz çocuklarını öldüren ve Güneş Tanrısı Helios'un gönderdiği ejderhaların çektiği arabayla kaçan büyücü prenses kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Işık Elflerine",
+      "Vanir Tanrılarına",
+      "Kara Elflere (Cücelere)",
+      "Buz Devlerine"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İskandinav mitolojisinde tanrılar, giderek büyüyen ve tehlike saçan kurt Fenrir'i bağlamak için demir zincirler işe yaramayınca kırılmaz kordon 'Gleipnir'i kimlere yaptırmışlardır?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Zeus'un bir yıldırımı denize düşürmesiyle",
+      "Medusa'nın kesilen başından fışkıran kanlarla",
+      "Poseidon'un üç dişli yabasını kayaya vurmasıyla",
+      "Athena'nın bir zeytin ağacına can vermesiyle"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Yunan mitolojisinde Bellerophontes'in evcilleştirdiği ve sırtında ateş püskürten canavar Kimera ile savaştığı kanatlı at Pegasos, tam olarak neyin sonucunda doğmuştur?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Egeria",
+      "Juturna",
+      "Carmenta",
+      "Camilla"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Roma inancında Kral Numa Pompilius'a gizlice dini yasaları ve ritüelleri fısıldayan, onun ölümünün ardından gözyaşlarından bir pınar oluştuğuna inanılan su perisi (nympha) kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Gözlerinin alev alev yanması",
+      "Vücudunun bir yarısının canlı, diğer yarısının çürümüş olması",
+      "Kanatları olan devasa siyah bir ejderhaya benzemesi",
+      "Derisinin tamamen buzdan oluşması"
+    ],
+    "correctOptionIndex": 1,
+    "text": "İskandinav mitolojisinde ölüler diyarını yöneten Loki'nin kızı Hel'in fiziksel görünümündeki en ürkütücü özellik nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Yeryüzüne çıkana kadar hiç konuşmamak",
+      "Styx nehrinden geçerken lir çalmamak",
+      "Yeryüzü ışığını görene kadar arkasına dönüp eşine bakmamak",
+      "Yeraltı meyvelerinden hiçbir şey yememek"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Yunan mitolojisinde Orpheus, yılan sokması sonucu ölen karısı Eurydike'yi geri getirmek için yeraltı dünyasına iner. Hades ona bir şartla izin verir ama Orpheus kuralı çiğneyince eşini kaybeder. Bu şart neydi?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Kuzgun",
+      "Kartal",
+      "Kurt",
+      "Ayı"
+    ],
+    "correctOptionIndex": 1,
+    "text": "İskandinav mitolojisinde 'şiir şarabı', Kvasir adlı bilgenin kanından cüceler tarafından yapılmıştır. Bu büyülü şarabı devlerin elinden çalarak Asgard'a getiren Odin, kaçarken hangi hayvana dönüşmüştür?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Chloris",
+      "Aura",
+      "Selene",
+      "Eos"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Roma mitolojisinde batı rüzgarı Zephyrus tarafından kaçırılıp ona eş edildikten sonra çiçek ve bahar tanrıçasına (Flora'ya) dönüşen nympha'nın Yunan kökenli adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Elektra",
+      "Andromakhe",
+      "Hekabe",
+      "Kassandra"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Yunan mitolojisinde, kehanet yeteneğine sahip olan fakat Apollon'un bir laneti yüzünden söylediklerine hiç kimsenin asla inanmadığı Truva prensesi kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ergenekon Destanı",
+      "Göç Destanı",
+      "Yaratılış Destanı",
+      "Şu Destanı"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Kolay",
+    "text": "Türklerin demirden bir dağı eriterek hapsoldukları vadiden kurtulduklarını anlatan ve yeniden doğuşun sembolü olan destan hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Çift başlı kartal",
+      "Gök yeleli bozkurt",
+      "Kutsal geyik",
+      "Kanatlı at (Tulpar)"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "İslamiyet öncesi Türk destanlarından Oğuz Kağan Destanı'nda, seferleri sırasında Oğuz Kağan'a ordusunun önünde giderek yol gösteren kutsal varlık hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Bumin Kağan",
+      "Mete Han",
+      "Alp Er Tunga",
+      "Teoman"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "İran'ın milli destanı Şehname'de 'Afrasiyab' adıyla geçen, Saka Türklerinin efsanevi lideri ve kahramanı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Manas Destanı",
+      "Cengizname",
+      "Edige Destanı",
+      "Ural Batır"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Kolay",
+    "text": "Nesilden nesile aktarılarak günümüze ulaşan ve 'dünyanın en uzun destanı' unvanını taşıyan, Kırgızlara ait dünyaca ünlü destan hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Büyük bir kuraklığın başlaması",
+      "Komşu boylarla yaşanan savaşların kaybedilmesi",
+      "Kutsal 'Yada Taşı'nın (Kutlu Dağ) Çinlilere verilmesi",
+      "Yırtıcı hayvanların sürülere saldırması"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "Uygurlara ait Göç Destanı'nda, Türklerin anayurtlarını terk edip göç etmelerine neden olan temel olay nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Osiris",
+      "Ra",
+      "Set",
+      "Horus"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "Eski Mısır panteonunda gündüzleri gökyüzünde güneş kayığıyla seyahat ettiğine inanılan, tanrıların kralı kabul edilen baş tanrı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Osiris",
+      "Anubis",
+      "Thoth",
+      "Ptah"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Kolay",
+    "text": "Ölümün, dirilişin ve yeraltı dünyasının hakimi olan, mitolojiye göre kardeşi Set tarafından öldürüldükten sonra eşi İsis tarafından diriltilen Mısır tanrısı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Sobek",
+      "Amon",
+      "Horus",
+      "Khnum"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "Eski Mısır sanatında çoğunlukla şahin veya şahin başlı bir insan olarak tasvir edilen, firavunların dünyadaki temsilcisi sayıldığı gökyüzü tanrısı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Bastet",
+      "Anubis",
+      "Osiris",
+      "Sekhmet"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "Mumyalama ritüellerinin mucidi ve ölülerin ruhlarını yeraltı dünyasındaki yargı salonuna taşıyan çakal başlı Mısır tanrısı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Hathor",
+      "Neftis (Nephthys)",
+      "İsis (Isis)",
+      "Nut"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "Osiris'in kız kardeşi ve eşi olan, parçalanmış Osiris'i büyüyle bir araya getirerek oğlu Horus'a hamile kalan annelik ve şifa tanrıçası kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Set",
+      "Thoth",
+      "Ptah",
+      "Ra"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "Yazının, bilgeliğin ve Ay'ın tanrısı olarak bilinen, genellikle ibis kuşu veya babun başlı olarak resmedilen Mısır tanrısı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Enkidu",
+      "Gılgamış",
+      "Sargon",
+      "Hammurabi"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "Mezopotamya mitolojisinde ölümsüzlüğü aramak için yollara düşen ve tarihteki ilk yazılı destana adını veren efsanevi Uruk kralı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Humbaba",
+      "Utnapiştim",
+      "Enkidu",
+      "Lugalbanda"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "Gılgamış'ın gücünü dengelemek için tanrılar tarafından kilden yaratılan, başlangıçta vahşi bir adamken daha sonra Gılgamış'ın en yakın dostu olan karakterin adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Enlil",
+      "Enki",
+      "Marduk",
+      "Anu"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Kolay",
+    "text": "Sümer mitolojisinde Gök panteonunun başı ve tüm tanrıların atası sayılan, panteonun en yüce tanrısı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Enlil",
+      "Enki",
+      "Utu",
+      "Nanna"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "Sümerlerde tatlı suların (Abzu), zekanın, bilgeliğin ve yaratıcılığın tanrısı olarak kabul edilen tanrı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Akrep",
+      "Yılan",
+      "Aslan",
+      "Kartal"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Kolay",
+    "text": "Gılgamış ölümsüzlük bitkisini binbir zorlukla denizin dibinden çıkardıktan sonra, uyurken bu bitkiyi yiyip deri değiştirerek gençleşen ve bitkiyi ondan çalan hayvan hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Tsukuyomi",
+      "Susanoo",
+      "Amaterasu",
+      "İzanami"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Kolay",
+    "text": "Japon Şintoizm inancının en önemli figürü olan, Japon imparatorluk soyunun atası kabul edilen güneş tanrıçasının adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ülgen",
+      "Kayra Han",
+      "Erlik",
+      "Umay Ana"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "Altay/Yakut Yaratılış Destanı'nda evrenin yaratıcısı ve tanrıların en yücesi olarak kabul edilen, göğün 17. katında oturduğuna inanılan baş tanrı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Dağ, Deniz, Gök",
+      "Ay, Yıldız, Gök",
+      "Gün, Ay, Yıldız",
+      "Gök, Dağ, Deniz"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Orta",
+    "text": "Oğuz Kağan Destanı'nda Oğuz'un ilk eşinden (gökten inen ışık halesinden doğan kızdan) doğan ve 'Bozoklar' soyunu oluşturan üç oğlunun isimleri sırasıyla hangileridir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Bozkurt Destanı",
+      "Türeyiş Destanı",
+      "Şu Destanı",
+      "Yaratılış Destanı"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "Uygur hakanının olağanüstü güzellikteki iki kızını insanlarla evlendirmeye kıyamayıp tanrılara sunmak için bir kule yaptırması ve Tanrı'nın gökten kurt kılığında inerek kızlarla evlenmesini konu alan destan hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Şu Destanı",
+      "Alp Er Tunga Destanı",
+      "Göç Destanı",
+      "Attila Destanı"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Orta",
+    "text": "Büyük İskender'in Orta Asya'ya ilerleyişi sırasında Saka Türklerinin direnişini ve hükümdarlarının İskender ile mücadelesini anlatan ünlü destan hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Hıdırellez",
+      "Nevruz",
+      "Nardugan",
+      "Sabantuy"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "'Ergenekon Destanı' motiflerinin Türk dünyasındaki mitolojik ve kültürel yansıması olarak, demir dövme ritüelleri eşliğinde baharın gelişinin kutlandığı kadim bayram hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Manas Destanı",
+      "Edige Destanı",
+      "Koblandı Batır",
+      "Alpamış Destanı"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "Altın Orda Hanlığı'nın parçalanma sürecini ve Nogayların bağımsızlık mücadelesini anlatan, adını dönemin önemli bir kahramanından alan destan hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Duat",
+      "Ma'at",
+      "Nun",
+      "Benben"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Orta",
+    "text": "Mısır mitolojisine göre her şeyin ondan doğduğu, evrenin başlangıcındaki dipsiz, kaotik, karanlık ve ilksel suların adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Anubis",
+      "Sobek",
+      "Khonsu",
+      "Set (Seth)"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Orta",
+    "text": "Kardeşi Osiris'i kıskançlık yüzünden öldürüp bedenini 14 parçaya ayıran; fırtına, çöl ve kaosun kurnaz tanrısı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ammit",
+      "Apofis",
+      "Sfenks",
+      "Bennu"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Orta",
+    "text": "Yeraltı dünyasındaki yargılama sırasında terazide kalbi doğruluk tüyünden ağır gelen günahkarların ruhlarını anında yutan; timsah, aslan ve su aygırı karışımı korkunç yaratığın adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Apep (Apofis)",
+      "Uraeus",
+      "Wadjet",
+      "Mehen"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Orta",
+    "text": "Güneş tanrısı Ra'nın gece yeraltı dünyasından geçerken devasa güneş kayığını yutmaya çalışan ve her gece yeniden mağlup edilmesi gereken dev kaos yılanı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Sekhmet",
+      "Bastet",
+      "Hathor",
+      "Mut"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "Eski Mısır'da ev hayatının ve kedilerin koruyucusu olan; ev kedilerinin firavunlar kadar saygı görmesinin en büyük nedeni sayılan savaşçı ruhlu tanrıça kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ma'at",
+      "İsis",
+      "Neith",
+      "Tefnut"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Orta",
+    "text": "Evrensel düzeni, hakikati, adaleti ve dengeyi temsil eden, genellikle başında bir devekuşu tüyüyle tasvir edilen ve ruhların yargılanmasında bu tüyün referans alındığı tanrıça kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Enmerkar",
+      "Utnapiştim",
+      "Humbaba",
+      "Dumuzi"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "Gılgamış Destanı'nda büyük tufandan kurtularak tanrılar tarafından kendisine ve eşine ölümsüzlük bahşedilen, 'Sümerlerin Nuh'u' olarak da bilinen bilge kişinin adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ninlil",
+      "Ereşkigal",
+      "Ninhursag",
+      "İnanna (İştar)"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Orta",
+    "text": "Gılgamış'ın kendi aşkını reddetmesi üzerine öfkelenerek Uruk şehrinin üzerine yıkım getirmesi için 'Gök Boğası'nı yollayan Sümer aşk ve savaş tanrıçası kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ganeşa",
+      "Hanuman",
+      "Şiva",
+      "İndra"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "Hint destanı Ramayana'da, kötü niyetli kral Ravana tarafından kaçırılan Sita'yı kurtarması için Prens Rama'ya ordusuyla yardım eden ve sadakatiyle bilinen maymun tanrısının adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Evrene güzellik ve estetik katmak",
+      "Tanrılara ibadet edecek varlıklar oluşturmak",
+      "Tanrıların yapmak zorunda olduğu ağır işleri devralmaları ve onlara hizmet etmeleri",
+      "Kötülükle savaşacak bir ordu kurmak"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Orta",
+    "text": "Sümer mitolojisine göre tanrıların insanları topraktan yaratmasının asıl, temel amacı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Avatar",
+      "Trimurti",
+      "Mokşa",
+      "Samsara"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Orta",
+    "text": "Hinduizmde evrenin döngüsünü sağlayan üç temel tanrının (Brahma: Yaratıcı, Vişnu: Koruyucu, Şiva: Yokedici) oluşturduğu üçlü ilahi yapıya verilen Sanskritçe isim nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Paris Milli Kütüphanesi",
+      "Londra British Library",
+      "Vatikan Kütüphanesi",
+      "St. Petersburg Doğu Yazmaları Enstitüsü"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Zor",
+    "text": "Oğuz Kağan Destanı'nın günümüze ulaşan ve Uygur harfleriyle yazılmış en eski, en önemli fakat başı ve sonu eksik olan yegâne yazması bugün hangi kütüphanede muhafaza edilmektedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Babür Şah",
+      "Ebülgazi Bahadır Han",
+      "Kaşgarlı Mahmud",
+      "Şeybani Han"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "17. yüzyılda yaşamış olan ve Ergenekon Destanı'nın en detaylı yazılı varyantlarından birini kaleme aldığı 'Şecere-i Türk' (Türk'ün Soy Kütüğü) adlı eseriyle tanınan Hive Hanı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "İyeler",
+      "Abası (Abaası)",
+      "Çor",
+      "Albastı"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "Yakut (Saha) Türklerinin mitolojisinde, yeraltı dünyasında yaşayan, insanlara hastalık ve kötülük getiren, başlarında Erlik Han'ın bulunduğu kötü ruhlara ne ad verilir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Erlik'in köpeğe altın bir post hediye etmesi",
+      "Köpeğin soğuktan donmamak için Tanrı'dan tüy dilemesi",
+      "Erlik'in köpeğin üzerine tükürmesi ve tükürüğün tüye dönüşmesi",
+      "Tanrı Ülgen'in köpeği cezalandırmak için onu lanetlemesi"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Zor",
+    "text": "Altay Yaratılış Destanı'nda Tanrı Ülgen, insanı yarattıktan sonra bekçilik yapması için tüysüz bir köpek yaratır. Köpeğin günümüzdeki tüylü haline gelmesinin destandaki mitolojik sebebi nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Bengi Taşı",
+      "Yada (Yad) Taşı",
+      "Balbal",
+      "Ötüken Taşı"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "Eski Türk mitolojisinde kamların (şamanların) büyü yoluyla yağmur, kar veya fırtına yağdırmak için kullandığına inanılan 'kutsal taşın' adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Bükrek",
+      "Tulpar",
+      "Tepegöz",
+      "Yelbegen"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Zor",
+    "text": "Dede Korkut Hikâyeleri'nde anlatılan, Kaf Dağı'ndan gelen bir peri kızı ile bir çobanın birleşmesinden doğan, sihirli bir yüzüğe sahip, derisine ok ve kılıç işlemeyen efsanevi canavar kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Geb ve Nut",
+      "Osiris ve İsis",
+      "Shu ve Tefnut",
+      "Set ve Neftis"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Zor",
+    "text": "Mısır'daki Heliopolis yaratılış mitine göre, yaratıcı tanrı Atum'un (Ra) ilk önce yarattığı; hava ve nemi temsil eden ilk tanrısal çift hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ptah",
+      "Khnum",
+      "Amon",
+      "Sobek"
+    ],
+    "correctOptionIndex": 0,
+    "difficulty": "Zor",
+    "text": "Memfis teolojisine göre, evreni sadece kalbiyle hayal edip diliyle kelimeleri söyleyerek (düşünce ve sözcükle) yarattığına inanılan zanaatkar tanrı kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Nil Levrekleri",
+      "Oksirinkus (Fil balığı)",
+      "Kedi balığı",
+      "Tilapia (Nil Çipurası)"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "Osiris'in bedeni Set tarafından parçalandığında İsis bir parçayı bulamaz. Mitolojiye göre bu eksik parçayı yiyen ve bu nedenle Mısırlılarca lanetli/kutsal sayılan balık türü hangisidir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Osiris",
+      "İsis",
+      "Anubis",
+      "Set"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Zor",
+    "text": "Bilgelik tanrısı Thoth, Ay tanrısı Khonsu ile zar oynayarak gökyüzü tanrıçası Nut için 5 ekstra gün kazanır. Bu 5 ekstra günde (Epagomenal günler) doğan tanrılar arasında hangisi yoktur?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Mut",
+      "Sekhmet",
+      "Wadjet",
+      "Serket"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "Hathor'un insanlığı yok etmesi için gönderildiğinde kana susamış aslan başlı bir forma bürünmüş hali olan; kırmızıya boyanmış bira içirilerek durdurulabilen tanrıça kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Lugalbanda Destanı",
+      "Atrahasis Destanı",
+      "Enuma Eliş",
+      "Erra Destanı"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Zor",
+    "text": "Babil'in ulusal yaratılış destanı olan ve genç fırtına tanrısı Marduk'un, tuzlu su ejderhası Tiamat'ı destansı bir savaşta ikiye bölerek göğü ve yeri yaratmasını anlatan eserin adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Nüwa",
+      "Fuxi",
+      "Pangu",
+      "Shennong"
+    ],
+    "correctOptionIndex": 2,
+    "difficulty": "Zor",
+    "text": "Çin mitolojisinde kaotik bir kozmik yumurtanın içinde 18.000 yıl uyuyan, uyandığında Yin ve Yang'ı ayıran, öldüğünde bedeniyle dünyayı şekillendiren dev kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Ninlil",
+      "Ereşkigal",
+      "Ninhursag",
+      "Tiamat"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "Mezopotamya panteonunda yeraltı dünyasının (Kur) karanlık kraliçesi olan, kız kardeşi İnanna'nın yeraltına iniş mitinde onu yargılayıp cesede çeviren tanrıça kimdir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Rigveda",
+      "Upanişadlar",
+      "Ramayana",
+      "Bhagavad Gita"
+    ],
+    "correctOptionIndex": 3,
+    "difficulty": "Zor",
+    "text": "Antik Hint destanı Mahabharata'nın içinde yer alan; savaş meydanında Prens Arjuna ile arabacısı kılığına girmiş Tanrı Krişna arasında geçen felsefi diyaloğu anlatan metnin adı nedir?"
+  },
+  {
+    "category": "Mitoloji ve Efsaneler",
+    "options": [
+      "Mithra",
+      "Ehrimen (Angra Mainyu)",
+      "Zurvan",
+      "Avesta"
+    ],
+    "correctOptionIndex": 1,
+    "difficulty": "Zor",
+    "text": "Eski İran ve Pers mitolojisine dayanan Zerdüştlük inancında; yüce tanrı Ahura Mazda'nın ebedi ve ezeli düşmanı olan karanlık, yalan ve kötülük ruhu kimdir?"
+  },
+  {
+    "options": [
+      "Tarık Akan",
+      "Halit Akçatepe",
+      "Kemal Sunal",
+      "Münir Özkul"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "Yeşilçam'ın efsanevi 'Hababam Sınıfı' serisinde saf ve iyi niyetli 'İnek Şaban' karakterine hayat veren usta oyuncumuz kimdir?"
+  },
+  {
+    "options": [
+      "Volkan Sütçüoğlu",
+      "Gaffur",
+      "Şahika Koçarslanlı",
+      "Burhan Altıntop"
+    ],
+    "correctOptionIndex": 3,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "'Avrupa Yakası' dizisinde 'Ben aslında Nişantaşı çocuğuyum' diyerek akıllara kazınan ve Engin Günaydın tarafından canlandırılan karakter kimdir?"
+  },
+  {
+    "options": [
+      "Sirke",
+      "Limon",
+      "Koruk",
+      "Kaya Tuzu"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "Klasikleşmiş 'Neşeli Günler' filmindeki meşhur turşu suyu tartışmasında, Münir Özkul'un canlandırdığı Kazım Efendi turşunun en iyi neyden yapılacağını savunur?"
+  },
+  {
+    "options": [
+      "Sevgi tutkuydu",
+      "Sevgi kaderdi",
+      "Sevgi emekti",
+      "Sevgi sabırdı"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "Cengiz Aytmatov uyarlaması 'Selvi Boylum Al Yazmalım' filminin finalinde 'Sevgi neydi?' sorusuna verilen o unutulmaz cevap hangisidir?"
+  },
+  {
+    "options": [
+      "Peyker Yöreoğlu",
+      "Bihter Ziyagil",
+      "Firdevs Yöreoğlu",
+      "Nihal Ziyagil"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "'Aşk-ı Memnu' dizisinde Beren Saat'in başarıyla canlandırdığı, dizinin sonunda trajik bir şekilde intihar eden ikonik karakter kimdir?"
+  },
+  {
+    "options": [
+      "Süleyman Çakır",
+      "Polat Alemdar",
+      "Memati Baş",
+      "Aslan Akbey"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "Oktay Kaynarca'nın oyunculuğuyla adeta bir fenomene dönüşen ve ölümü sonrasında gıyabında cenaze namazları kılınan 'Kurtlar Vadisi' karakteri kimdir?"
+  },
+  {
+    "options": [
+      "Şener Şen",
+      "Kemal Sunal",
+      "İlyas Salman",
+      "Erdağ Yenel"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "'Çöpçüler Kralı' filminde saf aşkıyla bilinen ve 'Parka gidecekmiş iki gözümün çiçeği' repliğini söyleyen karakteri kim canlandırmıştır?"
+  },
+  {
+    "options": [
+      "Erdal Bakkal",
+      "Yavuz Hırsız",
+      "İsmail Abi",
+      "Mecnun Çınar"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "TRT'nin sevilen absürt komedi dizisi 'Leyla ile Mecnun'da, kireçburnu sahilinde sürekli ufka bakıp bir gemi bekleyen meşhur karakter kimdir?"
+  },
+  {
+    "options": [
+      "Hortlak",
+      "Gulyabani",
+      "Karabasan",
+      "Öcü"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "'Süt Kardeşler' filminde konağın halkını korkutmak için uydurulan ve Şaban'ın gece karanlığında karşısına çıkan devasa, efsanevi canavarın adı nedir?"
+  },
+  {
+    "options": [
+      "Şener Şen",
+      "İlyas Salman",
+      "Münir Özkul",
+      "Uğur Yücel"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "'Banker Bilo' filminde, 'Yaptım ama bir sor niye yaptım?' diyerek Bilo'yu her defasında kandıran Kurnaz Maho karakterini hangi usta isim oynamıştır?"
+  },
+  {
+    "options": [
+      "Haluk Bilginer",
+      "Güven Kıraç",
+      "Uğur Yücel",
+      "Özkan Uğur"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "Türk sinemasının mihenk taşlarından 'Eşkıya' filminde, Şener Şen'in canlandırdığı Baran karakterine İstanbul'da yoldaşlık eden 'Cumali'yi kim oynamıştır?"
+  },
+  {
+    "options": [
+      "Çöpçü (Çöpçüler Kralı)",
+      "Kapıcı (Kapıcılar Kralı)",
+      "Bekçi (Bekçiler Kralı)",
+      "Öğrenci (Hababam Sınıfı)"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "Kemal Sunal'ın hayat verdiği ve kendisine Altın Portakal Film Festivali'nde En İyi Erkek Oyuncu ödülünü getiren efsanevi karakterin mesleği (filmi) hangisidir?"
+  },
+  {
+    "options": [
+      "İlyas Salman",
+      "Ahmet Mekin",
+      "Şener Şen",
+      "Ayşen Gruda"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "'Çiçek Abbas' filminde, Abbas'ın baş düşmanı ve âşık olduğu kızı elinden almaya çalışan paragöz minibüs şoförü 'Şakir' karakterini kim canlandırmıştır?"
+  },
+  {
+    "options": [
+      "Aşçı",
+      "Şoför",
+      "Bahçıvan",
+      "Uşak"
+    ],
+    "correctOptionIndex": 3,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "'Tosun Paşa' filminde, Yeşil Vadi'yi alabilmek için Tellioğlu ailesi tarafından sahte Tosun Paşa kılığına sokulan karakterin konaktaki asıl görevi nedir?"
+  },
+  {
+    "options": [
+      "Ayla",
+      "Sevim",
+      "Nazan",
+      "Mine"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "Efsanevi 'Bizimkiler' dizisinde, elinde içkisiyle sürekli camdan sarkan ve eşine her defasında '... Koş!' diye seslenen Cemil'in eşinin adı nedir?"
+  },
+  {
+    "options": [
+      "Gerçek değildir",
+      "Ağır yüktür",
+      "Sır değildir",
+      "Tehlikedir"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "'Kurtlar Vadisi' dizisinde Aslan Akbey'in, Polat Alemdar'a söylediği ve dizinin en meşhur aforizmalarından biri olan cümlenin sonu nasıl biter: 'İki kişinin bildiği sır...'"
+  },
+  {
+    "options": [
+      "Şoför",
+      "Makinist",
+      "Kaptan",
+      "Pilot"
+    ],
+    "correctOptionIndex": 3,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "text": "'Gülen Gözler' filminde, Şener Şen'in canlandırdığı 'Vecihi' karakterinin sürekli evden kovulmasına rağmen uçakla evin üzerinden geçtiği asıl mesleği nedir?"
+  },
+  {
+    "options": [
+      "Hamallık",
+      "Çiğ köftecilik",
+      "Bulaşıkçılık",
+      "Seyyar satıcılık"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Şener Şen'in unutulmaz oyunculuğuyla hafızalara kazınan 'Züğürt Ağa' filminde, köyünü satıp İstanbul'a gelen Ağa'nın en son geçimini sağlamak için yaptığı iş nedir?"
+  },
+  {
+    "options": [
+      "Ali Candan",
+      "Efe Yakup Karahanlı",
+      "Aslan Akbey",
+      "Doğu Eşrefoğlu"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "'Kurtlar Vadisi' dizisinde, mafyanın içine sızması için yüzü değiştirilip yeni bir kimlik verilen Polat Alemdar'ın estetik ameliyat olmadan önceki gerçek adı nedir?"
+  },
+  {
+    "options": [
+      "Ali Nazik",
+      "İbrahim Tatlı",
+      "Osman Aga",
+      "Bekir"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Yavuz Turgul'un yönettiği 'Muhsin Bey' filminde, meşhur olmak için Urfa'dan İstanbul'a gelen ve Muhsin Bey'in saf sanıp yardım ettiği türkücü adayı karakter kimdir?"
+  },
+  {
+    "options": [
+      "Vakkas",
+      "Resul",
+      "Medet",
+      "Cemal"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "'İkinci Bahar' dizisinde, Şener Şen'in canlandırdığı Ali Haydar'ın baş belası olan, sürekli onu sabote etmeye çalışan karşı dükkandaki rakip kebapçının adı nedir?"
+  },
+  {
+    "options": [
+      "Bilo Ağa",
+      "Abbas Ağa",
+      "Maho Ağa",
+      "Zühtü Ağa"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "'Kibar Feyzo' filminde, Feyzo'nun sevdiği kızı alabilmek için başlık parası biriktirmeye çalıştığı ve sendikal hakları köye taşıdığı için mücadele ettiği feodal ağa kimdir?"
+  },
+  {
+    "options": [
+      "Zerrin",
+      "Vasfiye Teyze",
+      "Servet",
+      "Gülistan"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Gülse Birsel'in 'Yalan Dünya' dizisinde, başkalarının felaketlerinden trajikomik bir zevk alan ve 'Ne çektin be!' repliğiyle fenomenleşen karakter kimdir?"
+  },
+  {
+    "options": [
+      "Van",
+      "Hakkari",
+      "Şırnak",
+      "Mardin"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Yılmaz Erdoğan'ın yazıp yönettiği 'Vizontele' filminde, devlet tarafından televizyonun getirildiği ve halkın bu yeni icatla ilk kez tanıştığı ilimiz neresidir?"
+  },
+  {
+    "options": [
+      "Salih",
+      "Sadık",
+      "Deniz",
+      "Mustafa"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Çağan Irmak'ın duygu yüklü filmi 'Babam ve Oğlum'da, Ege'deki çiftliğe dönüş yapan ve babasına kollarını açarak 'Ona bir oda ver baba!' diye bağıran karakter kimdir?"
+  },
+  {
+    "options": [
+      "Buzdolabı",
+      "Şaban'ın şapkası",
+      "Bir heykelin içi",
+      "Bahçedeki kuyu"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Ertem Eğilmez'in absürt komedisi 'Şabanoğlu Şaban' filminde evde kaybolduğu için konak halkını birbirine katan meşhur elmasın bulunduğu son yer neresidir?"
+  },
+  {
+    "options": [
+      "Deli İdris",
+      "Çılgın Sedat",
+      "Komiser Avcı",
+      "Asım Kaptan"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Yavuz Turgul'un 'Av Mevsimi' filminde, Karadeniz ezgisi 'Hayde'yi söylerken sergilediği performansla akıllara kazınan Cem Yılmaz'ın canlandırdığı polis karakterinin lakabı ve adı nedir?"
+  },
+  {
+    "options": [
+      "Cengiz - Kumarbaz",
+      "Ömer - Tamirci",
+      "Kerpeten Ali - Tetikçi",
+      "Ramiz - Kabadayı"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Türk televizyon tarihinin başyapıtlarından 'Ezel' dizisinde, Kenan İmirzalıoğlu'nun canlandırdığı Ezel karakterinin estetik ameliyat olmadan önceki adı ve mesleği nedir?"
+  },
+  {
+    "options": [
+      "Hafız Mahmut",
+      "Kör Mahmut",
+      "Kel Mahmut",
+      "Deli Mahmut"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Yeşilçam klasiği 'Hababam Sınıfı' serisinde, okulun idealist, babacan ama bir o kadar da disiplinli müdür yardımcısı 'Mahmut Hoca'nın öğrenciler arasındaki lakabı nedir?"
+  },
+  {
+    "options": [
+      "Feyyaz ve Yiğit",
+      "Metin ve Ali",
+      "Oğuz ve Murat",
+      "Kemal ve Cem"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Selçuk Aydemir'in yazıp yönettiği 'Kardeş Payı' dizisinde, dünyayı kurtaracak bir icat bulduklarını iddia eden ve tesisatçılık yapan iki ana karakterin isimleri nelerdir?"
+  },
+  {
+    "options": [
+      "Ömer",
+      "Yusuf",
+      "Ali",
+      "Hasan"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "'Yeditepe İstanbul' dizisinde Emre Kınay'ın başarıyla canlandırdığı, mahalleye sonradan taşınan Olcay'a aşık olan ve işsiz güçsüz roman yazmaya çalışan karakter kimdir?"
+  },
+  {
+    "options": [
+      "Sivas",
+      "Yozgat",
+      "Tokat",
+      "Kastamonu"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "'Avrupa Yakası'nda idare müdürü olarak çalışan, çay bardağı altlıkları koleksiyonu yapan ve 'Ben Anadolu çocuğuyum' diyen Burhan Altıntop aslen nerelidir?"
+  },
+  {
+    "options": [
+      "Yılanların Öcü",
+      "Susuz Yaz",
+      "Sevmek Zamanı",
+      "Umut"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Metin Erksan'ın yönettiği ve 1964 yılında Berlin Film Festivali'nde Altın Ayı ödülünü kazanarak Türk sinemasına ilk uluslararası büyük ödülü getiren film hangisidir?"
+  },
+  {
+    "options": [
+      "Özkan Uğur (Garavel Usta)",
+      "Zafer Algöz (Kubar)",
+      "Ozan Güven (216)",
+      "Rasim Öztekin (Bob Marley Faruk)"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "text": "Cem Yılmaz'ın bilimkurgu komedisi 'G.O.R.A.' filminde, Arif'i uzaylıların elinden kurtarmak için ona hologramla ve bizzat rehberlik eden bilge usta karakterini kim canlandırmıştır?"
+  },
+  {
+    "options": [
+      "Grup Yorum",
+      "Ezginin Günlüğü",
+      "Yeni Türkü",
+      "Mazhar Fuat Özkan"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "90'lı yıllara damga vuran efsanevi aile dizisi 'Süper Baba'nın günümüzde bile dillerden düşmeyen, duygusal jenerik müziğini hangi müzik grubu/sanatçı hazırlamıştır?"
+  },
+  {
+    "options": [
+      "Hülya Koçyiğit",
+      "Fatma Girik",
+      "Türkan Şoray",
+      "Müjde Ar"
+    ],
+    "correctOptionIndex": 3,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "Atıf Yılmaz'ın fantastik başyapıtı 'Aaahh Belinda' filminde, oynadığı şampuan reklamındaki 'Naciye' adlı ev kadını karakterinin hayatına hapsolan 'Serap' karakterini kim canlandırmıştır?"
+  },
+  {
+    "options": [
+      "Bedir",
+      "Pala",
+      "Kral Fırat",
+      "Cerrahpaşalı Halit"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "'Kurtlar Vadisi' evreninde 'Sadece ölüler görür' repliğiyle bilinen, güneş gözlüğünü hiç çıkarmayan ve kendi ekibiyle İstanbul'a devlet adına gelen suikastçı karakter kimdir?"
+  },
+  {
+    "options": [
+      "Müşfik Kenter",
+      "Yılmaz Güney",
+      "Cüneyt Arkın",
+      "Fikret Hakan"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "'Sevmek Zamanı' filminde boyamaya girdiği evde gördüğü bir kadın fotoğrafına aşık olan Halil karakterinin felsefi aşkını anlatan filmin başrolünde hangi tiyatro ve sinema efsanesi yer alır?"
+  },
+  {
+    "options": [
+      "Dostoyevski",
+      "Tolstoy",
+      "Anton Çehov",
+      "Maksim Gorki"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "Nuri Bilge Ceylan'a Cannes Film Festivali'nde kariyerinin ilk 'Altın Palmiye'sini kazandıran 'Kış Uykusu' filmi, temel olarak hangi ünlü Rus yazarın kısa öykülerinden esinlenerek yaratılmıştır?"
+  },
+  {
+    "options": [
+      "Erkan Can",
+      "Ufuk Bayraktar",
+      "Engin Günaydın",
+      "Haluk Bilginer"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "Zeki Demirkubuz'un kült filmlerinden 'Kader'de, Uğur'a olan saplantılı aşkıyla bilinen ve meyhanedeki efsanevi 'tirad' sahnesiyle akıllara kazınan 'Bekir' karakterini kim canlandırmıştır?"
+  },
+  {
+    "options": [
+      "Müzeyyen Senar",
+      "Zeki Müren",
+      "Safiye Ayla",
+      "Münir Nurettin Selçuk"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "Yavuz Turgul imzalı 'Muhsin Bey' filminde, Klasik Türk Müziği aşığı Muhsin Bey'in evinde radyodan ve plaktan sürekli dinlediği, kendisi için ulaşılamaz bir idol olan efsanevi sanatçı kimdir?"
+  },
+  {
+    "options": [
+      "Tabutta Rövaşata",
+      "Karpuz Kabuğundan Gemiler Yapmak",
+      "Somuncu Baba",
+      "Uzun Hikaye"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "Ahmet Uluçay'ın kendi yaşamından izler taşıyan, imkansızlıklar içinde sinema makinesi yapmaya çalışan iki köylü çocuğun tutkusunu anlattığı bol ödüllü bağımsız filminin adı nedir?"
+  },
+  {
+    "options": [
+      "Memduh Başgan",
+      "Ercüment Çözer",
+      "Yücel",
+      "Büyük Bey"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "'Behzat Ç. Bir Ankara Polisiyesi' dizisinde, cinayet büro amirliğinin baş belası olan, zenginliği ve acımasızlığıyla bilinen, 'Saygıdeğer' hitabıyla anılan psikopat iş adamı/katil kimdir?"
+  },
+  {
+    "options": [
+      "Şair Cenap",
+      "Ressam Sıtkı",
+      "Yazar Galip",
+      "Filozof Şükrü"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "'Bizimkiler' dizisinde Rutkay Aziz'in büyük bir ustalıkla canlandırdığı, 'İbrikçi', 'Asansör' gibi kelimeleri Fransızca aksanıyla söyleyen şair ruhlu, entelektüel karakterin lakabı ve adı nedir?"
+  },
+  {
+    "options": [
+      "Mustafa",
+      "Berfo",
+      "Maho",
+      "Cemal"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "Şener Şen ve Uğur Yücel'in başrollerini paylaştığı 'Eşkıya' filminde, Baran'ı gammazlayıp hapse düşüren ve onun en sevdiği kadın olan Keje'yi de elinden alarak zengin olan eski dostunun adı nedir?"
+  },
+  {
+    "options": [
+      "Cevdet",
+      "Nevzat",
+      "Agâh Beyoğlu",
+      "Ateş Arcalı"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "PuhuTV'nin uluslararası başarı yakalayan dizisi 'Şahsiyet'te, Haluk Bilginer'e 'Uluslararası Emmy En İyi Erkek Oyuncu' ödülünü kazandıran, adaleti kendi eliyle dağıtan Alzheimer hastası seri katilin adı nedir?"
+  },
+  {
+    "options": [
+      "Umut",
+      "Arkadaş",
+      "Sürü",
+      "Yol"
+    ],
+    "correctOptionIndex": 3,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "Yılmaz Güney'in hapisteyken senaryosunu yazdığı ve detaylı talimatlarla Şerif Gören'e yönettirdiği, 1982 Cannes Film Festivali'nde Türkiye'ye ilk Altın Palmiye'yi kazandıran başyapıt hangisidir?"
+  },
+  {
+    "options": [
+      "Hulusi ve Nuriye",
+      "Vahit ve Zeliha",
+      "Rıza ve Pembe",
+      "Kemal ve Süheyla"
+    ],
+    "correctOptionIndex": 1,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "'Yedi Numara' dizisinde, İstanbul'a üniversite okumak için gelen gençlerin aynı evi paylaşmasıyla başlayan hikayede, evin sahibi olan ve çocukları olmayan sevimli çiftin adları nedir?"
+  },
+  {
+    "options": [
+      "Vampir İstanbul'da",
+      "Kanlı Şato",
+      "Drakula İstanbul'da",
+      "Ölüler Şehri"
+    ],
+    "correctOptionIndex": 2,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "Türk sinemasının ilk korku filmi olarak kabul edilen, Bram Stoker'ın efsanevi vampir romanından 1953 yılında uyarlanan ve başrolünde Atıf Kaptan'ın yer aldığı filmin tam adı nedir?"
+  },
+  {
+    "options": [
+      "Yılmaz, İlkkan, Ersoy",
+      "Feyyaz, Aziz, Kaan",
+      "Metin, Ali, Feyyaz",
+      "Cem, Yılmaz, Ozan"
+    ],
+    "correctOptionIndex": 0,
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "text": "Exxen platformunda yayınlanan ve absürt-komedi türünde kendi hayran kitlesini oluşturan 'Gibi' dizisinin başrolleri olan, her bölüm farklı tuhaflıklara karışan üç arkadaşın isimleri nelerdir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Sarı",
+      "Mavi",
+      "Kırmızı",
+      "Yeşil"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Breaking Bad dizisinde Walter White'ın ürettiği ve saflığıyla meşhur olan metamfetaminin rengi nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Drogon",
+      "Viserion",
+      "Rhaegal",
+      "Balerion"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Game of Thrones dizisinde Daenerys Targaryen'ın ejderhalarından biri hangisi DEĞİLDİR?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Martin Scorsese"
+    ],
+    "correctOptionIndex": 0,
+    "text": "11 Oscar kazanan efsanevi 1997 yapımı 'Titanic' filminin yönetmeni kimdir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Siyah ve Beyaz",
+      "Sarı ve Yeşil",
+      "Kırmızı ve Mavi",
+      "Mor ve Turuncu"
+    ],
+    "correctOptionIndex": 2,
+    "text": "The Matrix filminde Morpheus'un Neo'ya sunduğu iki hapın renkleri nelerdir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Al Pacino",
+      "Marlon Brando",
+      "Robert De Niro",
+      "Joe Pesci"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Baba (The Godfather) filminde 'Don Vito Corleone' karakterine hayat veren ikonik aktör kimdir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "İğne (Sting)",
+      "Narsil",
+      "Glamdring",
+      "Andúril"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Yüzüklerin Efendisi serisinde Frodo Baggins'in taşıdığı ve orklar yaklaştığında parlayan kılıcın adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Luke Skywalker",
+      "Han Solo",
+      "Obi-Wan Kenobi",
+      "Darth Vader"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Star Wars serisinde sinema tarihine geçen 'I am your father' repliğini kim söylemiştir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Richard",
+      "Mike",
+      "Gunther",
+      "Paul"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Friends dizisinde karakterlerin sürekli buluştuğu 'Central Perk' kafesinin sarışın baristası kimdir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Norma Jeane Mortenson",
+      "Frances Gumm",
+      "Lucille LeSueur",
+      "Mary Cathleen Collins"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Hollywood efsanesi Marilyn Monroe'nun gerçek adı aşağıdakilerden hangisidir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "The Void",
+      "Upside Down",
+      "The Nether",
+      "The Dark Place"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Stranger Things dizisinde canavarların yaşadığı baş aşağı duran paralel evrene ne ad verilir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "David Fincher",
+      "Ridley Scott",
+      "Denis Villeneuve",
+      "Christopher Nolan"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Rüya içinde rüya temasıyla akıllara kazınan Başlangıç (Inception) filminin yönetmeni kimdir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Pandora",
+      "Arrakis",
+      "Tatooine",
+      "Krypton"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Avatar filminde mavi derili Na'vi halkının yaşadığı gezegenin (uydunun) adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Gryffindor",
+      "Ravenclaw",
+      "Pukwudgie",
+      "Hufflepuff"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Harry Potter evrenindeki Hogwarts Cadılık ve Büyücülük Okulu binalarından biri hangisi DEĞİLDİR?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "1990",
+      "1993",
+      "1995",
+      "1997"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Steven Spielberg'ün yönettiği efsanevi ilk Jurassic Park filmi hangi yıl vizyona girmiştir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Martin Freeman",
+      "Tom Hiddleston",
+      "Matt Smith",
+      "Benedict Cumberbatch"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Modern BBC uyarlaması 'Sherlock' dizisinde dedektif Sherlock Holmes'u hangi aktör canlandırmaktadır?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Çikolata kutusu",
+      "Yapboz",
+      "Zar",
+      "Çiçek bahçesi"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Forrest Gump filmindeki ünlü repliğe göre, 'Hayat bir ... gibidir, içinden ne çıkacağını asla bilemezsin.' Boşluğa ne gelmelidir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Kolay",
+    "options": [
+      "Guy Ritchie",
+      "Quentin Tarantino",
+      "Edgar Wright",
+      "Robert Rodriguez"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Kült yapımlardan Ucuz Roman (Pulp Fiction) filminin Oscar ödüllü yönetmeni ve senaristi kimdir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Scarface",
+      "El Chapo",
+      "Heisenberg",
+      "The Ghost"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Breaking Bad dizisinde Walter White'ın yeraltı dünyasında kullandığı, ünlü bir fizikçiden esinlenilen lakabı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Kızıl Düğün",
+      "Mor Düğün",
+      "Piçlerin Çarpışması",
+      "Hardhome"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Game of Thrones'ta Lannister hanesinin gücünü simgeleyen 'The Rains of Castamere' şarkısı hangi trajik olay esnasında çalınmıştır?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Casablanca",
+      "The Godfather",
+      "Gone with the Wind",
+      "It Happened One Night"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Sinema tarihinde En İyi Film, Yönetmen, Erkek Oyuncu, Kadın Oyuncu ve Senaryo dallarının tamamını ('Beş Büyük') kazanan İLK Oscar'lı film hangisidir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Eliza Doolittle",
+      "Holly Golightly",
+      "Princess Ann",
+      "Sabrina Fairchild"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Audrey Hepburn'ün ikonik 'Breakfast at Tiffany's' filminde canlandırdığı ve popüler kültüre kazınan karakterin adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Karanlık Prens",
+      "Korku Babası",
+      "Gerilim Ustası",
+      "Gizem Kralı"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Psycho, Vertigo ve The Birds filmlerinin efsanevi yönetmeni Alfred Hitchcock'un sinema dünyasındaki meşhur lakabı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Overlook Hotel",
+      "The Grand Budapest Hotel",
+      "Bates Motel",
+      "The Continental"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Cinnet (The Shining) filminde Jack Torrance'ın kış bekçisi olarak işe girdiği ve deliliğe sürüklendiği otelin adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Here Comes Your Man",
+      "Where Is My Mind?",
+      "Hey",
+      "Gouge Away"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Dövüş Kulübü (Fight Club) filminin akıllara kazınan final sahnesinde, binalar yıkılırken arka planda çalan Pixies şarkısı hangisidir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "En İyi Erkek Oyuncu",
+      "En İyi Film",
+      "En İyi Yardımcı Erkek Oyuncu",
+      "En İyi Özgün Senaryo"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Heath Ledger, The Dark Knight filmindeki efsanevi Joker rolüyle ölümünden sonra hangi dalda Oscar ödülü kazanmıştır?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Londra",
+      "Manchester",
+      "Liverpool",
+      "Birmingham"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Peaky Blinders dizisinde Tommy Shelby ve ailesinin suç imparatorluğunu kurduğu sanayi devrimi İngilteresi'ndeki şehir hangisidir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Threat Level Midnight",
+      "Scarn's Revenge",
+      "The Golden Ticket",
+      "The Dundies"
+    ],
+    "correctOptionIndex": 0,
+    "text": "The Office (US) dizisinde Michael Scott'ın yıllarca üzerinde çalışıp sonunda arkadaşlarıyla çektiği amatör aksiyon filminin adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "BBC One",
+      "Channel 4",
+      "ITV",
+      "Sky Atlantic"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Karanlık bir gelecek portresi çizen Black Mirror dizisi, Netflix'e geçmeden önce ilk iki sezonuyla hangi İngiliz kanalında yayınlanmıştır?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Taxi Driver",
+      "Goodfellas",
+      "Scarface",
+      "The Departed"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Suç filmlerinin ustası Martin Scorsese'nin yönettiği filmlerden biri hangisi DEĞİLDİR?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "HAL 9000",
+      "R2-D2",
+      "KIPP",
+      "TARS"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Interstellar (Yıldızlararası) filminde astronot Cooper'a eşlik eden, mizah ve dürüstlük seviyesi ayarlanabilen monolitik robotun adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Charlize Theron",
+      "Anya Taylor-Joy",
+      "Margot Robbie",
+      "Scarlett Johansson"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Mad Max: Fury Road filminde Max'ten bile daha fazla ön plana çıkan ve tek kolu mekanik olan 'Imperator Furiosa' karakterini kim canlandırmıştır?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Arrival",
+      "Moonlight",
+      "Manchester by the Sea",
+      "Hidden Figures"
+    ],
+    "correctOptionIndex": 1,
+    "text": "2017 Oscar Töreni'nde La La Land ekibi En İyi Film ödülü için sahneye çağrılmış, ancak daha sonra zarfların karıştığı ve asıl kazananın farklı olduğu anlaşılmıştır. Asıl kazanan film hangisidir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Chuck McGill",
+      "Howard Hamlin",
+      "Jimmy McGill",
+      "Kim Wexler"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Breaking Bad'in spin-off dizisi Better Call Saul'da, avukat Saul Goodman'ın karanlık tarafa geçmeden önceki gerçek tam adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Orta",
+    "options": [
+      "Colin Farrell & Vince Vaughn",
+      "Mahershala Ali & Stephen Dorff",
+      "Jodie Foster & Kali Reis",
+      "Matthew McConaughey & Woody Harrelson"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Eleştirmenler tarafından övgü yağmuruna tutulan True Detective dizisinin birinci sezonunda başrolleri paylaşan efsanevi dedektif ikilisi kimlerdir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Risin",
+      "Siyanür",
+      "Arsenik",
+      "Tetrodotoksin"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Breaking Bad dizisinde Walter White'ın dizi boyunca hazırladığı, Hint yağı bitkisi tohumlarından elde edilen ve finalde Lydia'yı öldürdüğü ölümcül zehrin adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Valyria Çeliği",
+      "Düşen bir meteor",
+      "Ejderha Camı",
+      "İlk İnsanların Kemikleri"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Game of Thrones evreninde Dayne Hanesi'ne ait olan ve yalnızca layık görülen 'Sabah Kılıcı' şövalyesinin taşıyabildiği efsanevi kılıç Dawn (Şafak) neyden dövülmüştür?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Ben-Hur",
+      "Titanic",
+      "The Godfather Part II",
+      "The Lord of the Rings: The Return of the King"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Oscar tarihinde en çok ödül alan film rekoru (11 ödül) yalnızca üç film tarafından paylaşılmaktadır. Aşağıdakilerden hangisi bu üç filmden biri DEĞİLDİR?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "The Shining",
+      "Full Metal Jacket",
+      "A Clockwork Orange",
+      "Eyes Wide Shut"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Mükemmeliyetçi ve dahi yönetmen Stanley Kubrick'in, filmin son kurgusunu teslim ettikten sadece birkaç gün sonra vefat ettiği kariyerinin son başyapıtı hangisidir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "East of Eden",
+      "Rebel Without a Cause",
+      "Giant",
+      "The Grapes of Wrath"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Hollywood efsanesi James Dean, 1955'te henüz 24 yaşındayken trafik kazasında öldüğünde, sinema tarihine geçecek olan hangi ikonik filminin vizyona girmesini bekliyordu?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "The Stugots",
+      "Bada Bing",
+      "Pie-O-My",
+      "Satriale's"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Televizyon tarihinin en büyük dizilerinden The Sopranos'ta mafya babası Tony Soprano'nun çok sevdiği ve stres atmak için kullandığı lüks teknesinin adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "1975",
+      "1981",
+      "1987",
+      "1996"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Coen Kardeşlerin kült filmi Fargo'nun açılış jeneriğinde, anlatılan bu 'gerçek hikayenin' Minnesota'da hangi yılda gerçekleştiği iddia edilmektedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Margarita",
+      "Martini",
+      "Manhattan",
+      "White Russian"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Büyük Lebowski (The Big Lebowski) filminde 'The Dude' karakterinin sürekli olarak tükettiği; votka, kahve likörü ve kremadan oluşan spesifik kokteylin adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "White Lodge",
+      "Black Lodge",
+      "The Great Northern",
+      "The Red Room"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Twin Peaks dizisinde Özel Ajan Dale Cooper'ın rüyalarında girdiği, kırmızı perdeleri ve zikzak desenli zeminiyle ünlü mistik boyutun dizideki temel adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Roger Sterling",
+      "Pete Campbell",
+      "Dick Whitman",
+      "Lane Pryce"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Mad Men dizisinde Amerikan rüyasının temsilcilerinden Don Draper'ın, Kore Savaşı'nda kendi ölümünü gizleyip kimliğini çalmadan önceki gerçek adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "1. Sezon",
+      "2. Sezon",
+      "3. Sezon",
+      "4. Sezon"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Baltimore sokaklarını işleyen efsanevi The Wire dizisinde, odak noktasının sokak çetelerinden tamamen liman işçilerine ve sendika yolsuzluklarına kaydığı sezon hangisidir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Sam",
+      "Arthur",
+      "Louis",
+      "Victor"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Casablanca filminde Rick'in efsanevi barı 'Rick's Café Américain'de 'As Time Goes By' şarkısını çalan nostaljik piyanistin adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Pierce Global Media",
+      "Argana",
+      "Vaulter",
+      "Waystar Royco"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Modern klasiklerden Succession dizisinde, çok zengin ve acımasız Roy ailesinin kontrolü elinde tuttuğu devasa medya ve eğlence holdinginin adı nedir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Harrison Ford",
+      "Sean Young",
+      "Rutger Hauer",
+      "Edward James Olmos"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Blade Runner (Bıçak Sırtı) filminde sinema tarihine kazınan 'Yağmurdaki Gözyaşları' monoloğunu senaryoyu değiştirip büyük oranda doğaçlama yapan ve 'Roy Batty'yi canlandıran aktör kimdir?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Alfred Hitchcock",
+      "Steven Spielberg",
+      "Martin Scorsese",
+      "Francis Ford Coppola"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Aşağıdaki efsanevi yönetmenlerden hangisi kariyeri boyunca hiçbir zaman 'En İyi Yönetmen' dalında Akademi Ödülü (Oscar) KAZANAMAMIŞTIR?"
+  },
+  {
+    "category": "Sinema ve Dizi",
+    "difficulty": "Zor",
+    "options": [
+      "Eski eşi",
+      "Çocukluğundaki kızağı",
+      "Kaybettiği köpeği",
+      "İlk gazetesi"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Tüm zamanların en iyi filmlerinden sayılan Yurttaş Kane (Citizen Kane) filminde, Charles Foster Kane'in son nefesinde fısıldadığı 'Rosebud' kelimesi aslında neyi simgelemektedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Kuzu Kuzu",
+      "Şımarık",
+      "Dudu",
+      "Hüp"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Tarkan'ın uluslararası çapta büyük başarı yakalayan ve ona 'Megastar' unvanını getiren, dünyada birçok dilde cover'lanan efsanevi şarkısı hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "7'den 77'ye",
+      "Adam Olacak Çocuk",
+      "Barış Manço ile Dünya Turu",
+      "Dere Tepe Türkiye"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Barış Manço'nun uzun yıllar boyunca hazırlayıp sunduğu, çocuklara ve ailelere yönelik efsanevi televizyon programının adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Ajda Pekkan",
+      "Nilüfer",
+      "Sezen Aksu",
+      "Sertab Erener"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Türk pop müziğinde unutulmaz eserlere imza atan ve 'Minik Serçe' lakabıyla anılan sanatçımız kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Müslüm Gürses",
+      "Orhan Gencebay",
+      "Ferdi Tayfur",
+      "İbrahim Tatlıses"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Arabesk müziğin efsanevi isimlerinden olan ve hayranları tarafından 'Müslüm Baba' olarak anılan sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Bülent Ersoy",
+      "Zeki Müren",
+      "Müzeyyen Senar",
+      "Adnan Şenses"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Klasik Türk Sanat Müziği'nin efsaneleşen seslerinden olan ve 'Sanat Güneşi' lakabıyla bilinen sanatçımız kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Müslüm Gürses",
+      "Hakkı Bulut",
+      "Ferdi Tayfur",
+      "İbrahim Tatlıses"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Sesi ve yorumuyla arabesk müziğe damgasını vuran, 'İmparator' lakaplı sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Muazzez Abacı",
+      "Emel Sayın",
+      "Bülent Ersoy",
+      "Hüner Coşkuner"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Türk Sanat Müziği'nin yaşayan efsanelerinden biri olan ve kamuoyunda 'Diva' unvanıyla tanınan sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Nükhet Duru",
+      "Ajda Pekkan",
+      "Zerrin Özer",
+      "Nilüfer"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Türk pop müziğinin gelişiminde çok önemli bir yeri olan ve yıllardır 'Süperstar' unvanını taşıyan ikonik sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "2001",
+      "2002",
+      "2003",
+      "2004"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Sertab Erener, 'Everyway That I Can' adlı parçasıyla Türkiye'ye Eurovision Şarkı Yarışması birinciliğini hangi yıl getirmiştir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Kurtalan Ekspres",
+      "Moğollar",
+      "Dadaşlar",
+      "Kaygısızlar"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Barış Manço'nun 1972 yılında kurduğu ve vefatına kadar uzun yıllar birlikte müzik yaptığı efsanevi orkestranın adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Orhan Gencebay",
+      "Ferdi Tayfur",
+      "Müslüm Gürses",
+      "Cengiz Kurtoğlu"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Arabesk müzikte bir dönüm noktası olan 'Batsın Bu Dünya' isimli efsanevi şarkı ve aynı adlı sinema filmi kime aittir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Aşkın Nur Yengi",
+      "Sezen Aksu",
+      "Nazan Öncel",
+      "Harun Kolçak"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1991 yılında yayınlanan ve Türk pop müziğinde satış rekorları kırarak yepyeni bir dönem başlatan 'Gülümse' albümü kime aittir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Nane Limon Kabuğu",
+      "Sarı Çizmeli Mehmet Ağa",
+      "Gülpembe",
+      "Domates Biber Patlıcan"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Barış Manço'nun pazarda satılan sebzeleri bir aşk acısıyla harmanladığı, dillerden düşmeyen eğlenceli şarkısının adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Ölürüm Sana",
+      "Yine Sensiz",
+      "Karma",
+      "Aacayipsin"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Tarkan'ın 1997 yılında müzik piyasasını altüst eden, 'Şımarık' şarkısının da yer aldığı satış rekorları kıran albümünün adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Kenan Doğulu",
+      "Mirkelam",
+      "Tarkan",
+      "Burak Kut"
+    ],
+    "correctOptionIndex": 2,
+    "text": "'Kış Güneşi', 'İnci Tanem', 'Gül Döktüm Yollarına' gibi romantik pop şarkılarıyla 90'lara damga vuran sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Leman Sam",
+      "Sezen Aksu",
+      "Göksel",
+      "Zuhal Olcay"
+    ],
+    "correctOptionIndex": 1,
+    "text": "'Geri Dön', 'Git', 'Sen Ağlama' gibi başyapıtları Türk popuna kazandıran efsanevi ses kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Kamuran Akkor",
+      "Esengül",
+      "Gülden Karaböcek",
+      "Bergen"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Dramatik hayat hikayesi ve 'Sen Ağlama' (arabesk versiyon), 'Yıllar Affetmez' gibi şarkılarıyla bilinen, 'Acıların Kadını' lakaplı sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Sezen Seley",
+      "Fatma Sezen",
+      "Serçe",
+      "Sezen Yıldırım"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Sezen Aksu'nun kariyerinin en başında müzik dünyasına adım atarken ilk 45'liğinde kullandığı sahne adı neydi?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Sözüm Meclisten Dışarı",
+      "Estağfurullah Ne Haddimize",
+      "Sahibinden İhtiyaçtan",
+      "Değmesin Yağlı Boya"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Barış Manço'nun 1981 yılında yayınladığı ve 'Dönence', 'Gülpembe' gibi kültleşmiş şarkıların bulunduğu albümün adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Hakkı Bulut",
+      "Orhan Gencebay",
+      "Ahmet Kaya",
+      "Selami Şahin"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Geleneksel Türk müziği kurallarının dışına çıkarak elektro bağlamayı ve çok sesli altyapıyı arabeske entegre eden, 'Serbest Çalışmalar' dönemini başlatan efsane sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Aacayipsin",
+      "Karma",
+      "Yine Sensiz",
+      "Ölürüm Sana"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Tarkan'ın 1992 yılında 'Kıl Oldum' şarkısıyla çıkış yaptığı ve büyük ilgi gören ilk stüdyo albümünün adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Batan Güneş",
+      "Çeşme",
+      "Huzurum Kalmadı",
+      "Prangalar"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Arabesk müziğin devlerinden Ferdi Tayfur'un, hem gişe rekorları kıran sinema filmine adını veren hem de en bilinen çıkış şarkılarından olan eseri hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Bendeniz",
+      "Oya Bora",
+      "Yonca Evcimik",
+      "İzel Çeliköz"
+    ],
+    "correctOptionIndex": 2,
+    "text": "1991 yılında 'Abone' ve 'Kendine Gel' şarkıları ve enerjik danslarıyla Türk pop müziğinde büyük bir kırılma yaratan şarkıcı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Aysel Gürel",
+      "Fikret Şeneş",
+      "Çiğdem Talu",
+      "Şehrazat"
+    ],
+    "correctOptionIndex": 0,
+    "text": "'Firuze', 'Ünzile', 'Değer mi Hiç' gibi sayısız hit şarkının sözlerine imza atan ve Sezen Aksu ile uzun yıllar çalışan unutulmaz sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Ajda Pekkan",
+      "Nilüfer",
+      "Semiha Yankı",
+      "Seyyal Taner"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Türkiye'yi 1975 yılında Eurovision Şarkı Yarışması'nda ilk kez temsil eden şarkı olan 'Seninle Bir Dakika' kim tarafından seslendirilmiştir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Kol Düğmeleri",
+      "Dağlar Dağlar",
+      "Aynalı Kemer",
+      "Unutamadım"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Barış Manço'ya kariyerindeki ilk Altın Plak ödülünü kazandıran ve onu tüm Türkiye'nin tanımasını sağlayan 1970 yapımı hit şarkı hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Ahde Vefa",
+      "Klasikler",
+      "10",
+      "Dudu"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Tarkan'ın popüler müziğe ara verip tamamen Türk Sanat Müziği klasiklerini seslendirdiği ve 2016 yılında çıkardığı albümünün adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Sadettin Kaynak",
+      "Selahattin Pınar",
+      "Münir Nurettin Selçuk",
+      "Alaeddin Yavaşca"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Klasik Türk Müziği'nde devrim yaparak smokinle sahneye çıkma geleneğini başlatan ve koro sistemini getiren efsanevi solist ve bestekâr kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Erol Büyükburç",
+      "Berkant",
+      "Cem Karaca",
+      "Ersan Erdura"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Türk pop müziğinin (hafif Batı müziği) ilk büyük hitlerinden olan ve kalplerde taht kuran 'Samanyolu' şarkısını seslendiren sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Seden Gürel",
+      "Aşkın Nur Yengi",
+      "Zerrin Özer",
+      "Nilüfer"
+    ],
+    "correctOptionIndex": 3,
+    "text": "'Esmer Günler', 'Mor Menekşe', 'Beni Benimle Bırak' gibi şarkılarıyla 90'lı yıllarda zirvede yer alan kadın pop müzik sanatçısı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Nejat Alp",
+      "Arif Susam",
+      "Ümit Besen",
+      "Cengiz Kurtoğlu"
+    ],
+    "correctOptionIndex": 2,
+    "text": "1980'li yıllarda org eşliğinde söylenen şarkılarla popülerleşen 'Taverna Müziği'nin öncülerinden olan ve 'Nikah Masası' şarkısıyla tanınan sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Beklenen Şarkı",
+      "Zehretme Hayatı Bana Cananım",
+      "Manolyam",
+      "Sorma Ne Haldeyim"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Zeki Müren'in henüz çok genç yaşta bestelediği ve Ankara Radyosu'nda okunduğunda büyük yankı uyandıran ilk eseri hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Tarkan",
+      "Çelik",
+      "Gökhan Özen",
+      "Mustafa Sandal"
+    ],
+    "correctOptionIndex": 3,
+    "text": "1990'lı yılların ikinci yarısında 'Aya Benzer', 'Onun Arabası Var', 'Araba' gibi hit şarkıları ve kendine has danslarıyla fırtınalar koparan pop yıldızı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Onno Tunç",
+      "Nazan Öncel",
+      "Sezen Aksu",
+      "Uzay Heparı"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Tarkan'ın dünya çapında ses getiren 'Şımarık' parçasının ilk versiyonunda söz ve müziği kime aittir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Her Yerde Kar Var",
+      "Bak Bir Varmış Bir Yokmuş",
+      "İki Yabancı",
+      "Deniz ve Mehtap"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Fecri Ebcioğlu'nun Türkçe sözler yazıp İlham Gencer'in seslendirdiği, Türk pop müziğinin ilk aranjmanı (ilk Türkçe sözlü hafif Batı müziği) kabul edilen parça hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Serçe",
+      "Gülümse",
+      "Allahaısmarladık",
+      "Sen Ağlama"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Sezen Aksu'nun kariyerindeki ilk 45'liklerinden sonra, 1977 yılında piyasaya çıkardığı ilk stüdyo albümünün (uzunçalar) adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Kayaların Oğlu",
+      "Dönence",
+      "Gülpembe Destanı",
+      "Yol Verin Ağalar"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Barış Manço'nun 1975'te yazdığı ve Türkiye Cumhuriyeti'nin 100. yılına ithaf ettiği '2023' adlı fütüristik senfonik eserin açılışındaki etkileyici şiirin adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Mahsun Kul",
+      "Müslüm Baba ile Dünden Bugüne",
+      "Aşk Tesadüfleri Sever",
+      "Sandık"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Müslüm Gürses'in kariyerinde arabesk dışına çıkarak, Murathan Mungan'ın projesi kapsamında rock ve pop cover'ları seslendirdiği 2006 tarihli devrim niteliğindeki albümün adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Bounce",
+      "Metamorfoz",
+      "Come Closer",
+      "Karma"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Tarkan'ın uluslararası piyasaya açılmak amacıyla uzun süre üzerinde çalıştığı ve 2006 yılında çıkardığı, tamamen İngilizce şarkılardan oluşan ilk albümü hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Uzay Heparı",
+      "Garo Mafyan",
+      "Atilla Özdemiroğlu",
+      "Onno Tunç"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Sezen Aksu'nun müzikal kariyerinde 'Sen Ağlama', 'Git', 'Gülümse' gibi başyapıtların müzik yönetmenliğini ve aranjörlüğünü yapan, Türk pop müziğinde çığır açan efsanevi müzisyen kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Apaşlar",
+      "Moğollar",
+      "Kardaşlar",
+      "Mavi Işıklar"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Türk pop müziğinde 'Anadolu Pop' akımının öncülerinden sayılan, Hürriyet Gazetesi'nin Altın Mikrofon yarışmasında 'Ilgaz' parçasıyla dikkat çeken ve Barış Manço ile de bir dönem çalışan ünlü müzik grubu kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "İkimiz Bir Fidanız",
+      "Seven Kıskanır",
+      "Kıskancım",
+      "Son Mektup"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1980'lerde arabesk müziğe devlet radyosu ve televizyonunda (TRT) uygulanan zımni yasağı kırmak amacıyla Kültür Bakanlığı'nın siparişi üzerine Hakkı Bulut'un bestelediği 'Acısız Arabesk' eserinin adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Müzeyyen Senar",
+      "Safiye Ayla",
+      "Hamiyet Yüceses",
+      "Perihan Altındağ Sözeri"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Mustafa Kemal Atatürk'ün meclislerinde şarkılar söylemiş olan, taş plak döneminden modern zamanlara kadar sesiyle büyüleyen ve 2015 yılında kaybettiğimiz 'Cumhuriyet'in Divası' kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Sinan Çetin",
+      "Ferzan Özpetek",
+      "Fatih Akın",
+      "Mustafa Altıoklar"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Tarkan'ın 'Karma' albümünde yer alan 'Hüp' şarkısı için çektiği, yayınlandığı dönemde Türk televizyonlarında tartışma yaratıp RTÜK incelemesine takılan ses getirici klibin yönetmeni kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Mançoloji",
+      "Barış Manço Klasikleri",
+      "Mega Manço",
+      "Darısı Başınıza"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Barış Manço'nun 40. sanat yılı anısına hazırlıklarına başladığı ancak ani vefatı sebebiyle ölümünden hemen sonra, 1999 yılında piyasaya sürülen ve kariyerinin özeti niteliğindeki son albümü hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Gelen Gideni Aratır",
+      "Kusura Bakma",
+      "Pet'r Oil",
+      "Büklüm Büklüm"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Sezen Aksu'nun 1980 yılında Eurovision Şarkı Yarışması Türkiye elemelerinde Ajda Pekkan'ın arkasından ikinci olduğu, sözleri Çiğdem Talu'ya bestesi Atilla Özdemiroğlu'na ait olan efsanevi şarkı hangisidir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Yıldırım Gürses",
+      "Teoman Alpay",
+      "Muzaffer Özpınar",
+      "Coşkun Sabah"
+    ],
+    "correctOptionIndex": 3,
+    "text": "'Vurgun', 'Baharı Bekleyen Kumrular Gibi', 'Gülüm Benim' gibi unutulmaz şarkıları bestelemiş olan, aynı zamanda ud virtüözü kimliğiyle tanınan usta sanatçı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Les Mistigris",
+      "Harmonies",
+      "Vahşi Kediler",
+      "L'Etoile"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Barış Manço'nun 1960'lı yıllarda Belçika Kraliyet Akademisi'nde eğitim görürken kurduğu ve Avrupa'da konserler verdiği rock and roll grubunun adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Tamburi Cemil Bey",
+      "Hammâmîzâde İsmâil",
+      "Hacı Arif Bey",
+      "Şevki Bey"
+    ],
+    "correctOptionIndex": 1,
+    "text": "19. yüzyılda yaşamış, Klasik Türk Müziği'nin en üretken ve dahi isimlerinden biri olan, 'Yine Bir Gülnihal' gibi ölümsüz eserleri bulunan 'Dede Efendi'nin asıl adı nedir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "options": [
+      "Şahin Özer",
+      "Arif Sağ",
+      "Yılmaz Tatlıses",
+      "Burhan Bayar"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İbrahim Tatlıses'in asıl şöhreti yakalamadan önce çocuk yaşlarında piyasaya sürülen kasetlerinde adı 'İbrahim Tatlı' olarak geçerdi. Ona 'Tatlıses' soyadını veren ve sesini ilk keşfeden müzik yapımcısı/adamı kimdir?",
+    "difficulty": "Orta"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Prince",
+      "Elvis Presley",
+      "Michael Jackson",
+      "Madonna"
+    ],
+    "correctOptionIndex": 2,
+    "text": "\"Pop'un Kralı\" olarak bilinen ve \"Thriller\" albümüyle tüm zamanların en çok satan albümüne imza atan sanatçı kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "David Bowie",
+      "Freddie Mercury",
+      "Mick Jagger",
+      "John Lennon"
+    ],
+    "correctOptionIndex": 1,
+    "text": "\"Bohemian Rhapsody\" ve \"We Will Rock You\" gibi efsanevi şarkılara imza atan Queen grubunun ikonik solisti kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Son Akşam Yemeği",
+      "Mona Lisa",
+      "Venüs'ün Doğuşu",
+      "İnci Küpeli Kız"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Leonardo da Vinci'nin Paris'teki Louvre Müzesi'nde sergilenen ve gizemli gülümsemesiyle tanınan dünyaca ünlü eseri hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Claude Monet",
+      "Pablo Picasso",
+      "Salvador Dali",
+      "Vincent van Gogh"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Kendi kulağını kesmesiyle de bilinen, \"Yıldızlı Gece\" adlı eserin Hollandalı ard-izlenimci ressamı kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Keman",
+      "Piyano",
+      "Gitar",
+      "Flüt"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Üzerinde siyah ve beyaz tuşlar bulunan, \"piyano\" kelimesinin kökeninin de dayandığı enstrüman türü nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Ludwig van Beethoven",
+      "Wolfgang Amadeus Mozart",
+      "Johann Sebastian Bach",
+      "Frederic Chopin"
+    ],
+    "correctOptionIndex": 0,
+    "text": "9. Senfoni'sini tamamen sağır olduğu dönemde besteleyen ve klasik müziğin en büyük dehalarından sayılan besteci kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Rene Magritte",
+      "Salvador Dali",
+      "Frida Kahlo",
+      "Diego Rivera"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Belleğin Azmi (Eriyen Saatler) adlı ünlü tablosuyla sürrealizm (gerçeküstücülük) akımının en bilinen temsilcisi kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Bağlama",
+      "Kanun",
+      "Ud",
+      "Cümbüş"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Türk müziğinde yaygın olarak kullanılan, mızrapla çalınan ve yarım armut şeklinde bir gövdeye sahip telli çalgı hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Robot Dance",
+      "Moonwalk",
+      "Breakdance",
+      "Salsa"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Michael Jackson'ın yerçekimine meydan okuyan ünlü dans figürünün adı nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Wolfgang Amadeus Mozart",
+      "Antonio Vivaldi",
+      "Johannes Brahms",
+      "Pyotr İlyiç Çaykovski"
+    ],
+    "correctOptionIndex": 0,
+    "text": "\"Küçük Bir Gece Müziği\" ve \"Sihirli Flüt\" gibi unutulmaz eserlerin sahibi, 35 yaşında hayatını kaybeden Avusturyalı dahi besteci kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Düğün törenleri",
+      "Spor müsabakaları",
+      "Film galaları",
+      "Siyasi mitingler"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Queen grubunun efsaneleşmiş \"We Are the Champions\" şarkısı günümüzde özellikle hangi tür etkinliklerin vazgeçilmez marşı haline gelmiştir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Edvard Munch",
+      "Gustav Klimt",
+      "Paul Cezanne",
+      "Henri Matisse"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Çığlık (The Scream) adlı tablosuyla insanın varoluşsal kaygısını resmeden Norveçli dışavurumcu ressam kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Çello",
+      "Kontrbas",
+      "Keman",
+      "Viyola"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Üzerinde genellikle 4 tel bulunan ve çeneye dayanılarak yayla çalınan klasik müzik enstrümanı hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Antonio Vivaldi",
+      "Johann Sebastian Bach",
+      "George Frideric Handel",
+      "Claudio Monteverdi"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Dört Mevsim (Le Quattro Stagioni) adlı keman konçertoları serisiyle tanınan İtalyan Barok dönem bestecisi kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Rembrandt",
+      "Johannes Vermeer",
+      "Jan van Eyck",
+      "Peter Paul Rubens"
+    ],
+    "correctOptionIndex": 1,
+    "text": "\"İnci Küpeli Kız\" tablosu sıkça \"Kuzeyin Mona Lisa'sı\" olarak anılır. Bu eser hangi ressama aittir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Klarnet",
+      "Saksafon",
+      "Yan Flüt",
+      "Obua"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Nefesli çalgılar ailesinden olan ve genellikle altın veya gümüş renkli metalden yapılan, yan tutularak çalınan enstrüman hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Kolay",
+    "options": [
+      "Vampirler",
+      "Zombiler",
+      "Kurtadamlar",
+      "Uzaylılar"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Michael Jackson'ın efsanevi müzik videosu Thriller'da sanatçıyla birlikte dans eden doğaüstü varlıklar nelerdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Biyoloji",
+      "Tarih",
+      "Astrofizik",
+      "Matematik"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Queen grubunun gitaristi Brian May, müzisyenliğinin yanı sıra hangi bilim dalında doktoraya (Ph.D.) sahiptir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Guernica",
+      "Avignonlu Kızlar",
+      "Ağlayan Kadın",
+      "Yaşlı Gitarist"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Pablo Picasso'nun İspanya İç Savaşı sırasında Nazi bombardımanına uğrayan bir Bask kasabasının acılarını resmettiği devasa savaş karşıtı tablosu hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Igor Stravinsky",
+      "Sergei Prokofiev",
+      "Dmitri Shostakovich",
+      "Pyotr İlyiç Çaykovski"
+    ],
+    "correctOptionIndex": 3,
+    "text": "\"Kuğu Gölü\", \"Fındıkkıran\" ve \"Uyuyan Güzel\" gibi efsanevi balelerin müziklerini besteleyen Rus kompozitör kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Piyano",
+      "Arp",
+      "Keman",
+      "Gitar"
+    ],
+    "correctOptionIndex": 2,
+    "text": "\"Stradivarius\" ismi hangi müzik aletinin tarihteki en değerli ve kusursuz örnekleri için kullanılır?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Jimi Hendrix",
+      "Eddie Van Halen",
+      "Eric Clapton",
+      "Slash"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Michael Jackson, ünlü \"Beat It\" şarkısındaki unutulmaz gitar solosu için hangi efsanevi rock gitaristiyle çalışmıştır?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Michelangelo",
+      "Raphael",
+      "Donatello",
+      "Leonardo da Vinci"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Sistina Şapeli'nin tavanına \"Adem'in Yaratılışı\" freskini çizen ve Davud Heykeli'ni yontan Rönesans dehası kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Buzuki",
+      "Sitar",
+      "Mandolin",
+      "Koto"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Hint kökenli, uzun saplı ve su kabağından yapılmış rezonans odaları olan ünlü telli çalgı hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Rocketman",
+      "The Dirt",
+      "Bohemian Rhapsody",
+      "Yesterday"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Freddie Mercury'nin hayatını ve Queen'in zirveye tırmanışını konu alan 2018 yapımı ödüllü biyografik filmin adı nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Sonat",
+      "Konçerto",
+      "Füg",
+      "Rondo"
+    ],
+    "correctOptionIndex": 2,
+    "text": "J.S. Bach'ın bir müzikal temayı sürekli farklı seslerde tekrarlatarak ve iç içe geçirerek geliştirdiği çok sesli eser formatının adı nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Paris",
+      "Lyon",
+      "Marsilya",
+      "Arles"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Vincent van Gogh, \"Ayçiçekleri\" serisini ve diğer önemli eserlerini hangi Fransız şehrinde yaşadığı kısa ve yoğun dönemde üretmiştir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Bongo",
+      "Kalimba",
+      "Marimba",
+      "Djembe"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Afrika kökenli, ahşap veya metal tuşlara başparmaklarla vurularak çalınan \"başparmak piyanosu\" olarak da bilinen enstrüman hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Thriller",
+      "Off the Wall",
+      "Dangerous",
+      "Bad"
+    ],
+    "correctOptionIndex": 3,
+    "text": "\"Bad\", \"Smooth Criminal\" ve \"Dirty Diana\" gibi hitlerin yer aldığı Michael Jackson albümü hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "İnsanın Durumu",
+      "Adamın Oğlu (The Son of Man)",
+      "Aşıklar",
+      "Sahte Ayna"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Rene Magritte'in yüzünü yeşil bir elmanın kapattığı melon şapkalı adam tablosunun adı nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Viyana",
+      "Prag",
+      "Varşova",
+      "Berlin"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Frederic Chopin hayatının büyük bir kısmını Paris'te geçirmiş olsa da, kalbi vasiyeti üzerine hangi şehre götürülüp bir kilisenin sütununa gömülmüştür?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Tuba",
+      "Trombon",
+      "Korno",
+      "Trompet"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Bakır üflemeli çalgıların en kalını ve en büyüğü olup, orkestralarda bas sesleri sağlamakla görevli enstrüman hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Elton John",
+      "David Bowie",
+      "Paul McCartney",
+      "George Michael"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Queen'in ünlü \"Under Pressure\" şarkısında gruba hangi efsanevi İngiliz müzisyen eşlik etmiştir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Orta",
+    "options": [
+      "Roy Lichtenstein",
+      "Jackson Pollock",
+      "Andy Warhol",
+      "Keith Haring"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Pop Art akımının öncülerinden olan ve Marilyn Monroe portreleri ile Campbell's Çorba Konservesi eserleriyle tanınan sanatçı kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Ateşkuşu",
+      "Bahar Ayini (The Rite of Spring)",
+      "Petruşka",
+      "Apollon Musagète"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Igor Stravinsky'nin 1913'te Paris'teki ilk gösteriminde izleyiciler arasında büyük bir isyana (riot) neden olan avangart bale eseri hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Breda'nın Teslimiyeti",
+      "Las Meninas (Nedimeler)",
+      "Aynadaki Venüs",
+      "Yumurtacı Kadın"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Diego Velázquez'in, İspanyol kraliyet ailesini ve kendisini tuval başında resmettiği, kompozisyonundaki ayna oyunuyla sanat tarihinin en çok analiz edilen tablosu hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Sadece güneş enerjisiyle çalışması",
+      "Su altında çalınabilmesi",
+      "Çalarken fiziksel olarak temas edilmemesi",
+      "Kendi kendine beste yapması"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Theremin adlı elektronik müzik aletinin en belirgin ve benzersiz özelliği nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "İlk 3D müzik videosu",
+      "Tüm zamanların en pahalı müzik videosu",
+      "En çok izlenen müzik videosu",
+      "En uzun süreli müzik videosu"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Michael Jackson'ın 1995 yapımı \"Scream\" klibi, kız kardeşi Janet Jackson ile birlikte çekilmiş olup müzik tarihinde hangi rekoru uzun süre elinde tutmuştur?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Adele Bloch-Bauer I",
+      "Yaşam Ağacı",
+      "Öpücük (The Kiss)",
+      "Danaë"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Gustav Klimt'in \"Altın Dönemi\"nin zirvesi sayılan, iki kişinin birbirine sarıldığı ve gerçek altın varak kullanılarak yapılan tablosunun adı nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Zerdüştlük (Zoroastrizm)",
+      "Kelt Paganizmi",
+      "Slav Ortodoksluğu",
+      "Budizm"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Bohemian Rhapsody şarkısının sözlerinde geçen \"Bismillah\" ve \"Scaramouche\" gibi kelimeler ile Freddie Mercury'nin etkilendiği, ailesinin inancı olan din hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Claude Debussy",
+      "Maurice Ravel",
+      "Erik Satie",
+      "Gabriel Fauré"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Sadece sağ eliyle piyano çalabilen savaş gazisi Paul Wittgenstein için \"Sol El için Piyano Konçertosu\"nu besteleyen Fransız empresyonist besteci kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Su Orgu",
+      "Cam Armonika",
+      "Kristal Flüt",
+      "Klavikord"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Cam kâselerin dönmesi ve ıslak parmakların sürtünmesiyle ses çıkaran, Benjamin Franklin tarafından icat edilen enstrüman hangisidir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Kıyamet Günü",
+      "Saman Arabası",
+      "Deliler Gemisi",
+      "Dünyevi Zevkler Bahçesi"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Hieronymus Bosch'un cennet, dünya ve cehennemi tasvir ettiği, sürrealist ögelerle dolu ünlü üç kanatlı altar panosunun (triptik) adı nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Grammy Ödülleri 1984",
+      "Motown 25: Yesterday, Today, Forever",
+      "Live Aid Konseri",
+      "Super Bowl XXVII Devre Arası"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Michael Jackson \"Billie Jean\" şarkısını ve ünlü Moonwalk dansını televizyonda ilk kez hangi özel yayında sergilemiştir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Franz Schubert",
+      "Antonín Dvořák",
+      "Gustav Mahler",
+      "Felix Mendelssohn"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Klasik müzik tarihinde \"Bitmemiş Senfoni\" olarak bilinen 8. Senfoni'nin bestecisi olan Avusturyalı romantik dönem müzisyeni kimdir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Kübizm",
+      "Fovizm",
+      "Noktacılık (Pointillism)",
+      "Empresyonizm"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Georges Seurat'nın \"La Grande Jatte Adası'nda Bir Pazar Öğleden Sonrası\" adlı devasa tablosunda kullandığı, renklerin küçük noktalar halinde yan yana uygulandığı resim tekniğinin adı nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Gagaku",
+      "Gamelan",
+      "Mariachi",
+      "Klezmer"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Endonezya ve Bali kültürüne ait, vurmalı çalgılardan (gonglar, metalofonlar) oluşan büyük geleneksel orkestranın adı nedir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "En fazla bilet satılan konser performansı",
+      "Rock tarihinin en iyi canlı performansı",
+      "Freddie Mercury'nin sahneye son çıkışı",
+      "Dünyanın en uzun süren şarkısı"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Queen grubunun 1985 yılında Live Aid konserinde sergilediği 21 dakikalık performans, müzik otoriteleri tarafından genellikle ne olarak kabul edilir?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Zenginliği",
+      "Sadakati",
+      "Ölümü",
+      "Günahı"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Jan van Eyck'ın aynadaki yansıma ve detaylı sembolizmiyle ünlü, Rönesans resminin başyapıtlarından \"Arnolfini'nin Evlenmesi\" tablosundaki köpek neyi sembolize eder?"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "difficulty": "Zor",
+    "options": [
+      "Niccolò Paganini",
+      "Arcangelo Corelli",
+      "Giuseppe Tartini",
+      "Tomaso Albinoni"
+    ],
+    "correctOptionIndex": 2,
+    "text": "\"Şeytan Trili\" (Devil's Trill Sonata) adlı eserini rüyasında şeytanın yatağının ucunda keman çaldığını gördükten sonra besteleyen İtalyan besteci ve kemancı kimdir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Japonya",
+      "Singapur",
+      "Güney Kore",
+      "İsviçre"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Sokaklarını temiz tutmak amacıyla 1992 yılından bu yana ülkeye girişi ve satışı yasak olan, yalnızca tıbbi amaçlarla kullanıma izin verilen sakız yasağı hangi ülkede uygulanmaktadır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Norveç",
+      "Finlandiya",
+      "İsveç",
+      "İzlanda"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Kuzey Kutup Dairesi'nde yer alan bölgelerinde yaz aylarında güneşin hiç batmadığı 'Gece Yarısı Güneşi' olayı ile ünlü İskandinav ülkesi hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Afrika",
+      "Avustralya",
+      "Antarktika",
+      "Asya"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Genellikle kum tepeleriyle hayal edilse de, aslında yağış miktarının azlığı nedeniyle dünyanın en büyük 'çölü' kabul edilen kıta hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Kanada",
+      "İskoçya",
+      "Yeni Zelanda",
+      "İzlanda"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Gerek volkanik yapısı gerekse sürekli değişen iklimi sebebiyle dünyada hiçbir sivrisineğin yaşamadığı nadir ülkelerden biri hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "İtalya",
+      "İspanya",
+      "Meksika",
+      "Portekiz"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Her yıl Ağustos ayında insanların sokaklarda birbirine tonlarca ezilmiş domates fırlattığı 'La Tomatina' festivali hangi ülkede düzenlenmektedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Filipinler",
+      "Endonezya",
+      "Avustralya",
+      "Maldivler"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Uzaydan bile görülebilen, dünyanın en büyük canlı yapısı olan Büyük Set Resifi (Great Barrier Reef) hangi ülkenin kıyılarında yer alır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Japonya",
+      "Çin",
+      "Hindistan",
+      "Tayland"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Toplumlarında birbirlerine saygı göstermek için eğilerek selamlama geleneği oldukça önemli olan ve 100 yaşını aşmış insan sayısının en yüksek olduğu ülke hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Kızıldeniz",
+      "Lut Gölü (Ölüdeniz)",
+      "Aral Gölü",
+      "Hazar Denizi"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Sularındaki yüksek tuz oranı (yaklaşık %34) sebebiyle insanların hiç çaba sarf etmeden suyun yüzeyinde batmadan durabildiği ünlü göl (deniz) hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Kanada",
+      "Endonezya",
+      "Yunanistan",
+      "İsveç"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Sınırları içerisinde irili ufaklı 260 binden fazla ada barındırarak 'dünyanın en çok adaya sahip ülkesi' unvanını elinde tutan ülke hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Amsterdam",
+      "Brugge",
+      "Venedik",
+      "St. Petersburg"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Sokakları asfalt yerine sularla kaplı olan, ulaşımın otomobiller yerine gondol ve teknelerle sağlandığı, kanallarıyla ünlü şehir hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Peru",
+      "Mısır",
+      "Meksika",
+      "Irak"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Nil Nehri'nin hayat verdiği, aynı zamanda dünyanın yedi harikasından biri olan ve gizemi tam olarak çözülememiş devasa antik piramitlere ev sahipliği yapan ülke hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Afyonkarahisar",
+      "Nevşehir",
+      "Denizli",
+      "Antalya"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Mineral bakımından zengin termal suların oluşturduğu, basamaklar halinde aşağı inen bembeyaz travertenleriyle ünlü doğa harikamız Pamukkale hangi ilimizde yer alır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Kolombiya",
+      "Peru",
+      "Venezuela",
+      "Brezilya"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Dünya üzerindeki oksijenin önemli bir kısmını ürettiği için 'Dünyanın Akciğerleri' olarak da anılan devasa Amazon Yağmur Ormanları en çok hangi ülkenin sınırları içindedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Nepal",
+      "Hindistan",
+      "Tayland",
+      "Sri Lanka"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Dini inançları gereği inekleri kutsal kabul eden ve sokaklarda serbestçe dolaşmalarına izin verilen, kesilmeleri yasak olan ülke hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Hollanda",
+      "Danimarka",
+      "Belçika",
+      "Almanya"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Düz coğrafyası nedeniyle insanların ulaşım için bisikleti yoğun bir şekilde kullandığı ve 'insan sayısından çok bisiklet bulunan' Avrupa ülkesi hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "ABD",
+      "Rusya",
+      "Kanada",
+      "Meksika"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Dünya üzerindeki tatlı su göllerinin %50'sinden fazlasına tek başına ev sahipliği yapan geniş yüzölçümlü Kuzey Amerika ülkesi hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Çin",
+      "Moğolistan",
+      "Japonya",
+      "Güney Kore"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Uzaydan çıplak gözle görülebildiği efsanesiyle bilinen, aslında görülmesi çok zor olan ve ülkeyi istilacılardan korumak için inşa edilen dünyanın en uzun savunma duvarı hangi ülkededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Rusya",
+      "Fransa",
+      "ABD",
+      "İngiltere"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Coğrafi olarak Avrupa'da yer almasına rağmen, okyanus aşırı toprakları ve sömürgeleri sayesinde 12 farklı saat dilimi ile 'dünyada en çok saat dilimine sahip ülke' hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Avustralya",
+      "Japonya",
+      "Yeni Zelanda",
+      "Şili"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İçerisindeki tavanı kaplayan binlerce biyolüminesans (ışık saçan) canlının adeta yıldızlı bir gökyüzü illüzyonu yarattığı 'Waitomo Ateşböceği Mağaraları' hangi ülkededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "İsveç",
+      "Norveç",
+      "İskoçya",
+      "Finlandiya"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Her yıl düzenlenen ve erkek yarışmacıların eşlerini sırtlarında veya omuzlarında taşıyarak engelli bir parkuru en hızlı şekilde bitirmeye çalıştıkları ilginç 'Eş Taşıma Şampiyonası' nerede ortaya çıkmıştır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Bolivya",
+      "Peru",
+      "Arjantin",
+      "Şili"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Yağmur yağdığında gökyüzünün mükemmel bir yansımasını oluşturarak dünyanın en büyük aynası haline gelen 'Salar de Uyuni' tuz gölü hangi ülkededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Tanzanya",
+      "Etiyopya",
+      "Kenya",
+      "Madagaskar"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Gezegenin en sıcak yerlerinden biri olan ve sarı, yeşil, turuncu gibi neon renkli volkanik asit havuzlarıyla adeta başka bir gezegeni andıran 'Danakil Çöküntüsü' nerededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Hindistan",
+      "Malezya",
+      "Tayland",
+      "Endonezya"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Yerel halkın her yıl binlerce makak maymunu için tonlarca meyve ve sebzeden oluşan devasa bir ziyafet hazırladığı 'Maymun Açık Büfe Festivali' hangi ülkede yapılmaktadır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Azerbaycan",
+      "Kazakistan",
+      "Özbekistan",
+      "Türkmenistan"
+    ],
+    "correctOptionIndex": 3,
+    "text": "1971'de Sovyet mühendislerin sondaj yaparken oluşturduğu ve zehirli gaz çıkışını engellemek için ateşe verdikleri, o günden beri sönmeyen 'Cehennem Kapısı' (Darvaza Gaz Krateri) nerededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Meksika",
+      "Küba",
+      "İspanya",
+      "Peru"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Her yıl Kasım ayında insanların yüzlerini iskelet gibi boyayıp renkli sunaklar hazırlayarak ölmüş yakınlarını sevinçle andıkları 'Ölüler Günü' (Dia de los Muertos) geleneği hangi ülkeye aittir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Kanada",
+      "Rusya",
+      "Norveç",
+      "ABD"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Kış aylarında sıcaklığın -70 derecelere kadar düştüğü, dünyada insanların kalıcı olarak yaşadığı en soğuk yerleşim yeri olan 'Oymyakon' köyü hangi ülkededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Yunanistan",
+      "Tayvan",
+      "Japonya",
+      "Güney Kore"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Adadaki kedi nüfusunun insan nüfusunu geçtiği, köpeklerin adaya getirilmesinin yasak olduğu ve kedilere tapınakların adandığı meşhur 'Tashirojima' adası nerededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "İzlanda",
+      "İskoçya",
+      "İrlanda Cumhuriyeti",
+      "Kuzey İrlanda"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Volkanik patlamalar sonucu oluşmuş, birbiriyle mükemmel şekilde kenetlenen yaklaşık 40.000 bazalt sütundan oluşan ve efsanelere konu olan 'Devler Kaldırımı' (Giant's Causeway) nerededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "İspanya",
+      "Portekiz",
+      "Arjantin",
+      "Brezilya"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Her yıl Temmuz ayında San Fermin Festivali kapsamında binlerce insanın dar sokaklarda serbest bırakılan kızgın boğalarla birlikte koştuğu etkinlik hangi ülkenin Pamplona şehrinde yapılır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Kosta Rika",
+      "Kolombiya",
+      "Venezuela",
+      "Ekvador"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Yılın belirli dönemlerinde su bitkilerinin açmasıyla kırmızı, sarı, mavi, yeşil ve siyah renklere bürünerek 'Sıvı Gökkuşağı' adını alan Caño Cristales nehri hangi ülkededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "İzlanda",
+      "Grönland",
+      "Antarktika",
+      "Sibirya"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İçerdiği yüksek orandaki demir oksit nedeniyle adeta kan akıyormuş gibi kırmızı renkte şelalelerin aktığı 'Kan Şelaleleri' (Blood Falls) hangi coğrafyada yer alır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Sahra Çölü",
+      "Gobi Çölü",
+      "Atacama Çölü",
+      "Ölüm Vadisi (Death Valley)"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Kilolarca ağırlıktaki kayaların kuruyan göl yatağında kendiliğinden uzun mesafelerce hareket edip arkalarında iz bıraktıkları 'Hareket Eden Taşlar' gizemi nerede yaşanmaktadır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Mauritius",
+      "Maldivler",
+      "Seyşeller",
+      "Fiji"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Kum ve silt tortularının okyanus akıntılarıyla taşınması sonucu deniz tabanında kocaman bir şelale varmış gibi muazzam bir optik illüzyon oluşturan 'Sualtı Şelalesi' hangi ada ülkesindedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Meksika",
+      "Şili",
+      "Avustralya",
+      "Mısır"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Bazı bölgelerine on yıllardır tek bir damla bile yağmur düşmeyen ve Mars yüzeyine benzediği için NASA'nın uzay araçlarını test ettiği 'Atacama Çölü' hangi ülkededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Challenger Çukuru",
+      "Mariana Çukuru",
+      "Point Nemo",
+      "Bermuda Şeytan Üçgeni"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Dünya üzerinde karaya en uzak olan okyanus noktasına ne ad verilir? (O kadar uzaktır ki, bazen bu noktaya en yakın insanlar Uzay İstasyonu'ndaki astronotlar olur.)"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Brezilya",
+      "Kolombiya",
+      "Arjantin",
+      "Venezuela"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Maracaibo Gölü üzerinde yılda ortalama 260 gün, günde 10 saat boyunca sessiz ve sürekli çakan gizemli atmosferik olay 'Catatumbo Yıldırımları' hangi ülkede görülür?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Peru",
+      "Ekvador",
+      "Kosta Rika",
+      "Panama"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Amazon ormanlarının derinliklerinde bulunan, suyunun sıcaklığı 90 dereceye kadar çıkan ve içine düşen hayvanları canlı canlı haşlayan efsanevi 'Kaynayan Nehir' (Shanay-Timpishka) nerededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Lavların yerçekimine karşı akması",
+      "Mavi renkli alevler saçması",
+      "Sürekli kar püskürtmesi",
+      "Lavların şeffaf olması"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Kawah Ijen yanardağını dünya çapında eşsiz kılan ve geceleri turistleri cezbeden, içindeki yüksek sülfür (kükürt) gazlarının yanmasıyla oluşan doğa olayı hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Nyos Gölü",
+      "Vostok Gölü",
+      "Natron Gölü",
+      "Retba Gölü"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Suyundaki aşırı yüksek sodyum karbonat seviyesi nedeniyle, sularında ölen kuşları ve yarasaları kalsifiye edip (kireçleştirerek) adeta taşa çeviren, ürkütücü kırmızı renkteki göl hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Umman",
+      "Somali",
+      "Madagaskar",
+      "Yemen"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Ters dönmüş bir şemsiyeyi andıran 'Ejderha Kanı Ağaçları' gibi bitki örtüsünün üçte birinin dünyanın başka hiçbir yerinde bulunmadığı, 'Uzaylı Adası' lakaplı Sokotra Adası hangi ülkeye aittir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Polonya",
+      "Romanya",
+      "Ukrayna",
+      "Belarus"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Gövdesinin tabandan itibaren 90 derece bükülüp sonra tekrar yukarı doğru uzadığı, nedeni hala kesin olarak açıklanamayan yaklaşık 400 çam ağacından oluşan 'Çarpık Orman' hangi ülkededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "La Tomatina",
+      "El Colacho",
+      "Las Fallas",
+      "San Juan"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Castrillo de Murcia kasabasında, şeytanı temsil eden sarı kıyafetli adamların sokakta yatakların üzerine yatırılmış bebeklerin üzerinden atlayarak onları kötülüklerden arındırdığına inanılan geleneksel festival hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Japonya",
+      "Tayvan",
+      "Çin",
+      "Bhutan"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Bulutların üzerinde, daracık ve dik bir kaya sütununun zirvesine inşa edilmiş iki tapınaktan oluşan ve sadece binlerce basamak tırmanılarak ulaşılabilen Fanjingshan Dağı'ndaki yapı nerededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Cezayir",
+      "Libya",
+      "Fas",
+      "Moritanya"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Sahra Çölü'nün ortasında devasa bir girdap gibi duran ve 'Sahra'nın Gözü' olarak bilinen 40 km çapındaki dairesel jeolojik yapı (Richat Oluşumu) hangi ülkenin sınırları içindedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Norveç",
+      "Kanada",
+      "Rusya",
+      "İzlanda"
+    ],
+    "correctOptionIndex": 0,
+    "text": "On yıllardır gökyüzünde beliren; sarı, beyaz veya kırmızı renkte yanıp sönen ve bilim insanlarının hala kesin bir kaynağa bağlayamadığı gizemli atmosferik ışıklar 'Hessdalen Işıkları' nerede görülür?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Yeni Zelanda",
+      "Avustralya",
+      "Şili",
+      "Güney Afrika"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Genellikle Eylül-Kasım ayları arasında, gökyüzünde 1000 kilometreye kadar uzayabilen devasa silindir (rulo) şeklinde oluşan nadir bulut dizisine 'Morning Glory' (Sabah Sefası) adı nerede verilmektedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Endonezya",
+      "Malezya",
+      "Hindistan",
+      "Sri Lanka"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Günümüzde hala taş devri koşullarında yaşayan, dış dünyayla teması tamamen reddeden ve adalarına yaklaşan herkesi oklarla vuran Sentinel kabilesinin yaşadığı Kuzey Sentinel Adası siyasi olarak kime aittir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Botsvana",
+      "Angola",
+      "Güney Afrika",
+      "Namibya"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Kızgın kumlarda hiçbir bitkinin yetişmediği mükemmel daireler şeklinde oluşan ve yerel halkın 'tanrıların ayak izleri' olarak adlandırdığı 'Peri Çemberleri' (Fairy Circles) en çok hangi ülkede görülür?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Meksika",
+      "Kolombiya",
+      "Brezilya",
+      "Peru"
+    ],
+    "correctOptionIndex": 0,
+    "text": "İçerisinde boyu 12 metreyi, ağırlığı 55 tonu bulan devasa selenit kristallerinin yer aldığı, sıcaklığın ölümcül seviyelerde olduğu Naica Kristal Mağarası hangi ülkededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Papua Yeni Gine",
+      "Vanuatu",
+      "Fiji",
+      "Solomon Adaları"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Erkeklerin ayak bileklerine sarmaşıklar bağlayarak onlarca metre yüksekteki ahşap kulelerden atladığı 'Naghol' (Kara Atlama) adı verilen ve modern Bungee Jumping'in atası sayılan gelenek nerede doğmuştur?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Atlantik Okyanusu",
+      "Pasifik Okyanusu",
+      "Hint Okyanusu",
+      "Arktik Okyanusu"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Bermuda Şeytan Üçgeni hangi okyanusta yer almaktadır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "38 ila 45 dakika",
+      "3 saat",
+      "1 gün",
+      "2 saat 15 dakika"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Tarihte en kısa süren savaş olarak bilinen İngiltere-Zanzibar savaşı kaç dakika sürmüştür?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Mars",
+      "Venüs",
+      "Jüpiter",
+      "Satürn"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Güneş sistemimizde kendi etrafında diğer gezegenlerin aksine ters yönde dönen gezegen hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Rusya",
+      "Çin",
+      "ABD",
+      "İngiltere"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Gizemli '51. Bölge' hangi ülkenin sınırları içerisinde yer almaktadır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Gezegenlerin çekim gücü sesi yuttuğu için",
+      "Uzayda ses dalgalarını iletecek bir atmosfer (madde) olmadığı için",
+      "Güneş rüzgarları sesi dağıttığı için",
+      "Uzay gemilerinin motor sesleri diğer sesleri bastırdığı için"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Uzayda bir patlama olduğunda neden ses duyulmaz?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "1905",
+      "1912",
+      "1923",
+      "1898"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Buzdağına çarparak batan efsanevi Titanic gemisi hangi yıl sulara gömülmüştür?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Chichen Itza",
+      "Kolezyum",
+      "Stonehenge",
+      "Machu Picchu"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İngiltere'de bulunan ve nasıl inşa edildiği uzun yıllar boyunca büyük bir gizem konusu olan dev taş çemberinin adı nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Yuri Gagarin",
+      "Buzz Aldrin",
+      "Neil Armstrong",
+      "Michael Collins"
+    ],
+    "correctOptionIndex": 2,
+    "text": "İnsanlık tarihinde Ay'a ilk ayak basan astronot kimdir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Babil'in Asma Bahçeleri",
+      "İskenderiye Feneri",
+      "Keops Piramidi",
+      "Artemis Tapınağı"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Antik Dünyanın Yedi Harikası'ndan günümüze kadar ayakta kalmayı başaran tek yapı hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Santa Maria",
+      "Mary Celeste",
+      "Endurance",
+      "Bismarck"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Mürettebatı olmadan, okyanusun ortasında tamamen terk edilmiş halde bulunan gizemli hayalet geminin adı nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Sfenks",
+      "Moai",
+      "Tiki",
+      "Olmec"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Paskalya Adası'nda bulunan ve kimler tarafından nasıl yapıldığı uzun süre tartışılarak gizemini koruyan devasa taş heykellere ne ad verilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Roswell",
+      "Nevada",
+      "Texas",
+      "Salem"
+    ],
+    "correctOptionIndex": 0,
+    "text": "1947 yılında bir UFO'nun (Tanımlanamayan Uçan Cisim) düştüğü iddialarıyla tüm dünyada gizemli bir ün kazanan ABD kasabası neresidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Avustralya",
+      "Mısır",
+      "Meksika",
+      "Kanada"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Dinozorların neslinin tükenmesine yol açtığı düşünülen dev göktaşının Dünya'ya çarptığı yer günümüzde hangi ülkenin sınırları içindedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Dil",
+      "Kulak memesi",
+      "Burun",
+      "Dirsek"
+    ],
+    "correctOptionIndex": 0,
+    "text": "İnsan parmak izi gibi, vücudumuzda tamamen eşsiz olan ve kimlik tespiti için kullanılabilecek diğer uzvumuz hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Kızıl Cüce",
+      "Süpernova",
+      "Nötron Yıldızı",
+      "Kara Delik"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Uzay biliminde, ışığın bile kaçamadığı kadar güçlü bir yerçekimi alanına sahip olan gizemli kozmik cisimlere ne ad verilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Atlantik Okyanusu",
+      "Pasifik Okyanusu",
+      "Hint Okyanusu",
+      "Kuzey Buz Denizi"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Dünyanın bilinen en derin noktası olan ve gizemli canlı türlerine ev sahipliği yapan Mariana Çukuru hangi okyanustadır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Kolay",
+    "options": [
+      "Dünya",
+      "Neptün",
+      "Jüpiter",
+      "Uranüs"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Güneş sistemindeki gezegenler arasında en büyük kütleye ve hacme sahip olan gezegen hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Florida - Küba - Jamaika",
+      "Miami - Bermuda - Porto Riko",
+      "New York - Bahamalar - Haiti",
+      "Texas - Meksika - Kolombiya"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Bermuda Şeytan Üçgeni'nin hayali köşelerini oluşturan üç nokta genellikle nereler olarak kabul edilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Tunguska Olayı",
+      "Çelyabinsk Meteor Düşüşü",
+      "Krakatoa Patlaması",
+      "Sibirya Krateri Vakası"
+    ],
+    "correctOptionIndex": 0,
+    "text": "1908 yılında Sibirya'da gökyüzünde büyük bir patlamaya yol açan ve milyonlarca ağacı deviren gizemli doğa olayına ne ad verilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Alfa Sinyali",
+      "Arecibo Mesajı",
+      "Wow! Sinyali",
+      "Voyager Yankısı"
+    ],
+    "correctOptionIndex": 2,
+    "text": "1977 yılında uzaydan Dünya'ya ulaşan ve 72 saniye süren, kaynağı hala tam olarak çözülememiş meşhur radyo sinyaline ne isim verilmiştir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Tunguska Vakası",
+      "Dyatlov Geçidi Vakası",
+      "Kayıp Kıta Efsanesi",
+      "Ural Dağları Gizemi"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1959'da Ural Dağları'nda 9 dağcının çadırlarını yırtarak dışarı kaçtıkları ve açıklanamayan şekilde can verdikleri esrarengiz olayın adı nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Voynich El Yazması",
+      "Ölü Deniz Tomarları",
+      "Gümüş Kitap",
+      "Codex Gigas"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Karbon testlerine göre 15. yüzyıla ait olan ve hala hiçbir dil bilimci veya şifrebilimci tarafından tek bir kelimesi bile çözülememiş gizemli kitap hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Cüce Gezegen",
+      "Ötegezegen (Exoplanet)",
+      "Pulsar",
+      "Yıldızaltı Cisim"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Güneş sistemimizin dışında keşfedilen ve yaşam barındırma potansiyeline sahip olduğu düşünülen gezegenlere bilimsel olarak ne ad verilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Mumya Ruhu",
+      "Piramit Büyüsü",
+      "Firavunun Laneti",
+      "Anubis'in Gazabı"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Antik Mısır efsanelerine göre, firavunların mezarlarını açanların amansız bir hastalığa veya ölüme yakalanacağına inanılan efsanevi inanç nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Brezilya",
+      "Peru",
+      "Meksika",
+      "Şili"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Sadece gökyüzünden bakıldığında tam olarak ne oldukları anlaşılabilen, çöldeki devasa geometrik şekiller ve hayvan figürlerinden oluşan Nazca Çizgileri hangi ülkededir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Salem Kasabası",
+      "Kayıp Koloni (Roanoke)",
+      "Jamestown",
+      "Plymouth"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1580'lerde Kuzey Amerika'da kurulan, ancak tüm nüfusunun arkalarında sadece bir ağaca kazınmış 'CROATOAN' kelimesi bırakarak yok olduğu yerleşime ne ad verilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Gümüş Gözcü",
+      "Sessiz Gemi",
+      "Kara Şövalye (Black Knight) Uydusu",
+      "Yıldız Geçidi"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Efsanelere göre 13 bin yıldır Dünya yörüngesinde dolanan ve kökeni uzaylılara atfedilen esrarengiz nesneye UFO komplo teorisyenleri ne ad vermektedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Kara Ölüm",
+      "Dans Salgını",
+      "Uyku Hastalığı",
+      "Gülme Krizi Vakası"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1518'de Fransa'nın Strazburg kentinde insanların günlerce sokaklarda durmadan hareket edip tükenerek ölmesine yol açan tuhaf psikolojik veya nörolojik vaka nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Atmosferinin oksijenle tamamen kaplı olması",
+      "Yüzeyinde uzaylı yapılarına benzeyen oluşumlar bulunması",
+      "Buzla kaplı yüzeyinin altında devasa bir sıvı su okyanusu barındırma ihtimali",
+      "Güneş sistemindeki en sıcak uydu olması"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Jüpiter'in uydularından biri olan Europa, uzay bilimciler ve astrobiyologlar için neden devasa bir gizem ve umut kaynağıdır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Uçan Hollandalı (Flying Dutchman)",
+      "Kara İnci",
+      "Kraliçe Anne'in İntikamı",
+      "Kızıl Ekim"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Denizcilik efsanelerine göre, asla bir limana dönemeyen ve sonsuza dek okyanuslarda yelken açmaya mahkum edilmiş hayalet geminin adı nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "El Dorado",
+      "Machu Picchu",
+      "Chichen Itza",
+      "Teotihuacan"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1911 yılına kadar dış dünyadan tamamen gizli kalmış, And Dağları'nın zirvesine inşa edilmiş görkemli İnka şehri hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Zodiac",
+      "Karındeşen Jack",
+      "Boston Kasabı",
+      "Gece Avcısı"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1888 yılında Londra'da işlediği cinayetlerin sırrı ve gerçek kimliği bugüne kadar asla çözülememiş olan ünlü seri katil kimdir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Suda yaşayan kırmızı algler",
+      "Volkanik patlamalardan sızan lavlar",
+      "Demir oksit (pas) açısından son derece zengin tuzlu su",
+      "Buzun altındaki devasa mercan resifleri"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Antarktika'da bulunan ve rengi nedeniyle 'Kan Şelaleleri' olarak anılan buzul altı akıntısına kırmızı rengini veren bilimsel açıklama nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Orta",
+    "options": [
+      "Çatalhöyük",
+      "Göbeklitepe",
+      "Zeugma",
+      "Hattuşaş"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Şanlıurfa yakınlarında bulunan ve 'tarihin sıfır noktası' olarak adlandırılarak bilinen insanlık tarihini değiştiren gizemli arkeolojik alan neresidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Zanetti Treni",
+      "Orient Express",
+      "Roma Ekspresi",
+      "Lombardiya Hayaleti"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Şehir efsanelerine göre 1911'de İtalya'da 106 yolcusuyla bir tünele girip bir daha çıkamayan ve zaman yolculuğu yaptığı iddia edilen trenin adı nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Manhattan Projesi",
+      "Philadelphia Deneyi",
+      "MK-Ultra Projesi",
+      "Majestic 12"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1943 yılında ABD Donanması tarafından gerçekleştirildiği iddia edilen ve bir gemiyi hem radarda hem de optik olarak görünmez yapmayı amaçlayan esrarengiz komplo teorisinin adı nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Fermi Paradoksu",
+      "Drake Denklemi",
+      "Olbers Paradoksu",
+      "İkizler Paradoksu"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Uzayda var olması muhtemel sayısız gelişmiş medeniyete rağmen neden henüz hiçbirinden iz veya sinyal bulamadığımızı sorgulayan bilimsel paradoks hangisidir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "P-51 Mustang",
+      "B-17 Flying Fortress",
+      "TBM Avenger",
+      "F4U Corsair"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Aralık 1945'te Bermuda Şeytan Üçgeni'nde iz bırakmadan kaybolan 'Flight 19' filosundaki uçakların askeri modeli neydi?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Phaistos Diski",
+      "Antikythera Düzeneği",
+      "İskenderiye Usturlabı",
+      "Babil Çarkı"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1901'de bir batıkta bulunan ve M.Ö. 1. yüzyılda astronomik konumları hesaplamak için kullanılan, 'dünyanın ilk analog bilgisayarı' kabul edilen antik mekanizmanın adı nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Kızak köpeklerinin de ağaçlara bağlı şekilde açlıktan ölmüş halde bulunması",
+      "Köydeki tüm ateşlerin hala yanıyor olması",
+      "Buzulların üzerinde devasa geometrik şekillerin belirmesi",
+      "Köyün etrafında hiçbir ayak izine rastlanmamış olması"
+    ],
+    "correctOptionIndex": 0,
+    "text": "1930'da Kanada'da Anjikuni Gölü kıyısındaki bir İnuit (Eskimo) köyünün tüm sakinlerinin, eşyalarını ve silahlarını yerinde bırakarak bir gecede sırra kadem bastığı iddia edilen olayda ne tür bir gariplik daha bulunmuştu?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Zaman Genişlemesi",
+      "Spagettileşme (Spaghettification)",
+      "Kuantum Tünelleme",
+      "Singülarite Çöküşü"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Fizikte, bir nesnenin süper kütleli bir kara deliğin olay ufkunu geçtikten sonra devasa kütleçekim farkları nedeniyle uzun ve ince bir şekle girmesi teorik sürecine ne ad verilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Sokrates",
+      "Aristo",
+      "Platon",
+      "Pisagor"
+    ],
+    "correctOptionIndex": 2,
+    "text": "Günümüzde popüler kültürde ve gizem avcıları arasında geniş yer bulan 'Kayıp Kıta Atlantis' efsanesinden yazılı eserlerinde ilk kez bahseden Antik Yunan filozofu kimdir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Zodiac",
+      "D.B. Cooper",
+      "Büyük Soyguncu",
+      "Charles Ponzi"
+    ],
+    "correctOptionIndex": 1,
+    "text": "1971 yılında bir Amerikan yolcu uçağını kaçırıp 200.000 dolar fidye aldıktan sonra paraşütle gece karanlığına atlayarak ortadan kaybolan ve kimliği asla bulunamayan efsanevi hava korsanının bilinen takma adı nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Kayıp Kozmonotlar (Phantom Cosmonauts)",
+      "Kızıl Ay Projesi",
+      "Sputnik'in Hayaletleri",
+      "Vostok Gizemi"
+    ],
+    "correctOptionIndex": 0,
+    "text": "Soğuk Savaş döneminde, Sovyetler Birliği'nin uzaya resmi kayıtlardan önce kozmonot gönderdiği ancak bu uçuşların ölümle sonuçlanması nedeniyle gizli tutulduğuna inanan komplo teorisine ne isim verilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Aurora Borealis",
+      "Marfa Işıkları",
+      "Naga Ateş Topları",
+      "Hessdalen Işıkları"
+    ],
+    "correctOptionIndex": 3,
+    "text": "Norveç'in bir vadisinde onlarca yıldır gözlemlenen, havada süzülen ve hala bilimsel olarak kesin bir açıklaması bulunamayan garip ışık kürelerine ne ad verilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Golden Gate",
+      "Overtoun Köprüsü",
+      "Tower Bridge",
+      "Brooklyn Köprüsü"
+    ],
+    "correctOptionIndex": 1,
+    "text": "İskoçya'da bulunan ve hiçbir görünür sebep olmaksızın köpeklerin üzerinden atlayarak intihar etmesiyle açıklanamayan bir üne kavuşan meşhur köprünün adı nedir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Ölümsüzler Ordusu",
+      "Terracotta Ordusu",
+      "Yeşim Muhafızları",
+      "Ejderha Birlikleri"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Çin'in ilk imparatoru Qin Shi Huang'ın mezarını öbür dünyada koruması amacıyla kilden yapılmış, her birinin yüzü birbirinden farklı olan binlerce heykelden oluşan devasa orduya ne denir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Zodiac Katili",
+      "Son of Sam",
+      "BTK Katili",
+      "Phantom Killer"
+    ],
+    "correctOptionIndex": 0,
+    "text": "1960'larda ve 70'lerde ABD'de cinayetler işleyen, polislere ve gazetelere gönderdiği karmaşık kriptografik şifrelerin bazıları on yıllar boyunca çözülemeyen seri katil hangi lakabı kullanmıştır?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Antimadde",
+      "Karanlık Madde",
+      "Nötrino Bulutu",
+      "Kozmik Mikrodalga Arkaplanı"
+    ],
+    "correctOptionIndex": 1,
+    "text": "Kozmolojide, evrendeki toplam madde miktarının büyük bir kısmını oluşturduğuna inanılan ancak ışıkla etkileşime girmediği için doğrudan görülemeyen esrarengiz yapıya ne ad verilir?"
+  },
+  {
+    "category": "İlginç Bilgiler ve Gizemler",
+    "difficulty": "Zor",
+    "options": [
+      "Barbaros Hayreddin Paşa",
+      "Turgut Reis",
+      "Piri Reis",
+      "Seydi Ali Reis"
+    ],
+    "correctOptionIndex": 2,
+    "text": "1513 yılında çizdiği dünya haritasında, Antarktika kıtasını buzların altında kalmadan önceki haliyle gösterdiği iddia edilerek büyük bir tarihsel gizem yaratan ünlü Osmanlı denizcisi kimdir?"
   }
 ]
