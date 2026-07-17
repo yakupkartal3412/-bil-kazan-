@@ -107,7 +107,11 @@ class AdService {
 
   void showRewardedAd({required BuildContext context, required Function(int) onRewardEarned, VoidCallback? onClosed}) {
     if (_rewardedAd == null) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Şu an gösterilecek reklam yok, lütfen daha sonra tekrar deneyin.')));
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        content: Text('HATA: Reklam yüklenemedi! İnternetiniz kapalı olabilir veya REKLAM ENGELLEYİCİ kullanıyor olabilirsiniz. Ödül almak için bunları kapatın.'),
+        backgroundColor: Colors.redAccent,
+        duration: Duration(seconds: 4),
+      ));
       loadRewardedAd();
       if (onClosed != null) onClosed();
       return;
