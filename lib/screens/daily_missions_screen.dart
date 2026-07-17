@@ -208,11 +208,6 @@ class DailyMissionsScreen extends StatelessWidget {
                   onPressed: (isCompleted && !isClaimed) 
                       ? () {
                           provider.claimMissionReward(missionId, reward);
-                          Future.delayed(const Duration(seconds: 2), () {
-                            if (context.mounted) {
-                              Navigator.of(context).pop();
-                            }
-                          });
                         }
                       : null,
                   style: ElevatedButton.styleFrom(
