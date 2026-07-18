@@ -219,14 +219,19 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
                       flex: 4,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            _buildAnswer(provider, 0, 'A'),
-                            _buildAnswer(provider, 1, 'B'),
-                            _buildAnswer(provider, 2, 'C'),
-                            _buildAnswer(provider, 3, 'D'),
-                          ],
+                        child: SingleChildScrollView(
+                          physics: const BouncingScrollPhysics(),
+                          child: Column(
+                            children: [
+                              _buildAnswer(provider, 0, 'A'),
+                              const SizedBox(height: 8),
+                              _buildAnswer(provider, 1, 'B'),
+                              const SizedBox(height: 8),
+                              _buildAnswer(provider, 2, 'C'),
+                              const SizedBox(height: 8),
+                              _buildAnswer(provider, 3, 'D'),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -711,21 +716,31 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
                   child: const Text('HAYIR, ELENEYİM', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold)),
                 ),
                 ElevatedButton.icon(
-                  icon: const Icon(Icons.ondemand_video, color: Colors.white),
-                  label: const Text('VİDEO İZLE VE DEVAM ET', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+                  icon: Icon(provider.hasRemovedAds ? Icons.diamond : Icons.ondemand_video, color: Colors.white),
+                  label: Text(provider.hasRemovedAds ? 'VIP BEDAVA DEVAM ET' : 'VİDEO İZLE VE DEVAM ET', style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.amber,
+                    backgroundColor: provider.hasRemovedAds ? Colors.green : Colors.amber,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                   ),
                   onPressed: () {
                     Navigator.pop(ctx);
-                    AdService().showRewardedAd(
-                      context: context,
-                      onRewardEarned: (_) {
+                    if (provider.hasRemovedAds) {
+                      if (provider.consumeVipAction('game_revive')) {
                         provider.reviveWithAd();
-                      },
-                      onClosed: () {}, // Do nothing if closed early without reward
-                    );
+                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('VIP Ayrıcalığı: Canlandınız!'), backgroundColor: Colors.green));
+                      } else {
+                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Günlük VIP Revive sınırına ulaştınız! (Max 10)')));
+                        provider.walkAway(); // Walk away automatically if limit reached to avoid cheating
+                      }
+                    } else {
+                      AdService().showRewardedAd(
+                        context: context,
+                        onRewardEarned: (_) {
+                          provider.reviveWithAd();
+                        },
+                        onClosed: () {}, // Do nothing if closed early without reward
+                      );
+                    }
                   },
                 ),
               ],

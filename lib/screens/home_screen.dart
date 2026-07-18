@@ -233,8 +233,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                     ),
                     const SizedBox(height: 12),
-
-                    // Şans Çarkı kaldırıldı (Yukarı taşındı)
                     _buildMenuButton(
                       icon: Icons.leaderboard,
                       title: 'Skor Tablosu',
@@ -242,6 +240,18 @@ class _HomeScreenState extends State<HomeScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => const LeaderboardScreen()),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 12),
+                    _buildMenuButton(
+                      icon: Icons.group_add_rounded,
+                      title: 'Davet Et Kazan',
+                      subtitle: 'ARKADAŞLARINI ÇAĞIR, KAZAN!',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const InviteScreen()),
                         );
                       },
                     ),
@@ -299,10 +309,16 @@ class _HomeScreenState extends State<HomeScreen> {
         
         String diamondText = provider.formattedTotalCoins;
 
-        return Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            // Money Section
+        return LayoutBuilder(
+          builder: (context, constraints) {
+            return FittedBox(
+              fit: BoxFit.scaleDown,
+              child: ConstrainedBox(
+                constraints: BoxConstraints(minWidth: constraints.maxWidth),
+                child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // Money Section
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -325,82 +341,58 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
-            // Center Actions (Invite & Spin Wheel)
+            // Center Actions (Spin Wheel only now, Invite moved to menu)
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const InviteScreen()),
-                    );
-                  },
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 300),
-                    padding: const EdgeInsets.all(2),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      boxShadow: [
-                        BoxShadow(color: Colors.cyanAccent.withValues(alpha: 0.4), blurRadius: 6, spreadRadius: 0),
-                      ],
-                    ),
-                    child: ClipOval(
-                      child: Container(
-                        width: 52,
-                        height: 52,
-                        color: Colors.black45,
-                        child: const Icon(Icons.group_add_rounded, color: Colors.cyanAccent, size: 32),
+                Padding(
+                  padding: const EdgeInsets.only(right: 15.0), // sola kaydırmak için sağa boşluk ekliyoruz
+                  child: Stack(
+                    clipBehavior: Clip.none,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const SpinWheelScreen()),
+                          );
+                        },
+                        child: AnimatedContainer(
+                          duration: const Duration(milliseconds: 300),
+                          padding: const EdgeInsets.all(2),
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(color: Colors.amberAccent.withValues(alpha: 0.4), blurRadius: 6, spreadRadius: 0),
+                            ],
+                          ),
+                          child: ClipOval(
+                            child: Image.asset(
+                              'assets/images/3d_spin_wheel_nobg.png',
+                              width: 52,
+                              height: 52,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
+                      if (provider.canSpinWheel)
+                        Positioned(
+                          top: -2,
+                          right: -2,
+                          child: Container(
+                            width: 16,
+                            height: 16,
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent,
+                              shape: BoxShape.circle,
+                              border: Border.all(color: AppColors.appPurpleBg, width: 2),
+                            ),
+                          ),
+                        ),
+                    ],
                   ),
                 ),
-                const SizedBox(width: 12),
-                Stack(
-              clipBehavior: Clip.none,
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const SpinWheelScreen()),
-                    );
-                  },
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 300),
-                    padding: const EdgeInsets.all(2),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      boxShadow: [
-                        BoxShadow(color: Colors.amberAccent.withValues(alpha: 0.4), blurRadius: 6, spreadRadius: 0),
-                      ],
-                    ),
-                    child: ClipOval(
-                      child: Image.asset(
-                        'assets/images/3d_spin_wheel_nobg.png',
-                        width: 52,
-                        height: 52,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                ),
-                if (provider.canSpinWheel)
-                  Positioned(
-                    top: -2,
-                    right: -2,
-                    child: Container(
-                      width: 16,
-                      height: 16,
-                      decoration: BoxDecoration(
-                        color: Colors.redAccent,
-                        shape: BoxShape.circle,
-                        border: Border.all(color: AppColors.appPurpleBg, width: 2),
-                      ),
-                    ),
-                  ),
-              ],
-            ),
               ],
             ),
 
@@ -454,6 +446,10 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ],
+        ),
+        ),
+        );
+        },
         );
       },
     );
@@ -810,17 +806,18 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  'Zeka seviyen (IQ), doğru cevaplama oranın ve tecrübene (çözdüğün soru sayısına) göre hesaplanır.\n\nBaşlangıç IQ seviyesi 50\'dir. Maksimum ulaşılabilecek IQ ise 160\'tır.\n\nUnvan Barajları:',
+                  'Zeka seviyen (IQ), doğru cevaplama oranın ve tecrübene (çözdüğün soru sayısına) göre hesaplanır.\n\nBaşlangıç IQ seviyesi 10\'dur. Maksimum ulaşılabilecek IQ ise 160\'tır.\n\nUnvan Barajları:',
                   style: TextStyle(color: Colors.white70, fontSize: 14),
                 ),
                 const SizedBox(height: 12),
-                _buildIQLevelRow('Çömez', '50 - 79 IQ', provider.userTitle),
-                _buildIQLevelRow('Çırak', '80 - 99 IQ', provider.userTitle),
-                _buildIQLevelRow('Öğrenci', '100 - 119 IQ', provider.userTitle),
-                _buildIQLevelRow('Bilgin', '120 - 134 IQ', provider.userTitle),
-                _buildIQLevelRow('Profesör', '135 - 147 IQ', provider.userTitle),
-                _buildIQLevelRow('Dahi', '148 - 157 IQ', provider.userTitle),
-                _buildIQLevelRow('Efsane', '158+ IQ', provider.userTitle),
+                _buildIQLevelRow('Acemi', '10 - 29 IQ', provider.userTitle),
+                _buildIQLevelRow('Çömez', '30 - 59 IQ', provider.userTitle),
+                _buildIQLevelRow('Çırak', '60 - 89 IQ', provider.userTitle),
+                _buildIQLevelRow('Öğrenci', '90 - 109 IQ', provider.userTitle),
+                _buildIQLevelRow('Bilgin', '110 - 129 IQ', provider.userTitle),
+                _buildIQLevelRow('Profesör', '130 - 144 IQ', provider.userTitle),
+                _buildIQLevelRow('Dahi', '145 - 154 IQ', provider.userTitle),
+                _buildIQLevelRow('Efsane', '155+ IQ', provider.userTitle),
                 const SizedBox(height: 12),
                 const Text(
                   'İpucu: Sadece soruları doğru bilmek yetmez, bol bol soru çözerek tecrübe puanını (XP) da artırmalısın!',

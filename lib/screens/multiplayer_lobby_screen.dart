@@ -81,23 +81,34 @@ class _MultiplayerLobbyScreenState extends State<MultiplayerLobbyScreen> {
               children: [
                 ElevatedButton.icon(
                   onPressed: () {
-                    AdService().showRewardedAd(
-                      context: context,
-                      onRewardEarned: (amount) {
+                    if (quizProvider.hasRemovedAds) {
+                      if (quizProvider.consumeVipAction('room_card')) {
                         quizProvider.giveFreeRoomCard();
-                      },
-                      onClosed: () {
                         Navigator.pop(ctx);
-                        if (quizProvider.roomCards > 0) {
-                           _createRoom();
-                        }
+                        _createRoom();
+                      } else {
+                        Navigator.pop(ctx);
+                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Günlük VIP Bedava Oda Kartı sınırına ulaştınız! (Max 20)')));
                       }
-                    );
+                    } else {
+                      AdService().showRewardedAd(
+                        context: context,
+                        onRewardEarned: (amount) {
+                          quizProvider.giveFreeRoomCard();
+                        },
+                        onClosed: () {
+                          Navigator.pop(ctx);
+                          if (quizProvider.roomCards > 0) {
+                             _createRoom();
+                          }
+                        }
+                      );
+                    }
                   },
-                  icon: const Icon(Icons.ondemand_video, color: Colors.white),
-                  label: const Text('VİDEO İZLE VE KAZAN', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                  icon: Icon(quizProvider.hasRemovedAds ? Icons.diamond : Icons.ondemand_video, color: Colors.white),
+                  label: Text(quizProvider.hasRemovedAds ? 'VIP BEDAVA AL' : 'VİDEO İZLE VE KAZAN', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.purpleAccent,
+                    backgroundColor: quizProvider.hasRemovedAds ? Colors.green : Colors.purpleAccent,
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))
                   ),
@@ -284,19 +295,29 @@ class _MultiplayerLobbyScreenState extends State<MultiplayerLobbyScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: ElevatedButton.icon(
                     onPressed: () {
-                      AdService().showRewardedAd(
-                        context: context,
-                        onRewardEarned: (amount) {
-                          Provider.of<QuizProvider>(context, listen: false).giveFreeRoomCard();
-                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Tebrikler! 1 Oda Kartı kazandınız.'), backgroundColor: Colors.green));
-                        },
-                      );
+                      final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+                      if (quizProvider.hasRemovedAds) {
+                        if (quizProvider.consumeVipAction('room_card')) {
+                          quizProvider.giveFreeRoomCard();
+                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('VIP Ayrıcalığı: 1 Oda Kartı kazandınız!'), backgroundColor: Colors.green));
+                        } else {
+                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Günlük VIP Bedava Oda Kartı sınırına ulaştınız! (Max 20)')));
+                        }
+                      } else {
+                        AdService().showRewardedAd(
+                          context: context,
+                          onRewardEarned: (amount) {
+                            quizProvider.giveFreeRoomCard();
+                            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Tebrikler! 1 Oda Kartı kazandınız.'), backgroundColor: Colors.green));
+                          },
+                        );
+                      }
                     },
-                    icon: const Icon(Icons.ondemand_video, color: Colors.white, size: 20),
-                    label: const Text('BEDAVA KART KAZAN', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                    icon: Icon(Provider.of<QuizProvider>(context).hasRemovedAds ? Icons.diamond : Icons.ondemand_video, color: Colors.white, size: 20),
+                    label: Text(Provider.of<QuizProvider>(context).hasRemovedAds ? 'VIP BEDAVA AL' : 'BEDAVA KART KAZAN', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.purpleAccent.shade400,
-                      minimumSize: const Size(double.infinity, 45),
+                      backgroundColor: Provider.of<QuizProvider>(context).hasRemovedAds ? Colors.green : Colors.orangeAccent,
+                      padding: const EdgeInsets.symmetric(vertical: 12),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
                     ),
                   ),

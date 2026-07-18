@@ -289,7 +289,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                 const SizedBox(height: 30),
                 
                 SizedBox(
-                  height: 60,
+                  height: 90,
                   child: AnimatedSwitcher(
                     duration: const Duration(milliseconds: 500),
                     child: isComplete

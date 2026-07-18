@@ -30,6 +30,7 @@ class IapService {
   static const String avatarLegendary = 'avatar_legendary';
   static const String avatarEinstein = 'avatar_einstein';
   static const String packStarter = 'pack_starter';
+  static const String removeAdsVip = 'remove_ads_vip';
 
   final Set<String> _kIds = {
     diamond1000,
@@ -44,6 +45,7 @@ class IapService {
     avatarLegendary,
     avatarEinstein,
     packStarter,
+    removeAdsVip,
   };
 
   Future<void> init(BuildContext context) async {
@@ -83,16 +85,17 @@ class IapService {
 
   void _loadDummyProducts() {
     products = [
-      ProductDetails(id: packStarter, title: 'Hoş Geldin Paketi', description: 'Galileo Avatar + 2000 Elmas + 10 Oda + 20 Joker', price: '49.99 TL', rawPrice: 49.99, currencyCode: 'TRY'),
-      ProductDetails(id: diamond1000, title: '1.000 Elmas Çantası', description: '1000 Elmas', price: '14.99 TL', rawPrice: 14.99, currencyCode: 'TRY'),
-      ProductDetails(id: diamond5000, title: '5.000 Elmas Sandığı', description: '5000 Elmas', price: '39.99 TL', rawPrice: 39.99, currencyCode: 'TRY'),
-      ProductDetails(id: diamond20000, title: '20.000 Elmas Kasası', description: '20000 Elmas', price: '99.99 TL', rawPrice: 99.99, currencyCode: 'TRY'),
-      ProductDetails(id: roomCard10, title: 'Hafta Sonu Paketi', description: '10 Oda Kartı', price: '19.99 TL', rawPrice: 19.99, currencyCode: 'TRY'),
-      ProductDetails(id: roomCard50, title: 'Parti Paketi', description: '50 Oda Kartı (Çok Kârlı!)', price: '49.99 TL', rawPrice: 49.99, currencyCode: 'TRY'),
-      ProductDetails(id: jokerPack20, title: 'Joker Kesesi', description: 'Tüm joker türlerinden 20\'şer adet', price: '19.99 TL', rawPrice: 19.99, currencyCode: 'TRY'),
-      ProductDetails(id: jokerPack50, title: 'Joker Sandığı', description: 'Tüm joker türlerinden 50\'şer adet', price: '49.99 TL', rawPrice: 49.99, currencyCode: 'TRY'),
-      ProductDetails(id: jokerPack100, title: 'Mega Joker Kasası', description: 'Tüm joker türlerinden 100\'er adet', price: '99.99 TL', rawPrice: 99.99, currencyCode: 'TRY'),
-      ProductDetails(id: avatarEinstein, title: 'Einstein Avatar', description: 'En Nadir VIP Avatar', price: '89.99 TL', rawPrice: 89.99, currencyCode: 'TRY'),
+      ProductDetails(id: packStarter, title: 'Hoş Geldin Paketi', description: 'Galileo Avatar + 2000 Elmas + 10 Oda + 20 Joker', price: '49.99 ₺', rawPrice: 49.99, currencyCode: 'TRY'),
+      ProductDetails(id: diamond1000, title: '1.000 Elmas Çantası', description: '1000 Elmas', price: '14.99 ₺', rawPrice: 14.99, currencyCode: 'TRY'),
+      ProductDetails(id: diamond5000, title: '5.000 Elmas Sandığı', description: '5000 Elmas', price: '39.99 ₺', rawPrice: 39.99, currencyCode: 'TRY'),
+      ProductDetails(id: diamond20000, title: '20.000 Elmas Kasası', description: '20000 Elmas', price: '99.99 ₺', rawPrice: 99.99, currencyCode: 'TRY'),
+      ProductDetails(id: roomCard10, title: 'Hafta Sonu Paketi', description: '10 Oda Kartı', price: '19.99 ₺', rawPrice: 19.99, currencyCode: 'TRY'),
+      ProductDetails(id: roomCard50, title: 'Parti Paketi', description: '50 Oda Kartı (Çok Kârlı!)', price: '49.99 ₺', rawPrice: 49.99, currencyCode: 'TRY'),
+      ProductDetails(id: jokerPack20, title: 'Joker Kesesi', description: 'Tüm joker türlerinden 20\'şer adet', price: '19.99 ₺', rawPrice: 19.99, currencyCode: 'TRY'),
+      ProductDetails(id: jokerPack50, title: 'Joker Sandığı', description: 'Tüm joker türlerinden 50\'şer adet', price: '49.99 ₺', rawPrice: 49.99, currencyCode: 'TRY'),
+      ProductDetails(id: jokerPack100, title: 'Mega Joker Kasası', description: 'Tüm joker türlerinden 100\'er adet', price: '99.99 ₺', rawPrice: 99.99, currencyCode: 'TRY'),
+      ProductDetails(id: avatarEinstein, title: 'Einstein Avatar', description: 'En Nadir VIP Avatar', price: '89.99 ₺', rawPrice: 89.99, currencyCode: 'TRY'),
+      ProductDetails(id: removeAdsVip, title: 'Reklamları Kaldır (VIP)', description: 'Sınırsız Ayrıcalıklar', price: '99.99 ₺', rawPrice: 99.99, currencyCode: 'TRY'),
     ];
     isAvailable = true; // Test mode'da ürünlerin ekranda görünmesi için true yapıyoruz
   }
@@ -110,7 +113,7 @@ class IapService {
     }
 
     final PurchaseParam purchaseParam = PurchaseParam(productDetails: product);
-    bool isConsumable = !product.id.startsWith('avatar_');
+    bool isConsumable = !product.id.startsWith('avatar_') && product.id != removeAdsVip;
     
     try {
       if (isConsumable) {
@@ -188,10 +191,13 @@ class IapService {
       case avatarEinstein:
         provider.grantIAPReward(avatarUnlocks: ['assets/images/einstein_avatar.png']);
         break;
+      case removeAdsVip:
+        provider.grantVipAccess();
+        break;
     }
     
     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-      content: Text('Satın alma başarılı! Ödülleriniz eklendi. 🎉'),
+      content: Text('Satın alma başarılı! Ödülleriniz eklendi. 💎🎁'),
       backgroundColor: Colors.green,
     ));
   }

@@ -18,21 +18,60 @@ class LeaderboardScreen extends StatefulWidget {
 class _LeaderboardScreenState extends State<LeaderboardScreen> {
   int _selectedTab = 0; // 0: Klasik Mod, 1: Sonsuz Mod, 2: Geçmiş
   Timer? _countdownTimer;
+  Timer? _dotTimer;
   Duration _timeUntilReset = Duration.zero;
   Stream<QuerySnapshot>? _leaderboardStream;
+  bool _hasSeenWeeklyRewardsThisWeek = true;
 
   @override
   void initState() {
     super.initState();
     _updateStream();
     _calculateTimeUntilReset();
+    _checkWeeklyRewardsDot();
     _countdownTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
       _calculateTimeUntilReset();
     });
   }
 
+  Future<void> _checkWeeklyRewardsDot() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      String lastSeenStr = prefs.getString('last_seen_weekly_rewards') ?? '';
+      
+      bool shouldShow = false;
+      if (lastSeenStr.isEmpty) {
+        shouldShow = true;
+      } else {
+        DateTime lastSeen = DateTime.parse(lastSeenStr);
+        DateTime now = DateTime.now();
+        DateTime lastMonday = lastSeen.subtract(Duration(days: lastSeen.weekday - 1));
+        DateTime thisMonday = now.subtract(Duration(days: now.weekday - 1));
+        
+        if (thisMonday.year != lastMonday.year || thisMonday.month != lastMonday.month || thisMonday.day != lastMonday.day) {
+          shouldShow = true;
+        }
+      }
+
+      if (shouldShow && mounted) {
+        setState(() {
+          _hasSeenWeeklyRewardsThisWeek = false;
+        });
+        _dotTimer = Timer(const Duration(seconds: 5), () async {
+          if (mounted) {
+            setState(() {
+              _hasSeenWeeklyRewardsThisWeek = true;
+            });
+            await prefs.setString('last_seen_weekly_rewards', DateTime.now().toIso8601String());
+          }
+        });
+      }
+    } catch (_) {}
+  }
+
   @override
   void dispose() {
+    _dotTimer?.cancel();
     _countdownTimer?.cancel();
     super.dispose();
   }
@@ -46,7 +85,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
 
   void _calculateTimeUntilReset() {
     final now = DateTime.now();
-    // Next Sunday 23:59:59
     int daysUntilSunday = DateTime.sunday - now.weekday;
     if (daysUntilSunday < 0) daysUntilSunday += 7;
     
@@ -75,45 +113,67 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  GestureDetector(
-                    onTap: () => _showWeeklyRewardsInfo(context),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
-                      decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Color(0xFFFFD700), Color(0xFFFF8C00)],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ),
-                        borderRadius: BorderRadius.circular(14),
-                        boxShadow: [
-                          BoxShadow(color: Colors.orange.withValues(alpha: 0.5), blurRadius: 10, spreadRadius: 1),
-                        ],
-                        border: Border.all(color: Colors.yellow.withValues(alpha: 0.6), width: 1),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.all(4),
-                            decoration: BoxDecoration(
-                              color: Colors.black26,
-                              shape: BoxShape.circle,
+                  Stack(
+                    clipBehavior: Clip.none,
+                    children: [
+                      GestureDetector(
+                        onTap: () => _showWeeklyRewardsInfo(context),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              colors: [Color(0xFFFFD700), Color(0xFFFF8C00)],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
                             ),
-                            child: const Icon(Icons.emoji_events_rounded, color: Colors.white, size: 16),
+                            borderRadius: BorderRadius.circular(14),
+                            boxShadow: [
+                              BoxShadow(color: Colors.orange.withValues(alpha: 0.5), blurRadius: 10, spreadRadius: 1),
+                            ],
+                            border: Border.all(color: Colors.yellow.withValues(alpha: 0.6), width: 1),
                           ),
-                          const SizedBox(width: 6),
-                          const Column(
+                          child: Row(
                             mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('HAFTALIK', style: TextStyle(color: Colors.black87, fontWeight: FontWeight.w900, fontSize: 9, letterSpacing: 1)),
-                              Text('ÖDÜLLER', style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 11)),
+                              Container(
+                                padding: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                  color: Colors.black26,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: const Icon(Icons.card_giftcard, color: Colors.white, size: 20),
+                              ),
+                              const SizedBox(width: 6),
+                              const Column(
+                                mainAxisSize: MainAxisSize.min,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('HAFTALIK', style: TextStyle(color: Colors.black87, fontWeight: FontWeight.w900, fontSize: 9, letterSpacing: 1)),
+                                  Text('ÖDÜLLER', style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 11)),
+                                ],
+                              ),
                             ],
                           ),
-                        ],
+                        ),
                       ),
-                    ),
+                      if (!_hasSeenWeeklyRewardsThisWeek)
+                        Positioned(
+                          top: -4,
+                          right: -4,
+                          child: Container(
+                            width: 14,
+                            height: 14,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.white, width: 2),
+                              boxShadow: [
+                                BoxShadow(color: Colors.red.withValues(alpha: 0.5), blurRadius: 4, spreadRadius: 1),
+                              ],
+                            ),
+                          ),
+                        ),
+                    ],
                   ),
                   Expanded(
                     child: const Text(
@@ -172,7 +232,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       ),
                       _buildTimeBox((_timeUntilReset.inHours % 24).toString().padLeft(2, '0'), 'SA'),
                       const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 3),
                         child: Text(':', style: TextStyle(color: Colors.cyanAccent, fontSize: 20, fontWeight: FontWeight.bold)),
                       ),
                       _buildTimeBox((_timeUntilReset.inMinutes % 60).toString().padLeft(2, '0'), 'DK'),
@@ -300,9 +359,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     List<Map<String, dynamic>> parsedScores = [];
                     if (snapshot.hasData) {
                       for (var doc in snapshot.data!.docs) {
-                        // OTOMATİK TEMİZLİK: Eski hatalı isimle kaydedilen belgeleri sil (Bug fix)
                         String prefix = doc.id.split('_').first;
-                        // Firebase UID tam olarak 28 karakterdir. 28 olmayan her şey eski/hatalı kayıttır.
                         if (prefix.length != 28) {
                           FirebaseFirestore.instance.collection('leaderboard').doc(doc.id).delete();
                           continue;
@@ -311,7 +368,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                         try {
                           var map = doc.data() as Map<String, dynamic>;
                           map['uid'] = prefix;
-                          // FİLTRE: Skoru 0 olanları (veya hatalı olanları) Liderlik tablosunda gösterme!
                           num sc = map['score'] ?? 0;
                           if (sc > 0) {
                             parsedScores.add(map);
@@ -320,7 +376,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       }
                     }
 
-                    // Kendi skorunu yerel haftalık skor ile güncelle (anlık güncel görünsün)
                     Map<String, Map<String, dynamic>> bestScores = {};
                     for (var score in parsedScores) {
                       String uid = score['uid'] ?? score['userName'] ?? 'Bilinmeyen';
@@ -331,19 +386,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       }
                     }
                     
-                    // We need to match the current user's uid or fallback to name if auth isn't loaded properly
-                    // Since leaderboard_screen might not have firebase_auth imported directly, we'll use provider.userName as fallback for uid if missing
-                    // Actually, let's just use provider.userName for local sync fallback if uid is not in provider.
-                    // Wait, we can just group by uid and find the current user's entry using their name. 
-                    // But if there are multiple users with the same name, we might pick the wrong one.
-                    // So let's import firebase_auth and get the current user's UID.
-                    
                     if (targetMode == 'Klasik Mod') {
                       String formatted = provider.weeklyScore.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
                       
-                      // Find if current user already exists in bestScores using userName since provider doesn't easily expose UID here
-                      // Actually provider.currentUserId would be better but we'll use userName for now to sync local score.
-                      // Let's find the map entry where userName == provider.userName and update it.
                       String? myUidKey;
                       for (var key in bestScores.keys) {
                         if (bestScores[key]!['userName'] == provider.userName) {
@@ -358,7 +403,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                           bestScores[myUidKey]!['moneyString'] = '$formatted ₺';
                         }
                       } else {
-                        // Add as new entry if not found
                         String fallbackUid = 'local_uid_${DateTime.now().millisecondsSinceEpoch}';
                         bestScores[fallbackUid] = {
                           'mode': 'Klasik Mod',
@@ -647,27 +691,31 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               letterSpacing: 0.5,
             ),
           ),
-          const Spacer(),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-            decoration: BoxDecoration(
-              color: Colors.black45,
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: Colors.cyanAccent.withValues(alpha: 0.3), width: 1),
-            ),
-            child: Row(
-              children: [
-                Image.asset('assets/images/3d_diamond_clear_nobg.png', width: 20, height: 20),
-                const SizedBox(width: 6),
-                Text(
-                  diamonds,
-                  style: const TextStyle(
-                    color: Colors.cyanAccent,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
+          Flexible(
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+              decoration: BoxDecoration(
+                color: Colors.black45,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.cyanAccent.withValues(alpha: 0.3), width: 1),
+              ),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Row(
+                  children: [
+                    Image.asset('assets/images/3d_diamond_clear_nobg.png', width: 20, height: 20),
+                    const SizedBox(width: 6),
+                    Text(
+                      diamonds,
+                      style: const TextStyle(
+                        color: Colors.cyanAccent,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
           ),
         ],
@@ -825,7 +873,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
       ),
       child: Row(
         children: [
-          // Rank badge
           Container(
             width: 32,
             alignment: Alignment.center,
@@ -839,13 +886,13 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 11),
             ),
           ),
-          const SizedBox(width: 7),
+          const SizedBox(width: 8),
           CircleAvatar(
-            radius: 13,
+            radius: 17,
             backgroundImage: AssetImage(avatarPath),
             backgroundColor: Colors.white12,
           ),
-          const SizedBox(width: 7),
+          const SizedBox(width: 8),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -855,22 +902,22 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                   children: [
                     PremiumBadge(
                       title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(scoreMap['userName'] ?? '')),
-                      fontSize: 6,
+                      fontSize: 7,
                     ),
                     const SizedBox(width: 5),
                     Expanded(
                       child: Text(
                         isUser ? provider.userName : scoreMap['userName'] ?? 'Oyuncu',
-                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12),
+                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
                   ],
                 ),
+                const SizedBox(height: 1),
                 Text(
                   moneyString,
-                  style: const TextStyle(color: Colors.white54, fontSize: 10),
-                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(color: Colors.cyanAccent, fontWeight: FontWeight.bold, fontSize: 11),
                 ),
               ],
             ),

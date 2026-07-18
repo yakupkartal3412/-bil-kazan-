@@ -55,6 +55,12 @@ class MultiplayerProvider extends ChangeNotifier {
         'guestFinished': false,
         'questions': questions,
         'createdAt': FieldValue.serverTimestamp(),
+        'currentQuestionIndex': 0,
+        'hostAnswers': {},
+        'guestAnswers': {},
+        'hostEmote': null,
+        'guestEmote': null,
+        'rematchRequestedBy': null,
       }).timeout(const Duration(seconds: 5), onTimeout: () {
         throw TimeoutException('Sunucuya bağlanılamadı. Lütfen internet bağlantınızı kontrol edin veya Firebase ayarlarınızı doğrulayın.');
       });
@@ -154,6 +160,70 @@ class MultiplayerProvider extends ChangeNotifier {
     await _firestore.collection('rooms').doc(_roomId).update({
       scoreField: finalScore,
       finishedField: true,
+    });
+  }
+
+  // CEVAP GÖNDER (Senkron Oyun)
+  Future<void> submitAnswer(int qIndex, int ansIndex) async {
+    if (_roomId == null) return;
+    String fieldPrefix = _isHost ? 'hostAnswers' : 'guestAnswers';
+    await _firestore.collection('rooms').doc(_roomId).update({
+      '$fieldPrefix.$qIndex': ansIndex,
+    });
+  }
+
+  // SONRAKİ SORUYA GEÇ (Sadece Host)
+  Future<void> moveToNextQuestion(int nextIndex) async {
+    if (_roomId == null || !_isHost) return;
+    await _firestore.collection('rooms').doc(_roomId).update({
+      'currentQuestionIndex': nextIndex,
+    });
+  }
+
+  // EMOTE GÖNDER
+  Future<void> sendEmote(String emote) async {
+    if (_roomId == null) return;
+    String field = _isHost ? 'hostEmote' : 'guestEmote';
+    await _firestore.collection('rooms').doc(_roomId).update({
+      field: {
+        'emote': emote,
+        'timestamp': FieldValue.serverTimestamp(),
+      }
+    });
+  }
+
+  // RÖVANŞ İSTE
+  Future<void> requestRematch() async {
+    if (_roomId == null) return;
+    await _firestore.collection('rooms').doc(_roomId).update({
+      'rematchRequestedBy': currentUserId,
+    });
+  }
+
+  // RÖVANŞ KABUL ET
+  Future<void> acceptRematch(List<Map<String, dynamic>> newQuestions) async {
+    if (_roomId == null) return;
+    await _firestore.collection('rooms').doc(_roomId).update({
+      'status': 'playing',
+      'hostScore': 0,
+      'guestScore': 0,
+      'hostFinished': false,
+      'guestFinished': false,
+      'questions': newQuestions,
+      'currentQuestionIndex': 0,
+      'hostAnswers': {},
+      'guestAnswers': {},
+      'hostEmote': null,
+      'guestEmote': null,
+      'rematchRequestedBy': null,
+    });
+  }
+
+  // RÖVANŞ REDDET
+  Future<void> declineRematch() async {
+    if (_roomId == null) return;
+    await _firestore.collection('rooms').doc(_roomId).update({
+      'rematchRequestedBy': null,
     });
   }
 

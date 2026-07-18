@@ -35,6 +35,7 @@ class StoreScreen extends StatefulWidget {
 class _StoreScreenState extends State<StoreScreen> {
   final IapService _iapService = IapService();
   bool _iapInitialized = false;
+  bool _isSurpriseBoxReady = false;
 
   @override
   void initState() {
@@ -481,6 +482,7 @@ class _StoreScreenState extends State<StoreScreen> {
 
     final starterPack = getProduct(IapService.packStarter);
     final einsteinPack = getProduct(IapService.avatarEinstein);
+    final removeAdsPack = getProduct(IapService.removeAdsVip);
     
     final diamondPacks = [
       getProduct(IapService.diamond1000),
@@ -505,6 +507,19 @@ class _StoreScreenState extends State<StoreScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          if (removeAdsPack != null && !provider.hasRemovedAds) ...[
+            _buildSpecialOfferCard(
+              context: context,
+              product: removeAdsPack,
+              title: 'VIP REKLAM KALDIR',
+              subtitle: 'Reklamları kapat ve tüm bedava ödülleri tıkla anında al!',
+              imagePath: 'assets/images/no_ads_vip_icon.png',
+              gradientColors: [const Color(0xFFD4145A), const Color(0xFFFBB03B)],
+              icon: Icons.block,
+            ),
+            const SizedBox(height: 30),
+          ],
+
           if (starterPack != null) ...[
             _buildSpecialOfferCard(
               context: context,
@@ -642,7 +657,7 @@ class _StoreScreenState extends State<StoreScreen> {
     return GestureDetector(
       onTap: onTap ?? () => _iapService.buyProduct(product, context),
       child: Container(
-        height: 140,
+        constraints: const BoxConstraints(minHeight: 140),
         decoration: BoxDecoration(
           gradient: LinearGradient(colors: gradientColors, begin: Alignment.topLeft, end: Alignment.bottomRight),
           borderRadius: BorderRadius.circular(24),
@@ -682,17 +697,25 @@ class _StoreScreenState extends State<StoreScreen> {
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           decoration: BoxDecoration(color: Colors.black45, borderRadius: BorderRadius.circular(8)),
-                          child: Text(title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12, letterSpacing: 1)),
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12, letterSpacing: 1)),
+                          ),
                         ),
                         const SizedBox(height: 8),
-                        Text(subtitle, style: const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w500), maxLines: 2, overflow: TextOverflow.ellipsis),
+                        Text(subtitle, style: const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w500), maxLines: 3, overflow: TextOverflow.ellipsis),
                         const SizedBox(height: 8),
                         Row(
                           children: [
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
-                              child: Text(product.price, style: TextStyle(color: gradientColors.first, fontWeight: FontWeight.w900, fontSize: 16)),
+                            Flexible(
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                                child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  child: Text(product.price, style: TextStyle(color: gradientColors.first, fontWeight: FontWeight.w900, fontSize: 16)),
+                                ),
+                              ),
                             ),
                           ],
                         ),
@@ -869,35 +892,29 @@ class _StoreScreenState extends State<StoreScreen> {
                 const SizedBox(height: 15),
                 ElevatedButton.icon(
                   onPressed: () {
-                    AdService().showRewardedAd(
-                      context: context,
-                      onRewardEarned: (amount) {
-                        int rand = DateTime.now().millisecondsSinceEpoch % 4;
-                        if (rand == 0) {
-                          provider.addCoins(50);
-                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Sürpriz Kutu\'dan 50 Elmas çıktı! 💎'), backgroundColor: Colors.green));
-                        } else if (rand == 1) {
-                          provider.giveFreeRoomCard();
-                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Sürpriz Kutu\'dan 1 Oda Kartı çıktı! 💳'), backgroundColor: Colors.green));
-                        } else if (rand == 2) {
-                          provider.addMoney(5000);
-                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Sürpriz Kutu\'dan 5.000 ₺ çıktı! 💵'), backgroundColor: Colors.green));
-                        } else {
-                          int jokerType = DateTime.now().millisecondsSinceEpoch % 4;
-                          String jokerName = '';
-                          if (jokerType == 0) { provider.addJokerFiftyFiftyToken(1); jokerName = 'Yarı Yarıya'; }
-                          else if (jokerType == 1) { provider.addJokerPhoneToken(1); jokerName = 'Telefon'; }
-                          else if (jokerType == 2) { provider.addJokerAudienceToken(1); jokerName = 'Seyirci'; }
-                          else { provider.addJokerSkipToken(1); jokerName = 'Soruyu Geç'; }
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Sürpriz Kutu\'dan +1 $jokerName Jokeri çıktı! 🃏'), backgroundColor: Colors.green));
-                        }
-                      },
-                    );
+                    if (provider.hasRemovedAds) {
+                      if (provider.consumeVipAction('surprise_box')) {
+                        _openSurpriseBox(provider);
+                      } else {
+                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Günlük VIP Sürpriz Kutu sınırına ulaştınız! (Max 10)')));
+                      }
+                    } else if (_isSurpriseBoxReady) {
+                      _openSurpriseBox(provider);
+                    } else {
+                      AdService().showRewardedAd(
+                        context: context,
+                        onRewardEarned: (amount) {
+                          setState(() {
+                            _isSurpriseBoxReady = true;
+                          });
+                        },
+                      );
+                    }
                   },
-                  icon: const Icon(Icons.ondemand_video, color: Colors.white),
-                  label: const Text('KUTUYU AÇ', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                  icon: Icon((provider.hasRemovedAds || _isSurpriseBoxReady) ? Icons.card_giftcard : Icons.ondemand_video, color: Colors.white),
+                  label: Text((provider.hasRemovedAds || _isSurpriseBoxReady) ? 'KUTUYU AÇ' : 'VİDEOYU İZLE', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.redAccent,
+                    backgroundColor: (provider.hasRemovedAds || _isSurpriseBoxReady) ? Colors.green : Colors.redAccent,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                   ),
                 ),
@@ -906,6 +923,82 @@ class _StoreScreenState extends State<StoreScreen> {
           ),
         ],
       ),
+    );
+  }
+
+  void _openSurpriseBox(QuizProvider provider) {
+    int rand = DateTime.now().millisecondsSinceEpoch % 4;
+    String rewardText = '';
+    String rewardIcon = '';
+
+    if (rand == 0) {
+      provider.addCoins(50);
+      rewardText = '50 Elmas';
+      rewardIcon = 'assets/images/diamond_chest.png';
+    } else if (rand == 1) {
+      provider.giveFreeRoomCard();
+      rewardText = '1 Oda Kartı';
+      rewardIcon = 'assets/images/room_card.png';
+    } else if (rand == 2) {
+      provider.addMoney(5000);
+      rewardText = '5.000 ₺';
+      rewardIcon = 'assets/images/3d_cash_icon_nobg.png';
+    } else {
+      int jokerType = DateTime.now().millisecondsSinceEpoch % 4;
+      if (jokerType == 0) { provider.addJokerFiftyFiftyToken(1); rewardText = '+1 Yarı Yarıya Jokeri'; }
+      else if (jokerType == 1) { provider.addJokerPhoneToken(1); rewardText = '+1 Telefon Jokeri'; }
+      else if (jokerType == 2) { provider.addJokerAudienceToken(1); rewardText = '+1 Seyirci Jokeri'; }
+      else { provider.addJokerSkipToken(1); rewardText = '+1 Soruyu Geç Jokeri'; }
+      rewardIcon = 'assets/images/joker_chest.png';
+    }
+
+    setState(() {
+      _isSurpriseBoxReady = false;
+    });
+
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) {
+        return Dialog(
+          backgroundColor: Colors.transparent,
+          child: Container(
+            padding: const EdgeInsets.all(24),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Color(0xFFF2994A), Color(0xFFF2C94C)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(24),
+              border: Border.all(color: Colors.white, width: 3),
+              boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 20)],
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text('🎉 TEBRİKLER! 🎉', style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)),
+                const SizedBox(height: 20),
+                Image.asset(rewardIcon, height: 100),
+                const SizedBox(height: 20),
+                const Text('Sürpriz Kutudan Çıkan Hediye:', style: TextStyle(color: Colors.black87, fontSize: 16)),
+                const SizedBox(height: 10),
+                Text(rewardText, style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.w900), textAlign: TextAlign.center),
+                const SizedBox(height: 30),
+                ElevatedButton(
+                  onPressed: () => Navigator.pop(context),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                  ),
+                  child: const Text('HARİKA!', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
+                )
+              ],
+            ),
+          ),
+        );
+      }
     );
   }
 
@@ -940,18 +1033,32 @@ class _StoreScreenState extends State<StoreScreen> {
           ),
           ElevatedButton(
             onPressed: () {
-              AdService().showRewardedAd(
-                context: context,
-                onRewardEarned: (amount) => onReward(),
-              );
+              if (provider.hasRemovedAds) {
+                  String actionType = '';
+                  if (label == 'Yarı Yarıya') actionType = 'joker_ff';
+                  else if (label == 'Telefon') actionType = 'joker_phone';
+                  else if (label == 'Seyirci') actionType = 'joker_aud';
+                  else actionType = 'joker_skip';
+                  
+                  if (provider.consumeVipAction(actionType)) {
+                     onReward();
+                  } else {
+                     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Günlük VIP Joker sınırına ulaştınız! (Max 15)')));
+                  }
+              } else {
+                  AdService().showRewardedAd(
+                    context: context,
+                    onRewardEarned: (amount) => onReward(),
+                  );
+              }
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.cyanAccent,
+              backgroundColor: provider.hasRemovedAds ? Colors.amberAccent : Colors.cyanAccent,
               foregroundColor: Colors.black,
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 0),
               minimumSize: const Size(80, 36),
             ),
-            child: const Text('İZLE'),
+            child: Text(provider.hasRemovedAds ? 'AL' : 'İZLE'),
           ),
         ],
       ),

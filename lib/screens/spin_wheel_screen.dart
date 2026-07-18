@@ -65,6 +65,15 @@ class _SpinWheelScreenState extends State<SpinWheelScreen> with TickerProviderSt
   void _spinAd() {
     final provider = Provider.of<QuizProvider>(context, listen: false);
     String today = DateTime.now().toString().split(' ')[0];
+    if (provider.hasRemovedAds) {
+      if (provider.consumeVipAction('spin_wheel')) {
+        _executeSpin(provider, true);
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Günlük VIP Ekstra Çark sınırına ulaştınız! (Max 5)')));
+      }
+      return;
+    }
+
     if (provider.lastAdSpinDate == today) {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Bugünlük ekstra video çark hakkınızı kullandınız. Yarın tekrar gelin!')));
       return;
@@ -459,12 +468,13 @@ class _SpinWheelScreenState extends State<SpinWheelScreen> with TickerProviderSt
               AnimatedBuilder(
                 animation: _pulseController,
                 builder: (context, child) {
-                  bool canDoAction = canSpin || canAdSpin;
+                  bool hasVipSpins = provider.hasRemovedAds;
+                  bool canDoAction = canSpin || canAdSpin || hasVipSpins;
                   String buttonText = _isSpinning 
                       ? 'ÇEVRİLİYOR...' 
                       : (canSpin 
                           ? 'ÇARKI ÇEVİR' 
-                          : (canAdSpin ? 'VİDEO İZLE VE ÇEVİR' : 'YARIN TEKRAR GEL'));
+                          : (hasVipSpins ? 'VIP ÇARK ÇEVİR' : (canAdSpin ? 'VİDEO İZLE VE ÇEVİR' : 'YARIN TEKRAR GEL')));
                   
                   return Transform.scale(
                     scale: canDoAction && !_isSpinning ? 1.0 + (_pulseController.value * 0.04) : 1.0,
@@ -501,13 +511,18 @@ class _SpinWheelScreenState extends State<SpinWheelScreen> with TickerProviderSt
                                   padding: EdgeInsets.only(right: 8.0),
                                   child: Icon(Icons.ondemand_video, color: Colors.white, size: 28),
                                 ),
-                              Text(
-                                buttonText,
-                                style: const TextStyle(
-                                  fontSize: 20, 
-                                  fontWeight: FontWeight.w900, 
-                                  color: Color(0xFFF9A825),
-                                  letterSpacing: 1.5,
+                              Flexible(
+                                child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  child: Text(
+                                    buttonText,
+                                    style: const TextStyle(
+                                      fontSize: 20, 
+                                      fontWeight: FontWeight.w900, 
+                                      color: Color(0xFFF9A825),
+                                      letterSpacing: 1.5,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ],

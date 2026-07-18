@@ -54,7 +54,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Milyarder Trivia Test Oyunu',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
+      theme: AppTheme.lightTheme.copyWith(
+        iconTheme: const IconThemeData(size: 22),
+      ),
+      builder: (context, child) {
+        // Global olarak tüm metinleri %10 küçültür (overflow sorunlarını önlemek için)
+        final MediaQueryData data = MediaQuery.of(context);
+        return MediaQuery(
+          data: data.copyWith(
+            textScaler: const TextScaler.linear(1.0),
+          ),
+          child: child!,
+        );
+      },
       home: const SplashScreen(),
     );
   }

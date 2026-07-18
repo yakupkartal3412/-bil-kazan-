@@ -57,6 +57,15 @@ class QuizProvider extends ChangeNotifier {
   static const String _jokerAudienceKey = 'joker_audience';
   static const String _jokerSkipKey = 'joker_skip';
   static const String _roomCardsKey = 'room_cards';
+  static const String _hasRemovedAdsKey = 'has_removed_ads';
+  static const String _vipSurpriseBoxCountKey = 'vip_surprise_box_count';
+  static const String _vipSpinCountKey = 'vip_spin_count';
+  static const String _vipRoomCardCountKey = 'vip_room_card_count';
+  static const String _vipGameReviveCountKey = 'vip_game_revive_count';
+  static const String _vipJokerFiftyFiftyCountKey = 'vip_joker_ff_count';
+  static const String _vipJokerPhoneCountKey = 'vip_joker_phone_count';
+  static const String _vipJokerAudienceCountKey = 'vip_joker_aud_count';
+  static const String _vipJokerSkipCountKey = 'vip_joker_skip_count';
   
   String _deviceId = '';
   String get deviceId => _deviceId;
@@ -70,6 +79,18 @@ class QuizProvider extends ChangeNotifier {
   int _jokerSkipTokens = 0;
   int _roomCards = 0; // Başlangıç hediyesi 1 kart
   int get roomCards => _roomCards;
+  
+  bool _hasRemovedAds = false;
+  bool get hasRemovedAds => _hasRemovedAds;
+  
+  int _vipSurpriseBoxCount = 0;
+  int _vipSpinCount = 0;
+  int _vipRoomCardCount = 0;
+  int _vipGameReviveCount = 0;
+  int _vipJokerFiftyFiftyCount = 0;
+  int _vipJokerPhoneCount = 0;
+  int _vipJokerAudienceCount = 0;
+  int _vipJokerSkipCount = 0;
   List<String> _highScores = [];
   int _totalGamesPlayed = 0;
   int _gamesPlayedSession = 0;
@@ -150,39 +171,40 @@ class QuizProvider extends ChangeNotifier {
   void clearWeeklyRewardMessage() { _weeklyRewardMessage = ''; notifyListeners(); }
 
   int get iqLevel {
-    if (_totalQuestionsAnswered == 0) return 50; // Başlangıç IQ'su
+    if (_totalQuestionsAnswered == 0) return 10; // Başlangıç IQ'su
     
     double winRate = _totalCorrectAnswers / _totalQuestionsAnswered;
     
-    // Tecrübe bonusu logaritmik olarak artsın (Örn: 20 soru -> ~9, 500 soru -> ~44)
-    double expBonus = dart_math.sqrt(_totalQuestionsAnswered) * 1.2;
-    if (expBonus > 70) expBonus = 70;
+    // Tecrübe bonusu logaritmik olarak artsın
+    double expBonus = dart_math.sqrt(_totalQuestionsAnswered) * 2.0;
+    if (expBonus > 100) expBonus = 100;
     
     // Kazanma oranı ağırlığı tecrübe arttıkça artsın (max 1.0)
     double winRateWeight = _totalQuestionsAnswered / 1000;
     if (winRateWeight > 1.0) winRateWeight = 1.0;
     
-    // Minimum 20 soru çözmeden winRate bonusu çok etkilemesin, ve max bonus 40 olsun (eskiden 80'di)
+    // Minimum 20 soru çözmeden winRate bonusu çok etkilemesin
     double winRateBonus = 0;
     if (_totalQuestionsAnswered >= 20) {
-      winRateBonus = winRate * 40 * winRateWeight;
+      winRateBonus = winRate * 50 * winRateWeight;
     }
     
-    // Maksimum IQ 160 (50 taban + 70 xp + 40 kazanma oranı)
-    int iq = (50 + expBonus + winRateBonus).toInt();
+    // Maksimum IQ 160 (10 taban + 100 xp + 50 kazanma oranı)
+    int iq = (10 + expBonus + winRateBonus).toInt();
     if (iq > 160) iq = 160;
-    if (iq < 50) iq = 50;
+    if (iq < 10) iq = 10;
     return iq;
   }
 
   String get userTitle {
     int iq = iqLevel;
-    if (iq < 80) return 'Çömez';
-    if (iq < 100) return 'Çırak';
-    if (iq < 120) return 'Öğrenci';
-    if (iq < 135) return 'Bilgin';
-    if (iq < 148) return 'Profesör';
-    if (iq < 158) return 'Dahi';
+    if (iq < 30) return 'Acemi';
+    if (iq < 60) return 'Çömez';
+    if (iq < 90) return 'Çırak';
+    if (iq < 110) return 'Öğrenci';
+    if (iq < 130) return 'Bilgin';
+    if (iq < 145) return 'Profesör';
+    if (iq < 155) return 'Dahi';
     return 'Efsane';
   }
   
@@ -327,6 +349,15 @@ class QuizProvider extends ChangeNotifier {
     _jokerSkipTokens = prefs.getInt(_jokerSkipKey) ?? 1;
     _totalMoney = prefs.getInt(_moneyKey) ?? 0;
     _roomCards = prefs.getInt(_roomCardsKey) ?? 1; // Default 1 kart
+    _hasRemovedAds = prefs.getBool(_hasRemovedAdsKey) ?? false;
+    _vipSurpriseBoxCount = prefs.getInt(_vipSurpriseBoxCountKey) ?? 0;
+    _vipSpinCount = prefs.getInt(_vipSpinCountKey) ?? 0;
+    _vipRoomCardCount = prefs.getInt(_vipRoomCardCountKey) ?? 0;
+    _vipGameReviveCount = prefs.getInt(_vipGameReviveCountKey) ?? 0;
+    _vipJokerFiftyFiftyCount = prefs.getInt(_vipJokerFiftyFiftyCountKey) ?? 0;
+    _vipJokerPhoneCount = prefs.getInt(_vipJokerPhoneCountKey) ?? 0;
+    _vipJokerAudienceCount = prefs.getInt(_vipJokerAudienceCountKey) ?? 0;
+    _vipJokerSkipCount = prefs.getInt(_vipJokerSkipCountKey) ?? 0;
     _totalGamesPlayed = prefs.getInt(_gamesPlayedKey) ?? 0;
     _totalCorrectAnswers = prefs.getInt(_correctAnswersKey) ?? 0;
     _totalQuestionsAnswered = prefs.getInt(_totalAnsweredKey) ?? 0;
@@ -941,6 +972,14 @@ class QuizProvider extends ChangeNotifier {
     await prefs.setInt(_dailyCorrectKey, _dailyCorrectAnswers);
     await prefs.setInt(_dailyJokersKey, _dailyJokersUsed);
     await prefs.setStringList(_claimedMissionsKey, _claimedMissions);
+    await prefs.setInt(_vipSurpriseBoxCountKey, _vipSurpriseBoxCount);
+    await prefs.setInt(_vipSpinCountKey, _vipSpinCount);
+    await prefs.setInt(_vipRoomCardCountKey, _vipRoomCardCount);
+    await prefs.setInt(_vipGameReviveCountKey, _vipGameReviveCount);
+    await prefs.setInt(_vipJokerFiftyFiftyCountKey, _vipJokerFiftyFiftyCount);
+    await prefs.setInt(_vipJokerPhoneCountKey, _vipJokerPhoneCount);
+    await prefs.setInt(_vipJokerAudienceCountKey, _vipJokerAudienceCount);
+    await prefs.setInt(_vipJokerSkipCountKey, _vipJokerSkipCount);
   }
 
   Future<void> _processWeeklyRewards() async {
@@ -1615,5 +1654,57 @@ class QuizProvider extends ChangeNotifier {
   void dispose() {
     _timer?.cancel();
     super.dispose();
+  }
+
+  Future<void> grantVipAccess() async {
+    _hasRemovedAds = true;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_hasRemovedAdsKey, true);
+    notifyListeners();
+  }
+
+  bool consumeVipAction(String actionType) {
+    if (!_hasRemovedAds) return false;
+    
+    switch (actionType) {
+      case 'surprise_box':
+        if (_vipSurpriseBoxCount >= 10) return false;
+        _vipSurpriseBoxCount++;
+        break;
+      case 'spin_wheel':
+        if (_vipSpinCount >= 5) return false;
+        _vipSpinCount++;
+        break;
+      case 'room_card':
+        if (_vipRoomCardCount >= 20) return false;
+        _vipRoomCardCount++;
+        break;
+      case 'game_revive':
+        if (_vipGameReviveCount >= 10) return false;
+        _vipGameReviveCount++;
+        break;
+      case 'joker_ff':
+        if (_vipJokerFiftyFiftyCount >= 15) return false;
+        _vipJokerFiftyFiftyCount++;
+        break;
+      case 'joker_phone':
+        if (_vipJokerPhoneCount >= 15) return false;
+        _vipJokerPhoneCount++;
+        break;
+      case 'joker_aud':
+        if (_vipJokerAudienceCount >= 15) return false;
+        _vipJokerAudienceCount++;
+        break;
+      case 'joker_skip':
+        if (_vipJokerSkipCount >= 15) return false;
+        _vipJokerSkipCount++;
+        break;
+      default:
+        return false;
+    }
+    
+    _saveDailyStats(); // Save counters
+    notifyListeners();
+    return true;
   }
 }
