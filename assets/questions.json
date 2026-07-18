@@ -14303,10 +14303,10 @@
   {
     "text": "Hangi kelime tersten okunduğunda da aynıdır?",
     "options": [
-      "Kavak",
+      "Kalem",
       "Kapak",
       "Kayıt",
-      "Kabak"
+      "Kaşık"
     ],
     "correctOptionIndex": 1,
     "difficulty": 2,

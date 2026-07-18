@@ -13,24 +13,24 @@ class AdService {
   int _rewardedLoadAttempts = 0;
   RewardedAd? _rewardedAd;
 
-  // Banner Test IDs
+  // Real Banner ID
   static String get bannerAdUnitId {
-    if (Platform.isAndroid) return 'ca-app-pub-3940256099942544/6300978111';
-    if (Platform.isIOS) return 'ca-app-pub-3940256099942544/2934735716';
+    if (Platform.isAndroid) return 'ca-app-pub-1158679315546899/4060029466';
+    if (Platform.isIOS) return 'ca-app-pub-3940256099942544/2934735716'; // iOS test for now
     throw UnsupportedError('Unsupported platform');
   }
 
-  // Interstitial Test IDs
+  // Real Interstitial IDs
   static String get interstitialAdUnitId {
-    if (Platform.isAndroid) return 'ca-app-pub-3940256099942544/1033173712';
-    if (Platform.isIOS) return 'ca-app-pub-3940256099942544/4411468910';
+    if (Platform.isAndroid) return 'ca-app-pub-1158679315546899/6723254194';
+    if (Platform.isIOS) return 'ca-app-pub-3940256099942544/4411468910'; // iOS test for now
     throw UnsupportedError('Unsupported platform');
   }
 
-  // Rewarded Test IDs
+  // Real Rewarded IDs
   static String get rewardedAdUnitId {
-    if (Platform.isAndroid) return 'ca-app-pub-3940256099942544/5224354917';
-    if (Platform.isIOS) return 'ca-app-pub-3940256099942544/1712485313';
+    if (Platform.isAndroid) return 'ca-app-pub-1158679315546899/9956042330';
+    if (Platform.isIOS) return 'ca-app-pub-3940256099942544/1712485313'; // iOS test for now
     throw UnsupportedError('Unsupported platform');
   }
 

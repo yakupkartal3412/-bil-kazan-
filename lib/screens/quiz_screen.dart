@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'dart:math';
 import '../providers/quiz_provider.dart';
 import '../providers/audio_provider.dart';
+import '../services/ad_service.dart';
 import '../widgets/joker_dialogs.dart';
 import 'result_screen.dart';
 
@@ -267,7 +268,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
         children: [
           Image.asset('assets/images/3d_diamond_clear_nobg.png', width: 26, height: 26),
           const SizedBox(width: 6),
-          Text('${provider.totalCoins}',
+          Text('${provider.formattedTotalCoins}',
               style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w800)),
           const SizedBox(width: 8),
           Container(
@@ -462,7 +463,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
           _buildJoker(
             icon: Icons.exposure_minus_2_rounded,
             label: 'Yarı Yarıya',
-            sublabel: provider.fiftyFiftyUses >= 2 ? null : (provider.fiftyFiftyUses == 0 ? 'ÜCRETSİZ' : '25 💎'),
+            sublabel: provider.fiftyFiftyUses >= 2 ? null : (provider.fiftyFiftyUses == 0 ? 'ÜCRETSİZ' : (provider.jokerFiftyFiftyTokens > 0 ? '1 🃏' : '25 💎')),
             isDisabled: provider.fiftyFiftyUsedThisQuestion || provider.fiftyFiftyUses >= 2,
             color: const Color(0xFFFFB300),
             onTap: () {
@@ -474,7 +475,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
           _buildJoker(
             icon: Icons.call_rounded,
             label: 'Telefon',
-            sublabel: provider.phoneUses >= 2 ? null : (provider.phoneUses == 0 ? 'ÜCRETSİZ' : '25 💎'),
+            sublabel: provider.phoneUses >= 2 ? null : (provider.phoneUses == 0 ? 'ÜCRETSİZ' : (provider.jokerPhoneTokens > 0 ? '1 🃏' : '25 💎')),
             isDisabled: provider.phoneUsedThisQuestion || provider.phoneUses >= 2,
             color: const Color(0xFF7B2FFF),
             onTap: () {
@@ -497,7 +498,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
           _buildJoker(
             icon: Icons.bar_chart_rounded,
             label: 'Seyirci',
-            sublabel: provider.audienceUses >= 2 ? null : (provider.audienceUses == 0 ? 'ÜCRETSİZ' : '25 💎'),
+            sublabel: provider.audienceUses >= 2 ? null : (provider.audienceUses == 0 ? 'ÜCRETSİZ' : (provider.jokerAudienceTokens > 0 ? '1 🃏' : '25 💎')),
             isDisabled: provider.audienceUsedThisQuestion || provider.audienceUses >= 2,
             color: const Color(0xFF00897B),
             onTap: () {
@@ -519,7 +520,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
           _buildJoker(
             icon: Icons.rocket_launch_rounded,
             label: 'Soruyu Geç',
-            sublabel: provider.skipUses >= 2 ? null : (provider.skipUses == 0 ? 'ÜCRETSiZ' : '25 💎'),
+            sublabel: provider.skipUses >= 2 ? null : (provider.skipUses == 0 ? 'ÜCRETSİZ' : (provider.jokerSkipTokens > 0 ? '1 🃏' : '25 💎')),
             isDisabled: provider.skipUsedThisQuestion || provider.skipUses >= 2 || provider.isAnswered,
             color: const Color(0xFFE53935),
             onTap: () {
@@ -535,7 +536,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
 
   void _showNotEnough() {
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Yeterli paranız yok!'), behavior: SnackBarBehavior.floating),
+      const SnackBar(content: Text('Yeterli Elmas veya Joker hakkınız yok!'), behavior: SnackBarBehavior.floating),
     );
   }
 
@@ -679,10 +680,62 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
   Widget _buildNextButton(QuizProvider provider) {
     return GestureDetector(
       onTap: () {
-        bool isGameOver = provider.selectedOptionIndex != provider.currentQuestion.correctOptionIndex || provider.isLastQuestion;
-        provider.nextQuestion();
-        if (isGameOver) {
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
+        bool isCorrect = provider.selectedOptionIndex == provider.currentQuestion.correctOptionIndex;
+        bool isGameOver = !isCorrect || provider.isLastQuestion;
+        
+        // Show 2nd chance ad dialog if wrong answer and not yet used ad revive
+        if (!isCorrect && !provider.usedAdReviveThisGame && provider.gameMode != GameMode.event) {
+          showDialog(
+            context: context,
+            barrierDismissible: false,
+            builder: (ctx) => AlertDialog(
+              backgroundColor: const Color(0xFF0F2027),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+                side: const BorderSide(color: Colors.amber, width: 2),
+              ),
+              title: const Text('2. BİR ŞANS İSTER MİSİN?', style: TextStyle(color: Colors.amber, fontWeight: FontWeight.bold)),
+              content: const Text(
+                'Yanlış cevap verdin ancak elenmek zorunda değilsin! Kısa bir video izleyerek soruya kaldığın yerden (2. bir şansla) devam edebilirsin.',
+                style: TextStyle(color: Colors.white, fontSize: 16),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () {
+                    Navigator.pop(ctx);
+                    provider.nextQuestion();
+                    if (isGameOver) {
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
+                    }
+                  },
+                  child: const Text('HAYIR, ELENEYİM', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold)),
+                ),
+                ElevatedButton.icon(
+                  icon: const Icon(Icons.ondemand_video, color: Colors.white),
+                  label: const Text('VİDEO İZLE VE DEVAM ET', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.amber,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                  ),
+                  onPressed: () {
+                    Navigator.pop(ctx);
+                    AdService().showRewardedAd(
+                      context: context,
+                      onRewardEarned: (_) {
+                        provider.reviveWithAd();
+                      },
+                      onClosed: () {}, // Do nothing if closed early without reward
+                    );
+                  },
+                ),
+              ],
+            ),
+          );
+        } else {
+          provider.nextQuestion();
+          if (isGameOver) {
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
+          }
         }
       },
       child: Container(

@@ -52,6 +52,10 @@ class QuizProvider extends ChangeNotifier {
   static const String _lastWeeklyResetDateKey = 'lastWeeklyResetDate';
   static const String _pastWinnersKey = 'past_winners';
   static const String _deviceIdKey = 'device_id';
+  static const String _jokerFiftyFiftyKey = 'joker_fifty_fifty';
+  static const String _jokerPhoneKey = 'joker_phone';
+  static const String _jokerAudienceKey = 'joker_audience';
+  static const String _jokerSkipKey = 'joker_skip';
   static const String _roomCardsKey = 'room_cards';
   
   String _deviceId = '';
@@ -59,13 +63,17 @@ class QuizProvider extends ChangeNotifier {
   
   int _totalCoins = 0;
   int _totalMoney = 0;
-  int _roomCards = 1; // Başlangıç hediyesi 1 kart
+  int _totalQuestionsAnswered = 0;
+  int _jokerFiftyFiftyTokens = 0;
+  int _jokerPhoneTokens = 0;
+  int _jokerAudienceTokens = 0;
+  int _jokerSkipTokens = 0;
+  int _roomCards = 0; // Başlangıç hediyesi 1 kart
   int get roomCards => _roomCards;
   List<String> _highScores = [];
   int _totalGamesPlayed = 0;
   int _gamesPlayedSession = 0;
   int _totalCorrectAnswers = 0;
-  int _totalQuestionsAnswered = 0;
   
   List<String> _unlockedAvatars = [];
   String _activeAvatar = 'default_avatar.png';
@@ -79,6 +87,7 @@ class QuizProvider extends ChangeNotifier {
   int _dailyGamesPlayed = 0;
   int _dailyCorrectAnswers = 0;
   int _dailyJokersUsed = 0;
+  int _purchasedJokers = 0;
   List<String> _claimedMissions = [];
   List<String> _claimedAchievements = [];
   Map<String, int> _localDuelScores = {};
@@ -99,9 +108,26 @@ class QuizProvider extends ChangeNotifier {
   String _weeklyRewardMessage = '';
 
   int get totalCoins => _totalCoins;
+  
+  String get formattedTotalCoins {
+    final str = _totalCoins.toString();
+    final buffer = StringBuffer();
+    for (int i = 0; i < str.length; i++) {
+      if (i > 0 && (str.length - i) % 3 == 0) {
+        buffer.write('.');
+      }
+      buffer.write(str[i]);
+    }
+    return buffer.toString();
+  }
+
   int get totalMoney => _totalMoney;
   List<String> get highScores => _highScores;
   int get totalGamesPlayed => _totalGamesPlayed;
+  int get jokerFiftyFiftyTokens => _jokerFiftyFiftyTokens;
+  int get jokerPhoneTokens => _jokerPhoneTokens;
+  int get jokerAudienceTokens => _jokerAudienceTokens;
+  int get jokerSkipTokens => _jokerSkipTokens;
   int get totalCorrectAnswers => _totalCorrectAnswers;
   int get totalQuestionsAnswered => _totalQuestionsAnswered;
   List<String> get unlockedAvatars => _unlockedAvatars;
@@ -294,7 +320,11 @@ class QuizProvider extends ChangeNotifier {
 
   Future<void> _loadData() async {
     final prefs = await SharedPreferences.getInstance();
-    _totalCoins = prefs.getInt(_coinsKey) ?? 0;
+    _totalCoins = prefs.getInt(_coinsKey) ?? 50; // Starter coins
+    _jokerFiftyFiftyTokens = prefs.getInt(_jokerFiftyFiftyKey) ?? 1;
+    _jokerPhoneTokens = prefs.getInt(_jokerPhoneKey) ?? 1;
+    _jokerAudienceTokens = prefs.getInt(_jokerAudienceKey) ?? 1;
+    _jokerSkipTokens = prefs.getInt(_jokerSkipKey) ?? 1;
     _totalMoney = prefs.getInt(_moneyKey) ?? 0;
     _roomCards = prefs.getInt(_roomCardsKey) ?? 1; // Default 1 kart
     _totalGamesPlayed = prefs.getInt(_gamesPlayedKey) ?? 0;
@@ -354,16 +384,6 @@ class QuizProvider extends ChangeNotifier {
     _seenEndlessIds = (prefs.getStringList(_seenEndlessIdsKey) ?? []).toSet();
     _seenDuelIds = (prefs.getStringList(_seenDuelIdsKey) ?? []).toSet();
     _seenEventIds = (prefs.getStringList(_seenEventIdsKey) ?? []).toSet();
-    
-    // Eski format temizleme — metin tabanlı kayıtları sil
-    if (_seenClassicIds.any((id) => id.length > 10)) {
-      _seenClassicIds.clear();
-      await prefs.remove(_seenClassicIdsKey);
-    }
-    if (_seenEndlessIds.any((id) => id.length > 10)) {
-      _seenEndlessIds.clear();
-      await prefs.remove(_seenEndlessIdsKey);
-    }
     
     _cycleStartDate = prefs.getString(_cycleStartDateKey) ?? '';
     List<String> statusStrs = prefs.getStringList(_cycleStatusKey) ?? ['1','0','0','0','0','0','0'];
@@ -431,10 +451,49 @@ class QuizProvider extends ChangeNotifier {
             'totalCoins': _totalCoins,
           });
         }
+        
+        _listenForGifts(user.uid);
       }
     } catch (e) {
       debugPrint('Firebase register error: $e');
     }
+  }
+
+  StreamSubscription<DocumentSnapshot>? _giftSubscription;
+
+  void _listenForGifts(String uid) {
+    _giftSubscription?.cancel();
+    _giftSubscription = FirebaseFirestore.instance.collection('users').doc(uid).snapshots().listen((snapshot) async {
+      if (!snapshot.exists) return;
+      final data = snapshot.data() as Map<String, dynamic>?;
+      if (data == null) return;
+
+      if (data.containsKey('pending_gifts') && data['pending_gifts'] is List) {
+        List gifts = data['pending_gifts'];
+        if (gifts.isNotEmpty) {
+          for (var gift in gifts) {
+            if (gift is Map) {
+              final type = gift['type'];
+              final amount = gift['amount'] ?? 0;
+
+              if (type == 'diamonds') {
+                grantIAPReward(diamonds: amount);
+              } else if (type == 'roomCards') {
+                grantIAPReward(roomCards: amount);
+              } else if (type == 'jokers') {
+                grantIAPReward(jokers: amount);
+              }
+              
+              debugPrint('🎁 YÖNETİCİDEN HEDİYE GELDİ: $amount $type');
+            }
+          }
+
+          await FirebaseFirestore.instance.collection('users').doc(uid).update({
+            'pending_gifts': FieldValue.delete()
+          });
+        }
+      }
+    });
   }
 
   Future<void> _checkReferralRewards() async {
@@ -639,6 +698,38 @@ class QuizProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> _saveJokerTokens() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setInt(_jokerFiftyFiftyKey, _jokerFiftyFiftyTokens);
+    await prefs.setInt(_jokerPhoneKey, _jokerPhoneTokens);
+    await prefs.setInt(_jokerAudienceKey, _jokerAudienceTokens);
+    await prefs.setInt(_jokerSkipKey, _jokerSkipTokens);
+  }
+
+  void addJokerFiftyFiftyToken(int amount) {
+    _jokerFiftyFiftyTokens += amount;
+    _saveJokerTokens();
+    notifyListeners();
+  }
+
+  void addJokerPhoneToken(int amount) {
+    _jokerPhoneTokens += amount;
+    _saveJokerTokens();
+    notifyListeners();
+  }
+
+  void addJokerAudienceToken(int amount) {
+    _jokerAudienceTokens += amount;
+    _saveJokerTokens();
+    notifyListeners();
+  }
+
+  void addJokerSkipToken(int amount) {
+    _jokerSkipTokens += amount;
+    _saveJokerTokens();
+    notifyListeners();
+  }
+
   bool deductCoins(int amount) {
     if (_totalCoins >= amount) {
       _totalCoins -= amount;
@@ -747,6 +838,10 @@ class QuizProvider extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     await prefs.clear();
     _totalCoins = 0;
+    _jokerFiftyFiftyTokens = 1;
+    _jokerPhoneTokens = 1;
+    _jokerAudienceTokens = 1;
+    _jokerSkipTokens = 1;
     _totalMoney = 0;
     _totalGamesPlayed = 0;
     _totalCorrectAnswers = 0;
@@ -1055,9 +1150,10 @@ class QuizProvider extends ChangeNotifier {
           ..._mediumQuestions..shuffle(),
           ..._hardQuestions..shuffle()
         ];
+        if (_currentQuestions.isNotEmpty) {
+          _seenEndlessIds.add(_currentQuestions[0].id);
+        }
       }
-      // Hepsini endless seen'e ekle
-      for (final q in _currentQuestions) { _seenEndlessIds.add(q.id); }
     }
     _saveSeenQuestions();
     _isAnswered = false;
@@ -1072,8 +1168,8 @@ class QuizProvider extends ChangeNotifier {
     
     _usedFiftyFifty = false;
     _usedPhone = false;
-    _usedAudience = false;
     _usedSkip = false;
+    _usedAdReviveThisGame = false;
     _hiddenOptions = [];
     
     _startTimer();
@@ -1137,13 +1233,26 @@ class QuizProvider extends ChangeNotifier {
   int _currentMatchDiamonds = 0;
   int _guaranteedDiamonds = 0;
 
+  bool _usedAdReviveThisGame = false;
+
   int get currentMatchDiamonds => _currentMatchDiamonds;
   int get guaranteedDiamonds => _guaranteedDiamonds;
+  bool get usedAdReviveThisGame => _usedAdReviveThisGame;
+
+  void markAdReviveUsed() {
+    _usedAdReviveThisGame = true;
+    notifyListeners();
+  }
 
   bool useFiftyFifty() {
     if (_fiftyFiftyUsedThisQuestion || _isAnswered || _fiftyFiftyUses >= 2) return false;
     if (_fiftyFiftyUses > 0) {
-      if (!deductCoins(25)) return false;
+      if (_jokerFiftyFiftyTokens > 0) {
+        _jokerFiftyFiftyTokens--;
+        _saveJokerTokens();
+      } else if (!deductCoins(25)) {
+        return false;
+      }
     }
     _fiftyFiftyUsedThisQuestion = true;
     _fiftyFiftyUses++;
@@ -1159,7 +1268,12 @@ class QuizProvider extends ChangeNotifier {
   bool usePhone() {
     if (_phoneUsedThisQuestion || _isAnswered || _phoneUses >= 2) return false;
     if (_phoneUses > 0) {
-      if (!deductCoins(25)) return false;
+      if (_jokerPhoneTokens > 0) {
+        _jokerPhoneTokens--;
+        _saveJokerTokens();
+      } else if (!deductCoins(25)) {
+        return false;
+      }
     }
     _phoneUsedThisQuestion = true;
     _phoneUses++;
@@ -1172,7 +1286,12 @@ class QuizProvider extends ChangeNotifier {
   bool useAudience() {
     if (_audienceUsedThisQuestion || _isAnswered || _audienceUses >= 2) return false;
     if (_audienceUses > 0) {
-      if (!deductCoins(25)) return false;
+      if (_jokerAudienceTokens > 0) {
+        _jokerAudienceTokens--;
+        _saveJokerTokens();
+      } else if (!deductCoins(25)) {
+        return false;
+      }
     }
     _audienceUsedThisQuestion = true;
     _audienceUses++;
@@ -1189,7 +1308,12 @@ class QuizProvider extends ChangeNotifier {
     if (_skipUses >= 2) return false;
     
     if (_skipUses > 0) {
-      if (!deductCoins(25)) return false;
+      if (_jokerSkipTokens > 0) {
+        _jokerSkipTokens--;
+        _saveJokerTokens();
+      } else if (!deductCoins(25)) {
+        return false;
+      }
     }
     
     _skipUsedThisQuestion = true;
@@ -1209,6 +1333,17 @@ class QuizProvider extends ChangeNotifier {
     if (!_isAnswered || _selectedOptionIndex == currentQuestion.correctOptionIndex) return false;
     if (!deductCoins(500)) return false;
     
+    _isAnswered = false;
+    _selectedOptionIndex = null;
+    _startTimer();
+    notifyListeners();
+    return true;
+  }
+
+  bool reviveWithAd() {
+    if (!_isAnswered || _selectedOptionIndex == currentQuestion.correctOptionIndex) return false;
+    
+    _usedAdReviveThisGame = true;
     _isAnswered = false;
     _selectedOptionIndex = null;
     _startTimer();
@@ -1296,8 +1431,10 @@ class QuizProvider extends ChangeNotifier {
       _currentQuestionIndex++;
       if (_gameMode == GameMode.classic) {
         _seenClassicIds.add(_currentQuestions[_currentQuestionIndex].id);
-      } else {
+      } else if (_gameMode == GameMode.endless) {
         _seenEndlessIds.add(_currentQuestions[_currentQuestionIndex].id);
+      } else if (_gameMode == GameMode.event) {
+        _seenEventIds.add(_currentQuestions[_currentQuestionIndex].id);
       }
       _saveSeenQuestions();
       
@@ -1443,6 +1580,37 @@ class QuizProvider extends ChangeNotifier {
     await prefs.setStringList(_highScoresKey, _highScores);
   }
   
+
+  void grantIAPReward({int diamonds = 0, int roomCards = 0, int jokers = 0, List<String>? avatarUnlocks}) {
+    if (diamonds > 0) _totalCoins += diamonds;
+    if (roomCards > 0) _roomCards += roomCards;
+    if (jokers > 0) _purchasedJokers += jokers;
+    
+    if (avatarUnlocks != null) {
+      for (var path in avatarUnlocks) {
+        if (!_unlockedAvatars.contains(path)) {
+          _unlockedAvatars.add(path);
+          setActiveAvatar(path); // Satın alınan avatarı otomatik kuşan
+        }
+      }
+    }
+    
+    _saveCoins();
+    _saveDailyStats();
+    notifyListeners();
+  }
+
+  bool deductJokerOrDiamonds(int diamondCost) {
+    if (_purchasedJokers > 0) {
+      _purchasedJokers--;
+      _saveDailyStats();
+      notifyListeners();
+      return true;
+    } else {
+      return deductCoins(diamondCost);
+    }
+  }
+
   @override
   void dispose() {
     _timer?.cancel();

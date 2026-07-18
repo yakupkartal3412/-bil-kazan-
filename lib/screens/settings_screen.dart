@@ -8,8 +8,18 @@ import '../providers/audio_provider.dart';
 import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
 
-class SettingsScreen extends StatelessWidget {
+import 'package:flutter/services.dart';
+import 'admin_screen.dart';
+
+class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
+
+  @override
+  State<SettingsScreen> createState() => _SettingsScreenState();
+}
+
+class _SettingsScreenState extends State<SettingsScreen> {
+  int _adminTapCount = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +30,16 @@ class SettingsScreen extends StatelessWidget {
       backgroundColor: AppColors.appPurpleBg,
       bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       appBar: AppBar(
-        title: const Text('AYARLAR', style: TextStyle(fontWeight: FontWeight.bold, letterSpacing: 2, color: Colors.white)),
+        title: GestureDetector(
+          onTap: () {
+            _adminTapCount++;
+            if (_adminTapCount >= 5) {
+              _adminTapCount = 0;
+              _showAdminLoginDialog(context);
+            }
+          },
+          child: const Text('AYARLAR', style: TextStyle(fontWeight: FontWeight.bold, letterSpacing: 2, color: Colors.white)),
+        ),
         backgroundColor: AppColors.appPurpleBg,
         elevation: 0,
         centerTitle: true,
@@ -103,6 +122,46 @@ class SettingsScreen extends StatelessWidget {
                             fontSize: 15, 
                             fontWeight: FontWeight.bold
                           ),
+                        ),
+                        const SizedBox(height: 10),
+                        const Divider(color: Colors.white24),
+                        const SizedBox(height: 10),
+                        Text(
+                          'Oyuncu ID (Gizli Numara):',
+                          style: TextStyle(
+                            color: isAnonymous ? Colors.white54 : Colors.greenAccent,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                FirebaseAuth.instance.currentUser?.uid ?? 'Bilinmiyor',
+                                style: const TextStyle(
+                                  color: Colors.white, 
+                                  fontSize: 13, 
+                                ),
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            ),
+                            IconButton(
+                              icon: const Icon(Icons.copy, color: Colors.amberAccent, size: 20),
+                              onPressed: () {
+                                final uid = FirebaseAuth.instance.currentUser?.uid;
+                                if (uid != null) {
+                                  Clipboard.setData(ClipboardData(text: uid));
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    const SnackBar(content: Text('ID Kopyalandı!'), backgroundColor: Colors.green),
+                                  );
+                                }
+                              },
+                              constraints: const BoxConstraints(),
+                              padding: EdgeInsets.zero,
+                            ),
+                          ],
                         ),
                       ],
                     ),
@@ -354,6 +413,45 @@ class SettingsScreen extends StatelessWidget {
               ),
             );
           },
+        );
+      }
+    );
+  }
+
+  void _showAdminLoginDialog(BuildContext context) {
+    final passCtrl = TextEditingController();
+    showDialog(
+      context: context,
+      builder: (ctx) {
+        return AlertDialog(
+          backgroundColor: AppColors.surface,
+          title: const Text('Admin Girişi', style: TextStyle(color: Colors.amber)),
+          content: TextField(
+            controller: passCtrl,
+            obscureText: true,
+            style: const TextStyle(color: Colors.white),
+            decoration: const InputDecoration(
+              hintText: 'Şifre',
+              hintStyle: TextStyle(color: Colors.white54),
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('İptal'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                if (passCtrl.text == 'bjk12345.') { // Yeni şifre
+                  Navigator.pop(ctx);
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => const AdminScreen()));
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Yanlış Şifre')));
+                }
+              },
+              child: const Text('Giriş'),
+            ),
+          ],
         );
       }
     );

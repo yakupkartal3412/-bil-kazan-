@@ -297,7 +297,7 @@ class _HomeScreenState extends State<HomeScreen> {
           moneyText = '${provider.weeklyScore} ₺';
         }
         
-        String diamondText = provider.totalCoins.toString();
+        String diamondText = provider.formattedTotalCoins;
 
         return Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -405,27 +405,53 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 
             // Diamond Section
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  diamondText,
-                  style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.white,
-                    shadows: [
-                      Shadow(color: Colors.black54, blurRadius: 4, offset: Offset(0, 2)),
-                    ],
-                  ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => StoreScreen()),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.black26,
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: Colors.white12),
                 ),
-                const SizedBox(width: 6),
-                Image.asset(
-                  'assets/images/3d_diamond_clear_nobg.png',
-                  width: 40,
-                  height: 40,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      diamondText,
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.white,
+                        shadows: [
+                          Shadow(color: Colors.black54, blurRadius: 4, offset: Offset(0, 2)),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 6),
+                    Image.asset(
+                      'assets/images/3d_diamond_clear_nobg.png',
+                      width: 36,
+                      height: 36,
+                    ),
+                    const SizedBox(width: 4),
+                    Container(
+                      padding: const EdgeInsets.all(2),
+                      decoration: const BoxDecoration(
+                        color: Colors.greenAccent,
+                        shape: BoxShape.circle,
+                        boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 2, offset: Offset(0, 1))],
+                      ),
+                      child: const Icon(Icons.add, size: 18, color: Colors.black, weight: 900),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
           ],
         );

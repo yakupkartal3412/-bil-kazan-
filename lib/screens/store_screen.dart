@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
+import '../services/iap_service.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
 
 class AvatarItem {
   final String id;
@@ -23,8 +25,38 @@ class ThemeItem {
   ThemeItem(this.name, this.price, this.primaryColor, this.accentColor);
 }
 
-class StoreScreen extends StatelessWidget {
-  StoreScreen({super.key});
+class StoreScreen extends StatefulWidget {
+  const StoreScreen({super.key});
+
+  @override
+  State<StoreScreen> createState() => _StoreScreenState();
+}
+
+class _StoreScreenState extends State<StoreScreen> {
+  final IapService _iapService = IapService();
+  bool _iapInitialized = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _initIap();
+  }
+
+  Future<void> _initIap() async {
+    await _iapService.init(context);
+    if (mounted) {
+      setState(() {
+        _iapInitialized = true;
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _iapService.dispose();
+    super.dispose();
+  }
+
   final List<AvatarItem> _avatars = [
     AvatarItem('pythagoras', 'Pisagor', 'assets/images/pythagoras_avatar.png', 2000),
     AvatarItem('turing', 'Alan Turing', 'assets/images/turing_avatar.png', 2000),
@@ -37,7 +69,7 @@ class StoreScreen extends StatelessWidget {
     AvatarItem('tesla', 'Tesla', 'assets/images/tesla_avatar.png', 35000),
     AvatarItem('bell', 'Graham Bell', 'assets/images/bell_avatar.png', 40000),
     AvatarItem('edison', 'Edison', 'assets/images/edison_avatar.png', 45000),
-    AvatarItem('einstein', 'Einstein', 'assets/images/einstein_avatar.png', 50000),
+    AvatarItem('einstein', 'Einstein', 'assets/images/einstein_avatar.png', 80000),
   ];
 
   final List<ThemeItem> _themes = [
@@ -56,7 +88,7 @@ class StoreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 4,
       child: Scaffold(
         backgroundColor: AppColors.appPurpleBg,
         bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
@@ -74,7 +106,7 @@ class StoreScreen extends StatelessWidget {
               builder: (context, provider, child) => Row(
                 children: [
                   Text(
-                    '${provider.totalCoins}',
+                    '${provider.formattedTotalCoins}',
                     style: const TextStyle(color: Colors.cyanAccent, fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                   const SizedBox(width: 4),
@@ -91,6 +123,8 @@ class StoreScreen extends StatelessWidget {
             tabs: [
               Tab(text: 'Avatarlar', icon: Icon(Icons.person)),
               Tab(text: 'Temalar', icon: Icon(Icons.palette)),
+              Tab(text: 'PREMİUM 💎', icon: Icon(Icons.workspace_premium)),
+              Tab(text: 'Ekstralar', icon: Icon(Icons.star)),
             ],
           ),
         ),
@@ -137,6 +171,8 @@ class StoreScreen extends StatelessWidget {
                     children: [
                       _buildAvatarTab(context, provider),
                       _buildThemeTab(context, provider),
+                      _buildPremiumTab(context, provider),
+                      _buildExtrasTab(context, provider),
                     ],
                   ),
                 ),
@@ -430,5 +466,495 @@ class StoreScreen extends StatelessWidget {
       ),
     );
   }
-}
 
+  Widget _buildPremiumTab(BuildContext context, QuizProvider provider) {
+    if (!_iapInitialized) {
+      return const Center(child: CircularProgressIndicator(color: Colors.amber));
+    }
+    if (!_iapService.isAvailable || _iapService.products.isEmpty) {
+      return const Center(child: Text('Mağaza şu an kullanılamıyor.', style: TextStyle(color: Colors.white)));
+    }
+    
+    ProductDetails? getProduct(String id) {
+      try { return _iapService.products.firstWhere((p) => p.id == id); } catch (e) { return null; }
+    }
+
+    final starterPack = getProduct(IapService.packStarter);
+    final einsteinPack = getProduct(IapService.avatarEinstein);
+    
+    final diamondPacks = [
+      getProduct(IapService.diamond1000),
+      getProduct(IapService.diamond5000),
+      getProduct(IapService.diamond20000)
+    ].whereType<ProductDetails>().toList();
+
+    final jokerPacks = [
+      getProduct(IapService.jokerPack20),
+      getProduct(IapService.jokerPack50),
+      getProduct(IapService.jokerPack100)
+    ].whereType<ProductDetails>().toList();
+
+    final roomCardPacks = [
+      getProduct(IapService.roomCard10),
+      getProduct(IapService.roomCard50)
+    ].whereType<ProductDetails>().toList();
+
+    return SingleChildScrollView(
+      physics: const BouncingScrollPhysics(),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (starterPack != null) ...[
+            _buildSpecialOfferCard(
+              context: context,
+              product: starterPack,
+              title: 'HOŞ GELDİN PAKETİ',
+              subtitle: 'Galileo + 2000 💎 + 10 Oda + 20 Joker',
+              imagePath: 'assets/images/galileo_avatar.png',
+              gradientColors: [const Color(0xFF8A2387), const Color(0xFFE94057), const Color(0xFFF27121)],
+              icon: Icons.star_rounded,
+            ),
+            const SizedBox(height: 30),
+          ],
+          
+          if (diamondPacks.isNotEmpty) ...[
+            const Text('ELMAS PAKETLERİ', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1.2)),
+            const SizedBox(height: 12),
+            GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 220,
+                crossAxisSpacing: 16,
+                mainAxisSpacing: 16,
+                childAspectRatio: 0.85,
+              ),
+              itemCount: diamondPacks.length,
+              itemBuilder: (context, index) {
+                final p = diamondPacks[index];
+                String img = 'assets/images/diamond_bag.png';
+                if (p.id == IapService.diamond5000) img = 'assets/images/diamond_chest.png';
+                if (p.id == IapService.diamond20000) img = 'assets/images/diamond_safe.png';
+                return _buildGridCard(
+                  context: context,
+                  product: p,
+                  title: p.title.split(' ').first + ' Elmas',
+                  subtitle: p.price,
+                  imagePath: img,
+                  gradientColors: [const Color(0xFF00C9FF), const Color(0xFF92FE9D)],
+                );
+              },
+            ),
+            const SizedBox(height: 30),
+          ],
+
+          if (jokerPacks.isNotEmpty) ...[
+            const Text('JOKER PAKETLERİ', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1.2)),
+            const SizedBox(height: 12),
+            GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 220,
+                crossAxisSpacing: 16,
+                mainAxisSpacing: 16,
+                childAspectRatio: 0.85,
+              ),
+              itemCount: jokerPacks.length,
+              itemBuilder: (context, index) {
+                final p = jokerPacks[index];
+                String img = 'assets/images/joker_bag.png';
+                if (p.id == IapService.jokerPack50) img = 'assets/images/joker_chest.png';
+                // Uses the recolored safe image (diamonds turned to gold)
+                if (p.id == IapService.jokerPack100) img = 'assets/images/joker_safe.png';
+                
+                return _buildGridCard(
+                  context: context,
+                  product: p,
+                  title: '${p.id.contains('20') ? '20' : p.id.contains('50') ? '50' : '100'} Joker',
+                  subtitle: p.price,
+                  imagePath: img,
+                  gradientColors: [const Color(0xFFFFD700), const Color(0xFFF7971E)],
+                );
+              },
+            ),
+            const SizedBox(height: 30),
+          ],
+
+          if (roomCardPacks.isNotEmpty) ...[
+            const Text('ODA KARTLARI', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1.2)),
+            const SizedBox(height: 12),
+            GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 220,
+                crossAxisSpacing: 16,
+                mainAxisSpacing: 16,
+                childAspectRatio: 0.85,
+              ),
+              itemCount: roomCardPacks.length,
+              itemBuilder: (context, index) {
+                final p = roomCardPacks[index];
+                return _buildGridCard(
+                  context: context,
+                  product: p,
+                  title: '${p.id.contains('10') ? '10' : '50'} Oda Kartı',
+                  subtitle: p.price,
+                  imagePath: 'assets/images/room_card.png',
+                  gradientColors: [const Color(0xFF7F00FF), const Color(0xFFE100FF)],
+                );
+              },
+            ),
+            const SizedBox(height: 30),
+          ],
+
+          if (einsteinPack != null) ...[
+            _buildSpecialOfferCard(
+              context: context,
+              product: einsteinPack,
+              title: 'EINSTEIN VIP',
+              subtitle: 'En Nadir Efsanevi Avatar',
+              imagePath: 'assets/images/einstein_avatar.png',
+              gradientColors: [const Color(0xFF141E30), const Color(0xFF243B55)],
+              borderColor: Colors.amber,
+              icon: Icons.workspace_premium,
+            ),
+            const SizedBox(height: 40),
+          ],
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSpecialOfferCard({
+    required BuildContext context,
+    required ProductDetails product,
+    required String title,
+    required String subtitle,
+    required String imagePath,
+    required List<Color> gradientColors,
+    required IconData icon,
+    Color? borderColor,
+    VoidCallback? onTap,
+  }) {
+    return GestureDetector(
+      onTap: onTap ?? () => _iapService.buyProduct(product, context),
+      child: Container(
+        height: 140,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(colors: gradientColors, begin: Alignment.topLeft, end: Alignment.bottomRight),
+          borderRadius: BorderRadius.circular(24),
+          border: Border.all(color: borderColor ?? Colors.white.withValues(alpha: 0.2), width: 2),
+          boxShadow: [
+            BoxShadow(color: gradientColors.last.withValues(alpha: 0.4), blurRadius: 15, offset: const Offset(0, 8)),
+          ],
+        ),
+        child: Stack(
+          clipBehavior: Clip.none,
+          children: [
+            Positioned(
+              right: -20,
+              top: -20,
+              child: Icon(icon, size: 150, color: Colors.white.withValues(alpha: 0.1)),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Row(
+                children: [
+                  Container(
+                    width: 90,
+                    height: 90,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.white, width: 3),
+                      boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.3), blurRadius: 10)],
+                      image: DecorationImage(image: AssetImage(imagePath), fit: BoxFit.cover),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          decoration: BoxDecoration(color: Colors.black45, borderRadius: BorderRadius.circular(8)),
+                          child: Text(title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12, letterSpacing: 1)),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(subtitle, style: const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w500), maxLines: 2, overflow: TextOverflow.ellipsis),
+                        const SizedBox(height: 8),
+                        Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                              child: Text(product.price, style: TextStyle(color: gradientColors.first, fontWeight: FontWeight.w900, fontSize: 16)),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Positioned(
+              top: -10,
+              right: 20,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                decoration: BoxDecoration(
+                  color: Colors.amber,
+                  borderRadius: BorderRadius.circular(12),
+                  boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 4, offset: Offset(0, 2))],
+                ),
+                child: const Text('FIRSAT', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 10)),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildGridCard({
+    required BuildContext context,
+    required ProductDetails product,
+    required String title,
+    required String subtitle,
+    required String imagePath,
+    required List<Color> gradientColors,
+  }) {
+    return GestureDetector(
+      onTap: () => _iapService.buyProduct(product, context),
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(colors: gradientColors, begin: Alignment.topLeft, end: Alignment.bottomRight),
+          borderRadius: BorderRadius.circular(24),
+          boxShadow: [
+            BoxShadow(color: gradientColors.first.withValues(alpha: 0.3), blurRadius: 12, offset: const Offset(0, 6)),
+          ],
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Image.asset(imagePath, fit: BoxFit.contain),
+              ),
+              const SizedBox(height: 8),
+              Text(title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13), textAlign: TextAlign.center),
+              const SizedBox(height: 6),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(color: Colors.black.withValues(alpha: 0.25), borderRadius: BorderRadius.circular(16)),
+                child: Text(subtitle, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13)),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildExtrasTab(BuildContext context, QuizProvider provider) {
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: ListView(
+        physics: const BouncingScrollPhysics(),
+        children: [
+          // JOKER INVENTORY
+          Container(
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Color(0xFF2A0845), Color(0xFF6441A5)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(color: Colors.cyanAccent, width: 2),
+              boxShadow: [
+                BoxShadow(color: Colors.cyanAccent.withValues(alpha: 0.3), blurRadius: 10, spreadRadius: 1),
+              ],
+            ),
+            child: Column(
+              children: [
+                Image.asset('assets/images/joker_pack.png', height: 64),
+                const SizedBox(height: 10),
+                const Text('JOKER ENVANTERİ', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
+                const SizedBox(height: 15),
+                _buildJokerRow(
+                  context,
+                  provider,
+                  icon: Icons.exposure_minus_2_rounded,
+                  label: 'Yarı Yarıya',
+                  count: provider.jokerFiftyFiftyTokens,
+                  color: const Color(0xFFFFB300),
+                  onReward: () {
+                    provider.addJokerFiftyFiftyToken(1);
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('+1 Yarı Yarıya Jokeri kazandınız! 🃏'), backgroundColor: Colors.green));
+                  },
+                ),
+                const SizedBox(height: 10),
+                _buildJokerRow(
+                  context,
+                  provider,
+                  icon: Icons.call_rounded,
+                  label: 'Telefon',
+                  count: provider.jokerPhoneTokens,
+                  color: const Color(0xFF7B2FFF),
+                  onReward: () {
+                    provider.addJokerPhoneToken(1);
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('+1 Telefon Jokeri kazandınız! 🃏'), backgroundColor: Colors.green));
+                  },
+                ),
+                const SizedBox(height: 10),
+                _buildJokerRow(
+                  context,
+                  provider,
+                  icon: Icons.bar_chart_rounded,
+                  label: 'Seyirci',
+                  count: provider.jokerAudienceTokens,
+                  color: const Color(0xFF00897B),
+                  onReward: () {
+                    provider.addJokerAudienceToken(1);
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('+1 Seyirci Jokeri kazandınız! 🃏'), backgroundColor: Colors.green));
+                  },
+                ),
+                const SizedBox(height: 10),
+                _buildJokerRow(
+                  context,
+                  provider,
+                  icon: Icons.rocket_launch_rounded,
+                  label: 'Soruyu Geç',
+                  count: provider.jokerSkipTokens,
+                  color: const Color(0xFFE53935),
+                  onReward: () {
+                    provider.addJokerSkipToken(1);
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('+1 Pas Jokeri kazandınız! 🃏'), backgroundColor: Colors.green));
+                  },
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 20),
+          // SURPRISE BOX
+          Container(
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Color(0xFFF2994A), Color(0xFFF2C94C)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(color: Colors.white, width: 2),
+              boxShadow: [
+                BoxShadow(color: Colors.orangeAccent.withValues(alpha: 0.5), blurRadius: 10, spreadRadius: 1),
+              ],
+            ),
+            child: Column(
+              children: [
+                Image.asset('assets/images/diamond_chest.png', height: 64),
+                const SizedBox(height: 10),
+                const Text('GÜNLÜK SÜRPRİZ KUTU', style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold)),
+                const SizedBox(height: 5),
+                const Text('İçinden Elmas, Oda Kartı, Para veya Joker çıkabilir!', style: TextStyle(color: Colors.black87, fontSize: 14), textAlign: TextAlign.center),
+                const SizedBox(height: 15),
+                ElevatedButton.icon(
+                  onPressed: () {
+                    AdService().showRewardedAd(
+                      context: context,
+                      onRewardEarned: (amount) {
+                        int rand = DateTime.now().millisecondsSinceEpoch % 4;
+                        if (rand == 0) {
+                          provider.addCoins(50);
+                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Sürpriz Kutu\'dan 50 Elmas çıktı! 💎'), backgroundColor: Colors.green));
+                        } else if (rand == 1) {
+                          provider.giveFreeRoomCard();
+                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Sürpriz Kutu\'dan 1 Oda Kartı çıktı! 💳'), backgroundColor: Colors.green));
+                        } else if (rand == 2) {
+                          provider.addMoney(5000);
+                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Sürpriz Kutu\'dan 5.000 ₺ çıktı! 💵'), backgroundColor: Colors.green));
+                        } else {
+                          int jokerType = DateTime.now().millisecondsSinceEpoch % 4;
+                          String jokerName = '';
+                          if (jokerType == 0) { provider.addJokerFiftyFiftyToken(1); jokerName = 'Yarı Yarıya'; }
+                          else if (jokerType == 1) { provider.addJokerPhoneToken(1); jokerName = 'Telefon'; }
+                          else if (jokerType == 2) { provider.addJokerAudienceToken(1); jokerName = 'Seyirci'; }
+                          else { provider.addJokerSkipToken(1); jokerName = 'Soruyu Geç'; }
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Sürpriz Kutu\'dan +1 $jokerName Jokeri çıktı! 🃏'), backgroundColor: Colors.green));
+                        }
+                      },
+                    );
+                  },
+                  icon: const Icon(Icons.ondemand_video, color: Colors.white),
+                  label: const Text('KUTUYU AÇ', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.redAccent,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildJokerRow(BuildContext context, QuizProvider provider, {
+    required IconData icon,
+    required String label,
+    required int count,
+    required Color color,
+    required VoidCallback onReward,
+  }) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      decoration: BoxDecoration(
+        color: Colors.black26,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Row(
+        children: [
+          CircleAvatar(
+            backgroundColor: color.withValues(alpha: 0.2),
+            child: Icon(icon, color: color),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(label, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                Text('Sahip: $count', style: const TextStyle(color: Colors.amberAccent, fontSize: 12)),
+              ],
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              AdService().showRewardedAd(
+                context: context,
+                onRewardEarned: (amount) => onReward(),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.cyanAccent,
+              foregroundColor: Colors.black,
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 0),
+              minimumSize: const Size(80, 36),
+            ),
+            child: const Text('İZLE'),
+          ),
+        ],
+      ),
+    );
+  }
+}

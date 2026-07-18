@@ -28,49 +28,64 @@ class HowToPlayScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _buildSection(
-              title: '🎮 OYUN MODLARI',
-              content: 'Oyunda yeteneklerini test edebileceğin 4 ana mod bulunur:\n'
+              title: '🎮 OYUN MODLARI (5 FARKLI MOD)',
+              content: 'Oyunda yeteneklerini test edebileceğin çeşitli modlar bulunur:\n'
                   '• Klasik Mod: Klasik kurallarla yarışıp en yüksek ödülü hedeflersin.\n'
                   '• Sonsuz Mod: Hiç hata yapmadan, arka arkaya en çok kaç soru bilebileceğini test edersin.\n'
-                  '• Global Düello: Çevrimiçi rastgele rakiplerle eşleşip zeka savaşı verirsin. Kazanan tüm bahsi alır!\n'
-                  '• Arkadaşınla Oyna: Aynı cihaz üzerinden ekranı ikiye bölerek arkadaşınla kıyasıya bir bilgi yarışması yapabilirsin.',
+                  '• Küresel Düello: Çevrimiçi rastgele rakiplerle eşleşip zeka savaşı verirsin. Kazanan tüm bahsi (elmasları) alır!\n'
+                  '• Çevrimdışı Düello: Aynı cihaz üzerinden ekranı ikiye bölerek arkadaşınla kıyasıya yarışırsın.\n'
+                  '• Etkinlik Modu (Kategori): Bilim, Tarih, Spor gibi sadece kendi seçtiğin özel kategorilerde yarışırsın.',
             ),
             const SizedBox(height: 16),
             _buildSection(
               title: '🏆 LİDERLİK TABLOSU',
               content: 'Oyun içi başarına göre Dünya Sıralamasına girersin.\n'
-                  '• Haftalık Sıfırlama: Liderlik tablosu her hafta sonu sıfırlanır.\n'
+                  '• Haftalık Sıfırlama: Liderlik tablosu her hafta sonu (Pazar gecesi) sıfırlanır.\n'
                   '• Ödüller: Sıfırlanma anında İlk 10\'a giren oyuncular çok değerli elmas ödülleri kazanır.',
             ),
             const SizedBox(height: 16),
             _buildSection(
               title: '🧠 UNVAN VE IQ SİSTEMİ',
-              content: 'Oyuna 50 IQ ile başlarsın. Soru bildikçe IQ\'n yükselir, bilemedikçe düşer.\n'
+              content: 'Oyuna 50 IQ ile başlarsın. Soru bildikçe IQ\'n yükselir, bilemedikçe veya süren bittiğinde düşer.\n'
                   '• Unvanlar: Çömez, Çırak, Öğrenci, Bilgin, Profesör, Dahi ve Efsane.\n'
-                  '• IQ seviyene göre havalı bir unvan etiketi (rozet) kazanıp liderlik tablosunda hava atabilirsin.',
+                  '• Her unvanın kendine özel havalı bir etiketi (rozeti) vardır, rakiplerine karşı hava atabilirsin.',
             ),
             const SizedBox(height: 16),
             _buildSection(
               title: '🃏 JOKERLER (PREMIUM)',
-              content: 'Zorlandığın anlarda kullanabileceğin jokerler:\n'
+              content: 'Zorlandığın anlarda kullanabileceğin 4 temel joker bulunur:\n'
                   '• ✂️ Yarı Yarıya: Yanlış olan 2 şıkkı anında eler.\n'
-                  '• 📞 Telefon: Soruyu bir uzmana arayıp sorarsın.\n'
+                  '• 📞 Telefon: Soruyu sana en uygun uzmana arayıp sorarsın.\n'
                   '• 📊 Seyirciye Sor: Şıkları elediğinde geriye kalanları seyirciye oylatır.\n'
                   '• ⏩ Soruyu Geç: Soruyu doğrudan geçer, elenmekten kurtarır.\n\n'
-                  '💡 Önemli: Jokerlerin ilk kullanımı ücretsizdir. Aynı jokeri 2. kez kullanmak istersen 25 💎 (Elmas) ödemen gerekir!',
+                  '💡 Önemli: Jokerlerin ilk kullanımı ücretsizdir. Aynı jokeri 2. kez kullanmak istersen Joker hakkından harcarsın ya da 25 💎 (Elmas) ödersin!',
             ),
             const SizedBox(height: 16),
             _buildSection(
               title: '🛍️ MAĞAZA & AVATARLAR',
-              content: 'Oyun oynadıkça kazandığın elmaslarla Mağaza\'dan avatar satın alabilirsin.\n'
-                  '• Seçilebilen Avatarlar: Tesla, Da Vinci, Newton gibi efsane bilim insanlarının avatarlarını alıp profilinde kullanabilirsin.',
+              content: 'Mağazayı ziyaret ederek hesabını ve profilini güçlendirebilirsin:\n'
+                  '• Elmas ve Oda Kartı Paketleri: Oyun içi avantajlar sağlamak için elmas veya arkadaşlarınla yarışmak için oda kartı satın alabilirsin.\n'
+                  '• Joker Kasaları: "Mega Joker Kasası" gibi paketlerle joker stokunu fulleyebilirsin.\n'
+                  '• Premium Avatarlar: Einstein, Tesla, Newton gibi efsanevi bilim insanlarının hareketli ve şık avatarlarını satın alabilirsin. Satın aldığın avatar anında profiline kuşanılır!',
             ),
             const SizedBox(height: 16),
             _buildSection(
-              title: '🌟 BAŞARIMLAR & GÜNLÜK ÖDÜLLER',
-              content: '• Çarkıfelek: Her 24 saatte bir ücretsiz çevirip elmas ve ödüller kazanabilirsin.\n'
-                  '• Görevler: Günlük görevleri tamamlayarak ekstra ödüller elde edebilirsin.\n'
-                  '• Başarımlar: Oyunda gösterdiğin üstün performanslar (örneğin art arda soru bilme, unvan atlama) sayesinde eşsiz elmas ödülleri toplayabilirsin.',
+              title: '🤝 DAVET ET & KAZAN',
+              content: 'Ana ekrandaki "Davet Et" bölümünden kendi özel Davet Kodunu görebilirsin.\n'
+                  '• Arkadaşlarını bu kodla oyuna kaydettirirsen, her bir arkadaşın için tam 10.000 Elmas 💎 kazanırsın!',
+            ),
+            const SizedBox(height: 16),
+            _buildSection(
+              title: '🔑 HESAP GÜVENLİĞİ VE OYUNCU ID',
+              content: 'Ayarlar (⚙️) menüsüne girerek hesap işlemlerini yapabilirsin.\n'
+                  '• Hesabı Kaydet: Eğer Misafir hesapla girmişsen, emeğinin kaybolmaması için E-posta veya Google ile hesabını kalıcı hale getirebilirsin.\n'
+                  '• Oyuncu ID: Yine ayarlar menüsünde sana özel "Gizli Numaran (Oyuncu ID)" bulunur.',
+            ),
+            const SizedBox(height: 16),
+            _buildSection(
+              title: '🌟 GÜNLÜK ÖDÜLLER & ÇARKIFELEK',
+              content: '• Çarkıfelek: Her 24 saatte bir ücretsiz çevirip elmas ve ekstra jokerler kazanabilirsin.\n'
+                  '• Görevler: Ana menüden ulaşabileceğin "Günlük Görevleri" tamamlayarak daha hızlı seviye atlayabilirsin.',
             ),
           ],
         ),

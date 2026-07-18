@@ -254,7 +254,7 @@ class _MultiplayerLobbyScreenState extends State<MultiplayerLobbyScreen> {
                         children: [
                           Row(
                             children: [
-                              const Text('💎', style: TextStyle(fontSize: 20)),
+                              Image.asset('assets/images/3d_diamond_clear_nobg.png', width: 28, height: 28),
                               const SizedBox(width: 8),
                               Text(
                                 '${quizProvider.totalCoins}',
@@ -265,7 +265,7 @@ class _MultiplayerLobbyScreenState extends State<MultiplayerLobbyScreen> {
                           Container(width: 1, height: 30, color: Colors.white24),
                           Row(
                             children: [
-                              const Icon(Icons.credit_card, color: Colors.cyanAccent, size: 22),
+                              Image.asset('assets/images/room_card.png', width: 32, height: 32),
                               const SizedBox(width: 8),
                               Text(
                                 '${quizProvider.roomCards} Kart',
