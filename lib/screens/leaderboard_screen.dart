@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../services/ad_service.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:provider/provider.dart';
 import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
@@ -232,6 +233,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       ),
                       _buildTimeBox((_timeUntilReset.inHours % 24).toString().padLeft(2, '0'), 'SA'),
                       const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 3),
                         child: Text(':', style: TextStyle(color: Colors.cyanAccent, fontSize: 20, fontWeight: FontWeight.bold)),
                       ),
                       _buildTimeBox((_timeUntilReset.inMinutes % 60).toString().padLeft(2, '0'), 'DK'),
