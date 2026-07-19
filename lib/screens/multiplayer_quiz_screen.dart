@@ -34,6 +34,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
   String? _currentEmote;
   Timestamp? _lastEmoteTs;
   Timer? _emoteTimer;
+  bool _hasAbandoned = false;
 
   int _displayedOpponentScore = 0;
 
