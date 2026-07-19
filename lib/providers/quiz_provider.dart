@@ -1078,21 +1078,21 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     
     int userRank = allScores.indexWhere((s) => s['isUser'] == true) + 1;
     if (userRank == 1) {
-      _totalCoins += 2500;
+      _totalCoins += 3000;
       _roomCards += 10;
-      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 1. sırada tamamladın ve 2.500 Elmas + 10 Oda Kartı kazandın! 🥇";
+      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 1. sırada tamamladın ve 3.000 Elmas + 10 Oda Kartı kazandın! 🏆";
     } else if (userRank == 2) {
-      _totalCoins += 1500;
-      _roomCards += 5;
-      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 2. sırada tamamladın ve 1.500 Elmas + 5 Oda Kartı kazandın! 🥈";
+      _totalCoins += 2000;
+      _roomCards += 7;
+      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 2. sırada tamamladın ve 2.000 Elmas + 7 Oda Kartı kazandın! 🥈";
     } else if (userRank == 3) {
       _totalCoins += 1000;
-      _roomCards += 3;
-      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 3. sırada tamamladın ve 1.000 Elmas + 3 Oda Kartı kazandın! 🥉";
+      _roomCards += 5;
+      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 3. sırada tamamladın ve 1.000 Elmas + 5 Oda Kartı kazandın! 🥉";
     } else if (userRank <= 10) {
-      _totalCoins += 250;
-      _roomCards += 1;
-      _weeklyRewardMessage = "Geçen hafta ilk 10'a girmeyi başardın! Ödülün: 250 Elmas + 1 Oda Kartı. 🏆";
+      _totalCoins += 500;
+      _roomCards += 3;
+      _weeklyRewardMessage = "Geçen hafta ilk 10'a girmeyi başardın! Ödülün: 500 Elmas + 3 Oda Kartı. 🏆";
     }
     
     // Sonsuz Mod Ödülleri
