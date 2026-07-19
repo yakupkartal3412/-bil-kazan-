@@ -370,8 +370,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                         try {
                           var map = doc.data() as Map<String, dynamic>;
                           
-                          // Haftalık Sıfırlama Kontrolü (Klasik Mod için)
-                          if (map['mode'] == 'Klasik Mod') {
+                          // Haftalık Sıfırlama Kontrolü (Klasik ve Sonsuz Mod için)
+                          if (map['mode'] == 'Klasik Mod' || map['mode'] == 'Sonsuz Mod') {
                             String docDateStr = map['date'] ?? '';
                             if (docDateStr.isNotEmpty) {
                               DateTime? docDate = DateTime.tryParse(docDateStr);
@@ -429,6 +429,33 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                           'mode': 'Klasik Mod',
                           'score': provider.weeklyScore,
                           'moneyString': '$formatted ₺',
+                          'userName': provider.userName,
+                          'avatar': provider.activeAvatar,
+                          'uid': fallbackUid,
+                        };
+                      }
+                    } else if (targetMode == 'Sonsuz Mod') {
+                      String formatted = '${provider.weeklyEndlessScore} Soru';
+                      
+                      String? myUidKey;
+                      for (var key in bestScores.keys) {
+                        if (bestScores[key]!['userName'] == provider.userName) {
+                          myUidKey = key;
+                          break;
+                        }
+                      }
+                      
+                      if (myUidKey != null) {
+                        if (provider.weeklyEndlessScore > bestScores[myUidKey]!['score']) {
+                          bestScores[myUidKey]!['score'] = provider.weeklyEndlessScore;
+                          bestScores[myUidKey]!['moneyString'] = formatted;
+                        }
+                      } else {
+                        String fallbackUid = 'local_uid_${DateTime.now().millisecondsSinceEpoch}';
+                        bestScores[fallbackUid] = {
+                          'mode': 'Sonsuz Mod',
+                          'score': provider.weeklyEndlessScore,
+                          'moneyString': formatted,
                           'userName': provider.userName,
                           'avatar': provider.activeAvatar,
                           'uid': fallbackUid,

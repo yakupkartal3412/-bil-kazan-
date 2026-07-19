@@ -47,6 +47,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   static const String _hasClaimedDailyLoginKey = 'has_claimed_daily_login';
   
   static const String _weeklyScoreKey = 'weekly_score';
+  static const String _weeklyEndlessScoreKey = 'weekly_endless_score';
   static const String _lastWeeklyResetDateKey = 'lastWeeklyResetDate';
   static const String _pastWinnersKey = 'past_winners';
   static const String _deviceIdKey = 'device_id';
@@ -123,6 +124,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   int _lastDuelP2Series = 0;
   
   int _weeklyScore = 0;
+  int _weeklyEndlessScore = 0;
   String _lastWeeklyResetDate = '';
   List<String> _pastWinners = [];
   String _weeklyRewardMessage = '';
@@ -165,6 +167,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   int get lastDuelP2Series => _lastDuelP2Series;
   
   int get weeklyScore => _weeklyScore;
+  int get weeklyEndlessScore => _weeklyEndlessScore;
   List<String> get pastWinners => _pastWinners;
   String get weeklyRewardMessage => _weeklyRewardMessage;
   void clearWeeklyRewardMessage() { _weeklyRewardMessage = ''; notifyListeners(); }
@@ -460,6 +463,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _hasClaimedDailyLogin = prefs.getBool(_hasClaimedDailyLoginKey) ?? false;
     
     _weeklyScore = prefs.getInt(_weeklyScoreKey) ?? 0;
+    _weeklyEndlessScore = prefs.getInt(_weeklyEndlessScoreKey) ?? 0;
     _lastWeeklyResetDate = prefs.getString(_lastWeeklyResetDateKey) ?? '';
     _pastWinners = prefs.getStringList(_pastWinnersKey) ?? [];
 
@@ -763,6 +767,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt(_moneyKey, _totalMoney);
     await prefs.setInt(_weeklyScoreKey, _weeklyScore);
+    await prefs.setInt(_weeklyEndlessScoreKey, _weeklyEndlessScore);
   }
 
   Future<void> buyRoomCard() async {
@@ -1090,11 +1095,60 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       _weeklyRewardMessage = "Geçen hafta ilk 10'a girmeyi başardın! Ödülün: 250 Elmas + 1 Oda Kartı. 🏆";
     }
     
+    // Sonsuz Mod Ödülleri
+    List<Map<String, dynamic>> endlessBots = [
+      {'score': 100, 'userName': 'A. Einstein'},
+      {'score': 85, 'userName': 'N. Tesla'},
+      {'score': 70, 'userName': 'I. Newton'},
+      {'score': 55, 'userName': 'M. Curie'},
+      {'score': 45, 'userName': 'Da Vinci'},
+      {'score': 35, 'userName': 'S. Hawking'},
+      {'score': 25, 'userName': 'Galileo'},
+      {'score': 15, 'userName': 'Pisagor'},
+    ];
+    for (int i = 1; i <= 20; i++) {
+      int score = 40 - (i * 2);
+      if (score < 5) score = 5;
+      endlessBots.add({'score': score, 'userName': 'Oyuncu $i'});
+    }
+    
+    List<Map<String, dynamic>> allEndlessScores = List.from(endlessBots);
+    allEndlessScores.add({'score': _weeklyEndlessScore, 'userName': _userName, 'isUser': true});
+    allEndlessScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
+    
+    int userEndlessRank = allEndlessScores.indexWhere((s) => s['isUser'] == true) + 1;
+    String endlessMessage = "";
+    if (userEndlessRank == 1) {
+      _totalCoins += 1500;
+      _roomCards += 10;
+      endlessMessage = " Sonsuz Mod 1.si olarak ekstra 1.500 Elmas + 10 Oda Kartı kazandın!";
+    } else if (userEndlessRank == 2) {
+      _totalCoins += 1000;
+      _roomCards += 7;
+      endlessMessage = " Sonsuz Mod 2.si olarak ekstra 1.000 Elmas + 7 Oda Kartı kazandın!";
+    } else if (userEndlessRank == 3) {
+      _totalCoins += 750;
+      _roomCards += 5;
+      endlessMessage = " Sonsuz Mod 3.sü olarak ekstra 750 Elmas + 5 Oda Kartı kazandın!";
+    } else if (userEndlessRank <= 10) {
+      _totalCoins += 500;
+      _roomCards += 3;
+      endlessMessage = " Sonsuz Mod'da İlk 10'a girerek ekstra 500 Elmas + 3 Oda Kartı kazandın!";
+    }
+    
+    if (_weeklyRewardMessage.isNotEmpty && endlessMessage.isNotEmpty) {
+      _weeklyRewardMessage += endlessMessage;
+    } else if (endlessMessage.isNotEmpty) {
+      _weeklyRewardMessage = "Geçen hafta$endlessMessage";
+    }
+
     _weeklyScore = 0; 
+    _weeklyEndlessScore = 0;
     
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList(_pastWinnersKey, _pastWinners);
     await prefs.setInt(_weeklyScoreKey, _weeklyScore);
+    await prefs.setInt(_weeklyEndlessScoreKey, _weeklyEndlessScore);
     await prefs.setInt(_coinsKey, _totalCoins);
   }
 
@@ -1634,6 +1688,11 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       if (_gameMode == GameMode.classic) {
         _totalMoney += moneyValue;
         _weeklyScore += moneyValue; // Haftalık sıralama için de ekle
+      } else if (_gameMode == GameMode.endless) {
+        if (moneyValue > _weeklyEndlessScore) {
+          _weeklyEndlessScore = moneyValue;
+          _saveMoney();
+        }
       }
       
       final date = DateTime.now().toString().split(' ')[0];
@@ -1645,6 +1704,9 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       if (_gameMode == GameMode.classic) {
         finalScore = _weeklyScore;
         finalMoneyString = "${_weeklyScore.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.')} ₺";
+      } else if (_gameMode == GameMode.endless) {
+        finalScore = _weeklyEndlessScore;
+        finalMoneyString = "$_weeklyEndlessScore Soru";
       }
 
       final Map<String, dynamic> scoreData = {
