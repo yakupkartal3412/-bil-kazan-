@@ -156,7 +156,7 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
                ElevatedButton(
                  onPressed: () {
                    _rematchDialogShowing = false;
-                   final rawQuestions = quizProvider.getRandomQuestionsForDuel(10);
+                   final rawQuestions = quizProvider.get15MixedQuestions();
                    List<Map<String, dynamic>> newQuestions = rawQuestions.map((q) => q.toMap()).toList();
                    mpProvider.acceptRematch(newQuestions);
                    Navigator.pop(ctx);

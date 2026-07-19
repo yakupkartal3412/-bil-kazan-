@@ -37,8 +37,8 @@ class _MultiplayerLobbyScreenState extends State<MultiplayerLobbyScreen> {
     // Odayı kurmadan önce kartı harca
     await quizProvider.useRoomCard();
 
-    // Rastgele 10 soru çek
-    final rawQuestions = quizProvider.getRandomQuestionsForDuel(10);
+    // Rastgele 15 soru ek (5 kolay, 5 orta, 5 zor)
+    final rawQuestions = quizProvider.get15MixedQuestions();
     List<Map<String, dynamic>> questions = rawQuestions.map((q) => q.toMap()).toList();
 
     bool success = await mpProvider.createRoom(
