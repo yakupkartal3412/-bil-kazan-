@@ -172,24 +172,16 @@ class QuizProvider extends ChangeNotifier {
   int get iqLevel {
     if (_totalQuestionsAnswered == 0) return 10; // Başlangıç IQ'su
     
-    double winRate = _totalCorrectAnswers / _totalQuestionsAnswered;
+    int wrongAnswers = _totalQuestionsAnswered - _totalCorrectAnswers;
+    
+    // Doğrular +1 puan, yanlışlar -1.5 puan (Cezalı sistem)
+    double netScore = (_totalCorrectAnswers * 1.0) - (wrongAnswers * 1.5);
+    if (netScore < 0) netScore = 0;
     
     // Tecrübe bonusu logaritmik olarak artsın
-    double expBonus = dart_math.sqrt(_totalQuestionsAnswered) * 2.0;
-    if (expBonus > 100) expBonus = 100;
+    double iqBonus = dart_math.sqrt(netScore) * 2.0;
     
-    // Kazanma oranı ağırlığı tecrübe arttıkça artsın (max 1.0)
-    double winRateWeight = _totalQuestionsAnswered / 1000;
-    if (winRateWeight > 1.0) winRateWeight = 1.0;
-    
-    // Minimum 20 soru çözmeden winRate bonusu çok etkilemesin
-    double winRateBonus = 0;
-    if (_totalQuestionsAnswered >= 20) {
-      winRateBonus = winRate * 50 * winRateWeight;
-    }
-    
-    // Maksimum IQ 160 (10 taban + 100 xp + 50 kazanma oranı)
-    int iq = (10 + expBonus + winRateBonus).toInt();
+    int iq = (10 + iqBonus).toInt();
     if (iq > 160) iq = 160;
     if (iq < 10) iq = 10;
     return iq;
