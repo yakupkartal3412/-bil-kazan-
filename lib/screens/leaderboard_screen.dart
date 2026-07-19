@@ -767,12 +767,12 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
       num sc = scoreMap['score'] ?? 0;
       if (sc >= 1000000) {
         double mil = sc / 1000000;
-        moneyString = '${mil == mil.toInt() ? mil.toInt() : mil.toStringAsFixed(1)} Milyon 💎';
+        moneyString = '${mil == mil.toInt() ? mil.toInt() : mil.toStringAsFixed(1)} Milyon ₺';
       } else if (sc >= 1000) {
         double k = sc / 1000;
-        moneyString = '${k == k.toInt() ? k.toInt() : k.toStringAsFixed(1)} Bin 💎';
+        moneyString = '${k == k.toInt() ? k.toInt() : k.toStringAsFixed(1)} Bin ₺';
       } else {
-        moneyString = '${sc.toInt()} 💎';
+        moneyString = '${sc.toInt()} ₺';
       }
     }
     String rankLabel = rank == 1 ? '🥇 1.' : (rank == 2 ? '🥈 2.' : '🥉 3.');
