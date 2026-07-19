@@ -49,6 +49,23 @@ class AudioProvider extends ChangeNotifier with WidgetsBindingObserver {
     _isMusicEnabled = prefs.getBool('isMusicEnabled') ?? true;
     _isSfxEnabled = prefs.getBool('isSfxEnabled') ?? true;
     _isVibrationEnabled = prefs.getBool('isVibrationEnabled') ?? true;
+    
+    // Ses kesilme (BGM durma) sorununu çözmek için AudioContext ayarla
+    final AudioContext audioContext = AudioContext(
+      iOS: AudioContextIOS(
+        category: AVAudioSessionCategory.ambient,
+        options: {AVAudioSessionOptions.mixWithOthers},
+      ),
+      android: AudioContextAndroid(
+        isSpeakerphoneOn: true,
+        stayAwake: true,
+        contentType: AndroidContentType.music,
+        usageType: AndroidUsageType.game,
+        audioFocus: AndroidAudioFocus.none,
+      ),
+    );
+    await AudioPlayer.global.setAudioContext(audioContext);
+    
     // Configure BGM player for looping
     await _bgmPlayer.setReleaseMode(ReleaseMode.loop);
     
