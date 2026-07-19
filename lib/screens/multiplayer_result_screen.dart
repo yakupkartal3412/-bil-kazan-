@@ -191,8 +191,26 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
       }
     }
     
-    int myScore = mpProvider.isHost ? (data['hostScore'] ?? 0) : (data['guestScore'] ?? 0);
-    int oppScore = mpProvider.isHost ? (data['guestScore'] ?? 0) : (data['hostScore'] ?? 0);
+    int calculatedHostScore = 0;
+    int calculatedGuestScore = 0;
+    List<dynamic> questions = data['questions'] ?? [];
+    Map<String, dynamic> hostAns = data['hostAnswers'] ?? {};
+    Map<String, dynamic> guestAns = data['guestAnswers'] ?? {};
+
+    for (int i = 0; i < questions.length; i++) {
+      int corr = int.tryParse(questions[i]['correctOptionIndex']?.toString() ?? '-1') ?? -1;
+      int diff = int.tryParse(questions[i]['difficulty']?.toString() ?? '2') ?? 2;
+      int pts = diff == 1 ? 10 : diff == 2 ? 20 : 30;
+
+      int hC = int.tryParse(hostAns[i.toString()]?.toString() ?? '-1') ?? -1;
+      int gC = int.tryParse(guestAns[i.toString()]?.toString() ?? '-1') ?? -1;
+
+      if (hC != -1 && hC == corr) calculatedHostScore += pts;
+      if (gC != -1 && gC == corr) calculatedGuestScore += pts;
+    }
+
+    int myScore = mpProvider.isHost ? calculatedHostScore : calculatedGuestScore;
+    int oppScore = mpProvider.isHost ? calculatedGuestScore : calculatedHostScore;
     
     String oppName = mpProvider.isHost ? (data['guestName'] ?? 'Rakip') : (data['hostName'] ?? 'Rakip');
 

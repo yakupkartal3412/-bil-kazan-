@@ -141,8 +141,23 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Widg
       mpProvider.updateScore(_score);
     }
     
+    int oppScoreCalculated = 0;
+    Map<String, dynamic> hostAns = data?['hostAnswers'] ?? {};
+    Map<String, dynamic> guestAns = data?['guestAnswers'] ?? {};
+    
+    for (int i = 0; i <= _currentIndex; i++) {
+      int oppC = isHost 
+          ? int.tryParse(guestAns[i.toString()]?.toString() ?? '-1') ?? -1
+          : int.tryParse(hostAns[i.toString()]?.toString() ?? '-1') ?? -1;
+      int corr = int.tryParse(_questions[i]['correctOptionIndex']?.toString() ?? '-1') ?? -1;
+      if (oppC != -1 && oppC == corr) {
+        int d = int.tryParse(_questions[i]['difficulty']?.toString() ?? '2') ?? 2;
+        oppScoreCalculated += (d == 1 ? 10 : d == 2 ? 20 : 30);
+      }
+    }
+    
     setState(() {
-      _displayedOpponentScore = isHost ? (data?['guestScore'] ?? 0) : (data?['hostScore'] ?? 0);
+      _displayedOpponentScore = oppScoreCalculated;
     });
     
     Future.delayed(const Duration(seconds: 3), () {
