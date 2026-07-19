@@ -285,7 +285,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
-              ),
               
               // Bottom Bar Icons
               _buildBottomIcons(context),
