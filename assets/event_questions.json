@@ -5406,5 +5406,2803 @@
       "Gergedan"
     ],
     "correctOptionIndex": 1
+  },
+  {
+    "id": "q-tr-1",
+    "category": "Coğrafya",
+    "difficulty": 1,
+    "text": "Görseldeki tarihi ve turistik kule, İstanbul'un hangi semtine ismini vermiştir?",
+    "options": [
+      "Beyoğlu",
+      "Karaköy",
+      "Galata",
+      "Eminönü"
+    ],
+    "correctOptionIndex": 2,
+    "imageUrl": "assets/images/event_galata.png"
+  },
+  {
+    "id": "q-tr-2",
+    "category": "Türk Mutfağı",
+    "difficulty": 1,
+    "text": "Görselde ince belli bardakta servis edilen geleneksel içeceğimizin yanında en çok tüketilen susamlı hamur işi hangisidir?",
+    "options": [
+      "Poğaça",
+      "Açma",
+      "Boyoz",
+      "Simit"
+    ],
+    "correctOptionIndex": 3,
+    "imageUrl": "assets/images/event_tea.png"
+  },
+  {
+    "id": "q-tr-3",
+    "category": "Coğrafya",
+    "difficulty": 2,
+    "text": "Görseldeki peribacaları ve sıcak hava balonlarıyla dünyaca ünlü turistik bölgemiz neresidir?",
+    "options": [
+      "Pamukkale",
+      "Kapadokya",
+      "Safranbolu",
+      "Göbeklitepe"
+    ],
+    "correctOptionIndex": 1,
+    "imageUrl": "assets/images/event_cappadocia.png"
+  },
+  {
+    "id": "q-tr-4",
+    "category": "Tarih",
+    "difficulty": 2,
+    "text": "Osmanlı Devleti'nin kurucusu Osman Gazi'nin babası kimdir?",
+    "options": [
+      "Ertuğrul Gazi",
+      "Orhan Gazi",
+      "Süleyman Şah",
+      "Alparslan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-tr-5",
+    "category": "Yeşilçam",
+    "difficulty": 1,
+    "text": "'Hababam Sınıfı' film serisinde 'Mahmut Hoca' namıyla bilinen unutulmaz oyuncumuz kimdir?",
+    "options": [
+      "Kemal Sunal",
+      "Münir Özkul",
+      "Adile Naşit",
+      "Tarık Akan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-sosyal-1",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Kız isteme merasimlerinin vazgeçilmez geleneği olan 'tuzlu kahve' kime ikram edilir?",
+    "options": [
+      "Gelin",
+      "Kayınpeder",
+      "Damat",
+      "Sağdıç"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-sosyal-2",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Minibüslerde arka koltukta oturan bir yolcunun, şoföre ücreti iletmesi için diğer yolculara söylediği klasik cümle aşağıdakilerden hangisidir?",
+    "options": [
+      "Şoför bey para üstü",
+      "Şuradan bir kişi uzatır mısınız?",
+      "Müsait bir yerde",
+      "Kaptan orta kapıyı açar mısın?"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-sosyal-3",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Kadınların genellikle ayda bir kez kendi aralarında para veya altın biriktirmek ve sosyalleşmek için düzenledikleri geleneksel toplantıya ne ad verilir?",
+    "options": [
+      "Kısır Günü",
+      "Altın Günü",
+      "Sıra Gecesi",
+      "Kına Gecesi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-sosyal-4",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türk misafirperverliğinde eve gelen misafire kapıda ilk sunulan eşya genellikle nedir?",
+    "options": [
+      "Kolonya",
+      "Misafir Terliği",
+      "Çay",
+      "Lokum"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-sosyal-5",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Üzerimizde nazar ve kötü enerji olduğuna inanıldığında, bu enerjiyi atmak için uygulanan geleneksel metal eritme ritüelinin adı nedir?",
+    "options": [
+      "Tütsü yakmak",
+      "Muska yazdırmak",
+      "Kurşun döktürmek",
+      "Tahtaya vurmak"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-sosyal-6",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Türk çay kültüründe, çayın en ideal ve lezzetli demini tarif etmek için kullanılan renk betimlemesi hangisidir?",
+    "options": [
+      "Gül kurusu",
+      "Tavşan kanı",
+      "Kızılcık",
+      "Nar çiçeği"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-sosyal-7",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Geleneksel Türk misafirliğinde, yeterince çay içtikten sonra 'Artık daha fazla çay içmeyeceğim' mesajını vermek için çay kaşığı nereye konur?",
+    "options": [
+      "Bardağın içine bırakılır",
+      "Bardağın üstüne yatay konur",
+      "Tabağın altına saklanır",
+      "Peçeteye sarılır"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-sosyal-8",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Mahalle kültürümüzün vazgeçilmezi olan, bakkalların borçlu alışverişleri kaydettiği efsanevi deftere ne ad verilir?",
+    "options": [
+      "Kara Kaplı Defter",
+      "Cüzdan",
+      "Veresiye Defteri",
+      "Hesap Defteri"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-sosyal-9",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Düğünlerde halay çeken grubun en başında bulunan 'halaybaşı'nın elinde salladığı aksesuar nedir?",
+    "options": [
+      "Mendil",
+      "Tespih",
+      "Baston",
+      "Tef"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-sosyal-10",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Toplumumuzda kötü bir olayın veya ihtimalin başımıza gelmesinden korktuğumuzda, bunu uzaklaştırmak için yapılan fiziksel refleks hangisidir?",
+    "options": [
+      "Su içmek",
+      "Tahtaya vurup kulağı çekmek",
+      "Tuz serpmek",
+      "Elleri çırpmak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000001",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "90'lı yılların mahalle maçlarında uygulanan, topun kornere çıkmasıyla ilgili en bilindik kural aşağıdakilerden hangisidir?",
+    "options": [
+      "3 korner 1 penaltı",
+      "2 korner 1 taç",
+      "Atan alır",
+      "Korner gol sayılır"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000002",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Atari salonlarının ve evdeki atarilerin efsane oyunlarından birinde, tesisatçı bir karakterin prensesi kurtarmaya çalıştığı oyunun adı nedir?",
+    "options": [
+      "Pac-Man",
+      "Sonic",
+      "Super Mario",
+      "Street Fighter"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000003",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "İlkokul yıllarında öğrencilerin evden getirdikleri yiyecekleri koydukları, genellikle plastik veya metal kaplara ne ad verilirdi?",
+    "options": [
+      "Okul sepeti",
+      "Beslenme çantası",
+      "Yemek kutusu",
+      "Mutfak çantası"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000004",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Yere tebeşirle çizilen karelere tek veya çift ayak zıplanarak oynanan ve atılan yassı taşı geri almayı amaçlayan klasik sokak oyunu hangisidir?",
+    "options": [
+      "Körebe",
+      "Uzun eşek",
+      "İstop",
+      "Seksek"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000005",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Topu havaya atıp bir renk veya isim söyleyerek kaçıştığımız, topu tutanın ise 'renk' diyerek diğerlerini vurmaya çalıştığı oyunun adı nedir?",
+    "options": [
+      "İstop",
+      "Yakan top",
+      "Dokuz taş",
+      "Beş taş"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000006",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "90'larda ev telefonunun tuşlarına basarak televizyon ekranında oynanan, Tolga Abi'nin sunduğu meşhur yarışmanın karakteri kimdir?",
+    "options": [
+      "Keloğlan",
+      "Pokemon",
+      "Hugo",
+      "Casper"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000007",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Barış Manço'nun çocukları ekrana çıkarıp onlara şarkı söylettiği, 10 puan verdiği ve öğütlerde bulunduğu meşhur televizyon programı hangisidir?",
+    "options": [
+      "7'den 77'ye",
+      "Adam Olacak Çocuk",
+      "Susam Sokağı",
+      "Pazar Sürprizi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000008",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "90'ların sonunda anahtarlık boyutunda ekranı olan, hayvan besleyip büyüttüğümüz elektronik oyuncak nedir?",
+    "options": [
+      "Tetris",
+      "Gameboy",
+      "Atari",
+      "Sanal Bebek (Tamagotchi)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000009",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Toz halinde satılan, küçük bir pipetle veya kaşıkla yerken nefes alıp genze kaçırıp öksürten meşhur bakkal atıştırmalığı hangisidir?",
+    "options": [
+      "Leblebi tozu",
+      "Macun",
+      "Meybuz",
+      "Pamuk şeker"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000010",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Plastik boru veya poşet şeklinde satılan, dondurulmuş meyve suyu ya da boyalı su buzuna yaz aylarında ne ad verilirdi?",
+    "options": [
+      "Dondurma",
+      "Meybuz",
+      "Karsambaç",
+      "Şerbet"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000011",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Özellikle bayramlarda bakkallardan alınıp yere sürtülerek veya ayakkabı topuğuyla ezilerek patlatılan, barut kokulu kırmızı eğlence malzemesi nedir?",
+    "options": [
+      "Kız kaçıran",
+      "Torpil",
+      "Çatapat",
+      "Mantar tabancası"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000012",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Camdan veya demirden yapılmış küçük kürelerle oynanan, 'baş', 'kafa karış', 'mors' gibi terimleri olan sokak oyunu hangisidir?",
+    "options": [
+      "Taso",
+      "Misket (Bilye)",
+      "Çelik çomak",
+      "Dokuz taş"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000013",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Cips paketlerinden çıkan, üst üste dizilip diğeriyle vurularak ters çevrilmeye çalışılan yuvarlak karton veya plastik oyuncak nedir?",
+    "options": [
+      "Taso",
+      "Futbolcu kartı",
+      "Misket",
+      "Beyblade"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000014",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Eski sınıflarda pencereden veya balkondan çırpılarak temizlenmesi genellikle nöbetçi öğrencinin görevi olan ders materyali hangisidir?",
+    "options": [
+      "Harita",
+      "Öğretmen masası",
+      "Yoklama fişi",
+      "Tebeşirli tahta silgisi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000015",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Türkiye'de ilkokullarda siyah önlükten mavi önlüğe hangi on yılın başlangıcında (1989-1990 eğitim öğretim yılında) geçilmiştir?",
+    "options": [
+      "1970'ler",
+      "1980'ler",
+      "1990'lar",
+      "2000'ler"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000016",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "İki kişinin ortadaki kişileri topla vurmaya çalıştığı, vurulanın çıktığı ancak atılan topu havada tutanın 'can' kazandığı oyun hangisidir?",
+    "options": [
+      "Voleybol",
+      "Yakan top",
+      "İstop",
+      "Körebe"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000017",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Eski mahalle kültüründe annelerin, sokakta oynayan çocukları eve çağırmak için en çok referans aldıkları ve kural koydukları günün vakti nedir?",
+    "options": [
+      "Akşam ezanı",
+      "Haber saati",
+      "Güneşin batışı",
+      "Sokak lambalarının yanması"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000018",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Apartman kültüründe annelerin, bakkaldan ekmek veya gazete aldırmak için balkon veya camdan aşağıya ipe bağlayarak sarkıttıkları eşya hangisidir?",
+    "options": [
+      "Kova",
+      "Çuval",
+      "Sepet",
+      "Kutu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000019",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Okullarda evden getirilen mandalina, ceviz, elma ve poğaçaların sınıfta kurulan sıralar üzerinde hep birlikte paylaşılarak yendiği haftanın adı nedir?",
+    "options": [
+      "Orman Haftası",
+      "Yerli Malı Haftası",
+      "Kızılay Haftası",
+      "Sağlık Haftası"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000020",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "İki veya daha fazla kişiyle oynanan, rastgele bir harf seçilerek belirli kategorilerde (bitki, eşya vb.) en hızlı şekilde kelimeler türetmeye çalışılan kağıt oyunu hangisidir?",
+    "options": [
+      "Adam Asmaca",
+      "SOS",
+      "Amiral Battı",
+      "İsim Şehir Hayvan"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000021",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Kareli kağıda çizilen 10x10'luk alanda rakibe ait gemilerin koordinatlarını (örneğin A-5, B-7) tahmin ederek onları vurmaya çalışılan efsanevi kağıt oyunu hangisidir?",
+    "options": [
+      "Amiral Battı",
+      "Mayın Tarlası",
+      "Savaş Gemisi",
+      "Dokuz Taş"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000022",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "İki kişinin sırayla harfler yazarak bu üç harfi yan yana, alt alta veya çapraz getirmeye ve üzerini çizmeye çalıştığı kağıt oyunu hangisidir?",
+    "options": [
+      "Adam Asmaca",
+      "SOS",
+      "XOX",
+      "Üç Taş"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000023",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Walkman döneminde müzik kasetinin şeridini, cihazın pilini harcamadan veya teybi beklemeden hızlıca geri sarmak için deliklere sokularak çevrilen araç nedir?",
+    "options": [
+      "Silgi",
+      "Tükenmez kalem",
+      "Kurşun kalem",
+      "Bant"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000024",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Eskiden kış aylarında sobanın üzerinde çizilerek pişirilmesi veya mandalina kabuklarıyla birlikte konması vazgeçilmez bir ev geleneği olan yiyecek hangisidir?",
+    "options": [
+      "Patates",
+      "Soğan",
+      "Mısır",
+      "Kestane"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000025",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Eski evlerde tüplü televizyonların veya radyoların üzerine, genellikle sivri ucu ekrana doğru sarkacak şekilde üçgen örtülen eşya nedir?",
+    "options": [
+      "Dantel",
+      "Kilim",
+      "Gazete",
+      "Masa örtüsü"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000026",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Sokaklardaki sarı ankesörlü telefonlardan arama yapabilmek için atılan, bazı çocukların ortasına delik açıp ipe bağlayarak geri çektiği madeni obje nedir?",
+    "options": [
+      "Telefon kartı",
+      "Jeton",
+      "Akbil",
+      "Kumbara parası"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000027",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Uzun bir sopa ile yerdeki küçük çubuğun uç kısmına vurup havaya kaldırarak ardından havada en uzağa fırlatmaya dayalı sokak oyunu hangisidir?",
+    "options": [
+      "Körebe",
+      "Uzun eşek",
+      "Çelik çomak",
+      "Seksek"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000028",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "İçi içe geçmiş karelerden oluşan bir tahtada, iki oyuncunun ellerindeki taşları noktalara koyarak kendi taşlarını yan yana üçlemeye çalıştığı strateji oyunu hangisidir?",
+    "options": [
+      "Beş taş",
+      "Tavla",
+      "Dama",
+      "Dokuz taş"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000029",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yere atılan küçük yuvarlak taşları, sırasıyla birerli, ikişerli, üçerli ve dörderli olarak yerden alıp havaya atılan ana taşı düşürmeden tutma esasına dayanan oyun nedir?",
+    "options": [
+      "Beş taş",
+      "Yedi taş",
+      "Üç taş",
+      "Dokuz taş"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000030",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "90'lı yıllarda evlere ansiklopedi setleri, tencere veya porselen tabak takımı almak için gazetelerin kenarlarından kesilerek biriktirilen kağıt parçalarına ne denirdi?",
+    "options": [
+      "Fiş",
+      "Kupon",
+      "Bilet",
+      "Jeton"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000031",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Eski nesil ilkokul birinci sınıf öğrencilerine okumayı öğretmek için kullanılan müfredatın 'fiş çekme' yöntemindeki en ikonik ve ilk öğrenilen efsanevi cümle hangisidir?",
+    "options": [
+      "Işık ılık süt iç",
+      "Oya okula koş",
+      "Ali ata bak",
+      "Emel elma al"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000032",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "İlkokullarda matematik dersinde onluk ve birlik kavramlarını öğretmek, sayma işlemini kolaylaştırmak için plastik sayma çubukları ve abaküsle birlikte en çok ne kullanılırdı?",
+    "options": [
+      "Nohut",
+      "Mercimek",
+      "Pirinç",
+      "Fasulye"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000033",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "2000'lerin başında fırtınalar estiren Nokia 3310 gibi telefonların vazgeçilmez olan ve yem yedikçe uzayıp kendi kuyruğuna çarpmamaya çalışılan efsanevi oyunu hangisidir?",
+    "options": [
+      "Yılan (Snake)",
+      "Tetris",
+      "Bounce",
+      "Space Invaders"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000034",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Sırtı eğik duran birinin üzerinden, ellerle onun sırtından destek alıp bacakları açarak atlama esasına dayanan sokak oyunu hangisidir?",
+    "options": [
+      "Uzun eşek",
+      "Birdirbir",
+      "Seksek",
+      "İstop"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000035",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Takımlardan birinin eğilerek sırayla birbirine tutunup bir köprü oluşturduğu, diğer takımın bu köprünün üzerine atladığı ve 'yastık' görevi gören bir kişinin bulunduğu oyun nedir?",
+    "options": [
+      "Körebe",
+      "Birdirbir",
+      "Uzun eşek",
+      "Yakan top"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000036",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Gözleri bir bezle sıkıca bağlanan ebe konumundaki kişinin, diğer oyuncuları yakalayarak elleriyle yoklayıp kim olduğunu tahmin etmeye çalıştığı oyun hangisidir?",
+    "options": [
+      "Saklambaç",
+      "Kukalı saklambaç",
+      "İstop",
+      "Körebe"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000037",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Ebenin saydığı alanda genellikle içi boş bir salça tenekesi veya top bulundurulan, saklananların ebeden önce gelip onu uzağa tekmeleyerek ebeyi tekrar saydırdığı saklambaç türü nedir?",
+    "options": [
+      "Kukalı saklambaç",
+      "Sobeli saklambaç",
+      "Saklambaç",
+      "Körebe"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000038",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Küçük paketlerde satılan, ağza atıldığında tükürükle temas edip minik patlamalar yaratarak çıtır çıtır ses çıkaran meşhur bakkal şekeri hangisidir?",
+    "options": [
+      "Pamuk şeker",
+      "Patlayan şeker",
+      "Horoz şeker",
+      "Elma şekeri"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000039",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Kahvehanelerde çay içmeyenlerin veya çocukların sıkça tercih ettiği, sıcak suyla karıştırılarak sunulan, genellikle portakal veya kuşburnu aromalı toz içeceğe ne ad verilir?",
+    "options": [
+      "Ihlamur",
+      "Kuşburnu",
+      "Oralet",
+      "Çay"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000040",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "İlkokul yıllarında kokusu o kadar güzel olduğu için çocukların uçlarından gizlice ısırmak istediği, genellikle meyve motifli ve renkli olan kırtasiye ürünü nedir?",
+    "options": [
+      "Kalemtıraş",
+      "Beslenme çantası",
+      "Sulu boya",
+      "Kokulu silgi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000041",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Edi ile Büdü, Minik Kuş, Kırpık ve Kurabiye Canavarı gibi efsanevi karakterlerle 90'lı yıllarda çocuklara saymayı ve harfleri öğreten TRT programı hangisidir?",
+    "options": [
+      "Susam Sokağı",
+      "Teletabiler",
+      "Şirinler",
+      "Taş Devri"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000042",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "İlkokullarda öğrencilere sosyal sorumluluk bilinci kazandırmak için atanan Kızılay, Yeşilay, Temizlik ve Beslenme gibi görev alanlarına verilen genel isim nedir?",
+    "options": [
+      "Sosyal kulüpler",
+      "Eğitici kollar",
+      "Öğrenci konseyi",
+      "Sınıf başkanlığı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000043",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Öğretmen sınıfta yokken, tahtanın başına geçen sınıf başkanının yaramazlık yapanların adını yazdığı ve altına çizgi çekerek 'ceza' verdiği o meşhur başlık nedir?",
+    "options": [
+      "Gürültücüler",
+      "Yaramazlar",
+      "Konuşanlar",
+      "Sessizler"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000044",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "El atarilerinde oynanan klasik Tetris oyununda, ekran dolmaya başlarken oyuncuların gelmesi için büyük bir umutla bekledikleri en hayat kurtarıcı blok şekli hangisidir?",
+    "options": [
+      "Kare blok",
+      "L bloğu",
+      "T bloğu",
+      "Uzun çubuk (I bloğu)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000045",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Saklambaç oyununda, saklanan oyuncuların ebeden önce sayma noktasına ulaşıp ellerini duvara vurarak kendilerini kurtardıklarını belirttikleri sözcük hangisidir?",
+    "options": [
+      "Sobe",
+      "Ebe",
+      "Çık",
+      "Kurtuldum"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000046",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Mahalle maçlarında, top apartman boşluğuna, asabi bir teyzenin bahçesine veya uzağa kaçtığında topu kimin gidip alacağını belirleyen yazılı olmayan o altın kural nedir?",
+    "options": [
+      "Kendi alır",
+      "Atan alır",
+      "Ebe alır",
+      "Sahibi alır"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000047",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "'Laleli belkız, içeriye gir kız' veya 'Denizde dalga, hoş geldin abla' gibi özel ritmik tekerlemeler eşliğinde oynanan klasik sokak aktivitesi hangisidir?",
+    "options": [
+      "Seksek",
+      "Körebe",
+      "İp atlama",
+      "Beş taş"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000048",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Renkli plastikten veya metalden yapılan, basamakların en üstüne konulduğunda kendi kendine takla atarak aşağı inebilen meşhur 90'lar oyuncağı nedir?",
+    "options": [
+      "Tetris",
+      "Sanal bebek",
+      "Beyblade",
+      "Stres yayı (Slinky)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000049",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Eski bayram sabahlarının çocuklar için en büyük özelliği, bayramlıklarını giydikten sonra televizyonda TRT veya özel kanallarda büyük bir hevesle hangi yayını beklemeleriydi?",
+    "options": [
+      "Çizgi film kuşağı",
+      "Haberler",
+      "Sabah sporu",
+      "Müzik programı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6a2b890-7d1c-4b6e-a89a-000000000050",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "90'lı yıllarda, ambalajının içinden uzun burunlu, komik şapkalı bir karakterin karikatürleri çıkan ve çocukların koleksiyon yaptığı efsanevi sakız markası hangisidir?",
+    "options": [
+      "Falım",
+      "Tipitip",
+      "Vivident",
+      "Orbit"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000001",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Düğün öncesi evlenecek çiftin ihtiyaçları için alınan eşyaların sergilendiği geleneğe ne ad verilir?",
+    "options": [
+      "Çeyiz serme",
+      "Kına yakma",
+      "Nişan bohçası",
+      "Gelin hamamı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000002",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Gelin baba evinden çıkarken beline bağlanan kırmızı kurdelenin adı nedir?",
+    "options": [
+      "Düğün kemeri",
+      "Gayret kuşağı",
+      "Nazar bandı",
+      "Bereket kuşağı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000003",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Düğünlerde davetlilerin yakasına veya geline taktığı paraya veya altına ne denir?",
+    "options": [
+      "Bahşiş",
+      "Takı",
+      "Saçı",
+      "Zarf"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000004",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Gelinin ayakkabısının altına bekar kızların isimlerinin yazılması geleneğinin amacı nedir?",
+    "options": [
+      "İsmi silinenin yakında evleneceğine inanılması",
+      "Gelinin ayağının uğur getirmesi",
+      "Düğün masraflarının bölüşülmesi",
+      "Kızların isimlerinin ölümsüzleşmesi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000005",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Gelin konvoyunun önünü kesen çocuklara veya gençlere verilen paraya ne isim verilir?",
+    "options": [
+      "Gelin bahşişi",
+      "Yol kesme bahşişi",
+      "Düğün harçlığı",
+      "Konvoy parası"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000006",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Düğünlerde gelinin başına atılan buğday, para veya şekerin simgelediği temel kavram nedir?",
+    "options": [
+      "Huzur ve sağlık",
+      "Kötülüklerden korunma",
+      "Bereket ve bolluk",
+      "Uzun ömür"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000007",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Bazı yörelerde gelinin baba evinden çıkarken ağlamasının hangi anlama geldiği düşünülür?",
+    "options": [
+      "Damadı istemediğine",
+      "Ailesine olan bağlılığına ve ayrılık hüznüne",
+      "Düğünün kötü geçeceğine",
+      "Çeyizinin eksik olduğuna"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000008",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Geleneksel düğünlerde gelinin evine girmeden önce kapı eşiğinde testi veya bardak kırmasının amacı nedir?",
+    "options": [
+      "Kötülüklerin kırılıp yok olması, eve bereket gelmesi",
+      "Damada güç gösterisi yapmak",
+      "Komşulara düğünün bittiğini duyurmak",
+      "Yeni eşyaların alınmasını sağlamak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000009",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu'da geleneksel düğün yemeklerinin vazgeçilmezi olan, dövülmüş buğday ve etle kazanlarda pişirilen yemeğin adı nedir?",
+    "options": [
+      "Pilav",
+      "Tarhana",
+      "Keşkek",
+      "Mantı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000010",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Düğün sahibi aileyi temsil eden, elinde bayrakla düğün alayını yöneten kişiye Anadolu'da ne ad verilir?",
+    "options": [
+      "Muhtar",
+      "Sağdıç",
+      "Bayraktar",
+      "Toy beyi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000011",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Kına gecesinde gelinin avucuna kına yakılmadan önce kayınvalidesi tarafından konulan hediyeye ne denir?",
+    "options": [
+      "Kına altını",
+      "Yüzgörümlüğü",
+      "Çeyiz parası",
+      "Süt hakkı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000012",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Kına yakılırken gelinin ağlaması için geleneksel olarak en çok söylenen türkü hangisidir?",
+    "options": [
+      "Çemberimde Gül Oya",
+      "Yüksek Yüksek Tepelere",
+      "Vardar Ovası",
+      "Candan İleri"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000013",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Kına gecesi kıyafeti olarak bilinen, üzeri sırma ve kadife işlemeli geleneksel elbiseye ne ad verilir?",
+    "options": [
+      "Bindallı",
+      "Ferace",
+      "Entari",
+      "Şalvar"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000014",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Kına yakılacağı sırada 'Gelin elini açmıyor' denilerek kayınvalideden ne istenir?",
+    "options": [
+      "Mendil",
+      "Altın",
+      "Tatlı",
+      "Su"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000015",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Geleneksel Anadolu kına gecelerine genellikle kimler katılır?",
+    "options": [
+      "Sadece erkekler",
+      "Sadece kadınlar",
+      "Tüm mahalle halkı",
+      "Sadece bekar gençler"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000016",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Kına yakıldıktan sonra gelinin başının etrafında döndürülen mumlu objeye ne denir?",
+    "options": [
+      "Kına tepsisi",
+      "Düğün şamdanı",
+      "Gelin feneri",
+      "Kına tacı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000017",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Damadın eline yakılan kınanın sembolik anlamı nedir?",
+    "options": [
+      "Eşine ve yuvasına kurban olması",
+      "Zenginlik getirmesi",
+      "Bekarlığa veda etmesi",
+      "Askerliğinin kolay geçmesi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000018",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Geleneksel olarak kınayı kimin ezmesi ve hazırlaması tercih edilir?",
+    "options": [
+      "Köyün muhtarının eşi",
+      "Evin en küçük kızı",
+      "Anne ve babası sağ, evliliğinde mutlu bir kadın",
+      "Damadın kız kardeşi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000019",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Kına gecesinde yakılan kınadan bekar kızlara dağıtılmasının amacı nedir?",
+    "options": [
+      "Ellerinin güzel kokması",
+      "Kına artmasın diye",
+      "Darısı başlarına olsun diye",
+      "Gelinle aynı rengi taşısınlar diye"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000020",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Geleneksel kına gecesinde gelinin başına örtülen kına duvağının rengi genellikle nedir?",
+    "options": [
+      "Beyaz",
+      "Sarı",
+      "Kırmızı",
+      "Yeşil"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000021",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Askere gidecek gencin eline yakılan kınaya ne ad verilir?",
+    "options": [
+      "Vatan kınası",
+      "Asker kınası",
+      "Er kınası",
+      "Yiğit kınası"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000022",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Asker uğurlama törenlerinde en sık yapılan coşkulu kutlama eylemi nedir?",
+    "options": [
+      "Havai fişek atmak",
+      "Askere giden genci omuzlara alarak havaya atmak",
+      "Ateş üzerinden atlamak",
+      "Nehre dilek taşı atmak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000023",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Askere gidecek gençlerin boynuna ailesi veya yakınları tarafından ne takılır?",
+    "options": [
+      "Altın madalyon",
+      "Oyalı yazma (Yemeni)",
+      "Kırmızı kurdele",
+      "Gümüş zincir"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000024",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Askere gidecek gençlerin askere gitmeden önceki günlerde davul zurna eşliğinde halay çektiği etkinliğe ne ad verilir?",
+    "options": [
+      "Vatan şenliği",
+      "Uğurlama düğünü",
+      "Asker eğlencesi",
+      "Kışla gecesi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000025",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Askere giden gence ihtiyaçlarını karşılaması için akrabaları tarafından verilen paraya ne denir?",
+    "options": [
+      "Yol parası",
+      "Asker harçlığı",
+      "Vatan bahşişi",
+      "Kışla akçesi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000026",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Bayram sabahları aile içindeki en önemli ve ilk ritüel hangisidir?",
+    "options": [
+      "Hediyeleri açmak",
+      "Aile büyüklerinin elini öpmek",
+      "Komşulara yemek dağıtmak",
+      "Televizyon izlemek"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000027",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Geleneksel bayramlaşmalarda çocuklara verilen en klasik iki hediye nedir?",
+    "options": [
+      "Oyuncak ve kitap",
+      "Mendil ve para",
+      "Ayakkabı ve toka",
+      "Çikolata ve balon"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000028",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Ramazan Bayramı'nın halk arasında yaygın olarak kullanılan diğer adı nedir?",
+    "options": [
+      "Kurban Bayramı",
+      "Şeker Bayramı",
+      "Hıdırellez",
+      "Nevruz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000029",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Bayram ziyaretlerinde misafirlere 'hoş geldin' ikramı olarak genellikle ne sunulur?",
+    "options": [
+      "Ayran ve pide",
+      "Kolonya ve şeker/çikolata",
+      "Çay ve simit",
+      "Meyve tabağı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000030",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Kurban Bayramı'nda kurban kesildikten sonra taze etten yapılarak misafirlere ikram edilen geleneksel yemeğin adı nedir?",
+    "options": [
+      "Kavurma",
+      "Haşlama",
+      "Karnıyarık",
+      "İskender"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000031",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Bayram namazı çıkışında cemaatin cami avlusunda sıraya girerek birbirlerinin bayramını kutlaması geleneğine ne denir?",
+    "options": [
+      "Toplaşma",
+      "Musafaha / Bayramlaşma",
+      "Hasbıhal",
+      "Merasim"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000032",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Eski bayramlarda kapı kapı dolaşarak mâni söyleyen ve bahşiş toplayan kişiler kimlerdi?",
+    "options": [
+      "Muhtarlar",
+      "Davulcular veya Bekçiler",
+      "Öğretmenler",
+      "Esnaflar"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000033",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Arefe günü mezarlıkların ziyaret edilmesinin temel dini ve kültürel amacı nedir?",
+    "options": [
+      "Mezarlık çiçeklerini sulamak",
+      "Geçmişleri anmak, onlara dua etmek",
+      "Yeni mezar yerleri bakmak",
+      "Mezarlık bekçisiyle bayramlaşmak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000034",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Bayramların toplum hayatındaki en önemli sosyal işlevi nedir?",
+    "options": [
+      "Uzun tatil yapma fırsatı sunması",
+      "Küslerin barışması ve dayanışmanın artması",
+      "Alışveriş merkezlerinin canlanması",
+      "Yeni kıyafetler alınması"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000035",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Bazı Anadolu köylerinde bayram namazı sonrası tüm köy erkeklerinin köy odasında veya cami avlusunda toplanarak yediği yemeğe ne denir?",
+    "options": [
+      "Köy odası yemeği / Toplu bayram yemeği",
+      "İmece yemeği",
+      "Kazan yemeği",
+      "Şenlik sofrası"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000036",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Kız isteme merasiminde söze başlarken damat tarafının söylediği geleneksel kalıp cümle hangisidir?",
+    "options": [
+      "Allah'ın emri, peygamberin kavliyle kızınızı oğlumuza istiyoruz",
+      "Gençler birbirini görmüş beğenmiş",
+      "Hayırlısı neyse o olsun",
+      "Kızınız ev işlerinden anlar mı?"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000037",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Kız isteme merasiminde damada ikram edilen kahvenin içine tuz atılmasının sembolik amacı nedir?",
+    "options": [
+      "Kahvenin çabuk soğumasını sağlamak",
+      "Damadın gelin için her zorluğa katlanacağını test etmek",
+      "Damadın kahveyi sevip sevmediğini anlamak",
+      "Nazardan korunmak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000038",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Kız istemeye gidilirken damat tarafının götürdüğü klasikleşmiş hediyeler nelerdir?",
+    "options": [
+      "Meyve sepeti ve lokum",
+      "Kırmızı gül ve çikolata/baklava",
+      "Kıyafet ve altın",
+      "Kahve takımı ve tepsi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000039",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "'Kız evi naz evi' sözü, kız isteme geleneğinde neyi ifade eder?",
+    "options": [
+      "Kız tarafının misafirlere kaba davranmasını",
+      "Kız evinin çok şatafatlı olmasını",
+      "Kız ailesinin ilk istemede hemen evet dememesini",
+      "Kızın sürekli ağlamasını"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000040",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Söz veya nişan kesildikten sonra 'ağız tatlılığı' olarak iki ailenin birlikte içtiği içeceğe ne ad verilir?",
+    "options": [
+      "Söz şerbeti",
+      "Nişan çayı",
+      "Düğün çorbası",
+      "Kız kahvesi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000041",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Kız isteme töreninde kahveleri yapıp misafirlere sunma görevi genellikle kime aittir?",
+    "options": [
+      "Damadın annesine",
+      "Evin bekar kızına (Evlenilecek kıza)",
+      "Köyün muhtarına",
+      "Evin babasına"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000042",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Görücü usulü evlilik sürecinde, erkeğin annesi ve kadın akrabalarının kızı ilk kez görmeye gitmesine ne ad verilir?",
+    "options": [
+      "Kahve içimi",
+      "Görücüye gitmek / Görücü çıkmak",
+      "Dünürlük",
+      "Nişan bohçası"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000043",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Kız isteme merasiminde kahveler dağıtılırken ilk kahve kime ikram edilir?",
+    "options": [
+      "Damada",
+      "Kız babasına",
+      "Misafirlerin en büyüğüne",
+      "Kız annesine"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000044",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Söz kesildikten sonra, anlaşmanın nişanesi olarak gelin ve damadın sağ elinin yüzük parmağına takılan takıya ne denir?",
+    "options": [
+      "Alyans / Söz yüzüğü",
+      "Beşi bir yerde",
+      "Burma bilezik",
+      "Trabzon hasırı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000045",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Eskiden kız isteme aşamasından önce, ailenin niyetini öğrenmek için kız evine gönderilen aracılara ne isim verilirdi?",
+    "options": [
+      "Sağdıç",
+      "Dünürbaşı / Elçi",
+      "Yenge",
+      "Toy beyi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000046",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Anadolu'da uzun süre görüşmeyen veya gurbetten dönen akrabalar karşılaştığında en yaygın selamlaşma biçimi nedir?",
+    "options": [
+      "Sadece el sallamak",
+      "Sarılmak ve yanaklardan öpmek",
+      "Uzak durup baş selamı vermek",
+      "Hediyeleşmeden konuşmamak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000047",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yeni evlenen çiftin veya yeni eve taşınan akrabanın evine yapılan ilk tebrik ziyaretine ne ad verilir?",
+    "options": [
+      "Ev görme / Hayırlı olsun ziyareti",
+      "Çeyiz serme",
+      "Kapı açma",
+      "Göz aydınlığı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000048",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Akrabalar ve komşular arasında büyük bir işin (hasat, ev yapımı vb.) el birliğiyle, ücretsiz ve yardımlaşarak yapılmasına ne denir?",
+    "options": [
+      "İhale",
+      "Yevmiye",
+      "İmece",
+      "Müşterek"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000049",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Doğum yapan bir akrabayı ziyarete giderken bebeğe genellikle takılan geleneksel hediye hangisidir?",
+    "options": [
+      "Gümüş kaşık",
+      "Nazar boncuğu veya Çeyrek altın",
+      "Kumbara",
+      "Okul çantası"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d4e00-0000-4000-8000-000000000050",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu'da sünnet olan çocuğa acısını unutturmak, onu cesaretlendirmek ve onurlandırmak için geleneksel olarak nasıl hitap edilir?",
+    "options": [
+      "Sünnet paşası",
+      "Asker",
+      "Yiğit",
+      "Kahraman"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e01",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türk kültüründe eve gelen misafire ilk olarak genellikle hangisi ikram edilir?",
+    "options": [
+      "Sıcak çorba",
+      "Kolonya ve şeker",
+      "Meyve tabağı",
+      "Kuru yemiş"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e02",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Geleneksel Türk sofrasında yemeğe ilk olarak kimin başlaması beklenir?",
+    "options": [
+      "Evin en küçük çocuğu",
+      "Evin hanımı",
+      "Yaşça en büyük kişi",
+      "Yemeği pişiren kişi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e03",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Kız isteme merasimlerinde damada sunulan Türk kahvesine şaka amacıyla genellikle ne katılır?",
+    "options": [
+      "Şeker",
+      "Süt",
+      "Tuz",
+      "Karabiber"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e04",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Türk kahvesinin yanında su ikram edilmesinin geleneksel amacı nedir?",
+    "options": [
+      "Kahvenin acılığını almak",
+      "Misafirin aç olup olmadığını anlamak",
+      "Susuzluğu gidermek",
+      "Kahvenin telvesini yutmamak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e05",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Osmanlı döneminde kahvehane kültürü ilk olarak hangi padişah zamanında yaygınlaşmaya başlamıştır?",
+    "options": [
+      "Fatih Sultan Mehmet",
+      "Kanuni Sultan Süleyman",
+      "Yavuz Sultan Selim",
+      "II. Abdülhamit"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e06",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Erzurum yöresine özgü, çayın şekersiz içilip şekerin ağızda tutularak tüketildiği yönteme ne ad verilir?",
+    "options": [
+      "Semaver çayı",
+      "Paşa çayı",
+      "Kıtlama çayı",
+      "Kaçak çay"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e07",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Ramazan ayında iftar sofralarının vazgeçilmezi olan, susamlı ve çörek otlu sıcak hamur işi hangisidir?",
+    "options": [
+      "Lavaş",
+      "Ramazan pidesi",
+      "Simit",
+      "Gözleme"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e08",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu'da habersiz veya davetsiz olarak aniden gelen misafire ne ad verilir?",
+    "options": [
+      "Tanrı misafiri",
+      "Yatılı misafir",
+      "Görücü",
+      "Sağdıç"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e09",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türk mutfağında yoğurt, su ve tuzun çırpılmasıyla hazırlanan geleneksel içecek aşağıdakilerden hangisidir?",
+    "options": [
+      "Kefir",
+      "Şalgam",
+      "Boza",
+      "Ayran"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e10",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Yemeği hazırlayan kişiye nezaket ve şükran belirtmek için sofra kalkarken söylenen söz hangisidir?",
+    "options": [
+      "Kesene bereket",
+      "Çok yaşa",
+      "Elinize sağlık",
+      "Afiyet olsun"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e11",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Eski Türk evlerinde kapı tokmaklarının iki farklı (kalın ve ince) ses çıkarmasının amacı neydi?",
+    "options": [
+      "Evin büyüklüğünü göstermek",
+      "Gelen kişinin kadın veya erkek olduğunu anlamak",
+      "Çocukların oynamasını engellemek",
+      "Tokmağın paslanmasını önlemek"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e12",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Eskiden insanların kitap ve gazete okuyup sohbet ettikleri, bugünkü kahvehanelerin atası sayılan mekanlara ne ad verilirdi?",
+    "options": [
+      "Kıraathane",
+      "Kütüphane",
+      "Meyhane",
+      "Aşevi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e13",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Geleneksel Türk çayı genellikle hangi ikili kap kullanılarak demlenir?",
+    "options": [
+      "Tencere",
+      "Cezve",
+      "Çaydanlık",
+      "Güğüm"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e14",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Aşağıdakilerden hangisi geleneksel bir Türk şerbetli tatlısıdır?",
+    "options": [
+      "Sütlaç",
+      "Baklava",
+      "Kazandibi",
+      "Keşkül"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e15",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Sofra adabına göre yemeğe başlamadan önce içinden veya sesli olarak ne söylenmesi adettendir?",
+    "options": [
+      "Maşallah",
+      "İnşallah",
+      "Bismillah",
+      "Eyvallah"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e16",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Aşağıdakilerden hangisi geleneksel Türk kahvaltısında genellikle bulunmaz?",
+    "options": [
+      "Zeytin",
+      "Peynir",
+      "Yulaf ezmesi",
+      "Reçel"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e17",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türk kahvesi pişirilirken kullanılan, genellikle bakır veya çelikten yapılmış uzun saplı kaba ne ad verilir?",
+    "options": [
+      "İbrik",
+      "Cezve",
+      "Tencere",
+      "Güveç"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e18",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "İnce belli cam bardak, Türk kültüründe en çok hangi içeceğin sunumunda kullanılır?",
+    "options": [
+      "Kahve",
+      "Su",
+      "Ayran",
+      "Çay"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e19",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Geleneksel aile yemeklerinde yemekten sonra sofra duasını genellikle kim yapar?",
+    "options": [
+      "Evin en küçük çocuğu",
+      "Sofradaki yaşça en büyük kişi",
+      "Misafirlerden en genci",
+      "Evin hanımı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e20",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Anadolu'da komşuların ve köylülerin bir araya gelerek bir kişinin işini el birliğiyle yapmasına ne ad verilir?",
+    "options": [
+      "İmece",
+      "Müşterek",
+      "Takas",
+      "Zekat"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e21",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Aşağıdakilerden hangisi geleneksel kahve çeşitlerimizden biri değildir?",
+    "options": [
+      "Dibek kahvesi",
+      "Menengiç kahvesi",
+      "Filtre kahve",
+      "Mırra"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e22",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Güneydoğu Anadolu'ya özgü, kulpsuz fincanda sunulan ve birkaç kez demlenerek hazırlanan çok acı kahveye ne denir?",
+    "options": [
+      "Süvari",
+      "Mırra",
+      "Cilveli kahve",
+      "Tatar kahvesi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e23",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Aşağıdakilerden hangisi Türk sofra adabına aykırı bir davranıştır?",
+    "options": [
+      "Yemeği yavaş ve sessizce çiğnemek",
+      "Ağızda lokma varken konuşmak",
+      "Kendi önünden yemek",
+      "Yemeğe büyüklerden sonra başlamak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e24",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Misafirliğe giderken ev sahibine götürülen en yaygın geleneksel hediyelerden biri aşağıdakilerden hangisidir?",
+    "options": [
+      "Kıyafet",
+      "Kitap",
+      "Tatlı veya Kuruyemiş",
+      "Evcil hayvan"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e25",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Bursa yöresiyle özdeşleşen, pide, döner et, salça sosu, yoğurt ve tereyağı ile servis edilen meşhur yemek hangisidir?",
+    "options": [
+      "Adana Kebap",
+      "Ali Nazik",
+      "İskender Kebap",
+      "Cağ Kebabı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e26",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Osmanlı mutfağından günümüze gelen, meyve, baharat ve şekerle yapılan serinletici geleneksel içecek nedir?",
+    "options": [
+      "Kola",
+      "Gazoz",
+      "Şerbet",
+      "Maden suyu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e27",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Eski dönemlerde yemeğe başlamadan önce ve yemekten sonra misafirlerin ellerini yıkaması için getirilen kaba ne ad verilirdi?",
+    "options": [
+      "Tas ve Kova",
+      "Leğen ve İbrik",
+      "Sürahi ve Bardak",
+      "Kazan ve Kepçe"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e28",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Misafir uğurlanırken arkasından su dökülmesinin geleneksel anlamı nedir?",
+    "options": [
+      "Evi temizlemek",
+      "Geri dönmemesini sağlamak",
+      "Su gibi hızlı ve kazasız gidip gelmesini dilemek",
+      "Yolların tozunu bastırmak"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e29",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Aşağıdakilerden hangisi Osmanlı döneminde kahvehanelerin toplumsal işlevlerinden biri değildir?",
+    "options": [
+      "Meddahların hikaye anlatması",
+      "Karagöz ve Hacivat oyunlarının sergilenmesi",
+      "Halkın sosyalleşip sohbet etmesi",
+      "Devletin resmi kararlarının alındığı meclis olması"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e30",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türk kahvesi sunumunda lokum genellikle nerede servis edilir?",
+    "options": [
+      "Kahvenin içine atılarak",
+      "Ayrı büyük bir tabakta yemekten sonra",
+      "Kahve fincanının yanında minik bir kapta",
+      "Kahveden önce şerbetle birlikte"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e31",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Eskiden bayram ziyaretlerinde büyüklerin ellerini öpen çocuklara mendil içinde genellikle ne verilirdi?",
+    "options": [
+      "Oyuncak ve meyve",
+      "Akide şekeri veya bozuk para",
+      "Kitap ve kalem",
+      "Kıyafet"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e32",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Çay bahçelerinde ve pikniklerde çayın odun veya kömür ateşinde demlenmesini sağlayan, musluklu geleneksel alete ne ad verilir?",
+    "options": [
+      "Termos",
+      "Semaver",
+      "Çay makinesi",
+      "Güğüm"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e33",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Anadolu'da evlenme çağına gelmiş gençlerin aileleri aracılığıyla birbirlerini tanıması için yapılan ev ziyaretine ne ad verilir?",
+    "options": [
+      "Nişan",
+      "Kına gecesi",
+      "Görücü usulü kız isteme",
+      "Sünnet düğünü"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e34",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Türk misafirperverliğinde 'Misafir on kısmetle gelir, birini yer dokuzunu bırakır' sözü neyi ifade eder?",
+    "options": [
+      "Misafirin eve bereket getirdiğini",
+      "Misafirin çok yemek yediğini",
+      "Misafir ağırlamanın masraflı olduğunu",
+      "Misafirlerin genellikle kalabalık geldiğini"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e35",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Osmanlı'da cami avlularında veya köşe başlarında bulunan, yoksullara gizlice yardım etmek için paraların bırakıldığı taşlara ne ad verilirdi?",
+    "options": [
+      "Dilek taşı",
+      "Sadaka taşı",
+      "Mezar taşı",
+      "Musalla taşı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e36",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Aşağıdakilerden hangisi genellikle akşam veya gece geç saatlerde sokak satıcılarından yenen geleneksel bir sokak lezzetidir?",
+    "options": [
+      "Kuru fasulye",
+      "Karnıyarık",
+      "Kokoreç",
+      "Zeytinyağlı enginar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e37",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "İzmir yöresinde simit için kullanılan yöresel isim aşağıdakilerden hangisidir?",
+    "options": [
+      "Boyoz",
+      "Gevrek",
+      "Kumru",
+      "Açma"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e38",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Misafirlikte yemek yendikten sonra ev sahibinin 'Afiyet olsun' sözüne karşılık misafir genellikle ne der?",
+    "options": [
+      "Ziyade olsun / Elinize sağlık",
+      "Kolay gelsin",
+      "Çok yaşa",
+      "Geçmiş olsun"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e39",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Türk kahvesini diğer dünya kahvelerinden ayıran ve yapılışından kaynaklanan en belirgin özellik nedir?",
+    "options": [
+      "Sütle kaynatılması",
+      "Soğuk suyla demlenmesi",
+      "Telvesiyle birlikte fincana konulması",
+      "Küp şekerle süzülerek içilmesi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e40",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Geleneksel evlerde yemek yenirken yere serilen ve üstüne sofra tahtası veya tepsisi konulan geniş örtüye ne ad verilir?",
+    "options": [
+      "Halı",
+      "Seccade",
+      "Sofra bezi",
+      "Çarşaf"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e41",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "'Bir fincan kahvenin kırk yıl hatırı vardır' atasözü Türk kültüründe hangi kavramı vurgular?",
+    "options": [
+      "Kahvenin sağlığa faydalarını",
+      "Küçük bir iyiliğin ve dostluğun uzun süre unutulmayacağını",
+      "Kahvenin zor bulunduğunu",
+      "Misafirlikte fazla kalınmaması gerektiğini"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e42",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Kış aylarında sokaklarda bağırılarak satılan, leblebi ve tarçınla tüketilen, darı veya mayadan yapılan koyu kıvamlı geleneksel içecek hangisidir?",
+    "options": [
+      "Salep",
+      "Boza",
+      "Şıra",
+      "Hardaliye"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e43",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türk mutfağında yufka hamuru içine kıyma konularak katlanan, yoğurt ve sos ile sunulan Kayseri yöresiyle meşhur yemek hangisidir?",
+    "options": [
+      "Su böreği",
+      "Mantı",
+      "Çiğ börek",
+      "Lahmacun"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e44",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Eski dönem Türk evlerinde, misafirlerin ağırlandığı ve evin en özenli döşenmiş olan en büyük odasına ne ad verilirdi?",
+    "options": [
+      "Kiler",
+      "Hayat",
+      "Başoda",
+      "Avlu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e45",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yeni doğum yapmış anneleri ziyarete gelenlere ikram edilen, kırmızı renkli, baharatlı ve sıcak içeceğe ne ad verilir?",
+    "options": [
+      "Gül şerbeti",
+      "Kızılcık şurubu",
+      "Lohusa şerbeti",
+      "Koruk suyu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e46",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Anadolu'da düğün, bayram ve sünnet gibi kalabalık törenlerde misafirlere büyük kazanlarda pişirilerek ikram edilen geleneksel etli buğday yemeği hangisidir?",
+    "options": [
+      "Keşkek",
+      "Dolma",
+      "Güveç",
+      "Tas Kebabı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e47",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yemek yerken ekmek kırıntılarını israf etmemek ve dökülenleri toplamak Türk sofra adabında hangi inancın bir göstergesidir?",
+    "options": [
+      "Nimetin bereketine ve saygıya olan inanç",
+      "Temizlik takıntısı",
+      "Kuşları besleme isteği",
+      "Fakirliğin simgesi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e48",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Kahvehanelerde çay veya kahve eşliğinde oynanan, zarlarla ve pullarla oynanan geleneksel ahşap masa oyunu hangisidir?",
+    "options": [
+      "Satranç",
+      "Tavla",
+      "Dama",
+      "Domino"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e49",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Ramazan ayında iftara davet edilen misafirlere, ev sahibi tarafından hediye veya para verilmesi şeklindeki eski Osmanlı geleneğine ne ad verilir?",
+    "options": [
+      "Diş kirası",
+      "Fitre",
+      "Zekat",
+      "Bayram harçlığı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e50",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Çay demlenirken, çayın demi ile kaynar suyun birbirine karışmasını engellemek ve demin kıvamını ayarlamak için kullanılan altlı üstlü demlik sisteminin en önemli faydası nedir?",
+    "options": [
+      "Çayın daha hızlı soğumasını sağlamak",
+      "Herkesin çayını istediği koyulukta (açık/demli) içebilmesini sağlamak",
+      "Çayın rengini sarartmak",
+      "Suyun buharlaşmasını önlemek"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0101",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Gece vakti tırnak kesmenin Anadolu inançlarına göre neye yol açacağına inanılır?",
+    "options": [
+      "Ömrün kısalacağına",
+      "Zenginlik getireceğine",
+      "Nasipsizlik ve fakirlik getireceğine",
+      "Şans getireceğine"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0102",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Hangi bedensel tepki, halk arasında genellikle birinin sizi andığına yorulur?",
+    "options": [
+      "Göz seyirmesi",
+      "Sağ elin kaşınması",
+      "Burnun kaşınması",
+      "Kulağın çınlaması"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0103",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "'Sağ avuç kaşınırsa para gelir, sol avuç kaşınırsa...' batıl inancının devamı nasıldır?",
+    "options": [
+      "Misafir gelir",
+      "Para gider",
+      "Hastalık çıkar",
+      "Yolculuğa çıkılır"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0104",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Elden ele doğrudan verilmesinin kavgaya sebep olacağına inanılan eşya hangisidir?",
+    "options": [
+      "Kitap",
+      "Bıçak",
+      "Para",
+      "Tuz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0105",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "'Akşamları sakız çiğnemek...' batıl inancında sakızın neye dönüştüğüne inanılır?",
+    "options": [
+      "Taşa",
+      "Ölü etine",
+      "Kana",
+      "Yılana"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0106",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Anadolu'da yola çıkan birinin arkasından su dökmek ne anlama gelir?",
+    "options": [
+      "Yolculuğunun kötü geçmesi",
+      "Su gibi çabuk ve sağ salim gidip gelmesi",
+      "O kişinin bir daha dönmemesi",
+      "Arkasından dedikodu yapılması"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0107",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Tahtaya üç kez vurma veya kulağını çekip tahtaya vurma eylemi hangi amaçla yapılır?",
+    "options": [
+      "Nazardan korunmak",
+      "Şans çağırmak",
+      "Küsleri barıştırmak",
+      "Bereket getirmek"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0108",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Gözü seyiren bir kişinin bu durumu genellikle nasıl yorumlaması beklenir?",
+    "options": [
+      "Yerden para bulacağı",
+      "Yakında hasta olacağı",
+      "İyi veya kötü bir haber alacağı",
+      "Hava durumunun değişeceği"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0109",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Batıl inançlara göre evde aynanın kırılması neyi simgeler?",
+    "options": [
+      "Yedi yıl uğursuzluğu",
+      "Bol kazancı",
+      "Yeni bir dostluğu",
+      "Yakın zamanda evliliği"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0110",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yeni alınan bir aracın tekerleğine kan sürmek veya kurban kesmek geleneğinin temel amacı nedir?",
+    "options": [
+      "Aracı daha hızlı yapmak",
+      "Aracı nazardan ve kazadan beladan korumak",
+      "Komşulara zenginliği göstermek",
+      "Aracın maddi değerini artırmak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0111",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Çok sevinmek ve heyecanlanmak anlamında kullanılan deyim hangisidir?",
+    "options": [
+      "Etekleri zil çalmak",
+      "Küplere binmek",
+      "İpe un sermek",
+      "Çam devirmek"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0112",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Bir kişiyi farkında olmadan üzecek veya kızdıracak yersiz bir söz söylemek hangi deyimle ifade edilir?",
+    "options": [
+      "Göze girmek",
+      "Pot kırmak",
+      "Göz boyamak",
+      "Göz kulak olmak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0113",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "'Pabucu dama atılmak' deyimi hangi durumlar için kullanılır?",
+    "options": [
+      "Bir kişinin ayakkabısının tamamen eskimesi",
+      "Yeni birinin gelmesiyle eskisinin gözden düşmesi",
+      "Aşırı derecede sinirlenmek",
+      "Yeni ve zor bir işe başlamak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0114",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Bahane üreterek bir işi yapmaktan kaçınmayı anlatan deyim hangisidir?",
+    "options": [
+      "İpe un sermek",
+      "Eli açık olmak",
+      "Sinekten yağ çıkarmak",
+      "Çenesi düşmek"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0115",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Birine zor bir anında yardım etmek, destek olmak anlamındaki deyim aşağıdakilerden hangisidir?",
+    "options": [
+      "Ayak bağı olmak",
+      "Omuz vermek",
+      "Göze batmak",
+      "Burun kıvırmak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0116",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Gerçek olmayan şeylerle insanları kandırmaya veya iyi göstermeye çalışmak anlamındaki deyim nedir?",
+    "options": [
+      "Göz boyamak",
+      "Kulağına küpe olmak",
+      "Etekleri tutuşmak",
+      "Diş bilemek"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0117",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Çok zor ve içinden çıkılması güç bir durumla karşılaşıldığında çaresizliği anlatan deyim nedir?",
+    "options": [
+      "Ayıkla pirincin taşını",
+      "Ateş püskürmek",
+      "Küplere binmek",
+      "Kılı kırk yarmak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0118",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Karşısındakinin gerçek niyetini gizleyerek üstü kapalı bir şekilde tehdit etmesi durumunu anlatan deyim hangisidir?",
+    "options": [
+      "Aba altından sopa göstermek",
+      "Saman altından su yürütmek",
+      "Pireyi deve yapmak",
+      "Göze girmek"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0119",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Her şeyi çok detaylı inceleyen, en ufak ayrıntısına kadar titizlikle dikkat eden kişiyi tanımlayan deyim hangisidir?",
+    "options": [
+      "Kılı kırk yarmak",
+      "Kulak ardı etmek",
+      "Saman alevi gibi parlamak",
+      "Başına buyruk olmak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0120",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Kendini övmek veya ön plana çıkarmak isteyen birinin, yapamayacağı şeyleri bile abartarak anlatması durumuna ne denir?",
+    "options": [
+      "Mangalda kül bırakmamak",
+      "Suya sabuna dokunmamak",
+      "Havanda su dövmek",
+      "Sırra kadem basmak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0121",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Birini sevmenin getirdiği zorluklara veya o kişinin kusurlarına tahammül etmeyi anlatan 'Gülü seven...' atasözünün devamı nasıldır?",
+    "options": [
+      "Bahçesine bakar",
+      "Dikenine katlanır",
+      "Kokusuna aldanır",
+      "Toprağını kazar"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0122",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Biriktirilen küçük şeylerin zamanla büyük birikimlere dönüşebileceğini anlatan atasözü hangisidir?",
+    "options": [
+      "Sakla samanı gelir zamanı",
+      "Damlaya damlaya göl olur",
+      "Ayağını yorganına göre uzat",
+      "İşleyen demir ışıldar"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0123",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "'Tatlı dil yılanı deliğinden çıkarır' atasözü neyi vurgular?",
+    "options": [
+      "Hayvanların kolayca eğitilebileceğini",
+      "Güzel ve yumuşak konuşmanın en inatçı kişileri bile ikna edebileceğini",
+      "Yalan söylemenin her zaman işe yaradığını",
+      "Sessiz olmanın çok konuşmaktan daha iyi olduğunu"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0124",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "İnsanların birlikte zaman geçirdikçe birbirlerinin huylarını ve alışkanlıklarını kapacağını belirten atasözü hangisidir?",
+    "options": [
+      "Körle yatan şaşı kalkar",
+      "Meyve veren ağaç taşlanır",
+      "Ağaç yaşken eğilir",
+      "Komşu komşunun külüne muhtaçtır"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0125",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "İnsanın harcamalarını gelirine göre ayarlaması gerektiğini öğütleyen atasözü hangisidir?",
+    "options": [
+      "Ayağını yorganına göre uzat",
+      "Sakla samanı gelir zamanı",
+      "Güneş girmeyen eve doktor girer",
+      "Aç ayı oynamaz"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0126",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "İyilik yapılan nankör bir kişinin, bu iyiliğin kıymetini bilmeyip kötülükle karşılık vermesi durumunda söylenen atasözü hangisidir?",
+    "options": [
+      "Besle kargayı oysun gözünü",
+      "İyilik yap denize at",
+      "İyilik eden iyilik bulur",
+      "Alma mazlumun ahını çıkar aheste aheste"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0127",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Gerçek dostun, duyması hoş olmasa bile insanın iyiliği için doğruları söyleyeceğini anlatan atasözü nedir?",
+    "options": [
+      "Dost kara günde belli olur",
+      "Dost başa, düşman ayağa bakar",
+      "Dost acı söyler",
+      "Eski dost düşman olmaz"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0128",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Öfke ve sinirin, çevreden ziyade en çok öfkelenen kişinin kendisine zarar vereceğini belirten atasözü hangisidir?",
+    "options": [
+      "Keskin sirke küpüne zarar",
+      "Rüzgar eken fırtına biçer",
+      "Meyve veren ağaç taşlanır",
+      "Ateş düştüğü yeri yakar"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0129",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Eğitimin ve terbiye etmenin küçük yaşta çok daha kolay olduğunu ifade eden atasözü hangisidir?",
+    "options": [
+      "Demir tavında dövülür",
+      "Ağaç yaşken eğilir",
+      "Akıl yaşta değil baştadır",
+      "Eğri oturup doğru konuşalım"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0130",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "İnsanların en ufak şeylerde bile birbirlerinin yardımına ihtiyaç duyabileceğini anlatan 'Komşu komşunun...' atasözü nasıl tamamlanır?",
+    "options": [
+      "Çocuğuna bakar",
+      "Külüne muhtaçtır",
+      "Gözünü oyar",
+      "Tarlasına göz diker"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0131",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türkiye'deki minibüs ve dolmuş kültüründe inmek isteyen bir yolcunun şoföre seslenirken kullandığı en yaygın ifade hangisidir?",
+    "options": [
+      "Durakta inebilir miyim?",
+      "Kapıyı açar mısınız?",
+      "Müsait bir yerde",
+      "Beni burada bırak"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0132",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Dolmuşa binen ve şoföre uzak oturan bir yolcunun, ücretini ödemek için önündeki yolculara söylediği klasik söz nedir?",
+    "options": [
+      "Şunu uzatır mısınız?",
+      "Parayı verin",
+      "Şuradan bir kişi uzatabilir mi?",
+      "Kaptana para ver"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0133",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Minibüs kültüründe 'Arkayı dörtleyelim' sözü kim tarafından ve neden söylenir?",
+    "options": [
+      "Yolcular tarafından daha ferah oturmak için",
+      "Şoför tarafından arkadaki üç kişilik koltuğa dört yolcu sığdırmak için",
+      "Polis tarafından trafik cezası yazılırken",
+      "Çocuklar tarafından oyun oynamak için"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0134",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Minibüs şoförlerinin araç içi dikiz aynasından arkaya bakması genellikle hangi amaca hizmet eder?",
+    "options": [
+      "Ücretini vermeyen yolcuyu tespit etmek veya inmek isteyenleri görmek",
+      "Yolcuların sohbetlerine katılmak",
+      "Arkadaki araçları kontrol etmek",
+      "Kendi saçını başını düzeltmek"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0135",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Aşağıdakilerden hangisi geleneksel minibüs veya kamyon arkası yazısı kültürüne uygun bir sözdür?",
+    "options": [
+      "Lütfen sessiz olunuz",
+      "Hatalıysam lütfen aramızda kalsın",
+      "Emniyet kemerinizi takınız",
+      "Bebek arabasıyla binmeyiniz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0136",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Eski dolmuş kültüründe şoföre yardımcı olan, sürgülü kapıyı açıp kapatan ve yolculardan ücret toplayıp güzergah bağıran kişiye ne ad verilir?",
+    "options": [
+      "Kaptan",
+      "Muavin",
+      "Biletçi",
+      "Hostes"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0137",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Dolmuşlarda şoförlerin bozuk paraları değerlerine göre dizdikleri ve para üstü verirken işlerini kolaylaştıran özel yapıya ne ad verilir?",
+    "options": [
+      "Kumbara",
+      "Bozuk para tepsisi (Madeni paralık)",
+      "Kasa",
+      "Cüzdanlık"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0138",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Geçmişte minibüs şoförlerinin seyir halindeyken dinlemeyi en çok tercih ettikleri müzik türü hangisiyle özdeşleşmiştir?",
+    "options": [
+      "Klasik Müzik",
+      "Arabesk",
+      "Rock",
+      "Caz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0139",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Yolcu minibüse bindiğinde ödeyeceği ücretin tipini (indirimli veya tam) belirtmek için parayı uzatırken genellikle ne der?",
+    "options": [
+      "Kaptan, bana bir bilet kes",
+      "Abi aylık abonman geçerli mi?",
+      "Şuradan bir öğrenci alır mısın?",
+      "Kredi kartı geçiyor mu?"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0140",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Şehir içi ulaşım aracı olan 'dolmuş' kelimesinin kökeni nereden gelmektedir?",
+    "options": [
+      "Aracın çok hızlı gitmesinden",
+      "Araç tam olarak dolmadan duraktan hareket etmemesi geleneğinden",
+      "Şehir içinde sürekli dolaşmasından",
+      "Yakıt deposunun hep dolu tutulmasından"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0141",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türk esnaf kültüründe dükkanın o günkü ilk satışını ifade eden ve bereket getirmesi için paranın yere atıldığı/sakala sürüldüğü kelime nedir?",
+    "options": [
+      "Ciro",
+      "Kar",
+      "Siftah",
+      "Hasıl"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0142",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Mahalle bakkallarında, tanıdık müşterilerin aldıkları ürünlerin borç olarak yazıldığı geleneksel deftere ne ad verilir?",
+    "options": [
+      "Müşteri Defteri",
+      "Veresiye Defteri",
+      "Günlük Defter",
+      "Adisyon Defteri"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0143",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Anadolu'da esnaf teşkilatlanmasının temelini oluşturan 'Ahilik' teşkilatının piri ve kurucusu kimdir?",
+    "options": [
+      "Mevlana Celaleddin Rumi",
+      "Ahi Evran",
+      "Yunus Emre",
+      "Hacı Bektaş Veli"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0144",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Esnaf kültüründe dükkana gelen kişinin ne kadar değerli olduğunu anlatan meşhur tabela yazısı veya söz aşağıdakilerden hangisidir?",
+    "options": [
+      "Müşteri her zaman haksızdır",
+      "Müşteri velinimettir",
+      "Müşteriye güven olmaz",
+      "Veresiye teklif etmeyiniz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0145",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Ahilik geleneğinde bir kalfanın ustalık seviyesine ulaştığında ve dükkan açmaya hak kazandığında yapılan törene ne ad verilir?",
+    "options": [
+      "Şed bağlama (Peştamal kuşanma)",
+      "Mezuniyet töreni",
+      "El verme",
+      "Kurdele kesme"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0146",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Eski esnaf geleneğinde sabah ilk satışını yapan birinin, gelen ikinci müşteriyi henüz satış yapmamış yan komşusuna yönlendirmesi hangi ahlakın bir parçasıdır?",
+    "options": [
+      "Kapitalizm",
+      "Ahilik dayanışması",
+      "Rekabet kuralları",
+      "Pazarlama stratejisi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0147",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türkiye'de bir esnaf dükkanına girip alışveriş veya sohbet edildiğinde misafirperverliğin değişmez bir göstergesi olarak çoğunlukla ne ikram edilir?",
+    "options": [
+      "Taze sıkılmış meyve suyu",
+      "Soğuk su",
+      "İnce belli bardakta çay",
+      "Ayran"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0148",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Geleneksel 'Esnaf Lokantası' konseptinin en belirgin özelliklerinden biri nedir?",
+    "options": [
+      "Menünün sadece yabancı dilde olması",
+      "Günlük hazırlanan sulu tencere yemeklerinin camekanda sergilenmesi",
+      "Sadece rezervasyon sistemiyle çalışması",
+      "Fiyatların çok lüks ve pahalı olması"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0149",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Alışveriş sırasında bir ürünü satın alırken fiyatta indirim sağlamak için esnafla alıcı arasında yapılan geleneksel konuşmalara ne denir?",
+    "options": [
+      "İhale",
+      "Promosyon",
+      "Pazarlık",
+      "Kampanya"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0150",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Pazarlık esnasında bir esnafın 'Kurtarmaz' veya 'Gelişi bu' demesi genellikle ne anlama gelir?",
+    "options": [
+      "Ürünü kesinlikle satmak istemediği",
+      "Daha fazla indirim yapamayacağı ve kar marjının sınırına geldiği",
+      "Ürünün defolu olduğu",
+      "Dükkanı kapatmak üzere olduğu"
+    ],
+    "correctOptionIndex": 1
   }
 ]
