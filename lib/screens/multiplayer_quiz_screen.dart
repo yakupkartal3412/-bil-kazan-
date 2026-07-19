@@ -95,7 +95,9 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
         setState(() {
           if (_timeLeft > 0) {
             _timeLeft--;
-            context.read<AudioProvider>().playSfx('tick.wav');
+            if (_timeLeft <= 5) {
+              context.read<AudioProvider>().playSfx('tick.wav');
+            }
           } else {
             _timer?.cancel();
             if (!_isAnswered) {
@@ -327,8 +329,8 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     
     String myAvatar = mpProvider.isHost ? (data['hostAvatar'] ?? 'assets/images/einstein_avatar.png') : (data['guestAvatar'] ?? 'assets/images/einstein_avatar.png');
     String oppAvatar = mpProvider.isHost ? (data['guestAvatar'] ?? 'assets/images/einstein_avatar.png') : (data['hostAvatar'] ?? 'assets/images/einstein_avatar.png');
-    if (!myAvatar.startsWith('assets')) myAvatar = 'assets/images/';
-    if (!oppAvatar.startsWith('assets')) oppAvatar = 'assets/images/';
+    if (!myAvatar.startsWith('assets')) myAvatar = 'assets/images/$myAvatar';
+    if (!oppAvatar.startsWith('assets')) oppAvatar = 'assets/images/$oppAvatar';
 
     int myChoice = -1;
     int oppChoice = -1;
