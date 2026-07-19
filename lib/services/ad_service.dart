@@ -117,11 +117,17 @@ class AdService {
       return;
     }
     
+    int? pendingRewardAmount;
+    
     _rewardedAd!.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
         ad.dispose();
         loadRewardedAd();
-        if (onClosed != null) onClosed();
+        if (pendingRewardAmount != null) {
+          onRewardEarned(pendingRewardAmount!);
+        } else {
+          if (onClosed != null) onClosed();
+        }
       },
       onAdFailedToShowFullScreenContent: (ad, err) {
         ad.dispose();
@@ -132,7 +138,7 @@ class AdService {
     
     _rewardedAd!.show(
       onUserEarnedReward: (AdWithoutView ad, RewardItem reward) {
-        onRewardEarned(reward.amount.toInt());
+        pendingRewardAmount = reward.amount.toInt();
       }
     );
     _rewardedAd = null;
