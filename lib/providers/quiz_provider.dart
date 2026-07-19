@@ -432,18 +432,22 @@ class QuizProvider extends ChangeNotifier {
       final jsonString = await rootBundle.loadString('assets/questions.json');
       final List<dynamic> jsonMap = jsonDecode(jsonString);
       
-      final allQuestions = jsonMap.map((q) => Question.fromJson(q)).toList();
-      _easyQuestions = allQuestions.where((q) => q.difficulty == 1).toList();
-      _mediumQuestions = allQuestions.where((q) => q.difficulty == 2).toList();
-      _hardQuestions = allQuestions.where((q) => q.difficulty == 3).toList();
+      List<Question> allQuestions = jsonMap.map((q) => Question.fromJson(q)).toList();
       
       try {
         final eventJsonString = await rootBundle.loadString('assets/event_questions.json');
         final List<dynamic> eventJsonMap = jsonDecode(eventJsonString);
         _eventQuestions = eventJsonMap.map((q) => Question.fromJson(q)).toList();
+        
+        // Bütün modlarda 3000 sorunun tamamının çıkması için etkinlik sorularını da ana havuza ekliyoruz
+        allQuestions.addAll(_eventQuestions);
       } catch (e) {
         debugPrint('Error loading event questions: $e');
       }
+
+      _easyQuestions = allQuestions.where((q) => q.difficulty == 1).toList();
+      _mediumQuestions = allQuestions.where((q) => q.difficulty == 2).toList();
+      _hardQuestions = allQuestions.where((q) => q.difficulty == 3).toList();
       
       _isDataLoaded = true;
     } catch (e) {
