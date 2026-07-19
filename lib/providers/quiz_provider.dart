@@ -1639,10 +1639,18 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       final date = DateTime.now().toString().split(' ')[0];
       String modeStr = _gameMode == GameMode.endless ? "Sonsuz Mod" : (_gameMode == GameMode.event ? "Etkinlik Modu" : "Klasik Mod");
       
+      int finalScore = moneyValue;
+      String finalMoneyString = moneyString;
+      
+      if (_gameMode == GameMode.classic) {
+        finalScore = _weeklyScore;
+        finalMoneyString = "${_weeklyScore.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.')} ₺";
+      }
+
       final Map<String, dynamic> scoreData = {
         'mode': modeStr,
-        'score': moneyValue,
-        'moneyString': moneyString,
+        'score': finalScore,
+        'moneyString': finalMoneyString,
         'level': _currentQuestionIndex,
         'date': date,
         'avatar': _activeAvatar,
