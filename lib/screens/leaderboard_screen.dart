@@ -814,9 +814,15 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           height: size / 1.8,
         ),
         const SizedBox(height: 4),
-        PremiumBadge(
-          title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(scoreMap['userName'] ?? '')),
-          fontSize: 7,
+        SizedBox(
+          width: size * 1.6,
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: PremiumBadge(
+              title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(scoreMap['userName'] ?? '')),
+              fontSize: 7,
+            ),
+          ),
         ),
         const SizedBox(height: 2),
         SizedBox(
