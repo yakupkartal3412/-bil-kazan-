@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import 'dart:math';
 import '../providers/quiz_provider.dart';
@@ -109,6 +110,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       body: Consumer<QuizProvider>(
         builder: (context, provider, child) {
           if (provider.currentQuestions.isEmpty) {

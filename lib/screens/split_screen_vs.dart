@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import '../models/question.dart';
 import '../providers/quiz_provider.dart';
 import '../providers/audio_provider.dart';
+import '../services/ad_service.dart';
+import 'package:flutter/foundation.dart';
 import 'dart:math' as math;
 
 enum ArenaTheme { magma, ice, cyberpunk, classic }
@@ -631,6 +633,7 @@ class _SplitScreenVSState extends State<SplitScreenVS> {
     if (questions.isEmpty) return const Scaffold(backgroundColor: Colors.black, body: Center(child: CircularProgressIndicator()));
 
     return Scaffold(
+      bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       backgroundColor: Colors.black,
       body: Stack(
         children: [

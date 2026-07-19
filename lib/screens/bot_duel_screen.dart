@@ -5,6 +5,8 @@ import '../models/question.dart';
 import '../providers/quiz_provider.dart';
 import '../providers/audio_provider.dart';
 import '../widgets/joker_dialogs.dart';
+import '../services/ad_service.dart';
+import 'package:flutter/foundation.dart';
 import 'dart:math' as math;
 
 enum ArenaTheme { magma, ice, cyberpunk, classic }
@@ -531,6 +533,7 @@ class _BotDuelScreenState extends State<BotDuelScreen> {
     String questionTextDisplay = pQ.text;
 
     return Scaffold(
+      bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       body: Stack(
         children: [
           // Premium background

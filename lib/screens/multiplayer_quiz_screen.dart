@@ -7,6 +7,8 @@ import '../providers/multiplayer_provider.dart';
 import '../utils/constants.dart';
 import 'multiplayer_result_screen.dart';
 import '../providers/audio_provider.dart';
+import '../services/ad_service.dart';
+import 'package:flutter/foundation.dart';
 
 class MultiplayerQuizScreen extends StatefulWidget {
   const MultiplayerQuizScreen({super.key});
@@ -361,6 +363,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
         }
       },
       child: Scaffold(
+        bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
         floatingActionButton: FloatingActionButton(
           onPressed: _showEmoteMenu,
         backgroundColor: const Color(0xFF0C1E4A),
