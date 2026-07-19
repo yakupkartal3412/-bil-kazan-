@@ -42,6 +42,7 @@ class _AdminScreenState extends State<AdminScreen> {
       final docRef = FirebaseFirestore.instance.collection('users').doc(uid);
       final doc = await docRef.get();
 
+      if (!mounted) return;
       if (!doc.exists) {
         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Bu ID ile kullanıcı bulunamadı!')));
         setState(() => _isLoading = false);

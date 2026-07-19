@@ -380,6 +380,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                   
                                   if (ctx.mounted) {
                                     await Provider.of<QuizProvider>(ctx, listen: false).updateUserName(nameCtrl.text.trim());
+                                    if (!ctx.mounted) return;
                                     Navigator.pop(ctx);
                                     ScaffoldMessenger.of(ctx).showSnackBar(
                                       const SnackBar(content: Text('Hesabın başarıyla kaydedildi! 🎉'), backgroundColor: Colors.green),
