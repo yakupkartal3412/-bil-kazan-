@@ -91,6 +91,7 @@ class QuizProvider extends ChangeNotifier {
   int _vipJokerSkipCount = 0;
   List<String> _highScores = [];
   int _totalGamesPlayed = 0;
+  bool _isGameStartedCounted = false;
   int _gamesPlayedSession = 0;
   int _totalCorrectAnswers = 0;
   
@@ -1219,12 +1220,7 @@ class QuizProvider extends ChangeNotifier {
     _saveSeenQuestions();
     _isAnswered = false;
     _isSuspense = false;
-    _totalGamesPlayed++;
-    _dailyGamesPlayed++;
-    SharedPreferences.getInstance().then((prefs) {
-      prefs.setInt(_gamesPlayedKey, _totalGamesPlayed);
-    });
-    _saveDailyStats();
+    _isGameStartedCounted = false;
     _selectedOptionIndex = null;
     
     _usedFiftyFifty = false;
@@ -1452,6 +1448,16 @@ class QuizProvider extends ChangeNotifier {
     
     _isSuspense = false;
     _isAnswered = true;
+    
+    if (!_isGameStartedCounted) {
+      _isGameStartedCounted = true;
+      _totalGamesPlayed++;
+      _dailyGamesPlayed++;
+      SharedPreferences.getInstance().then((prefs) {
+        prefs.setInt(_gamesPlayedKey, _totalGamesPlayed);
+      });
+      _saveDailyStats();
+    }
     
     _totalQuestionsAnswered++;
     if (selectedIndex == currentQuestion.correctOptionIndex) {

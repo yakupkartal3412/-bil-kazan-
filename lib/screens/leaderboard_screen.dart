@@ -820,20 +820,24 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
         ),
         const SizedBox(height: 2),
         SizedBox(
-          width: size * 1.5,
+          width: size * 1.6,
           child: Text(
             isUser ? provider.userName : scoreMap['userName'] ?? 'Sen', 
-            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 11),
+            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 10),
             overflow: TextOverflow.ellipsis,
+            maxLines: 1,
+            softWrap: false,
             textAlign: TextAlign.center,
           ),
         ),
         SizedBox(
-          width: size * 1.5,
+          width: size * 1.6,
           child: Text(
             moneyString,
-            style: const TextStyle(color: Colors.white60, fontSize: 10),
+            style: const TextStyle(color: Colors.white60, fontSize: 9),
             overflow: TextOverflow.ellipsis,
+            maxLines: 1,
+            softWrap: false,
             textAlign: TextAlign.center,
           ),
         ),
