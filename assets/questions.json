@@ -28287,5 +28287,2514 @@
       "Fırının ateşini üfleyerek harlamasını"
     ],
     "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2001",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Farklı yörelerde 'bilya, meşe, cicoz, gülle' gibi isimlerle anılan ve genellikle camdan yapılan küçük yuvarlak nesnelerle oynanan geleneksel çocuk oyuncağı hangisidir?",
+    "options": [
+      "Taso",
+      "Topaç",
+      "Tetris",
+      "Misket"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2002",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "90'lı yıllarda cips paketlerinden çıkan, üzerinde çizgi film karakterleri bulunan ve üst üste dizilerek ellerindeki parçayı vurup ters çevirmeye dayalı oyunun adı nedir?",
+    "options": [
+      "Futbolcu Kartı",
+      "Misket",
+      "Bilye",
+      "Taso"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2003",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Saklambaç oyununda, ebe saklanan kişiyi görüp ebeleme noktasına ondan önce dokunduğunda söylediği kelime hangisidir?",
+    "options": [
+      "Sobe",
+      "Bom",
+      "Pas",
+      "Yandın"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2004",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Saklambaç oynarken ebe birini yanlış isimle sobelersen, saklanan diğer oyuncular saklandıkları yerden çıkarak hep bir ağızdan ne bağırırlar?",
+    "options": [
+      "Elma dersem çık",
+      "Çanak çömlek patladı",
+      "Çürük yumurta",
+      "Ebe tura"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2005",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Yere tebeşirle çizilen birbirine bitişik kareler üzerinde, tek ayakla zıplayarak ve yassı bir taşı karelerin içine atıp sürükleyerek oynanan oyunun adı nedir?",
+    "options": [
+      "Seksek",
+      "Körebe",
+      "Birdirbir",
+      "İstop"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2006",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Yakan top oyununda ortadaki oyunculardan biri topu havada yere değmeden yakalarsa hangi hakkı kazanmış olur?",
+    "options": [
+      "Karşı takıma geçme",
+      "Oyun biter",
+      "Ebe olma",
+      "Can (bir can fazladan)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2007",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Oyunculardan birinin ebe olup gözlerinin bağlandığı ve etrafındaki diğer oyuncuları yakalamaya, seslerinden kim olduklarını tahmin etmeye çalıştığı oyun hangisidir?",
+    "options": [
+      "Yerden Yüksek",
+      "Uzun Eşek",
+      "Körebe",
+      "Saklambaç"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2008",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Biri uzun, diğeri daha kısa iki tahta sopayla oynanan, kısa olan sopayı havaya fırlatıp uzun olanla uzağa vurmaya dayalı geleneksel oyunumuz nedir?",
+    "options": [
+      "Topaç",
+      "Çelik Çomak",
+      "Çember",
+      "Dokuz Taş"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2009",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Uzun eşek oyununda sırtına atlanan oyuncuların çökmemesi için en önde dikilerek dayanma noktası olan ve ellerin arasına başını koyan oyuncuya / hakeme ne ad verilir?",
+    "options": [
+      "Kafa",
+      "Duvar",
+      "Yastık",
+      "Soba"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2010",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Bir oyuncunun belinden eğilip elleriyle dizlerine dayanması ve diğer oyuncuların sırayla koşarak onun üzerinden atlaması esasına dayanan oyunun adı nedir?",
+    "options": [
+      "Uzun Eşek",
+      "Çelik Çomak",
+      "Bezirganbaşı",
+      "Birdirbir"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2011",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Oyuncuların halka şeklinde yere oturduğu, ebenin elindeki mendili 'Ustam ölmüş ben satarım' şarkısı eşliğinde çaktırmadan birinin arkasına bıraktığı oyun hangisidir?",
+    "options": [
+      "Kutu Kutu Pense",
+      "Bezirganbaşı",
+      "Mendil Kapmaca",
+      "Yağ Satarım Bal Satarım"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2012",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "İki eşit takım arasında oynanan, ortadaki hakemin elinde tuttuğu mendili ilk kapanın kendi sahasına kaçmaya çalıştığı, rakibinin onu ebelemesi durumunda sayının rakibe gittiği oyun nedir?",
+    "options": [
+      "Yerden Yüksek",
+      "Yakan Top",
+      "İstop",
+      "Mendil Kapmaca"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2013",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Bir topu havaya fırlatıp oyunculardan birinin ismini söyleyerek kaçışmalarını sağlayan, ismi söylenen kişinin topu tutup '...!' diye bağırarak herkesi dondurduğu oyunun adı nedir?",
+    "options": [
+      "Simit",
+      "İstop",
+      "Dokuz Taş",
+      "Yakan Top"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2014",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "İstop oyununda ebe topu tuttuktan sonra herkes donar. Ebe daha sonra bir 'ne' belirleyip diğerlerini vurmaya veya o şeyin üzerinde olanları vurmamaya çalışır?",
+    "options": [
+      "Harf",
+      "Renk",
+      "Sayı",
+      "Hayvan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2015",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Üst üste dizilmiş kiremit parçalarını belirli bir mesafeden topla devirme ve ebe olan takımın topu yakalayıp diğer takımı vurmasına dayanan oyun hangisidir?",
+    "options": [
+      "Misket",
+      "Çelik Çomak",
+      "Sapan",
+      "Dokuz Taş / Yedi Kiremit"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2016",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Oyuncuların el ele tutuşup karşılıklı bir köprü oluşturduğu, 'Aç kapıyı ... kapı hakkı ne verirsin?' tekerlemesiyle oynanan ve geçemeyenlerin hapsolduğu oyun nedir?",
+    "options": [
+      "Kutu Kutu Pense",
+      "Sessiz Sinema",
+      "Yerden Yüksek",
+      "Bezirganbaşı"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2017",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "90'lı yıllarda çocukların anahtarlık olarak da taşıdıkları, içinde dijital bir canlının bulunduğu, yemek yedirip altını temizledikleri ve uyuttukları pilli elektronik oyuncak hangisidir?",
+    "options": [
+      "Sanal Bebek (Tamagotchi)",
+      "Tetris",
+      "Gameboy",
+      "Atari"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2018",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Özellikle 90'larda elde oynanan ve yukardan düşen dört karelik (tetromino) şekillerle yatay bloklar oluşturup yok etmeye dayanan popüler el atarisi / oyunu nedir?",
+    "options": [
+      "Pac-man",
+      "Mario",
+      "Tetris",
+      "Sanal Bebek"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2019",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Renkli halkalardan oluşan, merdivenden kendi kendine inebilmesiyle çocukların ilgisini çeken 90'ların meşhur oyuncağının adı nedir?",
+    "options": [
+      "Topaç",
+      "Stres Yayı (Slinky)",
+      "Su Maymuncuğu",
+      "Stres Çarkı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2020",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Bir ip etrafına sarıldıktan sonra yere fırlatılarak ve aynı zamanda ip çekilerek dönmesi sağlanan ahşap geleneksel oyuncağa ne ad verilir?",
+    "options": [
+      "Sapan",
+      "Topaç",
+      "Bilya",
+      "Çember"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2021",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Eskiden özellikle mahalle aralarında çocukların iki parmağı ve lastik bant kullanarak V şeklindeki bir ağaç dalıyla taş fırlattıkları basit aletin adı nedir?",
+    "options": [
+      "Ok",
+      "Fırıldak",
+      "Mancınık",
+      "Sapan"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2022",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Ebenin derin bir nefes alıp tek nefeste hiç durmadan bir kelimeyi bağırarak (ve heceyi uzatarak) kaçan diğer oyuncuları ebelemeye çalıştığı oyunun adı nedir?",
+    "options": [
+      "Bom",
+      "Birdirbir",
+      "Simit",
+      "Uzun Eşek"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2023",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Ebenin, ayakları yere değenleri ebeleyebildiği, oyuncuların ise kaldırım, taş, ağaç kütüğü gibi yüksek yerlere çıkarak kurtulduğu sokak oyununun adı nedir?",
+    "options": [
+      "Seksek",
+      "Köşe Kapmaca",
+      "İstop",
+      "Yerden Yüksek"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2024",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "90'lar çocukluğunda 'ütmece' veya 'eşleştirme' usulüyle oynanan, genellikle gazete eklerinden veya sakızlardan çıkan kartlar hangi temaya sahipti?",
+    "options": [
+      "Hayvanlar",
+      "Meyveler",
+      "Futbolcular",
+      "Arabalar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2025",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Toplu halde sırayla sayı sayarken veya ritmik ritim tutarken, 5 ve 5'in katlarında sayıyı söylemek yerine belirli bir kelimenin söylendiği şaşırtmaca oyununun adı nedir?",
+    "options": [
+      "Pim",
+      "Bum",
+      "Bom",
+      "Çat"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2026",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Kağıt üzerinde oynanan, yatay, dikey veya çapraz olarak 3 aynı sembolü (X veya O) yan yana getirmeyi amaçlayan klasik oyunun adı nedir?",
+    "options": [
+      "Dokuz Taş",
+      "Amiral Battı",
+      "SOS / XOX",
+      "Adam Asmaca"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2027",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Bir kelimenin harf sayısı kadar çizgi çekilerek başlanan, yanlış söylenen her harfte dar ağacına bir uzvun çizildiği kağıt-kalem oyununun adı nedir?",
+    "options": [
+      "İsim Şehir",
+      "Anagram",
+      "Adam Asmaca",
+      "Sözcük Avı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2028",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "İki oyuncunun ellerindeki kareli kağıtlara filolarını dizdiği ve birbirlerinin gemilerini tahmin yoluyla vurmaya çalıştığı oyunun adı nedir?",
+    "options": [
+      "Korsanlar",
+      "Deniz Savaşı",
+      "Amiral Battı",
+      "Filo Kaptanı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2029",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Rastgele seçilen bir harf ile başlayan insan ismi, memleket, hayvan, bitki, eşya gibi kategorileri kısıtlı sürede doldurmaya dayalı meşhur kağıt oyunu nedir?",
+    "options": [
+      "Kelime Üretme",
+      "İsim Şehir Hayvan",
+      "Adam Asmaca",
+      "Tabu"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2030",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Kalın tellerin bükülmesiyle tekerlek formuna getirilen, yine kancalı bir tel yardımıyla itilerek sürülmesine dayanan geleneksel sokak eğlencesinin adı nedir?",
+    "options": [
+      "Bilyalı Araba",
+      "Tel Araba",
+      "Sapan",
+      "Çember Çevirme"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2031",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Ramazan ve Kurban bayramlarında çocukların bakkaldan alıp sokaklarda patlatarak eğlendiği, yere atıldığında ses çıkaran küçük oyuncakların genel adı nedir?",
+    "options": [
+      "Fışkırtan",
+      "Maytap",
+      "Çatapat / Kızkaçıran",
+      "Torpil"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2032",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "90'lar çocuklarının suya attıklarında şişerek büyüyen, jelatinimsi renki küçük toplara verdikleri isim nedir?",
+    "options": [
+      "Büyüyen Küre",
+      "Slime",
+      "Su Maymuncuğu",
+      "Jöle"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2033",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Oyunculardan her birinin belirli bir köşesi veya alanı olduğu, ebe ortadayken birbirleriyle yer değiştirerek ebeye yer kaptırmamaya çalıştıkları oyunun adı nedir?",
+    "options": [
+      "Yerden Yüksek",
+      "Mendil Kapmaca",
+      "Sobe",
+      "Köşe Kapmaca"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2034",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "İki kişi tarafından döndürülen uzun bir ipin ortasına girip atlayarak ritimli şarkıların söylendiği oyunlarda popüler şarkılardan biri hangisidir?",
+    "options": [
+      "Laleli Belkız",
+      "Mini Mini Bir Kuş",
+      "Bak Postacı Geliyor",
+      "Daha Dün Annemizin"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2035",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Uzun Eşek oyununda atlayan oyuncular eşeğin üzerine yerleşince, atlayanların lideri elleriyle tek mi, çift mi sorusunu neyi işaret ederek sorar?",
+    "options": [
+      "Taşları",
+      "Parmaklarını",
+      "Kıyafetini",
+      "Gözlerini"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2036",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Çocuklukta sokaklarda tahtadan ve genellikle demir tekerlek (rulman) kullanılarak yapılan, yokuş aşağı kaymak için tasarlanmış araca ne ad verilir?",
+    "options": [
+      "Tornet / Bilyalı Araba",
+      "Kaykay",
+      "Paten",
+      "Kızak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2037",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Sessiz sinema oyununda anlatıcı, anlatacağı filmin kelime sayısını genellikle hangi hareketi yaparak belirtir?",
+    "options": [
+      "Başıyla onaylayarak",
+      "Alkışlayarak",
+      "Zıplayarak",
+      "Parmaklarını göstererek"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2038",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Saklambaç oyununda, oyunculardan birinin saklandığı yeri ebenin bilerek saklanan kişinin adını yüksek sesle söylemesi kuralı nedir?",
+    "options": [
+      "Ebelemek",
+      "Yummak",
+      "Elma Demek",
+      "Sobelemek"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2039",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Birdirbir oyununda ilk atlayan ebe olurken sırtına atladığı kişinin ne kadar eğileceğini veya ayağa kalkacağını belirten komutlardan biri hangisidir?",
+    "options": [
+      "Dikil / Çök",
+      "Yastık",
+      "Kilit",
+      "Çivi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2040",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yakan top oyununda bir takım tüm oyuncularını kaybettiğinde, vurulan son oyuncunun takımını kurtarmak için içeride tek başına toptan kaçtığı oyun bölümüne ne denir?",
+    "options": [
+      "Son Şans",
+      "Kurtarma",
+      "Can Çekişme / Yakar Top",
+      "Araf"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2041",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Arkadaş şakalarında sıkça kullanılan, avuç içine gizlenip tokalaşıldığında karşı tarafa hafif bir titreşim/elektrik hissi veren 90'lar şaka oyuncağı nedir?",
+    "options": [
+      "El Zili / Şok Cihazı",
+      "Şaka Sakızı",
+      "Titreşimli Yüzük",
+      "Patlayan Şeker"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2042",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "90'lar jenerasyonunun vazgeçilmezlerinden, içinden 'Yumiyum', 'Meybuz' gibi efsane tatların veya ucuz plastik oyuncakların çıktığı mahalle dükkanına ne denirdi?",
+    "options": [
+      "Süpermarket",
+      "Market",
+      "Bakkal",
+      "Büfe"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2043",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Yağ satarım bal satarım oynarken ebe, oturanların etrafında dönerken aynı zamanda nereye mendili bırakacağına karar vermek için kimi şaşırtmaya çalışır?",
+    "options": [
+      "Ustasını",
+      "Oturan halkayı",
+      "Hakemi",
+      "Kuşları"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2044",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "İki grubun yüz yüze bir çizgi boyunca dizilip kollarını birbirine kenetlediği, karşıdan gelenin zinciri kırmaya çalıştığı, kırarsa birini alıp götürdüğü oyun nedir?",
+    "options": [
+      "Zincir Kırma / Koparma",
+      "Halat Çekme",
+      "Kutu Kutu Pense",
+      "Bezirganbaşı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2045",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Misket oyununda en makbul olan, içi damarlı ve genellikle en sevilen atış bilyesine çocuklar arasında ne ad verilir?",
+    "options": [
+      "Kemik / Başlık",
+      "Saydam",
+      "Sıradan",
+      "Kırık"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2046",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Çizilen bir üçgenin içine misketlerin dizildiği ve belirli bir mesafeden atış yapılarak o misketlerin üçgen dışına çıkarılmaya çalışıldığı misket oyununun adı nedir?",
+    "options": [
+      "Üçgen (Mors)",
+      "Kuyu",
+      "Cicoz",
+      "Tumba"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2047",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Güneşli veya rüzgarlı günlerde ince çıtalar ve renkli kağıtlar/poşetler yardımıyla yapılan, kuyruğu olan ve gökyüzüne salınan geleneksel el yapımı oyuncak hangisidir?",
+    "options": [
+      "Uçurtma",
+      "Fırıldak",
+      "Planör",
+      "Rüzgargülü"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2048",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Taso oynarken üst üste konan tasoları vurup ters çevirme kuralına ek olarak, bazı çocukların 'açık', 'kapalı' veya 'kök' diyerek belirlediği ekstra kural sistemine ne denirdi?",
+    "options": [
+      "Hile",
+      "Bahis",
+      "Ütmece Kuralı / Söylemece",
+      "Takas"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2049",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Eskiden sokakta oyun oynayan çocuğu eve çağırmak için annelerin pencereden veya balkondan yaptığı en klasik ve otoriter eylem nedir?",
+    "options": [
+      "Akşam ezanı okundu diyerek bağırmak",
+      "Telefonla aramak",
+      "Islık çalmak",
+      "Arkadaşını yollamak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7f8b9d31-4122-42ac-9c2e-3d02a9cf2050",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Evcilik, bakkalcılık, doktorculuk gibi rollere bürünerek oynanan çocuk oyunlarına genel olarak ne ad verilir?",
+    "options": [
+      "Eğitsel Oyunlar",
+      "Kurallı Oyunlar",
+      "Taklit / Rol Oyunları",
+      "Spor Oyunları"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-01",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Türkiye'nin ilk milli parkı unvanına sahip olan ve İç Anadolu Bölgesi'nde yer alan doğa alanı aşağıdakilerden hangisidir?",
+    "options": [
+      "Soğuksu",
+      "Yedigöller",
+      "Yozgat Çamlığı",
+      "Kaz Dağları"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-02",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Halk arasında 'Ağlayan Gelin' olarak da bilinen ve özellikle Hakkari ile Van yöresinde doğal olarak yetişen endemik bitkimiz aşağıdakilerden hangisidir?",
+    "options": [
+      "Ters Lale",
+      "Kazdağı Göknarı",
+      "Sığla Ağacı",
+      "Şanlıurfa Karagülü"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-03",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Uşak ilimizde bulunan ve ABD'deki Büyük Kanyon'dan sonra dünyanın en uzun ikinci kanyonu olarak kabul edilen kanyonun adı nedir?",
+    "options": [
+      "Saklıkent Kanyonu",
+      "Valla Kanyonu",
+      "Ihlara Vadisi",
+      "Ulubey Kanyonu"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-04",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Antik çağlarda 'İda Dağı' olarak bilinen, mitolojik efsanelere ve zengin bir bitki örtüsüne ev sahipliği yapan dağımız hangisidir?",
+    "options": [
+      "Spil Dağı",
+      "Kaz Dağları",
+      "Ağrı Dağı",
+      "Kaçkar Dağları"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-05",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Aşağıdaki göllerden hangisi Bolu'da yer alan Yedigöller Milli Parkı sınırları içerisinde bulunmaz?",
+    "options": [
+      "Kurugöl",
+      "Uzungöl",
+      "Deringöl",
+      "Büyükgöl"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-06",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Dünyanın en derin kanyonlarından biri sayılan ve Küre Dağları Milli Parkı sınırları içerisinde yer alan Valla Kanyonu hangi ilimizdedir?",
+    "options": [
+      "Antalya",
+      "Artvin",
+      "Kastamonu",
+      "Karabük"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-07",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Sadece Muğla'nın Köyceğiz ve Marmaris ilçeleri çevresinde doğal olarak yetişen, kozmetik ve eczacılıkta da kullanılan endemik ağaç türü hangisidir?",
+    "options": [
+      "Sığla (Günlük) Ağacı",
+      "Datça Hurması",
+      "Isparta Gülü",
+      "Kasnak Meşesi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-08",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "1948 yılında bulunarak Türkiye'nin turizme açılan ilk mağarası olma özelliğini taşıyan, astım hastalarına iyi geldiği bilinen doğa harikası hangisidir?",
+    "options": [
+      "Karaca Mağarası",
+      "İnsuyu Mağarası",
+      "Damlataş Mağarası",
+      "Dupnisa Mağarası"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-09",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "İçerisinden Melendiz Çayı'nın geçtiği ve tarih boyunca birçok medeniyete ev sahipliği yapmış olan volkanik kökenli ünlü vadimiz hangisidir?",
+    "options": [
+      "Ihlara Vadisi",
+      "Göreme Vadisi",
+      "Zelve Vadisi",
+      "Nevşehir Vadisi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-10",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "İçerisindeki termal suyun oluşturduğu travertenler sebebiyle 'Yeraltı Pamukkalesi' olarak da anılan ve Denizli ilimizde yer alan mağara hangisidir?",
+    "options": [
+      "Çal Mağarası",
+      "Kaklık Mağarası",
+      "Gökgöl Mağarası",
+      "Altınbeşik Mağarası"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-11",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Bembeyaz kumsalları ve turkuaz rengi suyuyla 'Türkiye'nin Maldivleri' olarak bilinen gölümüz hangisidir?",
+    "options": [
+      "Salda Gölü",
+      "Eğirdir Gölü",
+      "Bafa Gölü",
+      "Tuz Gölü"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-12",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Hüzünlü bir efsaneye konu olan Hasanboğuldu Göleti ve Şelalesi, hangi doğal güzelliğimizin sınırları içerisinde yer almaktadır?",
+    "options": [
+      "Kaz Dağları",
+      "Yedigöller",
+      "Kaçkarlar",
+      "Küre Dağları"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-13",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Her yıl Türkmen obalarının çıkıp anma törenleri düzenlediği 'Sarıkız Efsanesi' aşağıdaki dağlarımızdan hangisiyle özdeşleşmiştir?",
+    "options": [
+      "Nemrut Dağı",
+      "Ağrı Dağı",
+      "Kaz Dağları",
+      "Süphan Dağı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-14",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Dünyanın en büyük yeraltı göllerinden birine sahip olan ve botlarla gezilebilen Altınbeşik Mağarası hangi ilimizdedir?",
+    "options": [
+      "Antalya",
+      "Burdur",
+      "Muğla",
+      "Mersin"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-15",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Türkiye'nin turizme açılan ilk mağaralarından olan, ancak son yıllarda içindeki suların çekilmesiyle gündeme gelen İnsuyu Mağarası hangi ilimizdedir?",
+    "options": [
+      "Burdur",
+      "Antalya",
+      "Denizli",
+      "Isparta"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-16",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Dünyada sadece Türkiye'de yetişen endemik bir tür olan Kazdağı Göknarı, hangi iki ilimizin sınırları içerisinde yoğun olarak görülür?",
+    "options": [
+      "Bursa - Yalova",
+      "Aydın - Muğla",
+      "Çanakkale - Balıkesir",
+      "İzmir - Manisa"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-17",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Özellikle Isparta'nın Eğirdir ilçesi civarında yetişen ve koruma altında olan endemik meşe türü aşağıdakilerden hangisidir?",
+    "options": [
+      "Mazı Meşesi",
+      "Pırnal Meşesi",
+      "Tüylü Meşe",
+      "Kasnak Meşesi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-18",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Antalya ile Muğla sınırını çizen, dik yamaçlara sahip Saklıkent Kanyonu'nu aşındırarak oluşturan akarsu aşağıdakilerden hangisidir?",
+    "options": [
+      "Köprüçay",
+      "Karaçay",
+      "Göksu",
+      "Manavgat Çayı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-19",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Rafting turizmi ile öne çıkan ve üzerinde tarihi bir taş köprü bulunan Köprülü Kanyon Milli Parkı hangi ilimizdedir?",
+    "options": [
+      "Muğla",
+      "Mersin",
+      "Adana",
+      "Antalya"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-20",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Yüksek oksijen oranıyla dünyanın sayılı bölgelerinden olan ve Kaz Dağları eteklerinde yer alan eşsiz kanyonun adı nedir?",
+    "options": [
+      "Göynük Kanyonu",
+      "Güver Uçurumu",
+      "Şahinderesi Kanyonu",
+      "Cehennem Deresi Kanyonu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-21",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Zengin damlataş oluşumları, sarkıt ve dikitleriyle bilinen, Gümüşhane ilimizde yer alan dünyaca ünlü mağara hangisidir?",
+    "options": [
+      "Oylat Mağarası",
+      "Çal Mağarası",
+      "Trabzon Mağarası",
+      "Karaca Mağarası"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-22",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "İçerisinde devasa bir göl bulunan ve halk arasında 'Aynalıgöl' olarak da bilinen Gilindire Mağarası hangi ilimizde yer almaktadır?",
+    "options": [
+      "Adana",
+      "Antalya",
+      "Mersin",
+      "Hatay"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-23",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "İçerisinden dere akan, üzerinde şelale ve tarihi bir kale bulunan, Trabzon ilimizdeki dünyanın en uzun ikinci mağarası olarak tanıtılan mağara hangisidir?",
+    "options": [
+      "Karain Mağarası",
+      "Dupnisa Mağarası",
+      "Çal Mağarası",
+      "Gökgöl Mağarası"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-24",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Trakya Bölgesi'nin turizme açılmış tek mağarası olan ve yarasalara ev sahipliği yapan Dupnisa Mağarası hangi ilimizdedir?",
+    "options": [
+      "Çanakkale",
+      "Kırklareli",
+      "Edirne",
+      "Tekirdağ"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-25",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Toprağının özelliğinden dolayı dünyada sadece Şanlıurfa'nın Halfeti ilçesinde siyah renkli açan endemik çiçek hangisidir?",
+    "options": [
+      "Ters Lale",
+      "Sevgi Çiçeği",
+      "Kapadokya Soğanı",
+      "Karagül"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-26",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yılkı atları ve baharda açan endemik laleleriyle ünlü olan Spil Dağı Milli Parkı hangi ilimiz sınırları içerisindedir?",
+    "options": [
+      "İzmir",
+      "Denizli",
+      "Manisa",
+      "Aydın"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-27",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Kafkas arısı, yaşlı ormanları ve el değmemiş doğasıyla UNESCO tarafından Türkiye'nin ilk ve tek 'Biyosfer Rezerv Alanı' ilan edilen yer hangisidir?",
+    "options": [
+      "Yedigöller - Bolu",
+      "Camili (Macahel) - Artvin",
+      "Ayder Yaylası - Rize",
+      "Uzungöl - Trabzon"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-28",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Alpler'deki karlara benzeyen 'kristal kar' yapısı ve sarıçam ormanlarıyla ünlü kış turizmi merkezimiz olan Sarıkamış Milli Parkı nerededir?",
+    "options": [
+      "Erzurum",
+      "Kars",
+      "Ağrı",
+      "Ardahan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-29",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Volkanik bir kraterin suyla dolmasıyla oluşan ve 'Dünyanın Nazar Boncuğu' olarak adlandırılan, günümüzde kuruma tehlikesi yaşayan gölümüz hangisidir?",
+    "options": [
+      "Bafa Gölü",
+      "Nemrut Gölü",
+      "Tuz Gölü",
+      "Meke Gölü"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-30",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Heyelan set gölü oluşumu sonucunda meydana gelen, genişliği ve yüksekliği ile Türkiye'nin en görkemli şelalelerinden olan Erzurum'daki şelale hangisidir?",
+    "options": [
+      "Manavgat Şelalesi",
+      "Tortum Şelalesi",
+      "Düden Şelalesi",
+      "Kurşunlu Şelalesi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-31",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Aladağlar Milli Parkı içerisinde, doğrudan kayaların arasından fışkırarak akan ve dünyanın en yüksek düşüşlü şelalelerinden olan Kayseri'deki doğa harikası nedir?",
+    "options": [
+      "Yerköprü Şelalesi",
+      "Girlevik Şelalesi",
+      "Kapuzbaşı Şelaleleri",
+      "Muradiye Şelalesi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-32",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Zengin yaban hayatı ve akarsularıyla ünlü olan, doğa sporlarına elverişli Munzur Vadisi Milli Parkı hangi ilimizdedir?",
+    "options": [
+      "Tunceli",
+      "Erzincan",
+      "Bingöl",
+      "Elazığ"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-33",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Valla Kanyonu, Ilıca Şelalesi ve Horma Kanyonu gibi eşsiz güzellikleri barındıran Küre Dağları Milli Parkı hangi illerimiz arasındadır?",
+    "options": [
+      "Zonguldak - Karabük",
+      "Kastamonu - Bartın",
+      "Sinop - Samsun",
+      "Bolu - Düzce"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-34",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Sadece Ankara'nın Gölbaşı ilçesinde yetişen ve 'Yanardöner' olarak da bilinen endemik bitkimiz aşağıdakilerden hangisidir?",
+    "options": [
+      "Ters Lale",
+      "Ankara Çiğdemi",
+      "Aylı Çiçek",
+      "Sevgi Çiçeği"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-35",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Zirvesinde Kommagene Krallığı'na ait devasa heykeller bulunan ve güneşin doğuşu/batışının eşsiz izlendiği milli parkımız hangi ilimizdedir?",
+    "options": [
+      "Adıyaman",
+      "Şanlıurfa",
+      "Diyarbakır",
+      "Malatya"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-36",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Efsanelere göre Nuh'un Gemisi'ne ev sahipliği yapan ve Türkiye'nin en yüksek noktası olup aynı zamanda milli park statüsünde bulunan dağımız hangisidir?",
+    "options": [
+      "Erciyes Dağı",
+      "Süphan Dağı",
+      "Kaçkar Dağı",
+      "Ağrı Dağı"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-37",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Sadece Niğde ve çevresinde yetiştiği bilinen, bahar aylarında sarı çiçekler açan endemik bitkiye halk arasında ne ad verilir?",
+    "options": [
+      "Kapadokya Soğanı",
+      "Nevşehir Gülü",
+      "Erciyes Nergisi",
+      "Aksaray Papatyası"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-38",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Bursa'nın İnegöl ilçesinde bulunan, fay hatlarının oluşturduğu ve termal özellikli sularıyla ünlü mağaramız hangisidir?",
+    "options": [
+      "Karain Mağarası",
+      "İnsuyu Mağarası",
+      "Oylat Mağarası",
+      "Damlataş Mağarası"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-39",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Fırtına Deresi, buzul gölleri ve yaylalarıyla meşhur olan, Doğu Karadeniz'deki görkemli dağ sırası ve milli parkımız hangisidir?",
+    "options": [
+      "Ilgaz Dağları",
+      "Küre Dağları",
+      "Kop Dağı",
+      "Kaçkar Dağları"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-40",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Her yıl yüz binlerce göçmen kuşun uğrak noktası olan ve Balıkesir sınırları içerisinde yer alan milli parkımız hangisidir?",
+    "options": [
+      "Sultan Sazlığı",
+      "Gala Gölü Milli Parkı",
+      "İğneada Longoz Ormanları",
+      "Kuşcenneti Milli Parkı"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-41",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Türkiye'nin önemli sulak alanlarından olan ve özellikle flamingo sürülerine ev sahipliği yapan Edirne'deki milli parkın adı nedir?",
+    "options": [
+      "Sarıkum Tabiatı Koruma Alanı",
+      "Kuşcenneti Milli Parkı",
+      "Acarlar Longozu",
+      "Gala Gölü Milli Parkı"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "q-42",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Termal suların içindeki kirecin çökelmesiyle oluşan bembeyaz terasları ve yanı başındaki Hierapolis Antik Kenti ile ünlü doğa harikamız nerededir?",
+    "options": [
+      "Afyonkarahisar",
+      "Isparta",
+      "Denizli",
+      "Burdur"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-43",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Artvin'in Ardanuç ilçesinde yer alan ve dünyanın en yüksek kanyonlarından biri kabul edilen sarp kayalık kanyonun adı nedir?",
+    "options": [
+      "Cehennem Deresi Kanyonu",
+      "Şahinderesi Kanyonu",
+      "Çoruh Kanyonu",
+      "Valla Kanyonu"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-44",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Sarkıt, dikit ve soğan şeklindeki oluşumlarıyla dikkat çeken, Tokat'ın Pazar ilçesinde yer alan mağara hangisidir?",
+    "options": [
+      "Ballıca Mağarası",
+      "Karaca Mağarası",
+      "Damlataş Mağarası",
+      "Oylat Mağarası"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-45",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yeraltı sularının kireçtaşını eritmesi ve tavanın çökmesi sonucu oluşan, Mersin'in Silifke ilçesindeki devasa iki obruğun adı nedir?",
+    "options": [
+      "Cennet - Cehennem Obrukları",
+      "Dilek - Sabır Obrukları",
+      "Kızkalesi Obrukları",
+      "Meyil - Çıralı Obrukları"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "q-46",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Dünyanın en hızlı akan nehirlerinden biri olan ve üzerinde sıkça rafting yapılan ünlü vadimiz (nehir) hangisidir?",
+    "options": [
+      "Kızılırmak",
+      "Çoruh Nehri",
+      "Dicle Nehri",
+      "Fırat Nehri"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-47",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Hem yeşilin her tonunu barındıran heyelan gölüne hem de geleneksel pancarcı şenliklerinin yapıldığı bir yaylaya sahip olan Karagöl-Sahara Milli Parkı hangi ilimizdedir?",
+    "options": [
+      "Giresun",
+      "Artvin",
+      "Trabzon",
+      "Rize"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-48",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Sonbaharda dökülen yaprakların oluşturduğu renk cümbüşüyle meşhur olan Yedigöller Milli Parkı, hangi ilimizin idari sınırları içerisindedir?",
+    "options": [
+      "Karabük",
+      "Kastamonu",
+      "Bolu",
+      "Düzce"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "q-49",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Toroslar'ın eteklerinde, genellikle erken ilkbahar veya sonbaharda çiçek açan, soğanlı ve endemik bir tür olan çiçek aşağıdakilerden hangisidir?",
+    "options": [
+      "Muğla Orkidesi",
+      "Antalya Çiğdemi",
+      "Burdur Lalesi",
+      "Mersin Zambağı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "q-50",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "İçinden karayolu geçen ve astım hastaları tarafından sıkça ziyaret edilen Gökgöl Mağarası hangi ilimizdedir?",
+    "options": [
+      "Karabük",
+      "Düzce",
+      "Bartın",
+      "Zonguldak"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e1f13b6b-8b1a-4b2a-9e8c-8411b93f1e10",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu'da sıklıkla kullanılan 'bıldır' kelimesi ne anlama gelmektedir?",
+    "options": [
+      "Biraz önce",
+      "Gelecek yıl",
+      "Dün akşam",
+      "Geçen yıl"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "c1a2e3a1-7d9f-4e5c-a2b1-123456789abc",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Yöresel ağızlarda yaygın olarak kullanılan 'çimmek' kelimesinin anlamı nedir?",
+    "options": [
+      "Koşmak",
+      "Çiçek toplamak",
+      "Bağırarak konuşmak",
+      "Suda yıkanmak veya yüzmek"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "b2c3d4e5-8a9b-4c5d-9e8f-01234567890a",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Farsçada 'ayak' ve 'basamak' anlamlarına gelen sözcüklerin birleşimiyle oluşan 'nerdbân' kelimesi, günümüz Türkçesinde hangi şekle dönüşmüştür?",
+    "options": [
+      "Pervaz",
+      "Nalbur",
+      "Merdiven",
+      "Şamdan"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "f3g4h5i6-1b2c-4d5e-8f9a-987654321012",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu evlerinde yüz kurulamak için kullanılan 'peşkir' kelimesinin güncel standart Türkçedeki karşılığı nedir?",
+    "options": [
+      "Mendil",
+      "Çarşaf",
+      "Önlük",
+      "Havlu"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a1b2c3d4-e5f6-4a5b-8c9d-123450987654",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Yöresel kullanımlarda 'gübür' kelimesi genellikle hangi anlamı ifade eder?",
+    "options": [
+      "Gururlu kişi",
+      "Büyükbaş hayvan",
+      "Kaba kumaş",
+      "Çöp veya toz birikintisi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d5e6f7g8-9a0b-4c1d-2e3f-456781234567",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Arapça kökenli 'şemsiye' kelimesi, kök itibarıyla aşağıdakilerden hangisiyle ilgilidir?",
+    "options": [
+      "Yağmur",
+      "Rüzgar",
+      "Bulut",
+      "Güneş"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e8f9a0b1-2c3d-4e5f-6a7b-890123456789",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Fransızcadan dilimize geçen 'şoför' (chauffeur) kelimesinin ilk kullanım dönemlerindeki asıl anlamı nedir?",
+    "options": [
+      "Ateşçi (Buharlı araçlar için)",
+      "Sürücü",
+      "Tamirci",
+      "Rehber"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c3d4e5f6-7a8b-4c9d-0e1f-234567890123",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "'Yakamoz' kelimesinin dilimize hangi dilden geçtiği kabul edilmektedir?",
+    "options": [
+      "Ermenice",
+      "Rumca",
+      "Arapça",
+      "Farsça"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a9b8c7d6-e5f4-4a3b-2c1d-098765432109",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "İslamiyet öncesi Eski Türklerde 'cennet' kavramını karşılamak için hangi öztürkçe kelime kullanılırdı?",
+    "options": [
+      "Gökbörü",
+      "Yargı",
+      "Uçmak",
+      "Tamu"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "b8c7d6e5-f4a3-4b2c-1d0e-987654321098",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Eski Türkçe metinlerde 'tamu' kelimesi günümüzdeki hangi kavramın karşılığıdır?",
+    "options": [
+      "Cehennem",
+      "Mezar",
+      "Ruh",
+      "Ateş"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f1e2d3c4-b5a6-4f7e-8d9c-1234567890ab",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu'nun pek çok yöresinde 'kumpir' kelimesi hangi sebze için yaygın olarak kullanılır?",
+    "options": [
+      "Turp",
+      "Havuç",
+      "Soğan",
+      "Patates"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d1c2b3a4-e5f6-4d7c-8b9a-0987654321fe",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Türkçedeki haftanın günleri arasında, Farsça sayılardan türetilen 'cihar-şenbe' kelimesinin günümüzdeki hali hangisidir?",
+    "options": [
+      "Pazartesi",
+      "Perşembe",
+      "Cuma",
+      "Çarşamba"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e2d3c4b5-a6f7-4e8d-9c0b-1234567890cd",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "İngilizce 'computer' kelimesine karşılık olarak 'bilgisayar' sözcüğünü türeterek dilimize kazandıran bilim insanı kimdir?",
+    "options": [
+      "Oktay Sinanoğlu",
+      "Agop Dilaçar",
+      "Nihal Atsız",
+      "Aydın Köksal"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "f3e4d5c6-b7a8-4f9e-0d1c-2345678901de",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Türkçedeki denizcilik terimlerinin çoğu İtalyanca/Venedikçe kökenlidir. Aşağıdakilerden hangisi Türkçe kökenli bir denizcilik terimidir?",
+    "options": [
+      "Yelken",
+      "Poyraz",
+      "Pusula",
+      "İskele"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a4b5c6d7-e8f9-4a0b-1c2d-3456789012ef",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Sıklıkla saygı ifadesi olarak kullandığımız 'efendi' kelimesi dilimize hangi dilden geçmiştir?",
+    "options": [
+      "Arapça",
+      "Farsça",
+      "Fransızca",
+      "Rumca / Yunanca"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "b5c6d7e8-f9a0-4b1c-2d3e-4567890123f0",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Aşağıdaki renk isimlerinden hangisi öztürkçe bir kelimedir?",
+    "options": [
+      "Siyah",
+      "Ak",
+      "Beyaz",
+      "Lacivert"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c6d7e8f9-a0b1-4c2d-3e4f-567890123401",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu'da 'gocuk' kelimesi genellikle hangi kıyafet için kullanılır?",
+    "options": [
+      "Yazlık gömlek",
+      "Şalvar",
+      "Kalın kaban veya mont",
+      "İç çamaşırı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d7e8f9a0-b1c2-4d3e-4f5a-678901234512",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Yöresel bir kullanım olan 'çitmek' veya 'çitlemek' fiili en çok hangi eylem için kullanılır?",
+    "options": [
+      "Çamaşır yıkamak",
+      "Odun kırmak",
+      "Çekirdek kabuğu kırmak",
+      "İp bağlamak"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e8f9a0b1-c2d3-4e4f-5a6b-789012345623",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Arapça kökenli 'misafir' kelimesinin yerine kullanılan Türkçe kökenli sözcük hangisidir?",
+    "options": [
+      "Konuk",
+      "Ahbap",
+      "Yaren",
+      "Dost"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f9a0b1c2-d3e4-4f5a-6b7c-890123456734",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Arapça kökenli 'mektep' kelimesinin günümüz Türkçesinde yaygın kullanılan öztürkçe karşılığı nedir?",
+    "options": [
+      "Okul",
+      "Eğitim",
+      "Sınıf",
+      "Derslik"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a0b1c2d3-e4f5-4a6b-7c8d-901234567845",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Anadolu ağzında 'banmak' sözcüğü hangi eylemi tarif etmek için kullanılır?",
+    "options": [
+      "Yemeğin suyuna ekmek batırmak",
+      "Su içmek",
+      "Uykuya dalmak",
+      "Bağırıp çağırmak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b1c2d3e4-f5a6-4b7c-8d9e-012345678956",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Farsça kökenli 'peder' kelimesinin dilimizdeki yaygın karşılığı nedir?",
+    "options": [
+      "Dayı",
+      "Amca",
+      "Baba",
+      "Dede"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c2d3e4f5-a6b7-4c8d-9e0f-123456789067",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Arapça kökenli 'cevap' kelimesinin yerine dilde sadeleşme akımıyla yerleşmiş olan öztürkçe kelime hangisidir?",
+    "options": [
+      "Kelam",
+      "Yanıt",
+      "Soru",
+      "Söz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d3e4f5a6-b7c8-4d9e-0f1a-234567890178",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Karadeniz ve bazı Anadolu yörelerinde 'mısır' bitkisine verilen isimlerden biri hangisidir?",
+    "options": [
+      "Çavdar",
+      "Darı / Lazut",
+      "Yulaf",
+      "Arpa"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "e4f5a6b7-c8d9-4e0f-1a2b-345678901289",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Yöresel ağızlarda karşılaşılan 'yalaza' kelimesi hangi doğa veya fiziksel olayı tanımlar?",
+    "options": [
+      "Ateş / Alev",
+      "Şiddetli rüzgar",
+      "Selin getirdiği çamur",
+      "Kar fırtınası"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f5a6b7c8-d9e0-4f1a-2b3c-456789012390",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Eski Türkçede kullanılan 'od' kelimesinin günümüz Türkçesindeki anlamı nedir?",
+    "options": [
+      "Hava",
+      "Ateş",
+      "Su",
+      "Toprak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a6b7c8d9-e0f1-4a2b-3c4d-567890123401",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Arapçada yazmak anlamına gelen k-t-b kökünden türeyen ve 'yazan kişi, yazman' anlamına gelen kelime aşağıdakilerden hangisidir?",
+    "options": [
+      "Kâtip",
+      "Mektep",
+      "Kitap",
+      "Mektup"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b7c8d9e0-f1a2-4b3c-4d5e-678901234512",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Türkçede meslek ve vasıf bildiren '-men / -man' ekiyle türetilmiş pek çok kelime vardır. Aşağıdakilerden hangisi kök itibariyle öztürkçe değildir ve bir istisna sayılır?",
+    "options": [
+      "Uzman",
+      "Kahraman",
+      "Öğretmen",
+      "Seçmen"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c8d9e0f1-a2b3-4c4d-5e6f-789012345623",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Anadolu'da birçok yörede, babanın kız kardeşi için kullanılan akrabalık terimi aşağıdakilerden hangisidir?",
+    "options": [
+      "Yenge",
+      "Bibi",
+      "Teyze",
+      "Elti"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d9e0f1a2-b3c4-4d5e-6f7a-890123456734",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Halk ağzında sıklıkla kullanılan 'emmi' sözcüğü hangi akraba yerine geçer?",
+    "options": [
+      "Dayı",
+      "Dede",
+      "Enişte",
+      "Amca"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e0f1a2b3-c4d5-4e6f-7a8b-901234567845",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Farsça kökenli 'siyah' kelimesinin öztürkçe karşılığı nedir?",
+    "options": [
+      "Kır",
+      "Kara",
+      "Al",
+      "Boz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f1a2b3c4-d5e6-4f7a-8b9c-012345678956",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Arapça kökenli 'hayal' kelimesini karşılamak üzere türetilmiş veya eski dilden canlandırılmış öztürkçe kelime hangisidir?",
+    "options": [
+      "Düş",
+      "Sanrı",
+      "Kurgu",
+      "Fikir"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a2b3c4d5-e6f7-4a8b-9c0d-123456789067",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Dil Devrimi döneminde türetilen 'olanak' kelimesi hangi Arapça kökenli sözcüğün yerine kullanılmaktadır?",
+    "options": [
+      "İmkan",
+      "İhtimal",
+      "Fırsat",
+      "Zaman"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b3c4d5e6-f7a8-4b9c-0d1e-234567890178",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Arapça kökenli 'ihtimal' kelimesinin günümüz Türkçesinde türetilmiş karşılığı nedir?",
+    "options": [
+      "Kesinlik",
+      "Durum",
+      "Olasılık",
+      "Gereklilik"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "c4d5e6f7-a8b9-4c0d-1e2f-345678901289",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "İnsanın zihninde bilgileri saklama yetisi anlamındaki 'bellek' sözcüğü, dilimizdeki hangi Arapça kökenli kelimeye karşılık türetilmiştir?",
+    "options": [
+      "Hafıza",
+      "Zeka",
+      "Şuur",
+      "Akıl"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d5e6f7a8-b9c0-4d1e-2f3a-456789012390",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "'Koşul' kelimesinin Arapça kökenli eş anlamlısı aşağıdakilerden hangisidir?",
+    "options": [
+      "Şart",
+      "Neden",
+      "Sonuç",
+      "Sebeb"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e6f7a8b9-c0d1-4e2f-3a4b-567890123401",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Türkçe kökenli 'kuşku' kelimesinin Arapça karşılığı olan sözcük aşağıdakilerden hangisidir?",
+    "options": [
+      "Şüphe",
+      "Telaş",
+      "Korku",
+      "Kaygı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f7a8b9c0-d1e2-4f3a-4b5c-678901234512",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Medeni anlamında kullandığımız 'uygar' kelimesinin kökeni hangi tarihi Türk kavmine dayanmaktadır?",
+    "options": [
+      "Oğuzlar",
+      "Uygurlar",
+      "Göktürkler",
+      "Hunlar"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a8b9c0d1-e2f3-4a4b-5c6d-789012345623",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Farsça kökenli 'şehir' kelimesinin yerine kullanılabilen Türkçe karşılık aşağıdakilerden hangisidir?",
+    "options": [
+      "Kasaba",
+      "Kent",
+      "Köy",
+      "Bucak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b9c0d1e2-f3a4-4b5c-6d7e-890123456734",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Anadolu'da yerel ağızlarda kullanılan 'badal' kelimesi ne anlama gelmektedir?",
+    "options": [
+      "Büyük pencere",
+      "Merdiven basamağı",
+      "Taş fırın",
+      "Tahta kapı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c0d1e2f3-a4b5-4c6d-7e8f-901234567845",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Farsça 'çeşm' kelimesi 'göz' demektir. Dilimizdeki hangi kelime 'gözden akan su' manasında bu kökten gelmektedir?",
+    "options": [
+      "Çeşme",
+      "Pınar",
+      "Irmak",
+      "Gözde"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d1e2f3a4-b5c6-4d7e-8f9a-012345678956",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Arapça kökenli 'siyaset' kelimesinin kökü olan (s-y-s), aslında geçmişte hangi meslekle bağlantılıdır?",
+    "options": [
+      "Marangozluk",
+      "Gemicilik",
+      "Terzilik",
+      "Seyislik / At bakıcılığı"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e2f3a4b5-c6d7-4e8f-9a0b-123456789067",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Anadolu kültüründe gençlerin ortaklaşa yiyecek hazırlayarak yaptıkları eğlenceli toplantılara yöresel olarak ne ad verilir?",
+    "options": [
+      "Ferfene (Arfana)",
+      "Toy",
+      "Ziyafet",
+      "Şenlik"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f3a4b5c6-d7e8-4f9a-0b1c-234567890178",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Halk ağzında ve şiirlerde sıkça geçen 'güz' kelimesi hangi mevsimin karşılığıdır?",
+    "options": [
+      "Sonbahar",
+      "Kış",
+      "Yaz",
+      "İlkbahar"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a4b5c6d7-e8f9-4a0b-1c2d-345678901289",
+    "category": "Anadolu Kültürü",
+    "difficulty": 1,
+    "text": "Omuza asılan veya binek hayvanlarının sırtına atılan, iki taraflı torbadan oluşan dokuma çantaya ne ad verilir?",
+    "options": [
+      "Heybe",
+      "Heykel",
+      "Zembil",
+      "Çuval"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b5c6d7e8-f9a0-4b1c-2d3e-456789012390",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Öztürkçe olan 'us' kelimesinin günümüz standart Türkçesindeki karşılığı nedir?",
+    "options": [
+      "Beden",
+      "Gönül",
+      "Ruh",
+      "Akıl"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "c6d7e8f9-a0b1-4c2d-3e4f-567890123401",
+    "category": "Anadolu Kültürü",
+    "difficulty": 3,
+    "text": "Yöresel ağızlarda 'boduç' veya 'susak' gibi isimlerle anılan mutfak veya hamam gereci genellikle nedir?",
+    "options": [
+      "Maşrapa / Su kabı",
+      "Ahşap kaşık",
+      "Tepsi",
+      "Kazan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d7e8f9a0-b1c2-4d3e-4f5a-678901234512",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Arapça kökenli 'kelime' sözcüğünün yerine, Türkçe köklerden türetilmiş olan karşılık hangisidir?",
+    "options": [
+      "Cümle",
+      "Harf",
+      "Heceler",
+      "Sözcük"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e8f9a0b1-c2d3-4e4f-5a6b-789012345623",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Anlatım gücünü artırmak için kullanılan kalıplaşmış söz öbeği olan öztürkçe 'deyim' kelimesinin Osmanlıca (Arapça) karşılığı nedir?",
+    "options": [
+      "Mecaz",
+      "Tabir",
+      "Teşbih",
+      "Atasözü"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "f9a0b1c2-d3e4-4f5a-6b7c-890123456734",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Anadolu'da 'çebiç' kelimesi hangi hayvanın bir yaşına basmış yavrusu için kullanılır?",
+    "options": [
+      "Keçi",
+      "Koyun",
+      "İnek",
+      "At"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "11111111-1111-1111-1111-111111111111",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Benim adım Cemil!\" repliğiyle hafızalara kazınan ve sürekli camdan sarkarak mahalledeki olaylara karışan karakter hangi dizidedir?",
+    "options": [
+      "Bizimkiler",
+      "Süper Baba",
+      "Mahallenin Muhtarları",
+      "Perihan Abla"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "22222222-2222-2222-2222-222222222222",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Süper Baba dizisinde Şevket Altuğ'un canlandırdığı ana karakterin adı nedir?",
+    "options": [
+      "Fikret",
+      "Cevdet",
+      "Şükrü",
+      "Nihat"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "33333333-3333-3333-3333-333333333333",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Avrupa Yakası dizisinde Evrim Akın'ın canlandırdığı ve \"Oha falan oldum yani!\" repliğiyle tanınan karakterin adı nedir?",
+    "options": [
+      "Aslı",
+      "Selin",
+      "Şahika",
+      "Yaprak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "44444444-4444-4444-4444-444444444444",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Ezel dizisinde Ramiz Dayı karakterini canlandıran usta oyuncu kimdir?",
+    "options": [
+      "Şener Şen",
+      "Uğur Yücel",
+      "Haluk Bilginer",
+      "Tuncel Kurtiz"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "55555555-5555-5555-5555-555555555555",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Türkiye'de televizyon yayınları ilk olarak hangi kurum tarafından başlatılmıştır?",
+    "options": [
+      "TRT",
+      "Star TV",
+      "İTÜ TV",
+      "Show TV"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "66666666-6666-6666-6666-666666666666",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Türk televizyonlarının en uzun soluklu dizilerinden \"Bizimkiler\"in senaristi kimdir?",
+    "options": [
+      "Umur Bugay",
+      "Gülse Birsel",
+      "Kandemir Konduk",
+      "Sulhi Dölek"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "77777777-7777-7777-7777-777777777777",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Avrupa Yakası dizisinde, \"Ben aslında yohum!\" ve \"Saldır Burhan!\" replikleriyle fenomen olan karakteri kim canlandırmıştır?",
+    "options": [
+      "Tolga Çevik",
+      "Levent Üzümcü",
+      "Engin Günaydın",
+      "Ata Demirer"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "88888888-8888-8888-8888-888888888888",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "\"Ezel\" dizisi, hangi ünlü romanın günümüze uyarlanmış halidir?",
+    "options": [
+      "İki Şehrin Hikayesi",
+      "Suç ve Ceza",
+      "Sefiller",
+      "Monte Kristo Kontu"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "99999999-9999-9999-9999-999999999999",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Oya Küçümen'in seslendirdiği \"Bana Bir Masal Anlat Baba\" şarkısı, hangi ünlü dizinin jenerik müziğidir?",
+    "options": [
+      "Baba Evi",
+      "Süper Baba",
+      "İkinci Bahar",
+      "Mahallenin Muhtarları"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Türkiye'nin ilk özel televizyon kanalı hangisidir?",
+    "options": [
+      "Kanal D",
+      "ATV",
+      "Star 1 (Magic Box)",
+      "Show TV"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Çay Erdal Bakkal'da içilir!\" repliği ve tabelasıyla özdeşleşen dizi hangisidir?",
+    "options": [
+      "İşler Güçler",
+      "Leyla ile Mecnun",
+      "Kardeş Payı",
+      "Geniş Aile"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Aşk-ı Memnu\" dizisinde \"Sen Bihter Ziyagil'sin, aptallık etme!\" repliğini söyleyen karakter kimdir?",
+    "options": [
+      "Peyker",
+      "Behlül Haznedar",
+      "Firdevs Yöreoğlu",
+      "Adnan Ziyagil"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "dddddddd-dddd-dddd-dddd-dddddddddddd",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "\"Kurtlar Vadisi\" dizisinde Polat Alemdar'ın gerçek adı, dizinin ilk bölümlerinde ne olarak geçmektedir?",
+    "options": [
+      "Aslan Akbey",
+      "Memati Baş",
+      "Süleyman Çakır",
+      "Ali Candan"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Türk televizyonlarının en uzun soluklu dizisi \"Bizimkiler\"de, \"Sevim koş!\" repliğiyle bilinen Cemil karakterinin kayınpederi Halil'in lakabı neydi? (Not: Soru değiştirildi. Asıl soru: \"Bizimkiler\" dizisinde \"Sevim koş!\" repliğini söyleyen Cemil karakterinin mesleği neydi? Fakat bu başka soruyla karışabilir. Düzenlendi: \"Sevim koş!\" diyen Cemil ile sürekli kavga eden ve kapıcı olan karakterin adı neydi?) Şöyle soralım: \"Bizimkiler\" dizisinde, \"Sevim koş!\" repliğini duyduğumuzda Cemil kimi çağırmaktadır?",
+    "options": [
+      "Yöneticinin karısını",
+      "Kız kardeşini",
+      "Karısını",
+      "Kapıcının kızını"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "\"İkinci Bahar\" dizisinde Türkan Şoray ve Şener Şen'in canlandırdığı ana karakterlerin isimleri nelerdir?",
+    "options": [
+      "Hatice ve Şevket",
+      "Hanım ve Ali Haydar",
+      "Nermin ve Cevdet",
+      "Zeynep ve Rıza"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000010",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Behzat Ç. Bir Ankara Polisiyesi\" dizisinde, Behzat Başkomiser'e ekibi tarafından verilen lakap nedir?",
+    "options": [
+      "Amir",
+      "Dayı",
+      "Başkan",
+      "Usta"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000011",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "TRT ekranlarında yayınlanan, başrollerini Perran Kutman ve Şevket Altuğ'un paylaştığı 1980'lerin efsanevi dizisi hangisidir?",
+    "options": [
+      "Perihan Abla",
+      "Kuruntu Ailesi",
+      "Uzaylı Zekiye",
+      "Kaynanalar"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000012",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Gaffur\" tiplemesiyle çizgili pijamanın moda olmasına yol açan, \"Avrupa Yakası\" karakterini kim canlandırmıştır?",
+    "options": [
+      "Tolga Çevik",
+      "Peker Açıkalın",
+      "Engin Günaydın",
+      "Ata Demirer"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000013",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Yaprak Dökümü\" dizisinde, ailesinin dağılışını izlerken \"Aman Ali Rıza Bey, ağzımızın tadı kaçmasın\" repliğini sıkça söyleyen karakter kimdir?",
+    "options": [
+      "Leyla",
+      "Necla",
+      "Hayriye Hanım",
+      "Ferhunde"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000014",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Ezel dizisinde Ramiz Dayı'nın gençliğini hangi başarılı oyuncu canlandırmıştır?",
+    "options": [
+      "Ufuk Bayraktar",
+      "Kenan İmirzalıoğlu",
+      "Rıza Kocaoğlu",
+      "Kıvanç Tatlıtuğ"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000015",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Türk televizyon tarihinde \"Kaynanalar\" dizisi, hangi türün ilk örneği kabul edilir?",
+    "options": [
+      "Pembe Dizi",
+      "Bilim Kurgu",
+      "Polisiye",
+      "Sitcom (Durum Komedisi)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000016",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "Avrupa Yakası dizisinde, Aslı ve Volkan karakterlerinin babası olan, \"Benim birader Şükrü\" gibi hikayeler anlatan karakter kimdir?",
+    "options": [
+      "İzzet Bey",
+      "Sadettin Bey",
+      "Burhan Altıntop",
+      "Tahsin Bey"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000017",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Leyla ile Mecnun\" dizisinde Mecnun'un en yakın arkadaşı olan ve vapurlara el sallamasıyla bilinen karakterin adı nedir?",
+    "options": [
+      "Yavuz",
+      "Erdal Bakkal",
+      "İsmail Abi",
+      "İskender"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000018",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Geniş Aile\" dizisinde Ufuk Özkan'ın canlandırdığı ve sürekli çeşitli lakaplar türeten karakterin adı nedir?",
+    "options": [
+      "Cevahir",
+      "Zekai",
+      "Koyu Bilal",
+      "Ulvi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000019",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "1990'lı yıllarda çok popüler olan ve \"Çılgın Bediş\" karakterini canlandıran ünlü şarkıcımız kimdir?",
+    "options": [
+      "Nilüfer",
+      "Yonca Evcimik",
+      "Aşkın Nur Yengi",
+      "Sezen Aksu"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000020",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "\"Sıdıka\" dizisinde Hasibe Eren'in canlandırdığı Sıdıka karakterinin sinirli ve otoriter annesini hangi usta oyuncu canlandırmıştır?",
+    "options": [
+      "Ayten Gökçer",
+      "Füsun Demirel",
+      "Tomris İncer",
+      "Adile Naşit"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000021",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "\"Ekmek Teknesi\" dizisinde mahallenin bilge karakteri Nusret Baba'yı hangi usta oyuncu canlandırmıştır?",
+    "options": [
+      "Kadir Çöpdemir",
+      "Savaş Dinçel",
+      "Eşref Kolçak",
+      "Hasan Kaçan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000022",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Muhteşem Yüzyıl\" dizisinde Hürrem Sultan karakterine hayat veren ve sonrasında tükenmişlik sendromu nedeniyle diziden ayrılan oyuncu kimdir?",
+    "options": [
+      "Meryem Uzerli",
+      "Vahide Perçin",
+      "Nur Fettahoğlu",
+      "Pelin Karahan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000023",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Ezel dizisinde Kenan İmirzalıoğlu'nun canlandırdığı \"Ezel\" karakterinin yüzü değişmeden önceki gerçek adı nedir?",
+    "options": [
+      "Cengiz",
+      "Ömer",
+      "Tevfik",
+      "Ali"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000024",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "Avrupa Yakası'nın yapımcısı, senaristi ve aynı zamanda başrol oyuncusu olan isim kimdir?",
+    "options": [
+      "Gupse Özay",
+      "Binnur Kaya",
+      "Gülse Birsel",
+      "Demet Evgar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000025",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Türkiye'de ilk renkli televizyon yayını hangi yıl tam anlamıyla, sürekli olarak başlamıştır?",
+    "options": [
+      "1981",
+      "1990",
+      "1984",
+      "1974"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000026",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Çocuklar Duymasın\" dizisinde \"Taş Fırın Erkeği\" lakabıyla bilinen Haluk karakterini kim canlandırmıştır?",
+    "options": [
+      "Tamer Karadağlı",
+      "Volkan Severcan",
+      "Alpaslan Özmol",
+      "Zeyno Günenç"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000027",
+    "category": "Anadolu Kültürü",
+    "difficulty": 2,
+    "text": "Şener Şen ve Türkan Şoray'ı bir araya getiren \"İkinci Bahar\" dizisinin çekildiği, İstanbul'un tarihi semti hangisidir?",
+    "options": [
+      "Kuzguncuk",
+      "Çengelköy",
+      "Samatya",
+      "Balat"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000028",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "TRT'de 1980'li yıllarda yayınlanan ve Türk müziğinin efsane isimlerinin hayatlarını anlatan, başrolünü Ahmet Özhan'ın oynadığı dizi hangisidir?",
+    "options": [
+      "Hacı Arif Bey",
+      "Çalıkuşu",
+      "Kuruntu Ailesi",
+      "Dudaktan Kalbe"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000029",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "\"Kurtlar Vadisi\" dizisinde \"Sonunu düşünen kahraman olamaz\" repliği hangi karaktere aittir?",
+    "options": [
+      "Memati Baş",
+      "Polat Alemdar",
+      "Süleyman Çakır",
+      "Aslan Akbey"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000030",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Kardeş Payı\", \"İşler Güçler\" ve \"Düğün Dernek\" gibi yapımlarda birlikte rol alan komedi ikilisi kimlerdir?",
+    "options": [
+      "Ahmet Kural ve Murat Cemcir",
+      "Ali Sunal ve Alper Kul",
+      "Şevket Çoruh ve İlker Ayrık",
+      "Cem Yılmaz ve Zafer Algöz"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000031",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "\"Bizimkiler\" dizisinde, apartmanın paragöz yöneticisi Sabri Bey karakterini hangi oyuncu canlandırmıştır?",
+    "options": [
+      "Aykut Oray",
+      "Erdal Özyağcılar",
+      "Ercan Yazgan",
+      "Mehmet Akan"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000032",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Aşk-ı Memnu\" dizisinin efsaneleşen final bölümünde Bihter'in intihar ettiği gün hangi karakterin düğünü vardır?",
+    "options": [
+      "Firdevs",
+      "Peyker",
+      "Nihal",
+      "Beşir"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000033",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "\"Kavak Yelleri\" dizisi, İzmir'in hangi sahil kasabasında çekilmeye başlanmış ve buranın tanıtımına büyük katkı sağlamıştır?",
+    "options": [
+      "Çeşme",
+      "Urla",
+      "Alaçatı",
+      "Seferihisar"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000034",
+    "category": "Genel Kültür",
+    "difficulty": 3,
+    "text": "Efsane dizi \"Süper Baba\"da, Fikret'in (Şevket Altuğ) en yakın arkadaşı, kahvehane işleten Nihat karakterini kim canlandırmıştır?",
+    "options": [
+      "Sümer Tilmaç",
+      "Sevinç Erbulak",
+      "Şevval Sam",
+      "Bennu Yıldırımlar"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000035",
+    "category": "Genel Kültür",
+    "difficulty": 1,
+    "text": "\"Yılan Hikayesi\" dizisinde Memoli karakterini canlandıran ve bu rolle büyük ün kazanan oyuncu kimdir?",
+    "options": [
+      "Mehmet Ali Alabora",
+      "Emre Kınay",
+      "Kenan İmirzalıoğlu",
+      "Nejat İşler"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000036",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "\"Yeditepe İstanbul\" dizisinde, kızıyla beraber maddi zorluklar yaşayıp eski bir mahalleye taşınan Olcay karakterini kim canlandırmıştır?",
+    "options": [
+      "Uğur Polat",
+      "Zuhal Olcay",
+      "Meral Okay",
+      "Emre Kınay"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000037",
+    "category": "Genel Kültür",
+    "difficulty": 2,
+    "text": "\"Fi\", \"Çi\", \"Pi\" kitap üçlemesinden uyarlanan ve Türkiye'nin ilk başarılı dijital platform dizilerinden sayılan yapımın başrolündeki psikiyatrist karakteri kimdir?",
+    "options": [
+      "Can Manay",
+      "Bilge",
+      "Deniz",
+      "Duru"
+    ],
+    "correctOptionIndex": 0
   }
 ]
