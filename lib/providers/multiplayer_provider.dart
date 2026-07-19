@@ -253,7 +253,10 @@ class MultiplayerProvider extends ChangeNotifier {
   // OYUNDAN ÇIK / LOBİDEN AYRIL
   Future<void> leaveRoom() async {
     if (_roomId != null) {
-      if (_isHost && _roomData?['status'] == 'waiting') {
+      if (_roomData?['status'] == 'playing') {
+        // Oyun esnasında çıkılırsa odayı abandoned (terk edildi) yap
+        await _firestore.collection('rooms').doc(_roomId).update({'status': 'abandoned'});
+      } else if (_isHost && _roomData?['status'] == 'waiting') {
         // Host beklerken çıkarsa odayı sil
         await _firestore.collection('rooms').doc(_roomId).delete();
       } else if (!_isHost && _roomData?['status'] == 'waiting') {

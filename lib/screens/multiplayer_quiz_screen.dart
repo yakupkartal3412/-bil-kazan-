@@ -47,6 +47,12 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     _particleController = AnimationController(vsync: this, duration: const Duration(seconds: 4))..repeat();
 
     final mpProvider = Provider.of<MultiplayerProvider>(context, listen: false);
+    if (mpProvider.roomData == null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) Navigator.pop(context);
+      });
+      return;
+    }
     _questions = mpProvider.roomData!['questions'];
     _startTimer();
   }
@@ -249,6 +255,32 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     
     if (data == null) return const Scaffold(body: Center(child: CircularProgressIndicator()));
     
+    if (data['status'] == 'abandoned' && !_hasAbandoned) {
+       _hasAbandoned = true;
+       WidgetsBinding.instance.addPostFrameCallback((_) {
+         if (mounted) {
+           showDialog(
+             context: context,
+             barrierDismissible: false,
+             builder: (ctx) => AlertDialog(
+               backgroundColor: AppColors.surface,
+               title: const Text('Maç İptal', style: TextStyle(color: Colors.white)),
+               content: const Text('Rakip oyundan ayrıldı. Galip sayılırsınız (veya maç iptal edildi).', style: TextStyle(color: Colors.white70)),
+               actions: [
+                 TextButton(
+                   onPressed: () {
+                     Navigator.pop(ctx);
+                     Navigator.pop(context);
+                   },
+                   child: const Text('Tamam', style: TextStyle(color: Colors.amberAccent)),
+                 )
+               ]
+             )
+           );
+         }
+       });
+    }
+    
     int syncedIndex = data['currentQuestionIndex'] ?? 0;
     if (syncedIndex > _currentIndex) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -304,9 +336,30 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
        oppChoice = mpProvider.isHost ? int.tryParse(guestAns[_currentIndex.toString()]?.toString() ?? '-1') ?? -1 : int.tryParse(hostAns[_currentIndex.toString()]?.toString() ?? '-1') ?? -1;
     }
     
-    return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: _showEmoteMenu,
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) async {
+        if (didPop) return;
+        final confirm = await showDialog<bool>(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            backgroundColor: AppColors.surface,
+            title: const Text('Çıkış', style: TextStyle(color: Colors.white)),
+            content: const Text('Oyundan çıkmak istediğinize emin misiniz? Maçı kaybetmiş sayılırsınız.', style: TextStyle(color: Colors.white70)),
+            actions: [
+              TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Hayır', style: TextStyle(color: Colors.grey))),
+              TextButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Evet', style: TextStyle(color: Colors.red))),
+            ],
+          ),
+        );
+        if (confirm == true) {
+          await mpProvider.leaveRoom();
+          if (context.mounted) Navigator.pop(context);
+        }
+      },
+      child: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          onPressed: _showEmoteMenu,
         backgroundColor: const Color(0xFF0C1E4A),
         child: const Text('💬', style: TextStyle(fontSize: 24)),
       ),
@@ -442,14 +495,14 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
             ),
         ],
       ),
-    );
+    ));
   }
 
   Widget _buildScoreCard(String name, int score, Color color) {
     return Column(
       children: [
         Text(name, style: const TextStyle(color: Colors.white70, fontSize: 14, fontWeight: FontWeight.bold)),
-        Text('', style: TextStyle(color: color, fontSize: 24, fontWeight: FontWeight.w900)),
+        Text('$score', style: TextStyle(color: color, fontSize: 24, fontWeight: FontWeight.w900)),
       ],
     );
   }
@@ -485,7 +538,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
             ),
             child: Center(
               child: Text(
-                '',
+                '$_timeLeft',
                 style: TextStyle(
                   color: isUrgent ? Colors.white : const Color(0xFFFFD54F),
                   fontSize: 22,
@@ -537,7 +590,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  ' / 15',
+                  '${_currentIndex + 1} / ${_questions.length}',
                   style: const TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.w700),
                 ),
               ],

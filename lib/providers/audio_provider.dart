@@ -129,7 +129,7 @@ class AudioProvider extends ChangeNotifier with WidgetsBindingObserver {
     if (_isVibrationEnabled) {
       if (fileName.contains('wrong')) {
         Vibration.vibrate(duration: 250, amplitude: 255);
-      } else if (fileName.contains('correct') || fileName.contains('click') || fileName.contains('tick')) {
+      } else if (fileName.contains('correct') || fileName.contains('click')) {
         Vibration.vibrate(duration: 50, amplitude: 100);
       }
     }
