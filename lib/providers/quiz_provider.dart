@@ -40,9 +40,7 @@ class QuizProvider extends ChangeNotifier {
   static const String _lastDuelP2NameKey = 'last_duel_p2_name';
   static const String _lastDuelP1SeriesKey = 'last_duel_p1_series';
   static const String _lastDuelP2SeriesKey = 'last_duel_p2_series';
-  static const String _seenClassicIdsKey = 'seen_classic_ids';
-  static const String _seenEndlessIdsKey = 'seen_endless_ids';
-  static const String _seenDuelIdsKey = 'seen_duel_ids';
+  static const String _seenGlobalIdsKey = 'seen_global_ids';
   static const String _seenEventIdsKey = 'seen_event_ids';
   static const String _cycleStartDateKey = 'cycle_start_date';
   static const String _cycleStatusKey = 'cycle_status';
@@ -213,7 +211,7 @@ class QuizProvider extends ChangeNotifier {
   int get dailyJokersUsed => _dailyJokersUsed;
   List<String> get claimedMissions => _claimedMissions;
   List<String> get claimedAchievements => _claimedAchievements;
-  Set<String> get seenClassicIds => _seenClassicIds;
+  Set<String> get seenClassicIds => _seenGlobalIds;
   String get cycleStartDate => _cycleStartDate;
   List<int> get cycleStatus => _cycleStatus;
   bool get hasClaimedDailyLogin => _hasClaimedDailyLogin;
@@ -281,9 +279,7 @@ class QuizProvider extends ChangeNotifier {
   bool get isDataLoaded => _isDataLoaded;
 
   // Klasik mod ve Endless mod için AYRI seen setleri — birbirini etkilemesin
-  Set<String> _seenClassicIds = {};
-  Set<String> _seenEndlessIds = {};
-  Set<String> _seenDuelIds = {};
+  Set<String> _seenGlobalIds = {};
   Set<String> _seenEventIds = {};
 
   List<Question> _currentQuestions = [];
@@ -411,9 +407,7 @@ class QuizProvider extends ChangeNotifier {
     _lastDuelP2Name = prefs.getString(_lastDuelP2NameKey) ?? 'KULLANICI 2';
     _lastDuelP1Series = prefs.getInt(_lastDuelP1SeriesKey) ?? 0;
     _lastDuelP2Series = prefs.getInt(_lastDuelP2SeriesKey) ?? 0;
-    _seenClassicIds = (prefs.getStringList(_seenClassicIdsKey) ?? []).toSet();
-    _seenEndlessIds = (prefs.getStringList(_seenEndlessIdsKey) ?? []).toSet();
-    _seenDuelIds = (prefs.getStringList(_seenDuelIdsKey) ?? []).toSet();
+    _seenGlobalIds = (prefs.getStringList(_seenGlobalIdsKey) ?? []).toSet();
     _seenEventIds = (prefs.getStringList(_seenEventIdsKey) ?? []).toSet();
     
     _cycleStartDate = prefs.getString(_cycleStartDateKey) ?? '';
@@ -548,47 +542,71 @@ class QuizProvider extends ChangeNotifier {
 
   List<Question> get15MixedQuestions() {
     if (!_isDataLoaded) return [];
-    final questions = [
-      ..._getUnseenClassic(_easyQuestions, 5),
-      ..._getUnseenClassic(_mediumQuestions, 5),
-      ..._getUnseenClassic(_hardQuestions, 5),
+    List<Question> questions = [
+      ..._getGlobalUnseen(_easyQuestions, 5),
+      ..._getGlobalUnseen(_mediumQuestions, 5),
+      ..._getGlobalUnseen(_hardQuestions, 5),
     ];
-    for (final q in questions) { _seenClassicIds.add(q.id); }
+    questions = _fillRemaining(questions, 15);
+    for (final q in questions) { _seenGlobalIds.add(q.id); }
     _saveSeenQuestions();
     return questions;
   }
 
   Future<void> _saveSeenQuestions() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setStringList(_seenClassicIdsKey, _seenClassicIds.toList());
-    await prefs.setStringList(_seenEndlessIdsKey, _seenEndlessIds.toList());
-    await prefs.setStringList(_seenDuelIdsKey, _seenDuelIds.toList());
+    await prefs.setStringList(_seenGlobalIdsKey, _seenGlobalIds.toList());
     await prefs.setStringList(_seenEventIdsKey, _seenEventIds.toList());
   }
-
-  // Klasik mod için: zorunlu difficulty ayrımıyla unseen soru seç
-  List<Question> _getUnseenClassic(List<Question> pool, int count) {
-    List<Question> unseen = pool.where((q) => !_seenClassicIds.contains(q.id)).toList();
-    if (unseen.length < count) {
-      // Bu zorluk seviyesindeki tüm sorular bitti — sadece bu pool'u sıfırla
-      for (final q in pool) { _seenClassicIds.remove(q.id); }
-      unseen = List.from(pool);
+  
+  void _checkGlobalSeenReset() {
+    // 3000 soru baraji
+    if (_seenGlobalIds.length >= 2950) { // Biraz pay birakalim
+      _seenGlobalIds.clear();
+      _saveSeenQuestions();
     }
+  }
+
+  List<Question> _getGlobalUnseen(List<Question> pool, int count) {
+    _checkGlobalSeenReset();
+    List<Question> unseen = pool.where((q) => !_seenGlobalIds.contains(q.id)).toList();
     unseen.shuffle(dart_math.Random());
     return unseen.take(count).toList();
   }
+  
+  List<Question> _fillRemaining(List<Question> current, int targetCount) {
+    if (current.length >= targetCount) return current;
+    _checkGlobalSeenReset();
+    
+    // Eksik varsa diger havuzlardan karisik cek
+    List<Question> allQ = [..._easyQuestions, ..._mediumQuestions, ..._hardQuestions];
+    List<Question> unseen = allQ.where((q) => !_seenGlobalIds.contains(q.id)).toList();
+    unseen.shuffle(dart_math.Random());
+    
+    for (var q in unseen) {
+      if (!current.any((c) => c.id == q.id)) {
+        current.add(q);
+        if (current.length >= targetCount) break;
+      }
+    }
+    
+    if (current.length < targetCount) {
+       _seenGlobalIds.clear(); // Zorunlu sifirlama
+       _saveSeenQuestions();
+       return _fillRemaining(current, targetCount);
+    }
+    return current;
+  }
+
+
+  // Klasik mod için: zorunlu difficulty ayrımıyla unseen soru seç
+
 
   List<Question> getRandomQuestionsForDuel(int count) {
     if (!_isDataLoaded) return [];
-    List<Question> allQ = [..._easyQuestions, ..._mediumQuestions, ..._hardQuestions];
-    List<Question> unseen = allQ.where((q) => !_seenDuelIds.contains(q.id)).toList();
-    if (unseen.length < count) {
-      _seenDuelIds.clear();
-      unseen = List.from(allQ);
-    }
-    unseen.shuffle(dart_math.Random());
-    final selected = unseen.take(count).toList();
-    for (final q in selected) { _seenDuelIds.add(q.id); }
+    List<Question> selected = [];
+    selected = _fillRemaining(selected, count);
+    for (final q in selected) { _seenGlobalIds.add(q.id); }
     _saveSeenQuestions();
     return selected;
   }
@@ -1171,30 +1189,30 @@ class QuizProvider extends ChangeNotifier {
     if (mode == GameMode.classic) {
       // Klasik mod: her zorluktan 5 soru, ayrı classic seen set kullan
       _currentQuestions = [
-        ..._getUnseenClassic(_easyQuestions, 5),
-        ..._getUnseenClassic(_mediumQuestions, 5),
-        ..._getUnseenClassic(_hardQuestions, 5),
+        ..._getGlobalUnseen(_easyQuestions, 5),
+        ..._getGlobalUnseen(_mediumQuestions, 5),
+        ..._getGlobalUnseen(_hardQuestions, 5),
       ];
       // Hepsini classic seen'e ekle
-      for (final q in _currentQuestions) { _seenClassicIds.add(q.id); }
+      for (final q in _currentQuestions) { _seenGlobalIds.add(q.id); }
     } else {
       // Endless mod: ayrı endless seen set kullan
-      final unseenEasy = _easyQuestions.where((q) => !_seenEndlessIds.contains(q.id)).toList()..shuffle();
-      final unseenMedium = _mediumQuestions.where((q) => !_seenEndlessIds.contains(q.id)).toList()..shuffle();
-      final unseenHard = _hardQuestions.where((q) => !_seenEndlessIds.contains(q.id)).toList()..shuffle();
+      final unseenEasy = _easyQuestions.where((q) => !_seenGlobalIds.contains(q.id)).toList()..shuffle();
+      final unseenMedium = _mediumQuestions.where((q) => !_seenGlobalIds.contains(q.id)).toList()..shuffle();
+      final unseenHard = _hardQuestions.where((q) => !_seenGlobalIds.contains(q.id)).toList()..shuffle();
       
       _currentQuestions = [...unseenEasy, ...unseenMedium, ...unseenHard];
       
       if (_currentQuestions.isEmpty) {
         // Tüm sorular görüldü, sıfırla
-        _seenEndlessIds.clear();
+        _seenGlobalIds.clear();
         _currentQuestions = [
           ..._easyQuestions..shuffle(),
           ..._mediumQuestions..shuffle(),
           ..._hardQuestions..shuffle()
         ];
         if (_currentQuestions.isNotEmpty) {
-          _seenEndlessIds.add(_currentQuestions[0].id);
+          _seenGlobalIds.add(_currentQuestions[0].id);
         }
       }
     }
@@ -1473,9 +1491,9 @@ class QuizProvider extends ChangeNotifier {
     } else {
       _currentQuestionIndex++;
       if (_gameMode == GameMode.classic) {
-        _seenClassicIds.add(_currentQuestions[_currentQuestionIndex].id);
+        _seenGlobalIds.add(_currentQuestions[_currentQuestionIndex].id);
       } else if (_gameMode == GameMode.endless) {
-        _seenEndlessIds.add(_currentQuestions[_currentQuestionIndex].id);
+        _seenGlobalIds.add(_currentQuestions[_currentQuestionIndex].id);
       } else if (_gameMode == GameMode.event) {
         _seenEventIds.add(_currentQuestions[_currentQuestionIndex].id);
       }
