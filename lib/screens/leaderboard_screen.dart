@@ -369,6 +369,25 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
 
                         try {
                           var map = doc.data() as Map<String, dynamic>;
+                          
+                          // Haftalık Sıfırlama Kontrolü (Klasik Mod için)
+                          if (map['mode'] == 'Klasik Mod') {
+                            String docDateStr = map['date'] ?? '';
+                            if (docDateStr.isNotEmpty) {
+                              DateTime? docDate = DateTime.tryParse(docDateStr);
+                              if (docDate != null) {
+                                DateTime now = DateTime.now();
+                                DateTime docMonday = docDate.subtract(Duration(days: docDate.weekday - 1));
+                                DateTime thisMonday = now.subtract(Duration(days: now.weekday - 1));
+                                if (docMonday.year != thisMonday.year || docMonday.month != thisMonday.month || docMonday.day != thisMonday.day) {
+                                  // Geçen haftadan kalma skor, sil ve listeye ekleme
+                                  FirebaseFirestore.instance.collection('leaderboard').doc(doc.id).delete();
+                                  continue;
+                                }
+                              }
+                            }
+                          }
+
                           map['uid'] = prefix;
                           num sc = map['score'] ?? 0;
                           if (sc > 0) {
