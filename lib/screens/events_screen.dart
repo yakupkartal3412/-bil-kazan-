@@ -21,23 +21,24 @@ class EventsScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text(
-                'Kategorini Seç, 30 Soruyu Bil, 1000 💎 Kazan!',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.amberAccent,
-                  fontWeight: FontWeight.bold,
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Kategorini Seç, 30 Soruyu Bil, 1000 💎 Kazan!',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.amberAccent,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 20),
-              Expanded(
-                child: ListView(
-                  physics: const BouncingScrollPhysics(),
+                const SizedBox(height: 20),
+                ListView(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
                   children: [
                     _buildEventCard(
                       context,
@@ -157,8 +158,8 @@ class EventsScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
