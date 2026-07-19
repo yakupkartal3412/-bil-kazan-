@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'dart:io' show Platform;
+
 import 'package:flutter/material.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:flutter/foundation.dart';
@@ -71,6 +71,7 @@ class IapService {
 
       final Stream<List<PurchaseDetails>> purchaseUpdated = _inAppPurchase.purchaseStream;
       _subscription = purchaseUpdated.listen((purchaseDetailsList) {
+        if (!context.mounted) return;
         _listenToPurchaseUpdated(purchaseDetailsList, context);
       }, onDone: () {
         _subscription.cancel();
@@ -123,6 +124,7 @@ class IapService {
       }
     } catch (e) {
       debugPrint('Satın alma başlatılırken hata: $e');
+      if (!context.mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Satın alma başlatılamadı: $e')));
     }
   }
@@ -204,12 +206,10 @@ class IapService {
 }
 
 class MockPurchaseDetails extends PurchaseDetails {
-  MockPurchaseDetails({required String productID, required PurchaseStatus status})
+  MockPurchaseDetails({required super.productID, required super.status})
       : super(
-          productID: productID,
           purchaseID: 'mock_purchase_id',
           transactionDate: DateTime.now().millisecondsSinceEpoch.toString(),
           verificationData: PurchaseVerificationData(localVerificationData: '', serverVerificationData: '', source: ''),
-          status: status,
         );
 }

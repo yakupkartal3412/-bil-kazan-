@@ -30,8 +30,8 @@ class Question {
         diff = json['difficulty'];
       } else {
         String dStr = json['difficulty'].toString().toLowerCase();
-        if (dStr.contains('kolay')) diff = 1;
-        else if (dStr.contains('zor')) diff = 3;
+        if (dStr.contains('kolay')) { diff = 1; }
+        else if (dStr.contains('zor')) { diff = 3; }
       }
     }
 

@@ -14,7 +14,7 @@ import 'package:milyarder_test_oyunu/services/referral_service.dart';
 
 enum GameMode { classic, endless, event }
 
-class QuizProvider extends ChangeNotifier {
+class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   static const String _coinsKey = 'total_coins';
   static const String _moneyKey = 'total_money';
   static const String _highScoresKey = 'high_scores';
@@ -282,6 +282,53 @@ class QuizProvider extends ChangeNotifier {
   
   VoidCallback? onTick;
   VoidCallback? onTimeOut;
+  
+  bool _isSystemOverlayActive = false;
+  bool get isSystemOverlayActive => _isSystemOverlayActive;
+
+  void setSystemOverlayActive(bool active) {
+    _isSystemOverlayActive = active;
+    if (active) {
+      pauseTimer();
+    } else {
+      resumeTimer();
+    }
+  }
+
+  void pauseTimer() {
+    _timer?.cancel();
+  }
+
+  void resumeTimer() {
+    if (_timeLeft > 0 && !_isAnswered && !_isSuspense) {
+      _timer?.cancel();
+      _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+        if (_timeLeft > 0) {
+          _timeLeft--;
+          if (_timeLeft <= 5 && _timeLeft > 0) {
+            onTick?.call();
+          }
+          notifyListeners();
+        } else {
+          _timer?.cancel();
+          _isAnswered = true;
+          _selectedOptionIndex = -1; 
+          onTimeOut?.call();
+          notifyListeners();
+        }
+      });
+    }
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive || state == AppLifecycleState.hidden) {
+      if (!_isSystemOverlayActive && _timer != null && _timer!.isActive) {
+        _timer?.cancel();
+        submitAnswer(-1); // Automatically fail them for cheating
+      }
+    }
+  }
   int? _selectedOptionIndex;
   
   int _timeLeft = 20;
@@ -326,6 +373,7 @@ class QuizProvider extends ChangeNotifier {
   int get score => _currentQuestionIndex;
 
   QuizProvider() {
+    WidgetsBinding.instance.addObserver(this);
     _loadData();
   }
 
@@ -487,7 +535,7 @@ class QuizProvider extends ChangeNotifier {
     _giftSubscription?.cancel();
     _giftSubscription = FirebaseFirestore.instance.collection('users').doc(uid).snapshots().listen((snapshot) async {
       if (!snapshot.exists) return;
-      final data = snapshot.data() as Map<String, dynamic>?;
+      final data = snapshot.data();
       if (data == null) return;
 
       if (data.containsKey('pending_gifts') && data['pending_gifts'] is List) {
@@ -1672,6 +1720,7 @@ class QuizProvider extends ChangeNotifier {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _timer?.cancel();
     super.dispose();
   }

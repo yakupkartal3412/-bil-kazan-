@@ -209,7 +209,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 margin: const EdgeInsets.only(bottom: 12),
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                 decoration: BoxDecoration(
-                  color: Colors.orange.withOpacity(0.1),
+                  color: Colors.orange.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(15),
                   border: Border.all(color: Colors.orangeAccent, width: 2),
                 ),

@@ -13,7 +13,7 @@ void main() async {
   
   // We want EXACTLY 2369 questions in questions.json 
   // so that 2369 + 631 (event_questions) = 3000 TOTAL.
-  final int TARGET_LIMIT = 2369;
+  final int targetLimit = 2369;
 
   File mainFile = File('assets/questions.json');
   if (await mainFile.exists()) {
@@ -39,20 +39,20 @@ void main() async {
   List<FileSystemEntity> agentDirs = brainDir.listSync().whereType<Directory>().toList();
   
   for (var dir in agentDirs) {
-    if (finalQuestions.length >= TARGET_LIMIT) break; // Reached exactly our limit
+    if (finalQuestions.length >= targetLimit) break; // Reached exactly our limit
     
     Directory scratchDir = Directory('${dir.path}/scratch');
     if (scratchDir.existsSync()) {
       var files = scratchDir.listSync().whereType<File>().where((f) => f.path.contains(RegExp(r'b_new_\d+\.json$'))).toList();
       for (var f in files) {
-        if (finalQuestions.length >= TARGET_LIMIT) break; // Limit check inside file loop
+        if (finalQuestions.length >= targetLimit) break; // Limit check inside file loop
         try {
           String content = f.readAsStringSync();
           content = content.replaceAll('```json', '').replaceAll('```', '').trim();
           List<dynamic> items = json.decode(content);
           
           for (var q in items) {
-            if (finalQuestions.length >= TARGET_LIMIT) break; // Limit check per item
+            if (finalQuestions.length >= targetLimit) break; // Limit check per item
             
             if (q is Map && q.containsKey('text') && q.containsKey('options')) {
               List<dynamic> opts = q['options'];

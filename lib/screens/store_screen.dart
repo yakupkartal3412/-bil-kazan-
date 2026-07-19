@@ -107,7 +107,7 @@ class _StoreScreenState extends State<StoreScreen> {
               builder: (context, provider, child) => Row(
                 children: [
                   Text(
-                    '${provider.formattedTotalCoins}',
+                    provider.formattedTotalCoins,
                     style: const TextStyle(color: Colors.cyanAccent, fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                   const SizedBox(width: 4),
@@ -554,7 +554,7 @@ class _StoreScreenState extends State<StoreScreen> {
                 return _buildGridCard(
                   context: context,
                   product: p,
-                  title: p.title.split(' ').first + ' Elmas',
+                  title: '${p.title.split(' ').first} Elmas',
                   subtitle: p.price,
                   imagePath: img,
                   gradientColors: [const Color(0xFF00C9FF), const Color(0xFF92FE9D)],
@@ -1035,10 +1035,10 @@ class _StoreScreenState extends State<StoreScreen> {
             onPressed: () {
               if (provider.hasRemovedAds) {
                   String actionType = '';
-                  if (label == 'Yarı Yarıya') actionType = 'joker_ff';
-                  else if (label == 'Telefon') actionType = 'joker_phone';
-                  else if (label == 'Seyirci') actionType = 'joker_aud';
-                  else actionType = 'joker_skip';
+                  if (label == 'Yarı Yarıya') { actionType = 'joker_ff'; }
+                  else if (label == 'Telefon') { actionType = 'joker_phone'; }
+                  else if (label == 'Seyirci') { actionType = 'joker_aud'; }
+                  else { actionType = 'joker_skip'; }
                   
                   if (provider.consumeVipAction(actionType)) {
                      onReward();

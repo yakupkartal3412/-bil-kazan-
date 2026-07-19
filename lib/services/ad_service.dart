@@ -1,6 +1,8 @@
 import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:provider/provider.dart';
+import '../providers/quiz_provider.dart';
 
 class AdService {
   static final AdService _instance = AdService._internal();
@@ -61,19 +63,29 @@ class AdService {
     );
   }
 
-  void showInterstitialAd({VoidCallback? onCompleted}) {
+  void showInterstitialAd({BuildContext? context, VoidCallback? onCompleted}) {
     if (_interstitialAd == null) {
       if (onCompleted != null) onCompleted();
       return;
     }
     
+    if (context != null && context.mounted) {
+      context.read<QuizProvider>().setSystemOverlayActive(true);
+    }
+    
     _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
+        if (context != null && context.mounted) {
+          context.read<QuizProvider>().setSystemOverlayActive(false);
+        }
         ad.dispose();
         loadInterstitialAd(); // Load next one
         if (onCompleted != null) onCompleted();
       },
       onAdFailedToShowFullScreenContent: (ad, err) {
+        if (context != null && context.mounted) {
+          context.read<QuizProvider>().setSystemOverlayActive(false);
+        }
         ad.dispose();
         loadInterstitialAd();
         if (onCompleted != null) onCompleted();
@@ -119,8 +131,15 @@ class AdService {
     
     int? pendingRewardAmount;
     
+    if (context.mounted) {
+      context.read<QuizProvider>().setSystemOverlayActive(true);
+    }
+    
     _rewardedAd!.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
+        if (context.mounted) {
+          context.read<QuizProvider>().setSystemOverlayActive(false);
+        }
         ad.dispose();
         loadRewardedAd();
         if (pendingRewardAmount != null) {
@@ -130,6 +149,9 @@ class AdService {
         }
       },
       onAdFailedToShowFullScreenContent: (ad, err) {
+        if (context.mounted) {
+          context.read<QuizProvider>().setSystemOverlayActive(false);
+        }
         ad.dispose();
         loadRewardedAd();
         if (onClosed != null) onClosed();

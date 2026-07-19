@@ -273,7 +273,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
         children: [
           Image.asset('assets/images/3d_diamond_clear_nobg.png', width: 26, height: 26),
           const SizedBox(width: 6),
-          Text('${provider.formattedTotalCoins}',
+          Text(provider.formattedTotalCoins,
               style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w800)),
           const SizedBox(width: 8),
           Container(

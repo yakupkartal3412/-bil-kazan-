@@ -346,7 +346,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
               width: 220, height: 220,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                gradient: RadialGradient(colors: [const Color(0xFF1E90FF).withOpacity(0.15), Colors.transparent]),
+                gradient: RadialGradient(colors: [const Color(0xFF1E90FF).withValues(alpha: 0.15), Colors.transparent]),
               ),
             ),
           ),
@@ -356,7 +356,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
               width: 260, height: 260,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                gradient: RadialGradient(colors: [const Color(0xFF7B2FFF).withOpacity(0.12), Colors.transparent]),
+                gradient: RadialGradient(colors: [const Color(0xFF7B2FFF).withValues(alpha: 0.12), Colors.transparent]),
               ),
             ),
           ),
@@ -478,7 +478,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
               ),
               boxShadow: [
                 BoxShadow(
-                  color: (isUrgent ? const Color(0xFFFF3D00) : const Color(0xFFFFB629)).withOpacity(0.5),
+                  color: (isUrgent ? const Color(0xFFFF3D00) : const Color(0xFFFFB629)).withValues(alpha: 0.5),
                   blurRadius: 14, spreadRadius: 1,
                 ),
               ],
@@ -511,7 +511,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
         border: Border.all(color: const Color(0xFFFFEE58), width: 2),
         boxShadow: [
           const BoxShadow(color: Color(0xFFBF6000), offset: Offset(0, 5), blurRadius: 0),
-          BoxShadow(color: const Color(0xFFFFB300).withOpacity(0.5), blurRadius: 20, spreadRadius: 2),
+          BoxShadow(color: const Color(0xFFFFB300).withValues(alpha: 0.5), blurRadius: 20, spreadRadius: 2),
         ],
       ),
       child: Column(
@@ -530,7 +530,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 3),
             decoration: BoxDecoration(
-              color: const Color(0xFF7F3000).withOpacity(0.85),
+              color: const Color(0xFF7F3000).withValues(alpha: 0.85),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Row(
@@ -560,15 +560,15 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
         borderRadius: BorderRadius.circular(22),
         border: Border.all(color: const Color(0xFF1E90FF), width: 2),
         boxShadow: [
-          BoxShadow(color: const Color(0xFF1E90FF).withOpacity(0.35), blurRadius: 20, spreadRadius: 2),
+          BoxShadow(color: const Color(0xFF1E90FF).withValues(alpha: 0.35), blurRadius: 20, spreadRadius: 2),
         ],
       ),
       child: Stack(
         children: [
           Positioned(top: 0, left: 0,
-            child: Icon(Icons.auto_awesome, color: const Color(0xFF1E90FF).withOpacity(0.3), size: 18)),
+            child: Icon(Icons.auto_awesome, color: const Color(0xFF1E90FF).withValues(alpha: 0.3), size: 18)),
           Positioned(top: 0, right: 0,
-            child: Icon(Icons.auto_awesome, color: const Color(0xFF1E90FF).withOpacity(0.3), size: 18)),
+            child: Icon(Icons.auto_awesome, color: const Color(0xFF1E90FF).withValues(alpha: 0.3), size: 18)),
           Center(
             child: SingleChildScrollView(
               child: Column(
@@ -665,8 +665,8 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
           border: Border.all(color: borderColor, width: 2),
           boxShadow: [
             if (glowColor != null)
-              BoxShadow(color: glowColor.withOpacity(0.5), blurRadius: 14, spreadRadius: 1),
-            BoxShadow(color: Colors.black.withOpacity(0.4), blurRadius: 4, offset: const Offset(0, 3)),
+              BoxShadow(color: glowColor.withValues(alpha: 0.5), blurRadius: 14, spreadRadius: 1),
+            BoxShadow(color: Colors.black.withValues(alpha: 0.4), blurRadius: 4, offset: const Offset(0, 3)),
           ],
         ),
         child: Row(
@@ -681,7 +681,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
                 width: 36, height: 36,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: letterColor.withOpacity(0.15),
+                  color: letterColor.withValues(alpha: 0.15),
                   border: Border.all(color: letterColor, width: 1.5),
                 ),
                 child: Center(
@@ -732,7 +732,7 @@ class _SparklesPainter extends CustomPainter {
     for (final s in _sparkles) {
       final t = (progress * s.speed + s.offset) % 1.0;
       final opacity = (sin(t * 2 * pi) * 0.5 + 0.5);
-      paint.color = Colors.white.withOpacity(opacity * 0.55);
+      paint.color = Colors.white.withValues(alpha: opacity * 0.55);
       canvas.drawCircle(Offset(s.x * size.width, s.y * size.height), s.radius, paint);
     }
   }

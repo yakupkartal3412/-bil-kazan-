@@ -104,7 +104,7 @@ class _AdminScreenState extends State<AdminScreen> {
             ),
             const SizedBox(height: 15),
             DropdownButtonFormField<String>(
-              value: _selectedGiftType,
+              initialValue: _selectedGiftType,
               dropdownColor: AppColors.surface,
               style: const TextStyle(color: Colors.white),
               decoration: const InputDecoration(
