@@ -170,7 +170,7 @@ class QuizProvider extends ChangeNotifier {
   void clearWeeklyRewardMessage() { _weeklyRewardMessage = ''; notifyListeners(); }
 
   int get iqLevel {
-    if (_totalQuestionsAnswered == 0) return 10; // Başlangıç IQ'su
+    if (_totalQuestionsAnswered == 0) return 5; // Başlangıç IQ'su
     
     int wrongAnswers = _totalQuestionsAnswered - _totalCorrectAnswers;
     
@@ -181,9 +181,9 @@ class QuizProvider extends ChangeNotifier {
     // Tecrübe bonusu logaritmik olarak artsın
     double iqBonus = dart_math.sqrt(netScore) * 2.0;
     
-    int iq = (10 + iqBonus).toInt();
+    int iq = (5 + iqBonus).toInt();
     if (iq > 160) iq = 160;
-    if (iq < 10) iq = 10;
+    if (iq < 5) iq = 5;
     return iq;
   }
 
