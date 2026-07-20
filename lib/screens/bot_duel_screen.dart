@@ -334,6 +334,7 @@ class _BotDuelScreenState extends State<BotDuelScreen> {
   }
 
   void _evaluateRound() {
+    if (showResult) return;
     roundTimer?.cancel();
     botTimer?.cancel();
 

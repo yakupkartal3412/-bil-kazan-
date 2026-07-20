@@ -61,7 +61,7 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
               final quizProvider = Provider.of<QuizProvider>(context, listen: false);
               if (quizProvider.totalCoins >= 50) {
                 await quizProvider.buyRoomCard();
-                if (mounted) {
+                if (ctx.mounted) {
                   Navigator.pop(ctx);
                   _requestRematch();
                 }
