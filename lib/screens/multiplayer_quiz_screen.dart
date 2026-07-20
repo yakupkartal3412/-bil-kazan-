@@ -186,7 +186,8 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
       _displayedOpponentScore = oppScoreCalculated;
     });
     
-    Future.delayed(const Duration(seconds: 3), () {
+    int delaySeconds = _currentIndex < 14 ? 3 : 1;
+    Future.delayed(Duration(seconds: delaySeconds), () {
       if (!mounted) return;
       if (_currentIndex < 14) {
         if (isHost) {
