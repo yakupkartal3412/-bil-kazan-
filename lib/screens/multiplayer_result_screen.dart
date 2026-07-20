@@ -270,6 +270,7 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
     int oppScore = mpProvider.isHost ? calculatedGuestScore : calculatedHostScore;
     
     String oppName = mpProvider.isHost ? (data['guestName'] ?? 'Rakip') : (data['hostName'] ?? 'Rakip');
+    String myName = mpProvider.isHost ? (data['hostName'] ?? 'Sen') : (data['guestName'] ?? 'Sen');
 
     String myAvatar = mpProvider.isHost ? (data['hostAvatar'] ?? 'assets/images/einstein_avatar.png') : (data['guestAvatar'] ?? 'assets/images/einstein_avatar.png');
     String oppAvatar = mpProvider.isHost ? (data['guestAvatar'] ?? 'assets/images/einstein_avatar.png') : (data['hostAvatar'] ?? 'assets/images/einstein_avatar.png');
