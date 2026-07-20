@@ -1,5 +1,6 @@
 import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
 import '../providers/quiz_provider.dart';
@@ -15,22 +16,31 @@ class AdService {
   int _rewardedLoadAttempts = 0;
   RewardedAd? _rewardedAd;
 
-  // Real Banner ID
+  // Banner ID
   static String get bannerAdUnitId {
+    if (kDebugMode) {
+      return Platform.isAndroid ? 'ca-app-pub-3940256099942544/6300978111' : 'ca-app-pub-3940256099942544/2934735716';
+    }
     if (Platform.isAndroid) return 'ca-app-pub-1158679315546899/4060029466';
     if (Platform.isIOS) return 'ca-app-pub-3940256099942544/2934735716'; // iOS test for now
     throw UnsupportedError('Unsupported platform');
   }
 
-  // Real Interstitial IDs
+  // Interstitial ID
   static String get interstitialAdUnitId {
+    if (kDebugMode) {
+      return Platform.isAndroid ? 'ca-app-pub-3940256099942544/1033173712' : 'ca-app-pub-3940256099942544/4411468910';
+    }
     if (Platform.isAndroid) return 'ca-app-pub-1158679315546899/6723254194';
     if (Platform.isIOS) return 'ca-app-pub-3940256099942544/4411468910'; // iOS test for now
     throw UnsupportedError('Unsupported platform');
   }
 
-  // Real Rewarded IDs
+  // Rewarded ID
   static String get rewardedAdUnitId {
+    if (kDebugMode) {
+      return Platform.isAndroid ? 'ca-app-pub-3940256099942544/5224354917' : 'ca-app-pub-3940256099942544/1712485313';
+    }
     if (Platform.isAndroid) return 'ca-app-pub-1158679315546899/9956042330';
     if (Platform.isIOS) return 'ca-app-pub-3940256099942544/1712485313'; // iOS test for now
     throw UnsupportedError('Unsupported platform');
