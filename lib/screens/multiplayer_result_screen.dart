@@ -6,6 +6,7 @@ import '../providers/multiplayer_provider.dart';
 import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
 import 'multiplayer_quiz_screen.dart';
+import '../services/ad_service.dart';
 
 class MultiplayerResultScreen extends StatefulWidget {
   const MultiplayerResultScreen({super.key});
@@ -34,9 +35,7 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
     final mpProvider = Provider.of<MultiplayerProvider>(context, listen: false);
     
     if (quizProvider.roomCards <= 0) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Yeterli Oda Kartınız yok! Marketten satın alabilirsiniz.'), backgroundColor: Colors.red)
-      );
+      _showBuyRoomCardDialog();
       return;
     }
     
@@ -44,6 +43,64 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
     mpProvider.requestRematch();
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Rövanş isteği gönderildi. Rakip bekleniyor...'), backgroundColor: Colors.orange)
+    );
+  }
+
+  void _showBuyRoomCardDialog() {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.surface,
+        title: const Text('Oda Kartı Gerekli', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+        content: const Text('Rövanş isteyebilmek için 1 Oda Kartına ihtiyacınız var. Satın almak ister misiniz?', style: TextStyle(color: Colors.white70)),
+        actionsAlignment: MainAxisAlignment.center,
+        actionsOverflowDirection: VerticalDirection.down,
+        actions: [
+          ElevatedButton.icon(
+            onPressed: () async {
+              final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+              if (quizProvider.totalCoins >= 50) {
+                await quizProvider.buyRoomCard();
+                if (mounted) {
+                  Navigator.pop(ctx);
+                  _requestRematch();
+                }
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Yeterli Elmasınız yok! (50 Elmas gerekli)'), backgroundColor: Colors.red)
+                );
+              }
+            },
+            icon: const Icon(Icons.diamond, color: Colors.cyanAccent, size: 20),
+            label: const Text('50 Elmas ile Al', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent.shade700),
+          ),
+          const SizedBox(height: 8),
+          ElevatedButton.icon(
+            onPressed: () {
+              Navigator.pop(ctx);
+              AdService().showRewardedAd(
+                context: context,
+                onRewardEarned: (amount) async {
+                  final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+                  await quizProvider.giveFreeRoomCard();
+                  if (mounted) {
+                    _requestRematch();
+                  }
+                },
+              );
+            },
+            icon: const Icon(Icons.play_circle_fill, color: Colors.white, size: 20),
+            label: const Text('Video İzle (Ücretsiz)', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.green.shade600),
+          ),
+          const SizedBox(height: 8),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('İptal', style: TextStyle(color: Colors.grey)),
+          ),
+        ],
+      ),
     );
   }
 
