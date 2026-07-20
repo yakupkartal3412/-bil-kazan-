@@ -61,6 +61,8 @@ class MultiplayerProvider extends ChangeNotifier {
         'hostEmote': null,
         'guestEmote': null,
         'rematchRequestedBy': null,
+        'hostSeriesWins': 0,
+        'guestSeriesWins': 0,
       }).timeout(const Duration(seconds: 5), onTimeout: () {
         throw TimeoutException('Sunucuya bağlanılamadı. Lütfen internet bağlantınızı kontrol edin veya Firebase ayarlarınızı doğrulayın.');
       });
@@ -241,7 +243,22 @@ class MultiplayerProvider extends ChangeNotifier {
           bool hFin = _roomData!['hostFinished'] ?? false;
           bool gFin = _roomData!['guestFinished'] ?? false;
           if (hFin && gFin && _isHost) {
-            _firestore.collection('rooms').doc(_roomId).update({'status': 'finished'});
+            int hScore = _roomData!['hostScore'] ?? 0;
+            int gScore = _roomData!['guestScore'] ?? 0;
+            int hWins = _roomData!['hostSeriesWins'] ?? 0;
+            int gWins = _roomData!['guestSeriesWins'] ?? 0;
+
+            if (hScore > gScore) {
+              hWins++;
+            } else if (gScore > hScore) {
+              gWins++;
+            }
+
+            _firestore.collection('rooms').doc(_roomId).update({
+              'status': 'finished',
+              'hostSeriesWins': hWins,
+              'guestSeriesWins': gWins
+            });
           }
         }
         

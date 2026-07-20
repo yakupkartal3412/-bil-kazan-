@@ -279,6 +279,11 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
     
     bool isWin = myScore > oppScore;
     bool isDraw = myScore == oppScore;
+    
+    int hostSeriesWins = data['hostSeriesWins'] ?? 0;
+    int guestSeriesWins = data['guestSeriesWins'] ?? 0;
+    int mySeriesWins = mpProvider.isHost ? hostSeriesWins : guestSeriesWins;
+    int oppSeriesWins = mpProvider.isHost ? guestSeriesWins : hostSeriesWins;
 
     return Scaffold(
       backgroundColor: AppColors.appPurpleBg,
@@ -294,11 +299,29 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 20),
-                  child: !isFinished 
-                  ? Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const CircularProgressIndicator(color: Colors.amberAccent),
+                  child: Column(
+                    children: [
+                      if (mySeriesWins > 0 || oppSeriesWins > 0)
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                          margin: const EdgeInsets.only(bottom: 20),
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(colors: [Colors.orange, Colors.deepOrange]),
+                            borderRadius: BorderRadius.circular(20),
+                            boxShadow: [
+                              BoxShadow(color: Colors.orange, blurRadius: 10, spreadRadius: 2)
+                            ]
+                          ),
+                          child: Text(
+                            '🏆 SERİ: Sen $mySeriesWins - $oppSeriesWins Rakip',
+                            style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      !isFinished 
+                      ? Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const CircularProgressIndicator(color: Colors.amberAccent),
                     const SizedBox(height: 20),
                     Text('$oppName\'in testi bitirmesi bekleniyor...', style: const TextStyle(color: Colors.white, fontSize: 18)),
                     const SizedBox(height: 10),
@@ -445,9 +468,11 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
                     const SizedBox(height: 40),
                   ],
                 ),
-              ),
+              ],
             ),
           ),
+        ),
+      ),
           
           if (_currentEmote != null)
               Center(

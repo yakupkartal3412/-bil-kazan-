@@ -326,6 +326,11 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     
     final currentQ = _questions[_currentIndex];
     
+    int hostSeriesWins = data['hostSeriesWins'] ?? 0;
+    int guestSeriesWins = data['guestSeriesWins'] ?? 0;
+    int mySeriesWins = mpProvider.isHost ? hostSeriesWins : guestSeriesWins;
+    int oppSeriesWins = mpProvider.isHost ? guestSeriesWins : hostSeriesWins;
+    
     int myScore = _score;
     String opponentName = mpProvider.isHost ? (data['guestName'] ?? 'Rakip') : (data['hostName'] ?? 'Rakip');
     
@@ -431,7 +436,16 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       _buildScoreCard('Sen', myScore, Colors.greenAccent),
-                      _buildTimer(),
+                      Column(
+                        children: [
+                          _buildTimer(),
+                          if (mySeriesWins > 0 || oppSeriesWins > 0)
+                            Padding(
+                              padding: const EdgeInsets.only(top: 4),
+                              child: Text('Seri: $mySeriesWins - $oppSeriesWins', style: const TextStyle(color: Colors.amberAccent, fontSize: 13, fontWeight: FontWeight.bold)),
+                            ),
+                        ],
+                      ),
                       _buildScoreCard(opponentName, _displayedOpponentScore, Colors.redAccent),
                     ],
                   ),
