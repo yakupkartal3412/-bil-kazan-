@@ -303,22 +303,25 @@ class DuelMenuScreen extends StatelessWidget {
                       ],
                       border: Border.all(color: Colors.amberAccent, width: 1.5),
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.emoji_events, color: Colors.white, size: 28),
-                        SizedBox(width: 12),
-                        Text(
-                          'VIP ŞAMPİYONLAR TABLOSU', 
-                          style: TextStyle(
-                            color: Colors.white, 
-                            fontWeight: FontWeight.w900, 
-                            fontSize: 15,
-                            letterSpacing: 1.2,
-                            shadows: [Shadow(color: Colors.black54, blurRadius: 4, offset: Offset(1, 2))]
-                          )
-                        ),
-                      ],
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.emoji_events, color: Colors.white, size: 28),
+                          SizedBox(width: 12),
+                          Text(
+                            'VIP ŞAMPİYONLAR TABLOSU', 
+                            style: TextStyle(
+                              color: Colors.white, 
+                              fontWeight: FontWeight.w900, 
+                              fontSize: 15,
+                              letterSpacing: 1.2,
+                              shadows: [Shadow(color: Colors.black54, blurRadius: 4, offset: Offset(1, 2))]
+                            )
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
