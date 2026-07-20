@@ -130,11 +130,14 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: AppColors.appPurpleBg,
       bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
-            child: Column(
-              children: [
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+                  child: Column(
+                    children: [
                 // Top Banner
                 _buildTopBanner(context),
                 const SizedBox(height: 16),
@@ -285,12 +288,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
-              
-              // Bottom Bar Icons
-              _buildBottomIcons(context),
             ],
           ),
         ),
+              ),
+            ),
+            _buildBottomIcons(context),
+          ],
         ),
       ),
     );
