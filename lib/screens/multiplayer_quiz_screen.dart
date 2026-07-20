@@ -334,6 +334,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     
     int myScore = _score;
     String opponentName = mpProvider.isHost ? (data['guestName'] ?? 'Rakip') : (data['hostName'] ?? 'Rakip');
+    String myName = mpProvider.isHost ? (data['hostName'] ?? 'Sen') : (data['guestName'] ?? 'Sen');
     
     String myAvatar = mpProvider.isHost ? (data['hostAvatar'] ?? 'assets/images/einstein_avatar.png') : (data['guestAvatar'] ?? 'assets/images/einstein_avatar.png');
     String oppAvatar = mpProvider.isHost ? (data['guestAvatar'] ?? 'assets/images/einstein_avatar.png') : (data['hostAvatar'] ?? 'assets/images/einstein_avatar.png');
@@ -436,7 +437,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      _buildScoreCard('Sen', myScore, Colors.greenAccent),
+                      _buildScoreCard(myName, myScore, Colors.greenAccent),
                       Column(
                         children: [
                           _buildTimer(),

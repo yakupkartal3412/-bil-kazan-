@@ -313,7 +313,7 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
                             ]
                           ),
                           child: Text(
-                            '🏆 SERİ: Sen $mySeriesWins - $oppSeriesWins Rakip',
+                            '🏆 SERİ: $myName $mySeriesWins - $oppSeriesWins $oppName',
                             style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                         ),
@@ -389,7 +389,7 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
                                   backgroundImage: AssetImage(myAvatar),
                                 ),
                                 const SizedBox(height: 12),
-                                Text('Sen', style: TextStyle(color: isWin ? Colors.amberAccent : Colors.white, fontSize: 16, fontWeight: FontWeight.bold), maxLines: 1, overflow: TextOverflow.ellipsis),
+                                Text(myName, style: TextStyle(color: isWin ? Colors.amberAccent : Colors.white, fontSize: 16, fontWeight: FontWeight.bold), maxLines: 1, overflow: TextOverflow.ellipsis),
                                 const SizedBox(height: 8),
                                 Text('$myScore', style: TextStyle(color: isWin ? Colors.amberAccent : Colors.white, fontSize: 28, fontWeight: FontWeight.w900)),
                               ],
