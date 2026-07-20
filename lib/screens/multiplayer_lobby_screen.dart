@@ -533,6 +533,11 @@ class _MultiplayerLobbyScreenState extends State<MultiplayerLobbyScreen> {
 
   Widget _buildPlayerCard(String? name, String? avatar, String role) {
     bool isEmpty = name == null;
+    String? avatarPath = avatar;
+    if (avatarPath != null && !avatarPath.startsWith('assets')) {
+      avatarPath = 'assets/images/$avatarPath';
+    }
+    
     return Column(
       children: [
         CircleAvatar(
@@ -541,7 +546,7 @@ class _MultiplayerLobbyScreenState extends State<MultiplayerLobbyScreen> {
           child: CircleAvatar(
             radius: 37,
             backgroundColor: AppColors.appPurpleBg,
-            backgroundImage: !isEmpty ? AssetImage('assets/images/$avatar') : null,
+            backgroundImage: !isEmpty && avatarPath != null ? AssetImage(avatarPath) : null,
             child: isEmpty ? const Icon(Icons.person_outline, size: 40, color: Colors.grey) : null,
           ),
         ),
