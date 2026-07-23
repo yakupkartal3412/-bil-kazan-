@@ -55,7 +55,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
+    if (state == AppLifecycleState.paused) {
       final provider = Provider.of<QuizProvider>(context, listen: false);
       if (!provider.isAnswered && provider.timeLeft > 0 && !provider.isSuspense) {
         // Hile Algılandı!

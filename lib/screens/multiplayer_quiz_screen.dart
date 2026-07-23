@@ -62,7 +62,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
   
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
+    if (state == AppLifecycleState.paused) {
       if (!_isAnswered && _timeLeft > 0) {
         _timer?.cancel();
         setState(() {
