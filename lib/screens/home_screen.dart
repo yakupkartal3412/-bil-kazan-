@@ -160,6 +160,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             title: 'Ödüller',
                             subtitle: '7 GÜNLÜK',
                             onTap: () {
+                              context.read<QuizProvider>().checkDailyReset();
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(builder: (context) => const DailyRewardsScreen()),

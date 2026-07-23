@@ -977,8 +977,8 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
         _cycleStatus = [1, 0, 0, 0, 0, 0, 0];
         _hasClaimedDailyLogin = false;
       } else {
-        DateTime startDate = DateTime.parse(_cycleStartDate);
-        DateTime currentDate = DateTime.parse(today);
+        DateTime startDate = DateTime.parse('${_cycleStartDate}T00:00:00Z');
+        DateTime currentDate = DateTime.parse('${today}T00:00:00Z');
         int daysSinceStart = currentDate.difference(startDate).inDays;
         
         if (daysSinceStart >= 7) {
@@ -1168,7 +1168,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       
       String today = DateTime.now().toString().split(' ')[0];
       if (_cycleStartDate.isNotEmpty) {
-        int d = DateTime.parse(today).difference(DateTime.parse(_cycleStartDate)).inDays;
+        int d = DateTime.parse('${today}T00:00:00Z').difference(DateTime.parse('${_cycleStartDate}T00:00:00Z')).inDays;
         if (d == dayIndex) {
           _hasClaimedDailyLogin = true;
         }
