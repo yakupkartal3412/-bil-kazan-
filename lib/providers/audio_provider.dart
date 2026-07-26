@@ -33,13 +33,13 @@ class AudioProvider extends ChangeNotifier with WidgetsBindingObserver {
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive || state == AppLifecycleState.hidden) {
+    if (state == AppLifecycleState.paused) {
       if (_isMusicEnabled) {
         _bgmPlayer.pause();
       }
     } else if (state == AppLifecycleState.resumed) {
       if (_isMusicEnabled) {
-        _bgmPlayer.resume();
+        resumeBgm();
       }
     }
   }
@@ -65,9 +65,16 @@ class AudioProvider extends ChangeNotifier with WidgetsBindingObserver {
       ),
     );
     await AudioPlayer.global.setAudioContext(audioContext);
+    await _bgmPlayer.setAudioContext(audioContext);
+    await _sfxPlayer.setAudioContext(audioContext);
     
     // Configure BGM player for looping
     await _bgmPlayer.setReleaseMode(ReleaseMode.loop);
+    _bgmPlayer.onPlayerComplete.listen((_) {
+      if (_isMusicEnabled) {
+        playBgm();
+      }
+    });
     
     if (_isMusicEnabled) {
       await playBgm();
@@ -78,6 +85,7 @@ class AudioProvider extends ChangeNotifier with WidgetsBindingObserver {
   Future<void> playBgm() async {
     if (!_isMusicEnabled) return;
     try {
+      if (_bgmPlayer.state == PlayerState.playing) return;
       await _bgmPlayer.play(AssetSource('audio/bg_music.mp3'), volume: 0.15);
     } catch (e) {
       // ignore: avoid_print
@@ -92,14 +100,12 @@ class AudioProvider extends ChangeNotifier with WidgetsBindingObserver {
   Future<void> resumeBgm() async {
     if (!_isMusicEnabled) return;
     try {
-      // Önce volume'u normale getir
       await _bgmPlayer.setVolume(0.15);
       final state = _bgmPlayer.state;
       if (state == PlayerState.paused) {
         await _bgmPlayer.resume();
       } else if (state != PlayerState.playing) {
-        // Durmuşsa baştan başlat
-        await _bgmPlayer.play(AssetSource('audio/bg_music.mp3'), volume: 0.15);
+        await playBgm();
       }
     } catch (e) {
       debugPrint('BGM Resume Error: $e');

@@ -90,8 +90,6 @@ class _SpinWheelScreenState extends State<SpinWheelScreen> with TickerProviderSt
   void _executeSpin(QuizProvider provider, bool isAdSpin) {
     if (_isSpinning) return;
     
-    context.read<AudioProvider>().pauseBgm();
-    
     setState(() {
       _isSpinning = true;
     });

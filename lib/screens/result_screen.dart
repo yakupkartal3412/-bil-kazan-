@@ -32,7 +32,6 @@ class _ResultScreenState extends State<ResultScreen> {
       }
 
       if (isGold) {
-        audio.duckBgmTemporarily();
         audio.playSfx('applause.mp3');
       } else if (isWin) {
         audio.playSfx('correct.mp3');
