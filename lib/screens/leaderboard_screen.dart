@@ -594,9 +594,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   void _showWeeklyRewardsInfo(BuildContext context) {
     bool isEndless = _selectedTab == 1;
     String modalTitle = isEndless ? 'SONSUZ MOD ÖDÜLLERİ' : 'KLASİK MOD ÖDÜLLERİ';
-    String reward1 = isEndless ? '1.500 + 10 Oda Kartı' : '3.000 + 10 Oda Kartı';
-    String reward2 = isEndless ? '1.000 + 7 Oda Kartı' : '2.000 + 7 Oda Kartı';
-    String reward3 = isEndless ? '750 + 5 Oda Kartı' : '1.000 + 5 Oda Kartı';
+    String reward1 = isEndless ? '4.000 + 10 Oda Kartı' : '5.000 + 10 Oda Kartı';
+    String reward2 = isEndless ? '3.000 + 7 Oda Kartı' : '2.500 + 7 Oda Kartı';
+    String reward3 = isEndless ? '1.500 + 5 Oda Kartı' : '1.000 + 5 Oda Kartı';
     String reward4 = '500 + 3 Oda Kartı';
 
     showDialog(

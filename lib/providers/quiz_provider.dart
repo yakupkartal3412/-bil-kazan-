@@ -1078,13 +1078,13 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     
     int userRank = allScores.indexWhere((s) => s['isUser'] == true) + 1;
     if (userRank == 1) {
-      _totalCoins += 3000;
+      _totalCoins += 5000;
       _roomCards += 10;
-      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 1. sırada tamamladın ve 3.000 Elmas + 10 Oda Kartı kazandın! 🏆";
+      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 1. sırada tamamladın ve 5.000 Elmas + 10 Oda Kartı kazandın! 🏆";
     } else if (userRank == 2) {
-      _totalCoins += 2000;
+      _totalCoins += 2500;
       _roomCards += 7;
-      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 2. sırada tamamladın ve 2.000 Elmas + 7 Oda Kartı kazandın! 🥈";
+      _weeklyRewardMessage = "Tebrikler! Geçen haftayı 2. sırada tamamladın ve 2.500 Elmas + 7 Oda Kartı kazandın! 🥈";
     } else if (userRank == 3) {
       _totalCoins += 1000;
       _roomCards += 5;
@@ -1119,17 +1119,17 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     int userEndlessRank = allEndlessScores.indexWhere((s) => s['isUser'] == true) + 1;
     String endlessMessage = "";
     if (userEndlessRank == 1) {
-      _totalCoins += 1500;
+      _totalCoins += 4000;
       _roomCards += 10;
-      endlessMessage = " Sonsuz Mod 1.si olarak ekstra 1.500 Elmas + 10 Oda Kartı kazandın!";
+      endlessMessage = " Sonsuz Mod 1.si olarak ekstra 4.000 Elmas + 10 Oda Kartı kazandın!";
     } else if (userEndlessRank == 2) {
-      _totalCoins += 1000;
+      _totalCoins += 3000;
       _roomCards += 7;
-      endlessMessage = " Sonsuz Mod 2.si olarak ekstra 1.000 Elmas + 7 Oda Kartı kazandın!";
+      endlessMessage = " Sonsuz Mod 2.si olarak ekstra 3.000 Elmas + 7 Oda Kartı kazandın!";
     } else if (userEndlessRank == 3) {
-      _totalCoins += 750;
+      _totalCoins += 1500;
       _roomCards += 5;
-      endlessMessage = " Sonsuz Mod 3.sü olarak ekstra 750 Elmas + 5 Oda Kartı kazandın!";
+      endlessMessage = " Sonsuz Mod 3.sü olarak ekstra 1.500 Elmas + 5 Oda Kartı kazandın!";
     } else if (userEndlessRank <= 10) {
       _totalCoins += 500;
       _roomCards += 3;
