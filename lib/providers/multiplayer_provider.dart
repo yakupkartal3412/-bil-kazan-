@@ -243,6 +243,7 @@ class MultiplayerProvider extends ChangeNotifier {
           bool hFin = _roomData!['hostFinished'] ?? false;
           bool gFin = _roomData!['guestFinished'] ?? false;
           if (hFin && gFin && _isHost) {
+            _roomData!['status'] = 'finished'; // Immediately prevent re-triggering locally
             int hScore = _roomData!['hostScore'] ?? 0;
             int gScore = _roomData!['guestScore'] ?? 0;
             int hWins = _roomData!['hostSeriesWins'] ?? 0;

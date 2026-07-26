@@ -65,11 +65,6 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     if (state == AppLifecycleState.paused) {
       if (!_isAnswered && _timeLeft > 0) {
         _timer?.cancel();
-        setState(() {
-          _isAnswered = true;
-          _timeLeft = 0;
-          _selectedIndex = -1;
-        });
         _submitAnswer(-1, -1);
       }
     }
@@ -118,7 +113,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
           Map guestAns = roomData['guestAnswers'] ?? {};
           if (!guestAns.containsKey(_currentIndex.toString())) {
             FirebaseFirestore.instance.collection('rooms').doc(mpProvider.roomId).update({
-              'guestAnswers.': -1,
+              'guestAnswers.$_currentIndex': -1,
             });
           }
         }

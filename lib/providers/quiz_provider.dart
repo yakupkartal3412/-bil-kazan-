@@ -1658,7 +1658,8 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       } else {
         // Technically shouldn't finish mid-game if they won a question, but just in case
         moneyString = "${prizeLadder[_currentQuestionIndex]} ₺";
-        moneyValue = int.parse(prizeLadder[_currentQuestionIndex].replaceAll('.', ''));
+        String cleanMoney = prizeLadder[_currentQuestionIndex].replaceAll('.', '').replaceAll('MİLYON', '000000').trim();
+        moneyValue = int.tryParse(cleanMoney) ?? 1000000;
         coinsEarned = _currentMatchDiamonds;
       }
     } else if (_gameMode == GameMode.event) {
