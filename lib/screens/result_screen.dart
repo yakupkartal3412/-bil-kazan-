@@ -20,11 +20,21 @@ class _ResultScreenState extends State<ResultScreen> {
       final provider = context.read<QuizProvider>();
       final audio = context.read<AudioProvider>();
       final score = provider.score;
-      final percentage = provider.gameMode == GameMode.classic ? (score / 15) * 100 : (score / 50) * 100;
-      if (percentage == 100) {
+      bool isGold = false;
+      bool isWin = false;
+      if (provider.gameMode == GameMode.classic) {
+        isGold = score == 15;
+        isWin = score >= 5;
+      } else {
+        final percentage = (score / 50) * 100;
+        isGold = percentage == 100;
+        isWin = percentage >= 60;
+      }
+
+      if (isGold) {
         audio.duckBgmTemporarily();
         audio.playSfx('applause.mp3');
-      } else if (percentage >= 60) {
+      } else if (isWin) {
         audio.playSfx('correct.mp3');
       } else {
         audio.playSfx('wrong.wav');
@@ -49,7 +59,6 @@ class _ResultScreenState extends State<ResultScreen> {
               final score = provider.score;
               final total = provider.gameMode == GameMode.classic ? 15 : null;
               final coinsEarned = provider.lastEarnedCoins;
-              final percentage = provider.gameMode == GameMode.classic ? (score / 15) * 100 : (score / 50) * 100;
               
               // Parse money safely for animation
               final moneyStr = provider.lastEarnedMoney.replaceAll(' ₺', '').replaceAll('₺', '').replaceAll('.', '').trim();
@@ -57,15 +66,49 @@ class _ResultScreenState extends State<ResultScreen> {
               
               String message;
               String trophyAsset;
-              if (percentage == 100) {
-                message = "Mükemmel! Hepsini Bildin 🏆";
-                trophyAsset = 'assets/images/trophy_gold.png';
-              } else if (percentage >= 60) {
-                message = "Tebrikler! İyi İş Çıkardın 👏";
-                trophyAsset = 'assets/images/trophy_silver.png';
+              Color borderColor;
+              Color glowColor;
+
+              if (provider.gameMode == GameMode.classic) {
+                if (score == 15) {
+                  message = "1 MİLYON ₺ KAZANDIN! 🏆";
+                  trophyAsset = 'assets/images/trophy_gold.png';
+                  borderColor = Colors.amberAccent;
+                  glowColor = Colors.amber.withValues(alpha: 0.5);
+                } else if (score >= 10) {
+                  message = "Tebrikler! 2. Barajı Aştın! 🥈";
+                  trophyAsset = 'assets/images/trophy_silver.png';
+                  borderColor = Colors.grey.shade300;
+                  glowColor = Colors.cyanAccent.withValues(alpha: 0.3);
+                } else if (score >= 5) {
+                  message = "Tebrikler! 1. Barajı Aştın! 🥉";
+                  trophyAsset = 'assets/images/trophy_bronze.png';
+                  borderColor = Colors.orangeAccent;
+                  glowColor = Colors.deepOrange.withValues(alpha: 0.3);
+                } else {
+                  message = "Daha İyisini Yapabilirsin 💪";
+                  trophyAsset = 'assets/images/trophy_bronze.png';
+                  borderColor = Colors.brown.shade400;
+                  glowColor = Colors.transparent;
+                }
               } else {
-                message = "Daha İyisini Yapabilirsin 💪";
-                trophyAsset = 'assets/images/trophy_bronze.png';
+                final percentage = (score / 50) * 100;
+                if (percentage == 100) {
+                  message = "Mükemmel! Hepsini Bildin 🏆";
+                  trophyAsset = 'assets/images/trophy_gold.png';
+                  borderColor = Colors.amberAccent;
+                  glowColor = Colors.amber.withValues(alpha: 0.5);
+                } else if (percentage >= 60) {
+                  message = "Tebrikler! İyi İş Çıkardın 👏";
+                  trophyAsset = 'assets/images/trophy_silver.png';
+                  borderColor = Colors.grey.shade300;
+                  glowColor = Colors.white24;
+                } else {
+                  message = "Daha İyisini Yapabilirsin 💪";
+                  trophyAsset = 'assets/images/trophy_bronze.png';
+                  borderColor = Colors.brown.shade400;
+                  glowColor = Colors.transparent;
+                }
               }
 
               return Center(
@@ -91,13 +134,13 @@ class _ResultScreenState extends State<ResultScreen> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: percentage == 100 ? Colors.amberAccent : (percentage >= 60 ? Colors.grey.shade300 : Colors.brown.shade400), 
+                              color: borderColor, 
                               width: 4
                             ),
                             boxShadow: [
                               const BoxShadow(color: Colors.black54, blurRadius: 10, offset: Offset(0, 5)),
                               BoxShadow(
-                                color: percentage == 100 ? Colors.amber.withValues(alpha: 0.4) : (percentage >= 60 ? Colors.white24 : Colors.transparent), 
+                                color: glowColor, 
                                 blurRadius: 30, 
                                 spreadRadius: 5
                               ),
