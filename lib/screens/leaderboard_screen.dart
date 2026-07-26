@@ -592,6 +592,13 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     );
   }
   void _showWeeklyRewardsInfo(BuildContext context) {
+    bool isEndless = _selectedTab == 1;
+    String modalTitle = isEndless ? 'SONSUZ MOD ÖDÜLLERİ' : 'KLASİK MOD ÖDÜLLERİ';
+    String reward1 = isEndless ? '1.500 + 10 Oda Kartı' : '3.000 + 10 Oda Kartı';
+    String reward2 = isEndless ? '1.000 + 7 Oda Kartı' : '2.000 + 7 Oda Kartı';
+    String reward3 = isEndless ? '750 + 5 Oda Kartı' : '1.000 + 5 Oda Kartı';
+    String reward4 = '500 + 3 Oda Kartı';
+
     showDialog(
       context: context,
       builder: (context) {
@@ -627,30 +634,32 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Text(
-                      'HAFTALIK ÖDÜLLER',
-                      style: TextStyle(
+                    Text(
+                      modalTitle,
+                      style: const TextStyle(
                         color: Colors.amberAccent,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                         letterSpacing: 1.5,
                       ),
                     ),
                     const SizedBox(height: 12),
-                    const Text(
-                      "Her Pazar gecesi 23:59'da sıfırlanan liderlik tablosunda ilk 10'a gir, muhteşem ödülleri kap!",
+                    Text(
+                      isEndless 
+                          ? "Her Pazar gecesi 23:59'da sıfırlanan Sonsuz Mod sıralamasında ilk 10'a gir, özel ödülleri kap!"
+                          : "Her Pazar gecesi 23:59'da sıfırlanan Klasik Mod sıralamasında ilk 10'a gir, muhteşem ödülleri kap!",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white70, fontSize: 14, height: 1.4),
+                      style: const TextStyle(color: Colors.white70, fontSize: 14, height: 1.4),
                     ),
                     const SizedBox(height: 24),
-                    _buildRewardTier(1, '2.500 + 10 Bilet', const Color(0xFFFFD700), '1. SIRA', 'assets/images/trophy_gold.png'),
-                    _buildRewardTier(2, '1.500 + 5 Bilet', const Color(0xFFC0C0C0), '2. SIRA', 'assets/images/trophy_silver.png'),
-                    _buildRewardTier(3, '1.000 + 3 Bilet', const Color(0xFFCD7F32), '3. SIRA', 'assets/images/trophy_bronze.png'),
+                    _buildRewardTier(1, reward1, const Color(0xFFFFD700), '1. SIRA', 'assets/images/trophy_gold.png'),
+                    _buildRewardTier(2, reward2, const Color(0xFFC0C0C0), '2. SIRA', 'assets/images/trophy_silver.png'),
+                    _buildRewardTier(3, reward3, const Color(0xFFCD7F32), '3. SIRA', 'assets/images/trophy_bronze.png'),
                     const Padding(
                       padding: EdgeInsets.symmetric(vertical: 8.0),
                       child: Divider(color: Colors.white24, indent: 20, endIndent: 20),
                     ),
-                    _buildRewardTier(null, '250 + 1 Bilet', Colors.white, '4. - 10. SIRA', null),
+                    _buildRewardTier(null, reward4, Colors.white, '4. - 10. SIRA', null),
                     const SizedBox(height: 24),
                     GestureDetector(
                       onTap: () => Navigator.pop(context),
