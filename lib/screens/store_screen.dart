@@ -551,10 +551,13 @@ class _StoreScreenState extends State<StoreScreen> {
                 String img = 'assets/images/diamond_bag.png';
                 if (p.id == IapService.diamond5000) img = 'assets/images/diamond_chest.png';
                 if (p.id == IapService.diamond20000) img = 'assets/images/diamond_safe.png';
+                String titleText = '1.000 Elmas';
+                if (p.id == IapService.diamond5000) titleText = '5.000 Elmas';
+                if (p.id == IapService.diamond20000) titleText = '20.000 Elmas';
                 return _buildGridCard(
                   context: context,
                   product: p,
-                  title: '${p.title.split(' ').first} Elmas',
+                  title: titleText,
                   subtitle: p.price,
                   imagePath: img,
                   gradientColors: [const Color(0xFF00C9FF), const Color(0xFF92FE9D)],
