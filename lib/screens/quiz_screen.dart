@@ -62,7 +62,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
     } else if (state == AppLifecycleState.resumed && _pausedTime != null) {
       final elapsed = DateTime.now().difference(_pausedTime!).inSeconds;
       _pausedTime = null;
-      if (elapsed > 10) {
+      if (elapsed > 5) {
         final provider = Provider.of<QuizProvider>(context, listen: false);
         if (!provider.isAnswered && !provider.isSuspense) {
           provider.punishCheat();

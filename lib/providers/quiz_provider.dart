@@ -342,11 +342,11 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       if (_pausedTime != null && !_isAnswered && !_isSuspense) {
         final elapsed = DateTime.now().difference(_pausedTime!).inSeconds;
         _pausedTime = null;
-        if (elapsed > 10) {
-          // 10 saniyeden fazla arkada kalındıysa (cevap aramak için çıkıldıysa) hile say
+        if (elapsed > 5) {
+          // 5 saniyeden fazla arkada kalındıysa (cevap aramak için çıkıldıysa) hile say
           punishCheat();
         } else {
-          // 10 saniyeden az (hızlı bildirim bakma/ekran kilitlenme) -> süreden düş ve devam et
+          // 5 saniyeden az (hızlı bildirim bakma/ekran kilitlenme) -> süreden düş ve devam et
           _timeLeft = dart_math.max(0, _timeLeft - elapsed);
           if (_timeLeft == 0) {
             _isAnswered = true;
