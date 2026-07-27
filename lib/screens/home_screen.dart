@@ -102,13 +102,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         );
       }
-      
-      if (!provider.hasClaimedDailyLogin) {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const DailyRewardsScreen()),
-        );
-      }
     }
     
     if (!provider.isDataLoaded) {
@@ -159,6 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             icon: Icons.calendar_month,
                             title: 'Ödüller',
                             subtitle: '7 GÜNLÜK',
+                            showRedDot: !context.watch<QuizProvider>().hasClaimedDailyLogin,
                             onTap: () {
                               context.read<QuizProvider>().checkDailyReset();
                               Navigator.push(
