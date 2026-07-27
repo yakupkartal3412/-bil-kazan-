@@ -30,6 +30,8 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
   bool _isAnswered = false;
   int? _selectedIndex;
   bool _isRevealing = false;
+  bool _isNavigatingToResult = false;
+  DateTime? _lastQuestionStartTime;
   
   late List<dynamic> _questions;
   
@@ -71,7 +73,6 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
   }
 
   void _startTimer() {
-    final mpProvider = Provider.of<MultiplayerProvider>(context, listen: false);
     int baseTime = 20;
     var currentQuestion = _questions[_currentIndex];
     int charCount = currentQuestion['text'].toString().length;
@@ -85,6 +86,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     _isAnswered = false;
     _isRevealing = false;
     _selectedIndex = null;
+    _lastQuestionStartTime = DateTime.now();
     _timer?.cancel();
     
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
@@ -104,25 +106,14 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
         });
       }
     });
-
-    if (mpProvider.isHost) {
-      Future.delayed(Duration(seconds: _timeLeft + 5), () {
-        if (!mounted) return;
-        final roomData = mpProvider.roomData;
-        if (roomData != null) {
-          Map guestAns = roomData['guestAnswers'] ?? {};
-          if (!guestAns.containsKey(_currentIndex.toString())) {
-            FirebaseFirestore.instance.collection('rooms').doc(mpProvider.roomId).update({
-              'guestAnswers.$_currentIndex': -1,
-            });
-          }
-        }
-      });
-    }
   }
 
   void _submitAnswer(int index, int correctIndex) {
-    if (_isAnswered) return;
+    if (_isAnswered || _isRevealing) return;
+    if (_lastQuestionStartTime != null && DateTime.now().difference(_lastQuestionStartTime!).inMilliseconds < 350) {
+      // Prevent accidental double tap bled from previous question reveal
+      return;
+    }
     
     _timer?.cancel();
     setState(() {
@@ -135,6 +126,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
   }
 
   void _startReveal(dynamic hostChoiceRaw, dynamic guestChoiceRaw) {
+    if (_isRevealing || _isNavigatingToResult) return;
     setState(() {
       _isRevealing = true;
       _timer?.cancel();
@@ -181,16 +173,21 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
       _displayedOpponentScore = oppScoreCalculated;
     });
     
-    int delaySeconds = _currentIndex < 14 ? 3 : 1;
-    Future.delayed(Duration(seconds: delaySeconds), () {
-      if (!mounted) return;
-      if (_currentIndex < 14) {
-        if (isHost) {
-          mpProvider.moveToNextQuestion(_currentIndex + 1);
-        }
-      } else {
-        mpProvider.finishGame(_score);
+    if (_currentIndex >= 14) {
+      if (_isNavigatingToResult) return;
+      _isNavigatingToResult = true;
+      mpProvider.finishGame(_score);
+      Future.delayed(const Duration(milliseconds: 1500), () {
+        if (!mounted) return;
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const MultiplayerResultScreen()));
+      });
+      return;
+    }
+
+    Future.delayed(const Duration(seconds: 3), () {
+      if (!mounted) return;
+      if (isHost) {
+        mpProvider.moveToNextQuestion(_currentIndex + 1);
       }
     });
   }
@@ -328,6 +325,9 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     int oppSeriesWins = mpProvider.isHost ? guestSeriesWins : hostSeriesWins;
     
     int myScore = _score;
+    int liveOpponentScoreFromStore = mpProvider.isHost ? (data['guestScore'] ?? 0) : (data['hostScore'] ?? 0);
+    int oppScore = max(_displayedOpponentScore, liveOpponentScoreFromStore);
+    
     String opponentName = mpProvider.isHost ? (data['guestName'] ?? 'Rakip') : (data['hostName'] ?? 'Rakip');
     String myName = mpProvider.isHost ? (data['hostName'] ?? 'Sen') : (data['guestName'] ?? 'Sen');
     
@@ -443,7 +443,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
                             ),
                         ],
                       ),
-                      _buildScoreCard(opponentName, _displayedOpponentScore, Colors.redAccent),
+                      _buildScoreCard(opponentName, oppScore, Colors.redAccent),
                     ],
                   ),
                 ),
