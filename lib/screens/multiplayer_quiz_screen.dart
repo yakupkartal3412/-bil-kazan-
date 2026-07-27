@@ -261,16 +261,35 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
        WidgetsBinding.instance.addPostFrameCallback((_) {
          if (!mounted) return;
          _timer?.cancel();
-         // +100 💎 Elmas ödülü: provider vermez, buradan verilir
-         Provider.of<QuizProvider>(context, listen: false).addCoins(100);
+         final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+         
+         // Anti-Cheat: İlk 3 soru tamamlanmadan pes edilirse +100 elmas verilmez, sadece Oda Kartı iade edilir.
+         final bool eligibleForReward = _currentIndex >= 3;
+         if (eligibleForReward) {
+           quizProvider.addCoins(100);
+         } else {
+           quizProvider.giveFreeRoomCard();
+         }
+
          showDialog(
            context: context,
            barrierDismissible: false,
            builder: (ctx) => AlertDialog(
              backgroundColor: AppColors.surface,
-             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: const BorderSide(color: Colors.amberAccent, width: 2)),
-             title: const Text('Hükmen Galibiyet! 🏆', style: TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold)),
-             content: const Text('Rakip oyundan ayrıldı! Hükmen galip sayıldınız.\n\n+100 💎 Elmas hesabınıza eklendi!', style: TextStyle(color: Colors.white70, height: 1.5)),
+             shape: RoundedRectangleBorder(
+               borderRadius: BorderRadius.circular(20),
+               side: BorderSide(color: eligibleForReward ? Colors.amberAccent : Colors.cyanAccent, width: 2),
+             ),
+             title: Text(
+               eligibleForReward ? 'Hükmen Galibiyet! 🏆' : 'Oyun İptal Edildi 🛡️',
+               style: TextStyle(color: eligibleForReward ? Colors.amberAccent : Colors.cyanAccent, fontWeight: FontWeight.bold),
+             ),
+             content: Text(
+               eligibleForReward
+                   ? 'Rakip oyundan ayrıldı! Hükmen galip sayıldınız.\n\n+100 💎 Elmas hesabınıza eklendi!'
+                   : 'Rakip ilk 3 soru tamamlanmadan oyundan ayrıldı.\n\nOyun iptal edildi ve Oda Kartınız iade edildi.',
+               style: const TextStyle(color: Colors.white70, height: 1.5),
+             ),
              actions: [
                ElevatedButton(
                  onPressed: () {
@@ -278,11 +297,14 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
                    Navigator.pop(ctx);
                    Navigator.popUntil(context, (route) => route.isFirst);
                  },
-                 style: ElevatedButton.styleFrom(backgroundColor: Colors.amberAccent),
-                 child: const Text('Harika! 🎉', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+                 style: ElevatedButton.styleFrom(backgroundColor: eligibleForReward ? Colors.amberAccent : Colors.cyanAccent),
+                 child: Text(
+                   eligibleForReward ? 'Harika! 🎉' : 'Tamam 👍',
+                   style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                 ),
                )
-             ]
-           )
+             ],
+           ),
          );
        });
     }
