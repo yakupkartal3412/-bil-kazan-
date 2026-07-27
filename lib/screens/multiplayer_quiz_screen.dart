@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/multiplayer_provider.dart';
+import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
 import 'multiplayer_result_screen.dart';
 import '../providers/audio_provider.dart';
@@ -260,9 +261,8 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
        WidgetsBinding.instance.addPostFrameCallback((_) {
          if (!mounted) return;
          _timer?.cancel();
-         // BUG FIX 2: +100 ödül zaten multiplayer_provider'da finishGame'e ekleniyor
-         // Burada tekrar addCoins çağırmak ÇİFT ÖDÜL verir — kaldırıldı
-         // Sadece bildirim göster ve çık
+         // +100 💎 Elmas ödülü: provider vermez, buradan verilir
+         Provider.of<QuizProvider>(context, listen: false).addCoins(100);
          showDialog(
            context: context,
            barrierDismissible: false,
@@ -270,7 +270,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
              backgroundColor: AppColors.surface,
              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: const BorderSide(color: Colors.amberAccent, width: 2)),
              title: const Text('Hükmen Galibiyet! 🏆', style: TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold)),
-             content: const Text('Rakip oyundan ayrıldı! Hükmen galip sayıldınız (+100 💎 Elmas kazandınız).', style: TextStyle(color: Colors.white70)),
+             content: const Text('Rakip oyundan ayrıldı! Hükmen galip sayıldınız.\n\n+100 💎 Elmas hesabınıza eklendi!', style: TextStyle(color: Colors.white70, height: 1.5)),
              actions: [
                ElevatedButton(
                  onPressed: () {
