@@ -244,6 +244,8 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     _particleController.dispose();
     _timer?.cancel();
     _emoteTimer?.cancel();
+    // BUG FIX 1: Timer iptal edilmeden dispose çağrılmasın
+    // leaveRoom burada çağrılmaz — kullanıcı sonuç ekranına geçti demektir
     super.dispose();
   }
 
@@ -257,39 +259,45 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     if (data['status'] == 'abandoned' && !_hasAbandoned) {
        _hasAbandoned = true;
        WidgetsBinding.instance.addPostFrameCallback((_) {
-         if (mounted) {
-           final quizProvider = Provider.of<QuizProvider>(context, listen: false);
-           quizProvider.addCoins(100);
-           showDialog(
-             context: context,
-             barrierDismissible: false,
-             builder: (ctx) => AlertDialog(
-               backgroundColor: AppColors.surface,
-               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: const BorderSide(color: Colors.amberAccent, width: 2)),
-               title: const Text('Hükmen Galibiyet! 🏆', style: TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold)),
-               content: const Text('Rakip oyundan ayrıldı! Hükmen galip sayıldınız (+100 Elmas kazandınız).', style: TextStyle(color: Colors.white70)),
-               actions: [
-                 ElevatedButton(
-                   onPressed: () {
-                     Navigator.pop(ctx);
-                     Navigator.pop(context);
-                   },
-                   style: ElevatedButton.styleFrom(backgroundColor: Colors.amberAccent),
-                   child: const Text('Harika', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
-                 )
-               ]
-             )
-           );
-         }
+         if (!mounted) return;
+         _timer?.cancel();
+         // BUG FIX 2: +100 ödül zaten multiplayer_provider'da finishGame'e ekleniyor
+         // Burada tekrar addCoins çağırmak ÇİFT ÖDÜL verir — kaldırıldı
+         // Sadece bildirim göster ve çık
+         showDialog(
+           context: context,
+           barrierDismissible: false,
+           builder: (ctx) => AlertDialog(
+             backgroundColor: AppColors.surface,
+             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: const BorderSide(color: Colors.amberAccent, width: 2)),
+             title: const Text('Hükmen Galibiyet! 🏆', style: TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold)),
+             content: const Text('Rakip oyundan ayrıldı! Hükmen galip sayıldınız (+100 💎 Elmas kazandınız).', style: TextStyle(color: Colors.white70)),
+             actions: [
+               ElevatedButton(
+                 onPressed: () {
+                   Provider.of<MultiplayerProvider>(context, listen: false).leaveRoom();
+                   Navigator.pop(ctx);
+                   Navigator.popUntil(context, (route) => route.isFirst);
+                 },
+                 style: ElevatedButton.styleFrom(backgroundColor: Colors.amberAccent),
+                 child: const Text('Harika! 🎉', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+               )
+             ]
+           )
+         );
        });
     }
     
     int syncedIndex = data['currentQuestionIndex'] ?? 0;
-    if (syncedIndex > _currentIndex) {
+    // BUG FIX 3: Soru geçişi sadece bir kez tetiklensin — _isRevealing kontrolü eklendi
+    if (syncedIndex > _currentIndex && !_isRevealing) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
         setState(() {
           _currentIndex = syncedIndex;
           _isRevealing = false;
+          _isAnswered = false;
+          _selectedIndex = null;
         });
         _startTimer();
       });
@@ -301,9 +309,10 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     bool hostDidAnswer = hostAns.containsKey(_currentIndex.toString());
     bool guestDidAnswer = guestAns.containsKey(_currentIndex.toString());
     
-    if (hostDidAnswer && guestDidAnswer && !_isRevealing && syncedIndex == _currentIndex) {
+    // BUG FIX 4: _isAnswered da kontrol edilsin yoksa reveal çift tetiklenebilir
+    if (hostDidAnswer && guestDidAnswer && !_isRevealing && !_isNavigatingToResult && syncedIndex == _currentIndex) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (!_isRevealing) {
+        if (mounted && !_isRevealing && !_isNavigatingToResult) {
           _startReveal(hostAns[_currentIndex.toString()], guestAns[_currentIndex.toString()]);
         }
       });
