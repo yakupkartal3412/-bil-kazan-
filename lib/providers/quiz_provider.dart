@@ -21,6 +21,8 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   static const String _gamesPlayedKey = 'total_games_played';
   static const String _correctAnswersKey = 'total_correct_answers';
   static const String _totalAnsweredKey = 'total_questions_answered';
+  static const String _iqModeAnsweredKey = 'iq_mode_answered_v2';
+  static const String _iqModeCorrectKey = 'iq_mode_correct_v2';
   static const String _unlockedAvatarsKey = 'unlocked_avatars';
   static const String _activeAvatarKey = 'active_avatar';
   static const String _unlockedThemesKey = 'unlocked_themes';
@@ -172,34 +174,37 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   String get weeklyRewardMessage => _weeklyRewardMessage;
   void clearWeeklyRewardMessage() { _weeklyRewardMessage = ''; notifyListeners(); }
 
+  int _iqModeAnswered = 0;
+  int _iqModeCorrect = 0;
+
   int get iqLevel {
-    if (_totalQuestionsAnswered == 0) return 5; // Başlangıç IQ'su
+    if (_iqModeAnswered == 0) return 80;
     
-    int wrongAnswers = _totalQuestionsAnswered - _totalCorrectAnswers;
+    int wrongAnswers = _iqModeAnswered - _iqModeCorrect;
     
-    // Doğrular +1 puan, yanlışlar -1.5 puan (Cezalı sistem)
-    double netScore = (_totalCorrectAnswers * 1.0) - (wrongAnswers * 1.5);
-    if (netScore < 0) netScore = 0;
+    // Doğrular +1.0 net puan, Yanlışlar -3.0 puan (Zorlaştırılmış ağır cezalı sistem)
+    double netScore = (_iqModeCorrect * 1.0) - (wrongAnswers * 3.0);
+    if (netScore <= 0) return 80;
     
-    // Tecrübe bonusu logaritmik olarak artsın
-    double iqBonus = dart_math.sqrt(netScore) * 2.0;
+    // Zorlaştırılmış logaritmik yükselme (Sadece Klasik ve Sonsuz mod puan kazandırır)
+    double iqBonus = dart_math.pow(netScore, 0.45) * 1.45;
     
-    int iq = (5 + iqBonus).toInt();
+    int iq = (80 + iqBonus).toInt();
     if (iq > 160) iq = 160;
-    if (iq < 5) iq = 5;
+    if (iq < 70) iq = 70;
     return iq;
   }
 
   String get userTitle {
     int iq = iqLevel;
-    if (iq < 30) return 'Acemi';
-    if (iq < 60) return 'Çömez';
-    if (iq < 90) return 'Çırak';
-    if (iq < 110) return 'Öğrenci';
+    if (iq < 85) return 'Acemi';
+    if (iq < 95) return 'Çömez';
+    if (iq < 105) return 'Öğrenci';
+    if (iq < 115) return 'Çırak';
     if (iq < 130) return 'Bilgin';
     if (iq < 145) return 'Profesör';
     if (iq < 155) return 'Dahi';
-    return 'Efsane';
+    return 'Efsane 👑';
   }
   
   int get dailyGamesPlayed => _dailyGamesPlayed;
@@ -403,6 +408,8 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _totalGamesPlayed = prefs.getInt(_gamesPlayedKey) ?? 0;
     _totalCorrectAnswers = prefs.getInt(_correctAnswersKey) ?? 0;
     _totalQuestionsAnswered = prefs.getInt(_totalAnsweredKey) ?? 0;
+    _iqModeAnswered = prefs.getInt(_iqModeAnsweredKey) ?? 0;
+    _iqModeCorrect = prefs.getInt(_iqModeCorrectKey) ?? 0;
     _unlockedAvatars = prefs.getStringList(_unlockedAvatarsKey) ?? [];
     _activeAvatar = prefs.getString(_activeAvatarKey) ?? 'default_avatar.png';
     if (_activeAvatar == 'bell_avatar.png' && !_unlockedAvatars.contains('bell_avatar.png')) {
@@ -1558,10 +1565,19 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     }
     
     _totalQuestionsAnswered++;
-    if (selectedIndex == currentQuestion.correctOptionIndex) {
+    bool isCorrect = selectedIndex == currentQuestion.correctOptionIndex;
+    if (isCorrect) {
       _totalCorrectAnswers++;
       _dailyCorrectAnswers++;
       _handleCorrectAnswerDiamonds();
+    }
+    
+    // IQ seviyesi SADECE Klasik ve Sonsuz modlarda güncellenir!
+    if (_gameMode == GameMode.classic || _gameMode == GameMode.endless) {
+      _iqModeAnswered++;
+      if (isCorrect) {
+        _iqModeCorrect++;
+      }
     }
     
     _saveStats();
@@ -1574,6 +1590,8 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     final prefs = await SharedPreferences.getInstance();
     prefs.setInt(_totalAnsweredKey, _totalQuestionsAnswered);
     prefs.setInt(_correctAnswersKey, _totalCorrectAnswers);
+    prefs.setInt(_iqModeAnsweredKey, _iqModeAnswered);
+    prefs.setInt(_iqModeCorrectKey, _iqModeCorrect);
   }
 
   void walkAway() {
