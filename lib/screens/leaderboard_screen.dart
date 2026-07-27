@@ -390,32 +390,26 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     List<Map<String, dynamic>> parsedScores = [];
                     if (snapshot.hasData) {
                       for (var doc in snapshot.data!.docs) {
-                        String prefix = doc.id.split('_').first;
-                        if (prefix.length != 28) {
-                          FirebaseFirestore.instance.collection('leaderboard').doc(doc.id).delete();
-                          continue;
-                        }
-
                         try {
                           var map = doc.data() as Map<String, dynamic>;
+                          String docMode = map['mode'] ?? '';
+                          if (docMode != targetMode) continue;
                           
-                          if (map['mode'] == 'Klasik Mod' || map['mode'] == 'Sonsuz Mod') {
-                            String docDateStr = map['date'] ?? '';
-                            if (docDateStr.isNotEmpty) {
-                              DateTime? docDate = DateTime.tryParse(docDateStr);
-                              if (docDate != null) {
-                                DateTime now = DateTime.now();
-                                DateTime docMonday = docDate.subtract(Duration(days: docDate.weekday - 1));
-                                DateTime thisMonday = now.subtract(Duration(days: now.weekday - 1));
-                                if (docMonday.year != thisMonday.year || docMonday.month != thisMonday.month || docMonday.day != thisMonday.day) {
-                                  FirebaseFirestore.instance.collection('leaderboard').doc(doc.id).delete();
-                                  continue;
-                                }
+                          // Haftalık Sıfırlama Kontrolü (Sadece güncel haftayı göster)
+                          String docDateStr = map['date'] ?? '';
+                          if (docDateStr.isNotEmpty) {
+                            DateTime? docDate = DateTime.tryParse(docDateStr);
+                            if (docDate != null) {
+                              DateTime now = DateTime.now();
+                              DateTime docMonday = docDate.subtract(Duration(days: docDate.weekday - 1));
+                              DateTime thisMonday = now.subtract(Duration(days: now.weekday - 1));
+                              if (docMonday.year != thisMonday.year || docMonday.month != thisMonday.month || docMonday.day != thisMonday.day) {
+                                continue; // Eski haftanın skorunu atla
                               }
                             }
                           }
 
-                          map['uid'] = prefix;
+                          map['uid'] = doc.id.split('_').first;
                           num sc = map['score'] ?? 0;
                           if (sc > 0) {
                             parsedScores.add(map);
@@ -492,6 +486,32 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     
                     parsedScores = bestScores.values.toList();
                     parsedScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
+
+                    if (parsedScores.length < 10) {
+                      List<Map<String, dynamic>> defaultBots = targetMode == 'Klasik Mod' ? [
+                        {'score': 500000, 'moneyString': '500 Bin ₺', 'userName': 'A. Einstein', 'avatar': 'einstein_avatar.png'},
+                        {'score': 250000, 'moneyString': '250 Bin ₺', 'userName': 'N. Tesla', 'avatar': 'tesla_avatar.png'},
+                        {'score': 125000, 'moneyString': '125 Bin ₺', 'userName': 'I. Newton', 'avatar': 'newton_avatar.png'},
+                        {'score': 60000, 'moneyString': '60 Bin ₺', 'userName': 'M. Curie', 'avatar': 'curie_avatar.png'},
+                        {'score': 30000, 'moneyString': '30 Bin ₺', 'userName': 'Da Vinci', 'avatar': 'davinci_avatar.png'},
+                        {'score': 15000, 'moneyString': '15 Bin ₺', 'userName': 'S. Hawking', 'avatar': 'hawking_avatar.png'},
+                      ] : [
+                        {'score': 80, 'moneyString': '80 Soru', 'userName': 'A. Einstein', 'avatar': 'einstein_avatar.png'},
+                        {'score': 60, 'moneyString': '60 Soru', 'userName': 'N. Tesla', 'avatar': 'tesla_avatar.png'},
+                        {'score': 45, 'moneyString': '45 Soru', 'userName': 'I. Newton', 'avatar': 'newton_avatar.png'},
+                        {'score': 30, 'moneyString': '30 Soru', 'userName': 'M. Curie', 'avatar': 'curie_avatar.png'},
+                        {'score': 20, 'moneyString': '20 Soru', 'userName': 'Da Vinci', 'avatar': 'davinci_avatar.png'},
+                        {'score': 15, 'moneyString': '15 Soru', 'userName': 'S. Hawking', 'avatar': 'hawking_avatar.png'},
+                      ];
+                      
+                      for (var bot in defaultBots) {
+                        bool exists = parsedScores.any((s) => s['userName'] == bot['userName']);
+                        if (!exists) {
+                          parsedScores.add(bot);
+                        }
+                      }
+                      parsedScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
+                    }
 
                     return _buildLeaderboardView(parsedScores, provider);
                   },
