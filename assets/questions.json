@@ -3519,7 +3519,7 @@
       "1919",
       "1923"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 3,
     "difficulty": 1,
     "category": "Tarih"
   },
@@ -5254,7 +5254,7 @@
   },
   {
     "id": "413",
-    "text": "Dünya Kupası'nı kaldıran ilk ve tek Afrika asıllı takım kaptanı kimdir? (Güney Afrika vb. değil)",
+    "text": "Dünya Kupası'nı kaldıran ilk ve tek Afrika asıllı takım kaptanı kimdir? (Güney Afrika vb. değil)?",
     "options": [
       "Didier Drogba",
       "Samuel Eto'o",
@@ -21708,7 +21708,7 @@
       "1927",
       "1935"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 0
   },
   {
     "id": "10000000-0000-4000-8000-000000000045",
@@ -27213,14 +27213,14 @@
     "id": "e2f7b1d1-6c2a-4a5b-9b1c-3c8b4d8a5c18",
     "category": "Anadolu Kültürü",
     "difficulty": 2,
-    "text": "Eğer sol avucunuz kaşınıyorsa halk arasındaki yaygın batıl inanca göre bu ne anlama gelir?",
+    "text": "Geleneksel Türk batıl inancına göre 'sol avucun kaşınması' ne anlama gelir?",
     "options": [
-      "Sevilen biri görülecek",
-      "Eline para geçecek",
-      "Elinden para çıkacak",
-      "Bir hediye alınacak"
+      "Elden para çıkması",
+      "Eline para geçmesi",
+      "Sevilen birini görmek",
+      "Yola çıkmak"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 0
   },
   {
     "id": "e2f7b1d1-6c2a-4a5b-9b1c-3c8b4d8a5c19",

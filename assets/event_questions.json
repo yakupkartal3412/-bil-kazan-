@@ -2662,7 +2662,7 @@
       "İletişim kurmak ve vücut ısısını ayarlamak",
       "Düşmanlarından zehirli olduklarını göstermek"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 0
   },
   {
     "id": "f5db7f7b-944f-4d94-a21b-68d89ce6f2eb",
@@ -3728,7 +3728,7 @@
       "Trabzonspor",
       "Sivasspor"
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 0
   },
   {
     "id": "b3a3c99a-337b-402e-9d29-6de78e6be79a",
@@ -7585,14 +7585,14 @@
     "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0103",
     "category": "Anadolu Kültürü",
     "difficulty": 1,
-    "text": "'Sağ avuç kaşınırsa para gelir, sol avuç kaşınırsa...' batıl inancının devamı nasıldır?",
+    "text": "Geleneksel Türk batıl inancına göre 'sol avucun kaşınması' ne anlama gelir?",
     "options": [
-      "Misafir gelir",
-      "Para gider",
-      "Hastalık çıkar",
-      "Yolculuğa çıkılır"
+      "Elden para çıkması",
+      "Eline para geçmesi",
+      "Sevilen birini görmek",
+      "Yola çıkmak"
     ],
-    "correctOptionIndex": 1
+    "correctOptionIndex": 0
   },
   {
     "id": "e81d7c4a-6f01-4435-a6e5-4a11f26e0104",
