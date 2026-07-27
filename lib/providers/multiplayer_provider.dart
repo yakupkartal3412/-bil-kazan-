@@ -35,8 +35,22 @@ class MultiplayerProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      // 4 haneli rastgele kod üret
-      _roomId = (Random().nextInt(9000) + 1000).toString();
+      // BUG FIX 1: Kod çakışması — var olan bir oda kodunu üretmemek için kontrol et
+      String newCode = '';
+      for (int attempt = 0; attempt < 10; attempt++) {
+        String candidate = (Random().nextInt(9000) + 1000).toString();
+        final existing = await _firestore.collection('rooms').doc(candidate).get();
+        if (!existing.exists) {
+          newCode = candidate;
+          break;
+        }
+      }
+      if (newCode.isEmpty) {
+        _errorMessage = 'Oda kodu üretilemedi, tekrar deneyin.';
+        return false;
+      }
+
+      _roomId = newCode;
       _isHost = true;
 
       final roomRef = _firestore.collection('rooms').doc(_roomId);
@@ -63,14 +77,16 @@ class MultiplayerProvider extends ChangeNotifier {
         'rematchRequestedBy': null,
         'hostSeriesWins': 0,
         'guestSeriesWins': 0,
-      }).timeout(const Duration(seconds: 5), onTimeout: () {
-        throw TimeoutException('Sunucuya bağlanılamadı. Lütfen internet bağlantınızı kontrol edin veya Firebase ayarlarınızı doğrulayın.');
+      }).timeout(const Duration(seconds: 10), onTimeout: () {
+        throw TimeoutException('Sunucuya bağlanılamadı. Lütfen internet bağlantınızı kontrol edin.');
       });
 
       _listenToRoom();
       return true;
     } catch (e) {
       _errorMessage = 'Oda kurulamadı: $e';
+      _roomId = null;
+      _isHost = false;
       return false;
     } finally {
       _isLoading = false;
@@ -86,7 +102,7 @@ class MultiplayerProvider extends ChangeNotifier {
 
     try {
       final roomRef = _firestore.collection('rooms').doc(code);
-      final snapshot = await roomRef.get().timeout(const Duration(seconds: 5), onTimeout: () {
+      final snapshot = await roomRef.get().timeout(const Duration(seconds: 10), onTimeout: () {
         throw TimeoutException('Sunucuya bağlanılamadı.');
       });
 
@@ -98,6 +114,15 @@ class MultiplayerProvider extends ChangeNotifier {
       }
 
       final data = snapshot.data() as Map<String, dynamic>;
+      
+      // BUG FIX 2: Kendi odasına girmeyi engelle
+      if (data['hostId'] == currentUserId) {
+        _errorMessage = 'Kendi odasına katılamazsın!';
+        _isLoading = false;
+        notifyListeners();
+        return false;
+      }
+
       if (data['status'] != 'waiting') {
         _errorMessage = 'Oyun çoktan başlamış veya bitmiş.';
         _isLoading = false;
@@ -238,12 +263,11 @@ class MultiplayerProvider extends ChangeNotifier {
       if (snapshot.exists) {
         _roomData = snapshot.data() as Map<String, dynamic>;
         
-        // Eğer ikisi de bitirdiyse ve status hala playing ise finished yap
-        if (_roomData!['status'] == 'playing') {
+        // BUG FIX 3: Host tarafında bitişi işle — ama sadece bir kez tetikle
+        if (_roomData!['status'] == 'playing' && _isHost) {
           bool hFin = _roomData!['hostFinished'] ?? false;
           bool gFin = _roomData!['guestFinished'] ?? false;
-          if (hFin && gFin && _isHost) {
-            _roomData!['status'] = 'finished'; // Immediately prevent re-triggering locally
+          if (hFin && gFin) {
             int hScore = _roomData!['hostScore'] ?? 0;
             int gScore = _roomData!['guestScore'] ?? 0;
             int hWins = _roomData!['hostSeriesWins'] ?? 0;
