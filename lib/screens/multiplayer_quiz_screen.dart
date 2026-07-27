@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/multiplayer_provider.dart';
-import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
 import 'multiplayer_result_screen.dart';
 import '../providers/audio_provider.dart';
