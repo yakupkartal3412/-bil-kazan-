@@ -1542,7 +1542,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _isSuspense = true;
     notifyListeners();
     
-    await Future.delayed(const Duration(milliseconds: 500));
+    await Future.delayed(const Duration(seconds: 1));
     
     _isSuspense = false;
     _isAnswered = true;

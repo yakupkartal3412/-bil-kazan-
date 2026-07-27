@@ -93,88 +93,10 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
     if (!mounted) return;
     
     bool isCorrect = provider.selectedOptionIndex == provider.currentQuestion.correctOptionIndex;
-    bool isGameOver = !isCorrect || 
-                      (provider.gameMode == GameMode.classic && provider.currentQuestionIndex >= 14) || 
-                      (provider.gameMode == GameMode.event && provider.currentQuestionIndex >= 29) || 
-                      (provider.gameMode == GameMode.endless && !isCorrect);
-    
     if (isCorrect) {
       audioProvider.playSfx('correct.mp3');
-      if (isGameOver) {
-        provider.nextQuestion();
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
-      } else {
-        // Total delay is exactly 1 second (500ms suspense + 500ms reveal)
-        await Future.delayed(const Duration(milliseconds: 500));
-        if (mounted && provider.isAnswered) {
-          provider.nextQuestion();
-        }
-      }
     } else {
       audioProvider.playSfx('wrong.wav');
-      _showWrongAnswerDialogIfNeeded(provider);
-    }
-  }
-
-  void _showWrongAnswerDialogIfNeeded(QuizProvider provider) {
-    if (!provider.usedAdReviveThisGame && provider.gameMode != GameMode.event) {
-      showDialog(
-        context: context,
-        barrierDismissible: false,
-        builder: (ctx) => AlertDialog(
-          backgroundColor: const Color(0xFF0F2027),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-            side: const BorderSide(color: Colors.amber, width: 2),
-          ),
-          title: const Text('2. BİR ŞANS İSTER MİSİN?', style: TextStyle(color: Colors.amber, fontWeight: FontWeight.bold)),
-          content: const Text(
-            'Yanlış cevap verdin ancak elenmek zorunda değilsin! Kısa bir video izleyerek soruya kaldığın yerden (2. bir şansla) devam edebilirsin.',
-            style: TextStyle(color: Colors.white, fontSize: 16),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.pop(ctx);
-                provider.nextQuestion();
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
-              },
-              child: const Text('HAYIR, ELENEYİM', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold)),
-            ),
-            ElevatedButton.icon(
-              icon: Icon(provider.hasRemovedAds ? Icons.diamond : Icons.ondemand_video, color: Colors.white),
-              label: Text(provider.hasRemovedAds ? 'VIP BEDAVA DEVAM ET' : 'VİDEO İZLE VE DEVAM ET', style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: provider.hasRemovedAds ? Colors.green : Colors.amber,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-              ),
-              onPressed: () {
-                Navigator.pop(ctx);
-                if (provider.hasRemovedAds) {
-                  if (provider.consumeVipAction('game_revive')) {
-                    provider.reviveWithAd();
-                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('VIP Ayrıcalığı: Canlandınız!'), backgroundColor: Colors.green));
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Günlük VIP Revive sınırına ulaştınız! (Max 10)')));
-                    provider.walkAway();
-                  }
-                } else {
-                  AdService().showRewardedAd(
-                    context: context,
-                    onRewardEarned: (_) {
-                      provider.reviveWithAd();
-                    },
-                    onClosed: () {},
-                  );
-                }
-              },
-            ),
-          ],
-        ),
-      );
-    } else {
-      provider.nextQuestion();
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
     }
   }
 
