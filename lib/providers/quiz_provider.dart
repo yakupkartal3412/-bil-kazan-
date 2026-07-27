@@ -738,7 +738,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     // FIREBASE UPDATE: also update the global leaderboard documents for this user
     try {
       String finalId = FirebaseAuth.instance.currentUser?.uid ?? _deviceId;
-      final modes = ['classic', 'time', 'endless', 'event'];
+      final modes = ['Klasik Mod', 'Sonsuz Mod', 'Etkinlik Modu'];
       Map<String, dynamic> updateData = {};
       if (newName != null) updateData['userName'] = newName;
       if (newAvatar != null) updateData['avatar'] = newAvatar;
