@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
+import '../providers/audio_provider.dart';
 import '../providers/quiz_provider.dart';
 
 class AdService {
@@ -81,20 +82,25 @@ class AdService {
     
     if (context != null && context.mounted) {
       context.read<QuizProvider>().setSystemOverlayActive(true);
+      // Müziği durdur — reklam sesi ile çakışmasın
+      context.read<AudioProvider>().pauseBgm();
     }
     
     _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
         if (context != null && context.mounted) {
           context.read<QuizProvider>().setSystemOverlayActive(false);
+          // Müziği geri başlat
+          context.read<AudioProvider>().resumeBgm();
         }
         ad.dispose();
-        loadInterstitialAd(); // Load next one
+        loadInterstitialAd();
         if (onCompleted != null) onCompleted();
       },
       onAdFailedToShowFullScreenContent: (ad, err) {
         if (context != null && context.mounted) {
           context.read<QuizProvider>().setSystemOverlayActive(false);
+          context.read<AudioProvider>().resumeBgm();
         }
         ad.dispose();
         loadInterstitialAd();
@@ -143,12 +149,16 @@ class AdService {
     
     if (context.mounted) {
       context.read<QuizProvider>().setSystemOverlayActive(true);
+      // Müziği durdur — reklam sesi ile çakışmasın
+      context.read<AudioProvider>().pauseBgm();
     }
     
     _rewardedAd!.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
         if (context.mounted) {
           context.read<QuizProvider>().setSystemOverlayActive(false);
+          // Müziği geri başlat
+          context.read<AudioProvider>().resumeBgm();
         }
         ad.dispose();
         loadRewardedAd();
@@ -161,6 +171,7 @@ class AdService {
       onAdFailedToShowFullScreenContent: (ad, err) {
         if (context.mounted) {
           context.read<QuizProvider>().setSystemOverlayActive(false);
+          context.read<AudioProvider>().resumeBgm();
         }
         ad.dispose();
         loadRewardedAd();

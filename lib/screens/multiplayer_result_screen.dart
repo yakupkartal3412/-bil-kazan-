@@ -40,6 +40,7 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
     }
     
     _iRequestedRematch = true;
+    quizProvider.useRoomCard();
     mpProvider.requestRematch();
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Rövanş isteği gönderildi. Rakip bekleniyor...'), backgroundColor: Colors.orange)
@@ -180,9 +181,6 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
     // Rematch Logic handling
     if (data['status'] == 'playing') {
        WidgetsBinding.instance.addPostFrameCallback((_) {
-         if (_iRequestedRematch) {
-            quizProvider.useRoomCard();
-         }
          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const MultiplayerQuizScreen()));
        });
        return Scaffold(backgroundColor: AppColors.appPurpleBg, body: const Center(child: CircularProgressIndicator()));
@@ -229,8 +227,9 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
 
     if (requesterId == null && _iRequestedRematch) {
       _iRequestedRematch = false;
+      quizProvider.giveFreeRoomCard(); // Kart iade edilir
       WidgetsBinding.instance.addPostFrameCallback((_) {
-         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Rakip rövanşı reddetti.'), backgroundColor: Colors.red));
+         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Rakip rövanşı reddetti. Oda kartınız iade edildi.'), backgroundColor: Colors.red));
       });
     }
     

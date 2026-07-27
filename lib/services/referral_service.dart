@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'dart:math';
@@ -20,7 +21,7 @@ class ReferralService {
         return androidDeviceInfo.id; // Unique ID for Android device
       }
     } catch (e) {
-      print("Device Info Error: \$e");
+      debugPrint("Device Info Error: $e");
     }
     return 'unknown_device';
   }

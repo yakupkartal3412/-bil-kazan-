@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/multiplayer_provider.dart';
+import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
 import 'multiplayer_result_screen.dart';
 import '../providers/audio_provider.dart';
@@ -257,20 +258,24 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
        _hasAbandoned = true;
        WidgetsBinding.instance.addPostFrameCallback((_) {
          if (mounted) {
+           final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+           quizProvider.addCoins(100);
            showDialog(
              context: context,
              barrierDismissible: false,
              builder: (ctx) => AlertDialog(
                backgroundColor: AppColors.surface,
-               title: const Text('Maç İptal', style: TextStyle(color: Colors.white)),
-               content: const Text('Rakip oyundan ayrıldı. Galip sayılırsınız (veya maç iptal edildi).', style: TextStyle(color: Colors.white70)),
+               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: const BorderSide(color: Colors.amberAccent, width: 2)),
+               title: const Text('Hükmen Galibiyet! 🏆', style: TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold)),
+               content: const Text('Rakip oyundan ayrıldı! Hükmen galip sayıldınız (+100 Elmas kazandınız).', style: TextStyle(color: Colors.white70)),
                actions: [
-                 TextButton(
+                 ElevatedButton(
                    onPressed: () {
                      Navigator.pop(ctx);
                      Navigator.pop(context);
                    },
-                   child: const Text('Tamam', style: TextStyle(color: Colors.amberAccent)),
+                   style: ElevatedButton.styleFrom(backgroundColor: Colors.amberAccent),
+                   child: const Text('Harika', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
                  )
                ]
              )
@@ -466,7 +471,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
                 if (_isAnswered && !_isRevealing)
                    Padding(
                      padding: const EdgeInsets.only(bottom: 20),
-                     child: Text(' bekleniyor...', style: const TextStyle(color: Colors.amberAccent, fontSize: 16, fontStyle: FontStyle.italic)),
+                     child: Text('$opponentName bekleniyor...', style: const TextStyle(color: Colors.amberAccent, fontSize: 16, fontStyle: FontStyle.italic)),
                    ),
 
                 // ANSWER BUTTONS
