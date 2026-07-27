@@ -104,8 +104,8 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
         provider.nextQuestion();
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
       } else {
-        // Fast auto-advance on correct answer (400ms delay so user sees green option)
-        await Future.delayed(const Duration(milliseconds: 400));
+        // Total delay is exactly 1 second (500ms suspense + 500ms reveal)
+        await Future.delayed(const Duration(milliseconds: 500));
         if (mounted && provider.isAnswered) {
           provider.nextQuestion();
         }
