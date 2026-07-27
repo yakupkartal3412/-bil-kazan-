@@ -430,19 +430,6 @@
     "category": "Spor"
   },
   {
-    "id": "33",
-    "text": "Karada yaşayan en hızlı hayvan hangisidir?",
-    "options": [
-      "Aslan",
-      "Leopar",
-      "Çita",
-      "Kaplan"
-    ],
-    "correctOptionIndex": 2,
-    "difficulty": 1,
-    "category": "Doğa"
-  },
-  {
     "id": "34",
     "text": "Hangi hayvanın siyah beyaz çizgileri vardır?",
     "options": [
@@ -1171,19 +1158,6 @@
     "category": "Spor"
   },
   {
-    "id": "90",
-    "text": "İnsan vücudundaki en büyük organ hangisidir?",
-    "options": [
-      "Kalp",
-      "Karaciğer",
-      "Beyin",
-      "Deri"
-    ],
-    "correctOptionIndex": 3,
-    "difficulty": 2,
-    "category": "Bilim"
-  },
-  {
     "id": "91",
     "text": "Dünyada en çok konuşulan ana dil hangisidir?",
     "options": [
@@ -1613,19 +1587,6 @@
     "category": "Tarih"
   },
   {
-    "id": "124",
-    "text": "Dünyanın en büyük okyanusu hangisidir?",
-    "options": [
-      "Atlas Okyanusu",
-      "Pasifik Okyanusu",
-      "Hint Okyanusu",
-      "Arktik Okyanusu"
-    ],
-    "correctOptionIndex": 1,
-    "difficulty": 1,
-    "category": "Coğrafya"
-  },
-  {
     "id": "125",
     "text": "Küba Füze Krizi hangi iki ülke arasında yaşanmıştır?",
     "options": [
@@ -1988,19 +1949,6 @@
     "correctOptionIndex": 1,
     "difficulty": 3,
     "category": "Kültür"
-  },
-  {
-    "id": "153",
-    "text": "Mısır'ın başkenti neresidir?",
-    "options": [
-      "Kahire",
-      "İskenderiye",
-      "Luksor",
-      "Şarm El-Şeyh"
-    ],
-    "correctOptionIndex": 0,
-    "difficulty": 1,
-    "category": "Coğrafya"
   },
   {
     "id": "154",
@@ -2417,19 +2365,6 @@
     "correctOptionIndex": 1,
     "difficulty": 2,
     "category": "Doğa"
-  },
-  {
-    "id": "186",
-    "text": "Telefonu kim icat etmiştir?",
-    "options": [
-      "Thomas Edison",
-      "Alexander Graham Bell",
-      "Guglielmo Marconi",
-      "Nikola Tesla"
-    ],
-    "correctOptionIndex": 1,
-    "difficulty": 1,
-    "category": "Bilim"
   },
   {
     "id": "187",
@@ -3290,19 +3225,6 @@
     "category": "Coğrafya & Doğa"
   },
   {
-    "id": "255",
-    "text": "Japonya'nın başkenti neresidir?",
-    "options": [
-      "Seul",
-      "Tokyo",
-      "Pekin",
-      "Kyoto"
-    ],
-    "correctOptionIndex": 1,
-    "difficulty": 1,
-    "category": "Coğrafya & Doğa"
-  },
-  {
     "id": "256",
     "text": "Kızıldeniz'i Akdeniz'e bağlayan ünlü kanalın adı nedir?",
     "options": [
@@ -3482,19 +3404,6 @@
     ],
     "correctOptionIndex": 1,
     "difficulty": 1,
-    "category": "Tarih"
-  },
-  {
-    "id": "273",
-    "text": "Tarihte bilinen ilk yazılı antlaşma olan Kadeş Antlaşması, hangi iki devlet arasında imzalanmıştır?",
-    "options": [
-      "Hititler - Mısırlılar",
-      "Sümerler - Akadlar",
-      "Romalılar - Kartacalılar",
-      "Persler - Yunanlar"
-    ],
-    "correctOptionIndex": 0,
-    "difficulty": 2,
     "category": "Tarih"
   },
   {
@@ -3704,19 +3613,6 @@
     "correctOptionIndex": 0,
     "difficulty": 2,
     "category": "Tarih"
-  },
-  {
-    "id": "291",
-    "text": "Güneş Sistemi'ndeki en büyük gezegen hangisidir?",
-    "options": [
-      "Mars",
-      "Dünya",
-      "Jüpiter",
-      "Satürn"
-    ],
-    "correctOptionIndex": 2,
-    "difficulty": 1,
-    "category": "Bilim"
   },
   {
     "id": "293",
@@ -7383,19 +7279,6 @@
     "correctOptionIndex": 2,
     "difficulty": 2,
     "category": "Teknoloji & İnternet"
-  },
-  {
-    "id": "579",
-    "text": "İstiklal Marşı'mızın şairi kimdir?",
-    "options": [
-      "Namık Kemal",
-      "Mehmet Akif Ersoy",
-      "Ziya Gökalp",
-      "Orhan Veli Kanık"
-    ],
-    "correctOptionIndex": 1,
-    "difficulty": 1,
-    "category": "Genel Kültür"
   },
   {
     "id": "580",
@@ -27206,19 +27089,6 @@
       "Biriyle kavga edileceğinin",
       "Elinden para çıkacağının",
       "Misafir geleceğinin"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "id": "e2f7b1d1-6c2a-4a5b-9b1c-3c8b4d8a5c18",
-    "category": "Anadolu Kültürü",
-    "difficulty": 2,
-    "text": "Geleneksel Türk batıl inancına göre 'sol avucun kaşınması' ne anlama gelir?",
-    "options": [
-      "Elden para çıkması",
-      "Eline para geçmesi",
-      "Sevilen birini görmek",
-      "Yola çıkmak"
     ],
     "correctOptionIndex": 0
   },

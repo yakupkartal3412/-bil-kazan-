@@ -646,8 +646,8 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   }
   
   void _checkGlobalSeenReset() {
-    // 3000 soru baraji
-    if (_seenGlobalIds.length >= 2950) { // Biraz pay birakalim
+    // 3500+ soru barajı
+    if (_seenGlobalIds.length >= 3450) { // Tüm 3507 soru taranana kadar sıfırlanmasın
       _seenGlobalIds.clear();
       _saveSeenQuestions();
     }
