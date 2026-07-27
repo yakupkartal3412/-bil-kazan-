@@ -63,10 +63,16 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     _startTimer();
   }
   
+  DateTime? _pausedTime;
+
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state == AppLifecycleState.paused) {
-      if (!_isAnswered && _timeLeft > 0) {
+      _pausedTime = DateTime.now();
+    } else if (state == AppLifecycleState.resumed && _pausedTime != null) {
+      final elapsed = DateTime.now().difference(_pausedTime!).inSeconds;
+      _pausedTime = null;
+      if (elapsed > 10 && !_isAnswered) {
         _timer?.cancel();
         _submitAnswer(-1, -1);
       }

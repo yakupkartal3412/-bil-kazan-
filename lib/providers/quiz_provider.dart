@@ -328,12 +328,35 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     }
   }
 
+  DateTime? _pausedTime;
+
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive || state == AppLifecycleState.hidden) {
+    // Bildirimler/Sistem popup'ları sadece 'inactive' veya 'hidden' tetikler - bunlarda CEZA VERİLMEZ.
+    if (state == AppLifecycleState.paused) {
       if (!_isSystemOverlayActive && _timer != null && _timer!.isActive) {
         _timer?.cancel();
-        submitAnswer(-1); // Automatically fail them for cheating
+        _pausedTime = DateTime.now();
+      }
+    } else if (state == AppLifecycleState.resumed) {
+      if (_pausedTime != null && !_isAnswered && !_isSuspense) {
+        final elapsed = DateTime.now().difference(_pausedTime!).inSeconds;
+        _pausedTime = null;
+        if (elapsed > 10) {
+          // 10 saniyeden fazla arkada kalındıysa (cevap aramak için çıkıldıysa) hile say
+          punishCheat();
+        } else {
+          // 10 saniyeden az (hızlı bildirim bakma/ekran kilitlenme) -> süreden düş ve devam et
+          _timeLeft = dart_math.max(0, _timeLeft - elapsed);
+          if (_timeLeft == 0) {
+            _isAnswered = true;
+            _selectedOptionIndex = -1;
+            onTimeOut?.call();
+            notifyListeners();
+          } else {
+            resumeTimer();
+          }
+        }
       }
     }
   }

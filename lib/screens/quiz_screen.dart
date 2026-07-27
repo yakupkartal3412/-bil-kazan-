@@ -53,28 +53,35 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
     super.dispose();
   }
 
+  DateTime? _pausedTime;
+
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state == AppLifecycleState.paused) {
-      final provider = Provider.of<QuizProvider>(context, listen: false);
-      if (!provider.isAnswered && provider.timeLeft > 0 && !provider.isSuspense) {
-        // Hile Algılandı!
-        provider.punishCheat();
-        showDialog(
-          context: context,
-          barrierDismissible: false,
-          builder: (ctx) => AlertDialog(
-            backgroundColor: const Color(0xFF0F2027),
-            title: const Text('HİLE TESPİT EDİLDİ!', style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold)),
-            content: const Text('Soruyu çözerken uygulamadan çıktığın için otomatik olarak yanlış cevap vermiş sayıldın!', style: TextStyle(color: Colors.white)),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.pop(ctx),
-                child: const Text('TAMAM', style: TextStyle(color: Colors.white)),
-              )
-            ]
-          )
-        );
+      _pausedTime = DateTime.now();
+    } else if (state == AppLifecycleState.resumed && _pausedTime != null) {
+      final elapsed = DateTime.now().difference(_pausedTime!).inSeconds;
+      _pausedTime = null;
+      if (elapsed > 10) {
+        final provider = Provider.of<QuizProvider>(context, listen: false);
+        if (!provider.isAnswered && !provider.isSuspense) {
+          provider.punishCheat();
+          showDialog(
+            context: context,
+            barrierDismissible: false,
+            builder: (ctx) => AlertDialog(
+              backgroundColor: const Color(0xFF0F2027),
+              title: const Text('HİLE TESPİT EDİLDİ!', style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold)),
+              content: const Text('Uzun süre uygulamadan çıktığınız için bu soru yanlış sayıldı.', style: TextStyle(color: Colors.white)),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(ctx),
+                  child: const Text('TAMAM', style: TextStyle(color: Colors.white)),
+                )
+              ],
+            ),
+          );
+        }
       }
     }
   }
