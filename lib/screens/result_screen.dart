@@ -1,8 +1,10 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import '../providers/quiz_provider.dart';
 import '../providers/audio_provider.dart';
+import '../services/ad_service.dart';
 
 class ResultScreen extends StatefulWidget {
   const ResultScreen({super.key});
@@ -44,6 +46,7 @@ class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(

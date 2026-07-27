@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import '../providers/quiz_provider.dart';
+import '../services/ad_service.dart';
 import '../utils/constants.dart';
 import 'quiz_screen.dart';
 
@@ -10,6 +12,7 @@ class EventsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       backgroundColor: AppColors.appPurpleBg,
       appBar: AppBar(
         backgroundColor: Colors.transparent,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import '../providers/multiplayer_provider.dart';
 import '../providers/quiz_provider.dart';
@@ -210,6 +211,7 @@ class _MultiplayerLobbyScreenState extends State<MultiplayerLobbyScreen> {
     }
 
     return Scaffold(
+      bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       backgroundColor: const Color(0xFF0D0D1A), // Koyu premium arka plan
       body: Stack(
         children: [

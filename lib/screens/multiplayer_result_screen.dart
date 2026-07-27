@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import '../providers/multiplayer_provider.dart';
 import '../providers/quiz_provider.dart';
@@ -286,6 +287,7 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
     int oppSeriesWins = mpProvider.isHost ? guestSeriesWins : hostSeriesWins;
 
     return Scaffold(
+      bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       backgroundColor: AppColors.appPurpleBg,
       floatingActionButton: FloatingActionButton(
         onPressed: _showEmoteMenu,

@@ -232,6 +232,9 @@ class _CustomBannerAdState extends State<CustomBannerAd> {
 
   @override
   Widget build(BuildContext context) {
+    final hasRemovedAds = Provider.of<QuizProvider>(context).hasRemovedAds;
+    if (hasRemovedAds) return const SizedBox.shrink();
+
     if (_isLoaded && _bannerAd != null) {
       return Container(
         color: Colors.transparent,
@@ -240,6 +243,6 @@ class _CustomBannerAdState extends State<CustomBannerAd> {
         child: AdWidget(ad: _bannerAd!),
       );
     }
-    return const SizedBox(height: 50); // Empty space if not loaded yet
+    return const SizedBox.shrink();
   }
 }

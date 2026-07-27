@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import '../providers/quiz_provider.dart';
+import '../services/ad_service.dart';
 import 'split_screen_vs.dart';
 import 'bot_duel_screen.dart';
 import 'multiplayer_lobby_screen.dart';
@@ -11,6 +13,7 @@ class DuelMenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       backgroundColor: const Color(0xFF0D0D1A), // Çok koyu premium arka plan
       body: Stack(
         children: [

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart';
 import 'package:milyarder_test_oyunu/utils/constants.dart';
 import 'package:milyarder_test_oyunu/services/referral_service.dart';
 import 'package:milyarder_test_oyunu/providers/quiz_provider.dart';
+import 'package:milyarder_test_oyunu/services/ad_service.dart';
 import 'package:provider/provider.dart';
 
 class InviteScreen extends StatefulWidget {
@@ -84,6 +86,7 @@ class _InviteScreenState extends State<InviteScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
       backgroundColor: AppColors.background,
       appBar: AppBar(
         title: const Text('Davet Et & Kazan', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
