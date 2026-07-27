@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import '../services/ad_service.dart';
 import 'package:flutter/material.dart';
@@ -78,7 +79,13 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   }
 
   void _updateStream() {
-    String targetMode = _selectedTab == 0 ? 'Klasik Mod' : (_selectedTab == 1 ? 'Sonsuz Mod' : 'Geçmiş');
+    if (_selectedTab == 2) {
+      setState(() {
+        _leaderboardStream = null;
+      });
+      return;
+    }
+    String targetMode = _selectedTab == 0 ? 'Klasik Mod' : 'Sonsuz Mod';
     setState(() {
       _leaderboardStream = FirebaseFirestore.instance.collection('leaderboard').where('mode', isEqualTo: targetMode).snapshots();
     });
@@ -98,7 +105,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
       _timeUntilReset = nextReset.difference(now);
     });
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -176,8 +182,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                         ),
                     ],
                   ),
-                  Expanded(
-                    child: const Text(
+                  const Expanded(
+                    child: Text(
                       'SKOR TABLOSU',
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -344,10 +350,33 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
             ),
             const SizedBox(height: 16),
             
-            // Podium
+            // Leaderboard Main Content
             Consumer<QuizProvider>(
               builder: (context, provider, child) {
-                String targetMode = _selectedTab == 0 ? 'Klasik Mod' : (_selectedTab == 1 ? 'Sonsuz Mod' : 'Geçmiş');
+                if (_selectedTab == 2) {
+                  // Geçmiş Kazananlar Sekmesi
+                  List<Map<String, dynamic>> pastScores = provider.pastWinners.map((itemStr) {
+                    try {
+                      return Map<String, dynamic>.from(jsonDecode(itemStr));
+                    } catch (_) {
+                      return <String, dynamic>{'userName': 'Efsane Oyuncu', 'score': 1000000, 'moneyString': '1.0 Milyon ₺'};
+                    }
+                  }).toList();
+
+                  if (pastScores.isEmpty) {
+                    pastScores = [
+                      {'userName': 'A. Einstein', 'score': 1000000, 'moneyString': '1.0 Milyon ₺', 'avatar': 'einstein_avatar.png'},
+                      {'userName': 'N. Tesla', 'score': 750000, 'moneyString': '750 Bin ₺', 'avatar': 'tesla_avatar.png'},
+                      {'userName': 'I. Newton', 'score': 500000, 'moneyString': '500 Bin ₺', 'avatar': 'newton_avatar.png'},
+                      {'userName': 'M. Curie', 'score': 350000, 'moneyString': '350 Bin ₺', 'avatar': 'curie_avatar.png'},
+                      {'userName': 'Da Vinci', 'score': 250000, 'moneyString': '250 Bin ₺', 'avatar': 'davinci_avatar.png'},
+                    ];
+                  }
+
+                  return _buildLeaderboardView(pastScores, provider, isPastTab: true);
+                }
+
+                String targetMode = _selectedTab == 0 ? 'Klasik Mod' : 'Sonsuz Mod';
                 return StreamBuilder<QuerySnapshot>(
                   stream: _leaderboardStream,
                   builder: (context, snapshot) {
@@ -370,7 +399,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                         try {
                           var map = doc.data() as Map<String, dynamic>;
                           
-                          // Haftalık Sıfırlama Kontrolü (Klasik ve Sonsuz Mod için)
                           if (map['mode'] == 'Klasik Mod' || map['mode'] == 'Sonsuz Mod') {
                             String docDateStr = map['date'] ?? '';
                             if (docDateStr.isNotEmpty) {
@@ -380,7 +408,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                                 DateTime docMonday = docDate.subtract(Duration(days: docDate.weekday - 1));
                                 DateTime thisMonday = now.subtract(Duration(days: now.weekday - 1));
                                 if (docMonday.year != thisMonday.year || docMonday.month != thisMonday.month || docMonday.day != thisMonday.day) {
-                                  // Geçen haftadan kalma skor, sil ve listeye ekleme
                                   FirebaseFirestore.instance.collection('leaderboard').doc(doc.id).delete();
                                   continue;
                                 }
@@ -466,131 +493,332 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     parsedScores = bestScores.values.toList();
                     parsedScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
 
-                    int userRank = parsedScores.indexWhere((s) => s['userName'] == provider.userName);
-                    Map<String, dynamic>? userScoreMap;
-                    if (userRank != -1) {
-                      userScoreMap = parsedScores[userRank];
-                    }
-
-                    if (parsedScores.length > 50) {
-                      parsedScores = parsedScores.sublist(0, 50);
-                    }
-
-                return Expanded(
-                  child: Column(
-                    children: [
-                      // Podium
-                      Padding(
-                        padding: const EdgeInsets.only(top: 12.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            if (parsedScores.length > 1)
-                              Padding(
-                                padding: const EdgeInsets.only(right: 12),
-                                child: _buildPodiumItem(
-                                  rank: 2,
-                                  color: Colors.grey[300]!,
-                                  size: 50,
-                                  scoreMap: parsedScores[1],
-                                  provider: provider,
-                                ),
-                              ),
-                            if (parsedScores.isNotEmpty)
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 12),
-                                child: _buildPodiumItem(
-                                  rank: 1,
-                                  color: const Color(0xFFFFD700),
-                                  size: 70,
-                                  scoreMap: parsedScores[0],
-                                  provider: provider,
-                                ),
-                              ),
-                            if (parsedScores.length > 2)
-                              Padding(
-                                padding: const EdgeInsets.only(left: 12),
-                                child: _buildPodiumItem(
-                                  rank: 3,
-                                  color: const Color(0xFFCD7F32),
-                                  size: 50,
-                                  scoreMap: parsedScores[2],
-                                  provider: provider,
-                                ),
-                              ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      
-                      // List of other ranks
-                      Expanded(
-                        child: ListView.builder(
-                          padding: const EdgeInsets.symmetric(horizontal: 12),
-                          physics: const BouncingScrollPhysics(),
-                          itemCount: parsedScores.length > 3 ? parsedScores.length - 3 : 0,
-                          itemBuilder: (context, index) {
-                            final rank = index + 4;
-                            final scoreMap = parsedScores[index + 3];
-                            return _buildListRankItem(rank, scoreMap, provider);
-                          },
-                        ),
-                      ),
-                      
-                      // User's own rank sticky widget
-                      if (userScoreMap != null)
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const Padding(
-                                padding: EdgeInsets.only(left: 8.0, bottom: 2.0),
-                                child: Text('Senin Sıralaman:', style: TextStyle(color: Colors.cyanAccent, fontWeight: FontWeight.bold, fontSize: 11)),
-                              ),
-                              _buildListRankItem(userRank + 1, userScoreMap, provider, isHighlighted: true),
-                            ],
-                          ),
-                        ),
-                      
-                      // Bottom Kapat Button
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: GestureDetector(
-                          onTap: () => Navigator.pop(context),
-                          child: Container(
-                            width: double.infinity,
-                            padding: const EdgeInsets.symmetric(vertical: 10),
-                            decoration: BoxDecoration(
-                              color: AppColors.menuButtonBg,
-                              borderRadius: BorderRadius.circular(30),
-                              border: Border.all(color: Colors.white, width: 2),
-                            ),
-                            child: const Text(
-                              'Kapat',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                    return _buildLeaderboardView(parsedScores, provider);
+                  },
                 );
               },
-            );
-          },
-        ),
+            ),
           ],
         ),
       ),
     );
   }
+
+  String _getCleanUserName(Map<String, dynamic> scoreMap, QuizProvider provider) {
+    String? rawName = scoreMap['userName']?.toString().trim();
+    bool isUser = scoreMap['isUser'] == true || (rawName != null && rawName == provider.userName.trim());
+    if (isUser && provider.userName.trim().isNotEmpty) {
+      return provider.userName.trim();
+    }
+    if (rawName != null && rawName.isNotEmpty && rawName != 'null') {
+      return rawName;
+    }
+    String uid = scoreMap['uid']?.toString() ?? '';
+    if (uid.isNotEmpty && uid.length >= 4) {
+      return 'Oyuncu ${uid.substring(0, 4)}';
+    }
+    return 'Oyuncu Şampiyon';
+  }
+
+  Widget _buildLeaderboardView(List<Map<String, dynamic>> parsedScores, QuizProvider provider, {bool isPastTab = false}) {
+    int userRank = parsedScores.indexWhere((s) => s['userName'] == provider.userName || s['isUser'] == true);
+    Map<String, dynamic>? userScoreMap;
+    if (userRank != -1) {
+      userScoreMap = parsedScores[userRank];
+    }
+
+    List<Map<String, dynamic>> displayScores = parsedScores.length > 50 ? parsedScores.sublist(0, 50) : parsedScores;
+
+    return Expanded(
+      child: Column(
+        children: [
+          // Podium
+          Padding(
+            padding: const EdgeInsets.only(top: 12.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                if (displayScores.length > 1)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 12),
+                    child: _buildPodiumItem(
+                      rank: 2,
+                      color: Colors.grey[300]!,
+                      size: 50,
+                      scoreMap: displayScores[1],
+                      provider: provider,
+                    ),
+                  ),
+                if (displayScores.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: _buildPodiumItem(
+                      rank: 1,
+                      color: const Color(0xFFFFD700),
+                      size: 70,
+                      scoreMap: displayScores[0],
+                      provider: provider,
+                    ),
+                  ),
+                if (displayScores.length > 2)
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12),
+                    child: _buildPodiumItem(
+                      rank: 3,
+                      color: const Color(0xFFCD7F32),
+                      size: 50,
+                      scoreMap: displayScores[2],
+                      provider: provider,
+                    ),
+                  ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 10),
+          
+          // List of other ranks
+          Expanded(
+            child: ListView.builder(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              physics: const BouncingScrollPhysics(),
+              itemCount: displayScores.length > 3 ? displayScores.length - 3 : 0,
+              itemBuilder: (context, index) {
+                final rank = index + 4;
+                final scoreMap = displayScores[index + 3];
+                return _buildListRankItem(rank, scoreMap, provider);
+              },
+            ),
+          ),
+          
+          // User's own rank sticky widget
+          if (!isPastTab && userScoreMap != null)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.only(left: 8.0, bottom: 2.0),
+                    child: Text('Senin Sıralaman:', style: TextStyle(color: Colors.cyanAccent, fontWeight: FontWeight.bold, fontSize: 11)),
+                  ),
+                  _buildListRankItem(userRank + 1, userScoreMap, provider, isHighlighted: true),
+                ],
+              ),
+            ),
+          
+          // Bottom Kapat Button
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () => Navigator.pop(context),
+              child: Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                decoration: BoxDecoration(
+                  color: AppColors.menuButtonBg,
+                  borderRadius: BorderRadius.circular(30),
+                  border: Border.all(color: Colors.white, width: 2),
+                ),
+                child: const Text(
+                  'Kapat',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPodiumItem({required int rank, required Color color, required double size, required Map<String, dynamic> scoreMap, required QuizProvider provider}) {
+    String moneyString = scoreMap['moneyString'] ?? '${scoreMap['score']}';
+    if (scoreMap['mode'] == 'Sonsuz Mod') {
+      moneyString = '${scoreMap['score']} Soru';
+    } else if (scoreMap['mode'] == 'Klasik Mod' || scoreMap['mode'] == 'Geçmiş') {
+      num sc = scoreMap['score'] ?? 0;
+      if (sc >= 1000000) {
+        double mil = sc / 1000000;
+        moneyString = '${mil == mil.toInt() ? mil.toInt() : mil.toStringAsFixed(1)} Milyon ₺';
+      } else if (sc >= 1000) {
+        double k = sc / 1000;
+        moneyString = '${k == k.toInt() ? k.toInt() : k.toStringAsFixed(1)} Bin ₺';
+      } else {
+        moneyString = '${sc.toInt()} ₺';
+      }
+    }
+    String rankLabel = rank == 1 ? '🥇 1.' : (rank == 2 ? '🥈 2.' : '🥉 3.');
+    String displayName = _getCleanUserName(scoreMap, provider);
+    bool isUser = displayName == provider.userName;
+    
+    String rawAvatar = scoreMap['avatar'] ?? 'einstein_avatar.png';
+    if (isUser) rawAvatar = provider.activeAvatar;
+    String avatarPath = rawAvatar.startsWith('assets/images/') ? rawAvatar : 'assets/images/$rawAvatar';
+    
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+          decoration: BoxDecoration(
+            color: color.withValues(alpha: 0.2),
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(color: color.withValues(alpha: 0.6), width: 1),
+          ),
+          child: Text(
+            rankLabel,
+            style: TextStyle(color: color, fontWeight: FontWeight.w900, fontSize: 12),
+          ),
+        ),
+        const SizedBox(height: 4),
+        CircleAvatar(
+          radius: size / 2.5,
+          backgroundColor: color,
+          child: CircleAvatar(
+            radius: (size / 2.5) - 3,
+            backgroundColor: AppColors.appPurpleBg,
+            backgroundImage: AssetImage(avatarPath),
+          ),
+        ),
+        const SizedBox(height: 6),
+        Image.asset(
+          rank == 1 ? 'assets/images/trophy_gold.png' : (rank == 2 ? 'assets/images/trophy_silver.png' : 'assets/images/trophy_bronze.png'),
+          width: size / 1.8,
+          height: size / 1.8,
+        ),
+        const SizedBox(height: 4),
+        SizedBox(
+          width: size * 1.6,
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: PremiumBadge(
+              title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(displayName)),
+              fontSize: 7,
+            ),
+          ),
+        ),
+        const SizedBox(height: 2),
+        SizedBox(
+          width: size * 1.6,
+          child: Text(
+            displayName, 
+            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 10),
+            overflow: TextOverflow.ellipsis,
+            maxLines: 1,
+            softWrap: false,
+            textAlign: TextAlign.center,
+          ),
+        ),
+        SizedBox(
+          width: size * 1.6,
+          child: Text(
+            moneyString,
+            style: const TextStyle(color: Colors.white60, fontSize: 9),
+            overflow: TextOverflow.ellipsis,
+            maxLines: 1,
+            softWrap: false,
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildListRankItem(int rank, Map<String, dynamic> scoreMap, QuizProvider provider, {bool isHighlighted = false}) {
+    String moneyString = '';
+    if (scoreMap['mode'] == 'Sonsuz Mod') {
+      moneyString = '${scoreMap['score']} Soru';
+    } else if (scoreMap['mode'] == 'Klasik Mod' || scoreMap['mode'] == 'Geçmiş') {
+      num sc = scoreMap['score'] ?? 0;
+      if (sc >= 1000000) {
+        double mil = sc / 1000000;
+        moneyString = '${mil == mil.toInt() ? mil.toInt() : mil.toStringAsFixed(1)} Milyon ₺';
+      } else if (sc >= 1000) {
+        double k = sc / 1000;
+        moneyString = '${k == k.toInt() ? k.toInt() : k.toStringAsFixed(1)} Bin ₺';
+      } else {
+        moneyString = '${sc.toInt()} ₺';
+      }
+    } else {
+      moneyString = scoreMap['moneyString'] ?? '${scoreMap['score']} ₺';
+    }
+    String displayName = _getCleanUserName(scoreMap, provider);
+    bool isUser = displayName == provider.userName;
+    
+    String rawAvatar = scoreMap['avatar'] ?? 'einstein_avatar.png';
+    if (isUser) rawAvatar = provider.activeAvatar;
+    String avatarPath = rawAvatar.startsWith('assets/images/') ? rawAvatar : 'assets/images/$rawAvatar';
+    
+    return Container(
+      margin: const EdgeInsets.only(bottom: 3),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+      decoration: BoxDecoration(
+        color: isHighlighted ? Colors.cyan.withValues(alpha: 0.2) : AppColors.menuButtonBg,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: isHighlighted ? Colors.cyanAccent : AppColors.menuButtonBorder, width: isHighlighted ? 1.5 : 0.8),
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 32,
+            alignment: Alignment.center,
+            padding: const EdgeInsets.symmetric(vertical: 3),
+            decoration: BoxDecoration(
+              color: AppColors.rankRed.withValues(alpha: 0.85),
+              borderRadius: BorderRadius.circular(5),
+            ),
+            child: Text(
+              '#$rank', 
+              style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 11),
+            ),
+          ),
+          const SizedBox(width: 8),
+          CircleAvatar(
+            radius: 17,
+            backgroundImage: AssetImage(avatarPath),
+            backgroundColor: Colors.white12,
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Row(
+                  children: [
+                    PremiumBadge(
+                      title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(displayName)),
+                      fontSize: 7,
+                    ),
+                    const SizedBox(width: 5),
+                    Expanded(
+                      child: Text(
+                        displayName,
+                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 1),
+                Text(
+                  moneyString,
+                  style: const TextStyle(color: Colors.cyanAccent, fontWeight: FontWeight.bold, fontSize: 11),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   void _showWeeklyRewardsInfo(BuildContext context) {
     bool isEndless = _selectedTab == 1;
     String modalTitle = isEndless ? 'SONSUZ MOD ÖDÜLLERİ' : 'KLASİK MOD ÖDÜLLERİ';
@@ -811,186 +1039,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
         const SizedBox(height: 2),
         Text(label, style: const TextStyle(color: Colors.white38, fontSize: 8, fontWeight: FontWeight.bold, letterSpacing: 0.5)),
       ],
-    );
-  }
-
-  Widget _buildPodiumItem({required int rank, required Color color, required double size, required Map<String, dynamic> scoreMap, required QuizProvider provider}) {
-    String moneyString = scoreMap['moneyString'] ?? '${scoreMap['score']}';
-    if (scoreMap['mode'] == 'Sonsuz Mod') {
-      moneyString = '${scoreMap['score']} Soru';
-    } else if (scoreMap['mode'] == 'Klasik Mod' || scoreMap['mode'] == 'Geçmiş') {
-      num sc = scoreMap['score'] ?? 0;
-      if (sc >= 1000000) {
-        double mil = sc / 1000000;
-        moneyString = '${mil == mil.toInt() ? mil.toInt() : mil.toStringAsFixed(1)} Milyon ₺';
-      } else if (sc >= 1000) {
-        double k = sc / 1000;
-        moneyString = '${k == k.toInt() ? k.toInt() : k.toStringAsFixed(1)} Bin ₺';
-      } else {
-        moneyString = '${sc.toInt()} ₺';
-      }
-    }
-    String rankLabel = rank == 1 ? '🥇 1.' : (rank == 2 ? '🥈 2.' : '🥉 3.');
-    bool isUser = scoreMap['userName'] == provider.userName;
-    
-    String rawAvatar = scoreMap['avatar'] ?? 'einstein_avatar.png';
-    if (isUser) rawAvatar = provider.activeAvatar;
-    String avatarPath = rawAvatar.startsWith('assets/images/') ? rawAvatar : 'assets/images/$rawAvatar';
-    
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-          decoration: BoxDecoration(
-            color: color.withValues(alpha: 0.2),
-            borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: color.withValues(alpha: 0.6), width: 1),
-          ),
-          child: Text(
-            rankLabel,
-            style: TextStyle(color: color, fontWeight: FontWeight.w900, fontSize: 12),
-          ),
-        ),
-        const SizedBox(height: 4),
-        CircleAvatar(
-          radius: size / 2.5,
-          backgroundColor: color,
-          child: CircleAvatar(
-            radius: (size / 2.5) - 3,
-            backgroundColor: AppColors.appPurpleBg,
-            backgroundImage: AssetImage(avatarPath),
-          ),
-        ),
-        const SizedBox(height: 6),
-        Image.asset(
-          rank == 1 ? 'assets/images/trophy_gold.png' : (rank == 2 ? 'assets/images/trophy_silver.png' : 'assets/images/trophy_bronze.png'),
-          width: size / 1.8,
-          height: size / 1.8,
-        ),
-        const SizedBox(height: 4),
-        SizedBox(
-          width: size * 1.6,
-          child: FittedBox(
-            fit: BoxFit.scaleDown,
-            child: PremiumBadge(
-              title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(scoreMap['userName'] ?? '')),
-              fontSize: 7,
-            ),
-          ),
-        ),
-        const SizedBox(height: 2),
-        SizedBox(
-          width: size * 1.6,
-          child: Text(
-            isUser ? provider.userName : scoreMap['userName'] ?? 'Sen', 
-            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 10),
-            overflow: TextOverflow.ellipsis,
-            maxLines: 1,
-            softWrap: false,
-            textAlign: TextAlign.center,
-          ),
-        ),
-        SizedBox(
-          width: size * 1.6,
-          child: Text(
-            moneyString,
-            style: const TextStyle(color: Colors.white60, fontSize: 9),
-            overflow: TextOverflow.ellipsis,
-            maxLines: 1,
-            softWrap: false,
-            textAlign: TextAlign.center,
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildListRankItem(int rank, Map<String, dynamic> scoreMap, QuizProvider provider, {bool isHighlighted = false}) {
-    String moneyString = '';
-    if (scoreMap['mode'] == 'Sonsuz Mod') {
-      moneyString = '${scoreMap['score']} Soru';
-    } else if (scoreMap['mode'] == 'Klasik Mod' || scoreMap['mode'] == 'Geçmiş') {
-      num sc = scoreMap['score'] ?? 0;
-      if (sc >= 1000000) {
-        double mil = sc / 1000000;
-        moneyString = '${mil == mil.toInt() ? mil.toInt() : mil.toStringAsFixed(1)} Milyon ₺';
-      } else if (sc >= 1000) {
-        double k = sc / 1000;
-        moneyString = '${k == k.toInt() ? k.toInt() : k.toStringAsFixed(1)} Bin ₺';
-      } else {
-        moneyString = '${sc.toInt()} ₺';
-      }
-    } else {
-      moneyString = scoreMap['moneyString'] ?? '${scoreMap['score']} ₺';
-    }
-    bool isUser = scoreMap['userName'] == provider.userName;
-    
-    String rawAvatar = scoreMap['avatar'] ?? 'einstein_avatar.png';
-    if (isUser) rawAvatar = provider.activeAvatar;
-    String avatarPath = rawAvatar.startsWith('assets/images/') ? rawAvatar : 'assets/images/$rawAvatar';
-    
-    return Container(
-      margin: const EdgeInsets.only(bottom: 3),
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-      decoration: BoxDecoration(
-        color: isHighlighted ? Colors.cyan.withValues(alpha: 0.2) : AppColors.menuButtonBg,
-        borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: isHighlighted ? Colors.cyanAccent : AppColors.menuButtonBorder, width: isHighlighted ? 1.5 : 0.8),
-      ),
-      child: Row(
-        children: [
-          Container(
-            width: 32,
-            alignment: Alignment.center,
-            padding: const EdgeInsets.symmetric(vertical: 3),
-            decoration: BoxDecoration(
-              color: AppColors.rankRed.withValues(alpha: 0.85),
-              borderRadius: BorderRadius.circular(5),
-            ),
-            child: Text(
-              '#$rank', 
-              style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 11),
-            ),
-          ),
-          const SizedBox(width: 8),
-          CircleAvatar(
-            radius: 17,
-            backgroundImage: AssetImage(avatarPath),
-            backgroundColor: Colors.white12,
-          ),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Row(
-                  children: [
-                    PremiumBadge(
-                      title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(scoreMap['userName'] ?? '')),
-                      fontSize: 7,
-                    ),
-                    const SizedBox(width: 5),
-                    Expanded(
-                      child: Text(
-                        isUser ? provider.userName : scoreMap['userName'] ?? 'Oyuncu',
-                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 1),
-                Text(
-                  moneyString,
-                  style: const TextStyle(color: Colors.cyanAccent, fontWeight: FontWeight.bold, fontSize: 11),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
     );
   }
 }

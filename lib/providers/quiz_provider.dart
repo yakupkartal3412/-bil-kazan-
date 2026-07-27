@@ -475,6 +475,15 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _weeklyEndlessScore = prefs.getInt(_weeklyEndlessScoreKey) ?? 0;
     _lastWeeklyResetDate = prefs.getString(_lastWeeklyResetDateKey) ?? '';
     _pastWinners = prefs.getStringList(_pastWinnersKey) ?? [];
+    if (_pastWinners.isEmpty) {
+      _pastWinners = [
+        jsonEncode({'score': 1000000, 'userName': 'A. Einstein', 'avatar': 'einstein_avatar.png', 'moneyString': '1.0 Milyon ₺', 'mode': 'Klasik Mod'}),
+        jsonEncode({'score': 750000, 'userName': 'N. Tesla', 'avatar': 'tesla_avatar.png', 'moneyString': '750 Bin ₺', 'mode': 'Klasik Mod'}),
+        jsonEncode({'score': 500000, 'userName': 'I. Newton', 'avatar': 'newton_avatar.png', 'moneyString': '500 Bin ₺', 'mode': 'Klasik Mod'}),
+        jsonEncode({'score': 350000, 'userName': 'M. Curie', 'avatar': 'curie_avatar.png', 'moneyString': '350 Bin ₺', 'mode': 'Klasik Mod'}),
+        jsonEncode({'score': 250000, 'userName': 'Da Vinci', 'avatar': 'davinci_avatar.png', 'moneyString': '250 Bin ₺', 'mode': 'Klasik Mod'}),
+      ];
+    }
 
     try {
       final jsonString = await rootBundle.loadString('assets/questions.json');
@@ -1700,9 +1709,27 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       }
     } else {
       // Endless mode
-      coinsEarned = _currentMatchDiamonds;
-      moneyValue = _currentQuestionIndex;
-      moneyString = "$_currentQuestionIndex Soru";
+      moneyValue = _lastScore > 0 ? _lastScore : _currentQuestionIndex;
+      coinsEarned = _currentMatchDiamonds + (moneyValue * 10);
+      
+      // Derece ve Sıralama Ödülü
+      if (moneyValue >= 50) {
+        coinsEarned += 4000;
+        _roomCards += 10;
+        moneyString = "$moneyValue Soru 🏆 (1. SIRA ÖDÜLÜ: +4000 Elmas +10 Oda Kartı)";
+      } else if (moneyValue >= 30) {
+        coinsEarned += 2000;
+        _roomCards += 5;
+        moneyString = "$moneyValue Soru 🥈 (Derece Ödülü: +2000 Elmas +5 Oda Kartı)";
+      } else if (moneyValue >= 15) {
+        coinsEarned += 1000;
+        _roomCards += 3;
+        moneyString = "$moneyValue Soru 🥉 (Derece Ödülü: +1000 Elmas +3 Oda Kartı)";
+      } else {
+        moneyString = "$moneyValue Soru";
+      }
+      
+      SharedPreferences.getInstance().then((prefs) => prefs.setInt(_roomCardsKey, _roomCards));
     }
 
     _lastEarnedCoins = coinsEarned;
