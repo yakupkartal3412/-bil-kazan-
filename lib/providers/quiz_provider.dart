@@ -373,7 +373,9 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     return _currentQuestionIndex >= 14;
   }
   
-  int get score => _currentQuestionIndex;
+  int _lastScore = 0;
+  int get lastScore => _lastScore;
+  int get score => _lastScore > 0 ? _lastScore : _currentQuestionIndex;
 
   QuizProvider() {
     WidgetsBinding.instance.addObserver(this);
@@ -1202,6 +1204,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _checkDailyReset();
     
     _currentQuestionIndex = 0;
+    _lastScore = 0;
     _currentMatchDiamonds = 0;
     _guaranteedDiamonds = 0;
     
@@ -1266,6 +1269,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _checkDailyReset();
     
     _currentQuestionIndex = 0;
+    _lastScore = 0;
     _currentMatchDiamonds = 0;
     _guaranteedDiamonds = 0;
     
@@ -1630,6 +1634,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     int coinsEarned = 0;
 
     bool isWin = _selectedOptionIndex != null && _selectedOptionIndex == currentQuestion.correctOptionIndex;
+    _lastScore = isWin ? (_currentQuestionIndex + 1) : _currentQuestionIndex;
 
     if (_gameMode == GameMode.classic) {
       if (isWalkAway) {

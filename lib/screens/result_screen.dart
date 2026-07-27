@@ -69,21 +69,21 @@ class _ResultScreenState extends State<ResultScreen> {
               Color glowColor;
 
               if (provider.gameMode == GameMode.classic) {
-                if (score == 15) {
+                if (score >= 15) {
                   message = "1 MİLYON ₺ KAZANDIN! 🏆";
                   trophyAsset = 'assets/images/trophy_gold.png';
                   borderColor = Colors.amberAccent;
                   glowColor = Colors.amber.withValues(alpha: 0.5);
                 } else if (score >= 10) {
-                  message = "Tebrikler! 2. Barajı Aştın! 🥈";
+                  message = "HARİKA PERFORMANS! MUHTEŞEM İLERLEME! 🌟";
+                  trophyAsset = 'assets/images/trophy_gold.png';
+                  borderColor = Colors.amberAccent;
+                  glowColor = Colors.amber.withValues(alpha: 0.4);
+                } else if (score >= 5) {
+                  message = "TEBRİKLER! GÜZEL BAŞARI! 👏";
                   trophyAsset = 'assets/images/trophy_silver.png';
                   borderColor = Colors.grey.shade300;
                   glowColor = Colors.cyanAccent.withValues(alpha: 0.3);
-                } else if (score >= 5) {
-                  message = "Tebrikler! 1. Barajı Aştın! 🥉";
-                  trophyAsset = 'assets/images/trophy_bronze.png';
-                  borderColor = Colors.orangeAccent;
-                  glowColor = Colors.deepOrange.withValues(alpha: 0.3);
                 } else {
                   message = "Daha İyisini Yapabilirsin 💪";
                   trophyAsset = 'assets/images/trophy_bronze.png';
