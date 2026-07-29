@@ -17268,12 +17268,12 @@
     "id": "dbbd1f01-700d-40d6-95b0-a37e8c3fbc12",
     "category": "Anadolu Kültürü",
     "difficulty": 3,
-    "text": "Geleneksel Türk kültüründe misafire kahvenin yanında su ikram edilmesinin asıl amacı nedir?",
+    "text": "Geleneksel Türk kahvesi ikramında, kahveden ÖNCE bir yudum su içilmesinin temel gastronomi amacı nedir?",
     "options": [
-      "Misafirin aç olup olmadığını anlamak",
-      "Kahveden önce ağzı temizlemek",
-      "Kahvenin telvesini yutmamak",
-      "Boğazı yumuşatmak"
+      "Ağızdaki diğer tatları temizleyip kahvenin lezzetini tam almak",
+      "Kahvenin sıcaklığını düşürmek",
+      "Mide asidini tamamen sıfırlamak",
+      "Kahveyi hızlıca bitirmek"
     ],
     "correctOptionIndex": 0
   },

@@ -6935,12 +6935,12 @@
     "id": "e1f13b64-a1a1-4321-9999-1a2b3c4d5e04",
     "category": "Anadolu Kültürü",
     "difficulty": 2,
-    "text": "Türk kahvesinin yanında su ikram edilmesinin geleneksel amacı nedir?",
+    "text": "Osmanlı konukseverlik geleneğinde, kahvenin yanında sunulan sudan misafirin ilk olarak içmesi neyin simgesi sayılır?",
     "options": [
-      "Kahvenin acılığını almak",
-      "Misafirin aç olup olmadığını anlamak",
-      "Susuzluğu gidermek",
-      "Kahvenin telvesini yutmamak"
+      "Kahveyi beğenmediğinin",
+      "Karnının aç olduğunun (Sofra hazırlanması gerektiğinin)",
+      "Acele işi olduğunun",
+      "Yalnızca sohbet etmek istediğinin"
     ],
     "correctOptionIndex": 1
   },
