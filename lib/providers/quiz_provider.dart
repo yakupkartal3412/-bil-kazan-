@@ -1044,22 +1044,29 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
         DateTime currentDate = DateTime.parse('${today}T00:00:00Z');
         int daysSinceStart = currentDate.difference(startDate).inDays;
         
-        if (daysSinceStart >= 7) {
-          // Reset cycle
+        bool hasUnclaimed = _cycleStatus.any((s) => s == 1 || s == 3);
+
+        if (daysSinceStart >= 7 && !hasUnclaimed) {
+          // Reset cycle ONLY if previous cycle is completely claimed
           _cycleStartDate = today;
           _cycleStatus = [1, 0, 0, 0, 0, 0, 0];
           _hasClaimedDailyLogin = false;
         } else {
-          // Update missed and available days
-          for (int i = 0; i < daysSinceStart; i++) {
+          // Mark all passed days up to today (or all 7) as missed if unclaimed
+          int limit = daysSinceStart < 7 ? daysSinceStart : 7;
+          for (int i = 0; i < limit; i++) {
             if (_cycleStatus[i] == 1 || _cycleStatus[i] == 0) {
               _cycleStatus[i] = 3; // Missed
             }
           }
-          if (_cycleStatus[daysSinceStart] == 0) {
+          if (daysSinceStart < 7 && _cycleStatus[daysSinceStart] == 0) {
             _cycleStatus[daysSinceStart] = 1; // Available today
           }
-          _hasClaimedDailyLogin = _cycleStatus[daysSinceStart] == 2;
+          if (daysSinceStart < 7) {
+            _hasClaimedDailyLogin = _cycleStatus[daysSinceStart] == 2;
+          } else {
+            _hasClaimedDailyLogin = false;
+          }
         }
       }
       
@@ -1227,10 +1234,19 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       _cycleStatus[dayIndex] = 2; // Claimed
       
       String today = DateTime.now().toString().split(' ')[0];
-      if (_cycleStartDate.isNotEmpty) {
-        int d = DateTime.parse('${today}T00:00:00Z').difference(DateTime.parse('${_cycleStartDate}T00:00:00Z')).inDays;
-        if (d == dayIndex) {
-          _hasClaimedDailyLogin = true;
+      
+      // If ALL 7 days of the cycle are now claimed, reset cycle for next time
+      bool allClaimed = _cycleStatus.every((s) => s == 2);
+      if (allClaimed) {
+        _cycleStartDate = today;
+        _cycleStatus = [1, 0, 0, 0, 0, 0, 0];
+        _hasClaimedDailyLogin = false;
+      } else {
+        if (_cycleStartDate.isNotEmpty) {
+          int d = DateTime.parse('${today}T00:00:00Z').difference(DateTime.parse('${_cycleStartDate}T00:00:00Z')).inDays;
+          if (d == dayIndex) {
+            _hasClaimedDailyLogin = true;
+          }
         }
       }
       
