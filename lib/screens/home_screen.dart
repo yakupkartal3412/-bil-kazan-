@@ -79,10 +79,14 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  void _checkAndShowDailyLogin() {
+  void _checkAndShowDailyLogin() async {
     final provider = Provider.of<QuizProvider>(context, listen: false);
     
-    void checkRewards() {
+    void processCheck() async {
+      if (!mounted) return;
+      await provider.checkDailyReset();
+      if (!mounted) return;
+
       if (provider.weeklyRewardMessage.isNotEmpty) {
         showDialog(
           context: context,
@@ -101,6 +105,11 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         );
+      } else if (!provider.hasClaimedDailyLogin) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const DailyRewardsScreen()),
+        );
       }
     }
     
@@ -108,12 +117,12 @@ class _HomeScreenState extends State<HomeScreen> {
       void listener() {
         if (provider.isDataLoaded) {
           provider.removeListener(listener);
-          checkRewards();
+          processCheck();
         }
       }
       provider.addListener(listener);
     } else {
-      checkRewards();
+      processCheck();
     }
   }
 

@@ -1214,9 +1214,11 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     if (dayIndex < 0 || dayIndex >= 7) return null;
     
     if (_cycleStatus[dayIndex] == 1 || _cycleStatus[dayIndex] == 3) {
-      int baseMultiplier = dayIndex + 1;
-      int diamondReward = dayIndex == 6 ? 150 : baseMultiplier * 15;
-      int cashReward = dayIndex == 6 ? 150000 : baseMultiplier * 20000;
+      const diamondRewards = [50, 100, 150, 250, 400, 600, 1000];
+      const cashRewards = [100000, 250000, 500000, 1000000, 2500000, 5000000, 10000000];
+
+      int diamondReward = diamondRewards[dayIndex];
+      int cashReward = cashRewards[dayIndex];
       
       _totalCoins += diamondReward;
       _totalMoney += cashReward;
