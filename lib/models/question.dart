@@ -57,4 +57,20 @@ class Question {
       'imageUrl': imageUrl,
     };
   }
+
+  Question getWithShuffledOptions() {
+    List<String> newOptions = List<String>.from(options);
+    String correctAnswer = options[correctOptionIndex];
+    newOptions.shuffle();
+    int newCorrectIndex = newOptions.indexOf(correctAnswer);
+    return Question(
+      id: id,
+      text: text,
+      options: newOptions,
+      correctOptionIndex: newCorrectIndex,
+      difficulty: difficulty,
+      category: category,
+      imageUrl: imageUrl,
+    );
+  }
 }

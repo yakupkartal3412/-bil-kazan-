@@ -667,11 +667,10 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   List<Question> get15MixedQuestions() {
     if (!_isDataLoaded) return [];
     List<Question> questions = [
-      ..._getGlobalUnseen(_easyQuestions, 5),
-      ..._getGlobalUnseen(_mediumQuestions, 5),
-      ..._getGlobalUnseen(_hardQuestions, 5),
+      ..._getUnseenForPool(_easyQuestions, 5),
+      ..._getUnseenForPool(_mediumQuestions, 5),
+      ..._getUnseenForPool(_hardQuestions, 5),
     ];
-    questions = _fillRemaining(questions, 15);
     for (final q in questions) { _seenGlobalIds.add(q.id); }
     _saveSeenQuestions();
     return questions;
@@ -682,55 +681,40 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     await prefs.setStringList(_seenGlobalIdsKey, _seenGlobalIds.toList());
     await prefs.setStringList(_seenEventIdsKey, _seenEventIds.toList());
   }
-  
-  void _checkGlobalSeenReset() {
-    // 3500+ soru barajı
-    if (_seenGlobalIds.length >= 3450) { // Tüm 3507 soru taranana kadar sıfırlanmasın
-      _seenGlobalIds.clear();
-      _saveSeenQuestions();
-    }
-  }
 
-  List<Question> _getGlobalUnseen(List<Question> pool, int count) {
-    _checkGlobalSeenReset();
+  /// Her zorluk havuzunun görülme geçmişini bağımsız olarak yöneten ve 0 tekrar garantisi sağlayan akıllı metot
+  List<Question> _getUnseenForPool(List<Question> pool, int count) {
+    if (pool.isEmpty) return [];
+
+    // Sadece bu havuzdaki görülmemiş soruları filtrele
     List<Question> unseen = pool.where((q) => !_seenGlobalIds.contains(q.id)).toList();
-    unseen.shuffle(dart_math.Random());
-    return unseen.take(count).toList();
-  }
-  
-  List<Question> _fillRemaining(List<Question> current, int targetCount) {
-    if (current.length >= targetCount) return current;
-    _checkGlobalSeenReset();
-    
-    // Eksik varsa diger havuzlardan karisik cek
-    List<Question> allQ = [..._easyQuestions, ..._mediumQuestions, ..._hardQuestions];
-    List<Question> unseen = allQ.where((q) => !_seenGlobalIds.contains(q.id)).toList();
-    unseen.shuffle(dart_math.Random());
-    
-    for (var q in unseen) {
-      if (!current.any((c) => c.id == q.id)) {
-        current.add(q);
-        if (current.length >= targetCount) break;
-      }
+
+    // Eğer bu havuzda istenen sayıda görülmemiş soru kalmadıysa, SADECE bu havuzun görülmüşlüklerini sıfırla!
+    if (unseen.length < count) {
+      final poolIds = pool.map((q) => q.id).toSet();
+      _seenGlobalIds.removeWhere((id) => poolIds.contains(id));
+      _saveSeenQuestions();
+      unseen = pool.toList();
     }
-    
-    if (current.length < targetCount) {
-       _seenGlobalIds.clear(); // Zorunlu sifirlama
-       _saveSeenQuestions();
-       return _fillRemaining(current, targetCount);
-    }
-    return current;
+
+    // Bağımsız ve rastgele karıştır, şıkları da karıştırarak ver
+    unseen.shuffle(dart_math.Random());
+    return unseen.take(count).map((q) => q.getWithShuffledOptions()).toList();
   }
-
-
-  // Klasik mod için: zorunlu difficulty ayrımıyla unseen soru seç
-
 
   List<Question> getRandomQuestionsForDuel(int count) {
     if (!_isDataLoaded) return [];
-    List<Question> selected = [];
-    selected = _fillRemaining(selected, count);
-    for (final q in selected) { _seenGlobalIds.add(q.id); }
+    int countPerDiff = (count / 3).ceil();
+    List<Question> selected = [
+      ..._getUnseenForPool(_easyQuestions, countPerDiff),
+      ..._getUnseenForPool(_mediumQuestions, countPerDiff),
+      ..._getUnseenForPool(_hardQuestions, countPerDiff),
+    ];
+    selected.shuffle(dart_math.Random());
+    selected = selected.take(count).toList();
+    for (final q in selected) {
+      _seenGlobalIds.add(q.id);
+    }
     _saveSeenQuestions();
     return selected;
   }
@@ -1306,19 +1290,13 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     
     // Eğer 30'dan az unseen soru kaldıysa, o kategori için seen listesini sıfırla
     if (unseen.length < 30) {
-      for (var q in matching) {
-        _seenEventIds.remove(q.id);
-      }
+      final matchingIds = matching.map((q) => q.id).toSet();
+      _seenEventIds.removeWhere((id) => matchingIds.contains(id));
       unseen = matching.toList();
-      _saveSeenQuestions();
     }
     
-    unseen.shuffle();
-    if (unseen.length >= 30) {
-      _currentQuestions = unseen.sublist(0, 30);
-    } else {
-      _currentQuestions = unseen;
-    }
+    unseen.shuffle(dart_math.Random());
+    _currentQuestions = unseen.take(30).map((q) => q.getWithShuffledOptions()).toList();
     
     // Seçilenleri seen'e ekle
     for (var q in _currentQuestions) {
@@ -1358,34 +1336,21 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _gameMode = mode;
 
     if (mode == GameMode.classic) {
-      // Klasik mod: her zorluktan 5 soru, ayrı classic seen set kullan
+      // Klasik mod: 5 Kolay, 5 Orta, 5 Zor, 0 tekrar
       _currentQuestions = [
-        ..._getGlobalUnseen(_easyQuestions, 5),
-        ..._getGlobalUnseen(_mediumQuestions, 5),
-        ..._getGlobalUnseen(_hardQuestions, 5),
+        ..._getUnseenForPool(_easyQuestions, 5),
+        ..._getUnseenForPool(_mediumQuestions, 5),
+        ..._getUnseenForPool(_hardQuestions, 5),
       ];
-      // Hepsini classic seen'e ekle
       for (final q in _currentQuestions) { _seenGlobalIds.add(q.id); }
     } else {
-      // Endless mod: ayrı endless seen set kullan
-      final unseenEasy = _easyQuestions.where((q) => !_seenGlobalIds.contains(q.id)).toList()..shuffle();
-      final unseenMedium = _mediumQuestions.where((q) => !_seenGlobalIds.contains(q.id)).toList()..shuffle();
-      final unseenHard = _hardQuestions.where((q) => !_seenGlobalIds.contains(q.id)).toList()..shuffle();
-      
-      _currentQuestions = [...unseenEasy, ...unseenMedium, ...unseenHard];
-      
-      if (_currentQuestions.isEmpty) {
-        // Tüm sorular görüldü, sıfırla
-        _seenGlobalIds.clear();
-        _currentQuestions = [
-          ..._easyQuestions..shuffle(),
-          ..._mediumQuestions..shuffle(),
-          ..._hardQuestions..shuffle()
-        ];
-        if (_currentQuestions.isNotEmpty) {
-          _seenGlobalIds.add(_currentQuestions[0].id);
-        }
-      }
+      // Sonsuz mod: Kolay, Orta ve Zor soruları harmanla ve 0 tekrar sağla
+      _currentQuestions = [
+        ..._getUnseenForPool(_easyQuestions, 50),
+        ..._getUnseenForPool(_mediumQuestions, 50),
+        ..._getUnseenForPool(_hardQuestions, 50),
+      ];
+      for (final q in _currentQuestions) { _seenGlobalIds.add(q.id); }
     }
     _saveSeenQuestions();
     _isAnswered = false;
@@ -1681,6 +1646,16 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
         _seenGlobalIds.add(_currentQuestions[_currentQuestionIndex].id);
       } else if (_gameMode == GameMode.endless) {
         _seenGlobalIds.add(_currentQuestions[_currentQuestionIndex].id);
+        if (_currentQuestionIndex >= _currentQuestions.length - 5) {
+          final moreEasy = _getUnseenForPool(_easyQuestions, 20);
+          final moreMedium = _getUnseenForPool(_mediumQuestions, 20);
+          final moreHard = _getUnseenForPool(_hardQuestions, 20);
+          final newBatch = [...moreEasy, ...moreMedium, ...moreHard];
+          for (final q in newBatch) {
+            _seenGlobalIds.add(q.id);
+          }
+          _currentQuestions.addAll(newBatch);
+        }
       } else if (_gameMode == GameMode.event) {
         _seenEventIds.add(_currentQuestions[_currentQuestionIndex].id);
       }
