@@ -133,8 +133,8 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
   }
 
   Widget _buildRewardCard(BuildContext context, QuizProvider provider, int dayIndex, int status) {
-    const diamondRewards = [25, 50, 75, 100, 150, 200, 350];
-    const cashStrList = ['25K', '50K', '100K', '200K', '350K', '500K', '1M ₺'];
+    const diamondRewards = [40, 80, 120, 180, 250, 350, 500];
+    const cashStrList = ['50K', '100K', '250K', '500K', '1M ₺', '2M ₺', '3.5M ₺'];
 
     int diamondReward = diamondRewards[dayIndex];
     String cashStr = cashStrList[dayIndex];
@@ -256,8 +256,8 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
   }
 
   Widget _buildDay7Banner(BuildContext context, QuizProvider provider, int status) {
-    int diamondReward = 350;
-    String cashStr = '1 Milyon';
+    int diamondReward = 500;
+    String cashStr = '3.5 Milyon';
     
     bool isCurrent = (status == 1);
     bool isClaimed = (status == 2);
@@ -394,6 +394,47 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
 
   void _handleCardTap(BuildContext context, QuizProvider provider, int dayIndex, int status) async {
     final audio = Provider.of<AudioProvider>(context, listen: false);
+
+    // Enforce sequential recovery: Must recover earlier missed days first!
+    int firstMissedIndex = -1;
+    for (int i = 0; i < dayIndex; i++) {
+      if (provider.cycleStatus[i] == 3) {
+        firstMissedIndex = i;
+        break;
+      }
+    }
+
+    if (firstMissedIndex != -1) {
+      showDialog(
+        context: context,
+        builder: (dialogContext) => AlertDialog(
+          backgroundColor: const Color(0xFF1E1E2C),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          title: const Row(
+            children: [
+              Icon(Icons.lock_clock, color: Colors.amberAccent, size: 28),
+              SizedBox(width: 12),
+              Text('Kaçırılan Gün Var!', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+            ],
+          ),
+          content: Text(
+            'Bir sonraki güne geçebilmek için öncelikle kaçırdığınız ${firstMissedIndex + 1}. Günün ödülünü reklam izleyerek kurtarmanız gerekmektedir.',
+            style: const TextStyle(color: Colors.white70, fontSize: 16),
+          ),
+          actions: [
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.amberAccent,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+              onPressed: () => Navigator.pop(dialogContext),
+              child: const Text('Anladım', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16)),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
 
     if (status == 1) {
       final messenger = ScaffoldMessenger.of(context);
