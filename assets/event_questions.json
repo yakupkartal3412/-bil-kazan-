@@ -14925,5 +14925,2605 @@
     ],
     "correctOptionIndex": 0,
     "id": "e5197461-d78e-45b1-93f5-ebca25b27ad1"
+  },
+  {
+    "id": "2d843cda-254b-4dd2-938f-43dff390fbce",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'in ilk indirilen suresi aşağıdakilerden hangisidir?",
+    "options": [
+      "Bakara Suresi",
+      "Yasin Suresi",
+      "Fatiha Suresi",
+      "Alak Suresi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "46c105d4-57fd-4ccf-9f8e-efe371012526",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'deki en uzun sure aşağıdakilerden hangisidir?",
+    "options": [
+      "Rahman Suresi",
+      "Bakara Suresi",
+      "Yasin Suresi",
+      "Fetih Suresi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "253316bf-cd6e-42f8-964c-90536a0ed3a3",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'deki en kısa sure aşağıdakilerden hangisidir?",
+    "options": [
+      "Nas Suresi",
+      "Kevser Suresi",
+      "İhlas Suresi",
+      "Felak Suresi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "871f1508-24de-403c-8a52-ed916d634cc7",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimiz (S.A.V.) tarafından 'Kur'an'ın Kalbi' olarak nitelendirilen sure hangisidir?",
+    "options": [
+      "Yasin Suresi",
+      "Rahman Suresi",
+      "Mülk Suresi",
+      "Fetih Suresi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "175b4c62-886e-4900-b24c-87cebb505620",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim toplam kaç cüzden oluşmaktadır?",
+    "options": [
+      "40 Cüz",
+      "60 Cüz",
+      "20 Cüz",
+      "30 Cüz"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "fc27724a-3421-4384-aa19-a784ebcde260",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'de toplam kaç sure bulunmaktadır?",
+    "options": [
+      "99 Sure",
+      "100 Sure",
+      "114 Sure",
+      "120 Sure"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "01e1a299-d653-4e31-87f3-4480ebfb2183",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Kur'an-ı Kerim hangi halife döneminde kitap (mushaf) haline getirilmiştir?",
+    "options": [
+      "Hz. Osman (R.A.)",
+      "Hz. Ali (R.A.)",
+      "Hz. Ömer (R.A.)",
+      "Hz. Ebubekir (R.A.)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "0a9274b7-e671-444f-a2d5-be99873ad1e4",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Kur'an-ı Kerim hangi halife döneminde çoğaltılarak önemli İslam merkezlerine gönderilmiştir?",
+    "options": [
+      "Hz. Osman (R.A.)",
+      "Hz. Ebubekir (R.A.)",
+      "Hz. Ömer (R.A.)",
+      "Hz. Ali (R.A.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9993836d-0fcd-405f-85aa-5da7bd40eaa6",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Kur'an-ı Kerim'de başında Besmele bulunmayan tek sure hangisidir?",
+    "options": [
+      "Tevbe Suresi",
+      "Yasin Suresi",
+      "Enfal Suresi",
+      "Neml Suresi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9857280f-1d2b-44e5-b26c-e91f87705210",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Kur'an-ı Kerim'de içerisinde iki defa Besmele geçen sure hangisidir?",
+    "options": [
+      "Tevbe Suresi",
+      "Neml Suresi",
+      "Bakara Suresi",
+      "Yasin Suresi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c6708626-1da9-4a20-a272-cf2425592838",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'in ilk suresi aşağıdakilerden hangisidir?",
+    "options": [
+      "Yasin Suresi",
+      "Alak Suresi",
+      "Bakara Suresi",
+      "Fatiha Suresi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "0bda8b8b-b2e2-4d36-a338-d2b321398277",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'in son suresi (114. sure) aşağıdakilerden hangisidir?",
+    "options": [
+      "Felak Suresi",
+      "Nas Suresi",
+      "İhlas Suresi",
+      "Kevser Suresi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "babfaccd-ad1b-45b5-89ed-a0b1b2409e24",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin Medine'ye hicretinden önce Mekke'de indirilen surelere ne ad verilir?",
+    "options": [
+      "Medenî Sureler",
+      "Siyer",
+      "Hadis",
+      "Mekkî Sureler"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a8f05902-5ad6-4961-9baf-f83670e4c90c",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin Medine'ye hicretinden sonra indirilen surelere ne ad verilir?",
+    "options": [
+      "Ayet",
+      "Medenî Sureler",
+      "Mekkî Sureler",
+      "Cüz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "2bfd2513-a725-4625-9a2e-a4bcddeccb99",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'in duraklarla ayrılan her bir cümlesine veya bölümüne ne denir?",
+    "options": [
+      "Cüz",
+      "Hizb",
+      "Ayet",
+      "Sure"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "dd6c6961-e3b1-452a-bea3-5bb7f5b2ce97",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "'Ayetel Kürsi' olarak bilinen mübarek ayet hangi surenin içerisinde yer almaktadır?",
+    "options": [
+      "Mülk Suresi",
+      "Bakara Suresi",
+      "Yasin Suresi",
+      "Âl-i İmrân Suresi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "10b2e09d-b7ea-41f6-9acd-e05550484917",
+    "category": "İslam Kültürü",
+    "difficulty": 3,
+    "text": "Kur'an-ı Kerim'de ismi açıkça zikredilen tek sahabe kimdir?",
+    "options": [
+      "Hz. Ali (R.A.)",
+      "Hz. Ömer (R.A.)",
+      "Hz. Zeyd bin Harise (R.A.)",
+      "Hz. Ebubekir (R.A.)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "1661b2b9-d40c-4826-912e-9f548b85679b",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Kur'an-ı Kerim'de adı açıkça zikredilen ve adına sure bulunan tek kadın kimdir?",
+    "options": [
+      "Hz. Meryem",
+      "Hz. Ayşe",
+      "Hz. Fatma",
+      "Hz. Hatice"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e24302d1-5716-4bce-b0fa-54e95ca49ef4",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'in indirilmeye başlandığı bin aydan daha hayırlı mübarek gece hangisidir?",
+    "options": [
+      "Miraç Gecesi",
+      "Berat Gecesi",
+      "Kadir Gecesi",
+      "Regaip Gecesi"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "aefa5df1-7cfe-4b52-99ec-06c57fa1da7e",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'i tamamen ezbere bilen kimselere hangi unvan verilir?",
+    "options": [
+      "Müftü",
+      "Hafız",
+      "İmam",
+      "Vaiz"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6304a11f-ad94-42a9-9a1d-88a967463bd0",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Kur'an-ı Kerim ayetlerini açıklayan, yorumlayan ve tefsir ilmiyle uğraşan uzmanlara ne ad verilir?",
+    "options": [
+      "Muhaddis",
+      "Müfessir",
+      "Müteferrik",
+      "Fakih"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "27bdfd85-13c8-44d7-a6b0-061dbcbb7de4",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Kur'an-ı Kerim'i doğru, kurallarına ve tecvide uygun olarak okuma biçimine ne denir?",
+    "options": [
+      "Siyer",
+      "Kelam",
+      "Kıraat",
+      "Fıkıh"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "46f34070-106c-49f7-9e8c-5f374c4ce7db",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Kur'an-ı Kerim'de 'Tebâreke' ismiyle de anılan ve kabir azabına karşı koruyucu olduğu bildirilen sure hangisidir?",
+    "options": [
+      "Rahman Suresi",
+      "Yasin Suresi",
+      "Nebe Suresi",
+      "Mülk Suresi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "7c51f5c7-df40-4f4d-b3e4-9edf45a5f253",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "İçerisinde 'Rabbinizin hangi nimetlerini yalanlayabilirsiniz?' ayetinin sıkça tekrarlandığı sure hangisidir?",
+    "options": [
+      "Vakıa Suresi",
+      "Rahman Suresi",
+      "Mülk Suresi",
+      "Yasin Suresi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "3fbb2cb1-f48d-4f0e-8f91-1f71af6a99f2",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin 'Kur'an'ın üçte birine denktir' buyurduğu tevhid suresi hangisidir?",
+    "options": [
+      "Fatiha Suresi",
+      "Felak Suresi",
+      "Nas Suresi",
+      "İhlas Suresi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a2ed2207-3689-442c-84de-c8b5f32ce828",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimiz Hz. Muhammed (S.A.V.) hangi şehirde doğmuştur?",
+    "options": [
+      "Kudüs",
+      "Taif",
+      "Medine",
+      "Mekke"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "5c9f7622-25e4-46e9-8ac6-004a1ab57856",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimiz Hz. Muhammed (S.A.V.) miladi hangi yılda doğmuştur?",
+    "options": [
+      "632",
+      "571",
+      "570",
+      "622"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "8eac4aa9-fecd-4eac-bc55-16d978c39463",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin babasının adı nedir?",
+    "options": [
+      "Abdülmuttalib",
+      "Ebu Talib",
+      "Hamza",
+      "Abdullah"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "e8630b51-4ec0-4510-84ae-ba7a8f87a5eb",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin annesinin adı nedir?",
+    "options": [
+      "Hatice",
+      "Halime",
+      "Fatma",
+      "Amine"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "dff6e15b-9596-4e0d-b37e-772415348c55",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin dedesinin adı nedir?",
+    "options": [
+      "Abdullah",
+      "Ebu Talib",
+      "Vehb",
+      "Abdülmuttalib"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "2d553da1-8fcb-404b-ad85-e7d735826906",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin süt annesinin adı nedir?",
+    "options": [
+      "Şeyma",
+      "Ümmü Ayman",
+      "Amine",
+      "Halime"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "72412cb7-90eb-4e26-856d-4772cd8a96c2",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin ilk eşi ve ilk inanan Müslüman kadın kimdir?",
+    "options": [
+      "Hz. Zeyneb (R.Anha)",
+      "Hz. Fatma (R.Anha)",
+      "Hz. Ayşe (R.Anha)",
+      "Hz. Hatice (R.Anha)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "fc968130-bebe-42b8-9b80-de26752484ba",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimize gençliğinde dürüstlüğü ve güvenilirliği sebebiyle verilen unvan nedir?",
+    "options": [
+      "El-Faruk",
+      "Zinnureyn",
+      "Es-Sıddık",
+      "El-Emin"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "8333952c-36e8-4d92-b06a-46e56bd4b6da",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimize ilk vahiy hangi dağda ve mağarada gelmiştir?",
+    "options": [
+      "Nur Dağı - Hira Mağarası",
+      "Cebel-i Rahme",
+      "Sevr Mağarası",
+      "Uhud Dağı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "2ea0420a-7f45-4e7f-85d5-6dd145edd149",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimize ilk vahiy getiren vahiy meleği hangisidir?",
+    "options": [
+      "Cebrail (A.S.)",
+      "İsrafil (A.S.)",
+      "Mikail (A.S.)",
+      "Azrail (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "6284bb8b-7724-491e-b1d2-5b820d720396",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Müslümanların Mekke'den Medine'ye dinlerini yaşamak amacıyla yaptıkları tarihi göçe ne denir?",
+    "options": [
+      "Hicret",
+      "Miraç",
+      "İsra",
+      "Biat"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "67da912e-bd7c-495f-9b4e-056b354879a8",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Müslümanların Medine'ye hicreti miladi hangi yılda gerçekleşmiştir?",
+    "options": [
+      "632",
+      "571",
+      "610",
+      "622"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "5951bb61-f00d-401f-b504-c10887ee54f8",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin Medine'ye hicret ederken yanındaki yol arkadaşı kimdir?",
+    "options": [
+      "Hz. Osman (R.A.)",
+      "Hz. Ebubekir (R.A.)",
+      "Hz. Ali (R.A.)",
+      "Hz. Ömer (R.A.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "fc08333b-9a91-41da-9baf-89897fcd59e5",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimiz ile Hz. Ebubekir'in hicret esnasında gizlendikleri mağara hangisidir?",
+    "options": [
+      "Uhud Mağarası",
+      "Hira Mağarası",
+      "Kehf Mağarası",
+      "Sevr Mağarası"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "3475180c-4e5a-41f3-9964-404413768527",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Müslümanların Mekkeli müşriklerle yaptığı ilk savunma ve zafer savaşı hangisidir?",
+    "options": [
+      "Bedir Savaşı",
+      "Hendek Savaşı",
+      "Uhud Savaşı",
+      "Muta Savaşı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a887b2f8-d811-4f0f-b8af-3bb3dd780a2b",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Okçular Tepesi terki sebebiyle zor anlar yaşanan tarihi savaş hangisidir?",
+    "options": [
+      "Hayber Savaşı",
+      "Bedir Savaşı",
+      "Uhud Savaşı",
+      "Hendek Savaşı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "74a12e3f-ee32-4da9-be55-27a3a99398cd",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Medine çevresine hendekler kazılarak yapılan tarihi savunma savaşı hangisidir?",
+    "options": [
+      "Uhud Savaşı",
+      "Tabuk Seferi",
+      "Hendek Savaşı",
+      "Bedir Savaşı"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "01e053e6-502e-4bea-8675-8a1c77054208",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimiz Hz. Muhammed (S.A.V.) hangi şehirde vefât etmiştir?",
+    "options": [
+      "Mekke",
+      "Medine",
+      "Kudüs",
+      "Taif"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "fd37d970-7d05-493d-b283-f57556b58e1b",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimiz Hz. Muhammed (S.A.V.) hangi yılda vefât etmiştir?",
+    "options": [
+      "622",
+      "610",
+      "571",
+      "632"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "c74c09b0-3f5a-448a-a453-d695b36b62c7",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Peygamber Efendimizin Mescid-i Nebevî içindeki mübarek kabrinin bulunduğu yere ne ad verilir?",
+    "options": [
+      "Riyâzül Cenne (Cennet Bahçesi)",
+      "Makam-ı İbrahim",
+      "Hacerül Esved",
+      "Kubbet-üs Sahra"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "fc8f5538-df82-4a22-84b9-2bf5db22a9fd",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin neslini günümüze taşıyan mübarek kızı kimdir?",
+    "options": [
+      "Hz. Rukiye (R.Anha)",
+      "Hz. Zeyneb (R.Anha)",
+      "Hz. Ümmü Gülsüm (R.Anha)",
+      "Hz. Fatma (R.Anha)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "b2abcb30-18ad-49a7-9f87-e737e3d628b0",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Uhud Savaşı'nda şehit düşen ve 'Şehitlerin Efendisi' unvanıyla anılan Peygamber amcası kimdir?",
+    "options": [
+      "Ebu Talib",
+      "Hz. Cafer (R.A.)",
+      "Hz. Hamza (R.A.)",
+      "Hz. Abbas (R.A.)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "e98378ff-1167-405f-80e3-c51bd4fa1ed9",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin vefatından önce yüz bini aşkın Müslümana yaptığı son tarihi konuşmaya ne denir?",
+    "options": [
+      "Veda Hutbesi",
+      "Akabe Biatı",
+      "Medine Sözleşmesi",
+      "Hudeybiye Metni"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "3bbfc550-0cf7-474a-9268-5bd11d276654",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Mekke'den Medine'ye hicret eden Müslümanlara kucak açan Medineli Müslümanlara ne ad verilir?",
+    "options": [
+      "Ensar",
+      "Muhacir",
+      "Sahabe",
+      "Tâbiîn"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0fb092d5-7b1d-4e2f-a733-b96602e9011d",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Mekke'deki baskılardan dolayı dinlerini korumak için Medine'ye göç eden Müslümanlara ne ad verilir?",
+    "options": [
+      "Hafız",
+      "Muhacir",
+      "Ensar",
+      "Mücahid"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "5b462ab5-911b-4e87-9f89-511b0a065028",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İlk insan ve ilk peygamber aşağıdakilerden hangisidir?",
+    "options": [
+      "Hz. Adem (A.S.)",
+      "Hz. İbrahim (A.S.)",
+      "Hz. Şit (A.S.)",
+      "Hz. Nuh (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0927efaf-8488-40cc-abf4-b736022fe879",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Büyük tufan felaketinde inananları inşa ettiği gemiyle kurtaran peygamber kimdir?",
+    "options": [
+      "Hz. Nuh (A.S.)",
+      "Hz. İbrahim (A.S.)",
+      "Hz. Musa (A.S.)",
+      "Hz. Hud (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "789e2f8d-5ec7-4344-ad19-0c042a3859ed",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Nemrut tarafından ateşe atılan ancak Allah'ın emriyle ateşin serin bir bahçeye dönüştüğü peygamber kimdir?",
+    "options": [
+      "Hz. İsa (A.S.)",
+      "Hz. Musa (A.S.)",
+      "Hz. İbrahim (A.S.)",
+      "Hz. Lut (A.S.)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "24985180-7a6a-4ced-aad1-e92654b08c4c",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kâbe-i Muazzama'yı oğluyla birlikte yeniden inşa eden Peygamberler atası kimdir?",
+    "options": [
+      "Hz. İbrahim (A.S.)",
+      "Hz. Süleyman (A.S.)",
+      "Hz. Adem (A.S.)",
+      "Hz. Musa (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "7d575dca-6025-43bd-8e0e-5e26ef06c8c3",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Hz. İbrahim ile birlikte Kâbe'nin inşasında çalışan ve kurban edilme imtihanından geçen oğlu kimdir?",
+    "options": [
+      "Hz. İsmail (A.S.)",
+      "Hz. Yakub (A.S.)",
+      "Hz. Yusuf (A.S.)",
+      "Hz. İshak (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c9cf4bbc-5727-4cce-9ef4-9e2f9013cec6",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Firavun'un zulmüne karşı mücadele eden ve asası mucizevi şekilde ejderhaya dönüşen peygamber kimdir?",
+    "options": [
+      "Hz. Musa (A.S.)",
+      "Hz. Yusuf (A.S.)",
+      "Hz. Harun (A.S.)",
+      "Hz. İsa (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a9f141ba-9821-4aa4-876c-92506ee28e71",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kızıldeniz'i mucizevi şekilde ikiye yararak İsrailoğullarını Firavun'dan kurtaran peygamber kimdir?",
+    "options": [
+      "Hz. İsa (A.S.)",
+      "Hz. Musa (A.S.)",
+      "Hz. Nuh (A.S.)",
+      "Hz. Yunus (A.S.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "96610867-5a3c-452a-afce-8b69eae9e191",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kendisine kutsal kitap Tevrat indirilen büyük peygamber hangisidir?",
+    "options": [
+      "Hz. İsa (A.S.)",
+      "Hz. Davud (A.S.)",
+      "Hz. İbrahim (A.S.)",
+      "Hz. Musa (A.S.)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "30efbf7e-f0f1-4a99-9493-4e0fd94fa07e",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kendisine kutsal kitap Zebur indirilen ve güzel sesiyle bilinen peygamber hangisidir?",
+    "options": [
+      "Hz. Süleyman (A.S.)",
+      "Hz. Davud (A.S.)",
+      "Hz. İsa (A.S.)",
+      "Hz. Musa (A.S.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "32fafbbb-25d2-46a0-92d4-d2535698c0a3",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kendisine kutsal kitap İncil indirilen ve babasız olarak mucizevi şekilde doğan peygamber kimdir?",
+    "options": [
+      "Hz. İsa (A.S.)",
+      "Hz. Yahya (A.S.)",
+      "Hz. Zekeriya (A.S.)",
+      "Hz. Musa (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "cd0f49f9-16cf-4562-9f2e-3d0ae15bc66e",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kardeşleri tarafından kuyuya atılan, köle satılan fakat sonunda Mısır'a aziz olan rüya tabircisi peygamber kimdir?",
+    "options": [
+      "Hz. Harun (A.S.)",
+      "Hz. Yusuf (A.S.)",
+      "Hz. Bünyamin",
+      "Hz. Yakub (A.S.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "04a67284-ac81-4e89-8ad5-1143a4bcd710",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Hz. Yusuf'un babası olan ve oğlunun hasretiyle gözleri görmez olan peygamber kimdir?",
+    "options": [
+      "Hz. Şuayb (A.S.)",
+      "Hz. İshak (A.S.)",
+      "Hz. Yakub (A.S.)",
+      "Hz. İbrahim (A.S.)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "b8e2d818-32d8-46f9-ad5f-1a7f0bebfe34",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Bir süre balığın karnında yaşayıp zikir ve tesbihatı ile kurtulan peygamber kimdir?",
+    "options": [
+      "Hz. Lut (A.S.)",
+      "Hz. Yunus (A.S.)",
+      "Hz. Nuh (A.S.)",
+      "Hz. Uzeyr (A.S.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "8bdf6e73-ef3b-47dc-8994-e322efca7184",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Ağır hastalıklara ve kayıplara karşı gösterdiği eşsiz sabırla sembolleşen peygamber kimdir?",
+    "options": [
+      "Hz. Yakub (A.S.)",
+      "Hz. Nuh (A.S.)",
+      "Hz. Yusuf (A.S.)",
+      "Hz. Eyyub (A.S.)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "3bafdbda-f347-4b70-b7fd-eca849b0e575",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Rüzgara, cinlere hükmedebilen ve kuşların dilini anlayabilen hükümdar peygamber kimdir?",
+    "options": [
+      "Hz. Zülkarneyn",
+      "Hz. Süleyman (A.S.)",
+      "Hz. Yusuf (A.S.)",
+      "Hz. Davud (A.S.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a0e13e87-fd61-471b-92b5-8aca3a4466f8",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Demiri eliyle hamur gibi işleyip zırh yapma sanatını insanlığa öğreten peygamber kimdir?",
+    "options": [
+      "Hz. İdris (A.S.)",
+      "Hz. Süleyman (A.S.)",
+      "Hz. Davud (A.S.)",
+      "Hz. Nuh (A.S.)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "f7563677-fc28-4eae-a6e5-67f99a40ae0c",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Henüz beşikteki bir bebekken konuşarak annesinin masumiyetini dile getiren peygamber kimdir?",
+    "options": [
+      "Hz. İsa (A.S.)",
+      "Hz. Yahya (A.S.)",
+      "Hz. Musa (A.S.)",
+      "Hz. Yusuf (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "286e0882-2ec7-4f1a-984a-dd9b29753167",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Marangozluk mesleğinin piri kabul edilen ve ilk büyük gemiyi inşa eden peygamber kimdir?",
+    "options": [
+      "Hz. İdris (A.S.)",
+      "Hz. Adem (A.S.)",
+      "Hz. Nuh (A.S.)",
+      "Hz. Zakariya (A.S.)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "6dc3937b-fadf-4e3e-b009-a783591f4407",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Terzilik mesleğinin piri sayılan ve insanlık tarihinde ilk kez kalemle yazı yazan peygamber kimdir?",
+    "options": [
+      "Hz. Adem (A.S.)",
+      "Hz. İdris (A.S.)",
+      "Hz. Şit (A.S.)",
+      "Hz. Hud (A.S.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "17ed4732-8f2e-4596-82d8-4af194c6a38a",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "İnsanlara ilk kez dürüst ölçü ve tartı kullanmayı emreden Medyen kavminin peygamberi kimdir?",
+    "options": [
+      "Hz. Şuayb (A.S.)",
+      "Hz. Salih (A.S.)",
+      "Hz. Hud (A.S.)",
+      "Hz. Lut (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "57d6a0e0-a3e2-4ff8-a1ba-5cec9fc2991a",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Hz. Musa'ya peygamberlik görevinde yardımcı ve hitabeti güçlü bir vezir olarak verilen kardeşi kimdir?",
+    "options": [
+      "Hz. Harun (A.S.)",
+      "Hz. Yakub (A.S.)",
+      "Hz. İshak (A.S.)",
+      "Hz. Yûşa (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "25a1bce8-c393-4d49-ae57-46ab1cad8575",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Yaşlılığında duası kabul edilerek kendisine Hz. Yahya müjdelenen peygamber kimdir?",
+    "options": [
+      "Hz. Zekeriya (A.S.)",
+      "Hz. Süleyman (A.S.)",
+      "Hz. Davud (A.S.)",
+      "Hz. İmran"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a0229d6a-8f95-4657-90fa-569b914549ad",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'de adı geçen toplam kaç peygamber bulunmaktadır?",
+    "options": [
+      "25 Peygamber",
+      "33 Peygamber",
+      "40 Peygamber",
+      "12 Peygamber"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "4a9864ae-ecdf-4eac-9d22-9cd149806c6f",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Hz. İbrahim'in ikinci oğlu olup Hz. Yakub'un da babası olan peygamber kimdir?",
+    "options": [
+      "Hz. Harun (A.S.)",
+      "Hz. İshak (A.S.)",
+      "Hz. İsmail (A.S.)",
+      "Hz. Yusuf (A.S.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "95e645db-2132-4521-96dc-ac86a7faa4b3",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Deve mucizesi ile bilinen ve Semud kavmine gönderilen peygamber hangisidir?",
+    "options": [
+      "Hz. Salih (A.S.)",
+      "Hz. Hud (A.S.)",
+      "Hz. Lut (A.S.)",
+      "Hz. Şuayb (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "ec53cd23-f633-4ca6-8a09-774dd7d859d0",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İslam'ın beş temel şartından biri olan ve günde 5 vakit eda edilen ibadet hangisidir?",
+    "options": [
+      "Hac",
+      "Namaz",
+      "Zekât",
+      "Oruç"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c3a54d3a-3495-4c90-bbb7-ec512b831de8",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Namaz kılarken yönümüzü kıbleye (Kâbe'ye) çevirmeye ne ad verilir?",
+    "options": [
+      "Necasetten Taharet",
+      "Hadesten Taharet",
+      "Setr-i Avret",
+      "İstikbal-i Kıble"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "4ba5eb41-1c45-43a2-bfa1-c01409cbc529",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Namaza başlarken 'Allahu Ekber' diyerek getirilen ilk tekbire ne verilir?",
+    "options": [
+      "Teşrik Tekbiri",
+      "Rükû Tekbiri",
+      "İftitah Tekbiri",
+      "Kunut Tekbiri"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "b19bca6d-cddf-4102-a85a-02681cbd54fe",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Namaz kılarken ayakta durma farzına ne ad verilir?",
+    "options": [
+      "Kıyam",
+      "Rükû",
+      "Kıraat",
+      "Secde"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "447a332d-d3f2-4c25-99b7-6c0c13d640f4",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Namazda eller diz kapağına konarak eğilme hareketine ne ad verilir?",
+    "options": [
+      "Kıyam",
+      "Secde",
+      "Kade-i Ahire",
+      "Rükû"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "ef3bd071-bc67-4531-9d53-69e3559d8c2a",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Namazda alın, burun, el ve dizleri yere koyarak kapanmaya ne denir?",
+    "options": [
+      "Kıyam",
+      "Rükû",
+      "Kade",
+      "Secde"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "964d3a51-d081-4521-ab3c-5dd2500f7857",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Namazın sonunda Ettehiyyatü duasını okuyacak kadar oturma farzına ne ad verilir?",
+    "options": [
+      "Kade-i Âhire (Son Oturuş)",
+      "Rükû",
+      "İlk Oturuş",
+      "Kıyam"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1654b33-3c39-4950-becc-1804d497006f",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Abdestin farzları toplam kaç tanedir?",
+    "options": [
+      "5 Farz",
+      "6 Farz",
+      "3 Farz",
+      "4 Farz"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "d8cf26be-c0de-4c77-89f2-bd989f384c6f",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Aşağıdakilerden hangisi abdestin farzlarından biri DEĞİLDİR?",
+    "options": [
+      "Başı meshetmek",
+      "Ağza ve burna su vermek",
+      "Yüzü yıkamak",
+      "Kolları dirsekle birlikte yıkamak"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "a8e49ebf-f4e5-4eb6-aaf4-b052a8fbf211",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Su bulunmadığı veya su kullanımının imkansız olduğu durumlarda temiz toprakla yapılan abdeste ne denir?",
+    "options": [
+      "Gusül",
+      "Teyemmüm",
+      "Boy Abdesti",
+      "Teyid"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "ead1d656-0655-417f-8bf5-f2fac81408ef",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Tüm vücudu hiç kuru yer kalmayacak şekilde yıkamaya ne ad verilir?",
+    "options": [
+      "Taharet",
+      "Namaz Abdesti",
+      "Teyemmüm",
+      "Gusül (Boy Abdesti)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "246bf519-82d5-4721-8882-e3cc5efb973b",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Ramazan ayında tutulan oruç ibadetinin dini hükmü nedir?",
+    "options": [
+      "Mübah",
+      "Vacip",
+      "Sünnet",
+      "Farz"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "aa66257c-c7a4-44ac-beef-0fee4d8cfa49",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Oruca başlama vakti olan ve imsak ezanıyla başlayan zamana ne ad verilir?",
+    "options": [
+      "Kuşluk",
+      "İftar",
+      "İmsak",
+      "Sahur"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "4f297355-49d0-4337-ae00-3e35e619baeb",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Akşam ezanının okunmasıyla birlikte orucun açıldığı vakte ne denir?",
+    "options": [
+      "Sahur",
+      "İmsak",
+      "Kapanış",
+      "İftar"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "44c6847c-cdf4-489d-b130-888d07d6b67a",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Ramazan gecelerinde yatsı namazından sonra kılınan 20 rekâtlık sünnet namaz hangisidir?",
+    "options": [
+      "Kuşluk Namazı",
+      "Teravih Namazı",
+      "Vitir Namazı",
+      "Teheccüd Namazı"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d9f6f30b-55d1-4026-afc0-ee87f124646c",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Zengin sayılan Müslümanların yılda 1 kez mallarından vermekle yükümlü oldukları mali ibadet nedir?",
+    "options": [
+      "Sadaka",
+      "Zekât",
+      "Öşür",
+      "Fitre"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "87483cc8-6f5c-4556-a698-e491231a39e4",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Altın, gümüş ve nakit parada zekât oranı yüzde kaçtır (veya kaçta kaçtır)?",
+    "options": [
+      "%5 (1/20)",
+      "%20 (1/5)",
+      "%10 (1/10)",
+      "%2.5 (1/40)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "cb010c62-9ea7-4f51-9565-2c2ddab43c3f",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Bir Müslümanın zekât vermekle yükümlü olması için sahip olması gereken asgari zenginlik sınırına ne denir?",
+    "options": [
+      "Miktar-ı Kâfi",
+      "Nisbet",
+      "Nisap Miktarı",
+      "Hissedar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "fffbfcc1-e30b-494a-937e-ca05272cdff7",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Hac ibadeti esnasında Kâbe-i Muazzama etrafında 7 defa dönmeye ne ad verilir?",
+    "options": [
+      "Şavt",
+      "Tavaf",
+      "Sa'y",
+      "Vakfe"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6412cae1-7b6a-45b4-901f-5bf3ab9b08a6",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Tavaftaki her bir tura veya dönüşe ne ad verilir?",
+    "options": [
+      "İhram",
+      "Vakfe",
+      "Tavaf",
+      "Şavt"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "4c2ea6b1-d1fe-4358-9f15-ed8cfefec9da",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Haccın en önemli farzlarından biri olan ve Arefe günü Arafat'ta gerçekleştirilen duruşa ne denir?",
+    "options": [
+      "Arafat Vakfı",
+      "Mina Taşlaması",
+      "Kâbe Tavafı",
+      "Müzdelife Vakfı"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d4878ba1-132d-4c4f-a5d5-68c349f06188",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Safa ile Merve tepeleri arasında 7 kez gidip gelme ibadetine ne ad verilir?",
+    "options": [
+      "Sa'y",
+      "Tavaf",
+      "Vakfe",
+      "İhram"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "920a68bd-c2bf-41b4-abb5-2b6905d85581",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Hac veya Umre ibadetine niyet eden kişilerin giydiği dikişsiz beyaz kıyafete ve kısıtlamalara ne denir?",
+    "options": [
+      "Kisve",
+      "İhram",
+      "Cübbe",
+      "İzâr"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "8816d39e-7be7-40fb-9017-b650c43f691d",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Hac mevsimi dışında Kâbe'yi ve kutsal toprakları ziyaret edip tavaf ve sa'y yapmaya ne denir?",
+    "options": [
+      "Umre",
+      "Hac",
+      "Ziyaret",
+      "Siyahat"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9b242b0f-c099-4e28-82ce-64006b11065b",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Cuma ve Bayram namazlarında imamın minbere çıkarak cemaate hitaben yaptığı konuşmaya ne ad verilir?",
+    "options": [
+      "Nasihat",
+      "Hutbe",
+      "Vaaz",
+      "Kamet"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6981653f-c135-4d40-938b-2fd016d7d455",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İmanın esasları (şartları) toplam kaç tanedir?",
+    "options": [
+      "4 Şart",
+      "7 Şart",
+      "5 Şart",
+      "6 Şart"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "eebed421-a472-4690-a324-2711d93fa13b",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İslam'ın şartları toplam kaç tanedir?",
+    "options": [
+      "6 Şart",
+      "10 Şart",
+      "4 Şart",
+      "5 Şart"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "2da06bcd-d93b-4833-a6f3-50697aaf0565",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Allah'ın bir ve tek olduğuna, ortağı ve benzeri bulunmadığına inanmaya ne denir?",
+    "options": [
+      "Tevhid",
+      "İlhad",
+      "Şirk",
+      "Tekfir"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "1e92d759-c67c-4cb7-b799-d92d1e9cca42",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Allah'a ortak koşmak ve O'ndan başka güç ve ilah kabul etmeye ne ad verilir?",
+    "options": [
+      "Şirk",
+      "Tevbe",
+      "Tevhid",
+      "İhlas"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d96156ae-a34c-49cd-9798-fb26acf75f35",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Allah-u Teâlâ'nın 99 en güzel isimlerine verilen genel ad nedir?",
+    "options": [
+      "Kelam-ı Kibar",
+      "Asfiyâ",
+      "Esmâ-ül Hüsna",
+      "Sıfat-ı Sübûtiye"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "acfbecc4-d72e-4dfb-98ae-c38726c58f6a",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Allah'ın gizli ve açık her şeyi görmesi anlamına gelen sıfatı hangisidir?",
+    "options": [
+      "Kudret",
+      "Semi",
+      "Basar",
+      "İlim"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "7c4baa94-867a-427a-ad10-b8b6aef93f8d",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Allah'ın her sesi, fısıltıyı ve duayı işitmesi sıfatına ne ad verilir?",
+    "options": [
+      "Tekvin",
+      "Kelam",
+      "Basar",
+      "Semi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "9b42dded-2770-470b-ba0f-4428efed8c9d",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Allah'ın geçmişi, geleceği ve her şeyi eksiksiz bilmesi sıfatına ne ad verilir?",
+    "options": [
+      "İlim",
+      "İrade",
+      "Hayat",
+      "Kudret"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "6145e385-9bf0-4288-841d-0c0c8544c0c8",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Allah'ın sınırsız güç ve kudret sahibi olması anlamına gelen sıfatı hangisidir?",
+    "options": [
+      "Kudret",
+      "Kelam",
+      "Kıdem",
+      "İrade"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "d39e35a2-f489-498b-aca0-8fc7e02920a3",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Allah'ın dilemesi ve arzuladığı her şeyin gerçekleşmesi anlamına gelen sıfatı hangisidir?",
+    "options": [
+      "Hayat",
+      "Kudret",
+      "Tekvin",
+      "İrade"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "ddac5f33-f2de-4461-9fb5-ba2e3071db1c",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Allah'ın yoktan var etmesi ve yaratması anlamına gelen sıfatı hangisidir?",
+    "options": [
+      "Vahdaniyet",
+      "Beka",
+      "Tekvin",
+      "Kıdem"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "54cbfe7c-f73b-445d-9742-2de38cdd3156",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamberlere ilahi mektup ve vahiyleri getirmekle görevli büyük melek hangisidir?",
+    "options": [
+      "Cebrail (A.S.)",
+      "İsrafil (A.S.)",
+      "Azrail (A.S.)",
+      "Mikail (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "8ce4d932-b494-4b9e-a8a5-6fd8cc8fe6b3",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Doğa olaylarını (yağmur, rüzgar, rızık Dağıtımı) idare eden büyük melek hangisidir?",
+    "options": [
+      "İsrafil (A.S.)",
+      "Mikail (A.S.)",
+      "Cebrail (A.S.)",
+      "Azrail (A.S.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "db8130ea-6b92-4c87-a99d-d475c63a817e",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kıyamet günü sur borusuna üflemekle görevli büyük melek hangisidir?",
+    "options": [
+      "Mikail (A.S.)",
+      "Cebrail (A.S.)",
+      "Azrail (A.S.)",
+      "İsrafil (A.S.)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "42837bdf-2f62-4a76-9d7b-ef8ef32d35f3",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Eceli gelen canlıların ruhunu kabzetmekle (almakla) görevli ölüm meleği kimdir?",
+    "options": [
+      "Azrail (A.S.)",
+      "Mikail (A.S.)",
+      "Münker",
+      "İsrafil (A.S.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "37fae52b-7f9f-4570-b018-e08f4933f1da",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "İnsanın sağında ve solunda durup sevap ve günahlarını kaydeden meleklere ne denir?",
+    "options": [
+      "Kiramen Kâtibin",
+      "Hafaza",
+      "Muakkibe",
+      "Münker ve Nekir"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "8dad6a80-2250-4f50-b849-549ac8ac0e79",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Vefat eden kişiyi kabirde ilk sorgulayan meleklere ne ad verilir?",
+    "options": [
+      "Münker ve Nekir",
+      "Hafaza",
+      "Kiramen Kâtibin",
+      "Zebani"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e1b45b91-cbbf-4999-8473-6e5173bda68a",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Kaza ve kader inancına göre; Allah'ın ezelde takdir ettiği şeylerin zamanı gelince gerçekleşmesine ne denir?",
+    "options": [
+      "Kısmet",
+      "Kaza",
+      "Tevekkül",
+      "Kader"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "33efa72b-3422-4abd-855a-93e885436389",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kıyametten sonra insanların hesap vermek üzere toplanacağı büyük meydana ne ad verilir?",
+    "options": [
+      "Mizan",
+      "Mahşer",
+      "Sırat",
+      "Arafat"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "13f0adc4-84b8-464c-b1a4-47f052c13db9",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kıyamet gününde insanların sevap ve günahlarının tartılacağı ilahi adalet terazisine ne denir?",
+    "options": [
+      "Mahşer",
+      "Arş",
+      "Mizan",
+      "Sırat"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d7634866-e7a5-40a2-9c46-6601ed7bba1c",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Diliyle inandığını söyleyip kalbiyle inankayan ikiyüzlü kişilere dini terimde ne denir?",
+    "options": [
+      "Müşrik",
+      "Münafık",
+      "Fasık",
+      "Kâfir"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "1210599f-964a-48a8-af9f-1c7f0069fe48",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Allah'a ve dinin esaslarına kalpten inanan kimsene ne unvan verilir?",
+    "options": [
+      "Münafık",
+      "Mü'min",
+      "Kâfir",
+      "Zahid"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "409f3b66-187c-452b-8942-e00421eaa95b",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İbadetlerde sırf Allah rızasını gözetmeye ve gösterişten uzak olmaya ne denir?",
+    "options": [
+      "Süm'a",
+      "Kibir",
+      "İhlas",
+      "Riya"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "a1f99d43-7da5-4a13-83bf-f9ca66c7522b",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "İbadet yaparken başkalarına gösteriş yapmaya dini terimde ne ad verilir?",
+    "options": [
+      "İhlas",
+      "Huşu",
+      "Tevazu",
+      "Riya"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "eaf74674-b92c-4972-b75c-2236c0d8c8b7",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İnsanın işlerini yaptıktan sonra sonrasını Allah'a havale edip O'na güvenmesine ne denir?",
+    "options": [
+      "Tevassut",
+      "Tefekkür",
+      "Teşrik",
+      "Tevekkül"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "6e10103e-e56c-44cb-8a4e-dea62615251a",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin vefatının ardından İslam devletinin ilk halifesi kim seçilmiştir?",
+    "options": [
+      "Hz. Ali (R.A.)",
+      "Hz. Ebubekir (R.A.)",
+      "Hz. Osman (R.A.)",
+      "Hz. Ömer (R.A.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "26a8e228-225a-413e-b69e-ce82c06efa1d",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Miraç olayında Peygamber Efendimizi tereddütsüz doğruladığı için 'Es-Sıddık' unvanı verilen halife kimdir?",
+    "options": [
+      "Hz. Osman (R.A.)",
+      "Hz. Ömer (R.A.)",
+      "Hz. Ebubekir (R.A.)",
+      "Hz. Ali (R.A.)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "410b6271-8c43-4bfd-9c47-479cdd2f5404",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Adaletiyle tanınan ve 'El-Faruk' (hak ile batılı ayıran) unvanı verilen ikinci halife kimdir?",
+    "options": [
+      "Hz. Ömer (R.A.)",
+      "Hz. Ebubekir (R.A.)",
+      "Hz. Osman (R.A.)",
+      "Hz. Ali (R.A.)"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "edfb6f11-dabc-4a95-b1ea-d1b5e866b34a",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Hicret olayını başlangıç kabul ederek Hicri Takvim'i resmi olarak başlatan halife kimdir?",
+    "options": [
+      "Hz. Ali (R.A.)",
+      "Hz. Ebubekir (R.A.)",
+      "Hz. Osman (R.A.)",
+      "Hz. Ömer (R.A.)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "33e504e0-97d0-4724-9a7f-418679fb3097",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Peygamberimizin iki kızıyla evlendiği için 'Zinnureyn' (İki Nur Sahibi) adıyla anılan 3. halife kimdir?",
+    "options": [
+      "Hz. Ebubekir (R.A.)",
+      "Hz. Osman (R.A.)",
+      "Hz. Ömer (R.A.)",
+      "Hz. Ali (R.A.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "fb8ad06d-dd7a-4fbb-a53b-38c6ab52eb8c",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamberimizin amcasının oğlu ve damadı olan, 'İlmin Kapısı' lakaplı 4. halife kimdir?",
+    "options": [
+      "Hz. Ebubekir (R.A.)",
+      "Hz. Ali (R.A.)",
+      "Hz. Ömer (R.A.)",
+      "Hz. Osman (R.A.)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d4dd5369-9d08-41b6-8006-47ea9643d29c",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "İlk Dört Halife dönemine İslam tarihinde ne ad verilir?",
+    "options": [
+      "Emeviler Dönemi",
+      "Abbasiler Dönemi",
+      "Saadet Devri",
+      "Hulefâ-yi Râşidîn Dönemi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "973c593d-7351-4e2b-aa26-bd67fcfe5694",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Dünyadayken cennetle müjdelenen 10 ulu sahabeye verilen Arapça terim nedir?",
+    "options": [
+      "Aşere-i Mübeşşere",
+      "Ashab-ı Bedir",
+      "Ashab-ı Suffe",
+      "Ensar"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "53e34737-a07e-4041-983b-31be223dd2bb",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İslam'ın ilk müezzini olan ve Mekke'nin fethinde Kâbe üzerine çıkarak ezan okuyan sahabe kimdir?",
+    "options": [
+      "Hz. Bilal-i Habeşi (R.A.)",
+      "Hz. Zeyd",
+      "Hz. Ammar bin Yasir",
+      "Hz. Abdullah ibn Mesud"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "da06b6d2-b3e1-480a-bc6a-f945c22f922f",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İstanbul'da kabri bulunan ve Peygamberimizi evinde misafir eden büyük sahabe kimdir?",
+    "options": [
+      "Hz. Muaz bin Cebel",
+      "Hz. Cafer-i Tayyar",
+      "Ebu Eyyûb el-Ensarî (Eyüp Sultan)",
+      "Hz. Mus'ab bin Umeyr"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "02398e33-2664-466c-8606-a1a88e6f1a05",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "İslam tarihinde inancı uğruna şehit edilen ilk kadın sahabe kimdir?",
+    "options": [
+      "Hz. Nesibe",
+      "Hz. Asiye",
+      "Hz. Havva",
+      "Hz. Sümeyye (R.Anha)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "849b4a46-6aac-4365-809a-1d83d6ebac90",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Müslümanların ilk kıblesi olan ve Kudüs şehrinde yer alan mübarek mescit hangisidir?",
+    "options": [
+      "Kuba Mescidi",
+      "Mescid-i Haram",
+      "Mescid-i Aksa",
+      "Mescid-i Nebevî"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "665d7549-496e-465b-a382-f4a0d5b5a0f5",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Peygamber Efendimizin Mekke'den Kudüs'teki Mescid-i Aksa'ya gece vakti götürülmesi mucizesine ne denir?",
+    "options": [
+      "Miraç",
+      "İsra",
+      "Hicret",
+      "Biat"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "d7a89899-b8d9-42f9-96ff-12680da4a585",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamberimizin Mescid-i Aksa'dan göklere ve ilahi huzura yükselmesi mucizesine ne ad verilir?",
+    "options": [
+      "Hicret",
+      "Nüzul",
+      "Miraç",
+      "İsra"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "b9354708-4fc5-4a4c-8dd1-dedcf4e0544a",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "İslam tarihinde inşa edilen ilk mescit aşağıdakilerden hangisidir?",
+    "options": [
+      "Mescid-i Dırar",
+      "Mescid-i Aksa",
+      "Mescid-i Nebevî",
+      "Kuba Mescidi"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "a68d91b8-1219-4a2c-b6df-5924cb145574",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin Medine'ye hicret ettikten sonra inşa ettirdiği merkez mescidin adı nedir?",
+    "options": [
+      "Kuba Mescidi",
+      "Mescid-i Nebevî",
+      "Mescid-i Kıbleteyn",
+      "Mescid-i Haram"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "70df9fec-f599-4637-9822-2c9e3a5bd81c",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Mescid-i Nebevî'nin yanında yoksul ve ilim sevdalısı sahabelerin kalması için yapılan bölüme ne denir?",
+    "options": [
+      "Suffe",
+      "Şerefe",
+      "Minber",
+      "Mihrap"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "b3c535b6-c891-4652-a3b6-f834a7062fe9",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Suffe mekleb ve medresesinde yetişen ilim talebesi sahabelere ne denir?",
+    "options": [
+      "Ashab-ı Kehf",
+      "Ashab-ı Suffe",
+      "Ashab-ı Uhud",
+      "Ashab-ı Bedir"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "bae8de7d-b3e0-4599-94ca-fca7d357de21",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "İslam ordusunun Mekke'yi kan dökmeden fethettiği tarihi yıl hangisidir?",
+    "options": [
+      "622",
+      "630",
+      "610",
+      "632"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c5867081-aabb-477a-b932-1d44a29526a1",
+    "category": "İslam Kültürü",
+    "difficulty": 3,
+    "text": "Peygamberimizin Medine'deki ilk öğretmen olarak Mekke'den gönderdiği genç sahabe kimdir?",
+    "options": [
+      "Hz. Muaz bin Cebel",
+      "Hz. Zeyd bin Sabit",
+      "Hz. Mus'ab bin Umeyr (R.A.)",
+      "Hz. Enes bin Malik"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "534a0888-092e-49ad-917b-b385991ada6e",
+    "category": "İslam Kültürü",
+    "difficulty": 3,
+    "text": "Hz. Ebubekir döneminde Kur'an ayetlerini toplamakla görevlendirilen vahiy kâtibi komisyon başkanı kimdir?",
+    "options": [
+      "Hz. Ali (R.A.)",
+      "Hz. Zeyd bin Sâbit (R.A.)",
+      "Hz. Ubayy bin Ka'b",
+      "Hz. Abdullah bin Masud"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "bd9f4e12-792d-4da0-8f81-0167e8e4dbe1",
+    "category": "İslam Kültürü",
+    "difficulty": 3,
+    "text": "Bizans İmparatorluğu ile Müslümanlar arasında yapılan ilk savaş hangisidir?",
+    "options": [
+      "Muta Savaşı",
+      "Yarmuk Savaşı",
+      "Kadisye Savaşı",
+      "Tabuk Seferi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "4e7238d8-9bd8-4d31-9763-d988ae36c984",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Peygamber Efendimizin bizzat ordunun başında katıldığı askeri seferlere ne ad verilir?",
+    "options": [
+      "Cihat",
+      "Seriyye",
+      "Hicret",
+      "Gazve"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "416156bd-2b9f-4957-aabb-4e04608942c6",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Peygamber Efendimizin bizzat katılmayıp bir sahabeyi komutan tayin ettiği seferlere ne denir?",
+    "options": [
+      "Seriyye",
+      "Gazve",
+      "Fetih",
+      "Müfreze"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "9d12d1ea-91e5-4d9b-8924-fa592a12706d",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Müslümanların iki kıbleli mescidi olarak bilinen Mescid-i Kıbleteyn hangi şehirdedir?",
+    "options": [
+      "Şam",
+      "Medine",
+      "Kudüs",
+      "Mekke"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "423ee2b3-e939-4724-89de-491690e4fd1d",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kur'an-ı Kerim'in indirildiği, bin aydan daha hayırlı olduğu bildirilen mübarek gece hangisidir?",
+    "options": [
+      "Kadir Gecesi",
+      "Regaip Gecesi",
+      "Berat Gecesi",
+      "Miraç Gecesi"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "a728bcd9-8013-47d4-a0fb-78bf307e87d5",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin doğumu anısına kutlanan mübarek kandil gecesi hangisidir?",
+    "options": [
+      "Mevlid Kandili",
+      "Miraç Kandili",
+      "Berat Kandili",
+      "Regaip Kandili"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "55960a32-bc05-4ce3-8ea3-785cac95ac26",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Recep ayının ilk cuma gecesinde idrak edilen mübarek gece hangisidir?",
+    "options": [
+      "Miraç Kandili",
+      "Berat Kandili",
+      "Kadir Gecesi",
+      "Regaip Kandili"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "70b38cd5-ea37-44c4-b3c8-64e12a9d79e2",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin ilahi huzura kabul edildiği Recep ayının 27. gecesi hangisidir?",
+    "options": [
+      "Regaip Kandili",
+      "Miraç Kandili",
+      "Mevlid Kandili",
+      "Berat Kandili"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "6404ff15-39da-4bff-8016-28569557126f",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Şaban ayının 15. gecesi olan ve af, mağfiret ve beraat gecesi sayılan kandil hangisidir?",
+    "options": [
+      "Regaip Kandili",
+      "Miraç Kandili",
+      "Berat Kandili",
+      "Mevlid Kandili"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "ef61c1a8-47ac-4205-98ec-0306a1852201",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Müslümanların kıblesi olan Kâbe-i Muazzama hangi kutsal şehirdedir?",
+    "options": [
+      "Kudüs",
+      "Medine",
+      "Cidde",
+      "Mekke"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "f273b7e9-ae26-4228-b5e9-c1d42b132f60",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Yeryüzünde Allah'a ibadet amacıyla inşa edilen ilk mabet hangisidir?",
+    "options": [
+      "Mescid-i Aksa",
+      "Kâbe-i Muazzama",
+      "Mescid-i Nebevî",
+      "Kuba Mescidi"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "924c9c3d-fc5c-49ba-bff7-ff766ee4cbc2",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Kâbe'nin doğu köşesinde bulunan ve cennetten geldiği bildirilen mübarek siyah taş hangisidir?",
+    "options": [
+      "Hacerül Esved",
+      "Makam-ı İbrahim",
+      "Mültezem",
+      "Hatim"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "1e2eed44-6234-4e1a-82f2-0582215bbbdf",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Hz. Hacer ile bebek Hz. İsmail'e çölde mucizevi şekilde lütfedilen mübarek su hangisidir?",
+    "options": [
+      "Selsebil",
+      "Kevser Suyu",
+      "Tesnim Suyu",
+      "Zemzem Suyu"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "5860557a-63f3-44b8-9bb5-fc50bec25838",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Hacıların Arafat dönüşü geceyi geçirip dualar ettiği ve şeytan taşlamak için taş topladığı yer neresidir?",
+    "options": [
+      "Mina",
+      "Müzdelife",
+      "Merve",
+      "Safa"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "5d042460-be4e-453e-89f3-1a4234673aab",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Hac ibadetinde sembolik olarak şeytan taşlama eyleminin yapıldığı mekan neresidir?",
+    "options": [
+      "Mina",
+      "Arafat",
+      "Hira",
+      "Müzdelife"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "fc9db250-8b8a-4b64-a838-028e3380bb9e",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Camide ezan okuyan din görevlisine ne ad verilir?",
+    "options": [
+      "Müftü",
+      "Vaiz",
+      "İmam",
+      "Müezzin"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "101b44d1-f955-49ae-b6b0-ce43a11a0db6",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Camide cemaate namaz kıldıran din görevlisine ne ad verilir?",
+    "options": [
+      "Müftü",
+      "İmam",
+      "Müezzin",
+      "Kayyum"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "7126e28e-805d-4fe1-ad8f-caa0b2b0f7a7",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Camilerde imamın namaz kıldırırken yöneldiği girintili mekana ne ad verilir?",
+    "options": [
+      "Mihrap",
+      "Minare",
+      "Minber",
+      "Kürsü"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c79223fa-1504-483d-9823-4705c956b87e",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Cuma namazında imamın hutbe okumak için çıktığı basamaklı yüksek yapıya ne denir?",
+    "options": [
+      "Minber",
+      "Vaaz Kürsüsü",
+      "Mihrap",
+      "Mahfil"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "262bef86-ea8a-4e32-942a-aade5e1a19a0",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Camilerde vaaz ve nasihat vermek için kullanılan yüksekçe kürsüye ne ad verilir?",
+    "options": [
+      "Vaaz Kürsüsü",
+      "Şerefe",
+      "Minber",
+      "Mihrap"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "0714fd26-1c50-4074-b1ab-084fbc340a33",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Camilerin bitişiğinde yer alan ve ezan okunan ince yüksek kulelere ne verilir?",
+    "options": [
+      "Şerefe",
+      "Mahfil",
+      "Minare",
+      "Kubbe"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "68d4a53a-83d1-43e9-b655-378effe8d801",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Minarelerde müezzinin çıkıp ezan okuduğu etrafı parmaklıklı balkona ne ad verilir?",
+    "options": [
+      "Şerefe",
+      "Külah",
+      "Kürsü",
+      "Aleme"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "35815050-472c-4781-b83d-c4b5712d9699",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İslam aleminde haftalık toplu ibadet ve bayram günü kabul edilen mübarek gün hangisidir?",
+    "options": [
+      "Perşembe",
+      "Pazartesi",
+      "Cuma",
+      "Pazar"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d37c1b22-b474-46b9-9dae-f2ec1a1d0c90",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Ramazan ayı bitiminde vacip olan ve yoksullara verilen şükür sadakasına ne ad verilir?",
+    "options": [
+      "Fidye",
+      "Zekât",
+      "Öşür",
+      "Fitre (Sadaka-i Fıtır)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "b51c1025-cfde-4c57-9156-1e945e8fd249",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Oruç tutmaya gücü yetmeyen çok yaşlı veya şifa umudu olmayan hastaların ödediği meblağa ne denir?",
+    "options": [
+      "Fidye",
+      "Zekât",
+      "Kefaret",
+      "Fitre"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "2bd3d2fe-8557-46c7-a3e9-7ff423a3713b",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Allah rızası için karşılıksız yapılan her türlü maddi ve manevi iyiliğe ne ad verilir?",
+    "options": [
+      "Öşür",
+      "Zekât",
+      "Nefaka",
+      "Sadaka"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "365fbbd9-ca6e-44ca-8127-55c6b52877e5",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Öldükten sonra da hayır duası kazandırmaya devam eden (cami, çeşme, okul vb.) hayra ne ad verilir?",
+    "options": [
+      "Sadaka-i Fıtır",
+      "Sadaka-i Cariye",
+      "İnfak",
+      "Fidye"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b5cf9093-3906-44ec-b9a2-c14c78fd90b8",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Tarımsal ürünlerden verilen %10 veya %5 oranındaki zekâta ne ad verilir?",
+    "options": [
+      "Cizye",
+      "Nisap",
+      "Haraç",
+      "Öşür"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "15df3e62-8ceb-48ee-bcc0-399c6787c257",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İslam mimarisinde camilerin üzerini örten yarım küre şeklindeki çatı yapısına ne verilir?",
+    "options": [
+      "Revak",
+      "Minare",
+      "Şerefe",
+      "Kubbe"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "307e6c6c-e622-452a-84de-9303fc9690fa",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin mübarek sözlerine, fiillerine ve takdirlerine verilen isim nedir?",
+    "options": [
+      "Fıkıh",
+      "Hadis-i Şerif",
+      "Siyer",
+      "Ayet"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "5bbae944-a571-4be8-9671-c0da0688e515",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "En sahih ve güvenilir 6 hadis kitabına İslam literatüründe ne ad verilir?",
+    "options": [
+      "Müsnedler",
+      "Sahihayn",
+      "Kütüb-i Sitte",
+      "Sünenler"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "d1aa4a5c-7613-401b-b30e-f75a2a268482",
+    "category": "İslam Kültürü",
+    "difficulty": 3,
+    "text": "En güvenilir iki hadis kaynağı olan Sahih-i Buhâri ve Sahih-i Müslim'e birlikte ne ad verilir?",
+    "options": [
+      "Müsned",
+      "Sünen",
+      "Sahihayn",
+      "Kütüb-i Sitte"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "88698106-ea7b-444f-86f7-46e2f4419fd0",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin yaşadığı ve bizlere tavsiye ettiği ibadet ve ahlak ilkelerine ne denir?",
+    "options": [
+      "Sünnet",
+      "Farz",
+      "Vacip",
+      "Mübah"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "941f584f-3c63-4d64-b99a-482bb3e07b0a",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İslam dininde yapılması kesin delillerle emredilen yükümlülüklere ne denir?",
+    "options": [
+      "Farz",
+      "Sünnet",
+      "Müstahap",
+      "Vacip"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "e4902e5e-a90e-4494-9308-56c9d40dbd50",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "İslam dininde yapılması kesin olarak yasaklanan tutum ve davranışlara ne denir?",
+    "options": [
+      "Haram",
+      "Mübah",
+      "Helal",
+      "Mekruh"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "27bbf669-e36e-4099-a923-900a21347564",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Dinen yasak olmamakla birlikte yapılması hoş karşılanmayan davranışlara ne denir?",
+    "options": [
+      "Mekruh",
+      "Mübah",
+      "Haram",
+      "Vacip"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "1eadf362-6708-466b-9898-555fc5e9b541",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Yapılması veya yapılmaması dinen serbest bırakılmış eylemlere ne ad verilir?",
+    "options": [
+      "Mübah",
+      "Mekruh",
+      "Farz",
+      "Haram"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "133d2901-2497-45ae-a797-a696553d6f64",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "İslam hukukunu ve dinî hükümleri inceleyen ilim dalına ne ad verilir?",
+    "options": [
+      "Kelam",
+      "Akaid",
+      "Tasavvuf",
+      "Fıkıh"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": "16961491-7eb3-403e-a5c7-19817add4a18",
+    "category": "İslam Kültürü",
+    "difficulty": 3,
+    "text": "Kur'an ve Hadislerden dini hüküm çıkarma yetkinliğine sahip İslam bilginine ne denir?",
+    "options": [
+      "Muhaddis",
+      "Müctehid",
+      "Müfessir",
+      "Mukallid"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "c1beb95e-14dc-4169-b5c7-ceb90aaedad0",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "'Bismillah' diyerek hayırlı bir işe başlarken okunan ifadenin anlamı nedir?",
+    "options": [
+      "Rahman ve Rahim olan Allah'ın adıyla",
+      "Allah her şeyi bilendir",
+      "Allah en büyüktür",
+      "Hamd Allah'a mahsustur"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "04be7581-d909-41f2-a18c-c64f8a74ff96",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Bir nimet veya iyilik karşısında Allah'a şükretmek için söylenen ifade hangisidir?",
+    "options": [
+      "Elhamdülillah",
+      "Maşallah",
+      "Estağfirullah",
+      "İnşallah"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c18c164d-d905-482f-b267-75203928d0f9",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Geleceğe dair bir niyet beyan ederken 'Allah dilerse' anlamında kullanılan tabir hangisidir?",
+    "options": [
+      "İnşallah",
+      "Maşallah",
+      "Elhamdülillah",
+      "Subhanallah"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "cb4ea5d2-37f3-499c-ab1b-da858a5da8b3",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Beğenilen bir güzellik veya hayranlık anında 'Allah ne güzel yaratmış' anlamında söylenen tabir hangisidir?",
+    "options": [
+      "Maşallah",
+      "Elhamdülillah",
+      "Fesubhanallah",
+      "İnşallah"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "34cf0dee-3086-4ce2-b490-4d56bc7eb06e",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Allah'tan bağışlanma ve af dilerken söylenen dua cümlesi hangisidir?",
+    "options": [
+      "Alhamdulillah",
+      "Estağfirullah",
+      "Maşallah",
+      "Hasbunallah"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "641e618b-4968-4e71-b360-b40f401edbbe",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Müslümanların karşılaştıklarında birbirlerine verdikleri esenlik ve dua selamı nedir?",
+    "options": [
+      "Hoşgeldiniz",
+      "Selamün Aleyküm",
+      "Günaydın",
+      "Hayırlı İşler"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "ef042529-1ef8-42fc-8a17-003c59dc16c3",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "'Selamün Aleyküm' diyen bir Müslümana verilen edep üzere karşılık cümlesi nedir?",
+    "options": [
+      "Ve Aleyküm Selam",
+      "Teşekkürler",
+      "Sağolasın",
+      "Hoşbulduk"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "4537cc43-3b76-4c41-8a42-ffb82ed958ee",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin 'Temizlik neyin yarısıdır?' buyurduğu kutsal değer nedir?",
+    "options": [
+      "İmanın",
+      "Ahlakın",
+      "Sağlığın",
+      "İbadetin"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "20ea6612-8fd3-452d-a5c4-9267c36287a7",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Peygamber Efendimizin 'Cennet hangisinin ayakları altındadır?' buyurduğu kutlu varlık kimdir?",
+    "options": [
+      "Annelerin",
+      "Babaların",
+      "Alimlerin",
+      "Şehitlerin"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "027f490c-290b-4601-9a4b-a286f0d94888",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Üzerinde başkasının hakkı bulunan ve helalleşmeden affolunmayacağı bildirilen hak hangisidir?",
+    "options": [
+      "Kul Hakkı",
+      "Kamu Hakkı",
+      "Nefis Hakkı",
+      "Şahsi Hak"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "c8b9eacf-4215-4015-be4e-75348a9b06aa",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Bir kişinin arkasından duyduğunda hoşlanmayacağı doğru olan şeyleri konuşmaya ne ad verilir?",
+    "options": [
+      "Gıybet",
+      "İftira",
+      "Nemime",
+      "Kibir"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": "f28e88bd-4fe4-4378-a665-d8d015e253f9",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Bir insana işlemediği bir suçu veya kusuru asılsız olarak yüklemeye ne denir?",
+    "options": [
+      "Riya",
+      "İftira",
+      "Gıybet",
+      "Haset"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": "b661e92b-4329-4617-ad7f-f453873d30bf",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Başka bir insan hakkında emsal olmadan kötü düşünce ve tahminde bulunmaya ne ad verilir?",
+    "options": [
+      "Gıybet",
+      "Hüsn-i Zan",
+      "Su-i Zan",
+      "Kibir"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "f4ab40e9-2ff5-4aaf-a20a-15438141ef6f",
+    "category": "İslam Kültürü",
+    "difficulty": 2,
+    "text": "Bir insan hakkında hüsnüniyet ve güzel düşüncede bulunmaya ne ad verilir?",
+    "options": [
+      "Gıybet",
+      "Su-i Zan",
+      "Hüsn-i Zan",
+      "Tefekkür"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": "eac4cb61-afdb-4a1d-9e4b-ab99e8b8488a",
+    "category": "İslam Kültürü",
+    "difficulty": 1,
+    "text": "Başkalarının sahip olduğu nimetleri kıskanıp onların elinden çıkmasını istemeye ne denir?",
+    "options": [
+      "Ucub",
+      "Gıpta",
+      "Kibir",
+      "Haset"
+    ],
+    "correctOptionIndex": 3
   }
 ]

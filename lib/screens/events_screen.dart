@@ -45,6 +45,15 @@ class EventsScreen extends StatelessWidget {
                   children: [
                     _buildEventCard(
                       context,
+                      title: 'İslam Kültürü ve Dini Bilgiler',
+                      subtitle: 'Kur\'an-ı Kerim, peygamberler tarihi, siyer ve temel dini bilgiler.',
+                      icon: Icons.mosque,
+                      color: Colors.teal,
+                      keywords: ['İslam Kültürü'],
+                    ),
+                    const SizedBox(height: 12),
+                    _buildEventCard(
+                      context,
                       title: 'Yeşilçam Efsaneleri',
                       subtitle: 'Şener Şen, Kemal Sunal ve unutulmaz replikler.',
                       icon: Icons.movie,
