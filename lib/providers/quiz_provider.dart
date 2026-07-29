@@ -224,29 +224,34 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   int _iqModeCorrect = 0;
 
   int get iqLevel {
-    if (_iqModeAnswered == 0) return 80;
+    if (_iqModeAnswered == 0) {
+      // Hiç oynanmamışsa Acemi rutubesinin alt sınırı olan 10 göster
+      return 10;
+    }
     
     int wrongAnswers = _iqModeAnswered - _iqModeCorrect;
     
-    // Doğrular +1.0 net puan, Yanlışlar -3.0 puan (Zorlaştırılmış ağır cezalı sistem)
+    // Doğrular +1.0 net puan, Yanlışlar -3.0 puan
     double netScore = (_iqModeCorrect * 1.0) - (wrongAnswers * 3.0);
-    if (netScore <= 0) return 80;
     
-    // Zorlaştırılmış logaritmik yükselme (Sadece Klasik ve Sonsuz mod puan kazandırır)
-    double iqBonus = dart_math.pow(netScore, 0.45) * 1.45;
+    // Net skor 0 veya altında = en düşük IQ (10)
+    if (netScore <= 0) return 10;
     
-    int iq = (80 + iqBonus).toInt();
+    // Logaritmik yükselme: 10 (başlangıç) → 160 (maks)
+    double iqBonus = dart_math.pow(netScore, 0.45) * 10.0;
+    
+    int iq = (10 + iqBonus).toInt();
     if (iq > 160) iq = 160;
-    if (iq < 70) iq = 70;
+    if (iq < 10) iq = 10;
     return iq;
   }
 
   String get userTitle {
     int iq = iqLevel;
-    if (iq < 85) return 'Acemi';
-    if (iq < 95) return 'Çömez';
-    if (iq < 105) return 'Öğrenci';
-    if (iq < 115) return 'Çırak';
+    if (iq < 30) return 'Acemi';
+    if (iq < 60) return 'Çömez';
+    if (iq < 90) return 'Çırak';
+    if (iq < 110) return 'Öğrenci';
     if (iq < 130) return 'Bilgin';
     if (iq < 145) return 'Profesör';
     if (iq < 155) return 'Dahi';
@@ -1816,7 +1821,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
         'level': _currentQuestionIndex,
         'date': date,
         'avatar': _activeAvatar,
-        'userName': _userName,
+        'userName': _userName.trim().isNotEmpty ? _userName.trim() : 'Oyuncu ${_deviceId.substring(0, 4)}',
         'userTitle': userTitle,
       };
       
@@ -1826,7 +1831,10 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       try {
         String finalId = FirebaseAuth.instance.currentUser?.uid ?? _deviceId;
         String docId = "${finalId}_$modeStr";
-        FirebaseFirestore.instance.collection('leaderboard').doc(docId).set(scoreData, SetOptions(merge: true));
+        // uid alanını da kaydet — diğer cihazlarda isim görünmesi için
+        final firestoreData = Map<String, dynamic>.from(scoreData);
+        firestoreData['uid'] = finalId;
+        FirebaseFirestore.instance.collection('leaderboard').doc(docId).set(firestoreData, SetOptions(merge: true));
       } catch (e) {
         debugPrint("Firestore error: $e");
       }

@@ -316,10 +316,12 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     }
     
     int syncedIndex = data['currentQuestionIndex'] ?? 0;
-    // BUG FIX 3: Soru geçişi sadece bir kez tetiklensin — _isRevealing kontrolü eklendi
-    if (syncedIndex > _currentIndex && !_isRevealing) {
+    // FIX: _isRevealing kontrolü KALDIRILDI — reveal sırasında da geçişe izin ver
+    // (host 3sn sonra moveToNextQuestion çağırır, bu geldiğinde guest _isRevealing=true
+    // olabilir, eski kod bunu bloke ediyordu → sorudan sonra donma hatası)
+    if (syncedIndex > _currentIndex) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (!mounted) return;
+        if (!mounted || _isNavigatingToResult) return;
         setState(() {
           _currentIndex = syncedIndex;
           _isRevealing = false;
