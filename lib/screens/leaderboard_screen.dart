@@ -364,13 +364,15 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                   }).toList();
 
                   if (pastScores.isEmpty) {
-                    pastScores = [
-                      {'userName': 'A. Einstein', 'score': 1000000, 'moneyString': '1.0 Milyon ₺', 'avatar': 'einstein_avatar.png'},
-                      {'userName': 'N. Tesla', 'score': 750000, 'moneyString': '750 Bin ₺', 'avatar': 'tesla_avatar.png'},
-                      {'userName': 'I. Newton', 'score': 500000, 'moneyString': '500 Bin ₺', 'avatar': 'newton_avatar.png'},
-                      {'userName': 'M. Curie', 'score': 350000, 'moneyString': '350 Bin ₺', 'avatar': 'curie_avatar.png'},
-                      {'userName': 'Da Vinci', 'score': 250000, 'moneyString': '250 Bin ₺', 'avatar': 'davinci_avatar.png'},
-                    ];
+                    return const Expanded(
+                      child: Center(
+                        child: Text(
+                          'Henüz geçmiş haftanın kazananları bulunmuyor.\nHaftalık yarışma devam ediyor! 🏆',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white70, fontSize: 15, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    );
                   }
 
                   return _buildLeaderboardView(pastScores, provider, isPastTab: true);
@@ -487,30 +489,16 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     parsedScores = bestScores.values.toList();
                     parsedScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
 
-                    if (parsedScores.length < 10) {
-                      List<Map<String, dynamic>> defaultBots = targetMode == 'Klasik Mod' ? [
-                        {'score': 500000, 'moneyString': '500 Bin ₺', 'userName': 'A. Einstein', 'avatar': 'einstein_avatar.png'},
-                        {'score': 250000, 'moneyString': '250 Bin ₺', 'userName': 'N. Tesla', 'avatar': 'tesla_avatar.png'},
-                        {'score': 125000, 'moneyString': '125 Bin ₺', 'userName': 'I. Newton', 'avatar': 'newton_avatar.png'},
-                        {'score': 60000, 'moneyString': '60 Bin ₺', 'userName': 'M. Curie', 'avatar': 'curie_avatar.png'},
-                        {'score': 30000, 'moneyString': '30 Bin ₺', 'userName': 'Da Vinci', 'avatar': 'davinci_avatar.png'},
-                        {'score': 15000, 'moneyString': '15 Bin ₺', 'userName': 'S. Hawking', 'avatar': 'hawking_avatar.png'},
-                      ] : [
-                        {'score': 80, 'moneyString': '80 Soru', 'userName': 'A. Einstein', 'avatar': 'einstein_avatar.png'},
-                        {'score': 60, 'moneyString': '60 Soru', 'userName': 'N. Tesla', 'avatar': 'tesla_avatar.png'},
-                        {'score': 45, 'moneyString': '45 Soru', 'userName': 'I. Newton', 'avatar': 'newton_avatar.png'},
-                        {'score': 30, 'moneyString': '30 Soru', 'userName': 'M. Curie', 'avatar': 'curie_avatar.png'},
-                        {'score': 20, 'moneyString': '20 Soru', 'userName': 'Da Vinci', 'avatar': 'davinci_avatar.png'},
-                        {'score': 15, 'moneyString': '15 Soru', 'userName': 'S. Hawking', 'avatar': 'hawking_avatar.png'},
-                      ];
-                      
-                      for (var bot in defaultBots) {
-                        bool exists = parsedScores.any((s) => s['userName'] == bot['userName']);
-                        if (!exists) {
-                          parsedScores.add(bot);
-                        }
-                      }
-                      parsedScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
+                    if (parsedScores.isEmpty) {
+                      return const Expanded(
+                        child: Center(
+                          child: Text(
+                            'Bu kategoride henüz skor kaydedilmedi.\nİlk skoru sen kaydet ve zirveye otur! 🚀',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white70, fontSize: 15, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      );
                     }
 
                     return _buildLeaderboardView(parsedScores, provider);

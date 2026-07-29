@@ -498,15 +498,6 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _weeklyEndlessScore = prefs.getInt(_weeklyEndlessScoreKey) ?? 0;
     _lastWeeklyResetDate = prefs.getString(_lastWeeklyResetDateKey) ?? '';
     _pastWinners = prefs.getStringList(_pastWinnersKey) ?? [];
-    if (_pastWinners.isEmpty) {
-      _pastWinners = [
-        jsonEncode({'score': 1000000, 'userName': 'A. Einstein', 'avatar': 'einstein_avatar.png', 'moneyString': '1.0 Milyon ₺', 'mode': 'Klasik Mod'}),
-        jsonEncode({'score': 750000, 'userName': 'N. Tesla', 'avatar': 'tesla_avatar.png', 'moneyString': '750 Bin ₺', 'mode': 'Klasik Mod'}),
-        jsonEncode({'score': 500000, 'userName': 'I. Newton', 'avatar': 'newton_avatar.png', 'moneyString': '500 Bin ₺', 'mode': 'Klasik Mod'}),
-        jsonEncode({'score': 350000, 'userName': 'M. Curie', 'avatar': 'curie_avatar.png', 'moneyString': '350 Bin ₺', 'mode': 'Klasik Mod'}),
-        jsonEncode({'score': 250000, 'userName': 'Da Vinci', 'avatar': 'davinci_avatar.png', 'moneyString': '250 Bin ₺', 'mode': 'Klasik Mod'}),
-      ];
-    }
 
     try {
       final jsonString = await rootBundle.loadString('assets/questions.json');
@@ -1092,86 +1083,81 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   }
 
   Future<void> _processWeeklyRewards() async {
-    List<Map<String, dynamic>> bots = [
-      {'score': 500000, 'userName': 'A. Einstein', 'avatar': 'assets/images/einstein_avatar.png'},
-      {'score': 250000, 'userName': 'N. Tesla', 'avatar': 'assets/images/tesla_avatar.png'},
-      {'score': 125000, 'userName': 'I. Newton', 'avatar': 'assets/images/newton_avatar.png'},
-      {'score': 60000, 'userName': 'M. Curie', 'avatar': 'assets/images/curie_avatar.png'},
-      {'score': 30000, 'userName': 'Da Vinci', 'avatar': 'assets/images/davinci_avatar.png'},
-      {'score': 15000, 'userName': 'S. Hawking', 'avatar': 'assets/images/hawking_avatar.png'},
-      {'score': 10000, 'userName': 'Galileo', 'avatar': 'assets/images/galileo_avatar.png'},
-      {'score': 5000, 'userName': 'Pisagor', 'avatar': 'assets/images/pythagoras_avatar.png'},
-    ];
-    for (int i = 1; i <= 20; i++) {
-      int score = 5000 - (i * 200);
-      if (score < 100) score = 100;
-      bots.add({'score': score, 'userName': 'Oyuncu $i', 'avatar': 'assets/images/einstein_avatar.png'});
+    // Gerçek oyuncu skorları Firebase Firestore'dan çekilir
+    List<Map<String, dynamic>> allScores = [];
+    try {
+      final snapshot = await FirebaseFirestore.instance.collection('leaderboard').where('mode', isEqualTo: 'Klasik Mod').get();
+      for (var doc in snapshot.docs) {
+        var data = doc.data();
+        if ((data['score'] ?? 0) > 0) {
+          allScores.add(data);
+        }
+      }
+    } catch (e) {
+      debugPrint("Weekly rewards fetch error: $e");
     }
-    
-    List<Map<String, dynamic>> allScores = List.from(bots);
-    allScores.add({'score': _weeklyScore, 'userName': _userName, 'avatar': _activeAvatar, 'isUser': true});
+
+    if (!allScores.any((s) => s['userName'] == _userName)) {
+      allScores.add({'score': _weeklyScore, 'userName': _userName, 'avatar': _activeAvatar, 'isUser': true});
+    }
     allScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
-    
+
     _pastWinners.clear();
     for (int i = 0; i < 10 && i < allScores.length; i++) {
       _pastWinners.add(jsonEncode(allScores[i]));
     }
     
-    int userRank = allScores.indexWhere((s) => s['isUser'] == true) + 1;
-    if (userRank == 1) {
+    int userRank = allScores.indexWhere((s) => s['userName'] == _userName || s['isUser'] == true) + 1;
+    if (userRank == 1 && _weeklyScore > 0) {
       _totalCoins += 5000;
       _roomCards += 10;
       _weeklyRewardMessage = "Tebrikler! Geçen haftayı 1. sırada tamamladın ve 5.000 Elmas + 10 Oda Kartı kazandın! 🏆";
-    } else if (userRank == 2) {
+    } else if (userRank == 2 && _weeklyScore > 0) {
       _totalCoins += 2500;
       _roomCards += 7;
       _weeklyRewardMessage = "Tebrikler! Geçen haftayı 2. sırada tamamladın ve 2.500 Elmas + 7 Oda Kartı kazandın! 🥈";
-    } else if (userRank == 3) {
+    } else if (userRank == 3 && _weeklyScore > 0) {
       _totalCoins += 1000;
       _roomCards += 5;
       _weeklyRewardMessage = "Tebrikler! Geçen haftayı 3. sırada tamamladın ve 1.000 Elmas + 5 Oda Kartı kazandın! 🥉";
-    } else if (userRank <= 10) {
+    } else if (userRank <= 10 && userRank > 0 && _weeklyScore > 0) {
       _totalCoins += 500;
       _roomCards += 3;
       _weeklyRewardMessage = "Geçen hafta ilk 10'a girmeyi başardın! Ödülün: 500 Elmas + 3 Oda Kartı. 🏆";
     }
     
-    // Sonsuz Mod Ödülleri
-    List<Map<String, dynamic>> endlessBots = [
-      {'score': 100, 'userName': 'A. Einstein'},
-      {'score': 85, 'userName': 'N. Tesla'},
-      {'score': 70, 'userName': 'I. Newton'},
-      {'score': 55, 'userName': 'M. Curie'},
-      {'score': 45, 'userName': 'Da Vinci'},
-      {'score': 35, 'userName': 'S. Hawking'},
-      {'score': 25, 'userName': 'Galileo'},
-      {'score': 15, 'userName': 'Pisagor'},
-    ];
-    for (int i = 1; i <= 20; i++) {
-      int score = 40 - (i * 2);
-      if (score < 5) score = 5;
-      endlessBots.add({'score': score, 'userName': 'Oyuncu $i'});
+    // Sonsuz Mod Ödülleri (Gerçek oyuncular)
+    List<Map<String, dynamic>> allEndlessScores = [];
+    try {
+      final snapshot = await FirebaseFirestore.instance.collection('leaderboard').where('mode', isEqualTo: 'Sonsuz Mod').get();
+      for (var doc in snapshot.docs) {
+        var data = doc.data();
+        if ((data['score'] ?? 0) > 0) {
+          allEndlessScores.add(data);
+        }
+      }
+    } catch (_) {}
+
+    if (!allEndlessScores.any((s) => s['userName'] == _userName)) {
+      allEndlessScores.add({'score': _weeklyEndlessScore, 'userName': _userName, 'isUser': true});
     }
-    
-    List<Map<String, dynamic>> allEndlessScores = List.from(endlessBots);
-    allEndlessScores.add({'score': _weeklyEndlessScore, 'userName': _userName, 'isUser': true});
     allEndlessScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
-    
-    int userEndlessRank = allEndlessScores.indexWhere((s) => s['isUser'] == true) + 1;
+
+    int userEndlessRank = allEndlessScores.indexWhere((s) => s['userName'] == _userName || s['isUser'] == true) + 1;
     String endlessMessage = "";
-    if (userEndlessRank == 1) {
+    if (userEndlessRank == 1 && _weeklyEndlessScore > 0) {
       _totalCoins += 4000;
       _roomCards += 10;
       endlessMessage = " Sonsuz Mod 1.si olarak ekstra 4.000 Elmas + 10 Oda Kartı kazandın!";
-    } else if (userEndlessRank == 2) {
+    } else if (userEndlessRank == 2 && _weeklyEndlessScore > 0) {
       _totalCoins += 3000;
       _roomCards += 7;
       endlessMessage = " Sonsuz Mod 2.si olarak ekstra 3.000 Elmas + 7 Oda Kartı kazandın!";
-    } else if (userEndlessRank == 3) {
+    } else if (userEndlessRank == 3 && _weeklyEndlessScore > 0) {
       _totalCoins += 1500;
       _roomCards += 5;
       endlessMessage = " Sonsuz Mod 3.sü olarak ekstra 1.500 Elmas + 5 Oda Kartı kazandın!";
-    } else if (userEndlessRank <= 10) {
+    } else if (userEndlessRank <= 10 && userEndlessRank > 0 && _weeklyEndlessScore > 0) {
       _totalCoins += 500;
       _roomCards += 3;
       endlessMessage = " Sonsuz Mod'da İlk 10'a girerek ekstra 500 Elmas + 3 Oda Kartı kazandın!";
