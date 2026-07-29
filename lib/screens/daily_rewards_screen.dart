@@ -133,8 +133,8 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
   }
 
   Widget _buildRewardCard(BuildContext context, QuizProvider provider, int dayIndex, int status) {
-    const diamondRewards = [50, 100, 150, 250, 400, 600, 1000];
-    const cashStrList = ['100K', '250K', '500K', '1M ₺', '2.5M ₺', '5M ₺', '10M ₺'];
+    const diamondRewards = [25, 50, 75, 100, 150, 200, 350];
+    const cashStrList = ['25K', '50K', '100K', '200K', '350K', '500K', '1M ₺'];
 
     int diamondReward = diamondRewards[dayIndex];
     String cashStr = cashStrList[dayIndex];
@@ -256,8 +256,8 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
   }
 
   Widget _buildDay7Banner(BuildContext context, QuizProvider provider, int status) {
-    int diamondReward = 1000;
-    String cashStr = '10 Milyon';
+    int diamondReward = 350;
+    String cashStr = '1 Milyon';
     
     bool isCurrent = (status == 1);
     bool isClaimed = (status == 2);
@@ -414,7 +414,7 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
     } else if (status == 3) {
       showDialog(
         context: context,
-        builder: (context) => AlertDialog(
+        builder: (dialogContext) => AlertDialog(
           backgroundColor: const Color(0xFF1E1E2C),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           title: const Row(
@@ -424,13 +424,13 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
               Text('Gün Kurtarma', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
             ],
           ),
-          content: const Text(
-            'Kaçırdığınız bu günün ödülünü reklam izleyerek kurtarmak ister misiniz?',
-            style: TextStyle(color: Colors.white70, fontSize: 16),
+          content: Text(
+            '${dayIndex + 1}. Günün ödülünü kurtarmak için 1 video reklam izlemeniz gerekmektedir. Devam etmek istiyor musunuz?',
+            style: const TextStyle(color: Colors.white70, fontSize: 16),
           ),
           actions: [
             TextButton(
-              onPressed: () => Navigator.pop(context),
+              onPressed: () => Navigator.pop(dialogContext),
               child: const Text('Vazgeç', style: TextStyle(color: Colors.grey, fontSize: 16)),
             ),
             ElevatedButton(
@@ -439,24 +439,24 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12)
               ),
-              onPressed: () async {
-                final messenger = ScaffoldMessenger.of(context);
-                Navigator.pop(context);
-                // Simulate Ad completion and claim
-                audio.playSfx('cash_register.mp3');
-                await provider.claimDailyLoginReward(dayIndex);
-                messenger.showSnackBar(
-                  const SnackBar(
-                    content: Text('✅ Gününüz kurtarıldı ve ödül alındı!', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)), 
-                    backgroundColor: Colors.green,
-                    behavior: SnackBarBehavior.floating,
-                  ),
+              onPressed: () {
+                Navigator.pop(dialogContext);
+                AdService().showRewardedAd(
+                  context: context,
+                  onRewardEarned: (amount) async {
+                    audio.playSfx('cash_register.mp3');
+                    await provider.claimDailyLoginReward(dayIndex);
+                    if (context.mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('✅ ${dayIndex + 1}. Gün kurtarıldı ve ödül alındı!', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)), 
+                          backgroundColor: Colors.green,
+                          behavior: SnackBarBehavior.floating,
+                        ),
+                      );
+                    }
+                  },
                 );
-                Future.delayed(const Duration(seconds: 1), () {
-                  if (context.mounted) {
-                    Navigator.pop(context);
-                  }
-                });
               },
               child: const Text('Reklamı İzle', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
             ),
