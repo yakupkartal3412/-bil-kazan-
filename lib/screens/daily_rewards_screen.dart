@@ -133,8 +133,8 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
   }
 
   Widget _buildRewardCard(BuildContext context, QuizProvider provider, int dayIndex, int status) {
-    const diamondRewards = [40, 80, 120, 180, 250, 350, 500];
-    const cashStrList = ['50K', '100K', '250K', '500K', '1M ₺', '2M ₺', '3.5M ₺'];
+    const diamondRewards = [50, 100, 200, 350, 500, 700, 1000];
+    const cashStrList = ['100K', '250K', '500K', '1M ₺', '2M ₺', '3.5M ₺', '5M ₺'];
 
     int diamondReward = diamondRewards[dayIndex];
     String cashStr = cashStrList[dayIndex];
@@ -256,8 +256,8 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
   }
 
   Widget _buildDay7Banner(BuildContext context, QuizProvider provider, int status) {
-    int diamondReward = 500;
-    String cashStr = '3.5 Milyon';
+    int diamondReward = 1000;
+    String cashStr = '5 Milyon';
     
     bool isCurrent = (status == 1);
     bool isClaimed = (status == 2);
