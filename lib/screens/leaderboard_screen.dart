@@ -800,6 +800,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     if (isUser) rawAvatar = provider.activeAvatar;
     String avatarPath = rawAvatar.startsWith('assets/images/') ? rawAvatar : 'assets/images/$rawAvatar';
     
+    String currentMode = _selectedTab == 0 ? 'Klasik Mod' : (_selectedTab == 1 ? 'Sonsuz Mod' : 'Geçmiş');
+    bool canClaimReward = isUser && rank <= 10 && (scoreMap['score'] ?? 0) > 0 && currentMode != 'Geçmiş' && !provider.isWeeklyRewardClaimed(currentMode);
+
     return Container(
       margin: const EdgeInsets.only(bottom: 3),
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
@@ -859,7 +862,102 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               ],
             ),
           ),
+          if (canClaimReward) ...[
+            const SizedBox(width: 6),
+            Builder(
+              builder: (btnCtx) => GestureDetector(
+                onTap: () async {
+                  bool claimed = await provider.claimWeeklyReward(currentMode, rank);
+                  if (!btnCtx.mounted) return;
+                  if (claimed) {
+                    _showClaimSuccessDialog(btnCtx, currentMode, rank, provider);
+                  }
+                },
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(colors: [Colors.amber, Colors.orange]),
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(color: Colors.orange.withValues(alpha: 0.5), blurRadius: 6, spreadRadius: 1),
+                    ],
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.card_giftcard, color: Colors.black, size: 14),
+                      SizedBox(width: 4),
+                      Text('ÖDÜLÜ AL 🎁', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 11)),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
         ],
+      ),
+    );
+  }
+
+  void _showClaimSuccessDialog(BuildContext context, String mode, int rank, QuizProvider provider) {
+    int coins = 0;
+    int cards = 0;
+    if (mode == 'Klasik Mod') {
+      if (rank == 1) { coins = 5000; cards = 10; }
+      else if (rank == 2) { coins = 2500; cards = 7; }
+      else if (rank == 3) { coins = 1000; cards = 5; }
+      else { coins = 500; cards = 3; }
+    } else {
+      if (rank == 1) { coins = 4000; cards = 10; }
+      else if (rank == 2) { coins = 3000; cards = 7; }
+      else if (rank == 3) { coins = 1500; cards = 5; }
+      else { coins = 500; cards = 3; }
+    }
+
+    showDialog(
+      context: context,
+      builder: (context) => Dialog(
+        backgroundColor: Colors.transparent,
+        child: Container(
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(colors: [Color(0xFF2A0845), Color(0xFF1A1A2E)]),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(color: Colors.amber, width: 2),
+            boxShadow: [
+              BoxShadow(color: Colors.amber.withValues(alpha: 0.3), blurRadius: 20, spreadRadius: 2),
+            ],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text('🏆 TEBRİKLER! 🏆', style: TextStyle(color: Colors.amber, fontWeight: FontWeight.bold, fontSize: 20)),
+              const SizedBox(height: 12),
+              Text('$mode sıralamasında $rank. sıradaki derecen için ödülün hesabına tanımlandı!', textAlign: TextAlign.center, style: const TextStyle(color: Colors.white, fontSize: 14)),
+              const SizedBox(height: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('+$coins Elmas 💎', style: const TextStyle(color: Colors.cyanAccent, fontWeight: FontWeight.bold, fontSize: 16)),
+                  const SizedBox(width: 12),
+                  Text('+$cards Oda Kartı 🃏', style: const TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold, fontSize: 16)),
+                ],
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () => Navigator.pop(context),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: Colors.amber,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Text('HARİKA!', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 15)),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
@@ -934,38 +1032,51 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     ),
                     _buildRewardTier(null, reward4, Colors.white, '4. - 10. SIRA', null),
                     const SizedBox(height: 24),
-                    GestureDetector(
-                      onTap: () => Navigator.pop(context),
-                      child: Container(
-                        width: double.infinity,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                            colors: [Colors.amber, Colors.orange],
-                            begin: Alignment.centerLeft,
-                            end: Alignment.centerRight,
-                          ),
-                          borderRadius: BorderRadius.circular(16),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.orange.withValues(alpha: 0.4),
-                              blurRadius: 8,
-                              offset: const Offset(0, 4),
-                            )
-                          ],
-                        ),
-                        child: const Center(
-                          child: Text(
-                            'SAVAŞA KATIL',
-                            style: TextStyle(
-                              color: Colors.black87,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              letterSpacing: 1.2,
+                    Consumer<QuizProvider>(
+                      builder: (context, provider, child) {
+                        String currentMode = isEndless ? 'Sonsuz Mod' : 'Klasik Mod';
+                        bool isClaimed = provider.isWeeklyRewardClaimed(currentMode);
+
+                        return GestureDetector(
+                          onTap: () async {
+                            if (!isClaimed) {
+                              // Claim if in top 10
+                              // For simplicity close dialog or trigger claim
+                            }
+                            Navigator.pop(context);
+                          },
+                          child: Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.symmetric(vertical: 14),
+                            decoration: BoxDecoration(
+                              gradient: const LinearGradient(
+                                colors: [Colors.amber, Colors.orange],
+                                begin: Alignment.centerLeft,
+                                end: Alignment.centerRight,
+                              ),
+                              borderRadius: BorderRadius.circular(16),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.orange.withValues(alpha: 0.4),
+                                  blurRadius: 8,
+                                  offset: const Offset(0, 4),
+                                )
+                              ],
+                            ),
+                            child: const Center(
+                              child: Text(
+                                'SAVAŞA KATIL',
+                                style: TextStyle(
+                                  color: Colors.black87,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                  letterSpacing: 1.2,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
+                        );
+                      },
                     ),
                   ],
                 ),

@@ -174,6 +174,52 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   String get weeklyRewardMessage => _weeklyRewardMessage;
   void clearWeeklyRewardMessage() { _weeklyRewardMessage = ''; notifyListeners(); }
 
+  List<String> _claimedWeeklyRewards = [];
+
+  String get _currentWeekId {
+    DateTime now = DateTime.now();
+    DateTime monday = now.subtract(Duration(days: now.weekday - 1));
+    return "${monday.year}_${monday.month}_${monday.day}";
+  }
+
+  bool isWeeklyRewardClaimed(String mode) {
+    String key = "${mode}_$_currentWeekId";
+    return _claimedWeeklyRewards.contains(key);
+  }
+
+  Future<bool> claimWeeklyReward(String mode, int rank) async {
+    if (rank < 1 || rank > 10) return false;
+    String key = "${mode}_$_currentWeekId";
+    if (_claimedWeeklyRewards.contains(key)) return false;
+
+    int coinsToGive = 0;
+    int cardsToGive = 0;
+
+    if (mode == 'Klasik Mod') {
+      if (rank == 1) { coinsToGive = 5000; cardsToGive = 10; }
+      else if (rank == 2) { coinsToGive = 2500; cardsToGive = 7; }
+      else if (rank == 3) { coinsToGive = 1000; cardsToGive = 5; }
+      else { coinsToGive = 500; cardsToGive = 3; }
+    } else {
+      if (rank == 1) { coinsToGive = 4000; cardsToGive = 10; }
+      else if (rank == 2) { coinsToGive = 3000; cardsToGive = 7; }
+      else if (rank == 3) { coinsToGive = 1500; cardsToGive = 5; }
+      else { coinsToGive = 500; cardsToGive = 3; }
+    }
+
+    _totalCoins += coinsToGive;
+    _roomCards += cardsToGive;
+    _claimedWeeklyRewards.add(key);
+
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setInt(_coinsKey, _totalCoins);
+    await prefs.setInt(_roomCardsKey, _roomCards);
+    await prefs.setStringList('claimed_weekly_rewards_list', _claimedWeeklyRewards);
+
+    notifyListeners();
+    return true;
+  }
+
   int _iqModeAnswered = 0;
   int _iqModeCorrect = 0;
 
@@ -466,6 +512,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _dailyJokersUsed = prefs.getInt(_dailyJokersKey) ?? 0;
     _claimedMissions = prefs.getStringList(_claimedMissionsKey) ?? [];
     _claimedAchievements = prefs.getStringList(_claimedAchievementsKey) ?? [];
+    _claimedWeeklyRewards = prefs.getStringList('claimed_weekly_rewards_list') ?? [];
     
     _checkDailyReset();
     
