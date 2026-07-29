@@ -80,8 +80,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
 
   void _updateStream() {
     if (_selectedTab == 2) {
+      // Şampiyonlar Müzesi: Tüm zamanların en yüksek puanlı gerçek oyuncuları
       setState(() {
-        _leaderboardStream = null;
+        _leaderboardStream = FirebaseFirestore.instance.collection('leaderboard').snapshots();
       });
       return;
     }
@@ -334,12 +335,12 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                           ),
                         ),
                         child: Text(
-                          'Geçmiş',
+                          'Şampiyonlar 🏆',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: _selectedTab == 2 ? Colors.amberAccent : Colors.white54,
                             fontWeight: FontWeight.bold,
-                            fontSize: 14,
+                            fontSize: 13,
                           ),
                         ),
                       ),
@@ -354,28 +355,64 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
             Consumer<QuizProvider>(
               builder: (context, provider, child) {
                 if (_selectedTab == 2) {
-                  // Geçmiş Kazananlar Sekmesi
+                  // Şampiyonlar Müzesi Sekmesi
                   List<Map<String, dynamic>> pastScores = provider.pastWinners.map((itemStr) {
                     try {
                       return Map<String, dynamic>.from(jsonDecode(itemStr));
                     } catch (_) {
-                      return <String, dynamic>{'userName': 'Efsane Oyuncu', 'score': 1000000, 'moneyString': '1.0 Milyon ₺'};
+                      return <String, dynamic>{};
                     }
-                  }).toList();
+                  }).where((m) => m.isNotEmpty).toList();
 
-                  if (pastScores.isEmpty) {
-                    return const Expanded(
-                      child: Center(
-                        child: Text(
-                          'Henüz geçmiş haftanın kazananları bulunmuyor.\nHaftalık yarışma devam ediyor! 🏆',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white70, fontSize: 15, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    );
-                  }
+                  return StreamBuilder<QuerySnapshot>(
+                    stream: _leaderboardStream,
+                    builder: (context, snapshot) {
+                      if (pastScores.isNotEmpty) {
+                        return _buildLeaderboardView(pastScores, provider, isPastTab: true);
+                      }
 
-                  return _buildLeaderboardView(pastScores, provider, isPastTab: true);
+                      if (snapshot.connectionState == ConnectionState.waiting) {
+                        return const Expanded(child: Center(child: CircularProgressIndicator(color: Colors.amberAccent)));
+                      }
+
+                      List<Map<String, dynamic>> allTimeScores = [];
+                      if (snapshot.hasData) {
+                        Map<String, Map<String, dynamic>> bestUserScores = {};
+                        for (var doc in snapshot.data!.docs) {
+                          try {
+                            var map = doc.data() as Map<String, dynamic>;
+                            map['uid'] = doc.id.split('_').first;
+                            String userName = map['userName']?.toString().trim() ?? '';
+                            if (userName.isEmpty || userName == 'null') continue;
+                            
+                            int score = map['score'] ?? 0;
+                            if (score <= 0) continue;
+
+                            String key = map['uid'] ?? userName;
+                            if (!bestUserScores.containsKey(key) || (bestUserScores[key]!['score'] ?? 0) < score) {
+                              bestUserScores[key] = map;
+                            }
+                          } catch (_) {}
+                        }
+                        allTimeScores = bestUserScores.values.toList();
+                        allTimeScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
+                      }
+
+                      if (allTimeScores.isEmpty) {
+                        return const Expanded(
+                          child: Center(
+                            child: Text(
+                              'Henüz Şampiyonlar Müzesi\'nde oyuncu bulunmuyor.\nZirveye oynayarak ilk şampiyon sen ol! 🏆',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white70, fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        );
+                      }
+
+                      return _buildLeaderboardView(allTimeScores, provider, isPastTab: true);
+                    },
+                  );
                 }
 
                 String targetMode = _selectedTab == 0 ? 'Klasik Mod' : 'Sonsuz Mod';
