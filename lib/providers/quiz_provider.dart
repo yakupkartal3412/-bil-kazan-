@@ -1062,51 +1062,43 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       _saveDailyStats();
     }
     
-    // 7-Day Cycle Check
-    if (_lastLoginDate != today) {
-      if (_cycleStartDate.isEmpty) {
-        _cycleStartDate = today;
-        _cycleStatus = [1, 0, 0, 0, 0, 0, 0];
-        _hasClaimedDailyLogin = false;
-      } else {
-        DateTime startDate = DateTime.parse('${_cycleStartDate}T00:00:00Z');
-        DateTime currentDate = DateTime.parse('${today}T00:00:00Z');
-        int daysSinceStart = currentDate.difference(startDate).inDays;
-        
-        bool hasUnclaimed = _cycleStatus.any((s) => s == 1 || s == 3);
+    // 7-Day Cycle Check (Pazartesi Başlar, Pazar Biter)
+    DateTime now = DateTime.now();
+    DateTime thisMonday = now.subtract(Duration(days: now.weekday - 1));
+    String thisMondayStr = "${thisMonday.year}-${thisMonday.month.toString().padLeft(2, '0')}-${thisMonday.day.toString().padLeft(2, '0')}";
+    int todayIndex = now.weekday - 1; // 0: Pazartesi ... 6: Pazar
 
-        if (daysSinceStart >= 7 && !hasUnclaimed) {
-          // Reset cycle ONLY if previous cycle is completely claimed
-          _cycleStartDate = today;
-          _cycleStatus = [1, 0, 0, 0, 0, 0, 0];
-          _hasClaimedDailyLogin = false;
-        } else {
-          // Mark all passed days up to today (or all 7) as missed if unclaimed
-          int limit = daysSinceStart < 7 ? daysSinceStart : 7;
-          for (int i = 0; i < limit; i++) {
-            if (_cycleStatus[i] == 1 || _cycleStatus[i] == 0) {
-              _cycleStatus[i] = 3; // Missed
-            }
-          }
-          if (daysSinceStart < 7 && _cycleStatus[daysSinceStart] == 0) {
-            _cycleStatus[daysSinceStart] = 1; // Available today
-          }
-          if (daysSinceStart < 7) {
-            _hasClaimedDailyLogin = _cycleStatus[daysSinceStart] == 2;
-          } else {
-            _hasClaimedDailyLogin = false;
+    if (_cycleStartDate != thisMondayStr) {
+      // Yeni Hafta Başladı (Pazartesi)
+      _cycleStartDate = thisMondayStr;
+      _cycleStatus = [0, 0, 0, 0, 0, 0, 0];
+      for (int i = 0; i < todayIndex; i++) {
+        _cycleStatus[i] = 3; // Missed
+      }
+      _cycleStatus[todayIndex] = 1; // Available today
+      _hasClaimedDailyLogin = false;
+    } else {
+      // Aynı Hafta İçindeyiz
+      if (_lastLoginDate != today) {
+        for (int i = 0; i < todayIndex; i++) {
+          if (_cycleStatus[i] == 1 || _cycleStatus[i] == 0) {
+            _cycleStatus[i] = 3; // Missed
           }
         }
+        if (_cycleStatus[todayIndex] == 0) {
+          _cycleStatus[todayIndex] = 1; // Available today
+        }
+        _hasClaimedDailyLogin = (_cycleStatus[todayIndex] == 2);
       }
-      
-      _lastLoginDate = today;
-      
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setString(_cycleStartDateKey, _cycleStartDate);
-      await prefs.setStringList(_cycleStatusKey, _cycleStatus.map((e) => e.toString()).toList());
-      await prefs.setString('last_login_date_v2', _lastLoginDate);
-      await prefs.setBool(_hasClaimedDailyLoginKey, _hasClaimedDailyLogin);
     }
+    
+    _lastLoginDate = today;
+    
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_cycleStartDateKey, _cycleStartDate);
+    await prefs.setStringList(_cycleStatusKey, _cycleStatus.map((e) => e.toString()).toList());
+    await prefs.setString('last_login_date_v2', _lastLoginDate);
+    await prefs.setBool(_hasClaimedDailyLoginKey, _hasClaimedDailyLogin);
     
     // Weekly Reset Check
     if (_lastWeeklyResetDate.isEmpty) {
@@ -1265,21 +1257,9 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       
       _cycleStatus[dayIndex] = 2; // Claimed
       
-      String today = DateTime.now().toString().split(' ')[0];
-      
-      // If ALL 7 days of the cycle are now claimed, reset cycle for next time
-      bool allClaimed = _cycleStatus.every((s) => s == 2);
-      if (allClaimed) {
-        _cycleStartDate = today;
-        _cycleStatus = [1, 0, 0, 0, 0, 0, 0];
-        _hasClaimedDailyLogin = false;
-      } else {
-        if (_cycleStartDate.isNotEmpty) {
-          int d = DateTime.parse('${today}T00:00:00Z').difference(DateTime.parse('${_cycleStartDate}T00:00:00Z')).inDays;
-          if (d == dayIndex) {
-            _hasClaimedDailyLogin = true;
-          }
-        }
+      int todayIndex = DateTime.now().weekday - 1;
+      if (dayIndex == todayIndex) {
+        _hasClaimedDailyLogin = true;
       }
       
       final prefs = await SharedPreferences.getInstance();

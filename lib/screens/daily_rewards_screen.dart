@@ -144,6 +144,7 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
     bool isMissed = (status == 3);
     bool isLocked = (status == 0);
 
+    const dayNames = ['PZT', 'SALI', 'ÇRŞ', 'PRŞ', 'CUMA', 'CMT', 'PAZAR'];
     Widget card = Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -170,17 +171,17 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                     color: isCurrent ? Colors.amberAccent : Colors.white.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
-                    '${dayIndex + 1}. GÜN', 
+                    '${dayIndex + 1}. GÜN (${dayNames[dayIndex]})', 
                     style: TextStyle(
                       color: isCurrent ? Colors.black : Colors.white, 
                       fontWeight: FontWeight.w900,
-                      fontSize: 12
+                      fontSize: 10
                     ),
                   ),
                 ),
@@ -307,7 +308,7 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
                   children: [
                     Icon(Icons.stars, color: isCurrent ? Colors.white : Colors.white54, size: 40),
                     const SizedBox(height: 4),
-                    Text('7. GÜN', style: TextStyle(color: isCurrent ? Colors.white : Colors.white54, fontSize: 24, fontWeight: FontWeight.w900, letterSpacing: 2)),
+                    Text('7. GÜN (PAZAR)', style: TextStyle(color: isCurrent ? Colors.white : Colors.white54, fontSize: 20, fontWeight: FontWeight.w900, letterSpacing: 1.5)),
                   ],
                 ),
               ),
