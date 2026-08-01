@@ -53,6 +53,19 @@ class _SpinWheelScreenState extends State<SpinWheelScreen> with TickerProviderSt
     super.dispose();
   }
 
+  void _onSpinPressed() {
+    if (_isSpinning) return;
+    final provider = Provider.of<QuizProvider>(context, listen: false);
+    String today = DateTime.now().toString().split(' ')[0];
+    bool canSpin = provider.lastSpinDate != today;
+
+    if (canSpin) {
+      _spinNormal();
+    } else {
+      _spinAd();
+    }
+  }
+
   void _spinNormal() {
     final provider = Provider.of<QuizProvider>(context, listen: false);
     String today = DateTime.now().toString().split(' ')[0];
@@ -324,20 +337,22 @@ class _SpinWheelScreenState extends State<SpinWheelScreen> with TickerProviderSt
                     // The Wheel Wrapper
                     Padding(
                       padding: const EdgeInsets.only(bottom: 20), // Lift it slightly above base
-                      child: Stack(
-                        alignment: Alignment.center,
-                        children: [
-                          // Deep shadow under the wheel
-                          Container(
-                            width: 340,
-                            height: 340,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              boxShadow: [
-                                BoxShadow(color: Colors.black.withValues(alpha: 0.6), blurRadius: 40, offset: const Offset(0, 20)),
-                              ]
+                      child: GestureDetector(
+                        onTap: _onSpinPressed,
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            // Deep shadow under the wheel
+                            Container(
+                              width: 340,
+                              height: 340,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                boxShadow: [
+                                  BoxShadow(color: Colors.black.withValues(alpha: 0.6), blurRadius: 40, offset: const Offset(0, 20)),
+                                ]
+                              ),
                             ),
-                          ),
                             // The rotating wheel
                             Transform.rotate(
                               angle: _currentAngle,
@@ -428,9 +443,49 @@ class _SpinWheelScreenState extends State<SpinWheelScreen> with TickerProviderSt
                                 ),
                               ),
                             ),
+                            // Center Clickable Hub Button ("ÇEVİR")
+                            GestureDetector(
+                              onTap: _onSpinPressed,
+                              child: Container(
+                                width: 92,
+                                height: 92,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  gradient: const LinearGradient(
+                                    colors: [Color(0xFFFFF9C4), Color(0xFFF9A825), Color(0xFFF57F17)],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(color: Colors.black.withValues(alpha: 0.6), blurRadius: 12, offset: const Offset(0, 4)),
+                                    BoxShadow(color: const Color(0xFFFFD700).withValues(alpha: 0.6), blurRadius: 20, spreadRadius: 2),
+                                  ],
+                                  border: Border.all(color: const Color(0xFFFFF9C4), width: 3.5),
+                                ),
+                                child: const Center(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Icon(Icons.touch_app, color: Color(0xFF3F1D70), size: 24),
+                                      SizedBox(height: 2),
+                                      Text(
+                                        'ÇEVİR',
+                                        style: TextStyle(
+                                          color: Color(0xFF3F1D70),
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.w900,
+                                          letterSpacing: 1.2,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
                            ],
                         ),
                       ),
+                    ),
                     
                     // The Pointer (Arrow) floating above
                     Positioned(

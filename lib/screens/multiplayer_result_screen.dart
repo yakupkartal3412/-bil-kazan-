@@ -228,9 +228,8 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
 
     if (requesterId == null && _iRequestedRematch) {
       _iRequestedRematch = false;
-      quizProvider.giveFreeRoomCard(); // Kart iade edilir
       WidgetsBinding.instance.addPostFrameCallback((_) {
-         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Rakip rövanşı reddetti. Oda kartınız iade edildi.'), backgroundColor: Colors.red));
+         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Rakip rövanşı reddetti.'), backgroundColor: Colors.red));
       });
     }
     

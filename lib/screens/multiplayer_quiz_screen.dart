@@ -27,6 +27,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
   int _score = 0;
   int _timeLeft = 20;
   Timer? _timer;
+  Timer? _bgAbandonTimer;
   
   bool _isAnswered = false;
   int? _selectedIndex;
@@ -67,14 +68,24 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.paused) {
-      _pausedTime = DateTime.now();
-    } else if (state == AppLifecycleState.resumed && _pausedTime != null) {
-      final elapsed = DateTime.now().difference(_pausedTime!).inSeconds;
-      _pausedTime = null;
-      if (elapsed > 5 && !_isAnswered) {
-        _timer?.cancel();
-        _submitAnswer(-1, -1);
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
+      _pausedTime ??= DateTime.now();
+      _bgAbandonTimer?.cancel();
+      _bgAbandonTimer = Timer(const Duration(seconds: 5), () {
+        if (mounted && _pausedTime != null) {
+          _timer?.cancel();
+          Provider.of<MultiplayerProvider>(context, listen: false).leaveRoom();
+        }
+      });
+    } else if (state == AppLifecycleState.resumed) {
+      _bgAbandonTimer?.cancel();
+      if (_pausedTime != null) {
+        final elapsed = DateTime.now().difference(_pausedTime!).inSeconds;
+        _pausedTime = null;
+        if (elapsed > 5) {
+          _timer?.cancel();
+          Provider.of<MultiplayerProvider>(context, listen: false).leaveRoom();
+        }
       }
     }
   }
@@ -250,8 +261,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
     _particleController.dispose();
     _timer?.cancel();
     _emoteTimer?.cancel();
-    // BUG FIX 1: Timer iptal edilmeden dispose çağrılmasın
-    // leaveRoom burada çağrılmaz — kullanıcı sonuç ekranına geçti demektir
+    _bgAbandonTimer?.cancel();
     super.dispose();
   }
 
@@ -267,15 +277,11 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
        WidgetsBinding.instance.addPostFrameCallback((_) {
          if (!mounted) return;
          _timer?.cancel();
+         _bgAbandonTimer?.cancel();
          final quizProvider = Provider.of<QuizProvider>(context, listen: false);
          
-         // Anti-Cheat: İlk 3 soru tamamlanmadan pes edilirse +100 elmas verilmez, sadece Oda Kartı iade edilir.
-         final bool eligibleForReward = _currentIndex >= 3;
-         if (eligibleForReward) {
-           quizProvider.addCoins(100);
-         } else {
-           quizProvider.giveFreeRoomCard();
-         }
+         // Rakip ayrıldığında kalan oyuncu Hükmen Galip gelir ve 100 Elmas kazanır (Oda kartı iadesi kesinlikle yok)
+         quizProvider.addCoins(100);
 
          showDialog(
            context: context,
@@ -284,17 +290,15 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
              backgroundColor: AppColors.surface,
              shape: RoundedRectangleBorder(
                borderRadius: BorderRadius.circular(20),
-               side: BorderSide(color: eligibleForReward ? Colors.amberAccent : Colors.cyanAccent, width: 2),
+               side: const BorderSide(color: Colors.amberAccent, width: 2),
              ),
-             title: Text(
-               eligibleForReward ? 'Hükmen Galibiyet! 🏆' : 'Oyun İptal Edildi 🛡️',
-               style: TextStyle(color: eligibleForReward ? Colors.amberAccent : Colors.cyanAccent, fontWeight: FontWeight.bold),
+             title: const Text(
+               'Hükmen Galibiyet! 🏆',
+               style: TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold),
              ),
-             content: Text(
-               eligibleForReward
-                   ? 'Rakip oyundan ayrıldı! Hükmen galip sayıldınız.\n\n+100 💎 Elmas hesabınıza eklendi!'
-                   : 'Rakip ilk 3 soru tamamlanmadan oyundan ayrıldı.\n\nOyun iptal edildi ve Oda Kartınız iade edildi.',
-               style: const TextStyle(color: Colors.white70, height: 1.5),
+             content: const Text(
+               'Rakip oyundan ayrıldı (veya 5 saniyeden fazla dışarıda kaldı)!\n\nHükmen galip sayıldınız.\n+100 💎 Elmas hesabınıza eklendi!',
+               style: TextStyle(color: Colors.white70, height: 1.5),
              ),
              actions: [
                ElevatedButton(
@@ -303,10 +307,10 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
                    Navigator.pop(ctx);
                    Navigator.popUntil(context, (route) => route.isFirst);
                  },
-                 style: ElevatedButton.styleFrom(backgroundColor: eligibleForReward ? Colors.amberAccent : Colors.cyanAccent),
-                 child: Text(
-                   eligibleForReward ? 'Harika! 🎉' : 'Tamam 👍',
-                   style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                 style: ElevatedButton.styleFrom(backgroundColor: Colors.amberAccent),
+                 child: const Text(
+                   'Harika! 🎉',
+                   style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
                  ),
                )
              ],
