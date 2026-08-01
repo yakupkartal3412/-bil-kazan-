@@ -1132,6 +1132,9 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       final snapshot = await FirebaseFirestore.instance.collection('leaderboard').where('mode', isEqualTo: 'Klasik Mod').get();
       for (var doc in snapshot.docs) {
         var data = doc.data();
+        if (doc.id.startsWith('bot_') || data['isBot'] == true || data['isBot'] == 'true') continue;
+        String name = data['userName']?.toString().toLowerCase() ?? '';
+        if (name.contains('bot')) continue;
         if ((data['score'] ?? 0) > 0) {
           allScores.add(data);
         }

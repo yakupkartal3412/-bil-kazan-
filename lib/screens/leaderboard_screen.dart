@@ -355,26 +355,26 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
             Consumer<QuizProvider>(
               builder: (context, provider, child) {
                 if (_selectedTab == 2) {
-                  // Şampiyonlar Müzesi Sekmesi
+                  // Şampiyonlar Müzesi Sekmesi (Gerçek Oyuncular)
                   List<Map<String, dynamic>> pastScores = provider.pastWinners.map((itemStr) {
                     try {
                       return Map<String, dynamic>.from(jsonDecode(itemStr));
                     } catch (_) {
                       return <String, dynamic>{};
                     }
-                  }).where((m) => m.isNotEmpty).toList();
+                  }).where((m) {
+                    if (m.isEmpty) return false;
+                    if (m['isBot'] == true || m['isBot'] == 'true') return false;
+                    String name = m['userName']?.toString().toLowerCase() ?? '';
+                    if (name.contains('bot') || name.startsWith('bot_')) return false;
+                    String uid = m['uid']?.toString() ?? '';
+                    if (uid.startsWith('bot_')) return false;
+                    return true;
+                  }).toList();
 
                   return StreamBuilder<QuerySnapshot>(
                     stream: _leaderboardStream,
                     builder: (context, snapshot) {
-                      if (pastScores.isNotEmpty) {
-                        return _buildLeaderboardView(pastScores, provider, isPastTab: true);
-                      }
-
-                      if (snapshot.connectionState == ConnectionState.waiting) {
-                        return const Expanded(child: Center(child: CircularProgressIndicator(color: Colors.amberAccent)));
-                      }
-
                       List<Map<String, dynamic>> allTimeScores = [];
                       if (snapshot.hasData) {
                         Map<String, Map<String, dynamic>> bestUserScores = {};
@@ -382,8 +382,11 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                           try {
                             var map = doc.data() as Map<String, dynamic>;
                             map['uid'] = doc.id.split('_').first;
+                            
+                            // Bot Filtresi
+                            if (doc.id.startsWith('bot_') || map['isBot'] == true || map['isBot'] == 'true') continue;
                             String userName = map['userName']?.toString().trim() ?? '';
-                            if (userName.isEmpty || userName == 'null') continue;
+                            if (userName.isEmpty || userName == 'null' || userName.toLowerCase().contains('bot')) continue;
                             
                             int score = map['score'] ?? 0;
                             if (score <= 0) continue;
@@ -395,10 +398,33 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                           } catch (_) {}
                         }
                         allTimeScores = bestUserScores.values.toList();
-                        allTimeScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
                       }
 
-                      if (allTimeScores.isEmpty) {
+                      // PastScores ve Firestore allTimeScores birleştirilir (kesinlikle bot yok)
+                      List<Map<String, dynamic>> finalMuseumScores = [];
+                      Set<String> addedKeys = {};
+
+                      for (var p in pastScores) {
+                        String key = p['uid'] ?? p['userName'] ?? '';
+                        if (key.isNotEmpty && !addedKeys.contains(key)) {
+                          addedKeys.add(key);
+                          finalMuseumScores.add(p);
+                        }
+                      }
+                      for (var a in allTimeScores) {
+                        String key = a['uid'] ?? a['userName'] ?? '';
+                        if (key.isNotEmpty && !addedKeys.contains(key)) {
+                          addedKeys.add(key);
+                          finalMuseumScores.add(a);
+                        }
+                      }
+                      
+                      finalMuseumScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
+
+                      if (finalMuseumScores.isEmpty) {
+                        if (snapshot.connectionState == ConnectionState.waiting) {
+                          return const Expanded(child: Center(child: CircularProgressIndicator(color: Colors.amberAccent)));
+                        }
                         return const Expanded(
                           child: Center(
                             child: Text(
@@ -410,7 +436,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                         );
                       }
 
-                      return _buildLeaderboardView(allTimeScores, provider, isPastTab: true);
+                      return _buildLeaderboardView(finalMuseumScores, provider, isPastTab: true);
                     },
                   );
                 }
@@ -433,6 +459,11 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                           var map = doc.data() as Map<String, dynamic>;
                           String docMode = map['mode'] ?? '';
                           if (docMode != targetMode) continue;
+
+                          // Bot Filtresi
+                          if (doc.id.startsWith('bot_') || map['isBot'] == true || map['isBot'] == 'true') continue;
+                          String userName = map['userName']?.toString().trim() ?? '';
+                          if (userName.isEmpty || userName == 'null' || userName.toLowerCase().contains('bot')) continue;
                           
                           // Haftalık Sıfırlama Kontrolü (Sadece güncel haftayı göster)
                           String docDateStr = map['date'] ?? '';
@@ -683,19 +714,17 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   }
 
   Widget _buildPodiumItem({required int rank, required Color color, required double size, required Map<String, dynamic> scoreMap, required QuizProvider provider}) {
-    String moneyString = scoreMap['moneyString'] ?? '${scoreMap['score']}';
+    String moneyString = '';
     if (scoreMap['mode'] == 'Sonsuz Mod') {
       moneyString = '${scoreMap['score']} Soru';
-    } else if (scoreMap['mode'] == 'Klasik Mod' || scoreMap['mode'] == 'Geçmiş') {
-      num sc = scoreMap['score'] ?? 0;
-      if (sc >= 1000000) {
-        double mil = sc / 1000000;
-        moneyString = '${mil == mil.toInt() ? mil.toInt() : mil.toStringAsFixed(1)} Milyon ₺';
-      } else if (sc >= 1000) {
-        double k = sc / 1000;
-        moneyString = '${k == k.toInt() ? k.toInt() : k.toStringAsFixed(1)} Bin ₺';
+    } else {
+      String? existingMs = scoreMap['moneyString']?.toString().trim();
+      if (existingMs != null && existingMs.isNotEmpty && existingMs.contains('₺')) {
+        moneyString = existingMs;
       } else {
-        moneyString = '${sc.toInt()} ₺';
+        num sc = scoreMap['score'] ?? 0;
+        String formatted = sc.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
+        moneyString = '$formatted ₺';
       }
     }
     String rankLabel = rank == 1 ? '🥇 1.' : (rank == 2 ? '🥈 2.' : '🥉 3.');
@@ -743,7 +772,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           child: FittedBox(
             fit: BoxFit.scaleDown,
             child: PremiumBadge(
-              title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(displayName)),
+              title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getDefaultUserTitle(displayName)),
               fontSize: 7,
             ),
           ),
@@ -779,19 +808,15 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     String moneyString = '';
     if (scoreMap['mode'] == 'Sonsuz Mod') {
       moneyString = '${scoreMap['score']} Soru';
-    } else if (scoreMap['mode'] == 'Klasik Mod' || scoreMap['mode'] == 'Geçmiş') {
-      num sc = scoreMap['score'] ?? 0;
-      if (sc >= 1000000) {
-        double mil = sc / 1000000;
-        moneyString = '${mil == mil.toInt() ? mil.toInt() : mil.toStringAsFixed(1)} Milyon ₺';
-      } else if (sc >= 1000) {
-        double k = sc / 1000;
-        moneyString = '${k == k.toInt() ? k.toInt() : k.toStringAsFixed(1)} Bin ₺';
-      } else {
-        moneyString = '${sc.toInt()} ₺';
-      }
     } else {
-      moneyString = scoreMap['moneyString'] ?? '${scoreMap['score']} ₺';
+      String? existingMs = scoreMap['moneyString']?.toString().trim();
+      if (existingMs != null && existingMs.isNotEmpty && existingMs.contains('₺')) {
+        moneyString = existingMs;
+      } else {
+        num sc = scoreMap['score'] ?? 0;
+        String formatted = sc.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
+        moneyString = '$formatted ₺';
+      }
     }
     String displayName = _getCleanUserName(scoreMap, provider);
     bool isUser = displayName == provider.userName;
@@ -841,7 +866,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                 Row(
                   children: [
                     PremiumBadge(
-                      title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getBotTitle(displayName)),
+                      title: scoreMap['userTitle'] ?? (isUser ? provider.userTitle : _getDefaultUserTitle(displayName)),
                       fontSize: 7,
                     ),
                     const SizedBox(width: 5),
@@ -1164,13 +1189,10 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     );
   }
 
-  String _getBotTitle(String name) {
+  String _getDefaultUserTitle(String name) {
     if (name.contains('Einstein') || name.contains('Tesla')) return 'Efsane';
     if (name.contains('Newton') || name.contains('Curie')) return 'Dahi';
     if (name.contains('Hawking') || name.contains('Da Vinci')) return 'Profesör';
-    if (name.contains('Uzman')) return 'Bilgin';
-    if (name.contains('Oyuncu')) return 'Öğrenci';
-    if (name.contains('Galileo') || name.contains('Pisagor')) return 'Bilgin';
     return 'Çırak';
   }
 
