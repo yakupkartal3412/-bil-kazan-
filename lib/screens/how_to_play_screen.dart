@@ -49,7 +49,7 @@ class HowToPlayScreen extends StatelessWidget {
             const SizedBox(height: 16),
             _buildSection(
               title: '🧠 UNVAN VE IQ SİSTEMİ',
-              content: 'Oyuna 70 IQ ile başlarsın. Soru bildikçe ve tecrübe kazandıkça IQ\'n yükselir.\n'
+              content: 'Oyuna 10 IQ ile başlarsın. Soru bildikçe ve tecrübe kazandıkça IQ\'n yükselir.\n'
                   '• Unvanlar: Acemi, Çömez, Çırak, Öğrenci, Bilgin, Profesör, Dahi ve Efsane.\n'
                   '• Her unvanın kendine özel havalı bir etiketi (rozeti) vardır, rakiplerine karşı hava atabilirsin.',
             ),

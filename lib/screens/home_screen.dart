@@ -475,8 +475,8 @@ class _HomeScreenState extends State<HomeScreen> {
             : (provider.totalCorrectAnswers / provider.totalQuestionsAnswered);
         int winRatePercent = (winRate * 100).toInt();
         
-        // IQ Bar ilerlemesi (Başlangıç 70, Maksimum 160)
-        double iqProgress = (iq - 70) / 90; 
+        // IQ Bar ilerlemesi (Başlangıç 10, Maksimum 160)
+        double iqProgress = (iq - 10) / 150; 
         if (iqProgress < 0) iqProgress = 0;
         if (iqProgress > 1) iqProgress = 1;
 
@@ -815,18 +815,18 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  'Zeka seviyen (IQ), doğru cevaplama oranın ve tecrübene (çözdüğün soru sayısına) göre hesaplanır.\n\nBaşlangıç IQ seviyesi 70\'tir. Maksimum ulaşılabilecek IQ ise 160\'tır.\n\nUnvan Barajları:',
+                  'Zeka seviyen (IQ), doğru cevaplama oranın ve tecrübene (çözdüğün soru sayısına) göre hesaplanır.\n\nBaşlangıç IQ seviyesi 10\'dur. Maksimum ulaşılabilecek IQ ise 160\'tır.\n\nUnvan Barajları:',
                   style: TextStyle(color: Colors.white70, fontSize: 14),
                 ),
                 const SizedBox(height: 12),
-                _buildIQLevelRow('Acemi', '70 - 79 IQ', provider.userTitle),
-                _buildIQLevelRow('Çömez', '80 - 94 IQ', provider.userTitle),
-                _buildIQLevelRow('Çırak', '95 - 109 IQ', provider.userTitle),
-                _buildIQLevelRow('Öğrenci', '110 - 124 IQ', provider.userTitle),
-                _buildIQLevelRow('Bilgin', '125 - 139 IQ', provider.userTitle),
-                _buildIQLevelRow('Profesör', '140 - 149 IQ', provider.userTitle),
-                _buildIQLevelRow('Dahi', '150 - 159 IQ', provider.userTitle),
-                _buildIQLevelRow('Efsane', '160+ IQ', provider.userTitle),
+                _buildIQLevelRow('Acemi', '10 - 29 IQ', provider.userTitle),
+                _buildIQLevelRow('Çömez', '30 - 59 IQ', provider.userTitle),
+                _buildIQLevelRow('Çırak', '60 - 89 IQ', provider.userTitle),
+                _buildIQLevelRow('Öğrenci', '90 - 109 IQ', provider.userTitle),
+                _buildIQLevelRow('Bilgin', '110 - 129 IQ', provider.userTitle),
+                _buildIQLevelRow('Profesör', '130 - 144 IQ', provider.userTitle),
+                _buildIQLevelRow('Dahi', '145 - 154 IQ', provider.userTitle),
+                _buildIQLevelRow('Efsane', '155+ IQ', provider.userTitle),
                 const SizedBox(height: 12),
                 const Text(
                   'İpucu: Sadece soruları doğru bilmek yetmez, bol bol soru çözerek tecrübe puanını (XP) da artırmalısın!',

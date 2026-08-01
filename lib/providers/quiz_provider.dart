@@ -227,7 +227,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     int totalN = dart_math.max(_iqModeAnswered, _totalQuestionsAnswered);
     int totalC = dart_math.max(_iqModeCorrect, _totalCorrectAnswers);
     if (totalN == 0) {
-      return 70;
+      return 10;
     }
     
     int wrongAnswers = totalN - totalC;
@@ -238,23 +238,23 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     
     double accuracyRatio = totalC / totalN;
     
-    double iqGain = dart_math.pow(netPoints, 0.48) * 4.2 + (accuracyRatio * 15.0);
+    double iqGain = dart_math.pow(netPoints, 0.48) * 6.5 + (accuracyRatio * 20.0);
     
-    int iq = (70 + iqGain).round();
+    int iq = (10 + iqGain).round();
     if (iq > 160) iq = 160;
-    if (iq < 70) iq = 70;
+    if (iq < 10) iq = 10;
     return iq;
   }
 
   String get userTitle {
     int iq = iqLevel;
-    if (iq < 80) return 'Acemi';
-    if (iq < 95) return 'Çömez';
-    if (iq < 110) return 'Çırak';
-    if (iq < 125) return 'Öğrenci';
-    if (iq < 140) return 'Bilgin';
-    if (iq < 150) return 'Profesör';
-    if (iq < 160) return 'Dahi';
+    if (iq < 30) return 'Acemi';
+    if (iq < 60) return 'Çömez';
+    if (iq < 90) return 'Çırak';
+    if (iq < 110) return 'Öğrenci';
+    if (iq < 130) return 'Bilgin';
+    if (iq < 145) return 'Profesör';
+    if (iq < 155) return 'Dahi';
     return 'Efsane 👑';
   }
   
