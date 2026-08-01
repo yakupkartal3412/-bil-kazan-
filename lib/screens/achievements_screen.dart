@@ -30,43 +30,41 @@ class AchievementsScreen extends StatelessWidget {
         builder: (context, provider, child) {
           List<Map<String, dynamic>> allData = [];
 
-          // Temiz yuvarlak ödül listeleri (25 seviye)
-          const roundRewards = [
-            5, 10, 15, 20, 30, 50, 75, 100, 150, 200,
-            300, 400, 500, 700, 1000, 1500, 2000, 2500, 3000, 4000,
-            5000, 6000, 7500, 10000, 15000,
-          ];
+          final roundRewards = QuizProvider.achievementRoundRewards;
+          final correctTargets = QuizProvider.achievementCorrectTargets;
+          final gamesTargets = QuizProvider.achievementGamesTargets;
+          final answeredTargets = QuizProvider.achievementAnsweredTargets;
+          final moneyTargets = QuizProvider.achievementMoneyTargets;
 
-          // 1. Bilgi Küpü (totalCorrectAnswers) - 25 Levels
-          final correctTargets = [1, 5, 10, 25, 50, 100, 250, 500, 750, 1000, 1500, 2000, 3000, 4000, 5000, 7500, 10000, 12500, 15000, 20000, 25000, 30000, 40000, 50000, 100000];
-          for (int i = 0; i < 25; i++) {
+          // 1. Bilgi Küpü (totalCorrectAnswers) - 50 Levels
+          for (int i = 0; i < 50; i++) {
             int t = correctTargets[i];
-            allData.add({'title': 'Bilgi Küpü ${i + 1}', 'desc': 'Toplam $t soru doğru bil.', 'current': provider.totalCorrectAnswers, 'target': t, 'reward': roundRewards[i]});
+            String tStr = t.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
+            allData.add({'title': 'Bilgi Küpü ${i + 1}', 'desc': 'Toplam $tStr soru doğru bil.', 'current': provider.totalCorrectAnswers, 'target': t, 'reward': roundRewards[i]});
           }
 
-          // 2. Tecrübe (totalGamesPlayed) - 25 Levels
-          final gamesTargets = [1, 5, 10, 20, 30, 50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 7500, 10000];
-          for (int i = 0; i < 25; i++) {
+          // 2. Tecrübe (totalGamesPlayed) - 50 Levels
+          for (int i = 0; i < 50; i++) {
             int t = gamesTargets[i];
-            allData.add({'title': 'Tecrübe ${i + 1}', 'desc': 'Toplam $t oyun oyna.', 'current': provider.totalGamesPlayed, 'target': t, 'reward': roundRewards[i]});
+            String tStr = t.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
+            allData.add({'title': 'Tecrübe ${i + 1}', 'desc': 'Toplam $tStr oyun oyna.', 'current': provider.totalGamesPlayed, 'target': t, 'reward': roundRewards[i]});
           }
 
-          // 3. Sorik (totalQuestionsAnswered) - 25 Levels
-          final answeredTargets = [5, 10, 25, 50, 100, 250, 500, 1000, 1500, 2000, 3000, 4000, 5000, 7500, 10000, 12500, 15000, 20000, 25000, 30000, 40000, 50000, 75000, 100000, 150000];
-          for (int i = 0; i < 25; i++) {
+          // 3. Sorik (totalQuestionsAnswered) - 50 Levels
+          for (int i = 0; i < 50; i++) {
             int t = answeredTargets[i];
-            allData.add({'title': 'Sorik ${i + 1}', 'desc': 'Toplam $t soru cevapla.', 'current': provider.totalQuestionsAnswered, 'target': t, 'reward': roundRewards[i]});
+            String tStr = t.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
+            allData.add({'title': 'Sorik ${i + 1}', 'desc': 'Toplam $tStr soru cevapla.', 'current': provider.totalQuestionsAnswered, 'target': t, 'reward': roundRewards[i]});
           }
 
-          // 4. Zenginlik (totalMoney) - 25 Levels
-          final moneyTargets = [
-            1000, 5000, 10000, 25000, 50000, 100000, 250000, 500000, 1000000, 2500000, 
-            5000000, 7500000, 10000000, 15000000, 20000000, 25000000, 30000000, 40000000, 
-            50000000, 75000000, 100000000, 250000000, 500000000, 750000000, 1000000000
-          ];
-          for (int i = 0; i < 25; i++) {
+          // 4. Zenginlik (totalMoney) - 50 Levels
+          for (int i = 0; i < 50; i++) {
             int t = moneyTargets[i];
-            String tStr = t >= 1000000 ? '${t ~/ 1000000} Milyon' : (t >= 1000 ? '${t ~/ 1000} Bin' : '$t');
+            String tStr = t >= 1000000000 
+                ? '${t ~/ 1000000000} Milyar' 
+                : (t >= 1000000 
+                    ? '${t ~/ 1000000} Milyon' 
+                    : (t >= 1000 ? '${t ~/ 1000} Bin' : '$t'));
             allData.add({'title': 'Zenginlik ${i + 1}', 'desc': 'Toplam $tStr ₺ kazan.', 'current': provider.totalMoney, 'target': t, 'reward': roundRewards[i]});
           }
 

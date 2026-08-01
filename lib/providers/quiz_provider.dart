@@ -285,35 +285,59 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     return false;
   }
 
+  static const List<int> achievementRoundRewards = [
+    5, 10, 15, 20, 25, 30, 40, 50, 60, 75,
+    90, 100, 125, 150, 175, 200, 250, 300, 350, 400,
+    500, 600, 700, 800, 1000, 1200, 1400, 1600, 1800, 2000,
+    2500, 3000, 3500, 4000, 4500, 5000, 6000, 7000, 8000, 9000,
+    10000, 12000, 15000, 18000, 20000, 25000, 30000, 35000, 40000, 50000,
+  ];
+
+  static const List<int> achievementCorrectTargets = [
+    1, 3, 5, 10, 15, 25, 40, 50, 75, 100,
+    150, 200, 250, 350, 500, 750, 1000, 1250, 1500, 2000,
+    2500, 3000, 4000, 5000, 6000, 7500, 10000, 12500, 15000, 20000,
+    25000, 30000, 35000, 40000, 50000, 60000, 75000, 90000, 100000, 125000,
+    150000, 175000, 200000, 250000, 300000, 350000, 400000, 450000, 500000, 1000000,
+  ];
+
+  static const List<int> achievementGamesTargets = [
+    1, 2, 3, 5, 8, 10, 15, 20, 25, 30,
+    40, 50, 65, 75, 100, 125, 150, 200, 250, 300,
+    400, 500, 600, 750, 1000, 1250, 1500, 1750, 2000, 2500,
+    3000, 3500, 4000, 4500, 5000, 6000, 7000, 8000, 9000, 10000,
+    12500, 15000, 17500, 20000, 25000, 30000, 35000, 40000, 45000, 50000,
+  ];
+
+  static const List<int> achievementAnsweredTargets = [
+    5, 10, 15, 25, 40, 50, 75, 100, 150, 250,
+    350, 500, 750, 1000, 1250, 1500, 2000, 2500, 3000, 4000,
+    5000, 6000, 7500, 10000, 12500, 15000, 20000, 25000, 30000, 40000,
+    50000, 60000, 75000, 90000, 100000, 125000, 150000, 175000, 200000, 250000,
+    300000, 350000, 400000, 450000, 500000, 600000, 700000, 800000, 900000, 1000000,
+  ];
+
+  static const List<int> achievementMoneyTargets = [
+    1000, 2500, 5000, 10000, 25000, 50000, 75000, 100000, 150000, 250000,
+    350000, 500000, 750000, 1000000, 1500000, 2500000, 3500000, 5000000, 7500000, 10000000,
+    15000000, 20000000, 25000000, 30000000, 40000000, 50000000, 65000000, 75000000, 90000000, 100000000,
+    125000000, 150000000, 200000000, 250000000, 300000000, 400000000, 500000000, 600000000, 750000000, 1000000000,
+    1250000000, 1500000000, 2000000000, 2500000000, 3000000000, 4000000000, 5000000000, 6000000000, 7500000000, 10000000000,
+  ];
+
   bool get hasUnclaimedAchievements {
-    // 1. Bilgi Küpü (totalCorrectAnswers) - 25 Levels
-    final correctTargets = [1, 5, 10, 25, 50, 100, 250, 500, 750, 1000, 1500, 2000, 3000, 4000, 5000, 7500, 10000, 12500, 15000, 20000, 25000, 30000, 40000, 50000, 100000];
-    for (int i = 0; i < 25; i++) {
-      if (_totalCorrectAnswers >= correctTargets[i] && !_claimedAchievements.contains('Bilgi Küpü ${i + 1}')) return true;
+    for (int i = 0; i < achievementCorrectTargets.length; i++) {
+      if (_totalCorrectAnswers >= achievementCorrectTargets[i] && !_claimedAchievements.contains('Bilgi Küpü ${i + 1}')) return true;
     }
-
-    // 2. Tecrübe (totalGamesPlayed) - 25 Levels
-    final gamesTargets = [1, 5, 10, 20, 30, 50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 7500, 10000];
-    for (int i = 0; i < 25; i++) {
-      if (_totalGamesPlayed >= gamesTargets[i] && !_claimedAchievements.contains('Tecrübe ${i + 1}')) return true;
+    for (int i = 0; i < achievementGamesTargets.length; i++) {
+      if (_totalGamesPlayed >= achievementGamesTargets[i] && !_claimedAchievements.contains('Tecrübe ${i + 1}')) return true;
     }
-
-    // 3. Sorik (totalQuestionsAnswered) - 25 Levels
-    final answeredTargets = [5, 10, 25, 50, 100, 250, 500, 1000, 1500, 2000, 3000, 4000, 5000, 7500, 10000, 12500, 15000, 20000, 25000, 30000, 40000, 50000, 75000, 100000, 150000];
-    for (int i = 0; i < 25; i++) {
-      if (_totalQuestionsAnswered >= answeredTargets[i] && !_claimedAchievements.contains('Sorik ${i + 1}')) return true;
+    for (int i = 0; i < achievementAnsweredTargets.length; i++) {
+      if (_totalQuestionsAnswered >= achievementAnsweredTargets[i] && !_claimedAchievements.contains('Sorik ${i + 1}')) return true;
     }
-
-    // 4. Zenginlik (totalMoney) - 25 Levels
-    final moneyTargets = [
-      1000, 5000, 10000, 25000, 50000, 100000, 250000, 500000, 1000000, 2500000, 
-      5000000, 7500000, 10000000, 15000000, 20000000, 25000000, 30000000, 40000000, 
-      50000000, 75000000, 100000000, 250000000, 500000000, 750000000, 1000000000
-    ];
-    for (int i = 0; i < 25; i++) {
-      if (_totalMoney >= moneyTargets[i] && !_claimedAchievements.contains('Zenginlik ${i + 1}')) return true;
+    for (int i = 0; i < achievementMoneyTargets.length; i++) {
+      if (_totalMoney >= achievementMoneyTargets[i] && !_claimedAchievements.contains('Zenginlik ${i + 1}')) return true;
     }
-
     return false;
   }
 
