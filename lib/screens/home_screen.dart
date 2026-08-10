@@ -1,14 +1,13 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import '../services/ad_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'dart:io';
 import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
 import 'quiz_screen.dart';
 import 'leaderboard_screen.dart';
 import 'store_screen.dart';
-import 'invite_screen.dart';
 import 'settings_screen.dart';
 import 'inventions_screen.dart';
 import 'achievements_screen.dart';
@@ -114,12 +113,13 @@ class _HomeScreenState extends State<HomeScreen> {
     }
     
     if (!provider.isDataLoaded) {
-      void listener() {
+      late VoidCallback listener;
+      listener = () {
         if (provider.isDataLoaded) {
           provider.removeListener(listener);
-          processCheck();
+          if (mounted) processCheck();
         }
-      }
+      };
       provider.addListener(listener);
     } else {
       processCheck();
@@ -128,6 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final quizProvider = Provider.of<QuizProvider>(context);
     return Scaffold(
       backgroundColor: AppColors.appPurpleBg,
       bottomNavigationBar: !kIsWeb ? const CustomBannerAd() : const SizedBox.shrink(),
@@ -244,22 +245,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     _buildMenuButton(
                       icon: Icons.leaderboard,
                       title: 'Skor Tablosu',
+                      showRedDot: quizProvider.hasUnreadLeaderboardBadge,
                       onTap: () {
+                        quizProvider.markLeaderboardAsRead();
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => const LeaderboardScreen()),
-                        );
-                      },
-                    ),
-                    const SizedBox(height: 12),
-                    _buildMenuButton(
-                      icon: Icons.group_add_rounded,
-                      title: 'Davet Et Kazan',
-                      subtitle: 'ARKADAŞLARINI ÇAĞIR, KAZAN!',
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => const InviteScreen()),
                         );
                       },
                     ),
@@ -284,7 +275,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             icon: Icons.exit_to_app,
                             title: 'Oyunu Kapat',
                             onTap: () {
-                              exit(0);
+                              SystemNavigator.pop();
                             },
                           ),
                         ),
@@ -308,12 +299,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return Consumer<QuizProvider>(
       builder: (context, provider, child) {
         String moneyText;
-        if (provider.weeklyScore >= 1000000) {
-          moneyText = '${(provider.weeklyScore / 1000000).toStringAsFixed(1).replaceAll('.0', '')} Milyon ₺';
-        } else if (provider.weeklyScore >= 1000) {
-          moneyText = '${(provider.weeklyScore / 1000).toStringAsFixed(1).replaceAll('.0', '')} Bin ₺';
+        if (provider.totalMoney >= 1000000) {
+          moneyText = '${(provider.totalMoney / 1000000).toStringAsFixed(1).replaceAll('.0', '')} Milyon ₺';
+        } else if (provider.totalMoney >= 1000) {
+          moneyText = '${(provider.totalMoney / 1000).toStringAsFixed(1).replaceAll('.0', '')} Bin ₺';
         } else {
-          moneyText = '${provider.weeklyScore} ₺';
+          moneyText = '${provider.totalMoney} ₺';
         }
         
         String diamondText = provider.formattedTotalCoins;
@@ -473,7 +464,7 @@ class _HomeScreenState extends State<HomeScreen> {
         double winRate = provider.totalQuestionsAnswered == 0 
             ? 0.0 
             : (provider.totalCorrectAnswers / provider.totalQuestionsAnswered);
-        int winRatePercent = (winRate * 100).toInt();
+        int winRatePercent = (winRate * 100).round();
         
         // IQ Bar ilerlemesi (Başlangıç 10, Maksimum 160)
         double iqProgress = (iq - 10) / 150; 
@@ -495,7 +486,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       content: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          CircleAvatar(radius: 40, backgroundColor: Colors.white12, backgroundImage: AssetImage(provider.activeAvatar.startsWith('assets') ? provider.activeAvatar : 'assets/images/${provider.activeAvatar}')),
+                          CircleAvatar(radius: 40, backgroundColor: Colors.white12, backgroundImage: AssetImage(provider.activeAvatar.isEmpty ? 'assets/images/default_avatar.png' : (provider.activeAvatar.startsWith('assets') ? provider.activeAvatar : 'assets/images/${provider.activeAvatar}'))),
                           const SizedBox(height: 16),
                           _buildStatRow('Zeka Seviyesi (IQ)', '$iq', Icons.psychology),
                           _buildStatRow('Kazanma Oranı', '%$winRatePercent', Icons.percent),
@@ -518,7 +509,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: CircleAvatar(
                 radius: 40,
                 backgroundColor: Colors.white12,
-                backgroundImage: AssetImage(provider.activeAvatar.startsWith('assets') ? provider.activeAvatar : 'assets/images/${provider.activeAvatar}'),
+                backgroundImage: AssetImage(provider.activeAvatar.isEmpty ? 'assets/images/default_avatar.png' : (provider.activeAvatar.startsWith('assets') ? provider.activeAvatar : 'assets/images/${provider.activeAvatar}')),
               ),
             ),
             const SizedBox(width: 16),
@@ -603,7 +594,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ],
                             ),
                             const SizedBox(height: 4),
-                            LinearProgressIndicator(value: winRate, backgroundColor: Colors.blue[900], color: Colors.lightBlue, minHeight: 6),
+                            LinearProgressIndicator(value: winRate.clamp(0.0, 1.0), backgroundColor: Colors.blue[900], color: Colors.lightBlue, minHeight: 6),
                             const SizedBox(height: 6),
                             Align(
                               alignment: Alignment.center,
@@ -826,7 +817,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 _buildIQLevelRow('Bilgin', '110 - 129 IQ', provider.userTitle),
                 _buildIQLevelRow('Profesör', '130 - 144 IQ', provider.userTitle),
                 _buildIQLevelRow('Dahi', '145 - 154 IQ', provider.userTitle),
-                _buildIQLevelRow('Efsane', '155+ IQ', provider.userTitle),
+                _buildIQLevelRow('Efsane 👑', '155+ IQ', provider.userTitle),
                 const SizedBox(height: 12),
                 const Text(
                   'İpucu: Sadece soruları doğru bilmek yetmez, bol bol soru çözerek tecrübe puanını (XP) da artırmalısın!',

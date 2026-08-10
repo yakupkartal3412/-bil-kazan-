@@ -71,12 +71,7 @@ class HowToPlayScreen extends StatelessWidget {
                   '• Joker Kasaları: "Mega Joker Kasası" gibi paketlerle joker stokunu fulleyebilirsin.\n'
                   '• Premium Avatarlar: Einstein, Tesla, Newton gibi efsanevi bilim insanlarının hareketli ve şık avatarlarını satın alabilirsin. Satın aldığın avatar anında profiline kuşanılır!',
             ),
-            const SizedBox(height: 16),
-            _buildSection(
-              title: '🤝 DAVET ET & KAZAN',
-              content: 'Ana ekrandaki "Davet Et" bölümünden kendi özel Davet Kodunu görebilirsin.\n'
-                  '• Arkadaşlarını bu kodla oyuna kaydettirirsen, her bir arkadaşın için tam 10.000 Elmas 💎 kazanırsın!',
-            ),
+
             const SizedBox(height: 16),
             _buildSection(
               title: '🔑 HESAP GÜVENLİĞİ VE OYUNCU ID',

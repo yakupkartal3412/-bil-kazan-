@@ -28,8 +28,9 @@ class _ResultScreenState extends State<ResultScreen> {
         isGold = score == 15;
         isWin = score >= 5;
       } else {
-        final percentage = (score / 50) * 100;
-        isGold = percentage == 100;
+        final totalQ = provider.gameMode == GameMode.event ? 30 : 50;
+        final percentage = (score / totalQ) * 100;
+        isGold = percentage >= 100;
         isWin = percentage >= 60;
       }
 
@@ -62,9 +63,15 @@ class _ResultScreenState extends State<ResultScreen> {
               final total = provider.gameMode == GameMode.classic ? 15 : null;
               final coinsEarned = provider.lastEarnedCoins;
               
-              // Parse money safely for animation
-              final moneyStr = provider.lastEarnedMoney.replaceAll(' ₺', '').replaceAll('₺', '').replaceAll('.', '').trim();
-              final moneyEarned = int.tryParse(moneyStr) ?? 0;
+              // Parse money safely for animation (handle '1 MİLYON ₺' special case)
+              String rawMoney = provider.lastEarnedMoney;
+              int moneyEarned = 0;
+              if (rawMoney.contains('MİLYON') || rawMoney.contains('milyon')) {
+                moneyEarned = 1000000;
+              } else {
+                final moneyStr = rawMoney.replaceAll(' ₺', '').replaceAll('₺', '').replaceAll('.', '').trim();
+                moneyEarned = int.tryParse(moneyStr) ?? 0;
+              }
               
               String message;
               String trophyAsset;
@@ -94,7 +101,8 @@ class _ResultScreenState extends State<ResultScreen> {
                   glowColor = Colors.transparent;
                 }
               } else {
-                final percentage = (score / 50) * 100;
+                final totalQ = provider.gameMode == GameMode.event ? 30 : 50;
+                final percentage = (score / totalQ) * 100;
                 if (percentage == 100) {
                   message = "Mükemmel! Hepsini Bildin 🏆";
                   trophyAsset = 'assets/images/trophy_gold.png';
@@ -258,7 +266,7 @@ class _ResultScreenState extends State<ResultScreen> {
                       
                       // 3D Premium Button
                       GestureDetector(
-                        onTap: () => Navigator.pop(context),
+                        onTap: () => Navigator.popUntil(context, (route) => route.isFirst),
                         child: Container(
                           width: double.infinity,
                           height: 55, // Reduced from 65

@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/foundation.dart';
 import '../services/ad_service.dart';
 import 'package:flutter/material.dart';
@@ -141,9 +142,9 @@ class _StoreScreenState extends State<StoreScreen> {
                         AdService().showRewardedAd(
                           context: context,
                           onRewardEarned: (amount) {
-                            // Give 25 diamonds
-                            provider.addCoins(25);
-                            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Tebrikler, 25 Elmas kazandınız! 💎'), backgroundColor: Colors.green));
+                            // Give 100 diamonds
+                            provider.addCoins(100);
+                            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Tebrikler, 100 Elmas kazandınız! 💎'), backgroundColor: Colors.green));
                           },
                         );
                       },
@@ -161,7 +162,7 @@ class _StoreScreenState extends State<StoreScreen> {
                             SizedBox(width: 10),
                             Text('REKLAM İZLE', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
                             SizedBox(width: 10),
-                            Text('+25 💎', style: TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold, fontSize: 18)),
+                            Text('+100 💎', style: TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold, fontSize: 18)),
                           ],
                         ),
                       ),
@@ -930,7 +931,8 @@ class _StoreScreenState extends State<StoreScreen> {
   }
 
   void _openSurpriseBox(QuizProvider provider) {
-    int rand = DateTime.now().millisecondsSinceEpoch % 4;
+    final random = Random();
+    int rand = random.nextInt(4);
     String rewardText = '';
     String rewardIcon = '';
 
@@ -947,7 +949,7 @@ class _StoreScreenState extends State<StoreScreen> {
       rewardText = '5.000 ₺';
       rewardIcon = 'assets/images/3d_cash_icon_nobg.png';
     } else {
-      int jokerType = DateTime.now().millisecondsSinceEpoch % 4;
+      int jokerType = random.nextInt(4);
       if (jokerType == 0) { provider.addJokerFiftyFiftyToken(1); rewardText = '+1 Yarı Yarıya Jokeri'; }
       else if (jokerType == 1) { provider.addJokerPhoneToken(1); rewardText = '+1 Telefon Jokeri'; }
       else if (jokerType == 2) { provider.addJokerAudienceToken(1); rewardText = '+1 Seyirci Jokeri'; }

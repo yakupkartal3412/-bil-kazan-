@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/multiplayer_provider.dart';
-import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
 import 'multiplayer_result_screen.dart';
 import '../providers/audio_provider.dart';
@@ -278,10 +277,6 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
          if (!mounted) return;
          _timer?.cancel();
          _bgAbandonTimer?.cancel();
-         final quizProvider = Provider.of<QuizProvider>(context, listen: false);
-         
-         // Rakip ayrıldığında kalan oyuncu Hükmen Galip gelir ve 100 Elmas kazanır (Oda kartı iadesi kesinlikle yok)
-         quizProvider.addCoins(100);
 
          showDialog(
            context: context,
@@ -297,7 +292,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
                style: TextStyle(color: Colors.amberAccent, fontWeight: FontWeight.bold),
              ),
              content: const Text(
-               'Rakip oyundan ayrıldı (veya 5 saniyeden fazla dışarıda kaldı)!\n\nHükmen galip sayıldınız.\n+100 💎 Elmas hesabınıza eklendi!',
+               'Rakip oyundan ayrıldı (veya 5 saniyeden fazla dışarıda kaldı)!\n\nHükmen galip sayıldınız.',
                style: TextStyle(color: Colors.white70, height: 1.5),
              ),
              actions: [
@@ -309,7 +304,7 @@ class _MultiplayerQuizScreenState extends State<MultiplayerQuizScreen> with Tick
                  },
                  style: ElevatedButton.styleFrom(backgroundColor: Colors.amberAccent),
                  child: const Text(
-                   'Harika! 🎉',
+                   'Tamam 👍',
                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
                  ),
                )

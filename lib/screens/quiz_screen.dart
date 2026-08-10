@@ -50,6 +50,12 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
     _bgController.dispose();
     _pulseController.dispose();
     _particleController.dispose();
+    // Clear provider callbacks to prevent calls on disposed widget
+    try {
+      final provider = context.read<QuizProvider>();
+      provider.onTick = null;
+      provider.onTimeOut = null;
+    } catch (_) {}
     super.dispose();
   }
 
@@ -182,7 +188,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
                             children: [
                               // Diamond pill
                               _buildDiamondPill(provider),
-                              if (provider.gameMode == GameMode.classic && provider.currentQuestionIndex > 0 && !provider.isAnswered) ...[
+                              if (provider.gameMode == GameMode.classic && provider.currentQuestionIndex > 0 && !provider.isAnswered && !provider.isSuspense) ...[
                                 const SizedBox(width: 12),
                                 _buildWithdrawButton(provider),
                               ],
@@ -429,7 +435,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  if (question.imageUrl != null)
+                  if (question.imageUrl != null && question.imageUrl!.isNotEmpty)
                     Padding(
                       padding: const EdgeInsets.only(bottom: 15),
                       child: ClipRRect(
@@ -438,6 +444,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
                           question.imageUrl!,
                           height: 120,
                           fit: BoxFit.contain,
+                          errorBuilder: (_, __, ___) => const SizedBox.shrink(),
                         ),
                       ),
                     ),
@@ -471,7 +478,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
             icon: Icons.exposure_minus_2_rounded,
             label: 'Yarı Yarıya',
             sublabel: provider.fiftyFiftyUses >= 2 ? null : (provider.fiftyFiftyUses == 0 ? 'ÜCRETSİZ' : (provider.jokerFiftyFiftyTokens > 0 ? '1 🃏' : '25 💎')),
-            isDisabled: provider.fiftyFiftyUsedThisQuestion || provider.fiftyFiftyUses >= 2,
+            isDisabled: provider.fiftyFiftyUsedThisQuestion || provider.fiftyFiftyUses >= 2 || provider.isAnswered || provider.isSuspense,
             color: const Color(0xFFFFB300),
             onTap: () {
               if (provider.fiftyFiftyUsedThisQuestion || provider.fiftyFiftyUses >= 2) return;
@@ -483,7 +490,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
             icon: Icons.call_rounded,
             label: 'Telefon',
             sublabel: provider.phoneUses >= 2 ? null : (provider.phoneUses == 0 ? 'ÜCRETSİZ' : (provider.jokerPhoneTokens > 0 ? '1 🃏' : '25 💎')),
-            isDisabled: provider.phoneUsedThisQuestion || provider.phoneUses >= 2,
+            isDisabled: provider.phoneUsedThisQuestion || provider.phoneUses >= 2 || provider.isAnswered || provider.isSuspense,
             color: const Color(0xFF7B2FFF),
             onTap: () {
               if (provider.phoneUsedThisQuestion || provider.phoneUses >= 2) return;
@@ -506,7 +513,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
             icon: Icons.bar_chart_rounded,
             label: 'Seyirci',
             sublabel: provider.audienceUses >= 2 ? null : (provider.audienceUses == 0 ? 'ÜCRETSİZ' : (provider.jokerAudienceTokens > 0 ? '1 🃏' : '25 💎')),
-            isDisabled: provider.audienceUsedThisQuestion || provider.audienceUses >= 2,
+            isDisabled: provider.audienceUsedThisQuestion || provider.audienceUses >= 2 || provider.isAnswered || provider.isSuspense,
             color: const Color(0xFF00897B),
             onTap: () {
               if (provider.audienceUsedThisQuestion || provider.audienceUses >= 2) return;
@@ -528,7 +535,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
             icon: Icons.rocket_launch_rounded,
             label: 'Soruyu Geç',
             sublabel: provider.skipUses >= 2 ? null : (provider.skipUses == 0 ? 'ÜCRETSİZ' : (provider.jokerSkipTokens > 0 ? '1 🃏' : '25 💎')),
-            isDisabled: provider.skipUsedThisQuestion || provider.skipUses >= 2 || provider.isAnswered,
+            isDisabled: provider.skipUsedThisQuestion || provider.skipUses >= 2 || provider.isAnswered || provider.isSuspense,
             color: const Color(0xFFE53935),
             onTap: () {
               if (provider.skipUsedThisQuestion || provider.skipUses >= 2 || provider.isAnswered) return;
@@ -711,7 +718,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
                   onPressed: () {
                     Navigator.pop(ctx);
                     provider.nextQuestion();
-                    if (isGameOver) {
+                    if (isGameOver && mounted) {
                       Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
                     }
                   },
@@ -729,10 +736,12 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
                     if (provider.hasRemovedAds) {
                       if (provider.consumeVipAction('game_revive')) {
                         provider.reviveWithAd();
-                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('VIP Ayrıcalığı: Canlandınız!'), backgroundColor: Colors.green));
+                        if (mounted) ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('VIP Ayrıcalığı: Canlandınız!'), backgroundColor: Colors.green));
                       } else {
-                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Günlük VIP Revive sınırına ulaştınız! (Max 10)')));
-                        provider.walkAway(); // Walk away automatically if limit reached to avoid cheating
+                        if (mounted) ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Günlük VIP Revive sınırına ulaştınız! (Max 10)')));
+                        provider.walkAway();
+                        // Navigate to result after VIP limit walkAway
+                        if (mounted) Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
                       }
                     } else {
                       AdService().showRewardedAd(
@@ -740,7 +749,13 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin, 
                         onRewardEarned: (_) {
                           provider.reviveWithAd();
                         },
-                        onClosed: () {}, // Do nothing if closed early without reward
+                        onClosed: () {
+                          // Ad closed without reward — navigate to result to avoid softlock
+                          if (mounted && !provider.usedAdReviveThisGame) {
+                            provider.nextQuestion();
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ResultScreen()));
+                          }
+                        },
                       );
                     }
                   },

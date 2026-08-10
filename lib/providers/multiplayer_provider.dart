@@ -254,24 +254,28 @@ class MultiplayerProvider extends ChangeNotifier {
     });
   }
 
+  bool _isFinishing = false;
+
   // ODAYI DİNLE
   void _listenToRoom() {
     if (_roomId == null) return;
 
     _roomSubscription?.cancel();
     _roomSubscription = _firestore.collection('rooms').doc(_roomId).snapshots().listen((snapshot) {
-      if (snapshot.exists) {
-        _roomData = snapshot.data() as Map<String, dynamic>;
+      if (snapshot.exists && snapshot.data() != null) {
+        final data = snapshot.data() as Map<String, dynamic>;
+        _roomData = data;
         
-        // BUG FIX 3: Host tarafında bitişi işle — ama sadece bir kez tetikle
-        if (_roomData!['status'] == 'playing' && _isHost) {
-          bool hFin = _roomData!['hostFinished'] ?? false;
-          bool gFin = _roomData!['guestFinished'] ?? false;
+        // Host tarafında bitişi işle — ama sadece bir kez tetikle
+        if (data['status'] == 'playing' && _isHost && !_isFinishing) {
+          bool hFin = data['hostFinished'] ?? false;
+          bool gFin = data['guestFinished'] ?? false;
           if (hFin && gFin) {
-            int hScore = _roomData!['hostScore'] ?? 0;
-            int gScore = _roomData!['guestScore'] ?? 0;
-            int hWins = _roomData!['hostSeriesWins'] ?? 0;
-            int gWins = _roomData!['guestSeriesWins'] ?? 0;
+            _isFinishing = true;
+            int hScore = data['hostScore'] ?? 0;
+            int gScore = data['guestScore'] ?? 0;
+            int hWins = data['hostSeriesWins'] ?? 0;
+            int gWins = data['guestSeriesWins'] ?? 0;
 
             if (hScore > gScore) {
               hWins++;
@@ -283,10 +287,18 @@ class MultiplayerProvider extends ChangeNotifier {
               'status': 'finished',
               'hostSeriesWins': hWins,
               'guestSeriesWins': gWins
+            }).then((_) {
+              _isFinishing = false;
+            }).catchError((_) {
+              _isFinishing = false;
             });
           }
         }
         
+        notifyListeners();
+      } else {
+        // Doküman silindiyse veya veri yoksa odayı temizle
+        _roomData = null;
         notifyListeners();
       }
     });
@@ -294,28 +306,31 @@ class MultiplayerProvider extends ChangeNotifier {
 
   // OYUNDAN ÇIK / LOBİDEN AYRIL
   Future<void> leaveRoom() async {
-    if (_roomId != null) {
-      if (_roomData?['status'] == 'playing') {
-        // Oyun esnasında çıkılırsa odayı abandoned (terk edildi) yap
-        await _firestore.collection('rooms').doc(_roomId).update({'status': 'abandoned'});
-      } else if (_isHost && _roomData?['status'] == 'waiting') {
-        // Host beklerken çıkarsa odayı sil
-        await _firestore.collection('rooms').doc(_roomId).delete();
-      } else if (!_isHost && _roomData?['status'] == 'waiting') {
-        // Guest beklerken çıkarsa guest bilgilerini temizle
-        await _firestore.collection('rooms').doc(_roomId).update({
-          'guestId': null,
-          'guestName': null,
-          'guestAvatar': null,
-        });
+    try {
+      _roomSubscription?.cancel();
+      _roomSubscription = null;
+      if (_roomId != null) {
+        if (_roomData?['status'] == 'playing') {
+          await _firestore.collection('rooms').doc(_roomId).update({'status': 'abandoned'});
+        } else if (_isHost && _roomData?['status'] == 'waiting') {
+          await _firestore.collection('rooms').doc(_roomId).delete();
+        } else if (!_isHost && _roomData?['status'] == 'waiting') {
+          await _firestore.collection('rooms').doc(_roomId).update({
+            'guestId': null,
+            'guestName': null,
+            'guestAvatar': null,
+          });
+        }
       }
+    } catch (_) {
+      // Ignored: network failure during leave shouldn't block local cleanup
+    } finally {
+      _roomId = null;
+      _roomData = null;
+      _isHost = false;
+      _isFinishing = false;
+      notifyListeners();
     }
-    
-    _roomSubscription?.cancel();
-    _roomId = null;
-    _roomData = null;
-    _isHost = false;
-    notifyListeners();
   }
 
   @override

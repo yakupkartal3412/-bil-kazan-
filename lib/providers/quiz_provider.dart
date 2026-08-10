@@ -10,7 +10,6 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/question.dart';
 import '../utils/constants.dart';
-import 'package:milyarder_test_oyunu/services/referral_service.dart';
 
 enum GameMode { classic, endless, event }
 
@@ -27,6 +26,8 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   static const String _activeAvatarKey = 'active_avatar';
   static const String _unlockedThemesKey = 'unlocked_themes';
   static const String _activeThemeKey = 'active_theme';
+  static const String _unlockedRoomItemsKey = 'unlocked_room_items';
+  static const String _activeRoomItemsKey = 'active_room_items';
   static const String _userNameKey = 'user_name';
   
   static const String _lastPlayedDateKey = 'last_played_date';
@@ -37,6 +38,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   static const String _claimedAchievementsKey = 'claimed_achievements';
   static const String _lastSpinDateKey = 'last_spin_date';
   static const String _lastAdSpinDateKey = 'last_ad_spin_date';
+  static const String _lastLeaderboardCheckDateKey = 'last_leaderboard_check_date';
   static const String _localDuelScoresKey = 'local_duel_scores';
   static const String _lastDuelP1NameKey = 'last_duel_p1_name';
   static const String _lastDuelP2NameKey = 'last_duel_p2_name';
@@ -102,11 +104,14 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   String _activeAvatar = 'default_avatar.png';
   List<String> _unlockedThemes = ['Varsayılan Tema'];
   String _activeTheme = 'Varsayılan Tema';
+  List<String> _unlockedRoomItems = [];
+  Map<String, String> _activeRoomItems = {};
   String _userName = 'Kullanıcı 1';
 
   String _lastPlayedDate = '';
   String _lastSpinDate = '';
   String _lastAdSpinDate = '';
+  String _lastLeaderboardCheckDate = '';
   int _dailyGamesPlayed = 0;
   int _dailyCorrectAnswers = 0;
   int _dailyJokersUsed = 0;
@@ -158,6 +163,11 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   String get activeAvatar => _activeAvatar;
   List<String> get unlockedThemes => _unlockedThemes;
   String get activeTheme => _activeTheme;
+  int get diamonds => _totalCoins;
+  List<String> get unlockedRoomItems => _unlockedRoomItems;
+  List<String> get ownedRoomItems => _unlockedRoomItems;
+  Map<String, String> get activeRoomItems => _activeRoomItems;
+
   String get userName => _userName;
   Map<String, int> get localDuelScores => _localDuelScores;
   String get lastSpinDate => _lastSpinDate;
@@ -271,6 +281,21 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   bool get canSpinWheel {
     String today = DateTime.now().toString().split(' ')[0];
     return _lastSpinDate != today;
+  }
+
+  bool get hasUnreadLeaderboardBadge {
+    String today = DateTime.now().toString().split(' ')[0];
+    return _lastLeaderboardCheckDate != today;
+  }
+
+  Future<void> markLeaderboardAsRead() async {
+    String today = DateTime.now().toString().split(' ')[0];
+    if (_lastLeaderboardCheckDate != today) {
+      _lastLeaderboardCheckDate = today;
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_lastLeaderboardCheckDateKey, _lastLeaderboardCheckDate);
+      notifyListeners();
+    }
   }
 
   bool get hasUnclaimedDailyMissions {
@@ -515,6 +540,13 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     }
     _unlockedThemes = prefs.getStringList(_unlockedThemesKey) ?? ['Varsayılan Tema'];
     _activeTheme = prefs.getString(_activeThemeKey) ?? 'Varsayılan Tema';
+    _unlockedRoomItems = prefs.getStringList(_unlockedRoomItemsKey) ?? [];
+    String savedActiveItems = prefs.getString(_activeRoomItemsKey) ?? '{}';
+    try {
+      _activeRoomItems = Map<String, String>.from(jsonDecode(savedActiveItems));
+    } catch (e) {
+      _activeRoomItems = {};
+    }
     
     String? storedName = prefs.getString(_userNameKey);
     if (storedName == null) {
@@ -536,6 +568,7 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
     _lastPlayedDate = prefs.getString(_lastPlayedDateKey) ?? '';
     _lastSpinDate = prefs.getString(_lastSpinDateKey) ?? '';
     _lastAdSpinDate = prefs.getString(_lastAdSpinDateKey) ?? '';
+    _lastLeaderboardCheckDate = prefs.getString(_lastLeaderboardCheckDateKey) ?? '';
     _dailyGamesPlayed = prefs.getInt(_dailyGamesKey) ?? 0;
     _dailyCorrectAnswers = prefs.getInt(_dailyCorrectKey) ?? 0;
     _dailyJokersUsed = prefs.getInt(_dailyJokersKey) ?? 0;
@@ -601,7 +634,6 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       debugPrint('Error loading questions: $e');
     }
 
-    _checkReferralRewards();
     _registerOrUpdateUserInFirebase();
     notifyListeners();
   }
@@ -676,20 +708,6 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
         }
       }
     });
-  }
-
-  Future<void> _checkReferralRewards() async {
-    try {
-      final referralService = ReferralService();
-      int pendingReward = await referralService.calculateAndClaimPendingRewards();
-      if (pendingReward > 0) {
-        _totalCoins += pendingReward;
-        _saveCoins();
-        notifyListeners();
-      }
-    } catch (e) {
-      debugPrint("Referral error: $e");
-    }
   }
 
 
@@ -1019,6 +1037,40 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       }
     }
     return false;
+  }
+
+  Future<bool> buyRoomItem(String itemPath, [int priceDiamonds = 0, int priceCards = 0]) async {
+    int price = priceDiamonds;
+    int cards = priceCards;
+
+    if (_totalCoins >= price && _roomCards >= cards && !_unlockedRoomItems.contains(itemPath)) {
+      _totalCoins -= price;
+      _roomCards -= cards;
+      _unlockedRoomItems.add(itemPath);
+
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setInt(_coinsKey, _totalCoins);
+      await prefs.setInt(_roomCardsKey, _roomCards);
+      await prefs.setStringList(_unlockedRoomItemsKey, _unlockedRoomItems);
+      notifyListeners();
+      return true;
+    }
+    return false;
+  }
+
+  Future<void> toggleRoomItem(String category, [String? itemPath]) async {
+    String targetPath = itemPath ?? '';
+
+    if (_unlockedRoomItems.contains(targetPath) || targetPath.isEmpty) {
+      if (targetPath.isEmpty) {
+        _activeRoomItems.remove(category);
+      } else {
+        _activeRoomItems[category] = targetPath;
+      }
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_activeRoomItemsKey, jsonEncode(_activeRoomItems));
+      notifyListeners();
+    }
   }
 
   Future<void> checkDailyReset() async {

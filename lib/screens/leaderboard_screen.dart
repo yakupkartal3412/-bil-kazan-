@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import '../services/ad_service.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:provider/provider.dart';
 import '../providers/quiz_provider.dart';
@@ -380,18 +381,18 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                         Map<String, Map<String, dynamic>> bestUserScores = {};
                         for (var doc in snapshot.data!.docs) {
                           try {
-                            var map = doc.data() as Map<String, dynamic>;
-                            map['uid'] = doc.id.split('_').first;
+                            var map = Map<String, dynamic>.from(doc.data() as Map<String, dynamic>);
+                            map['uid'] = doc.id.contains('_') ? doc.id.split('_').first : doc.id;
                             
                             // Bot Filtresi
                             if (doc.id.startsWith('bot_') || map['isBot'] == true || map['isBot'] == 'true') continue;
                             String userName = map['userName']?.toString().trim() ?? '';
                             if (userName.isEmpty || userName == 'null' || userName.toLowerCase().contains('bot')) continue;
                             
-                            int score = map['score'] ?? 0;
+                            int score = (map['score'] as num?)?.toInt() ?? 0;
                             if (score <= 0) continue;
 
-                            String key = map['uid'] ?? userName;
+                            String key = map['uid']?.toString() ?? doc.id;
                             if (!bestUserScores.containsKey(key) || (bestUserScores[key]!['score'] ?? 0) < score) {
                               bestUserScores[key] = map;
                             }
@@ -405,14 +406,14 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       Set<String> addedKeys = {};
 
                       for (var p in pastScores) {
-                        String key = p['uid'] ?? p['userName'] ?? '';
+                        String key = p['uid']?.toString() ?? p['userName']?.toString() ?? '';
                         if (key.isNotEmpty && !addedKeys.contains(key)) {
                           addedKeys.add(key);
                           finalMuseumScores.add(p);
                         }
                       }
                       for (var a in allTimeScores) {
-                        String key = a['uid'] ?? a['userName'] ?? '';
+                        String key = a['uid']?.toString() ?? a['userName']?.toString() ?? '';
                         if (key.isNotEmpty && !addedKeys.contains(key)) {
                           addedKeys.add(key);
                           finalMuseumScores.add(a);
@@ -453,10 +454,12 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     }
                     
                     List<Map<String, dynamic>> parsedScores = [];
+                    String myUid = FirebaseAuth.instance.currentUser?.uid ?? provider.deviceId;
+
                     if (snapshot.hasData) {
                       for (var doc in snapshot.data!.docs) {
                         try {
-                          var map = doc.data() as Map<String, dynamic>;
+                          var map = Map<String, dynamic>.from(doc.data() as Map<String, dynamic>);
                           String docMode = map['mode'] ?? '';
                           if (docMode != targetMode) continue;
 
@@ -465,21 +468,19 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                           String userName = map['userName']?.toString().trim() ?? '';
                           if (userName.isEmpty || userName == 'null' || userName.toLowerCase().contains('bot')) continue;
                           
-                          // Haftalık Sıfırlama Kontrolü (Sadece güncel haftayı göster)
+                          // Haftalık Sıfırlama Kontrolü (Son 7 günlü skorları göster)
                           String docDateStr = map['date'] ?? '';
                           if (docDateStr.isNotEmpty) {
                             DateTime? docDate = DateTime.tryParse(docDateStr);
                             if (docDate != null) {
                               DateTime now = DateTime.now();
-                              DateTime docMonday = docDate.subtract(Duration(days: docDate.weekday - 1));
-                              DateTime thisMonday = now.subtract(Duration(days: now.weekday - 1));
-                              if (docMonday.year != thisMonday.year || docMonday.month != thisMonday.month || docMonday.day != thisMonday.day) {
-                                continue; // Eski haftanın skorunu atla
+                              if (now.difference(docDate).inDays > 7) {
+                                continue; // 7 günden eski haftalık skorları atla
                               }
                             }
                           }
 
-                          map['uid'] = doc.id.split('_').first;
+                          map['uid'] = doc.id.contains('_') ? doc.id.split('_').first : doc.id;
                           num sc = map['score'] ?? 0;
                           if (sc > 0) {
                             parsedScores.add(map);
@@ -490,8 +491,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
 
                     Map<String, Map<String, dynamic>> bestScores = {};
                     for (var score in parsedScores) {
-                      String uid = score['uid'] ?? score['userName'] ?? 'Bilinmeyen';
-                      int currentScore = score['score'] ?? 0;
+                      String uid = score['uid']?.toString() ?? 'unknown';
+                      int currentScore = (score['score'] as num?)?.toInt() ?? 0;
                       
                       if (!bestScores.containsKey(uid) || (bestScores[uid]!['score'] ?? 0) < currentScore) {
                         bestScores[uid] = score;
@@ -499,58 +500,46 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     }
                     
                     if (targetMode == 'Klasik Mod') {
-                      String formatted = provider.weeklyScore.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
-                      
-                      String? myUidKey;
-                      for (var key in bestScores.keys) {
-                        if (bestScores[key]!['userName'] == provider.userName) {
-                          myUidKey = key;
-                          break;
+                      if (provider.weeklyScore > 0) {
+                        String formatted = provider.weeklyScore.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
+                        if (bestScores.containsKey(myUid)) {
+                          if (provider.weeklyScore > (bestScores[myUid]!['score'] ?? 0)) {
+                            bestScores[myUid]!['score'] = provider.weeklyScore;
+                            bestScores[myUid]!['moneyString'] = '$formatted ₺';
+                          }
+                        } else {
+                          bestScores[myUid] = {
+                            'mode': 'Klasik Mod',
+                            'score': provider.weeklyScore,
+                            'moneyString': '$formatted ₺',
+                            'userName': provider.userName,
+                            'avatar': provider.activeAvatar,
+                            'uid': myUid,
+                            'userTitle': provider.userTitle,
+                            'isUser': true,
+                          };
                         }
-                      }
-                      
-                      if (myUidKey != null) {
-                        if (provider.weeklyScore > bestScores[myUidKey]!['score']) {
-                          bestScores[myUidKey]!['score'] = provider.weeklyScore;
-                          bestScores[myUidKey]!['moneyString'] = '$formatted ₺';
-                        }
-                      } else {
-                        String fallbackUid = 'local_uid_${DateTime.now().millisecondsSinceEpoch}';
-                        bestScores[fallbackUid] = {
-                          'mode': 'Klasik Mod',
-                          'score': provider.weeklyScore,
-                          'moneyString': '$formatted ₺',
-                          'userName': provider.userName,
-                          'avatar': provider.activeAvatar,
-                          'uid': fallbackUid,
-                        };
                       }
                     } else if (targetMode == 'Sonsuz Mod') {
-                      String formatted = '${provider.weeklyEndlessScore} Soru';
-                      
-                      String? myUidKey;
-                      for (var key in bestScores.keys) {
-                        if (bestScores[key]!['userName'] == provider.userName) {
-                          myUidKey = key;
-                          break;
+                      if (provider.weeklyEndlessScore > 0) {
+                        String formatted = '${provider.weeklyEndlessScore} Soru';
+                        if (bestScores.containsKey(myUid)) {
+                          if (provider.weeklyEndlessScore > (bestScores[myUid]!['score'] ?? 0)) {
+                            bestScores[myUid]!['score'] = provider.weeklyEndlessScore;
+                            bestScores[myUid]!['moneyString'] = formatted;
+                          }
+                        } else {
+                          bestScores[myUid] = {
+                            'mode': 'Sonsuz Mod',
+                            'score': provider.weeklyEndlessScore,
+                            'moneyString': formatted,
+                            'userName': provider.userName,
+                            'avatar': provider.activeAvatar,
+                            'uid': myUid,
+                            'userTitle': provider.userTitle,
+                            'isUser': true,
+                          };
                         }
-                      }
-                      
-                      if (myUidKey != null) {
-                        if (provider.weeklyEndlessScore > bestScores[myUidKey]!['score']) {
-                          bestScores[myUidKey]!['score'] = provider.weeklyEndlessScore;
-                          bestScores[myUidKey]!['moneyString'] = formatted;
-                        }
-                      } else {
-                        String fallbackUid = 'local_uid_${DateTime.now().millisecondsSinceEpoch}';
-                        bestScores[fallbackUid] = {
-                          'mode': 'Sonsuz Mod',
-                          'score': provider.weeklyEndlessScore,
-                          'moneyString': formatted,
-                          'userName': provider.userName,
-                          'avatar': provider.activeAvatar,
-                          'uid': fallbackUid,
-                        };
                       }
                     }
                     
@@ -580,24 +569,35 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     );
   }
 
-  String _getCleanUserName(Map<String, dynamic> scoreMap, QuizProvider provider) {
-    String? rawName = scoreMap['userName']?.toString().trim();
-    bool isUser = scoreMap['isUser'] == true || (rawName != null && rawName == provider.userName.trim());
-    if (isUser && provider.userName.trim().isNotEmpty) {
-      return provider.userName.trim();
+  bool _isLocalUser(Map<String, dynamic> scoreMap, QuizProvider provider) {
+    if (scoreMap['isUser'] == true) return true;
+    String myUid = FirebaseAuth.instance.currentUser?.uid ?? provider.deviceId;
+    String docUid = scoreMap['uid']?.toString() ?? '';
+    if (docUid.isNotEmpty && myUid.isNotEmpty && docUid == myUid) {
+      return true;
     }
+    return false;
+  }
+
+  String _getCleanUserName(Map<String, dynamic> scoreMap, QuizProvider provider) {
+    if (_isLocalUser(scoreMap, provider)) {
+      if (provider.userName.trim().isNotEmpty) {
+        return provider.userName.trim();
+      }
+    }
+    String? rawName = scoreMap['userName']?.toString().trim();
     if (rawName != null && rawName.isNotEmpty && rawName != 'null') {
       return rawName;
     }
-    String uid = scoreMap['uid']?.toString() ?? '';
-    if (uid.isNotEmpty && uid.length >= 4) {
-      return 'Oyuncu ${uid.substring(0, 4)}';
+    String docUid = scoreMap['uid']?.toString() ?? '';
+    if (docUid.isNotEmpty && docUid.length >= 4) {
+      return 'Oyuncu ${docUid.substring(0, 4)}';
     }
     return 'Oyuncu Şampiyon';
   }
 
   Widget _buildLeaderboardView(List<Map<String, dynamic>> parsedScores, QuizProvider provider, {bool isPastTab = false}) {
-    int userRank = parsedScores.indexWhere((s) => s['userName'] == provider.userName || s['isUser'] == true);
+    int userRank = parsedScores.indexWhere((s) => _isLocalUser(s, provider));
     Map<String, dynamic>? userScoreMap;
     if (userRank != -1) {
       userScoreMap = parsedScores[userRank];
@@ -729,11 +729,13 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     }
     String rankLabel = rank == 1 ? '🥇 1.' : (rank == 2 ? '🥈 2.' : '🥉 3.');
     String displayName = _getCleanUserName(scoreMap, provider);
-    bool isUser = displayName == provider.userName;
+    bool isUser = _isLocalUser(scoreMap, provider);
     
-    String rawAvatar = scoreMap['avatar'] ?? 'einstein_avatar.png';
+    String rawAvatar = scoreMap['avatar'] ?? 'default_avatar.png';
     if (isUser) rawAvatar = provider.activeAvatar;
-    String avatarPath = rawAvatar.startsWith('assets/images/') ? rawAvatar : 'assets/images/$rawAvatar';
+    String avatarPath = (rawAvatar.isEmpty) 
+        ? 'assets/images/default_avatar.png' 
+        : (rawAvatar.startsWith('assets') ? rawAvatar : 'assets/images/$rawAvatar');
     
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -819,11 +821,13 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
       }
     }
     String displayName = _getCleanUserName(scoreMap, provider);
-    bool isUser = displayName == provider.userName;
+    bool isUser = _isLocalUser(scoreMap, provider);
     
-    String rawAvatar = scoreMap['avatar'] ?? 'einstein_avatar.png';
+    String rawAvatar = scoreMap['avatar'] ?? 'default_avatar.png';
     if (isUser) rawAvatar = provider.activeAvatar;
-    String avatarPath = rawAvatar.startsWith('assets/images/') ? rawAvatar : 'assets/images/$rawAvatar';
+    String avatarPath = (rawAvatar.isEmpty) 
+        ? 'assets/images/default_avatar.png' 
+        : (rawAvatar.startsWith('assets') ? rawAvatar : 'assets/images/$rawAvatar');
     
     String currentMode = _selectedTab == 0 ? 'Klasik Mod' : (_selectedTab == 1 ? 'Sonsuz Mod' : 'Geçmiş');
     bool canClaimReward = isUser && rank <= 10 && (scoreMap['score'] ?? 0) > 0 && currentMode != 'Geçmiş' && !provider.isWeeklyRewardClaimed(currentMode);

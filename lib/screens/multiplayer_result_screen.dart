@@ -274,6 +274,8 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
     String myAvatar = mpProvider.isHost ? (data['hostAvatar'] ?? 'assets/images/einstein_avatar.png') : (data['guestAvatar'] ?? 'assets/images/einstein_avatar.png');
     String oppAvatar = mpProvider.isHost ? (data['guestAvatar'] ?? 'assets/images/einstein_avatar.png') : (data['hostAvatar'] ?? 'assets/images/einstein_avatar.png');
     
+    if (myAvatar.isEmpty) myAvatar = 'assets/images/einstein_avatar.png';
+    if (oppAvatar.isEmpty) oppAvatar = 'assets/images/einstein_avatar.png';
     if (!myAvatar.startsWith('assets')) myAvatar = 'assets/images/$myAvatar';
     if (!oppAvatar.startsWith('assets')) oppAvatar = 'assets/images/$oppAvatar';
     
@@ -484,7 +486,7 @@ class _MultiplayerResultScreenState extends State<MultiplayerResultScreen> {
                     return Transform.scale(
                       scale: val,
                       child: Opacity(
-                        opacity: val < 1.0 ? val : (1.5 - val) * 2,
+                        opacity: (val < 1.0 ? val : (1.5 - val) * 2).clamp(0.0, 1.0),
                         child: Text(_currentEmote!, style: const TextStyle(fontSize: 100)),
                       ),
                     );

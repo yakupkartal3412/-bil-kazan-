@@ -529,7 +529,9 @@ class _BotDuelScreenState extends State<BotDuelScreen> {
     
     Question pQ = playerOverrideQuestion ?? questions[currentQuestionIndex];
     final provider = context.watch<QuizProvider>();
-    String userAvatar = provider.activeAvatar.startsWith('assets') ? provider.activeAvatar : 'assets/images/${provider.activeAvatar}';
+    String userAvatar = provider.activeAvatar.isEmpty 
+        ? 'assets/images/einstein_avatar.png' 
+        : (provider.activeAvatar.startsWith('assets') ? provider.activeAvatar : 'assets/images/${provider.activeAvatar}');
 
     String questionTextDisplay = pQ.text;
 

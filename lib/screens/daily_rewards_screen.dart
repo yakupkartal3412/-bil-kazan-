@@ -134,7 +134,7 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
 
   Widget _buildRewardCard(BuildContext context, QuizProvider provider, int dayIndex, int status) {
     const diamondRewards = [50, 100, 200, 350, 500, 700, 1000];
-    const cashStrList = ['100K', '250K', '500K', '1M ₺', '2M ₺', '3.5M ₺', '5M ₺'];
+    const cashStrList = ['100K ₺', '250K ₺', '500K ₺', '1M ₺', '2M ₺', '3.5M ₺', '5M ₺'];
 
     int diamondReward = diamondRewards[dayIndex];
     String cashStr = cashStrList[dayIndex];
@@ -393,8 +393,31 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
     );
   }
 
-  void _handleCardTap(BuildContext context, QuizProvider provider, int dayIndex, int status) async {
+  void _handleCardTap(BuildContext context, QuizProvider provider, int dayIndex, int currentStatus) async {
     final audio = Provider.of<AudioProvider>(context, listen: false);
+    final int status = provider.cycleStatus[dayIndex];
+
+    if (status == 2) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('✅ Bu günün ödülünü zaten aldınız.'),
+          backgroundColor: Colors.blueGrey,
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+      return;
+    }
+
+    if (status == 0) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('🔒 Bu gün henüz açılmadı, lütfen bekleyin.'), 
+          backgroundColor: Colors.orange,
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+      return;
+    }
 
     // Enforce sequential recovery: Must recover earlier missed days first!
     int firstMissedIndex = -1;
@@ -419,7 +442,7 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
             ],
           ),
           content: Text(
-            'Bir sonraki güne geçebilmek için öncelikle kaçırdığınız ${firstMissedIndex + 1}. Günün ödülünü reklam izleyerek kurtarmanız gerekmektedir.',
+            'Öncelikle kaçırdığınız ${firstMissedIndex + 1}. Günün ödülünü telafi etmeniz gerekmektedir.',
             style: const TextStyle(color: Colors.white70, fontSize: 16),
           ),
           actions: [
@@ -438,21 +461,17 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
     }
 
     if (status == 1) {
-      final messenger = ScaffoldMessenger.of(context);
       audio.playSfx('cash_register.mp3');
       await provider.claimDailyLoginReward(dayIndex);
-      messenger.showSnackBar(
-        const SnackBar(
-          content: Text('🎉 Ödül başarıyla alındı!', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)), 
-          backgroundColor: Colors.green,
-          behavior: SnackBarBehavior.floating,
-        ),
-      );
-      Future.delayed(const Duration(seconds: 1), () {
-        if (context.mounted) {
-          Navigator.pop(context);
-        }
-      });
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('🎉 Ödül başarıyla alındı!', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)), 
+            backgroundColor: Colors.green,
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      }
     } else if (status == 3) {
       showDialog(
         context: context,
@@ -483,34 +502,40 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
               ),
               onPressed: () {
                 Navigator.pop(dialogContext);
-                AdService().showRewardedAd(
-                  context: context,
-                  onRewardEarned: (amount) async {
-                    audio.playSfx('cash_register.mp3');
-                    await provider.claimDailyLoginReward(dayIndex);
-                    if (context.mounted) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('✅ ${dayIndex + 1}. Gün kurtarıldı ve ödül alındı!', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)), 
-                          backgroundColor: Colors.green,
-                          behavior: SnackBarBehavior.floating,
-                        ),
-                      );
-                    }
-                  },
-                );
+                if (kIsWeb) {
+                  // Web platform fallback
+                  audio.playSfx('cash_register.mp3');
+                  provider.claimDailyLoginReward(dayIndex);
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('✅ ${dayIndex + 1}. Gün kurtarıldı ve ödül alındı!'), 
+                        backgroundColor: Colors.green,
+                      ),
+                    );
+                  }
+                } else {
+                  AdService().showRewardedAd(
+                    context: context,
+                    onRewardEarned: (amount) async {
+                      audio.playSfx('cash_register.mp3');
+                      await provider.claimDailyLoginReward(dayIndex);
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text('✅ ${dayIndex + 1}. Gün kurtarıldı ve ödül alındı!', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)), 
+                            backgroundColor: Colors.green,
+                            behavior: SnackBarBehavior.floating,
+                          ),
+                        );
+                      }
+                    },
+                  );
+                }
               },
               child: const Text('Reklamı İzle', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
             ),
           ],
-        ),
-      );
-    } else if (status == 0) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('🔒 Bu gün henüz açılmadı, lütfen bekleyin.'), 
-          backgroundColor: Colors.orange,
-          behavior: SnackBarBehavior.floating,
         ),
       );
     }
