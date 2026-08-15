@@ -618,11 +618,19 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
         final eventJsonString = await rootBundle.loadString('assets/event_questions.json');
         final List<dynamic> eventJsonMap = jsonDecode(eventJsonString);
         _eventQuestions = eventJsonMap.map((q) => Question.fromJson(q)).toList();
-        
-        // Bütün modlarda 3000 sorunun tamamının çıkması için etkinlik sorularını da ana havuza ekliyoruz
         allQuestions.addAll(_eventQuestions);
       } catch (e) {
         debugPrint('Error loading event questions: $e');
+      }
+
+      // Ek soru paketi (new_questions.json)
+      try {
+        final newJsonString = await rootBundle.loadString('assets/new_questions.json');
+        final List<dynamic> newJsonMap = jsonDecode(newJsonString);
+        final newQuestions = newJsonMap.map((q) => Question.fromJson(q)).toList();
+        allQuestions.addAll(newQuestions);
+      } catch (e) {
+        debugPrint('Error loading new questions: $e');
       }
 
       _easyQuestions = allQuestions.where((q) => q.difficulty == 1).toList();
