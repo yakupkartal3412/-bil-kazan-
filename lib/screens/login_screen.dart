@@ -28,7 +28,11 @@ class _LoginScreenState extends State<LoginScreen> {
 
     try {
       if (_isLogin) {
-        // Giriş Yap
+        // Giriş Yap — önce anonim oturum varsa çık
+        final currentUser = FirebaseAuth.instance.currentUser;
+        if (currentUser != null && currentUser.isAnonymous) {
+          await FirebaseAuth.instance.signOut();
+        }
         await FirebaseAuth.instance.signInWithEmailAndPassword(
           email: _emailController.text.trim(),
           password: _passwordController.text.trim(),
@@ -38,21 +42,34 @@ class _LoginScreenState extends State<LoginScreen> {
         if (_nameController.text.trim().isEmpty) {
           throw FirebaseAuthException(code: 'empty-name', message: 'Lütfen bir kullanıcı adı girin.');
         }
-        
-        UserCredential cred = await FirebaseAuth.instance.createUserWithEmailAndPassword(
-          email: _emailController.text.trim(),
-          password: _passwordController.text.trim(),
-        );
-        
-        // Kullanıcı adını SharedPreferences'a kaydet (oyun içi kullanım için)
+        if (_passwordController.text.trim().length < 6) {
+          throw FirebaseAuthException(code: 'weak-password', message: 'Şifre en az 6 karakter olmalıdır.');
+        }
+
+        // Anonim oturum varsa linkle, yoksa yeni hesap oluştur
+        final currentUser = FirebaseAuth.instance.currentUser;
+        UserCredential cred;
+        if (currentUser != null && currentUser.isAnonymous) {
+          // Anonim hesabı e-posta ile kalcı yap (skorlar korunur)
+          AuthCredential credential = EmailAuthProvider.credential(
+            email: _emailController.text.trim(),
+            password: _passwordController.text.trim(),
+          );
+          cred = await currentUser.linkWithCredential(credential);
+        } else {
+          cred = await FirebaseAuth.instance.createUserWithEmailAndPassword(
+            email: _emailController.text.trim(),
+            password: _passwordController.text.trim(),
+          );
+        }
+
+        // Kullanıcı adını SharedPreferences'a kaydet
         final prefs = await SharedPreferences.getInstance();
         await prefs.setString('user_name', _nameController.text.trim());
-        
-        // Firebase profilini de güncelle
         await cred.user?.updateDisplayName(_nameController.text.trim());
       }
       
-      // Başarılı ise ana ekrana yönlendir
+      // Başarılı → ana ekrana yönlendir
       if (mounted) {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (_) => const HomeScreen()),
@@ -60,14 +77,32 @@ class _LoginScreenState extends State<LoginScreen> {
       }
     } on FirebaseAuthException catch (e) {
       setState(() {
-        if (e.code == 'user-not-found') {
-          _errorMessage = 'Kullanıcı bulunamadı.';
-        } else if (e.code == 'wrong-password') {
-          _errorMessage = 'Hatalı şifre.';
-        } else if (e.code == 'email-already-in-use') {
-          _errorMessage = 'Bu e-posta zaten kullanımda.';
-        } else {
-          _errorMessage = e.message ?? 'Bir hata oluştu.';
+        switch (e.code) {
+          case 'user-not-found':
+            _errorMessage = 'Bu e-posta adresiyle kayıtlı kullanıcı bulunamadı.';
+            break;
+          case 'wrong-password':
+          case 'invalid-credential':
+          case 'invalid-password':
+            _errorMessage = 'E-posta veya şifre hatalı. Lütfen tekrar deneyin.';
+            break;
+          case 'email-already-in-use':
+            _errorMessage = 'Bu e-posta zaten kullanımda. Giriş yapın.';
+            break;
+          case 'weak-password':
+            _errorMessage = 'Şifre en az 6 karakter olmalıdır.';
+            break;
+          case 'invalid-email':
+            _errorMessage = 'Geçersiz e-posta formatı.';
+            break;
+          case 'too-many-requests':
+            _errorMessage = 'Fazla deneme yapıldı. Lütfen birkaç dakika bekleyin.';
+            break;
+          case 'empty-name':
+            _errorMessage = e.message ?? 'Lütfen bir kullanıcı adı girin.';
+            break;
+          default:
+            _errorMessage = e.message ?? 'Bir hata oluştu: ${e.code}';
         }
       });
     } catch (e) {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'home_screen.dart';
+import 'login_screen.dart';
 import 'dart:async';
 import 'dart:math';
 
@@ -87,19 +88,25 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
         user = await FirebaseAuth.instance.authStateChanges().first;
       } catch (_) {}
     }
-    
-    if (user == null) {
-      try {
-        await FirebaseAuth.instance.signInAnonymously();
-      } catch (_) {}
-    }
 
-    if (mounted) {
+    if (!mounted) return;
+
+    if (user != null) {
+      // Mevcut oturum var → direkt ana ekrana
       Navigator.of(context).pushReplacement(
         PageRouteBuilder(
           pageBuilder: (_, __, ___) => const HomeScreen(),
           transitionsBuilder: (_, animation, __, child) => FadeTransition(opacity: animation, child: child),
           transitionDuration: const Duration(milliseconds: 1200),
+        )
+      );
+    } else {
+      // Oturum yok → giriş/kayıt ekranına yönlendir
+      Navigator.of(context).pushReplacement(
+        PageRouteBuilder(
+          pageBuilder: (_, __, ___) => const LoginScreen(),
+          transitionsBuilder: (_, animation, __, child) => FadeTransition(opacity: animation, child: child),
+          transitionDuration: const Duration(milliseconds: 800),
         )
       );
     }

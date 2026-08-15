@@ -7,7 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../providers/audio_provider.dart';
 import '../providers/quiz_provider.dart';
 import '../utils/constants.dart';
-
+import 'login_screen.dart';
 import 'package:flutter/services.dart';
 import 'admin_screen.dart';
 
@@ -202,7 +202,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
               onTap: () async {
                 await FirebaseAuth.instance.signOut();
                 if (context.mounted) {
-                  Navigator.of(context).popUntil((route) => route.isFirst);
+                  Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(builder: (_) => const LoginScreen()),
+                    (route) => false,
+                  );
                 }
               },
               child: Container(
