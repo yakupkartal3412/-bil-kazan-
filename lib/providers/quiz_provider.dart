@@ -1194,18 +1194,29 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
   }
 
   Future<void> _processWeeklyRewards() async {
-    // Gerçek oyuncu skorları Firebase Firestore'dan çekilir
+    // Sadece son 7 günün skorları geçerlidir
+    final DateTime now = DateTime.now();
+    final DateTime weekStart = now.subtract(const Duration(days: 7));
+
     List<Map<String, dynamic>> allScores = [];
     try {
-      final snapshot = await FirebaseFirestore.instance.collection('leaderboard').where('mode', isEqualTo: 'Klasik Mod').get();
+      final snapshot = await FirebaseFirestore.instance
+          .collection('leaderboard')
+          .where('mode', isEqualTo: 'Klasik Mod')
+          .get();
       for (var doc in snapshot.docs) {
         var data = doc.data();
         if (doc.id.startsWith('bot_') || data['isBot'] == true || data['isBot'] == 'true') continue;
         String name = data['userName']?.toString().toLowerCase() ?? '';
         if (name.contains('bot')) continue;
-        if ((data['score'] ?? 0) > 0) {
-          allScores.add(data);
+        if ((data['score'] ?? 0) <= 0) continue;
+        // Sadece son 7 günün skorlarını al
+        String dateStr = data['date']?.toString() ?? '';
+        if (dateStr.isNotEmpty) {
+          DateTime? docDate = DateTime.tryParse(dateStr);
+          if (docDate != null && docDate.isBefore(weekStart)) continue;
         }
+        allScores.add(data);
       }
     } catch (e) {
       debugPrint("Weekly rewards fetch error: $e");
@@ -1240,15 +1251,22 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
       _weeklyRewardMessage = "Geçen hafta ilk 10'a girmeyi başardın! Ödülün: 500 Elmas + 3 Oda Kartı. 🏆";
     }
     
-    // Sonsuz Mod Ödülleri (Gerçek oyuncular)
+    // Sonsuz Mod Ödülleri (Gerçek oyuncular - sadece son 7 gün)
     List<Map<String, dynamic>> allEndlessScores = [];
     try {
-      final snapshot = await FirebaseFirestore.instance.collection('leaderboard').where('mode', isEqualTo: 'Sonsuz Mod').get();
+      final snapshot = await FirebaseFirestore.instance
+          .collection('leaderboard')
+          .where('mode', isEqualTo: 'Sonsuz Mod')
+          .get();
       for (var doc in snapshot.docs) {
         var data = doc.data();
-        if ((data['score'] ?? 0) > 0) {
-          allEndlessScores.add(data);
+        if ((data['score'] ?? 0) <= 0) continue;
+        String dateStr = data['date']?.toString() ?? '';
+        if (dateStr.isNotEmpty) {
+          DateTime? docDate = DateTime.tryParse(dateStr);
+          if (docDate != null && docDate.isBefore(weekStart)) continue;
         }
+        allEndlessScores.add(data);
       }
     } catch (_) {}
 
@@ -1339,7 +1357,8 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
 
   void startEventGame(String categoryName, List<String> keywords) {
     if (!_isDataLoaded) return;
-    _checkDailyReset();
+    // Not: _checkDailyReset() uygulama açılışında (_loadData) zaten çağrılıyor.
+    // Oyun sırasında çağrılması haftalık skor sıfırlamasına yol açabilir.
     
     _currentQuestionIndex = 0;
     _lastScore = 0;
@@ -1397,8 +1416,8 @@ class QuizProvider extends ChangeNotifier with WidgetsBindingObserver {
 
   void startNewGame({GameMode mode = GameMode.classic}) {
     if (!_isDataLoaded) return;
-    
-    _checkDailyReset();
+    // Not: _checkDailyReset() uygulama açılışında (_loadData) zaten çağrılıyor.
+    // Oyun sırasında çağrılması haftalık skor sıfırlamasına yol açabilir.
     
     _currentQuestionIndex = 0;
     _lastScore = 0;
