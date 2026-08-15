@@ -461,7 +461,7 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
     }
 
     if (status == 1) {
-      audio.playSfx('cash_register.mp3');
+      audio.playSfx('applause.mp3');
       await provider.claimDailyLoginReward(dayIndex);
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -504,7 +504,7 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
                 Navigator.pop(dialogContext);
                 if (kIsWeb) {
                   // Web platform fallback
-                  audio.playSfx('cash_register.mp3');
+                  audio.playSfx('applause.mp3');
                   provider.claimDailyLoginReward(dayIndex);
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -518,7 +518,7 @@ class _DailyRewardsScreenState extends State<DailyRewardsScreen> with SingleTick
                   AdService().showRewardedAd(
                     context: context,
                     onRewardEarned: (amount) async {
-                      audio.playSfx('cash_register.mp3');
+                      audio.playSfx('applause.mp3');
                       await provider.claimDailyLoginReward(dayIndex);
                       if (context.mounted) {
                         ScaffoldMessenger.of(context).showSnackBar(
