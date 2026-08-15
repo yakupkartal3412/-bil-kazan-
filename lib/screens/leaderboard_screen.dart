@@ -80,16 +80,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   }
 
   void _updateStream() {
-    if (_selectedTab == 2) {
-      // Şampiyonlar Müzesi: Tüm zamanların en yüksek puanlı gerçek oyuncuları
-      setState(() {
-        _leaderboardStream = FirebaseFirestore.instance.collection('leaderboard').snapshots();
-      });
-      return;
-    }
-    String targetMode = _selectedTab == 0 ? 'Klasik Mod' : 'Sonsuz Mod';
     setState(() {
-      _leaderboardStream = FirebaseFirestore.instance.collection('leaderboard').where('mode', isEqualTo: targetMode).snapshots();
+      _leaderboardStream = FirebaseFirestore.instance.collection('leaderboard').snapshots();
     });
   }
 
@@ -446,17 +438,13 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                 return StreamBuilder<QuerySnapshot>(
                   stream: _leaderboardStream,
                   builder: (context, snapshot) {
-                    if (snapshot.connectionState == ConnectionState.waiting) {
-                      return const Expanded(child: Center(child: CircularProgressIndicator(color: Colors.cyanAccent)));
-                    }
-                    if (snapshot.hasError) {
-                      return const Expanded(child: Center(child: Text("Bağlantı Hatası!", style: TextStyle(color: Colors.redAccent))));
-                    }
-                    
+                    bool hasNetworkError = snapshot.hasError;
+
                     List<Map<String, dynamic>> parsedScores = [];
                     String myUid = FirebaseAuth.instance.currentUser?.uid ?? provider.deviceId;
 
-                    if (snapshot.hasData) {
+                    // 1. Extract online scores from Firestore snapshot if available
+                    if (snapshot.hasData && snapshot.data != null) {
                       for (var doc in snapshot.data!.docs) {
                         try {
                           var map = Map<String, dynamic>.from(doc.data() as Map<String, dynamic>);
@@ -468,14 +456,14 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                           String userName = map['userName']?.toString().trim() ?? '';
                           if (userName.isEmpty || userName == 'null' || userName.toLowerCase().contains('bot')) continue;
                           
-                          // Haftalık Sıfırlama Kontrolü (Son 7 günlü skorları göster)
+                          // Haftalık Sıfırlama Kontrolü (Son 7 günlük skorları göster)
                           String docDateStr = map['date'] ?? '';
                           if (docDateStr.isNotEmpty) {
                             DateTime? docDate = DateTime.tryParse(docDateStr);
                             if (docDate != null) {
                               DateTime now = DateTime.now();
                               if (now.difference(docDate).inDays > 7) {
-                                continue; // 7 günden eski haftalık skorları atla
+                                continue;
                               }
                             }
                           }
@@ -489,9 +477,23 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       }
                     }
 
+                    // 2. Also parse locally saved high scores from provider.highScores as fallback/cache
+                    for (String localScoreStr in provider.highScores) {
+                      try {
+                        Map<String, dynamic> localMap = Map<String, dynamic>.from(jsonDecode(localScoreStr));
+                        String docMode = localMap['mode'] ?? '';
+                        if (docMode == targetMode) {
+                          num sc = localMap['score'] ?? 0;
+                          if (sc > 0) {
+                            parsedScores.add(localMap);
+                          }
+                        }
+                      } catch (_) {}
+                    }
+
                     Map<String, Map<String, dynamic>> bestScores = {};
                     for (var score in parsedScores) {
-                      String uid = score['uid']?.toString() ?? 'unknown';
+                      String uid = score['uid']?.toString() ?? score['userName']?.toString() ?? 'unknown';
                       int currentScore = (score['score'] as num?)?.toInt() ?? 0;
                       
                       if (!bestScores.containsKey(uid) || (bestScores[uid]!['score'] ?? 0) < currentScore) {
@@ -499,6 +501,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       }
                     }
                     
+                    // Always ensure local player score is included
                     if (targetMode == 'Klasik Mod') {
                       if (provider.weeklyScore > 0) {
                         String formatted = provider.weeklyScore.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.');
@@ -547,18 +550,74 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     parsedScores.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
 
                     if (parsedScores.isEmpty) {
-                      return const Expanded(
-                        child: Center(
-                          child: Text(
-                            'Bu kategoride henüz skor kaydedilmedi.\nİlk skoru sen kaydet ve zirveye otur! 🚀',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white70, fontSize: 15, fontWeight: FontWeight.bold),
-                          ),
+                      if (snapshot.connectionState == ConnectionState.waiting) {
+                        return const Expanded(child: Center(child: CircularProgressIndicator(color: Colors.cyanAccent)));
+                      }
+                      return Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            if (hasNetworkError) ...[
+                              GestureDetector(
+                                onTap: _updateStream,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                                  margin: const EdgeInsets.only(bottom: 12),
+                                  decoration: BoxDecoration(
+                                    color: Colors.redAccent.withValues(alpha: 0.2),
+                                    borderRadius: BorderRadius.circular(20),
+                                    border: Border.all(color: Colors.redAccent),
+                                  ),
+                                  child: const Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Icon(Icons.refresh_rounded, color: Colors.redAccent, size: 18),
+                                      SizedBox(width: 6),
+                                      Text('Bağlantı Yenile', style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold, fontSize: 12)),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                            const Text(
+                              'Bu kategoride henüz skor kaydedilmedi.\nİlk skoru sen kaydet ve zirveye otur! 🚀',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white70, fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
+                          ],
                         ),
                       );
                     }
 
-                    return _buildLeaderboardView(parsedScores, provider);
+                    return Column(
+                      children: [
+                        if (hasNetworkError)
+                          GestureDetector(
+                            onTap: _updateStream,
+                            child: Container(
+                              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: Colors.orange.withValues(alpha: 0.15),
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(color: Colors.amberAccent.withValues(alpha: 0.5)),
+                              ),
+                              child: const Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.wifi_off_rounded, color: Colors.amberAccent, size: 14),
+                                  SizedBox(width: 6),
+                                  Text(
+                                    'Çevrimdışı Görünüm (Dokun & Yenile 🔄)',
+                                    style: TextStyle(color: Colors.amberAccent, fontSize: 11, fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        Expanded(child: _buildLeaderboardView(parsedScores, provider)),
+                      ],
+                    );
                   },
                 );
               },
